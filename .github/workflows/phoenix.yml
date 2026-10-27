@@ -1,213 +1,52 @@
-name: "X1000 PHOENIX - Analyse automatique M1-M5"
+name: X1000 PHOENIX - M1 M5
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "7 * * * *"
-  push:
-    branches:
-      - main
-    paths:
-      - "phoenix.py"
-      - "data/course.json"
-      - ".github/workflows/pmu.yml"
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: x1000-phoenix-automation
+  group: x1000-phoenix
   cancel-in-progress: false
 
 jobs:
   analyse:
-    name: "Analyse hippique PHOENIX"
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:
-      - name: "Recuperer le depot"
+      - name: Recuperer le depot
         uses: actions/checkout@v4
         with:
           persist-credentials: true
 
-      - name: "Installer Python"
-        uses: actions/setup-python@v6
+      - name: Installer Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: "Afficher l'heure de Paris"
+      - name: Verifier le code Python
         run: |
-          TZ=Europe/Paris date \
-            "+%d/%m/%Y %H:%M:%S %Z"
-
-      - name: "Verifier le programme"
-        run: |
-          test -f phoenix.py
           python -m py_compile phoenix.py
+          python -m py_compile publication.py
 
-      - name: "Preparer les dossiers"
+      - name: Analyser et publier
         run: |
-          mkdir -p data/figes
-          mkdir -p data/journaux
+          python publication.py
 
-      - name: "Executer les cinq moteurs"
-        id: execution
-        shell: bash
-        run: |
-          if [ -f data/course.json ]; then
-            rm -f data/latest.json
-
-            python phoenix.py \
-              --input data/course.json \
-              --output data/latest.json
-
-            if [ ! -s data/latest.json ]; then
-              echo "Erreur: rapport absent ou vide."
-              exit 1
-            fi
-
-            echo "analyse_executee=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Aucune course fournie."
-            echo "Analyse non executee."
-            echo "analyse_executee=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: "Enregistrer le journal"
-        if: always()
-        env:
-          ANALYSE_EXECUTEE: ${{ steps.execution.outputs.analyse_executee }}
-          EXECUTION_RESULTAT: ${{ steps.execution.outcome }}
-        run: |
-          python - <<'PY'
-          import datetime
-          import json
-          import os
-          from pathlib import Path
-          from zoneinfo import ZoneInfo
-
-          now = datetime.datetime.now(
-              ZoneInfo("Europe/Paris")
-          )
-
-          dossier = Path("data/journaux")
-          dossier.mkdir(parents=True, exist_ok=True)
-
-          path = Path("data/latest.json")
-          rapport = None
-          erreur = None
-
-          executee = (
-              os.environ.get("ANALYSE_EXECUTEE")
-              == "true"
-          )
-
-          if executee and path.exists():
-              try:
-                  rapport = json.loads(
-                      path.read_text(encoding="utf-8")
-                  )
-                  if not isinstance(rapport, dict):
-                      raise ValueError(
-                          "Le rapport doit etre un objet JSON"
-                      )
-              except (ValueError, OSError) as exc:
-                  erreur = str(exc)
-
-          moteurs = []
-          course_id = None
-
-          if rapport:
-              course_id = rapport.get("course_id")
-              donnees = rapport.get("moteurs", [])
-
-              if isinstance(donnees, list):
-                  moteurs = [
-                      m.get("moteur")
-                      for m in donnees
-                      if isinstance(m, dict)
-                      and m.get("moteur")
-                  ]
-
-          if os.environ.get("EXECUTION_RESULTAT") == "failure":
-              statut = "ECHEC_EXECUTION"
-          elif rapport is not None:
-              statut = "ANALYSE_DISPONIBLE"
-          else:
-              statut = "AUCUNE_ANALYSE"
-
-          journal = {
-              "logiciel": "X1000 PHOENIX",
-              "heure_paris": now.isoformat(),
-              "analyse_disponible": rapport is not None,
-              "course_id": course_id,
-              "moteurs": moteurs,
-              "statut": statut,
-              "erreur": erreur,
-          }
-
-          fichier = dossier / (
-              now.strftime("%Y%m%d_%H%M%S_%f")
-              + ".json"
-          )
-
-          fichier.write_text(
-              json.dumps(
-                  journal,
-                  ensure_ascii=False,
-                  indent=2
-              ),
-              encoding="utf-8"
-          )
-
-          print(
-              json.dumps(
-                  journal,
-                  ensure_ascii=False,
-                  indent=2
-              )
-          )
-          PY
-
-      - name: "Sauvegarder les resultats"
-        if: always()
-        shell: bash
+      - name: Enregistrer les rapports
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/
+          git add data/latest.json
 
-          if git diff --cached --quiet; then
-            echo "Aucune modification."
+          if ! git diff --cached --quiet; then
+            git commit -m "PHOENIX: actualisation des analyses"
+            git push
           else
-            git commit -m "PHOENIX: analyse automatique"
-
-            for tentative in 1 2 3; do
-              if git pull --rebase origin main &&
-                 git push origin HEAD:main; then
-                echo "Resultats sauvegardes."
-                exit 0
-              fi
-
-              echo "Nouvelle tentative: $tentative"
-              sleep 5
-            done
-
-            echo "Echec de synchronisation GitHub."
-            exit 1
+            echo "Aucune modification"
           fi
-
-      - name: "Archiver les analyses"
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: phoenix-resultats
-          path: |
-            data/latest.json
-            data/journaux/
-            data/figes/
-          if-no-files-found: warn
-          retention-days: 30
