@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Publication X1000 PHOENIX pour GitHub Pages."""
+
+"""
+X1000 PHOENIX — PUBLICATION CORRIGÉE
+Moteurs M1 à M5
+Courses, PV, FIGÉS, audits et rapport.
+Aucune donnée hippique inventée.
+"""
+
 import json
+import datetime as dt
 from pathlib import Path
 
 from phoenix import (
@@ -10,86 +18,123 @@ from phoenix import (
     verifier_source
 )
 
-def charger_collection(nom, cle):
+DATA = Path(DATA)
+DATA.mkdir(parents=True, exist_ok=True)
+
+MOTEURS = ("M1", "M2", "M3", "M4", "M5")
+
+
+def collection(nom, cle):
     chemin = DATA / (nom + ".json")
+
     if not chemin.exists():
         return []
 
     objet = lire(chemin)
 
-    if isinstance(objet, dict):
-        if isinstance(objet.get(cle), list):
-            return objet[cle]
-        # Ancien stockage indexe par course.
-        return [
-            dict(v, course_id=v.get("course_id", k))
-            for k, v in objet.items()
-            if isinstance(v, dict)
-        ]
-
     if isinstance(objet, list):
         return objet
 
-    raise ValueError("Collection invalide: " + nom)
+    if isinstance(objet, dict):
+        if isinstance(objet.get(cle), list):
+            return objet[cle]
+
+        resultat = []
+        for identifiant, valeur in objet.items():
+            if isinstance(valeur, dict):
+                item = dict(valeur)
+                item.setdefault("course_id", identifiant)
+                resultat.append(item)
+        return resultat
+
+    raise ValueError("Collection invalide : " + nom)
+
 
 def documents(dossier):
     resultat = []
-    for chemin in sorted((DATA / dossier).glob("*.json")):
+    chemin = DATA / dossier
+
+    if not chemin.exists():
+        return resultat
+
+    for fichier in sorted(chemin.glob("*.json")):
         try:
-            objet = lire(chemin)
+            objet = lire(fichier)
+
             if dossier == "figes":
                 verifier_fige(objet)
-            resultat.append(objet)
-        except (ValueError, KeyError, TypeError) as exc:
-            print("Document refuse:", chemin, exc)
+
+            if isinstance(objet, dict):
+                resultat.append(objet)
+
+        except (ValueError, TypeError, KeyError) as exc:
+            print("Document rejeté :", fichier, exc)
+
     return resultat
 
-def erreur(rapport, message):
-    rapport["difficultes"].append({
-        "moteur": "SYSTEME",
-        "difficulte": str(message)
-    })
 
-def normaliser_moteur(m):
-    return {
-        "moteur": m.get("moteur"),
-        "gagnant_espere": m.get("gagnant_espere"),
-        "meilleur_place": m.get("meilleur_place"),
-        "ordre_espere": m.get("ordre_espere", []),
-        "pari_retenu": m.get("pari_retenu"),
-        "qualification": m.get("qualification", "NON_VERIFIE"),
-        "validation": m.get("validation", "NON_VERIFIE"),
-        "heure_paris": m.get("heure_paris")
-    }
-
-def normaliser_course(c):
-    if not isinstance(c, dict):
+def normaliser_course(course):
+    if not isinstance(course, dict):
         return None
 
+    identifiant = course.get("id") or course.get("course_id")
+
+    if not identifiant:
+        return None
+
+    moteurs = course.get("moteurs", [])
+
+    if not isinstance(moteurs, list):
+        moteurs = []
+
     return {
-        "id": c.get("id") or c.get("course_id"),
-        "hippodrome": c.get("hippodrome"),
-        "depart": c.get("depart"),
-        "nombre_partants": c.get("nombre_partants"),
-        "source": c.get("source"),
-        "statut": c.get("statut", "NON_VERIFIE"),
-        "moteurs": [
-            normaliser_moteur(m)
-            for m in c.get("moteurs", [])
-            if isinstance(m, dict)
-        ]
+        "id": identifiant,
+        "hippodrome": course.get("hippodrome"),
+        "depart": course.get("depart"),
+        "nombre_partants": course.get("nombre_partants"),
+        "source": course.get("source"),
+        "statut": course.get("statut", "NON_VERIFIE"),
+        "moteurs": moteurs
     }
+
+
+def identite_fige(fige):
+    return fige.get("sha256")
+
+
+def ajouter_unique(elements, objet, cle):
+    valeur = objet.get(cle)
+
+    if valeur is None:
+        return
+
+    if not any(
+        isinstance(x, dict) and x.get(cle) == valeur
+        for x in elements
+    ):
+        elements.append(objet)
+
+
+def publier(nom, cle, valeurs):
+    ecrire(
+        DATA / ("publication_" + nom + ".json"),
+        {cle: valeurs}
+    )
+
 
 def main():
     instant = maintenant()
 
     rapport = {
+        "logiciel": "X1000 PHOENIX",
+        "version": "PUBLICATION_CORRIGEE",
         "status": "🟡 EN ATTENTE DE DONNEES",
         "generated_at_paris": instant.isoformat(),
         "mode": "DONNEES_SOURCEES_UNIQUEMENT",
-        "difficultes": [],
+        "moteurs_actifs": list(MOTEURS),
         "source_donnees": None,
-        "moteurs": []
+        "moteurs": [],
+        "difficultes": []
     }
 
     courses = []
@@ -97,76 +142,66 @@ def main():
     figes = []
     audits = []
 
+    def difficulte(message):
+        rapport["difficultes"].append({
+            "moteur": "SYSTEME",
+            "difficulte": str(message)
+        })
+
+    # 1. COURSES HISTORIQUES
     try:
-        courses = [
-            x for x in (
-                normaliser_course(c)
-                for c in charger_collection("courses", "courses")
-            )
-            if x is not None
+        for item in collection("courses", "courses"):
+            course = normaliser_course(item)
+            if course:
+                courses.append(course)
+    except (ValueError, TypeError, KeyError) as exc:
+        difficulte("Courses : " + str(exc))
+
+    # 2. PROCES-VERBAUX
+    try:
+        pv = [
+            x for x in collection("pv", "pv")
+            if isinstance(x, dict)
         ]
     except (ValueError, TypeError, KeyError) as exc:
-        erreur(rapport, "Courses: " + str(exc))
+        difficulte("PV : " + str(exc))
+
+    # 3. FIGÉS AVEC CONTRÔLE SHA256
+    for document in documents("figes"):
+        ajouter_unique(figes, document, "sha256")
 
     try:
-        pv = charger_collection("pv", "pv")
+        for document in collection("figes", "figes"):
+            if not isinstance(document, dict):
+                continue
+            try:
+                verifier_fige(document)
+                ajouter_unique(figes, document, "sha256")
+            except (ValueError, TypeError, KeyError):
+                continue
     except (ValueError, TypeError, KeyError) as exc:
-        erreur(rapport, "PV: " + str(exc))
+        difficulte("FIGÉS : " + str(exc))
 
-    try:
-        anciens = charger_collection("figes", "figes")
-        for f in anciens:
-            # Les anciens FIGES du collecteur sont
-            # experimentaux et ne doivent pas etre
-            # annonces comme FIGES verifies phoenix.py.
-            if f.get("statut") == "FIGE_AVANT_DEPART":
-                try:
-                    verifier_fige(f)
-                    figes.append(f)
-                except (ValueError, KeyError, TypeError):
-                    pass
-    except (ValueError, TypeError, KeyError) as exc:
-        erreur(rapport, "FIGES: " + str(exc))
+    # 4. ANALYSE DE LA COURSE SOURCÉE
+    fichier_course = DATA / "course.json"
 
-    figes_connus = {f["sha256"] for f in figes}
-
-    for f in documents("figes"):
-        if f["sha256"] not in figes_connus:
-            figes.append(f)
-            figes_connus.add(f["sha256"])
-
-    # Analyse des notes uniquement si un fichier
-    # course.json correctement source est disponible.
-    entree = DATA / "course.json"
-
-    if entree.exists():
+    if fichier_course.exists():
         try:
-            course = lire(entree)
-            analyse = analyser(course)
+            entree = lire(fichier_course)
+            analyse = analyser(entree)
 
             rapport["source_donnees"] = analyse["source"]
             rapport["moteurs"] = analyse["moteurs"]
 
-            cid = analyse["course_id"]
-
-            ancien = next(
-                (f for f in figes
-                 if f["rapport"]["course_id"] == cid),
-                None
-            )
-
-            if ancien is None:
-                nouveau = figer(analyse)
-                if nouveau is not None:
-                    figes.append(nouveau)
-                    figes_connus.add(nouveau["sha256"])
+            identifiant = analyse["course_id"]
 
             courses = [
-                c for c in courses if c["id"] != cid
+                c for c in courses
+                if c["id"] != identifiant
             ]
 
             courses.append({
-                "id": cid,
+                "id": identifiant,
                 "hippodrome": analyse["hippodrome"],
                 "depart": analyse["depart"],
                 "nombre_partants": analyse["nombre_partants"],
@@ -175,105 +210,132 @@ def main():
                 "moteurs": analyse["moteurs"]
             })
 
-        except (ValueError, TypeError, KeyError) as exc:
-            erreur(
-                rapport,
-                "Analyse course.json refusee: " + str(exc)
+            # FIGÉ uniquement avant départ,
+            # dans la fenêtre définie par phoenix.py.
+            existant = any(
+                f.get("rapport", {}).get("course_id")
+                == identifiant
+                for f in figes
+            )
+
+            if not existant:
+                nouveau = figer(analyse)
+
+                if nouveau is not None:
+                    verifier_fige(nouveau)
+                    ajouter_unique(
+                        figes, nouveau, "sha256"
+                    )
+
+        except (
+            ValueError, TypeError, KeyError,
+            OSError
+        ) as exc:
+            difficulte(
+                "Analyse refusée : " + str(exc)
             )
     else:
-        erreur(rapport, "data/course.json absent")
+        difficulte(
+            "data/course.json absent : "
+            "aucune analyse nouvelle possible"
+        )
 
-    # Audit uniquement a partir d'une arrivee
-    # explicitement marquee definitive et sourcee.
-    arrivees_path = DATA / "arrivees_officielles.json"
+    # 5. AUDITS APRÈS COURSE
+    arrivees = DATA / "arrivees_officielles.json"
 
-    if arrivees_path.exists():
+    if arrivees.exists():
         try:
-            source = lire(arrivees_path)
-            entrees = source.get("courses", [])
+            contenu = lire(arrivees)
 
-            for arrivee in entrees:
+            for arrivee in contenu.get("courses", []):
                 if not isinstance(arrivee, dict):
-                    continue
-
-                if not verifier_source(arrivee.get("source")):
-                    continue
-
-                correspondant = next(
-                    (
-                        f for f in figes
-                        if f["rapport"]["course_id"]
-                        == arrivee.get("course_id")
-                    ),
-                    None
-                )
-
-                if correspondant is None:
                     continue
 
                 if arrivee.get("statut") != "definitive":
                     continue
 
-                bilan = auditer(correspondant, arrivee)
-                chemin = DATA / "audits" / (
-                    bilan["course_id"].replace("/", "_")
-                    + ".json"
-                )
+                if not verifier_source(
+                    arrivee.get("source")
+                ):
+                    continue
 
-                if not chemin.exists():
-                    ecrire(chemin, bilan)
+                for document in figes:
+                    identifiant = document.get(
+                        "rapport", {}
+                    ).get("course_id")
 
-        except (ValueError, TypeError, KeyError) as exc:
-            erreur(rapport, "Audits: " + str(exc))
+                    if identifiant != arrivee.get(
+                        "course_id"
+                    ):
+                        continue
 
-    # Les audits deja publies sont conserves.
+                    bilan = auditer(
+                        document, arrivee
+                    )
+
+                    fichier = (
+                        DATA / "audits" /
+                        (str(identifiant).replace(
+                            "/", "_"
+                        ) + ".json")
+                    )
+
+                    if not fichier.exists():
+                        ecrire(fichier, bilan)
+
+        except (
+            ValueError, TypeError, KeyError,
+            OSError, AttributeError
+        ) as exc:
+            difficulte(
+                "Audit refusé : " + str(exc)
+            )
+
+    # 6. AUDITS CONSERVÉS
     try:
-        audits = charger_collection("audits", "audits")
+        for audit in collection("audits", "audits"):
+            if isinstance(audit, dict):
+                ajouter_unique(
+                    audits, audit, "course_id"
+                )
     except (ValueError, TypeError, KeyError) as exc:
-        erreur(rapport, "Audits historiques: " + str(exc))
+        difficulte("Audits historiques : " + str(exc))
 
-    audits_ids = {
-        a.get("course_id") for a in audits
-        if isinstance(a, dict)
-    }
+    for audit in documents("audits"):
+        ajouter_unique(
+            audits, audit, "course_id"
+        )
 
-    for a in documents("audits"):
-        if a.get("course_id") not in audits_ids:
-            audits.append(a)
-            audits_ids.add(a.get("course_id"))
-
+    # 7. ÉTAT DU SYSTÈME
     rapport["courses_count"] = len(courses)
     rapport["pv_count"] = len(pv)
     rapport["figes_count"] = len(figes)
     rapport["audits_count"] = len(audits)
 
     if figes:
-        rapport["status"] = "🟢 FIGES VERIFIES"
+        rapport["status"] = "🟢 FIGÉS VÉRIFIÉS"
     elif courses:
-        rapport["status"] = "🟡 COURSES CHARGEES"
+        rapport["status"] = "🟡 COURSES DISPONIBLES"
     else:
-        rapport["status"] = "🟡 DONNEES INSUFFISANTES"
+        rapport["status"] = "🟡 DONNÉES INSUFFISANTES"
 
-    # Collections compatibles avec index.html.
-    # Ne pas reecrire les fichiers historiques du
-    # collecteur : publier des vues separees.
-    ecrire(DATA / "publication_courses.json", {
-        "courses": courses
-    })
-    ecrire(DATA / "publication_pv.json", {
-        "pv": pv
-    })
-    ecrire(DATA / "publication_figes.json", {
-        "figes": figes
-    })
-    ecrire(DATA / "publication_audits.json", {
-        "audits": audits
-    })
-    ecrire(DATA / "publication_rapport.json", rapport)
+    # 8. PUBLICATION POUR INDEX.HTML
+    publier("courses", "courses", courses)
+    publier("pv", "pv", pv)
+    publier("figes", "figes", figes)
+    publier("audits", "audits", audits)
+
+    ecrire(
+        DATA / "publication_rapport.json",
+        rapport
+    )
 
     print(json.dumps(
-        rapport, ensure_ascii=False, indent=2
+        rapport,
+        ensure_ascii=False,
+        indent=2
     ))
+
 
 if __name__ == "__main__":
     main()
