@@ -1,3 +1,3566 @@
 {
-  "courses": []
+  "date": "2026-10-27",
+  "actualise": "2026-10-27T19:01:49.029088+01:00",
+  "courses": [
+    {
+      "date": "2026-10-27",
+      "reunion": 1,
+      "course": 1,
+      "hippodrome": "DEAUVILLE",
+      "nom": "PRIX D'UTAH BEACH",
+      "depart_ms": 1793105700000,
+      "discipline": "PLAT",
+      "distance": 1300.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "SWEET CHOP",
+          "musique": "8p3p2p4p4p2p(25)2p2p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.PICCONE",
+          "entraineur": "A.MURPHY (S)"
+        },
+        {
+          "numero": 2,
+          "nom": "MICHAEL THE GREAT",
+          "musique": "3p1p3p2p9p9p8p8p(25)1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "S.PASQUIER",
+          "entraineur": "HA.PANTALL (S)"
+        },
+        {
+          "numero": 3,
+          "nom": "ZEROSTRESS",
+          "musique": "9p4p2p7p2p7p6p(25)0p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.BACHELOT",
+          "entraineur": "S.SMRCZEK"
+        },
+        {
+          "numero": 4,
+          "nom": "TALENTUOSO",
+          "musique": "0p1p6p4p3p9p3p2p3p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GRANDIN",
+          "entraineur": "PE.DUBOIS (S)"
+        },
+        {
+          "numero": 5,
+          "nom": "HELLO CAREL",
+          "musique": "0p1p3p4p1p3p1p1p5p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.MARQUETTE",
+          "entraineur": "G.MOSSE (S)"
+        },
+        {
+          "numero": 6,
+          "nom": "AGIOTA",
+          "musique": "0p0p9p1p5p4p(25)9p6p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "PC.BOUDOT",
+          "entraineur": "M.DELCHER SANCHEZ"
+        },
+        {
+          "numero": 7,
+          "nom": "OMICRONE",
+          "musique": "5p0p3p5p9p8p0p9p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.HAMELIN",
+          "entraineur": "P.GROUALLE (S)"
+        },
+        {
+          "numero": 8,
+          "nom": "ROYALWOOD",
+          "musique": "0p4p7p0p0p8p6p1p0p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F.VALLE SKAR",
+          "entraineur": "MME C.BARANDE BARBE"
+        },
+        {
+          "numero": 9,
+          "nom": "FIRE REBEL",
+          "musique": "8p0p8p0p8p6p7p6p1p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F.LEFEBVRE",
+          "entraineur": "A.SPANU"
+        },
+        {
+          "numero": 10,
+          "nom": "BREAK DANCE",
+          "musique": "2p6p3p7p(25)1p5p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.BARZALONA",
+          "entraineur": "G.MOSSE (S)"
+        },
+        {
+          "numero": 11,
+          "nom": "MAJOR OAK",
+          "musique": "0p5p9p4p5p8p5p0p(25)6p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "H.LEBOUC",
+          "entraineur": "MF.WEISSMEIER"
+        },
+        {
+          "numero": 12,
+          "nom": "CROWDFUNDING",
+          "musique": "2p1p3p2p1p6p5p3p1p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "R.MANGIONE",
+          "entraineur": "C.BOUTIN (S)"
+        },
+        {
+          "numero": 13,
+          "nom": "FOU FURIEUX",
+          "musique": "0p6p0p6p9p8p1p2p(25)4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GUYON",
+          "entraineur": "N.CAULLERY"
+        },
+        {
+          "numero": 14,
+          "nom": "MIKEY",
+          "musique": "6p3p2p4p1p1p0p0p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.LEMAITRE",
+          "entraineur": "AJ.BAPTISTA RIBEIRO DE ABREU"
+        },
+        {
+          "numero": 15,
+          "nom": "SALALAH",
+          "musique": "4p9p2p2p8p4p4p3p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E.HARDOUIN",
+          "entraineur": "J.ANDREU (S)"
+        },
+        {
+          "numero": 16,
+          "nom": "KENZEL",
+          "musique": "6p8p3p6p0p7p9p(25)3p4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.REMOUE",
+          "entraineur": "PIER.MENARD"
+        }
+      ],
+      "nombre_partants": 16,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 1,
+      "course": 2,
+      "hippodrome": "DEAUVILLE",
+      "nom": "PRIX DU CHENET",
+      "depart_ms": 1793107800000,
+      "discipline": "PLAT",
+      "distance": 1900.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "RAQEEBB",
+          "musique": "4p5p3p1p2p9p8p0p(25)2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "L.BRECHET",
+          "entraineur": "E.LIBAUD (S)"
+        },
+        {
+          "numero": 2,
+          "nom": "HERMES WOOD",
+          "musique": "0p0p0p4p3p4p1p6p4p4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E.HARDOUIN",
+          "entraineur": "C.FEY (S)"
+        },
+        {
+          "numero": 3,
+          "nom": "GITANO",
+          "musique": "3p9p2p0p0p9p7p4p(25)2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.VILCHIEN",
+          "entraineur": "S.CERULIS"
+        },
+        {
+          "numero": 4,
+          "nom": "MEMPHIS TENNESSEE",
+          "musique": "0p6p9p0p0p0p1p2p4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D.PROVOST",
+          "entraineur": "Y.BONNEFOY (S)"
+        },
+        {
+          "numero": 5,
+          "nom": "STORMY DONALD",
+          "musique": "0p8p0p0p0p5p0p1p(25)7p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.PICCONE",
+          "entraineur": "F.CHAPPET (S)"
+        },
+        {
+          "numero": 6,
+          "nom": "YOUNG AND PROUD",
+          "musique": "0p(25)6p9p6p2p5p1p1p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.FAVRIAUX",
+          "entraineur": "J.DA SILVA"
+        },
+        {
+          "numero": 7,
+          "nom": "FAMILIAR",
+          "musique": "(25)1h8h6h1h2h5h5p0p3p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.TRULLIER",
+          "entraineur": "D.WINDRIF"
+        },
+        {
+          "numero": 8,
+          "nom": "WORTH A TEAM",
+          "musique": "(25)5h0h0hAh5h7h5h7h4s",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E.VERHESTRAETEN",
+          "entraineur": "D.WINDRIF"
+        },
+        {
+          "numero": 9,
+          "nom": "MADAM SECRETARY",
+          "musique": "1p7p5p5p8p2p2p(25)6p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.MADAMET",
+          "entraineur": "V.LUKA"
+        },
+        {
+          "numero": 10,
+          "nom": "TROPHANE",
+          "musique": "0p6p4p0p0p5p1p(25)7p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GUYON",
+          "entraineur": "E.LIBAUD (S)"
+        },
+        {
+          "numero": 11,
+          "nom": "HAVANA SIX",
+          "musique": "3p6p4p0p5p0p7p0p5p3p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GRANDIN",
+          "entraineur": "G.MOSSE (S)"
+        },
+        {
+          "numero": 12,
+          "nom": "DARI RIVER",
+          "musique": "8p8p8p0p0p8p6p0p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "H.JOURNIAC",
+          "entraineur": "Y.BARBEROT (S)"
+        }
+      ],
+      "nombre_partants": 12,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 1,
+      "course": 3,
+      "hippodrome": "DEAUVILLE",
+      "nom": "PRIX D'AUBIGNY",
+      "depart_ms": 1793109900000,
+      "discipline": "PLAT",
+      "distance": 1900.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "MEMORY",
+          "musique": "0p2p1p3p6p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "PC.BOUDOT",
+          "entraineur": "HF.DEVIN (S)"
+        },
+        {
+          "numero": 2,
+          "nom": "LEDESMA",
+          "musique": "1p3p3p2p3p3p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.BARZALONA",
+          "entraineur": "FH.GRAFFARD (S)"
+        },
+        {
+          "numero": 3,
+          "nom": "EQUULEUS",
+          "musique": "8p5p3p1p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.WERLE",
+          "entraineur": "K.TAVARES (S)"
+        },
+        {
+          "numero": 4,
+          "nom": "FAMILY SECRET",
+          "musique": "0p5p8p6p5p6p6p(25)1p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "C.LECOEUVRE",
+          "entraineur": "P.GROUALLE (S)"
+        },
+        {
+          "numero": 5,
+          "nom": "WARAMINI",
+          "musique": "8p6p5p5p5p0p2p0p(25)5p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F.VALLE SKAR",
+          "entraineur": "C&Y.LERNER (S)"
+        },
+        {
+          "numero": 6,
+          "nom": "SUNDARA",
+          "musique": "4p4p1p4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GRANDIN",
+          "entraineur": "L.BAUDRON (S)"
+        }
+      ],
+      "nombre_partants": 6,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 1,
+      "course": 4,
+      "hippodrome": "DEAUVILLE",
+      "nom": "PRIX D'AUDRIEU",
+      "depart_ms": 1793112060000,
+      "discipline": "PLAT",
+      "distance": 1900.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "MONTE LINAS",
+          "musique": "0p1p2p1p4p0p1p5p(25)0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E.VERHESTRAETEN",
+          "entraineur": "A.MURPHY (S)"
+        },
+        {
+          "numero": 2,
+          "nom": "ANONYMA",
+          "musique": "0p0p2p1p1p4p0p(25)9p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F.VALLE SKAR",
+          "entraineur": "MME J.MANOVA"
+        },
+        {
+          "numero": 3,
+          "nom": "BELLA MEMORIA",
+          "musique": "4p0p0p7p8p1p0p2p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D.SANTIAGO",
+          "entraineur": "M.NIGGE (S)"
+        },
+        {
+          "numero": 4,
+          "nom": "NEPALAIS",
+          "musique": "0p6p2p5p5p2p8p5p0p3p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.PICCONE",
+          "entraineur": "F.CHAPPET (S)"
+        },
+        {
+          "numero": 5,
+          "nom": "LISEO",
+          "musique": "1p5p6p6p9p2p1p4p3p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J.MOUTARD",
+          "entraineur": "S.CERULIS"
+        },
+        {
+          "numero": 6,
+          "nom": "ACCLAM",
+          "musique": "8p0p7p0p8p6p0p3p7p4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.VILCHIEN",
+          "entraineur": "JESUS"
+        },
+        {
+          "numero": 7,
+          "nom": "BE TRUE",
+          "musique": "7p3p6p6p7p4p2p(25)2p6p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.BACHELOT",
+          "entraineur": "MME J.JIMENEZ MENA"
+        },
+        {
+          "numero": 8,
+          "nom": "GRAND CHELEM",
+          "musique": "0p0p3p4p0p7p3p6p0p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G.SIAS",
+          "entraineur": "MME P.MENGES"
+        },
+        {
+          "numero": 9,
+          "nom": "MON COMEDIEN",
+          "musique": "5p0p2p5p2p0p6pAh9h3h",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "PC.BOUDOT",
+          "entraineur": "M.SEROR (S)"
+        },
+        {
+          "numero": 10,
+          "nom": "MY QUEEN",
+          "musique": "0p0p0p3p6p3p2p(25)2p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.REMOUE",
+          "entraineur": "PIER.MENARD"
+        }
+      ],
+      "nombre_partants": 10,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 1,
+      "course": 5,
+      "hippodrome": "DEAUVILLE",
+      "nom": "PRIX DU VERGALY",
+      "depart_ms": 1793114100000,
+      "discipline": "PLAT",
+      "distance": 3400.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "ANNABEL'S GHOST",
+          "musique": "0p0p5p0p7p3p1p(25)0p5p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "PC.BOUDOT",
+          "entraineur": "M.SEROR (S)"
+        },
+        {
+          "numero": 2,
+          "nom": "VAZIRPOUR",
+          "musique": "6p0p9p4p1p9p(25)1p7p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F.VALLE SKAR",
+          "entraineur": "MME J.MANOVA"
+        },
+        {
+          "numero": 3,
+          "nom": "DARK ROCKSTER",
+          "musique": "4p(25)1p4p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "C.PACAUT",
+          "entraineur": "S.WATTEL (S)"
+        },
+        {
+          "numero": 4,
+          "nom": "STEP MORNING",
+          "musique": "7p3p8p5p0p5p3p(25)4p4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.BACHELOT",
+          "entraineur": "MME L.HEBRARD DE VEYRINAS"
+        },
+        {
+          "numero": 5,
+          "nom": "GUINESS STAR",
+          "musique": "3p2p7p(25)8p7p1p1p7p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "O.ANDIGNE",
+          "entraineur": "A.COUETIL (S)"
+        },
+        {
+          "numero": 6,
+          "nom": "BELLA D'ANJOU",
+          "musique": "6p7p8p6p4pJp8p6p7p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GRANDIN",
+          "entraineur": "E.LECOIFFIER"
+        },
+        {
+          "numero": 7,
+          "nom": "VENDOMYA",
+          "musique": "8p1p3p2p4p0p(25)4p2p4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J.CLAUDIC",
+          "entraineur": "F.BRESSON (S)"
+        },
+        {
+          "numero": 8,
+          "nom": "ANIOL",
+          "musique": "4p7p7p5p1p3p3p8p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "H.BOUTIN",
+          "entraineur": "A.SANCHEZ-MARTIN"
+        },
+        {
+          "numero": 9,
+          "nom": "ROUDOUDOU",
+          "musique": "5p8p5p0p1pJp6p4p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.BAZIRE",
+          "entraineur": "E.THUEUX"
+        },
+        {
+          "numero": 10,
+          "nom": "UNA REVELACION",
+          "musique": "6p0p8p9p(25)5p7p1p4p7p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "C.GROSBOIS",
+          "entraineur": "CH.HERPIN (S)"
+        },
+        {
+          "numero": 11,
+          "nom": "KLASSIC PRECIEUX",
+          "musique": "0p0p0p6p4p(25)2p0p0p6h",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.BERNARD",
+          "entraineur": "MME M.DESVAUX"
+        }
+      ],
+      "nombre_partants": 11,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 1,
+      "course": 6,
+      "hippodrome": "DEAUVILLE",
+      "nom": "PRIX GOLD BEACH",
+      "depart_ms": 1793116200000,
+      "discipline": "PLAT",
+      "distance": 1300.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "KODIACOLOR",
+          "musique": "3p8p9p(25)2p0p5p3p3p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GUYON",
+          "entraineur": "C.FERLAND (S)"
+        },
+        {
+          "numero": 2,
+          "nom": "CITY BABE",
+          "musique": "5p8p1p2p3p7p9p8p(25)5p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.BACHELOT",
+          "entraineur": "S.WATTEL (S)"
+        },
+        {
+          "numero": 3,
+          "nom": "SIGHISH",
+          "musique": "0p7p4p6p3p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "C.LECOEUVRE",
+          "entraineur": "M.GUARNIERI"
+        },
+        {
+          "numero": 4,
+          "nom": "GOLUPTIOUS",
+          "musique": "6p4p9p6p3p4p0p0p(25)0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.FAVRIAUX",
+          "entraineur": "A.MACEDO DA SILVA"
+        },
+        {
+          "numero": 5,
+          "nom": "FORCEFULL",
+          "musique": "7p1p9p9p7p(25)9p2p8p4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.PICCONE",
+          "entraineur": "X.BLANCHET (S)"
+        },
+        {
+          "numero": 6,
+          "nom": "ITAEWON",
+          "musique": "3p1p1p4p8p0p3p4p2p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.DUQUESNOY",
+          "entraineur": "C.BOUTIN (S)"
+        },
+        {
+          "numero": 7,
+          "nom": "GRIGNETTE",
+          "musique": "0p4p1p8p7p6p1p7p1p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Y.ROUSSET",
+          "entraineur": "K.PLISSON"
+        },
+        {
+          "numero": 8,
+          "nom": "DROGO",
+          "musique": "7p5p0p8p5p0p1p7p0p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GRANDIN",
+          "entraineur": "MME V.DISSAUX"
+        },
+        {
+          "numero": 9,
+          "nom": "GOLDFIELD",
+          "musique": "2p0p0p0p1p1p0p4p0p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.VILCHIEN",
+          "entraineur": "S.CERULIS"
+        },
+        {
+          "numero": 10,
+          "nom": "BACCHILIDE",
+          "musique": "4p4p0p7p5p6p5p3p0p6p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.VELON",
+          "entraineur": "M.GUARNIERI"
+        },
+        {
+          "numero": 11,
+          "nom": "LE ROCKEUR",
+          "musique": "7p9p2p8p(25)4p0p3p(24)1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.LEMAITRE",
+          "entraineur": "MME Y.VOLLMER"
+        },
+        {
+          "numero": 12,
+          "nom": "DREAM OP FAL",
+          "musique": "0p5p6p3p6p7p2p3p7p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D.SANTIAGO",
+          "entraineur": "I.RAYBOULD"
+        },
+        {
+          "numero": 13,
+          "nom": "ROMAN BOY",
+          "musique": "7p3p5p7p3p3p8p0p4p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.MADAMET",
+          "entraineur": "F.JOLIVET (S)"
+        },
+        {
+          "numero": 14,
+          "nom": "WILD MOOR",
+          "musique": "7p3p3p3p3p4p2p6p3p9p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D.PILITTA",
+          "entraineur": "A.BOTTI (S)"
+        },
+        {
+          "numero": 15,
+          "nom": "IRISHKAMAYA",
+          "musique": "9p7p5p0p8p6p9p4p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F.VALLE SKAR",
+          "entraineur": "MME J.DUPONT-FAHN"
+        }
+      ],
+      "nombre_partants": 15,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 1,
+      "course": 7,
+      "hippodrome": "DEAUVILLE",
+      "nom": "PRIX JUNO BEACH",
+      "depart_ms": 1793118420000,
+      "discipline": "PLAT",
+      "distance": 1300.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "HAPPY AGAIN",
+          "musique": "9p7p6p6p0p8p8p8p7p3p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.LEMAITRE",
+          "entraineur": "E.BERNHARDT"
+        },
+        {
+          "numero": 2,
+          "nom": "COSTARMORICAIN",
+          "musique": "0p0p5p5p0p7p3p(25)1p9p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.HAMELIN",
+          "entraineur": "L.CENDRA"
+        },
+        {
+          "numero": 3,
+          "nom": "THE CAT'S",
+          "musique": "3p2p4p3p3p5p4p9p0p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "R.MANGIONE",
+          "entraineur": "X.RICHARD"
+        },
+        {
+          "numero": 4,
+          "nom": "REGALIENNE",
+          "musique": "8p7p0p0p5p0p1p0p0p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.FAVRIAUX",
+          "entraineur": "V.DEVILLARS"
+        },
+        {
+          "numero": 5,
+          "nom": "NIKULYA FAL",
+          "musique": "6p5p8p6p8p5p0p0p6p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.TRULLIER",
+          "entraineur": "MME Y.VOLLMER"
+        },
+        {
+          "numero": 6,
+          "nom": "L'ELU DE SADDLE",
+          "musique": "0p1p1p2p2p(25)9p6p0p5p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.MADAMET",
+          "entraineur": "D.OOST"
+        },
+        {
+          "numero": 7,
+          "nom": "PAPATEOU",
+          "musique": "3p4p0p0p9p2p0p8p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.VELON",
+          "entraineur": "B.DE KONINCK"
+        },
+        {
+          "numero": 8,
+          "nom": "CHARISMATIC CHICK",
+          "musique": "8p0p5p0p1p5p8p5p0p8p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J.MOUTARD",
+          "entraineur": "C.BOUTIN (S)"
+        },
+        {
+          "numero": 9,
+          "nom": "CRACK CITY",
+          "musique": "1p4p0p0p8p0p4p9p1p3p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.PICCONE",
+          "entraineur": "E.BERNHARDT"
+        },
+        {
+          "numero": 10,
+          "nom": "AIR DE SAMBA",
+          "musique": "5p8p7p0p2p9p2p8p5p9p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.REMOUE",
+          "entraineur": "MME C.BARANDE BARBE"
+        },
+        {
+          "numero": 11,
+          "nom": "BAILEYS ILLUSION",
+          "musique": "0p3p7p8p0p7p5p(25)0p5p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E.VERHESTRAETEN",
+          "entraineur": "J.KEPPENS"
+        },
+        {
+          "numero": 12,
+          "nom": "MICOLEO",
+          "musique": "0p0p0p0p8p0p2p1p2p6p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "H.BOUTIN",
+          "entraineur": "C.BOUTIN (S)"
+        },
+        {
+          "numero": 13,
+          "nom": "BIG BOOTS",
+          "musique": "0p9p0p5p4p2p1p3p3p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D.SANTIAGO",
+          "entraineur": "MME C.DIAZ"
+        },
+        {
+          "numero": 14,
+          "nom": "RUE DU SAHEL",
+          "musique": "4p7p6p4p5p3p0p(25)0p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.CHEYER",
+          "entraineur": "MME M.VAN DEN WEGHE"
+        },
+        {
+          "numero": 15,
+          "nom": "BREATHE ON",
+          "musique": "0p0p0p9p9p(25)0p0p6p9p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "C.BELMONT",
+          "entraineur": "E.HENDRICKX"
+        }
+      ],
+      "nombre_partants": 15,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 1,
+      "course": 8,
+      "hippodrome": "DEAUVILLE",
+      "nom": "PRIX OMAHA BEACH",
+      "depart_ms": 1793120520000,
+      "discipline": "PLAT",
+      "distance": 1300.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "NADIR",
+          "musique": "1p2p4p1p4p4p2p6p(25)0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "PC.BOUDOT",
+          "entraineur": "M.DELCHER SANCHEZ"
+        },
+        {
+          "numero": 2,
+          "nom": "VILLA MONCEAU",
+          "musique": "0p0p1p2p2p2p(25)3p5p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.MADAMET",
+          "entraineur": "Y.BARBEROT (S)"
+        },
+        {
+          "numero": 3,
+          "nom": "SPIRITO",
+          "musique": "3p0p0p1p3p5p6p7p(25)5p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.LE DIGABEL",
+          "entraineur": "PE.DUBOIS (S)"
+        },
+        {
+          "numero": 4,
+          "nom": "SOLE",
+          "musique": "5p1p4p(25)3p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GUYON",
+          "entraineur": "C.FERLAND (S)"
+        },
+        {
+          "numero": 5,
+          "nom": "SAINT SAENS",
+          "musique": "3p7p0p0p7p3p3p1p2p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.VELON",
+          "entraineur": "Y.BARBEROT (S)"
+        },
+        {
+          "numero": 6,
+          "nom": "SKY DREAM",
+          "musique": "6p0p1p2p4p4p4p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "C.LECOEUVRE",
+          "entraineur": "M.BARATTI (S)"
+        },
+        {
+          "numero": 7,
+          "nom": "PAINTELLO",
+          "musique": "0p0p0p2p1p(25)9p2p4p8p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J.MOUTARD",
+          "entraineur": "MME A.BUDKA"
+        },
+        {
+          "numero": 8,
+          "nom": "BARGING THRU",
+          "musique": "0p0p1pDp0p6p1p5p(25)0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "S.TISON",
+          "entraineur": "MME N.MOONS"
+        },
+        {
+          "numero": 9,
+          "nom": "CAMBREMER",
+          "musique": "1p3p0p0p6p2p(25)0p3p1p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.GRANDIN",
+          "entraineur": "S.NIGGE (S)"
+        },
+        {
+          "numero": 10,
+          "nom": "TORPEN",
+          "musique": "5p0p8p(25)8p5p7p1p2p7p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.TRULLIER",
+          "entraineur": "R.SCHOOF"
+        },
+        {
+          "numero": 11,
+          "nom": "REGALIEN",
+          "musique": "5p2p9p0p0p0p8p7p1p7p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.HAMELIN",
+          "entraineur": "CH.PLISSON (S)"
+        },
+        {
+          "numero": 12,
+          "nom": "QUARTZ DU HOULEY",
+          "musique": "2p4p2p4p8p3p(25)0p0p0p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "T.BACHELOT",
+          "entraineur": "V.LUKA"
+        },
+        {
+          "numero": 13,
+          "nom": "WAYZATA MIST",
+          "musique": "0p3p3p5p3p7p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "S.PASQUIER",
+          "entraineur": "G.DOLEUZE"
+        },
+        {
+          "numero": 14,
+          "nom": "AVERSA",
+          "musique": "9p1p2p0p8p8p(25)0p4p9p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D.SANTIAGO",
+          "entraineur": "N.CAULLERY"
+        },
+        {
+          "numero": 15,
+          "nom": "NOFIX",
+          "musique": "3p0p0p7p9p9p0p(25)3p4p",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "L.ROUSSEL",
+          "entraineur": "ED.MONFORT (S)"
+        }
+      ],
+      "nombre_partants": 15,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 3,
+      "course": 1,
+      "hippodrome": "LYON-PARILLY",
+      "nom": "PRIX DU TARN",
+      "depart_ms": 1793096400000,
+      "discipline": "ATTELE",
+      "distance": 2600.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "JAWENN DE KERYANN",
+          "musique": "7a6a0a2a5a7m4a6m(25)Dm",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. LAPRAY",
+          "entraineur": "P. CALLIER"
+        },
+        {
+          "numero": 2,
+          "nom": "KING DE CHAMPIGNY",
+          "musique": "0aDa0a4a0aDaDa(25)Da5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J. MOUCHARD",
+          "entraineur": "S. BOURLIER"
+        },
+        {
+          "numero": 3,
+          "nom": "HIMEROS DU DOLLAR",
+          "musique": "5a0a5aDa4a6a7a6a9a8a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "R. BOUDAH",
+          "entraineur": "P. CALLIER"
+        },
+        {
+          "numero": 4,
+          "nom": "JEU DE PARME",
+          "musique": "7a3a3a3aDa2a9a9a4a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle G. AMBROGIO",
+          "entraineur": "J. UROZ"
+        },
+        {
+          "numero": 5,
+          "nom": "JACK SPARCK",
+          "musique": "2a4a2a7a6a4a0a4a0a8a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "PHILIPPE SEILER",
+          "entraineur": "PH. SEILER"
+        },
+        {
+          "numero": 6,
+          "nom": "KEL JAC",
+          "musique": "7a4aDa9a1a6a3a5a9a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "H. JAY",
+          "entraineur": "MARTIAL GAUVIN"
+        },
+        {
+          "numero": 7,
+          "nom": "JURDIG LESMELCHEN",
+          "musique": "Da3a5aDa1a4a7aDa3aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle S. BLANCHETIERE",
+          "entraineur": "TH. BONNARDEL"
+        },
+        {
+          "numero": 8,
+          "nom": "KELLE ILE LILA",
+          "musique": "6aDa9a8aDa3aDa3a(25)6a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mme L. CURY",
+          "entraineur": "L. BROUST"
+        },
+        {
+          "numero": 9,
+          "nom": "KOSMIC NOW",
+          "musique": "Da9a0a0aDaDa5a7a0a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "R.F. PERRET",
+          "entraineur": "B. FEDRY"
+        },
+        {
+          "numero": 10,
+          "nom": "KALINKA KOP",
+          "musique": "5mDa0aDm9a4m5a8a0a0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "S. ZEGHOUANI",
+          "entraineur": "S. JAMARD"
+        },
+        {
+          "numero": 11,
+          "nom": "KIMBRA DJOC",
+          "musique": "Da9a5a3a4a4aDa9aDa(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle M. GOBET",
+          "entraineur": "G. RAFFESTIN"
+        },
+        {
+          "numero": 12,
+          "nom": "KARLITO SCOTT",
+          "musique": "3a0aDa8a4aDa2aDaDa5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. FAVIER",
+          "entraineur": "O. MERLE"
+        },
+        {
+          "numero": 13,
+          "nom": "JASMIN DE VINDECY",
+          "musique": "7a5a2a5a6a8a0a0a0a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. BLANCHARD",
+          "entraineur": "R. BERUJAT"
+        },
+        {
+          "numero": 14,
+          "nom": "JOLIE ARCTIC",
+          "musique": "8a6aDa9a5a0a4a4a0a6a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M.M. MUTEL",
+          "entraineur": "Sté. Ent. Quentin DAOUGABEL"
+        }
+      ],
+      "nombre_partants": 14,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 3,
+      "course": 2,
+      "hippodrome": "LYON-PARILLY",
+      "nom": "PRIX DE LA MOSELLE",
+      "depart_ms": 1793098260000,
+      "discipline": "MONTE",
+      "distance": 2850.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "LISE DE LA MARFEE",
+          "musique": "7aDaDa9a6a0a8aDa9a9a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle M. HEYMANS",
+          "entraineur": "G. ALAINE"
+        },
+        {
+          "numero": 2,
+          "nom": "LARGO D'AVIGNERE",
+          "musique": "7a0aDaDa0a9a3a6aDa(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A.P. GIRAUD",
+          "entraineur": "J. CUOQ"
+        },
+        {
+          "numero": 3,
+          "nom": "LOVERGIRL POWER",
+          "musique": "0a6aDaAa0aDaDa(25)8a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D.A. HAON",
+          "entraineur": "Mme Jennifer VALETTE"
+        },
+        {
+          "numero": 4,
+          "nom": "MANON DU LEARD",
+          "musique": "1mDmDmDm4m7mDm4m6m(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. BARRIER",
+          "entraineur": "A.PH. GRIMAULT"
+        },
+        {
+          "numero": 5,
+          "nom": "MOLLY FLIGNY",
+          "musique": "1mDmDa2m1mDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Q. SEGUIN",
+          "entraineur": "J.M. ROUBAUD"
+        },
+        {
+          "numero": 6,
+          "nom": "LASCAR DE YOR",
+          "musique": "0a(25)2m4a5a5a6aDa0a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle M. DUCRE",
+          "entraineur": "J.M. GAUDIN"
+        },
+        {
+          "numero": 7,
+          "nom": "LOOSER ROMO",
+          "musique": "0a5a8a9a6a0a8a0a0a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. BROUST",
+          "entraineur": "L. BROUST"
+        },
+        {
+          "numero": 8,
+          "nom": "LA GASTINE",
+          "musique": "0a8aDa4m3mDm8a1a(25)Dm",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. COLLETTE",
+          "entraineur": "C. GODARD"
+        },
+        {
+          "numero": 9,
+          "nom": "LIBERO DE LOU",
+          "musique": "Da0a6m0a0aDa8a8a0a0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle F. MOULIN",
+          "entraineur": "Mlle F. MOULIN"
+        },
+        {
+          "numero": 10,
+          "nom": "MAESTRO DES GIRES",
+          "musique": "9m9mDm2m6m5mDa2mDm(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle E. CALLIER",
+          "entraineur": "Joris FILOGRASSO"
+        },
+        {
+          "numero": 11,
+          "nom": "MICHIGAN",
+          "musique": "2m8mDmDm1mDm(25)5m3m3m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ALEXANDRE BODIN",
+          "entraineur": "CH. MOTTIER"
+        },
+        {
+          "numero": 12,
+          "nom": "LIBRE D'EMOTION",
+          "musique": "Da8a0a2a7a8a6a9a(25)4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M. LAFFAY",
+          "entraineur": "G. RAFFESTIN"
+        },
+        {
+          "numero": 13,
+          "nom": "MINNIE WIND",
+          "musique": "3m4m3m1m1m1m(25)7m3mDm",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J. FERRON",
+          "entraineur": "CH. MOTTIER"
+        },
+        {
+          "numero": 14,
+          "nom": "LUTHIER",
+          "musique": "4m0a8mDa4m2m5m7a9m9a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle A. TOURON HERRY",
+          "entraineur": "G. TOURON"
+        },
+        {
+          "numero": 15,
+          "nom": "MAGYC BERRY",
+          "musique": "7m6m8mDa4m5m(25)4m0aDm",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. CHAUVE-LAFFAY",
+          "entraineur": "Joris FILOGRASSO"
+        }
+      ],
+      "nombre_partants": 15,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 3,
+      "course": 3,
+      "hippodrome": "LYON-PARILLY",
+      "nom": "PRIX DU BEAUVAISIS",
+      "depart_ms": 1793100180000,
+      "discipline": "ATTELE",
+      "distance": 2850.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "NOUBA DES GOUJONS",
+          "musique": "Da",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J.M. GAUDIN",
+          "entraineur": "J.M. GAUDIN"
+        },
+        {
+          "numero": 2,
+          "nom": "NECTAR DE FAEL",
+          "musique": "DaDaDa4aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P. REPICHET",
+          "entraineur": "P. REPICHET"
+        },
+        {
+          "numero": 3,
+          "nom": "NELLY JAC",
+          "musique": "9aDa3a3a6aDa5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "MARTIAL GAUVIN",
+          "entraineur": "MARTIAL GAUVIN"
+        },
+        {
+          "numero": 4,
+          "nom": "NEVER GIVE UP",
+          "musique": "0aDaDm9a9aDaDaDa2aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M. DUJMIC",
+          "entraineur": "M. DUJMIC"
+        },
+        {
+          "numero": 5,
+          "nom": "NEXPRESSO BLEU",
+          "musique": "DaDaDa2a4a4aDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "N. CORMY",
+          "entraineur": "MICKAEL CORMY"
+        },
+        {
+          "numero": 6,
+          "nom": "NAOS CASTELETS",
+          "musique": "6a2aDa5aDaDa3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P. CALLIER",
+          "entraineur": "P. CALLIER"
+        },
+        {
+          "numero": 7,
+          "nom": "NONO LE ROBOT",
+          "musique": "Da2a3a7a4a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "L. LAMAZIERE",
+          "entraineur": "P. CALLIER"
+        },
+        {
+          "numero": 8,
+          "nom": "NASH",
+          "musique": "1a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ALEXANDRE BODIN",
+          "entraineur": "CH. MOTTIER"
+        },
+        {
+          "numero": 9,
+          "nom": "NESTORIUS",
+          "musique": "6a3a1a2aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. BARRIER",
+          "entraineur": "Bastien CLAIRET"
+        },
+        {
+          "numero": 10,
+          "nom": "NATIF DU MANOLET",
+          "musique": "9a5a2aDa6a3aDa5a4a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. BEKAERT",
+          "entraineur": "K. LEBLANC"
+        },
+        {
+          "numero": 11,
+          "nom": "NARDECH DE HOUELLE",
+          "musique": "7aDm5aDa1a5a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. COLLETTE",
+          "entraineur": "K. LEBLANC"
+        },
+        {
+          "numero": 12,
+          "nom": "NOUGATINE VERGNIER",
+          "musique": "Da2mDa4a4m2a4mDaDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. THIENNE",
+          "entraineur": "L. LERENARD"
+        },
+        {
+          "numero": 13,
+          "nom": "NOBLESSE DU GERS",
+          "musique": "5a3a1a5a7a2a4aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "S. STEFANO",
+          "entraineur": "G. TOURON"
+        },
+        {
+          "numero": 14,
+          "nom": "NASHVILLE DREAM",
+          "musique": "1aAa4a2a4aDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "TH. BRIAND",
+          "entraineur": "Sté. Ent. Théo BRIAND"
+        },
+        {
+          "numero": 15,
+          "nom": "NOVERRIO",
+          "musique": "5a6aDa1aDa4a(25)6a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. TINTILLIER",
+          "entraineur": "Sté. Ent. Anthony TINTILLIER"
+        },
+        {
+          "numero": 16,
+          "nom": "NORFOLK DE TILLARD",
+          "musique": "3a6a3a4a2a5aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "X. BOVAY",
+          "entraineur": "M.A. BOVAY"
+        }
+      ],
+      "nombre_partants": 16,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 3,
+      "course": 4,
+      "hippodrome": "LYON-PARILLY",
+      "nom": "PRIX DU CHAMPSAUR",
+      "depart_ms": 1793102100000,
+      "discipline": "ATTELE",
+      "distance": 2600.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "MAMY BLUE TIT",
+          "musique": "8a8a1a5a7a4a1a1a(25)8a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "L. LAMAZIERE",
+          "entraineur": "L. LAMAZIERE"
+        },
+        {
+          "numero": 2,
+          "nom": "MALOUINES QUESNOT",
+          "musique": "5mDa1aDaDa3a1a6m5m1m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. LAY POTTIER",
+          "entraineur": "M. SASSIER"
+        },
+        {
+          "numero": 3,
+          "nom": "MELIA DE MONGOCHY",
+          "musique": "9a6a8a3a1a4a4a4aDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ALEXANDRE BODIN",
+          "entraineur": "G. TOURON"
+        },
+        {
+          "numero": 4,
+          "nom": "MORGANE DE HOERDT",
+          "musique": "7a0a9a3a1a(25)0aDa1a6a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "TH. BRIAND",
+          "entraineur": "F. JUNG"
+        },
+        {
+          "numero": 5,
+          "nom": "MANDARINE",
+          "musique": "7a1a5a2a2a2a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "LORENZO TALPO",
+          "entraineur": "M. BARBINI"
+        },
+        {
+          "numero": 6,
+          "nom": "MAJESTIK D'AMOUR",
+          "musique": "6a8aDa7a5a2a1a2a(25)6a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. COLLETTE",
+          "entraineur": "K. LEBLANC"
+        },
+        {
+          "numero": 7,
+          "nom": "MAREVA",
+          "musique": "DaDm5aDa7a1a5aDa4a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J. CUOQ",
+          "entraineur": "J. CUOQ"
+        },
+        {
+          "numero": 8,
+          "nom": "MESTA ATALANTE",
+          "musique": "8a7a8a7aAa1a6aDa7a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. TINTILLIER",
+          "entraineur": "Sté. Ent. Anthony TINTILLIER"
+        },
+        {
+          "numero": 9,
+          "nom": "MUSE LIGERIENNE",
+          "musique": "2a4a6a3a4a4a9a6a2a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. NAKACHE",
+          "entraineur": "G. NAKACHE"
+        },
+        {
+          "numero": 10,
+          "nom": "MISS SAGA",
+          "musique": "5aDa9aDa3a3a4a5a1a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "S. STEFANO",
+          "entraineur": "J.M. BOUVARD"
+        },
+        {
+          "numero": 11,
+          "nom": "MATHILDA PIYA",
+          "musique": "Da1a4aDa2a6a(25)4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "N. CORMY",
+          "entraineur": "MICKAEL CORMY"
+        },
+        {
+          "numero": 12,
+          "nom": "MISS DE TREMONT",
+          "musique": "5a3a2a2a1a2a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. BARRIER",
+          "entraineur": "A.PH. GRIMAULT"
+        },
+        {
+          "numero": 13,
+          "nom": "MIAMI DES BROUETS",
+          "musique": "0a1a9aDa4a2a2a3a1a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. RUET",
+          "entraineur": "G. RAFFESTIN"
+        },
+        {
+          "numero": 14,
+          "nom": "MARQUISE JISCE",
+          "musique": "6a1a3a3a3a3a(25)2a4a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. BEKAERT",
+          "entraineur": "A. BONNEFOY"
+        },
+        {
+          "numero": 15,
+          "nom": "MARANELLA",
+          "musique": "2a3aDa4a3m6a0a9a(25)2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. BESCHER",
+          "entraineur": "M. SASSIER"
+        },
+        {
+          "numero": 16,
+          "nom": "MADISON DE JOUDES",
+          "musique": "Da0aDa1a3a5a9a(25)Da6m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P. CALLIER",
+          "entraineur": "G. LAURENT"
+        }
+      ],
+      "nombre_partants": 16,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 3,
+      "course": 5,
+      "hippodrome": "LYON-PARILLY",
+      "nom": "PRIX DE LA CLAYETTE",
+      "depart_ms": 1793104020000,
+      "discipline": "ATTELE",
+      "distance": 2600.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "MOVING QUICK",
+          "musique": "0a1a5a0a6a5a6aAa1a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "TH. BRIAND",
+          "entraineur": "TH. RAFFEGEAU"
+        },
+        {
+          "numero": 2,
+          "nom": "MISTER LA NUIT",
+          "musique": "9a6a3a3aDa1a6aDa2a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. DE JESUS",
+          "entraineur": "S. BOURLIER"
+        },
+        {
+          "numero": 3,
+          "nom": "MICHIGAN HAWK",
+          "musique": "7a7a7aDa5a5a4a7a5aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "L. GARCIA",
+          "entraineur": "L. GARCIA"
+        },
+        {
+          "numero": 4,
+          "nom": "MIMO DU MESNIL",
+          "musique": "1a5a5a5a7a3a4aDa5aDm",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. GUERINEAU",
+          "entraineur": "A. RIPOLL RIGO"
+        },
+        {
+          "numero": 5,
+          "nom": "MENJOY QUICK",
+          "musique": "6aDa6a6a2a3a2a3a5a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ALEXANDRE BODIN",
+          "entraineur": "TH. RAFFEGEAU"
+        },
+        {
+          "numero": 6,
+          "nom": "MYTHE DU GOUTIER",
+          "musique": "0a8a4a5aDm8a(25)7a3a6a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. BARRIER",
+          "entraineur": "SEBASTIEN TRIBOURDEAU"
+        },
+        {
+          "numero": 7,
+          "nom": "MY WAY DE QUELETTE",
+          "musique": "3a2a2a1a5a7aDa3a0a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "CH. MARTENS",
+          "entraineur": "V. MARTENS"
+        },
+        {
+          "numero": 8,
+          "nom": "MY LOVE PANAME",
+          "musique": "Da3aDa5a1aDa6aDa(25)5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. BONNEFOY",
+          "entraineur": "A. BONNEFOY"
+        },
+        {
+          "numero": 9,
+          "nom": "MONSEIGNEUR",
+          "musique": "1a2a9a(25)6a5a6a6a3a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. TINTILLIER",
+          "entraineur": "Sté. Ent. Anthony TINTILLIER"
+        },
+        {
+          "numero": 10,
+          "nom": "MERINDOL",
+          "musique": "Da2aDa3a8mDa(25)Da5a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "L. LAMAZIERE",
+          "entraineur": "L. LAMAZIERE"
+        },
+        {
+          "numero": 11,
+          "nom": "MIDNIGHT SUN",
+          "musique": "6a5a7a(25)5a1aDa1a1a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. COLLETTE",
+          "entraineur": "J. WESTHOLM"
+        },
+        {
+          "numero": 12,
+          "nom": "MY MILLION D'ANSY",
+          "musique": "4m2m6a4a3a1a7a6a(25)Da",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. BEKAERT",
+          "entraineur": "K. LEBLANC"
+        },
+        {
+          "numero": 13,
+          "nom": "MAJIRO KALOUMA",
+          "musique": "0a8a2a0a8a7a(25)2a3a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G.A. POU POU",
+          "entraineur": "G.A. POU POU"
+        }
+      ],
+      "nombre_partants": 13,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 3,
+      "course": 6,
+      "hippodrome": "LYON-PARILLY",
+      "nom": "PRIX DE L'ESSONNE",
+      "depart_ms": 1793106720000,
+      "discipline": "ATTELE",
+      "distance": 2600.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "KAPOOR D'OLMEN",
+          "musique": "Da1aDa2aDa5a(25)8aDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "CH. MARTENS",
+          "entraineur": "V. MARTENS"
+        },
+        {
+          "numero": 2,
+          "nom": "KABYLIE DES EDEL",
+          "musique": "9a0a1a4a9aDa2a8a5a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P. REPICHET",
+          "entraineur": "P. REPICHET"
+        },
+        {
+          "numero": 3,
+          "nom": "KAPITEN DU MELEUC",
+          "musique": "Dm7a0a7a4aDa6a7aDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G.A. POU POU",
+          "entraineur": "G.A. POU POU"
+        },
+        {
+          "numero": 4,
+          "nom": "KADOLE JULOUROZO",
+          "musique": "7a3a2a1aDaDaDa9a(25)3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. BARRIER",
+          "entraineur": "A.PH. GRIMAULT"
+        },
+        {
+          "numero": 5,
+          "nom": "KOKTAIL LUDOIS",
+          "musique": "1a1a7a3a8a9a1a5aDm0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. DE JESUS",
+          "entraineur": "S. BOURLIER"
+        },
+        {
+          "numero": 6,
+          "nom": "KENNY NELGER",
+          "musique": "0aDa4a7aDa0aDa2aDa7m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ALEXANDRE BODIN",
+          "entraineur": "TH. RAFFEGEAU"
+        },
+        {
+          "numero": 7,
+          "nom": "KANTARELLINA CHIC",
+          "musique": "8m7a7aDa4a5a3a(25)9aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. RUET",
+          "entraineur": "Mlle J. TRIOMPHE"
+        },
+        {
+          "numero": 8,
+          "nom": "KARAMBA KARACHO",
+          "musique": "DaDaDaDaDa4a5a4aDa3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M. VAN DOOYEWEERD",
+          "entraineur": "Mario VAN DOOYEWEERD"
+        },
+        {
+          "numero": 9,
+          "nom": "KRONOS DE BUSSET",
+          "musique": "Da7a7a8a7a5mDa7aDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. BOUYER",
+          "entraineur": "E. BOUYER"
+        },
+        {
+          "numero": 10,
+          "nom": "KAMERIC",
+          "musique": "DmDa3m9aDa6aDa2a(25)0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "L. LAMAZIERE",
+          "entraineur": "L. LAMAZIERE"
+        },
+        {
+          "numero": 11,
+          "nom": "KOTKITA",
+          "musique": "1aDaDa5aDaDaDaDa6a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. BEKAERT",
+          "entraineur": "M. BONNEFOY"
+        },
+        {
+          "numero": 12,
+          "nom": "KARAOKE",
+          "musique": "8a2aDa6a3a2a(25)0a4a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. NAKACHE",
+          "entraineur": "G. NAKACHE"
+        },
+        {
+          "numero": 13,
+          "nom": "KARLTON DE JOUX",
+          "musique": "6aDaDa3a3a(25)1a2a1a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "TH. BRIAND",
+          "entraineur": "J.PH. DUCHER"
+        },
+        {
+          "numero": 14,
+          "nom": "KANTARELLE",
+          "musique": "Da2aDa8a9aDaDa(25)1aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. GIARD",
+          "entraineur": "F. GIARD"
+        },
+        {
+          "numero": 15,
+          "nom": "KID PADDLE",
+          "musique": "DaDa6a4a5aDa1a8a2a8a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. BONNEFOY",
+          "entraineur": "F. BONNEFOY"
+        },
+        {
+          "numero": 16,
+          "nom": "KEN ZAO DE NAPPES",
+          "musique": "8a5a7a2a(25)Da6aDa8a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. CHAUVE-LAFFAY",
+          "entraineur": "H. CHAUVE-LAFFAY"
+        }
+      ],
+      "nombre_partants": 16,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 3,
+      "course": 7,
+      "hippodrome": "LYON-PARILLY",
+      "nom": "PRIX DU DOUBS",
+      "depart_ms": 1793108820000,
+      "discipline": "ATTELE",
+      "distance": 2850.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "LA KIFFANCE MIL",
+          "musique": "0aDa8a6a2a3a7m9a2a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mme C. BRECHAND",
+          "entraineur": "Mme G. HERITIER"
+        },
+        {
+          "numero": 2,
+          "nom": "LECLIF DE CHENOU",
+          "musique": "DaDa3a0a1aDa4a0a4a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. THIENNE",
+          "entraineur": "L. LERENARD"
+        },
+        {
+          "numero": 3,
+          "nom": "LA BRIERE",
+          "musique": "8a3a1aDa5aDaDaDaDa3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "C. TRIBOLET",
+          "entraineur": "MARTIAL GAUVIN"
+        },
+        {
+          "numero": 4,
+          "nom": "LATINO TURGOT",
+          "musique": "8a9a5a8a4a9a3a4a9a8a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "N. CORMY",
+          "entraineur": "MICKAEL CORMY"
+        },
+        {
+          "numero": 5,
+          "nom": "LINEA DE CRENNES",
+          "musique": "8a4a4a6a6a1a8a(25)5a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle C. THONNEL",
+          "entraineur": "P. REPICHET"
+        },
+        {
+          "numero": 6,
+          "nom": "LOCAPO DU BOCAGE",
+          "musique": "Da3a1a5a7a9a7a6a8a9a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle A. TOURON HERRY",
+          "entraineur": "G. TOURON"
+        },
+        {
+          "numero": 7,
+          "nom": "LOULOU DU SABLIER",
+          "musique": "Da7a0a0a5a2a5aDa7a9a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "R. GROSBOT",
+          "entraineur": "B. THOMAS"
+        },
+        {
+          "numero": 8,
+          "nom": "LEADER DE HOUELLE",
+          "musique": "8a(25)0a0a3a2a1a2a5a(24)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. CHARRIE",
+          "entraineur": "K. LEBLANC"
+        },
+        {
+          "numero": 9,
+          "nom": "LADY D'ECAJEUL",
+          "musique": "0a7a(25)1a7a4a6a7a3a(24)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle V. LEMETAYER",
+          "entraineur": "N. LEMETAYER"
+        },
+        {
+          "numero": 10,
+          "nom": "LESPANA DU BOCAGE",
+          "musique": "0aDa1a2a3aDaDaDaDa1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. BESCHER",
+          "entraineur": "M. SASSIER"
+        },
+        {
+          "numero": 11,
+          "nom": "LEADER ATOUT",
+          "musique": "1aDaDaDa5a4a1aDa(25)Da",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. LAY POTTIER",
+          "entraineur": "M. SASSIER"
+        },
+        {
+          "numero": 12,
+          "nom": "LOLLIPOP THE BEST",
+          "musique": "0a9a0a5a8a1a5a6a3a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M. LAFFAY",
+          "entraineur": "G. RAFFESTIN"
+        },
+        {
+          "numero": 13,
+          "nom": "LIA DE LA MORTRIE",
+          "musique": "8a1a1a6a4a3a0a2a1a0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "R. VILAULT",
+          "entraineur": "S.G. DUPONT"
+        },
+        {
+          "numero": 14,
+          "nom": "L'AMBASSADEUR",
+          "musique": "6a1a8aDa9a7a0a8aDa0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "N. CINIER",
+          "entraineur": "L. GARCIA"
+        },
+        {
+          "numero": 15,
+          "nom": "LITTLE CASH",
+          "musique": "4a9a6a1a1a8a1a2a(25)4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "K. ACHARD",
+          "entraineur": "A. RIPOLL RIGO"
+        },
+        {
+          "numero": 16,
+          "nom": "LE BEST MADRIK",
+          "musique": "6a0a(25)8m0m9mDm0a6m2m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle S. AUVRAI",
+          "entraineur": "TH. RAFFEGEAU"
+        }
+      ],
+      "nombre_partants": 16,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 3,
+      "course": 8,
+      "hippodrome": "LYON-PARILLY",
+      "nom": "PRIX DU GARD",
+      "depart_ms": 1793110920000,
+      "discipline": "ATTELE",
+      "distance": 2850.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "GALOPIN DE BIANCA",
+          "musique": "6a7a0a7a8a2a3a6a0a6a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P. CALLIER",
+          "entraineur": "L. LERENARD"
+        },
+        {
+          "numero": 2,
+          "nom": "JEREMY D'AS",
+          "musique": "2a5a1a2a6aDa1a6a7a0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. COLLETTE",
+          "entraineur": "SEBASTIEN TRIBOURDEAU"
+        },
+        {
+          "numero": 3,
+          "nom": "FEU DE REVOLTE",
+          "musique": "Da0aDaDaDaDaDa(25)DaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. RUET",
+          "entraineur": "R. JAJOLET"
+        },
+        {
+          "numero": 4,
+          "nom": "GERONIMO MATICA",
+          "musique": "5a5aDa2a3aDa2a(25)7a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. DE JESUS",
+          "entraineur": "Thibaud DELAPLACE"
+        },
+        {
+          "numero": 5,
+          "nom": "GEDEON DAIRPET",
+          "musique": "9a0a7a0a(25)Da0a2a0a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Y. LAVIGNE",
+          "entraineur": "Y. LAVIGNE"
+        },
+        {
+          "numero": 6,
+          "nom": "INSOLENT SOMOLLI",
+          "musique": "1a4a0a6a1a1a1a3a7a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "K. DEVIENNE",
+          "entraineur": "J.M. ROUBAUD"
+        },
+        {
+          "numero": 7,
+          "nom": "IMPERIAL KEY",
+          "musique": "7a0m4m2m1m6m2m(25)1m2m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J. CUOQ",
+          "entraineur": "J. CUOQ"
+        },
+        {
+          "numero": 8,
+          "nom": "JITANE VALLEE",
+          "musique": "3a3a1a2a2a3a1a3a6a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "TH. BRIAND",
+          "entraineur": "PH. GAILLARD"
+        },
+        {
+          "numero": 9,
+          "nom": "INDIGO PIERJI",
+          "musique": "Da0a5a3aDa0a7aDa0a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "S. STEFANO",
+          "entraineur": "J.M. ROUBAUD"
+        },
+        {
+          "numero": 10,
+          "nom": "IDOLE ELDE",
+          "musique": "4a9a2a1a1a3a4a1a0a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ALEXANDRE BODIN",
+          "entraineur": "N. LEMETAYER"
+        },
+        {
+          "numero": 11,
+          "nom": "JALIMEDE",
+          "musique": "3aDa4aDa3a0a1a1a6a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. BEKAERT",
+          "entraineur": "CH. MIRANDEL"
+        },
+        {
+          "numero": 12,
+          "nom": "GLAMOUR YOMA",
+          "musique": "8a0a0a6a9a8a9a7a4a0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.J. CORDEAU",
+          "entraineur": "P.J. CORDEAU"
+        },
+        {
+          "numero": 13,
+          "nom": "HOLD UP RANAIS",
+          "musique": "Da0a5a5a9m6a9a0a0a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "X. BOVAY",
+          "entraineur": "M.A. BOVAY"
+        },
+        {
+          "numero": 14,
+          "nom": "IMPERIAL BEJI",
+          "musique": "0a2a2a1a1a1a0a5a(25)3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. BARRIER",
+          "entraineur": "S.G. DUPONT"
+        }
+      ],
+      "nombre_partants": 14,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 4,
+      "course": 1,
+      "hippodrome": "VINCENNES",
+      "nom": "PRIX DE MORLAIX",
+      "depart_ms": 1793113020000,
+      "discipline": "ATTELE",
+      "distance": 2700.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "MY CHARMING",
+          "musique": "8a0a8a5a(25)Da1a4a6a6a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "K. LEBLANC",
+          "entraineur": "K. LEBLANC"
+        },
+        {
+          "numero": 2,
+          "nom": "MARQUISE DELACOUR",
+          "musique": "4a7a3a3a4a2a4a2a4a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. LAGADEUC",
+          "entraineur": "S. TESSIER"
+        },
+        {
+          "numero": 3,
+          "nom": "MAJESTIC LADY",
+          "musique": "3a1a1a1a2a5a4a4aDa5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. NIVARD",
+          "entraineur": "J. PLANCHARD"
+        },
+        {
+          "numero": 4,
+          "nom": "MY FAVORITE THINGS",
+          "musique": "Da3a2a8a2a1a3a7a(25)0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J. VANMEERBECK",
+          "entraineur": "Sté. Ent. Jonathan VANMEERBECK"
+        },
+        {
+          "numero": 5,
+          "nom": "MA ROSE DE SARTHE",
+          "musique": "4a3aDa6a7a1a(25)1a8a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "CHRISTOPHER CORBINEAU",
+          "entraineur": "K. CHAMPENOIS"
+        },
+        {
+          "numero": 6,
+          "nom": "MALAGA TURGOT",
+          "musique": "2a2a3aDaDa2a6a0a5a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J.ET. ABRIVARD",
+          "entraineur": "M. ABRIVARD"
+        },
+        {
+          "numero": 7,
+          "nom": "MONALYSA DU ROEN",
+          "musique": "7m5mDm7m0a(25)8m7m7m3m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. HARDY",
+          "entraineur": "S. HARDY"
+        },
+        {
+          "numero": 8,
+          "nom": "MAUNY DE PLAY",
+          "musique": "3aDmDa6a4a4a5a4a4a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. GELORMINI",
+          "entraineur": "A. HENARD"
+        },
+        {
+          "numero": 9,
+          "nom": "MOSTRA DU TRIO",
+          "musique": "1a4a0a3a3a6a5a1a3a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. D'HAENENS",
+          "entraineur": "TH. LAMARE"
+        },
+        {
+          "numero": 10,
+          "nom": "MY LADY DE CAHOT",
+          "musique": "7aDa1a6aDa1aDaDaDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. OUVRIE",
+          "entraineur": "Ch. NICOLE"
+        },
+        {
+          "numero": 11,
+          "nom": "MADEMOISELLE JOLIE",
+          "musique": "Da3a1a6a(25)Da3aDa2a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. ROCHARD",
+          "entraineur": "P.Edouard MARY"
+        },
+        {
+          "numero": 12,
+          "nom": "MAYWENN DU GUERET",
+          "musique": "0a6a8a2a1a6a1a1a(25)Da",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. RAFFIN",
+          "entraineur": "A. HUREAU"
+        },
+        {
+          "numero": 13,
+          "nom": "MADEMOISELLE ROSE",
+          "musique": "1a4a2a4a3a4a2aDa3a0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "S. HARDY",
+          "entraineur": "S. HARDY"
+        },
+        {
+          "numero": 14,
+          "nom": "MONA LISA GEDE",
+          "musique": "9a7a1a6a5a3aDaDa2a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. PILLON",
+          "entraineur": "A. PILLON"
+        },
+        {
+          "numero": 15,
+          "nom": "MONA LE LOUP",
+          "musique": "1a9a6a2a2a5a4a1a2a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. ABRIVARD",
+          "entraineur": "K. VAN CRAEIJNEST"
+        },
+        {
+          "numero": 16,
+          "nom": "MERVEILLE DAB",
+          "musique": "4a4a8a9aDa3a1a3aDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "R. DERIEUX",
+          "entraineur": "Nils PACHA"
+        },
+        {
+          "numero": 17,
+          "nom": "MANGUE",
+          "musique": "8a2a4a2a1a1a(25)5a4a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.Y. VERVA",
+          "entraineur": "J. KOUBICHE"
+        },
+        {
+          "numero": 18,
+          "nom": "MOANA DE WALLIS",
+          "musique": "DaDa1aDaDa3aDaDaDa4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J. VAN DEN PUTTE JR.",
+          "entraineur": "F. GHEKIERE"
+        }
+      ],
+      "nombre_partants": 18,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 4,
+      "course": 2,
+      "hippodrome": "VINCENNES",
+      "nom": "PRIX DE GARDANNE",
+      "depart_ms": 1793115120000,
+      "discipline": "MONTE",
+      "distance": 2700.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "MILLESIME GRIFF",
+          "musique": "DaDm5mDm(25)Da6a6aDm4m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. BONNE",
+          "entraineur": "D. BONNE"
+        },
+        {
+          "numero": 2,
+          "nom": "MIDNIGHT DREAM",
+          "musique": "Dm0aDa(25)Dm6m1m4m3m2m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. LAMY",
+          "entraineur": "Sté. Ent. Matilde HERLEIKSPLASS"
+        },
+        {
+          "numero": 3,
+          "nom": "MAMBO BLANC",
+          "musique": "3mDm4mDm6mDm7mDm1m3m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M. LELIEVRE",
+          "entraineur": "K. LEBLANC"
+        },
+        {
+          "numero": 4,
+          "nom": "MAKAO DE LA BESVRE",
+          "musique": "2mDm1m3m1m3aDaAaDmDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "V. SAUSSAYE",
+          "entraineur": "N. LANGLOIS"
+        },
+        {
+          "numero": 5,
+          "nom": "MAMBO DE LA VALLEE",
+          "musique": "4mDm4mAaDmDmDmDa(25)Dm",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "TH. PELTIER",
+          "entraineur": "CL. FRECELLE"
+        },
+        {
+          "numero": 6,
+          "nom": "MISTIGRI JIBE",
+          "musique": "1m2mDmDmDm2m1m1mDmDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. ABRIVARD",
+          "entraineur": "A.PH. GRIMAULT"
+        },
+        {
+          "numero": 7,
+          "nom": "MELKIOR DE BAILLY",
+          "musique": "6m4m3m8a0aDa4a0a0a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mme T. MATHIAS-MAISONNETTE",
+          "entraineur": "B. BOURGOIN"
+        },
+        {
+          "numero": 8,
+          "nom": "MEWTWO",
+          "musique": "9a8aDa5a4a7a(25)0a7a(24)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. RAFFIN",
+          "entraineur": "W. BIGEON"
+        },
+        {
+          "numero": 9,
+          "nom": "MARC AURELE",
+          "musique": "2a9aDa4a3aDa4aDa1a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. ROCHARD",
+          "entraineur": "T. LE BELLER"
+        },
+        {
+          "numero": 10,
+          "nom": "MERCATO D'OLIVERIE",
+          "musique": "9a(25)Da1mDm3m1m3mDmDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "GUILLAUME MARTIN",
+          "entraineur": "ARNAUD DESMOTTES"
+        },
+        {
+          "numero": 11,
+          "nom": "MODJO CHEF",
+          "musique": "1m2m1m0a0a7a(25)8a7a4m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P. MAUGENDRE-LE MEUR",
+          "entraineur": "Ch. DREUX"
+        },
+        {
+          "numero": 12,
+          "nom": "MISTER CARNOIS",
+          "musique": "Dm8mDmDa5a3m(25)1m1mDm",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle E. DESMIGNEUX",
+          "entraineur": "Mme Emeline DESMIGNEUX"
+        },
+        {
+          "numero": 13,
+          "nom": "MAFIOSO DREAM",
+          "musique": "7a0aDa5a1a0a4a0a(25)0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. GENDROT",
+          "entraineur": "L. PESCHET"
+        },
+        {
+          "numero": 14,
+          "nom": "MALO RENKA",
+          "musique": "5a4a2aDa5a3a5a1a1a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.Y. VERVA",
+          "entraineur": "A.W. BOSSCHA"
+        },
+        {
+          "numero": 15,
+          "nom": "MAXOU DIGEO",
+          "musique": "3mDa7aDm6mDm6m4mDa(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "W. DERSOIR-HABIB",
+          "entraineur": "C. MEGISSIER"
+        }
+      ],
+      "nombre_partants": 15,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 4,
+      "course": 3,
+      "hippodrome": "VINCENNES",
+      "nom": "PRIX DE FORMERIE",
+      "depart_ms": 1793117400000,
+      "discipline": "ATTELE",
+      "distance": 2850.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "LOVE ME JIVE",
+          "musique": "7a7mDa2m0a7m0aDm2a7m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "N. JAULNEAU",
+          "entraineur": "N. JAULNEAU"
+        },
+        {
+          "numero": 2,
+          "nom": "LALE",
+          "musique": "Aa9a3a0a8a9aDa6a9a0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle M. BLOT",
+          "entraineur": "Mme F. BLOT-CARIOT"
+        },
+        {
+          "numero": 3,
+          "nom": "LAURA DE CREPIN",
+          "musique": "5a5a2a6a7aDa1aDa4a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. ROCHARD",
+          "entraineur": "CH. CUILLER"
+        },
+        {
+          "numero": 4,
+          "nom": "OPAL STONE",
+          "musique": "5a5aDa4a3a6a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. GENDROT",
+          "entraineur": "B.J. CREBAS"
+        },
+        {
+          "numero": 5,
+          "nom": "FAN IDOLE LAKSMY",
+          "musique": "4a4a2aDa3a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. ABRIVARD",
+          "entraineur": "L.CL. ABRIVARD"
+        },
+        {
+          "numero": 6,
+          "nom": "LOUISIANA DU DERBY",
+          "musique": "(25)8aDa7aDa1a5a4a1a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. LAGADEUC",
+          "entraineur": "B. GOGLIN"
+        },
+        {
+          "numero": 7,
+          "nom": "FITNESS GRIF",
+          "musique": "Da3a7a4a5a9aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. RAFFIN",
+          "entraineur": "Vitale CIOTOLA"
+        },
+        {
+          "numero": 8,
+          "nom": "LISA MI FOR CLARA",
+          "musique": "3m4mDaDa6aDa6mDmDm(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "N. BAZIRE",
+          "entraineur": "A. GOUGEON"
+        },
+        {
+          "numero": 9,
+          "nom": "L'IDOLE DRY",
+          "musique": "4aDaDaDaDa1a2a1aDa9a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "CEDRIC TERRY",
+          "entraineur": "F. TERRY"
+        },
+        {
+          "numero": 10,
+          "nom": "LEGENDE CHENEVIERE",
+          "musique": "2aDa1a5a4a3a1a6aAaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "L. GABORIT",
+          "entraineur": "L. GABORIT"
+        },
+        {
+          "numero": 11,
+          "nom": "LA BELLE VIE",
+          "musique": "2a2a5a2a5a8a0a8a5a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. BONNE",
+          "entraineur": "J.PH. DUBOIS"
+        },
+        {
+          "numero": 12,
+          "nom": "L'ABEILLE DU DOME",
+          "musique": "Da1a5a5a2a3a7a(25)3a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "S. OLIVIER",
+          "entraineur": "PH. DAUGEARD"
+        },
+        {
+          "numero": 13,
+          "nom": "LADY D'ELFE",
+          "musique": "1a7a1a4a0a5aDa6aDa3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. GELORMINI",
+          "entraineur": "Mlle M. NORBERG"
+        },
+        {
+          "numero": 14,
+          "nom": "LAZULITE GEDE",
+          "musique": "2a9a1a3a3a4aDaDa8a8a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. PILLON",
+          "entraineur": "A. PILLON"
+        },
+        {
+          "numero": 15,
+          "nom": "LINEA DE L'ALBA",
+          "musique": "6a9a9a6a2a3a0a7a7a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.Y. VERVA",
+          "entraineur": "Renaud JULIEN"
+        }
+      ],
+      "nombre_partants": 15,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 4,
+      "course": 4,
+      "hippodrome": "VINCENNES",
+      "nom": "PRIX DE LOUDUN",
+      "depart_ms": 1793119440000,
+      "discipline": "MONTE",
+      "distance": 2700.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "BIG LITTLE MAN",
+          "musique": "3m4mDmDa8a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. GENDROT",
+          "entraineur": "J.B. LEMOINE"
+        },
+        {
+          "numero": 2,
+          "nom": "NICE STEEL",
+          "musique": "1m0a6a3a4a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "GUILLAUME MARTIN",
+          "entraineur": "J. UNTERSTEINER"
+        },
+        {
+          "numero": 3,
+          "nom": "KEPI ROUGE",
+          "musique": "2m3m3m3m3m3m2m0a3m2m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J.Y. RICART",
+          "entraineur": "Anthony PERRIN"
+        },
+        {
+          "numero": 4,
+          "nom": "KELLY GEDE",
+          "musique": "0a2a0a4a1aDa3a2a6a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "V. SAUSSAYE",
+          "entraineur": "A. PILLON"
+        },
+        {
+          "numero": 5,
+          "nom": "IBILI D'OCCAGNES",
+          "musique": "4mDm7mDm6m7m6mDm(25)Dm",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mme CLEA ROGER",
+          "entraineur": "D. BROHIER"
+        },
+        {
+          "numero": 6,
+          "nom": "KADO SHINING",
+          "musique": "DmDmDmDm1m6m6m6m8m5m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. LAMY",
+          "entraineur": "M. VARIN"
+        },
+        {
+          "numero": 7,
+          "nom": "KIKI AND CO",
+          "musique": "Dm0aDaDm0a3mDmDaDm(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. ABRIVARD",
+          "entraineur": "N. BAZIRE"
+        },
+        {
+          "numero": 8,
+          "nom": "IKITORI",
+          "musique": "8m0a7m7m0m0m0m2m(25)1m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mme CL. VERVA",
+          "entraineur": "Alain ROUSSEL"
+        },
+        {
+          "numero": 9,
+          "nom": "JAMES OF CARLY",
+          "musique": "Dm7mDm5m3m2m4m1m4mDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle E. DESMIGNEUX",
+          "entraineur": "E. VARIN"
+        },
+        {
+          "numero": 10,
+          "nom": "KEMPEL DE GUEZ",
+          "musique": "1m1m1mDmDaDa6a5a3aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. RAFFIN",
+          "entraineur": "N. BAZIRE"
+        },
+        {
+          "numero": 11,
+          "nom": "KENYAN BLUES",
+          "musique": "1mDm0a2m8a2m6m3m3mDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. ROCHARD",
+          "entraineur": "Alexis PRAT"
+        }
+      ],
+      "nombre_partants": 11,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 4,
+      "course": 5,
+      "hippodrome": "VINCENNES",
+      "nom": "PRIX DE NANCY",
+      "depart_ms": 1793121600000,
+      "discipline": "ATTELE",
+      "distance": 2100.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "KOVES DU PONT",
+          "musique": "0a3a4a1a2a2a1a4aDa5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "N. BAZIRE",
+          "entraineur": "N. BAZIRE"
+        },
+        {
+          "numero": 2,
+          "nom": "STARO RAILI",
+          "musique": "4a0a4a3a6a0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. LAGADEUC",
+          "entraineur": "Mme Sofia ARONSSON"
+        },
+        {
+          "numero": 3,
+          "nom": "KHEO VIVANCIERE",
+          "musique": "1a0a8a1a3a1a2a0a4a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. NIVARD",
+          "entraineur": "J. PLANCHARD"
+        },
+        {
+          "numero": 4,
+          "nom": "EL DORADO BAR",
+          "musique": "1a3a1a2aDaDaDa1a1a0a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. ABRIVARD",
+          "entraineur": "L.CL. ABRIVARD"
+        },
+        {
+          "numero": 5,
+          "nom": "PATTON (SWE)",
+          "musique": "1m2a1a1m1a(25)1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. RAFFIN",
+          "entraineur": "Mme Maria TORNQVIST"
+        },
+        {
+          "numero": 6,
+          "nom": "KALISKANA",
+          "musique": "1a0a0aDa0a(25)5a4a0aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. THOMAIN",
+          "entraineur": "M. ABRIVARD"
+        },
+        {
+          "numero": 7,
+          "nom": "NELSON GREENWOOD",
+          "musique": "0a4aDa9a3a3a0a(25)3a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. LOCQUENEUX",
+          "entraineur": "D. LOCQUENEUX"
+        },
+        {
+          "numero": 8,
+          "nom": "KOMERE DE CORDAY",
+          "musique": "0a5a3a6a2a3a2a7a(25)3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ARNAUD DESMOTTES",
+          "entraineur": "ARNAUD DESMOTTES"
+        },
+        {
+          "numero": 9,
+          "nom": "KLASSE DE BRUZEAU",
+          "musique": "2a1a5a2a9a2a5a3a5a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M. LEGROS",
+          "entraineur": "B. MARIE"
+        },
+        {
+          "numero": 10,
+          "nom": "JUBII VANG",
+          "musique": "4a8a9a4a1a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. GELORMINI",
+          "entraineur": "CH. ERIKSSON"
+        },
+        {
+          "numero": 11,
+          "nom": "WAYPOINT SEQUENCE",
+          "musique": "Aa0a4a7a8a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. HORRACH VIDAL",
+          "entraineur": "L. CHARBONNEL"
+        },
+        {
+          "numero": 12,
+          "nom": "KIPHYLE DESBOIS",
+          "musique": "0a6a7a5a0a7a4a7a7a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. ROCHARD",
+          "entraineur": "P.Y. ROCHARD"
+        },
+        {
+          "numero": 13,
+          "nom": "KING LOOK",
+          "musique": "7a1a4a1aAa1a1a3a(25)Da",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "C. MESNIL",
+          "entraineur": "TH. DUVALDESTIN"
+        },
+        {
+          "numero": 14,
+          "nom": "KALINKA DU GRENAT",
+          "musique": "6a5a1a9a8a1aDa6a5a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. OUVRIE",
+          "entraineur": "E. SZIRMAY"
+        },
+        {
+          "numero": 15,
+          "nom": "EMINENT KRONOS",
+          "musique": "9a2a0a1a1a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J. UNTERSTEINER",
+          "entraineur": "J. UNTERSTEINER"
+        },
+        {
+          "numero": 16,
+          "nom": "I CAN WIN GARDENIA",
+          "musique": "6a4a8a3a4a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.Y. VERVA",
+          "entraineur": "J. LORENTZEN"
+        },
+        {
+          "numero": 17,
+          "nom": "RAGAZZA DU CHENE",
+          "musique": "DaDaDa1a6aDa5a5aDa2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. DUPERCHE",
+          "entraineur": "J. LE MER"
+        },
+        {
+          "numero": 18,
+          "nom": "ROCKY MOM",
+          "musique": "1a1a1a3a1a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J. VAN DEN PUTTE JR.",
+          "entraineur": "Mme Celestine CORTY"
+        }
+      ],
+      "nombre_partants": 18,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 4,
+      "course": 6,
+      "hippodrome": "VINCENNES",
+      "nom": "PRIX DES CLEMATITES",
+      "depart_ms": 1793123700000,
+      "discipline": "ATTELE",
+      "distance": 2200.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "OLIU MAG",
+          "musique": "7aDaDa3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. GELORMINI",
+          "entraineur": "B. BOURGOIN"
+        },
+        {
+          "numero": 2,
+          "nom": "OLMETO DU LIAMONE",
+          "musique": "3a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. PRAT",
+          "entraineur": "FREDERIC PRAT"
+        },
+        {
+          "numero": 3,
+          "nom": "ONEY DE MAC",
+          "musique": "7aDa5a2a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. GENDROT",
+          "entraineur": "D. GARCIAS"
+        },
+        {
+          "numero": 4,
+          "nom": "OLTEN SIBEY",
+          "musique": "5aDa3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "R. MARTY",
+          "entraineur": "J.M. BAUDOUIN"
+        },
+        {
+          "numero": 5,
+          "nom": "OUR ARTIST",
+          "musique": "1a9a4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "Mlle M. BLOT",
+          "entraineur": "Mme F. BLOT-CARIOT"
+        },
+        {
+          "numero": 6,
+          "nom": "OH MY GOD ENJOY",
+          "musique": "1a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. THOMAIN",
+          "entraineur": "PH. ALLAIRE"
+        },
+        {
+          "numero": 7,
+          "nom": "ONE DIDO",
+          "musique": "2a3a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. ARMELLINI",
+          "entraineur": "D. ARMELLINI"
+        },
+        {
+          "numero": 8,
+          "nom": "ORION JIEL",
+          "musique": "4a5a2aDa4a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. OUVRIE",
+          "entraineur": "J.L. DERSOIR"
+        },
+        {
+          "numero": 9,
+          "nom": "ORACIO DE LAUNI",
+          "musique": "3aDa2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "CH. NICOLE",
+          "entraineur": "Ch. NICOLE"
+        },
+        {
+          "numero": 10,
+          "nom": "ORION MADRIK",
+          "musique": "DaDa2aDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. ROCHARD",
+          "entraineur": "PH. ALLAIRE"
+        },
+        {
+          "numero": 11,
+          "nom": "OSCAR DES BRUYERES",
+          "musique": "4a1aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. LAGADEUC",
+          "entraineur": "A. GOUGEON"
+        },
+        {
+          "numero": 12,
+          "nom": "OLERON SEVEN",
+          "musique": "3a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "L. BAUDOUIN",
+          "entraineur": "J.M. BAUDOUIN"
+        }
+      ],
+      "nombre_partants": 12,
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 4,
+      "course": 7,
+      "hippodrome": "VINCENNES",
+      "nom": "PRIX ARIADNE",
+      "depart_ms": 1793125620000,
+      "discipline": "ATTELE",
+      "distance": 2850.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "MISS STORY",
+          "musique": "Da6aDaDa4aDa0aDaDaDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. NIVARD",
+          "entraineur": "G.A. POU POU"
+        },
+        {
+          "numero": 2,
+          "nom": "MITSUKI DU BOURG",
+          "musique": "7a3a9a5a6a8a4aDa2aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. LENAIN",
+          "entraineur": "CH.M. BRUNEAU"
+        },
+        {
+          "numero": 3,
+          "nom": "MISTRAL DE LARRE",
+          "musique": "AaDaDa0aDaDa5aDa8aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "CEDRIC TERRY",
+          "entraineur": "S. ROGER"
+        },
+        {
+          "numero": 4,
+          "nom": "MAGNUM DE RATILLY",
+          "musique": "5a4a1a9aDaDaDa8a4a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. GELORMINI",
+          "entraineur": "B. MARIE"
+        },
+        {
+          "numero": 5,
+          "nom": "MALANDRINO",
+          "musique": "7aDa0aDa1aDaDa1a0aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ETIENNE DUBOIS",
+          "entraineur": "Sté. Ent. Etienne DUBOIS"
+        },
+        {
+          "numero": 6,
+          "nom": "MAJOR JENILOU",
+          "musique": "Da9a0a4aDaDa0aDaDa1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "R. DERIEUX",
+          "entraineur": "R. DERIEUX"
+        },
+        {
+          "numero": 7,
+          "nom": "MAEVA DES BAUX",
+          "musique": "Da6a9a0a1a5a2a6a(25)Da",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "P.Y. VERVA",
+          "entraineur": "P.Y. VERVA"
+        },
+        {
+          "numero": 8,
+          "nom": "MAESTRO DE PAGERIE",
+          "musique": "9a3a1aDa0a5a3a2a3a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "M. LEGROS",
+          "entraineur": "B. MARIE"
+        },
+        {
+          "numero": 9,
+          "nom": "MASSILIO BLOND",
+          "musique": "Da3a5a3a8a7a2aDa3a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. HORRACH VIDAL",
+          "entraineur": "Guillermo HORRACH VIDAL"
+        },
+        {
+          "numero": 10,
+          "nom": "MADE IN CASTELETS",
+          "musique": "2a0a7a6a5a7a1a8a3aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "D. THOMAIN",
+          "entraineur": "CH. MIRANDEL"
+        },
+        {
+          "numero": 11,
+          "nom": "MIRABELLE DE LARRE",
+          "musique": "9a9a9a9a7a8a2a9a(25)9a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. OUVRIE",
+          "entraineur": "S. ROGER"
+        },
+        {
+          "numero": 12,
+          "nom": "MULANE DU BOCAGE",
+          "musique": "8m6a0a3a3a6aDa7a3a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ANTHONY DOLLION",
+          "entraineur": "Anthony DOLLION"
+        },
+        {
+          "numero": 13,
+          "nom": "MADINA MESLOISE",
+          "musique": "5m5a5m(25)3m6a5m4aDa3m",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. ABRIVARD",
+          "entraineur": "P. BELLOCHE"
+        },
+        {
+          "numero": 14,
+          "nom": "MOONLIGHT DU RHIN",
+          "musique": "DmDaDaDa5a2aDaDaDa5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. ROCHARD",
+          "entraineur": "B. GOGLIN"
+        },
+        {
+          "numero": 15,
+          "nom": "MERMOZ",
+          "musique": "DaDa5a2a9a4a5a5a3a6a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. RAFFIN",
+          "entraineur": "J.M. BAUDOUIN"
+        },
+        {
+          "numero": 16,
+          "nom": "MELCHIOR JAMES",
+          "musique": "8a8a9a5a2a2a5a5a5a(25)",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "ARNAUD DESMOTTES",
+          "entraineur": "ARNAUD DESMOTTES"
+        }
+      ],
+      "nombre_partants": 16,
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        }
+      ],
+      "statut": "PV"
+    },
+    {
+      "date": "2026-10-27",
+      "reunion": 4,
+      "course": 8,
+      "hippodrome": "VINCENNES",
+      "nom": "PRIX POSIDONIUS",
+      "depart_ms": 1793127540000,
+      "discipline": "ATTELE",
+      "distance": 2100.0,
+      "source": "PMU",
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "NUMBER DU GERS",
+          "musique": "DaDaDa1a1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J.M. BAZIRE",
+          "entraineur": "N. BAZIRE"
+        },
+        {
+          "numero": 2,
+          "nom": "NATIF DE JOUDES",
+          "musique": "4a1aDaDa5aDa4a(25)8a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. RAFFIN",
+          "entraineur": "H.E. BONDO"
+        },
+        {
+          "numero": 3,
+          "nom": "NEOH DAIRPET",
+          "musique": "6a6mDa3m4a6aDaDa(25)9a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "J. VANMEERBECK",
+          "entraineur": "Sté. Ent. Jonathan VANMEERBECK"
+        },
+        {
+          "numero": 4,
+          "nom": "NEW D'URZY",
+          "musique": "2a4a2aDa4a5a4a7a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. NIVARD",
+          "entraineur": "P. DANET"
+        },
+        {
+          "numero": 5,
+          "nom": "NEMROD GEDE",
+          "musique": "6a4aDa7a1aDa(25)5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "A. PILLON",
+          "entraineur": "A. PILLON"
+        },
+        {
+          "numero": 6,
+          "nom": "NEVERS DE BELLANDE",
+          "musique": "5aDa8m6a6a2a6a3a6a2a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "B. ROCHARD",
+          "entraineur": "Sté. Ent. Grégory THOREL"
+        },
+        {
+          "numero": 7,
+          "nom": "NOLAN QUESNOT",
+          "musique": "DaDa5a6aDaDaDaDa5aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "CEDRIC TERRY",
+          "entraineur": "Nils PACHA"
+        },
+        {
+          "numero": 8,
+          "nom": "NELSON DE GUELLE",
+          "musique": "Da1aDa3a5a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "F. LAGADEUC",
+          "entraineur": "M. IZZO"
+        },
+        {
+          "numero": 9,
+          "nom": "NYSKIO SPORT",
+          "musique": "7a4aDa4aDa1a",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "E. ALLARD",
+          "entraineur": "Sté. Ent. Emmanuel ALLARD"
+        },
+        {
+          "numero": 10,
+          "nom": "NUAGE DE JAFRAN",
+          "musique": "3a3aDa4a7a7aDa9aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "CH.J. BIGEON",
+          "entraineur": "CH.J. BIGEON"
+        },
+        {
+          "numero": 11,
+          "nom": "NO EXPECTATIONS",
+          "musique": "4a0a1a9aDa",
+          "gains": 0.0,
+          "non_partant": false,
+          "jockey": "G. GELORMINI",
+          "entraineur": "Raffaele CEPPARULO"
+        }
+      ],
+      "nombre_partants": 11,
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "pari_retenu": null
+        }
+      ],
+      "statut": "PV"
+    }
+  ]
 }
