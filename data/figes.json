@@ -164,5 +164,88 @@
       }
     ],
     "sha256": "8b578412f3eafd3ef265ea59399ba48f918e9a2d2622a52bfec1e19017554782"
+  },
+  "2026-10-27-R1-C8": {
+    "course": "2026-10-27-R1-C8",
+    "fige_a": "2026-10-27T17:44:25.319937+01:00",
+    "depart": "2026-10-27T18:02:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ],
+    "sha256": "0aa9e4d5a449ea88cb26b45b8a606e666a01d7b94f41e254902f73b9d4d4b566"
   }
 }
