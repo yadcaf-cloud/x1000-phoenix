@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """X1000 PHOENIX — M1-M5, FIGES et audits consolides."""
