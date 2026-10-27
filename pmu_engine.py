@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """X1000 PHOENIX - Collecte PMU avec provenance."""
