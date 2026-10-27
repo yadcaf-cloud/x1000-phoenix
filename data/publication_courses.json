@@ -213,7 +213,7 @@
       "depart": "2026-10-27T20:01:00+01:00",
       "nombre_partants": 11,
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C8/participants?specialisation=INTERNET",
-      "statut": "DONNEES_INSUFFISANTES",
+      "statut": "COURSE_DEMARREE",
       "moteurs": []
     }
   ]
