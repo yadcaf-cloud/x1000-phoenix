@@ -1,0 +1,15 @@
+{
+  "logiciel": "X1000 PHOENIX",
+  "heure_paris": "2026-10-27T15:03:12.796754+01:00",
+  "analyse_disponible": true,
+  "course_id": "DEMO-R1-C1",
+  "moteurs": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5"
+  ],
+  "statut": "ANALYSE_DISPONIBLE",
+  "erreur": null
+}

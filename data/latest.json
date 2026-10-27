@@ -1,69 +1,150 @@
 {
-  "status": "🔴 DONNÉES NON VALIDÉES",
-  "generated_at_paris": "2026-10-27T14:20:03+01:00",
+  "course_id": "DEMO-R1-C1",
+  "hippodrome": "DEMONSTRATION",
+  "depart": "2027-01-01T15:00:00+01:00",
+  "source": null,
+  "nombre_partants": 3,
   "moteurs": [
     {
       "moteur": "M1",
-      "course": "DEMO-R1-C1",
-      "gagnant": null,
-      "place": null,
-      "ordre": [],
-      "pari": "AUCUN - analyse indicative",
-      "qualification": "🟡 INCOMPLET",
-      "validation": "🔴 NON VALIDÉ",
-      "heure_paris": "2026-10-27T14:20:03+01:00"
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "gagnant_espere": 2,
+      "meilleur_place": 1,
+      "ordre_espere": [
+        2,
+        1,
+        3
+      ],
+      "pari_retenu": "AUCUN - étude indicative",
+      "scores": [
+        {
+          "numero": 2,
+          "score": 7.75
+        },
+        {
+          "numero": 1,
+          "score": 7.333
+        },
+        {
+          "numero": 3,
+          "score": 7.083
+        }
+      ],
+      "heure_paris": "2026-10-27T15:03:12+01:00"
     },
     {
       "moteur": "M2",
-      "course": "DEMO-R1-C1",
-      "gagnant": null,
-      "place": null,
-      "ordre": [],
-      "pari": "AUCUN - analyse indicative",
-      "qualification": "🟡 INCOMPLET",
-      "validation": "🔴 NON VALIDÉ",
-      "heure_paris": "2026-10-27T14:20:03+01:00"
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "gagnant_espere": 2,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        2,
+        3,
+        1
+      ],
+      "pari_retenu": "AUCUN - étude indicative",
+      "scores": [
+        {
+          "numero": 2,
+          "score": 7.917
+        },
+        {
+          "numero": 3,
+          "score": 7.333
+        },
+        {
+          "numero": 1,
+          "score": 7.25
+        }
+      ],
+      "heure_paris": "2026-10-27T15:03:12+01:00"
     },
     {
       "moteur": "M3",
-      "course": "DEMO-R1-C1",
-      "gagnant": null,
-      "place": null,
-      "ordre": [],
-      "pari": "AUCUN - analyse indicative",
-      "qualification": "🟡 INCOMPLET",
-      "validation": "🔴 NON VALIDÉ",
-      "heure_paris": "2026-10-27T14:20:03+01:00"
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "gagnant_espere": 2,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        2,
+        3,
+        1
+      ],
+      "pari_retenu": "AUCUN - étude indicative",
+      "scores": [
+        {
+          "numero": 2,
+          "score": 7.833
+        },
+        {
+          "numero": 3,
+          "score": 7.667
+        },
+        {
+          "numero": 1,
+          "score": 7.0
+        }
+      ],
+      "heure_paris": "2026-10-27T15:03:12+01:00"
     },
     {
       "moteur": "M4",
-      "course": "DEMO-R1-C1",
-      "gagnant": null,
-      "place": null,
-      "ordre": [],
-      "pari": "AUCUN - analyse indicative",
-      "qualification": "🟡 INCOMPLET",
-      "validation": "🔴 NON VALIDÉ",
-      "heure_paris": "2026-10-27T14:20:03+01:00"
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "gagnant_espere": 2,
+      "meilleur_place": 1,
+      "ordre_espere": [
+        2,
+        1,
+        3
+      ],
+      "pari_retenu": "AUCUN - étude indicative",
+      "scores": [
+        {
+          "numero": 2,
+          "score": 7.667
+        },
+        {
+          "numero": 1,
+          "score": 7.417
+        },
+        {
+          "numero": 3,
+          "score": 7.25
+        }
+      ],
+      "heure_paris": "2026-10-27T15:03:12+01:00"
     },
     {
       "moteur": "M5",
-      "course": "DEMO-R1-C1",
-      "gagnant": null,
-      "place": null,
-      "ordre": [],
-      "pari": "AUCUN - analyse indicative",
-      "qualification": "🟡 INCOMPLET",
-      "validation": "🔴 NON VALIDÉ",
-      "heure_paris": "2026-10-27T14:20:03+01:00"
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "gagnant_espere": 2,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        2,
+        3,
+        1
+      ],
+      "pari_retenu": "AUCUN - étude indicative",
+      "scores": [
+        {
+          "numero": 2,
+          "score": 7.917
+        },
+        {
+          "numero": 3,
+          "score": 7.417
+        },
+        {
+          "numero": 1,
+          "score": 7.083
+        }
+      ],
+      "heure_paris": "2026-10-27T15:03:12+01:00"
     }
   ],
-  "difficultes": [],
-  "pv_count": 0,
-  "figes_count": 0,
-  "audits_count": 0,
-  "source_donnees": null,
-  "mode": "DONNEES_VERIFIEES_UNIQUEMENT",
-  "course_id": "DEMO-R1-C1",
-  "depart": "2027-01-01T15:00:00+01:00"
+  "avertissement": "Scores heuristiques, non probabilités de victoire; aucun pari garanti."
 }
