@@ -1,31 +1,46 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Publication X1000 PHOENIX pour GitHub Pages."""
+"""X1000 PHOENIX - Publication M1-M5 pour GitHub Pages.
 
-import datetime as dt
+Analyse des données disponibles, FIGÉS avant départ,
+procès-verbaux, audits et rapports JSON.
+Aucune donnée hippique manquante n'est inventée.
+"""
+
 import json
-from pathlib import Path
 
 from phoenix import (
-    DATA, PARIS, analyser, auditer, date_paris,
+    DATA, analyser, auditer, date_paris,
     ecrire, figer, identifiant, lire,
     maintenant, verifier_fige
 )
 
+
 def fichiers(dossier):
     return sorted((DATA / dossier).glob("*.json"))
 
+
 def charger_collection(dossier):
     resultat = []
+
     for path in fichiers(dossier):
         try:
             objet = lire(path)
+
             if dossier == "figes":
                 verifier_fige(objet)
+
             resultat.append(objet)
-        except (ValueError, KeyError, TypeError) as e:
-            print(f"Fichier ignoré {path}: {e}")
+
+        except (
+            ValueError, KeyError, TypeError, OSError
+        ) as erreur:
+            print(
+                f"Fichier ignoré {path}: {erreur}"
+            )
+
     return resultat
+
 
 def ajouter_erreur(rapport, message):
     rapport["difficultes"].append({
@@ -33,8 +48,10 @@ def ajouter_erreur(rapport, message):
         "difficulte": str(message)
     })
 
+
 def main():
     instant = maintenant()
+
     rapport = {
         "status": "🟡 EN ATTENTE DE DONNÉES",
         "generated_at_paris": instant.isoformat(),
@@ -47,66 +64,130 @@ def main():
     courses = []
     entree = DATA / "course.json"
 
+    # =========================================
+    # 1. CHARGEMENT ET ANALYSE DE LA COURSE
+    # =========================================
+
     if entree.exists():
         try:
             course = lire(entree)
             cid = str(course.get("id", ""))
 
-            if cid.startswith("DEMO") or not course.get("source"):
+            if (
+                not cid
+                or cid.startswith("DEMO")
+                or not course.get("source")
+            ):
                 ajouter_erreur(
                     rapport,
-                    "Course de démonstration ou source absente"
+                    "Course de démonstration, "
+                    "identifiant ou source absent"
                 )
+
             else:
                 analyse = analyser(course)
-                depart = date_paris(analyse["depart"])
-                rapport["source_donnees"] = analyse["source"]
+                depart = date_paris(
+                    analyse["depart"]
+                )
+
+                rapport["source_donnees"] = (
+                    analyse["source"]
+                )
 
                 chemin = DATA / "figes" / (
                     identifiant(cid) + ".json"
                 )
 
-                complet = all(
-                    m["validation"] == "INDICATIF"
-                    for m in analyse["moteurs"]
+                complet = (
+                    len(analyse["moteurs"]) == 5
+                    and all(
+                        m["validation"] == "INDICATIF"
+                        for m in analyse["moteurs"]
+                    )
                 )
 
                 minutes = (
-                    depart - instant
+                    depart - maintenant()
                 ).total_seconds() / 60
+
+                # =================================
+                # 2. FIGÉ AVANT DÉPART
+                # =================================
 
                 if (
                     not chemin.exists()
                     and complet
                     and 0 < minutes <= 15
                 ):
-                    figer(analyse, chemin, instant)
+                    try:
+                        figer(
+                            analyse,
+                            chemin,
+                            maintenant()
+                        )
+                        print(
+                            f"FIGÉ créé : {cid}"
+                        )
+
+                    except (
+                        ValueError,
+                        FileExistsError,
+                        OSError
+                    ) as erreur:
+                        ajouter_erreur(
+                            rapport,
+                            f"FIGÉ {cid}: {erreur}"
+                        )
+
+                # =================================
+                # 3. VÉRIFICATION DU FIGÉ
+                # =================================
 
                 document = None
+
                 if chemin.exists():
                     document = lire(chemin)
                     verifier_fige(document)
+
+                    if (
+                        document["rapport"]["course_id"]
+                        != cid
+                    ):
+                        raise ValueError(
+                            "FIGÉ associé à une "
+                            "autre course"
+                        )
 
                 base = (
                     document["rapport"]
                     if document else analyse
                 )
 
-                statut = (
-                    "🟢 FIGÉ"
-                    if document else
-                    "🟡 EN ÉTUDE"
-                    if instant < depart and complet else
-                    "🔴 NON VALIDÉ"
-                )
+                if document:
+                    statut = "🟢 FIGÉ"
+
+                elif (
+                    maintenant() < depart
+                    and complet
+                ):
+                    statut = "🟡 EN ÉTUDE"
+
+                else:
+                    statut = "🔴 NON VALIDÉ"
+
+                # =================================
+                # 4. TABLEAU OFFICIEL M1-M5
+                # =================================
 
                 lignes = []
-                for m in base["moteurs"]:
+
+                for moteur in base["moteurs"]:
                     lignes.append({
-                        **m,
+                        **moteur,
                         "validation": (
-                            "FIGE" if document
-                            else m["validation"]
+                            "FIGE"
+                            if document
+                            else moteur["validation"]
                         ),
                         "heure_fige": (
                             document["fige_a"]
@@ -123,49 +204,115 @@ def main():
                     "hippodrome": base["hippodrome"],
                     "depart": base["depart"],
                     "source": base["source"],
-                    "nombre_partants": base["nombre_partants"],
-                    "non_partants": base["non_partants"],
+                    "nombre_partants": (
+                        base["nombre_partants"]
+                    ),
+                    "non_partants": (
+                        base["non_partants"]
+                    ),
                     "statut": statut,
                     "moteurs": lignes
                 })
+
                 rapport["moteurs"] = lignes
                 rapport["course_id"] = cid
                 rapport["status"] = statut
+
+                # =================================
+                # 5. PROCÈS-VERBAL DU FIGÉ
+                # =================================
 
                 if document:
                     chemin_pv = DATA / "pv" / (
                         identifiant(cid) + ".json"
                     )
+
                     if not chemin_pv.exists():
-                        ecrire(chemin_pv, {
-                            "course_id": cid,
-                            "statut": "PV_FIGE",
-                            "fige_a": document["fige_a"],
-                            "sha256": document["sha256"],
-                            "moteurs": lignes
-                        })
+                        ecrire(
+                            chemin_pv,
+                            {
+                                "course_id": cid,
+                                "statut": "PV_FIGE",
+                                "fige_a": (
+                                    document["fige_a"]
+                                ),
+                                "sha256": (
+                                    document["sha256"]
+                                ),
+                                "moteurs": lignes
+                            }
+                        )
 
-        except (ValueError, KeyError, TypeError, OSError) as e:
-            rapport["status"] = "🔴 ERREUR D'ANALYSE"
-            ajouter_erreur(rapport, e)
+        except (
+            ValueError, KeyError,
+            TypeError, OSError
+        ) as erreur:
+            rapport["status"] = (
+                "🔴 ERREUR D'ANALYSE"
+            )
+            ajouter_erreur(
+                rapport,
+                erreur
+            )
+
     else:
-        ajouter_erreur(rapport, "data/course.json absent")
+        ajouter_erreur(
+            rapport,
+            "data/course.json absent"
+        )
 
-    # Auditer uniquement les arrivées fournies et vérifiées.
+    # =========================================
+    # 6. AUDITS APRÈS COURSE
+    # =========================================
+
     for path in fichiers("arrivees"):
         try:
             arrivee = lire(path)
-            cid = identifiant(arrivee["course_id"])
-            chemin_fige = DATA / "figes" / (cid + ".json")
-            chemin_audit = DATA / "audits" / (cid + ".json")
 
-            if chemin_fige.exists() and not chemin_audit.exists():
-                resultat = auditer(
-                    lire(chemin_fige), arrivee
+            cid = identifiant(
+                arrivee["course_id"]
+            )
+
+            chemin_fige = DATA / "figes" / (
+                cid + ".json"
+            )
+
+            chemin_audit = DATA / "audits" / (
+                cid + ".json"
+            )
+
+            if (
+                chemin_fige.exists()
+                and not chemin_audit.exists()
+            ):
+                document = lire(
+                    chemin_fige
                 )
-                ecrire(chemin_audit, resultat)
-        except (ValueError, KeyError, TypeError, OSError) as e:
-            ajouter_erreur(rapport, f"{path.name}: {e}")
+
+                verifier_fige(document)
+
+                resultat = auditer(
+                    document,
+                    arrivee
+                )
+
+                ecrire(
+                    chemin_audit,
+                    resultat
+                )
+
+        except (
+            ValueError, KeyError,
+            TypeError, OSError
+        ) as erreur:
+            ajouter_erreur(
+                rapport,
+                f"{path.name}: {erreur}"
+            )
+
+    # =========================================
+    # 7. CHARGEMENT DES ARCHIVES
+    # =========================================
 
     pv = charger_collection("pv")
     figes = charger_collection("figes")
@@ -176,14 +323,49 @@ def main():
     rapport["audits_count"] = len(audits)
     rapport["courses_count"] = len(courses)
 
-    ecrire(DATA / "courses.json", {"courses": courses})
-    ecrire(DATA / "pv.json", {"pv": pv})
-    ecrire(DATA / "figes.json", {"figes": figes})
-    ecrire(DATA / "audits.json", {"audits": audits})
-    ecrire(DATA / "rapport.json", rapport)
-    ecrire(DATA / "latest.json", rapport)
+    # =========================================
+    # 8. PUBLICATION POUR LE SITE
+    # =========================================
 
-    print(json.dumps(rapport, ensure_ascii=False, indent=2))
+    ecrire(
+        DATA / "courses.json",
+        {"courses": courses}
+    )
+
+    ecrire(
+        DATA / "pv.json",
+        {"pv": pv}
+    )
+
+    ecrire(
+        DATA / "figes.json",
+        {"figes": figes}
+    )
+
+    ecrire(
+        DATA / "audits.json",
+        {"audits": audits}
+    )
+
+    ecrire(
+        DATA / "rapport.json",
+        rapport
+    )
+
+    ecrire(
+        DATA / "latest.json",
+        rapport
+    )
+
+    print(
+        json.dumps(
+            rapport,
+            ensure_ascii=False,
+            indent=2
+        )
+    )
+
 
 if __name__ == "__main__":
     main()
+            
