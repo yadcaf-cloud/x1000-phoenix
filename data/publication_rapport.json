@@ -1,8 +1,8 @@
 {
   "logiciel": "X1000 PHOENIX",
   "version": "PUBLICATION-UNIFIEE-5.0",
-  "status": "DONNEES_INDISPONIBLES",
-  "generated_at_paris": "2026-10-27T23:26:10.382297+01:00",
+  "status": "COURSES_SANS_ANALYSES",
+  "generated_at_paris": "2026-10-27T23:56:42.329140+01:00",
   "moteurs_actifs": [
     "M1",
     "M2",
@@ -11,8 +11,8 @@
     "M5"
   ],
   "source_donnees": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/27102026",
-  "courses_collectees": 0,
-  "courses_count": 0,
+  "courses_collectees": 45,
+  "courses_count": 45,
   "analyses_count": 0,
   "pv_count": 0,
   "figes_count": 0,
@@ -20,183 +20,183 @@
   "difficultes": [
     {
       "moteur": "SYSTEME",
-      "difficulte": "R1C1: Participants non disponibles"
+      "difficulte": "2026-10-27-R1-C1: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R1C2: Participants non disponibles"
+      "difficulte": "2026-10-27-R1-C2: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R1C3: Participants non disponibles"
+      "difficulte": "2026-10-27-R1-C3: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R1C4: Participants non disponibles"
+      "difficulte": "2026-10-27-R1-C4: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R1C5: Participants non disponibles"
+      "difficulte": "2026-10-27-R1-C5: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R1C6: Participants non disponibles"
+      "difficulte": "2026-10-27-R1-C6: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R1C7: Participants non disponibles"
+      "difficulte": "2026-10-27-R1-C7: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R1C8: Participants non disponibles"
+      "difficulte": "2026-10-27-R1-C8: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R2C1: Participants non disponibles"
+      "difficulte": "2026-10-27-R2-C1: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R2C2: Participants non disponibles"
+      "difficulte": "2026-10-27-R2-C2: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R2C3: Participants non disponibles"
+      "difficulte": "2026-10-27-R2-C3: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R2C4: Participants non disponibles"
+      "difficulte": "2026-10-27-R2-C4: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R2C5: Participants non disponibles"
+      "difficulte": "2026-10-27-R2-C5: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R2C6: Participants non disponibles"
+      "difficulte": "2026-10-27-R2-C6: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R2C7: Participants non disponibles"
+      "difficulte": "2026-10-27-R2-C7: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R3C1: Participants non disponibles"
+      "difficulte": "2026-10-27-R3-C1: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R3C2: Participants non disponibles"
+      "difficulte": "2026-10-27-R3-C2: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R3C3: Participants non disponibles"
+      "difficulte": "2026-10-27-R3-C3: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R3C4: Participants non disponibles"
+      "difficulte": "2026-10-27-R3-C4: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R3C5: Participants non disponibles"
+      "difficulte": "2026-10-27-R3-C5: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R3C6: Participants non disponibles"
+      "difficulte": "2026-10-27-R3-C6: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R3C7: Participants non disponibles"
+      "difficulte": "2026-10-27-R3-C7: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R3C8: Participants non disponibles"
+      "difficulte": "2026-10-27-R3-C8: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R4C1: Participants non disponibles"
+      "difficulte": "2026-10-27-R4-C1: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R4C2: Participants non disponibles"
+      "difficulte": "2026-10-27-R4-C2: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R4C3: Participants non disponibles"
+      "difficulte": "2026-10-27-R4-C3: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R4C4: Participants non disponibles"
+      "difficulte": "2026-10-27-R4-C4: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R4C5: Participants non disponibles"
+      "difficulte": "2026-10-27-R4-C5: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R4C6: Participants non disponibles"
+      "difficulte": "2026-10-27-R4-C6: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R4C7: Participants non disponibles"
+      "difficulte": "2026-10-27-R4-C7: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R4C8: Participants non disponibles"
+      "difficulte": "2026-10-27-R4-C8: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R5C1: Participants non disponibles"
+      "difficulte": "2026-10-27-R5-C1: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R5C2: Participants non disponibles"
+      "difficulte": "2026-10-27-R5-C2: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R5C3: Participants non disponibles"
+      "difficulte": "2026-10-27-R5-C3: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R5C4: Participants non disponibles"
+      "difficulte": "2026-10-27-R5-C4: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R5C5: Participants non disponibles"
+      "difficulte": "2026-10-27-R5-C5: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R5C6: Participants non disponibles"
+      "difficulte": "2026-10-27-R5-C6: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R5C7: Participants non disponibles"
+      "difficulte": "2026-10-27-R5-C7: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R5C8: Participants non disponibles"
+      "difficulte": "2026-10-27-R5-C8: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R6C4: Participants non disponibles"
+      "difficulte": "2026-10-27-R6-C4: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R6C5: Participants non disponibles"
+      "difficulte": "2026-10-27-R6-C5: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R6C6: Participants non disponibles"
+      "difficulte": "2026-10-27-R6-C6: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R6C7: Participants non disponibles"
+      "difficulte": "2026-10-27-R6-C7: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R6C8: Participants non disponibles"
+      "difficulte": "2026-10-27-R6-C8: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "R6C9: Participants non disponibles"
+      "difficulte": "2026-10-27-R6-C9: Course deja partie"
     }
   ],
   "avertissement": "Aucune course ou arrivee inventee. FIGES originaux conserves."
