@@ -2,91 +2,112 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#071321">
 <title>🇸🇳🧠🔥 X1000 PHOENIX</title>
 <style>
 :root{
-  --bg:#071321;--panel:#11243a;
-  --line:#304760;--gold:#ffd06a;
-  --blue:#74c7ff;--text:#edf5ff;
-  --muted:#a5b8ce
+  --bg:#071321;
+  --panel:#11243a;
+  --panel2:#172e48;
+  --line:#304760;
+  --text:#edf5ff;
+  --gold:#ffd06a;
+  --blue:#74c7ff;
+  --green:#36df9b;
+  --yellow:#ffcf69;
+  --red:#ff8585;
 }
 *{box-sizing:border-box}
 body{
   margin:0;background:var(--bg);
   color:var(--text);
-  font:15px/1.6 Arial,sans-serif
+  font:15px/1.6 Arial,sans-serif;
 }
 header{
-  text-align:center;padding:28px 14px;
-  background:linear-gradient(135deg,#153b5b,#071321)
+  padding:24px 14px;text-align:center;
+  background:linear-gradient(135deg,#153b5b,#071321);
 }
-h1{color:var(--gold);font-size:28px}
+h1{color:var(--gold);font-size:27px}
 h2{color:var(--blue)}
 h3{color:var(--gold)}
 nav{
-  display:flex;gap:8px;overflow-x:auto;
-  padding:10px;background:#0b1b2d;
-  position:sticky;top:0
+  display:flex;gap:8px;
+  overflow-x:auto;padding:10px;
+  background:#0b1b2d;
+  position:sticky;top:0;z-index:10;
 }
 nav a{
-  white-space:nowrap;color:white;
-  background:#203b59;padding:9px;
-  border-radius:8px;text-decoration:none
+  color:white;background:#203b59;
+  padding:9px;border-radius:8px;
+  text-decoration:none;white-space:nowrap;
 }
-main{max-width:1200px;margin:auto;padding:12px}
-section{
+main{
+  max-width:1200px;
+  margin:auto;padding:12px;
+}
+section,article{
   background:var(--panel);
   border:1px solid var(--line);
   border-radius:14px;
-  padding:16px;margin:14px 0
+  padding:16px;margin:14px 0;
 }
+article{background:var(--panel2)}
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
-  gap:10px
+  grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:10px;
 }
 .metric{
-  padding:15px;background:#172e48;
-  border-radius:10px
+  background:var(--panel2);
+  border-radius:10px;padding:14px;
 }
 .metric strong{
-  display:block;color:var(--gold);
-  font-size:24px
+  display:block;font-size:25px;
+  color:var(--gold);
 }
 .tablewrap{overflow-x:auto}
 table{
-  width:100%;min-width:900px;
-  border-collapse:collapse
+  width:100%;min-width:850px;
+  border-collapse:collapse;
 }
 th,td{
-  padding:10px;border-bottom:1px solid var(--line);
-  text-align:left;vertical-align:top
+  padding:10px;text-align:left;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
 }
-th{color:var(--gold);background:#1c3a59}
+th{
+  color:var(--gold);
+  background:#1c3a59;
+}
 tr:nth-child(even){background:#172e48}
 button{
   background:#315477;color:white;
-  padding:12px;border:0;border-radius:8px;
-  cursor:pointer
+  border:0;border-radius:8px;
+  padding:12px;cursor:pointer;
 }
 a{color:var(--blue)}
-small,.muted{color:var(--muted)}
+small,.muted{color:#a5b8ce}
 pre{
-  white-space:pre-wrap;overflow-wrap:anywhere;
-  background:#09192a;padding:12px;
-  border-radius:9px;max-height:350px;overflow:auto
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+  background:#09192a;
+  padding:12px;border-radius:9px;
+  max-height:450px;overflow:auto;
 }
-footer{text-align:center;padding:25px}
+.vert{color:var(--green)}
+.jaune{color:var(--yellow)}
+.rouge{color:var(--red)}
+footer{text-align:center;padding:24px}
 </style>
 </head>
 <body>
+
 <header>
 <h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
 <h2>INTELLIGENCE HIPPIQUE VIVANTE</h2>
 <p>Cinq moteurs indépendants M1 à M5</p>
-<p id="horloge"></p>
+<p id="horloge">Heure de Paris</p>
 <strong id="etat">🟡 Vérification...</strong>
 </header>
 
@@ -112,18 +133,22 @@ footer{text-align:center;padding:25px}
 <strong id="nbPV">0</strong>PV
 </div>
 <div class="metric">
-<strong id="nbFiges">0</strong>FIGÉS
+<strong id="nbFiges">0</strong>FIGÉS vérifiés
 </div>
 <div class="metric">
 <strong id="nbAudits">0</strong>Audits
 </div>
 </div>
-<p id="actualisation"></p>
-<button onclick="charger()">🔄 Actualiser</button>
+<p id="actualisation">En attente</p>
+<button id="bouton">🔄 Actualiser</button>
 </section>
 
 <section id="courses">
-<h2>🏆 Tableau officiel M1 à M5</h2>
+<h2>🏆 Tableau officiel M1–M5</h2>
+<p class="muted">
+Les classements sont expérimentaux.
+Aucune garantie de gain.
+</p>
 <div id="listeCourses">Chargement...</div>
 </section>
 
@@ -141,15 +166,15 @@ footer{text-align:center;padding:25px}
 </section>
 
 <section id="systeme">
-<h2>⚙️ Automatisation</h2>
+<h2>⚙️ Automatisation GitHub</h2>
 <p>
 <a href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
-target="_blank" rel="noopener">
-Consulter GitHub Actions
+target="_blank" rel="noopener noreferrer">
+Consulter les exécutions GitHub Actions
 </a>
 </p>
 <h3>Journal des difficultés</h3>
-<div id="difficultes"></div>
+<div id="difficultes">En attente</div>
 <h3>Dernier rapport</h3>
 <pre id="rapport">En attente</pre>
 </section>
@@ -158,8 +183,8 @@ Consulter GitHub Actions
 <footer>
 🇸🇳🔥 X1000 PHOENIX — Intelligence vivante
 <p><small>
-Les analyses ne garantissent aucun résultat.
-Aucun pari réel n'est exécuté par ce site.
+Aucun pari réel n'est exécuté.
+Aucun pronostic ne garantit un résultat.
 </small></p>
 </footer>
 
@@ -170,15 +195,22 @@ const el=id=>document.getElementById(id);
 
 function esc(v){
   return String(v??"—").replace(/[&<>"']/g,c=>({
-    "&":"&amp;","<":"&lt;",">":"&gt;",
-    '"':"&quot;","'":"&#39;"
+    "&":"&amp;",
+    "<":"&lt;",
+    ">":"&gt;",
+    '"':"&quot;",
+    "'":"&#39;"
   }[c]));
 }
 
-function dateParis(v){
+function liste(v){
+  return Array.isArray(v)?v:[];
+}
+
+function paris(v){
   if(!v)return "—";
   const d=new Date(v);
-  if(Number.isNaN(d.getTime()))return esc(v);
+  if(Number.isNaN(d.getTime()))return "—";
   return new Intl.DateTimeFormat("fr-FR",{
     timeZone:"Europe/Paris",
     dateStyle:"short",
@@ -186,22 +218,51 @@ function dateParis(v){
   }).format(d);
 }
 
-async function json(path){
-  const url=path+"?v="+Date.now();
-  const response=await fetch(url,{cache:"no-store"});
-  if(!response.ok)throw Error(path+" : HTTP "+response.status);
-  return response.json();
+async function lireJSON(nom){
+  const reponse=await fetch(
+    "data/publication_"+nom+".json?v="+Date.now(),
+    {cache:"no-store"}
+  );
+  if(!reponse.ok){
+    throw Error(nom+" : HTTP "+reponse.status);
+  }
+  return reponse.json();
 }
 
-function tableau(v){
-  return Array.isArray(v)?v:[];
+function couleur(statut){
+  const s=String(statut||"").toUpperCase();
+  if(s.includes("FIGE")||s.includes("VERT"))
+    return "vert";
+  if(s.includes("ERREUR")||s.includes("NON VALIDE"))
+    return "rouge";
+  return "jaune";
 }
 
-function lignesMoteurs(moteurs){
-  const lignes=tableau(moteurs);
-  if(!lignes.length)return "<p>Aucune analyse validée.</p>";
+function tableauMoteurs(moteurs){
+  if(!liste(moteurs).length){
+    return "<p>Aucune analyse disponible.</p>";
+  }
 
-  return `<div class="tablewrap"><table>
+  const lignes=liste(moteurs).map(m=>`
+    <tr>
+      <td>${esc(m.moteur)}</td>
+      <td>${esc(m.gagnant_espere)}</td>
+      <td>${esc(m.meilleur_place)}</td>
+      <td>${esc(liste(m.ordre_espere).join(" - "))}</td>
+      <td>${esc(m.pari_retenu||"AUCUN")}</td>
+      <td class="${couleur(m.qualification)}">
+        ${esc(m.qualification)}
+      </td>
+      <td class="${couleur(m.validation)}">
+        ${esc(m.validation)}
+      </td>
+      <td>${esc(paris(m.heure_paris))}</td>
+    </tr>
+  `).join("");
+
+  return `
+  <div class="tablewrap">
+  <table>
   <thead><tr>
   <th>Moteur</th>
   <th>🥇 Gagnant espéré</th>
@@ -211,160 +272,151 @@ function lignesMoteurs(moteurs){
   <th>Qualification</th>
   <th>Validation</th>
   <th>Heure Paris</th>
-  </tr></thead><tbody>`+
-  lignes.map(m=>`<tr>
-  <td>${esc(m.moteur)}</td>
-  <td>${esc(m.gagnant_espere)}</td>
-  <td>${esc(m.meilleur_place)}</td>
-  <td>${esc(tableau(m.ordre_espere).join(" - "))}</td>
-  <td>${esc(m.pari_retenu)}</td>
-  <td>${esc(m.qualification)}</td>
-  <td>${esc(m.validation)}</td>
-  <td>${esc(dateParis(m.heure_fige||m.heure_paris))}</td>
-  </tr>`).join("")+
-  "</tbody></table></div>";
+  </tr></thead>
+  <tbody>${lignes}</tbody>
+  </table></div>`;
 }
 
 function afficherCourses(courses){
-  const liste=tableau(courses);
-  if(!liste.length){
-    el("listeCourses").textContent=
-      "Aucune course PMU vérifiée disponible.";
-    return;
-  }
-
-  el("listeCourses").innerHTML=liste.map(c=>`
-  <article>
-  <h3>${esc(c.hippodrome)} — ${esc(c.id)}</h3>
-  <p>Départ : ${esc(dateParis(c.depart))}</p>
-  <p>Partants : ${esc(c.nombre_partants)}</p>
-  <p>Statut : ${esc(c.statut)}</p>
-  ${lignesMoteurs(c.moteurs)}
-  </article>`).join("");
+  el("listeCourses").innerHTML=liste(courses).length?
+    liste(courses).map(c=>`
+      <article>
+      <h3>${esc(c.hippodrome)} — ${esc(c.id)}</h3>
+      <p>Départ : ${esc(paris(c.depart))}</p>
+      <p>Partants : ${esc(c.nombre_partants)}</p>
+      <p>Statut : ${esc(c.statut)}</p>
+      <p>Source : ${esc(c.source)}</p>
+      ${tableauMoteurs(c.moteurs)}
+      </article>
+    `).join(""):
+    "<p>Aucune course vérifiée publiée.</p>";
 }
 
 function afficherFiges(figes){
-  const liste=tableau(figes);
-  el("listeFiges").innerHTML=liste.length?
-    liste.map(f=>`
+  el("listeFiges").innerHTML=liste(figes).length?
+    liste(figes).map(f=>`
       <article>
       <h3>${esc(f.rapport?.course_id)}</h3>
-      <p>FIGÉ : ${esc(dateParis(f.fige_a))}</p>
-      <p>Statut : ${esc(f.statut)}</p>
-      <p>SHA256 : <small>${esc(f.sha256)}</small></p>
-      ${lignesMoteurs(f.rapport?.moteurs)}
+      <p class="vert">🔒 FIGÉ AVANT DÉPART</p>
+      <p>Heure : ${esc(paris(f.fige_a))}</p>
+      <p>Empreinte SHA256 :
+      <small>${esc(f.sha256)}</small></p>
+      ${tableauMoteurs(f.rapport?.moteurs)}
       </article>
     `).join(""):
-    "Aucun FIGÉ vérifié publié.";
+    "<p>Aucun FIGÉ vérifié publié.</p>";
 }
 
 function afficherPV(pv){
-  const liste=tableau(pv);
-  el("listePV").innerHTML=liste.length?
-    liste.map(p=>`
+  el("listePV").innerHTML=liste(pv).length?
+    liste(pv).map(p=>`
       <article>
-      <h3>${esc(p.course_id)}</h3>
-      <p>${esc(p.statut)}</p>
-      <p>${esc(dateParis(p.fige_a))}</p>
-      <p>SHA256 : ${esc(p.sha256)}</p>
+      <h3>${esc(p.course_id||p.course)}</h3>
+      <p>Statut : ${esc(p.statut||"EXPERIMENTAL")}</p>
+      <p>Création : ${esc(paris(p.cree_a||p.fige_a))}</p>
+      <p class="muted">
+      Un PV expérimental n'est pas un FIGÉ vérifié.
+      </p>
       </article>
     `).join(""):
-    "Aucun PV disponible.";
+    "<p>Aucun PV disponible.</p>";
 }
 
 function afficherAudits(audits){
-  const liste=tableau(audits);
-  el("listeAudits").innerHTML=liste.length?
-    liste.map(a=>`
+  el("listeAudits").innerHTML=liste(audits).length?
+    liste(audits).map(a=>{
+      const arrivee=a.arrivee_officielle||a.arrivee;
+      return `
       <article>
       <h3>${esc(a.course_id)}</h3>
-      <p>Arrivée : ${esc(tableau(a.arrivee).join(" - "))}</p>
+      <p>Arrivée : ${esc(liste(arrivee).join(" - "))}</p>
       <p>Statut : ${esc(a.statut)}</p>
-      <p>Source : ${esc(a.source)}</p>
-      <div class="tablewrap"><table>
+      <p>Source : ${esc(a.source_arrivee||a.source)}</p>
+      <div class="tablewrap">
+      <table>
       <thead><tr>
-      <th>Moteur</th><th>Gagnant trouvé</th>
+      <th>Moteur</th>
+      <th>Gagnant trouvé</th>
       <th>Chevaux dans les cinq</th>
       <th>Ordre exact</th>
-      </tr></thead><tbody>
-      ${tableau(a.moteurs).map(m=>`<tr>
-      <td>${esc(m.moteur)}</td>
-      <td>${m.gagnant_trouve?"Oui":"Non"}</td>
-      <td>${esc(m.chevaux_dans_les_cinq)}</td>
-      <td>${m.ordre_exact?"Oui":"Non"}</td>
-      </tr>`).join("")}
+      </tr></thead>
+      <tbody>
+      ${liste(a.moteurs).map(m=>`
+        <tr>
+        <td>${esc(m.moteur)}</td>
+        <td>${m.gagnant_trouve===true?"Oui":
+          m.gagnant_trouve===false?"Non":"—"}</td>
+        <td>${esc(m.chevaux_dans_les_cinq)}</td>
+        <td>${m.ordre_exact_cinq===true?"Oui":
+          m.ordre_exact_cinq===false?"Non":"—"}</td>
+        </tr>
+      `).join("")}
       </tbody></table></div>
-      </article>
-    `).join(""):
-    "Aucun audit officiel disponible.";
+      </article>`;
+    }).join(""):
+    "<p>Aucun audit officiel validé publié.</p>";
 }
 
 async function charger(){
-  const chemins=[
-    "data/courses.json",
-    "data/pv.json",
-    "data/figes.json",
-    "data/audits.json",
-    "data/rapport.json"
-  ];
-
-  const reponses=await Promise.allSettled(
-    chemins.map(json)
+  const noms=["courses","pv","figes","audits","rapport"];
+  const resultats=await Promise.allSettled(
+    noms.map(lireJSON)
   );
 
-  const donnees=reponses.map(r=>
+  const valeurs=resultats.map(r=>
     r.status==="fulfilled"?r.value:null
   );
 
-  const [courses,pv,figes,audits,rapport]=donnees;
-  const listeCourses=tableau(courses?.courses);
-  const listePV=tableau(pv?.pv);
-  const listeFiges=tableau(figes?.figes);
-  const listeAudits=tableau(audits?.audits);
+  const [c,p,f,a,r]=valeurs;
+  const courses=liste(c?.courses);
+  const pv=liste(p?.pv);
+  const figes=liste(f?.figes);
+  const audits=liste(a?.audits);
 
-  el("nbCourses").textContent=listeCourses.length;
-  el("nbPV").textContent=listePV.length;
-  el("nbFiges").textContent=listeFiges.length;
-  el("nbAudits").textContent=listeAudits.length;
+  el("nbCourses").textContent=courses.length;
+  el("nbPV").textContent=pv.length;
+  el("nbFiges").textContent=figes.length;
+  el("nbAudits").textContent=audits.length;
 
-  afficherCourses(listeCourses);
-  afficherPV(listePV);
-  afficherFiges(listeFiges);
-  afficherAudits(listeAudits);
+  afficherCourses(courses);
+  afficherPV(pv);
+  afficherFiges(figes);
+  afficherAudits(audits);
 
-  el("etat").textContent=rapport?.status||
+  el("etat").textContent=r?.status||
     "🔴 Rapport indisponible";
 
   el("actualisation").textContent=
-    "Dernier rapport : "+
-    dateParis(rapport?.generated_at_paris);
+    "Dernière publication : "+
+    paris(r?.generated_at_paris);
 
-  el("rapport").textContent=rapport?
-    JSON.stringify(rapport,null,2):
-    "Aucun rapport publié.";
+  el("rapport").textContent=r?
+    JSON.stringify(r,null,2):
+    "Aucun rapport disponible.";
 
-  const erreurs=reponses.flatMap((r,i)=>
-    r.status==="rejected"?
-    [chemins[i]+" : "+r.reason.message]:[]
+  const erreurs=resultats.flatMap((x,i)=>
+    x.status==="rejected"?
+    [noms[i]+" : "+x.reason.message]:[]
   );
 
   const difficultes=[
     ...erreurs,
-    ...tableau(rapport?.difficultes).map(
-      x=>x.difficulte||JSON.stringify(x)
+    ...liste(r?.difficultes).map(x=>
+      x.difficulte||JSON.stringify(x)
     )
   ];
 
   el("difficultes").innerHTML=difficultes.length?
     difficultes.map(x=>"<p>"+esc(x)+"</p>").join(""):
-    "Aucune difficulté signalée.";
+    "<p>Aucune difficulté signalée.</p>";
 }
 
 function horloge(){
   el("horloge").textContent=
-    "🕒 Heure de Paris : "+dateParis(new Date());
+    "🕒 Heure de Paris : "+paris(new Date());
 }
 
+el("bouton").addEventListener("click",charger);
 horloge();
 setInterval(horloge,1000);
 charger();
