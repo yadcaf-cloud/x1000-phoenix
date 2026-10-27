@@ -1,7 +1,14 @@
 {
-  "execution": "2026-10-27T19:40:38.952607+01:00",
+  "logiciel": "X1000 PHOENIX",
   "date": "2026-10-27",
-  "statut": "OK",
+  "execution": "2026-10-27T19:44:33.443858+01:00",
+  "statut": "COLLECTE_OK",
   "courses": 24,
-  "erreurs_courses": 0
+  "erreurs": [],
+  "source": {
+    "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
+    "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
+    "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+    "type": "API_PMU"
+  }
 }

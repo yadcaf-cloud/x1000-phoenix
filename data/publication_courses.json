@@ -1,3 +1,220 @@
 {
-  "courses": []
+  "courses": [
+    {
+      "id": "2026-10-27-R1-C1",
+      "hippodrome": "DEAUVILLE",
+      "depart": "2026-10-27T13:55:00+01:00",
+      "nombre_partants": 16,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C1/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R1-C2",
+      "hippodrome": "DEAUVILLE",
+      "depart": "2026-10-27T14:30:00+01:00",
+      "nombre_partants": 12,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C2/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R1-C3",
+      "hippodrome": "DEAUVILLE",
+      "depart": "2026-10-27T15:05:00+01:00",
+      "nombre_partants": 6,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C3/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R1-C4",
+      "hippodrome": "DEAUVILLE",
+      "depart": "2026-10-27T15:41:00+01:00",
+      "nombre_partants": 10,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C4/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R1-C5",
+      "hippodrome": "DEAUVILLE",
+      "depart": "2026-10-27T16:15:00+01:00",
+      "nombre_partants": 11,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C5/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R1-C6",
+      "hippodrome": "DEAUVILLE",
+      "depart": "2026-10-27T16:50:00+01:00",
+      "nombre_partants": 15,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C6/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R1-C7",
+      "hippodrome": "DEAUVILLE",
+      "depart": "2026-10-27T17:27:00+01:00",
+      "nombre_partants": 15,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C7/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R1-C8",
+      "hippodrome": "DEAUVILLE",
+      "depart": "2026-10-27T18:02:00+01:00",
+      "nombre_partants": 15,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C8/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R3-C1",
+      "hippodrome": "LYON-PARILLY",
+      "depart": "2026-10-27T11:20:00+01:00",
+      "nombre_partants": 14,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C1/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R3-C2",
+      "hippodrome": "LYON-PARILLY",
+      "depart": "2026-10-27T11:51:00+01:00",
+      "nombre_partants": 15,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C2/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R3-C3",
+      "hippodrome": "LYON-PARILLY",
+      "depart": "2026-10-27T12:23:00+01:00",
+      "nombre_partants": 16,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C3/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R3-C4",
+      "hippodrome": "LYON-PARILLY",
+      "depart": "2026-10-27T12:55:00+01:00",
+      "nombre_partants": 16,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C4/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R3-C5",
+      "hippodrome": "LYON-PARILLY",
+      "depart": "2026-10-27T13:27:00+01:00",
+      "nombre_partants": 13,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C5/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R3-C6",
+      "hippodrome": "LYON-PARILLY",
+      "depart": "2026-10-27T14:12:00+01:00",
+      "nombre_partants": 16,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C6/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R3-C7",
+      "hippodrome": "LYON-PARILLY",
+      "depart": "2026-10-27T14:47:00+01:00",
+      "nombre_partants": 16,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C7/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R3-C8",
+      "hippodrome": "LYON-PARILLY",
+      "depart": "2026-10-27T15:22:00+01:00",
+      "nombre_partants": 14,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C8/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R4-C1",
+      "hippodrome": "VINCENNES",
+      "depart": "2026-10-27T15:57:00+01:00",
+      "nombre_partants": 18,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C1/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R4-C2",
+      "hippodrome": "VINCENNES",
+      "depart": "2026-10-27T16:32:00+01:00",
+      "nombre_partants": 15,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C2/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R4-C3",
+      "hippodrome": "VINCENNES",
+      "depart": "2026-10-27T17:10:00+01:00",
+      "nombre_partants": 15,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C3/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R4-C4",
+      "hippodrome": "VINCENNES",
+      "depart": "2026-10-27T17:44:00+01:00",
+      "nombre_partants": 11,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C4/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R4-C5",
+      "hippodrome": "VINCENNES",
+      "depart": "2026-10-27T18:20:00+01:00",
+      "nombre_partants": 18,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C5/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R4-C6",
+      "hippodrome": "VINCENNES",
+      "depart": "2026-10-27T18:55:00+01:00",
+      "nombre_partants": 12,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C6/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R4-C7",
+      "hippodrome": "VINCENNES",
+      "depart": "2026-10-27T19:27:00+01:00",
+      "nombre_partants": 16,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C7/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    },
+    {
+      "id": "2026-10-27-R4-C8",
+      "hippodrome": "VINCENNES",
+      "depart": "2026-10-27T19:59:00+01:00",
+      "nombre_partants": 11,
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C8/participants?specialisation=INTERNET",
+      "statut": "DONNEES_PMU_COLLECTEES_ANALYSE_NON_DISPONIBLE",
+      "moteurs": []
+    }
+  ]
 }
