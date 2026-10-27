@@ -1,0 +1,17 @@
+{
+  "status": "🟡 COURSES CHARGEES",
+  "generated_at_paris": "2026-10-27T19:31:38.245064+01:00",
+  "mode": "DONNEES_SOURCEES_UNIQUEMENT",
+  "difficultes": [
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "Analyse course.json refusee: URL de provenance absente"
+    }
+  ],
+  "source_donnees": null,
+  "moteurs": [],
+  "courses_count": 24,
+  "pv_count": 0,
+  "figes_count": 0,
+  "audits_count": 0
+}

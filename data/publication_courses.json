@@ -1,0 +1,382 @@
+{
+  "courses": [
+    {
+      "id": null,
+      "hippodrome": "DEAUVILLE",
+      "depart": null,
+      "nombre_partants": 16,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "DEAUVILLE",
+      "depart": null,
+      "nombre_partants": 12,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "DEAUVILLE",
+      "depart": null,
+      "nombre_partants": 6,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "DEAUVILLE",
+      "depart": null,
+      "nombre_partants": 10,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "DEAUVILLE",
+      "depart": null,
+      "nombre_partants": 11,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "DEAUVILLE",
+      "depart": null,
+      "nombre_partants": 15,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "DEAUVILLE",
+      "depart": null,
+      "nombre_partants": 15,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "DEAUVILLE",
+      "depart": null,
+      "nombre_partants": 15,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "LYON-PARILLY",
+      "depart": null,
+      "nombre_partants": 14,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "LYON-PARILLY",
+      "depart": null,
+      "nombre_partants": 15,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "LYON-PARILLY",
+      "depart": null,
+      "nombre_partants": 16,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "LYON-PARILLY",
+      "depart": null,
+      "nombre_partants": 16,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "LYON-PARILLY",
+      "depart": null,
+      "nombre_partants": 13,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "LYON-PARILLY",
+      "depart": null,
+      "nombre_partants": 16,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "LYON-PARILLY",
+      "depart": null,
+      "nombre_partants": 16,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "LYON-PARILLY",
+      "depart": null,
+      "nombre_partants": 14,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "VINCENNES",
+      "depart": null,
+      "nombre_partants": 18,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "VINCENNES",
+      "depart": null,
+      "nombre_partants": 15,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "VINCENNES",
+      "depart": null,
+      "nombre_partants": 15,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "VINCENNES",
+      "depart": null,
+      "nombre_partants": 11,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "VINCENNES",
+      "depart": null,
+      "nombre_partants": 18,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "VINCENNES",
+      "depart": null,
+      "nombre_partants": 12,
+      "source": "PMU",
+      "statut": "SANS_PRONOSTIC",
+      "moteurs": []
+    },
+    {
+      "id": null,
+      "hippodrome": "VINCENNES",
+      "depart": null,
+      "nombre_partants": 16,
+      "source": "PMU",
+      "statut": "FIGE",
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 14,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            14,
+            13,
+            15,
+            9,
+            4
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        }
+      ]
+    },
+    {
+      "id": null,
+      "hippodrome": "VINCENNES",
+      "depart": null,
+      "nombre_partants": 11,
+      "source": "PMU",
+      "statut": "PV",
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 1,
+          "meilleur_place": 8,
+          "ordre_espere": [
+            1,
+            8,
+            2,
+            4,
+            5
+          ],
+          "pari_retenu": null,
+          "qualification": "EXPERIMENTAL",
+          "validation": "DONNEES_PARTIELLES",
+          "heure_paris": null
+        }
+      ]
+    }
+  ]
+}
