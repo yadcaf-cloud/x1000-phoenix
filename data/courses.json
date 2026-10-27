@@ -1,10 +1,10 @@
 {
   "date": "2026-10-27",
-  "actualise": "2026-10-27T19:44:39.788446+01:00",
+  "actualise": "2026-10-27T19:45:10.669861+01:00",
   "source_programme": {
     "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-    "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-    "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+    "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+    "collecte_a": "2026-10-27T19:45:06.284888+01:00",
     "type": "API_PMU"
   },
   "courses": [
@@ -154,14 +154,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C1/participants?specialisation=INTERNET",
           "sha256": "a4ac06cc74fbf9d2693b11d54ad2343c3a954483db6a24fee433ed154cf7f456",
-          "collecte_a": "2026-10-27T19:44:34.630631+01:00",
+          "collecte_a": "2026-10-27T19:45:06.472617+01:00",
           "type": "API_PMU"
         }
       }
@@ -280,14 +280,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C2/participants?specialisation=INTERNET",
           "sha256": "1a5ebd15816e9b07f1ffef4c240c3c256808c29da2ab4e004081a597d429131e",
-          "collecte_a": "2026-10-27T19:44:34.757328+01:00",
+          "collecte_a": "2026-10-27T19:45:06.670475+01:00",
           "type": "API_PMU"
         }
       }
@@ -358,14 +358,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C3/participants?specialisation=INTERNET",
           "sha256": "cb6e495c120070f54581c9200a57623b191a237a20dc8d9d89f60be03bc42b21",
-          "collecte_a": "2026-10-27T19:44:35.017223+01:00",
+          "collecte_a": "2026-10-27T19:45:06.804280+01:00",
           "type": "API_PMU"
         }
       }
@@ -468,14 +468,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C4/participants?specialisation=INTERNET",
           "sha256": "6608a3ad31ff0f8913bde71465efa715b0812a4eb17e68985c0f1bcf800473d9",
-          "collecte_a": "2026-10-27T19:44:35.265266+01:00",
+          "collecte_a": "2026-10-27T19:45:06.913256+01:00",
           "type": "API_PMU"
         }
       }
@@ -586,14 +586,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C5/participants?specialisation=INTERNET",
           "sha256": "0b814961e6ce73e9b9ab4c919ed5035ee3ee99bc348d17a441c03303e482af8b",
-          "collecte_a": "2026-10-27T19:44:35.678176+01:00",
+          "collecte_a": "2026-10-27T19:45:07.439596+01:00",
           "type": "API_PMU"
         }
       }
@@ -736,14 +736,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C6/participants?specialisation=INTERNET",
           "sha256": "88f28041a767701c5f5b0cbce25e492b745650687f168e9ac7d64ded4fa10521",
-          "collecte_a": "2026-10-27T19:44:35.887695+01:00",
+          "collecte_a": "2026-10-27T19:45:07.798946+01:00",
           "type": "API_PMU"
         }
       }
@@ -886,14 +886,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C7/participants?specialisation=INTERNET",
           "sha256": "d5e7119c38507d18b1dca9b1a91ea830b16a04612be1918ea6ec2525c90f62c5",
-          "collecte_a": "2026-10-27T19:44:36.126917+01:00",
+          "collecte_a": "2026-10-27T19:45:07.907575+01:00",
           "type": "API_PMU"
         }
       }
@@ -1036,14 +1036,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R1/C8/participants?specialisation=INTERNET",
           "sha256": "94410c78209fc01084a27f83a9f2e023197c21e7fc3639855c1888f39d71a0c2",
-          "collecte_a": "2026-10-27T19:44:36.255804+01:00",
+          "collecte_a": "2026-10-27T19:45:08.208629+01:00",
           "type": "API_PMU"
         }
       }
@@ -1178,14 +1178,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C1/participants?specialisation=INTERNET",
           "sha256": "4fc4b81fc97c0d8e6b3bc96ab37dc3de24fe8f3015882ead157eb6282302bb46",
-          "collecte_a": "2026-10-27T19:44:36.393764+01:00",
+          "collecte_a": "2026-10-27T19:45:08.565681+01:00",
           "type": "API_PMU"
         }
       }
@@ -1328,14 +1328,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C2/participants?specialisation=INTERNET",
           "sha256": "a1dbb5baacead762c3e84dc36a08e20d15c80a3b5761cee7797469dde6f282cb",
-          "collecte_a": "2026-10-27T19:44:36.535536+01:00",
+          "collecte_a": "2026-10-27T19:45:08.682138+01:00",
           "type": "API_PMU"
         }
       }
@@ -1486,14 +1486,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C3/participants?specialisation=INTERNET",
           "sha256": "0e53ad3a92f94948b536ece15376a3cd1ecc25219b71c0c65fa4328085aa5219",
-          "collecte_a": "2026-10-27T19:44:36.671229+01:00",
+          "collecte_a": "2026-10-27T19:45:08.816527+01:00",
           "type": "API_PMU"
         }
       }
@@ -1644,14 +1644,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C4/participants?specialisation=INTERNET",
           "sha256": "b9d16a72e697dc77c87c65e4208e04de274ca3cd30e78e8ff74fae304634df92",
-          "collecte_a": "2026-10-27T19:44:36.902078+01:00",
+          "collecte_a": "2026-10-27T19:45:09.028781+01:00",
           "type": "API_PMU"
         }
       }
@@ -1778,14 +1778,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C5/participants?specialisation=INTERNET",
           "sha256": "94ef4f185e221359695dc308b8e508c7a65bdb80a5da96278529485fc9d3745d",
-          "collecte_a": "2026-10-27T19:44:37.147650+01:00",
+          "collecte_a": "2026-10-27T19:45:09.140969+01:00",
           "type": "API_PMU"
         }
       }
@@ -1936,14 +1936,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C6/participants?specialisation=INTERNET",
           "sha256": "e5b8eec4257e5c7d3ca9f6237528707ea084cb2a758479b8c4450acf79a39750",
-          "collecte_a": "2026-10-27T19:44:37.384816+01:00",
+          "collecte_a": "2026-10-27T19:45:09.331217+01:00",
           "type": "API_PMU"
         }
       }
@@ -2094,14 +2094,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C7/participants?specialisation=INTERNET",
           "sha256": "ff8b2c0786d534295a207fc59bfc3acf94dcbcb2c26129dee617ee9246de27f6",
-          "collecte_a": "2026-10-27T19:44:37.517347+01:00",
+          "collecte_a": "2026-10-27T19:45:09.548080+01:00",
           "type": "API_PMU"
         }
       }
@@ -2236,14 +2236,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R3/C8/participants?specialisation=INTERNET",
           "sha256": "2ab4a48fb623dc6e2bbe02f6de8b13556bb1d9c9da36ebb6e7932224198d8caf",
-          "collecte_a": "2026-10-27T19:44:38.333032+01:00",
+          "collecte_a": "2026-10-27T19:45:09.659703+01:00",
           "type": "API_PMU"
         }
       }
@@ -2410,14 +2410,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C1/participants?specialisation=INTERNET",
           "sha256": "af07b3cc386322a04e57b99f0651971b97b3e76feab709f09bdc0cced78b9296",
-          "collecte_a": "2026-10-27T19:44:38.550261+01:00",
+          "collecte_a": "2026-10-27T19:45:09.769919+01:00",
           "type": "API_PMU"
         }
       }
@@ -2560,14 +2560,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C2/participants?specialisation=INTERNET",
           "sha256": "76e34bb3927a48aca55d956d95c738811bfdaebe3c39c894500bf9755756a83f",
-          "collecte_a": "2026-10-27T19:44:38.674349+01:00",
+          "collecte_a": "2026-10-27T19:45:09.883852+01:00",
           "type": "API_PMU"
         }
       }
@@ -2710,14 +2710,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C3/participants?specialisation=INTERNET",
           "sha256": "e07b839a097133d4845da5228bb41a0ced022e810262f3ed3b68d4261c6f3ee7",
-          "collecte_a": "2026-10-27T19:44:38.810033+01:00",
+          "collecte_a": "2026-10-27T19:45:10.001511+01:00",
           "type": "API_PMU"
         }
       }
@@ -2828,14 +2828,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C4/participants?specialisation=INTERNET",
           "sha256": "71a6bcac96e04d1418a3e4a216fa0123a4916b9bb229e8cabab83ba5fb7f1669",
-          "collecte_a": "2026-10-27T19:44:38.968171+01:00",
+          "collecte_a": "2026-10-27T19:45:10.120812+01:00",
           "type": "API_PMU"
         }
       }
@@ -3002,14 +3002,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C5/participants?specialisation=INTERNET",
           "sha256": "513259bc8587ef44b4bc252b82893d8aa7098a72b97015bc847d87bc04925bf6",
-          "collecte_a": "2026-10-27T19:44:39.109539+01:00",
+          "collecte_a": "2026-10-27T19:45:10.334967+01:00",
           "type": "API_PMU"
         }
       }
@@ -3128,14 +3128,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C6/participants?specialisation=INTERNET",
           "sha256": "8729597cfc2232997e99ea2733fa4275d2df689ce4836a7fc5a301be0ebc7552",
-          "collecte_a": "2026-10-27T19:44:39.240074+01:00",
+          "collecte_a": "2026-10-27T19:45:10.444893+01:00",
           "type": "API_PMU"
         }
       }
@@ -3286,14 +3286,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C7/participants?specialisation=INTERNET",
           "sha256": "58dfa65ee54efeb69465b9d9993a889b7eda9a694f7bd21435cb5d6e86732720",
-          "collecte_a": "2026-10-27T19:44:39.376506+01:00",
+          "collecte_a": "2026-10-27T19:45:10.553076+01:00",
           "type": "API_PMU"
         }
       }
@@ -3404,14 +3404,14 @@
       "provenance": {
         "programme": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026?specialisation=INTERNET",
-          "sha256": "ccd343e89d84dc6e753599d2c0ae267bda319f028abe3b769fd23d8df15b9957",
-          "collecte_a": "2026-10-27T19:44:34.342625+01:00",
+          "sha256": "ab9fc3cf4d0c47364f13c23f4ef95b97e96722da682b34be7a615dc45b6dc59c",
+          "collecte_a": "2026-10-27T19:45:06.284888+01:00",
           "type": "API_PMU"
         },
         "participants": {
           "url": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/27102026/R4/C8/participants?specialisation=INTERNET",
-          "sha256": "1d9347c14fef9c40a47dfe9e999fa963b355e7e1f95fb9723835c1dbf9e5ac6f",
-          "collecte_a": "2026-10-27T19:44:39.788352+01:00",
+          "sha256": "eb2c17ebaf8befb92e3c338af0423281a48fb797d4df33ee59112987a5c5cf6c",
+          "collecte_a": "2026-10-27T19:45:10.669770+01:00",
           "type": "API_PMU"
         }
       }
