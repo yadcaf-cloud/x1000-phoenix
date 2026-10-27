@@ -1,16 +1,25 @@
 {
-  "status": "🟡 COURSES CHARGEES",
-  "generated_at_paris": "2026-10-27T19:31:38.245064+01:00",
+  "logiciel": "X1000 PHOENIX",
+  "version": "PUBLICATION_CORRIGEE",
+  "status": "🟡 DONNÉES INSUFFISANTES",
+  "generated_at_paris": "2026-10-27T19:40:46.721814+01:00",
   "mode": "DONNEES_SOURCEES_UNIQUEMENT",
-  "difficultes": [
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "Analyse course.json refusee: URL de provenance absente"
-    }
+  "moteurs_actifs": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5"
   ],
   "source_donnees": null,
   "moteurs": [],
-  "courses_count": 24,
+  "difficultes": [
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "Analyse refusée : URL de provenance absente"
+    }
+  ],
+  "courses_count": 0,
   "pv_count": 0,
   "figes_count": 0,
   "audits_count": 0
