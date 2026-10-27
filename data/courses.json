@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "actualise": "2026-10-27T16:27:11.111223+01:00",
+  "actualise": "2026-10-27T17:16:41.231269+01:00",
   "courses": [
     {
       "date": "2026-10-27",
@@ -725,84 +725,8 @@
         }
       ],
       "nombre_partants": 15,
-      "moteurs": [
-        {
-          "moteur": "M1",
-          "gagnant_espere": 6,
-          "meilleur_place": 2,
-          "ordre_espere": [
-            6,
-            2,
-            14,
-            13,
-            1
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        },
-        {
-          "moteur": "M2",
-          "gagnant_espere": 6,
-          "meilleur_place": 2,
-          "ordre_espere": [
-            6,
-            2,
-            14,
-            13,
-            1
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        },
-        {
-          "moteur": "M3",
-          "gagnant_espere": 6,
-          "meilleur_place": 2,
-          "ordre_espere": [
-            6,
-            2,
-            14,
-            13,
-            1
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        },
-        {
-          "moteur": "M4",
-          "gagnant_espere": 6,
-          "meilleur_place": 2,
-          "ordre_espere": [
-            6,
-            2,
-            14,
-            13,
-            1
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        },
-        {
-          "moteur": "M5",
-          "gagnant_espere": 6,
-          "meilleur_place": 2,
-          "ordre_espere": [
-            6,
-            2,
-            14,
-            13,
-            1
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        }
-      ],
-      "statut": "PV"
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
     },
     {
       "date": "2026-10-27",
@@ -810,7 +734,7 @@
       "course": 7,
       "hippodrome": "DEAUVILLE",
       "nom": "PRIX JUNO BEACH",
-      "depart_ms": 1793118300000,
+      "depart_ms": 1793118420000,
       "discipline": "PLAT",
       "distance": 1300.0,
       "source": "PMU",
@@ -1029,7 +953,7 @@
           "pari_retenu": null
         }
       ],
-      "statut": "PV"
+      "statut": "FIGE"
     },
     {
       "date": "2026-10-27",
@@ -2877,7 +2801,7 @@
       "course": 3,
       "hippodrome": "VINCENNES",
       "nom": "PRIX DE FORMERIE",
-      "depart_ms": 1793117220000,
+      "depart_ms": 1793117400000,
       "discipline": "ATTELE",
       "distance": 2850.0,
       "source": "PMU",
@@ -3019,84 +2943,8 @@
         }
       ],
       "nombre_partants": 15,
-      "moteurs": [
-        {
-          "moteur": "M1",
-          "gagnant_espere": 10,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            10,
-            11,
-            12,
-            9,
-            14
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        },
-        {
-          "moteur": "M2",
-          "gagnant_espere": 10,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            10,
-            11,
-            12,
-            9,
-            14
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        },
-        {
-          "moteur": "M3",
-          "gagnant_espere": 10,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            10,
-            11,
-            12,
-            9,
-            14
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        },
-        {
-          "moteur": "M4",
-          "gagnant_espere": 10,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            10,
-            11,
-            12,
-            9,
-            14
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        },
-        {
-          "moteur": "M5",
-          "gagnant_espere": 10,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            10,
-            11,
-            12,
-            9,
-            14
-          ],
-          "qualification": "EXPERIMENTAL",
-          "validation": "DONNEES_PARTIELLES",
-          "pari_retenu": null
-        }
-      ],
-      "statut": "PV"
+      "moteurs": [],
+      "statut": "SANS_PRONOSTIC"
     },
     {
       "date": "2026-10-27",
