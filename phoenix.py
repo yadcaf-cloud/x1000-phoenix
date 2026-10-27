@@ -1,8 +1,9 @@
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""X1000 PHOENIX - M1 à M5, FIGÉS et audits vérifiables."""
-
+"""X1000 PHOENIX - M1 a M5.
+Analyses tracees, FIGES immuables et audits.
+Aucune donnee PMU n'est inventee.
+"""
 import datetime as dt
 import hashlib
 import json
@@ -14,106 +15,154 @@ from zoneinfo import ZoneInfo
 
 PARIS = ZoneInfo("Europe/Paris")
 DATA = Path("data")
-CRITERES = ("forme", "aptitude", "regularite", "entourage", "valeur")
+BASE = DATA
+FIGES = DATA / "figes"
+AUDITS = DATA / "audits"
+MARGE_MINUTES = 20
+
+CRITERES = (
+    "forme", "aptitude", "regularite",
+    "entourage", "valeur"
+)
 
 MOTEURS = {
     "M1": dict(zip(CRITERES, (4, 3, 2, 1, 2))),
     "M2": dict(zip(CRITERES, (2, 4, 3, 1, 2))),
     "M3": dict(zip(CRITERES, (2, 2, 2, 2, 4))),
     "M4": dict(zip(CRITERES, (3, 2, 3, 3, 1))),
-    "M5": dict(zip(CRITERES, (2, 3, 2, 2, 3))),
+    "M5": dict(zip(CRITERES, (2, 3, 2, 2, 3)))
 }
 
 def maintenant():
     return dt.datetime.now(PARIS)
 
-def lire(path):
-    def verifier(paires):
+def date_paris(valeur):
+    date = dt.datetime.fromisoformat(str(valeur))
+    if date.tzinfo is None:
+        raise ValueError("Date sans fuseau horaire")
+    return date.astimezone(PARIS)
+
+def identifiant(valeur):
+    return re.sub(r"[^A-Za-z0-9_-]", "_", str(valeur))
+
+def lire(chemin):
+    def uniques(paires):
         resultat = {}
         for cle, valeur in paires:
             if cle in resultat:
-                raise ValueError(f"Clé JSON dupliquée : {cle}")
+                raise ValueError("Cle JSON dupliquee: " + cle)
             resultat[cle] = valeur
         return resultat
-    with open(path, encoding="utf-8") as f:
-        return json.load(f, object_pairs_hook=verifier)
 
-def ecrire(path, objet):
-    path = Path(path)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporaire = path.with_name(path.name + ".tmp")
+    with Path(chemin).open(encoding="utf-8") as f:
+        return json.load(
+            f,
+            object_pairs_hook=uniques,
+            parse_constant=lambda x: (_ for _ in ()).throw(
+                ValueError("Nombre JSON invalide: " + x)
+            )
+        )
+
+def ecrire(chemin, objet):
+    chemin = Path(chemin)
+    chemin.parent.mkdir(parents=True, exist_ok=True)
+    temporaire = chemin.with_suffix(chemin.suffix + ".tmp")
     temporaire.write_text(
-        json.dumps(objet, ensure_ascii=False, indent=2) + "\n",
+        json.dumps(
+            objet, ensure_ascii=False,
+            indent=2, allow_nan=False
+        ) + "\n",
         encoding="utf-8"
     )
-    os.replace(temporaire, path)
-
-def date_paris(valeur):
-    d = dt.datetime.fromisoformat(valeur)
-    if d.tzinfo is None:
-        raise ValueError("Date sans fuseau horaire")
-    return d.astimezone(PARIS)
+    os.replace(temporaire, chemin)
 
 def empreinte(objet):
-    brut = json.dumps(
+    contenu = json.dumps(
         objet, ensure_ascii=False,
         sort_keys=True, separators=(",", ":"),
         allow_nan=False
     ).encode("utf-8")
-    return hashlib.sha256(brut).hexdigest()
+    return hashlib.sha256(contenu).hexdigest()
 
-def identifiant(texte):
-    valeur = re.sub(r"[^a-zA-Z0-9_-]", "_", str(texte))
-    if not valeur or len(valeur) > 120:
-        raise ValueError("Identifiant de course invalide")
-    return valeur
+def verifier_source(source):
+    return (
+        isinstance(source, str)
+        and source.startswith(("https://", "http://"))
+        and len(source) > 12
+    )
 
-def analyser(course):
-    for cle in ("id", "depart", "hippodrome", "partants"):
-        if cle not in course:
-            raise ValueError(f"Champ absent : {cle}")
+def valider_course(course):
+    if not isinstance(course, dict):
+        raise ValueError("Course invalide")
 
-    if not isinstance(course["id"], str) or not course["id"]:
-        raise ValueError("ID invalide")
+    for cle in ("id", "hippodrome", "depart", "partants"):
+        if not course.get(cle):
+            raise ValueError("Champ absent: " + cle)
+
+    if not verifier_source(course.get("source")):
+        raise ValueError("URL de provenance absente")
 
     depart = date_paris(course["depart"])
     chevaux = course["partants"]
 
-    if not isinstance(chevaux, list) or not chevaux:
-        raise ValueError("Aucun partant")
+    if not isinstance(chevaux, list):
+        raise ValueError("Liste de partants invalide")
 
-    numeros = []
+    actifs = []
+    numeros = set()
+
     for cheval in chevaux:
-        n = cheval.get("numero")
-        if type(n) is not int or n <= 0 or n in numeros:
-            raise ValueError("Numéro de cheval invalide ou dupliqué")
-        numeros.append(n)
-        if type(cheval.get("non_partant", False)) is not bool:
-            raise ValueError("Statut non-partant invalide")
+        if not isinstance(cheval, dict):
+            raise ValueError("Cheval invalide")
 
-    actifs = [
-        c for c in chevaux if not c.get("non_partant", False)
-    ]
-    resultats = []
+        numero = cheval.get("numero")
+        if type(numero) is not int or numero <= 0:
+            raise ValueError("Numero invalide")
+
+        if numero in numeros:
+            raise ValueError("Numero en double")
+        numeros.add(numero)
+
+        if cheval.get("non_partant") is True:
+            continue
+
+        notes = cheval.get("notes")
+        if not isinstance(notes, dict):
+            raise ValueError(
+                "Notes absentes pour le cheval " + str(numero)
+            )
+
+        for critere in CRITERES:
+            note = notes.get(critere)
+            if (
+                type(note) not in (int, float)
+                or not math.isfinite(note)
+                or not 0 <= note <= 10
+            ):
+                raise ValueError(
+                    "Note non valide: " + str(numero)
+                    + " / " + critere
+                )
+
+        actifs.append(cheval)
+
+    if len(actifs) < 5:
+        raise ValueError("Moins de cinq partants etudies")
+
+    return depart, actifs
+
+def analyser(course):
+    depart, chevaux = valider_course(course)
+    instant = maintenant()
+    sorties = []
 
     for nom, poids in MOTEURS.items():
         classement = []
 
-        for cheval in actifs:
-            notes = cheval.get("notes")
-            if not isinstance(notes, dict):
-                continue
-
-            if not all(
-                type(notes.get(k)) in (int, float)
-                and math.isfinite(notes[k])
-                and 0 <= notes[k] <= 10
-                for k in CRITERES
-            ):
-                continue
-
+        for cheval in chevaux:
+            notes = cheval["notes"]
             score = sum(
-                notes[k] * poids[k] for k in CRITERES
+                notes[c] * poids[c] for c in CRITERES
             ) / sum(poids.values())
 
             classement.append({
@@ -125,72 +174,107 @@ def analyser(course):
             key=lambda x: (-x["score"], x["numero"])
         )
 
-        complet = (
-            len(actifs) >= 2
-            and len(classement) == len(actifs)
-            and bool(course.get("source"))
-            and not str(course["id"]).startswith("DEMO")
+        ordre = [x["numero"] for x in classement]
+        ecart = classement[0]["score"] - classement[1]["score"]
+
+        qualification = (
+            "VERT" if ecart >= 0.5 else "JAUNE"
         )
 
-        ordre = (
-            [c["numero"] for c in classement]
-            if complet else []
-        )
-
-        resultats.append({
+        sorties.append({
             "moteur": nom,
-            "qualification": "VERT" if complet else "JAUNE",
-            "validation": (
-                "INDICATIF" if complet
-                else "DONNEES_INSUFFISANTES"
-            ),
-            "gagnant_espere": ordre[0] if ordre else None,
-            "meilleur_place": ordre[1] if len(ordre) > 1 else None,
-            "ordre_espere": ordre,
-            "pari_retenu": "AUCUN - étude indicative",
-            "scores": classement if complet else [],
-            "heure_paris": maintenant().isoformat()
+            "gagnant_espere": ordre[0],
+            "meilleur_place": ordre[1],
+            "ordre_espere": ordre[:5],
+            "pari_retenu": None,
+            "qualification": qualification,
+            "validation": "INDICATIF",
+            "ecart_scores": round(ecart, 4),
+            "scores": classement,
+            "heure_paris": instant.isoformat()
         })
 
     return {
+        "logiciel": "X1000 PHOENIX",
         "course_id": course["id"],
         "hippodrome": course["hippodrome"],
         "depart": depart.isoformat(),
-        "source": course.get("source"),
-        "nombre_partants": len(actifs),
-        "non_partants": [
-            c["numero"] for c in chevaux
-            if c.get("non_partant", False)
-        ],
-        "moteurs": resultats,
+        "source": course["source"],
+        "analyse_a": instant.isoformat(),
+        "nombre_partants": len(chevaux),
+        "moteurs": sorties,
+        "statut": "ANALYSE_INDICATIVE",
         "avertissement": (
-            "Scores heuristiques, non probabilités. "
-            "Aucun résultat ni gain garanti."
+            "Scores heuristiques, sans probabilite "
+            "calibree ni garantie de resultat."
         )
     }
 
-def figer(rapport, chemin, instant=None):
-    instant = instant or maintenant()
-    depart = date_paris(rapport["depart"])
-    chemin = Path(chemin)
+def verifier_fige(document):
+    if not isinstance(document, dict):
+        raise ValueError("FIGE invalide")
 
-    if chemin.exists():
-        raise FileExistsError("FIGÉ déjà existant")
+    signature = document.get("sha256")
+    contenu = {
+        k: v for k, v in document.items()
+        if k != "sha256"
+    }
+
+    if empreinte(contenu) != signature:
+        raise ValueError("Empreinte FIGE incorrecte")
+
+    if document.get("statut") != "FIGE_AVANT_DEPART":
+        raise ValueError("Statut FIGE incorrect")
+
+    rapport = document["rapport"]
+    depart = date_paris(rapport["depart"])
+    instant = date_paris(document["fige_a"])
 
     if instant >= depart:
-        raise ValueError("Départ déjà atteint")
+        raise ValueError("FIGE apres depart")
 
-    if not rapport.get("source"):
-        raise ValueError("Source absente")
+    if not verifier_source(rapport.get("source")):
+        raise ValueError("Source FIGE absente")
 
-    if len(rapport.get("moteurs", [])) != 5:
+    noms = [m["moteur"] for m in rapport["moteurs"]]
+    if sorted(noms) != sorted(MOTEURS):
         raise ValueError("Cinq moteurs requis")
 
-    if any(
-        m["validation"] != "INDICATIF"
-        for m in rapport["moteurs"]
-    ):
-        raise ValueError("Données insuffisantes")
+    for m in rapport["moteurs"]:
+        ordre = m["ordre_espere"]
+        if (
+            len(ordre) != 5
+            or len(set(ordre)) != 5
+            or m["gagnant_espere"] != ordre[0]
+            or m["meilleur_place"] != ordre[1]
+        ):
+            raise ValueError("Selection incoherente")
+
+    return True
+
+def chemin_fige(course_id):
+    return FIGES / (identifiant(course_id) + ".json")
+
+def figer(rapport, marge=MARGE_MINUTES):
+    chemin = chemin_fige(rapport["course_id"])
+
+    if chemin.exists():
+        document = lire(chemin)
+        verifier_fige(document)
+        return document
+
+    instant = maintenant()
+    depart = date_paris(rapport["depart"])
+    secondes = (depart - instant).total_seconds()
+
+    if not (0 < secondes <= marge * 60):
+        return None
+
+    if not verifier_source(rapport.get("source")):
+        return None
+
+    if sorted(m["moteur"] for m in rapport["moteurs"]) != sorted(MOTEURS):
+        return None
 
     document = {
         "statut": "FIGE_AVANT_DEPART",
@@ -198,105 +282,72 @@ def figer(rapport, chemin, instant=None):
         "rapport": rapport
     }
     document["sha256"] = empreinte(document)
+    verifier_fige(document)
 
-    chemin.parent.mkdir(parents=True, exist_ok=True)
-    # Création exclusive : ne jamais écraser un FIGÉ.
-    with open(chemin, "x", encoding="utf-8") as f:
-        json.dump(document, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+    FIGES.mkdir(parents=True, exist_ok=True)
+
+    try:
+        with chemin.open("x", encoding="utf-8") as f:
+            json.dump(
+                document, f,
+                ensure_ascii=False, indent=2
+            )
+            f.write("\n")
+    except FileExistsError:
+        document = lire(chemin)
+        verifier_fige(document)
 
     return document
 
-def verifier_fige(document):
-    if document.get("statut") != "FIGE_AVANT_DEPART":
-        raise ValueError("Statut FIGÉ invalide")
+def auditer(fige, arrivee):
+    verifier_fige(fige)
 
-    original = {
-        k: v for k, v in document.items()
-        if k != "sha256"
-    }
-    if empreinte(original) != document.get("sha256"):
-        raise ValueError("Empreinte SHA256 incorrecte")
+    rapport = fige["rapport"]
 
-    instant = date_paris(document["fige_a"])
-    depart = date_paris(document["rapport"]["depart"])
-
-    if instant >= depart:
-        raise ValueError("FIGÉ non antérieur au départ")
-
-    return True
-
-def auditer(document, arrivee):
-    verifier_fige(document)
+    if arrivee.get("course_id") != rapport["course_id"]:
+        raise ValueError("Course differente")
 
     if arrivee.get("statut") != "definitive":
-        raise ValueError("Arrivée non définitive")
+        raise ValueError("Arrivee non definitive")
 
-    if not arrivee.get("source"):
+    if not verifier_source(arrivee.get("source")):
         raise ValueError("Source officielle absente")
 
-    if arrivee.get("course_id") != document["rapport"]["course_id"]:
-        raise ValueError("Courses différentes")
-
     ordre = arrivee.get("arrivee")
+
     if (
         not isinstance(ordre, list)
-        or not ordre
+        or len(ordre) < 5
         or any(type(n) is not int or n <= 0 for n in ordre)
-        or len(ordre) != len(set(ordre))
+        or len(set(ordre)) != len(ordre)
     ):
-        raise ValueError("Arrivée invalide")
+        raise ValueError("Arrivee invalide")
 
-    controles = []
-    for moteur in document["rapport"]["moteurs"]:
-        selection = moteur["ordre_espere"]
-        controles.append({
+    bilans = []
+
+    for moteur in rapport["moteurs"]:
+        choix = moteur["ordre_espere"]
+
+        bilans.append({
             "moteur": moteur["moteur"],
-            "gagnant_trouve": selection[0] == ordre[0],
+            "gagnant_espere": choix[0],
+            "gagnant_trouve": choix[0] == ordre[0],
             "chevaux_dans_les_cinq": len(
-                set(selection[:5]) & set(ordre[:5])
+                set(choix) & set(ordre[:5])
             ),
-            "ordre_exact": selection[:5] == ordre[:5]
+            "ordre_exact_cinq": choix == ordre[:5]
         })
 
     return {
-        "course_id": arrivee["course_id"],
-        "statut": "AUDIT_VERIFIE",
-        "audite_a": maintenant().isoformat(),
-        "source": arrivee["source"],
-        "arrivee": ordre,
-        "sha256_fige": document["sha256"],
-        "moteurs": controles
+        "logiciel": "X1000 PHOENIX",
+        "course_id": rapport["course_id"],
+        "statut": "AUDIT_EFFECTUE",
+        "audit_a": maintenant().isoformat(),
+        "fige_sha256": fige["sha256"],
+        "source_arrivee": arrivee["source"],
+        "arrivee_officielle": ordre,
+        "moteurs": bilans
     }
 
 if __name__ == "__main__":
-    import argparse
-    p = argparse.ArgumentParser()
-    p.add_argument("--input", default="data/course.json")
-    p.add_argument("--output", default="data/latest.json")
-    p.add_argument("--figer", action="store_true")
-    p.add_argument("--audit")
-    a = p.parse_args()
-
-    if a.audit:
-        arrivee = lire(a.audit)
-        chemin = DATA / "figes" / (
-            identifiant(arrivee["course_id"]) + ".json"
-        )
-        resultat = auditer(lire(chemin), arrivee)
-        ecrire(
-            DATA / "audits" / chemin.name,
-            resultat
-        )
-    else:
-        resultat = analyser(lire(a.input))
-        ecrire(a.output, resultat)
-        if a.figer:
-            figer(
-                resultat,
-                DATA / "figes" / (
-                    identifiant(resultat["course_id"]) + ".json"
-                )
-            )
-
-    print(json.dumps(resultat, ensure_ascii=False, indent=2))
+    print("X1000 PHOENIX M1-M5 : module disponible")
