@@ -1,14 +1,14 @@
 {
+  "logiciel": "X1000 PHOENIX",
   "course_id": "DEMO-R1-C1",
   "hippodrome": "DEMONSTRATION",
   "depart": "2027-01-01T15:00:00+01:00",
   "source": null,
+  "analyse_a": "2026-10-27T15:29:11.171259+01:00",
   "nombre_partants": 3,
   "moteurs": [
     {
       "moteur": "M1",
-      "qualification": "VERT",
-      "validation": "INDICATIF",
       "gagnant_espere": 2,
       "meilleur_place": 1,
       "ordre_espere": [
@@ -16,7 +16,11 @@
         1,
         3
       ],
-      "pari_retenu": "AUCUN - étude indicative",
+      "pari_retenu": "AUCUN - etude indicative",
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "confiance_heuristique": "FAIBLE",
+      "ecart_scores": 0.417,
       "scores": [
         {
           "numero": 2,
@@ -31,12 +35,10 @@
           "score": 7.083
         }
       ],
-      "heure_paris": "2026-10-27T15:03:12+01:00"
+      "heure_paris": "2026-10-27T15:29:11.171259+01:00"
     },
     {
       "moteur": "M2",
-      "qualification": "VERT",
-      "validation": "INDICATIF",
       "gagnant_espere": 2,
       "meilleur_place": 3,
       "ordre_espere": [
@@ -44,7 +46,11 @@
         3,
         1
       ],
-      "pari_retenu": "AUCUN - étude indicative",
+      "pari_retenu": "AUCUN - etude indicative",
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "confiance_heuristique": "MOYENNE",
+      "ecart_scores": 0.584,
       "scores": [
         {
           "numero": 2,
@@ -59,12 +65,10 @@
           "score": 7.25
         }
       ],
-      "heure_paris": "2026-10-27T15:03:12+01:00"
+      "heure_paris": "2026-10-27T15:29:11.171259+01:00"
     },
     {
       "moteur": "M3",
-      "qualification": "VERT",
-      "validation": "INDICATIF",
       "gagnant_espere": 2,
       "meilleur_place": 3,
       "ordre_espere": [
@@ -72,7 +76,11 @@
         3,
         1
       ],
-      "pari_retenu": "AUCUN - étude indicative",
+      "pari_retenu": "AUCUN - etude indicative",
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "confiance_heuristique": "FAIBLE",
+      "ecart_scores": 0.166,
       "scores": [
         {
           "numero": 2,
@@ -87,12 +95,10 @@
           "score": 7.0
         }
       ],
-      "heure_paris": "2026-10-27T15:03:12+01:00"
+      "heure_paris": "2026-10-27T15:29:11.171259+01:00"
     },
     {
       "moteur": "M4",
-      "qualification": "VERT",
-      "validation": "INDICATIF",
       "gagnant_espere": 2,
       "meilleur_place": 1,
       "ordre_espere": [
@@ -100,7 +106,11 @@
         1,
         3
       ],
-      "pari_retenu": "AUCUN - étude indicative",
+      "pari_retenu": "AUCUN - etude indicative",
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "confiance_heuristique": "FAIBLE",
+      "ecart_scores": 0.25,
       "scores": [
         {
           "numero": 2,
@@ -115,12 +125,10 @@
           "score": 7.25
         }
       ],
-      "heure_paris": "2026-10-27T15:03:12+01:00"
+      "heure_paris": "2026-10-27T15:29:11.171259+01:00"
     },
     {
       "moteur": "M5",
-      "qualification": "VERT",
-      "validation": "INDICATIF",
       "gagnant_espere": 2,
       "meilleur_place": 3,
       "ordre_espere": [
@@ -128,7 +136,11 @@
         3,
         1
       ],
-      "pari_retenu": "AUCUN - étude indicative",
+      "pari_retenu": "AUCUN - etude indicative",
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "confiance_heuristique": "MOYENNE",
+      "ecart_scores": 0.5,
       "scores": [
         {
           "numero": 2,
@@ -143,8 +155,9 @@
           "score": 7.083
         }
       ],
-      "heure_paris": "2026-10-27T15:03:12+01:00"
+      "heure_paris": "2026-10-27T15:29:11.171259+01:00"
     }
   ],
-  "avertissement": "Scores heuristiques, non probabilités de victoire; aucun pari garanti."
+  "statut": "ANALYSE_INDICATIVE",
+  "avertissement": "Scores heuristiques non calibres. Aucune victoire ni pari garanti."
 }
