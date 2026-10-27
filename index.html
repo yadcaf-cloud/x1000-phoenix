@@ -2,1053 +2,373 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#071321">
-<meta name="description" content="X1000 PHOENIX — Intelligence hippique MPAA X1000, moteurs M1 à M5, courses PMU, tableaux officiels, PV, FIGÉS et audits.">
-<title>🇸🇳🧠🔥 X1000 PHOENIX — Intelligence vivante</title>
-
+<title>🇸🇳🧠🔥 X1000 PHOENIX</title>
 <style>
 :root{
-  --bg:#071321;
-  --panel:#11243a;
-  --panel2:#172e48;
-  --line:#304760;
-  --text:#edf5ff;
-  --muted:#a5b8ce;
-  --gold:#ffd06a;
-  --blue:#74c7ff;
-  --green:#36df9b;
-  --yellow:#ffcf69;
-  --red:#ff8585;
+  --bg:#071321;--panel:#11243a;
+  --line:#304760;--gold:#ffd06a;
+  --blue:#74c7ff;--text:#edf5ff;
+  --muted:#a5b8ce
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{
-  margin:0;background:var(--bg);color:var(--text);
-  font:15px/1.6 Arial,Helvetica,sans-serif
+  margin:0;background:var(--bg);
+  color:var(--text);
+  font:15px/1.6 Arial,sans-serif
 }
 header{
-  padding:35px 16px;text-align:center;
-  background:linear-gradient(135deg,#153b5b,#071321 75%);
-  border-bottom:1px solid var(--line)
+  text-align:center;padding:28px 14px;
+  background:linear-gradient(135deg,#153b5b,#071321)
 }
-header h1{
-  margin:0;color:var(--gold);
-  font-size:clamp(26px,5vw,43px)
-}
-header h2{margin:5px 0;color:#fff;font-size:18px}
-header p{color:var(--muted)}
+h1{color:var(--gold);font-size:28px}
+h2{color:var(--blue)}
+h3{color:var(--gold)}
 nav{
   display:flex;gap:8px;overflow-x:auto;
-  padding:12px;position:sticky;top:0;z-index:20;
-  background:#0b1b2d;border-bottom:1px solid var(--line)
+  padding:10px;background:#0b1b2d;
+  position:sticky;top:0
 }
 nav a{
-  flex-shrink:0;padding:9px 13px;border-radius:9px;
-  color:var(--text);background:var(--panel2);
-  text-decoration:none;font-weight:bold;font-size:13px
+  white-space:nowrap;color:white;
+  background:#203b59;padding:9px;
+  border-radius:8px;text-decoration:none
 }
-nav a:hover{background:#315477}
-main{max-width:1300px;margin:auto;padding:15px}
-section,.course-card{
-  background:var(--panel);border:1px solid var(--line);
-  border-radius:16px;padding:19px;margin:17px 0
+main{max-width:1200px;margin:auto;padding:12px}
+section{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:16px;margin:14px 0
 }
-h2{color:var(--blue);margin-top:0}
-h3{color:var(--gold)}
-a{color:var(--blue)}
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:13px
+  grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+  gap:10px
 }
-.metric,.engine{
-  background:var(--panel2);border:1px solid var(--line);
-  border-radius:12px;padding:16px
+.metric{
+  padding:15px;background:#172e48;
+  border-radius:10px
 }
 .metric strong{
-  display:block;color:var(--gold);font-size:27px
+  display:block;color:var(--gold);
+  font-size:24px
 }
-.metric span,.small{color:var(--muted);font-size:13px}
-.engine{border-left:4px solid var(--gold)}
-.engine h3{margin:0 0 8px}
-.engine ul{padding-left:20px;margin-bottom:0}
-.toolbar{
-  display:flex;gap:10px;flex-wrap:wrap;
-  align-items:center;margin:15px 0
-}
-button,select{
-  background:#203b59;color:white;
-  border:1px solid #456380;border-radius:9px;
-  padding:11px;font:inherit
-}
-button{cursor:pointer;font-weight:bold}
-button:hover{background:#315477}
 .tablewrap{overflow-x:auto}
 table{
-  width:100%;min-width:940px;
-  border-collapse:collapse;font-size:13px
+  width:100%;min-width:900px;
+  border-collapse:collapse
 }
 th,td{
-  padding:12px 10px;text-align:left;
-  vertical-align:top;border-bottom:1px solid var(--line)
+  padding:10px;border-bottom:1px solid var(--line);
+  text-align:left;vertical-align:top
 }
-th{background:#1c3a59;color:var(--gold)}
-tbody tr:nth-child(even){background:#142a42}
-.tag{
-  display:inline-block;padding:5px 9px;
-  border-radius:8px;font-size:12px;font-weight:bold
+th{color:var(--gold);background:#1c3a59}
+tr:nth-child(even){background:#172e48}
+button{
+  background:#315477;color:white;
+  padding:12px;border:0;border-radius:8px;
+  cursor:pointer
 }
-.green{background:#123f33;color:var(--green)}
-.yellow{background:#4a3b20;color:var(--yellow)}
-.red{background:#4c2830;color:var(--red)}
-.blue{background:#173c59;color:var(--blue)}
-.course-head{
-  display:flex;justify-content:space-between;
-  gap:12px;flex-wrap:wrap;align-items:flex-start
-}
-.course-head h3{margin:0 0 5px}
-.empty{
-  border:1px dashed #52657b;border-radius:12px;
-  padding:23px;text-align:center;color:var(--muted)
-}
-.notice{
-  padding:14px;border-left:4px solid var(--yellow);
-  background:#263047;border-radius:8px
-}
-.trace{
-  background:var(--panel2);padding:14px;
-  border-radius:10px;border:1px solid var(--line);
-  margin:10px 0;overflow-wrap:anywhere
-}
+a{color:var(--blue)}
+small,.muted{color:var(--muted)}
 pre{
   white-space:pre-wrap;overflow-wrap:anywhere;
-  background:#09192a;padding:15px;border-radius:10px;
-  max-height:380px;overflow:auto;font-size:12px
+  background:#09192a;padding:12px;
+  border-radius:9px;max-height:350px;overflow:auto
 }
-footer{
-  padding:25px 15px;text-align:center;
-  border-top:1px solid var(--line);color:var(--muted)
-}
-@media(max-width:600px){
-  header{padding:25px 12px}
-  main{padding:10px}
-  section,.course-card{padding:13px}
-  .metric strong{font-size:23px}
-  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .engine{grid-column:span 2}
-}
+footer{text-align:center;padding:25px}
 </style>
 </head>
-
 <body>
 <header>
-  <h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
-  <h2>L'INTELLIGENCE HIPPIQUE VIVANTE</h2>
-  <p>MPAA X1000 • Cinq moteurs indépendants M1 à M5</p>
-  <p><strong>
-    Comprendre avant de choisir. Démontrer avant de valider.
-    Apprendre après chaque course.
-  </strong></p>
-  <div id="horloge" class="small"></div>
-  <p><span id="etat" class="tag yellow">🟡 Chargement des données</span></p>
+<h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
+<h2>INTELLIGENCE HIPPIQUE VIVANTE</h2>
+<p>Cinq moteurs indépendants M1 à M5</p>
+<p id="horloge"></p>
+<strong id="etat">🟡 Vérification...</strong>
 </header>
 
-<nav aria-label="Navigation principale">
-  <a href="#accueil">🏠 Accueil</a>
-  <a href="#courses">🏇 Courses</a>
-  <a href="#moteurs">🧠 M1–M5</a>
-  <a href="#criteres">🔬 Études</a>
-  <a href="#figes">🔒 FIGÉS</a>
-  <a href="#audits">📊 Audits</a>
-  <a href="#systeme">⚙️ Système</a>
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#courses">Courses</a>
+<a href="#figes">FIGÉS</a>
+<a href="#audits">Audits</a>
+<a href="#systeme">Système</a>
 </nav>
 
 <main>
 <section id="accueil">
-  <h2>🔥 Centre de commandement MPAA X1000</h2>
-  <p>
-    Étudier chaque course selon sa réalité sportive.
-    Examiner chaque cheval, détecter les favoris fragiles,
-    les progrès discrets et les chances sous-estimées.
-  </p>
-  <div class="grid">
-    <div class="metric">
-      <strong id="nbCourses">—</strong>
-      <span>🏇 Courses chargées</span>
-    </div>
-    <div class="metric">
-      <strong>5</strong>
-      <span>🧠 Moteurs indépendants</span>
-    </div>
-    <div class="metric">
-      <strong id="nbPV">—</strong>
-      <span>📋 PV enregistrés</span>
-    </div>
-    <div class="metric">
-      <strong id="nbFiges">—</strong>
-      <span>🔒 FIGÉS enregistrés</span>
-    </div>
-    <div class="metric">
-      <strong id="nbAudits">—</strong>
-      <span>📊 Audits disponibles</span>
-    </div>
-  </div>
-  <p id="etatPMU" class="small">
-    Vérification des données hippiques...
-  </p>
-</section>
-
-<section id="moteurs">
-  <h2>🧠 Les cinq intelligences indépendantes</h2>
-  <div id="listeMoteurs" class="grid"></div>
-  <p class="small">
-    Chaque moteur conserve sa propre méthode, son classement,
-    son pari retenu et sa validation. Les choix ne sont pas
-    fabriqués pour remplir les tableaux.
-  </p>
-</section>
-
-<section id="criteres">
-  <h2>🔬 Protocole d'étude cheval par cheval</h2>
-  <div id="listeCriteres" class="grid"></div>
-  <div class="notice">
-    Les critères décrivent le travail attendu des moteurs.
-    Leur affichage ne prouve pas qu'une analyse a été exécutée.
-  </div>
+<h2>🔥 Centre de commandement</h2>
+<div class="grid">
+<div class="metric">
+<strong id="nbCourses">0</strong>Courses
+</div>
+<div class="metric">
+<strong>5</strong>Moteurs
+</div>
+<div class="metric">
+<strong id="nbPV">0</strong>PV
+</div>
+<div class="metric">
+<strong id="nbFiges">0</strong>FIGÉS
+</div>
+<div class="metric">
+<strong id="nbAudits">0</strong>Audits
+</div>
+</div>
+<p id="actualisation"></p>
+<button onclick="charger()">🔄 Actualiser</button>
 </section>
 
 <section id="courses">
-  <h2>🏇 Courses PMU — Tableaux officiels MPAA X1000</h2>
-  <p>
-    Chaque course chargée possède son propre tableau officiel,
-    avec une ligne pour chacun des cinq moteurs M1 à M5.
-  </p>
-  <div class="toolbar">
-    <button type="button" id="boutonMaj">🔄 Actualiser</button>
-    <select id="filtreReunion" aria-label="Filtrer par réunion">
-      <option value="toutes">Toutes les réunions</option>
-    </select>
-    <select id="filtreEtat" aria-label="Filtrer par état">
-      <option value="toutes">Tous les états</option>
-      <option value="analyse">Avec analyses</option>
-      <option value="fige">Avec FIGÉS</option>
-    </select>
-  </div>
-  <div id="listeCourses" class="empty">
-    Chargement des courses...
-  </div>
+<h2>🏆 Tableau officiel M1 à M5</h2>
+<div id="listeCourses">Chargement...</div>
 </section>
 
 <section id="figes">
-  <h2>🔒 Procès-verbaux et FIGÉS</h2>
-  <p>
-    Les FIGÉS doivent être produits avant le départ,
-    avec heure de création, contenu conservé et
-    empreinte de contrôle.
-  </p>
-  <div id="listeFiges" class="empty">
-    Aucun FIGÉ chargé.
-  </div>
-  <h3>📋 Journal des PV</h3>
-  <div id="listePV" class="empty">
-    Aucun PV chargé.
-  </div>
+<h2>🔒 FIGÉS et procès-verbaux</h2>
+<h3>FIGÉS vérifiés</h3>
+<div id="listeFiges">Chargement...</div>
+<h3>Procès-verbaux</h3>
+<div id="listePV">Chargement...</div>
 </section>
 
 <section id="audits">
-  <h2>📊 Audits après course</h2>
-  <p>
-    Comparaison des pronostics réellement figés avec
-    les arrivées officielles définitives.
-  </p>
-  <div id="listeAudits" class="empty">
-    Aucun audit chargé.
-  </div>
-</section>
-
-<section>
-  <h2>🕵️ Favoris trompeurs et chevaux cachés</h2>
-  <p>
-    Un favori doit justifier son rang par ses performances,
-    ses aptitudes et la qualité de l'opposition.
-    Un cheval sous-estimé doit présenter des arguments
-    sportifs vérifiables.
-  </p>
-  <div class="notice">
-    Une grosse cote n'est pas une preuve de valeur.
-    Aucun cheval ne doit être ajouté uniquement pour
-    compléter une combinaison.
-  </div>
-</section>
-
-<section>
-  <h2>📖 Journal des difficultés</h2>
-  <div id="difficultes" class="empty">
-    En attente des rapports des moteurs.
-  </div>
+<h2>📊 Audits après course</h2>
+<div id="listeAudits">Chargement...</div>
 </section>
 
 <section id="systeme">
-  <h2>⚙️ Automatisation et contrôle technique</h2>
-  <p id="actualisation">Dernière exécution : non vérifiée.</p>
-  <p id="maj" class="small"></p>
-  <div class="toolbar">
-    <button type="button" id="boutonSysteme">
-      🔄 Recharger les rapports
-    </button>
-    <a href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
-       target="_blank" rel="noopener noreferrer">
-      Consulter GitHub Actions
-    </a>
-  </div>
-  <h3>📡 Fichiers de données</h3>
-  <div id="fichiers" class="small"></div>
-  <h3>📋 Dernier rapport technique</h3>
-  <pre id="rapport">Rapport indisponible.</pre>
-  <p class="small">
-    Le site consulte les fichiers JSON publiés sur GitHub Pages.
-    Il ne lance pas directement les moteurs Python.
-  </p>
-</section>
-
-<section>
-  <h2>🛡️ Transparence et sécurité</h2>
-  <div class="notice">
-    Les données manquantes ne sont jamais inventées.
-    Une analyse affichée n'est pas automatiquement un FIGÉ.
-    Un FIGÉ doit être prouvé antérieur au départ.
-    Une arrivée doit être officielle et définitive
-    avant un audit validé.
-  </div>
+<h2>⚙️ Automatisation</h2>
+<p>
+<a href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
+target="_blank" rel="noopener">
+Consulter GitHub Actions
+</a>
+</p>
+<h3>Journal des difficultés</h3>
+<div id="difficultes"></div>
+<h3>Dernier rapport</h3>
+<pre id="rapport">En attente</pre>
 </section>
 </main>
 
 <footer>
-  <strong>🇸🇳🔥 X1000 PHOENIX — Intelligence vivante</strong>
-  <p>
-    Étudier chaque cheval. Comprendre chaque course.
-    Choisir avec méthode. Figer avant le départ.
-    Vérifier après l'arrivée. Apprendre pour demain.
-  </p>
-  <small>
-    Pronostics incertains. Aucun gain garanti.
-    Jouez de manière responsable.
-  </small>
+🇸🇳🔥 X1000 PHOENIX — Intelligence vivante
+<p><small>
+Les analyses ne garantissent aucun résultat.
+Aucun pari réel n'est exécuté par ce site.
+</small></p>
 </footer>
 
 <script>
 "use strict";
 
-/* ============================================
-   X1000 PHOENIX — CONFIGURATION
-============================================ */
-
-const MOTEURS=["M1","M2","M3","M4","M5"];
-
-const PROTOCOLE={
-  M1:{
-    nom:"Intelligence des performances",
-    criteres:[
-      "Forme actuelle","Performances récentes",
-      "Progression","Régularité","Valeur sportive"
-    ]
-  },
-  M2:{
-    nom:"Intelligence des aptitudes",
-    criteres:[
-      "Distance","Terrain","Hippodrome",
-      "Discipline","Conditions techniques"
-    ]
-  },
-  M3:{
-    nom:"Intelligence des concurrents",
-    criteres:[
-      "Opposition","Lignes de courses",
-      "Rapports de force","Tactique","Hiérarchie"
-    ]
-  },
-  M4:{
-    nom:"Intelligence des révélations",
-    criteres:[
-      "Chevaux cachés","Progrès discrets",
-      "Favoris fragiles","Performances masquées",
-      "Opportunités vérifiables"
-    ]
-  },
-  M5:{
-    nom:"Intelligence de la robustesse",
-    criteres:[
-      "Risques","Incertitudes",
-      "Scénarios alternatifs","Cohérence",
-      "Résistance des choix"
-    ]
-  }
-};
-
-const CRITERES=[
-  "Valeur sportive et performances",
-  "Forme actuelle et fraîcheur",
-  "Distance et aptitude au parcours",
-  "Terrain et profil de piste",
-  "Jockey ou driver",
-  "Entraîneur et entourage",
-  "Origines et pedigree",
-  "Ferrure ou poids selon la discipline",
-  "Qualité de l'opposition",
-  "Scénarios tactiques",
-  "Favoris potentiellement trompeurs",
-  "Chevaux cachés et sous-estimés",
-  "Données manquantes ou contradictoires"
-];
-
-const CHEMINS={
-  courses:[
-    "data/courses.json",
-    "data/tableau_officiel.json"
-  ],
-  rapport:[
-    "data/rapport.json"
-  ],
-  pv:[
-    "data/pv.json",
-    "data/index_pv.json"
-  ],
-  figes:[
-    "data/figes.json",
-    "data/index_figes.json"
-  ],
-  audits:[
-    "data/audits.json",
-    "data/index_audits.json"
-  ]
-};
-
-let ETAT={
-  courses:[],
-  pv:[],
-  figes:[],
-  audits:[],
-  rapport:null,
-  sources:{},
-  erreurs:[]
-};
-
-let chargementEnCours=false;
-
-/* ============================================
-   OUTILS
-============================================ */
-
 const el=id=>document.getElementById(id);
 
-function valeur(v){
-  return v===null||v===undefined||v===""
-    ?"—":String(v);
+function esc(v){
+  return String(v??"—").replace(/[&<>"']/g,c=>({
+    "&":"&amp;","<":"&lt;",">":"&gt;",
+    '"':"&quot;","'":"&#39;"
+  }[c]));
 }
 
-function echapper(v){
-  return valeur(v).replace(/[&<>"']/g,c=>({
-    "&":"&amp;",
-    "<":"&lt;",
-    ">":"&gt;",
-    '"':"&quot;",
-    "'":"&#39;"
-  }[c]));
+function dateParis(v){
+  if(!v)return "—";
+  const d=new Date(v);
+  if(Number.isNaN(d.getTime()))return esc(v);
+  return new Intl.DateTimeFormat("fr-FR",{
+    timeZone:"Europe/Paris",
+    dateStyle:"short",
+    timeStyle:"medium"
+  }).format(d);
+}
+
+async function json(path){
+  const url=path+"?v="+Date.now();
+  const response=await fetch(url,{cache:"no-store"});
+  if(!response.ok)throw Error(path+" : HTTP "+response.status);
+  return response.json();
 }
 
 function tableau(v){
   return Array.isArray(v)?v:[];
 }
 
-function objet(v){
-  return v!==null&&typeof v==="object"&&!Array.isArray(v);
+function lignesMoteurs(moteurs){
+  const lignes=tableau(moteurs);
+  if(!lignes.length)return "<p>Aucune analyse validée.</p>";
+
+  return `<div class="tablewrap"><table>
+  <thead><tr>
+  <th>Moteur</th>
+  <th>🥇 Gagnant espéré</th>
+  <th>🥈 Meilleur placé</th>
+  <th>Ordre d'arrivée espéré</th>
+  <th>🎯 Pari retenu</th>
+  <th>Qualification</th>
+  <th>Validation</th>
+  <th>Heure Paris</th>
+  </tr></thead><tbody>`+
+  lignes.map(m=>`<tr>
+  <td>${esc(m.moteur)}</td>
+  <td>${esc(m.gagnant_espere)}</td>
+  <td>${esc(m.meilleur_place)}</td>
+  <td>${esc(tableau(m.ordre_espere).join(" - "))}</td>
+  <td>${esc(m.pari_retenu)}</td>
+  <td>${esc(m.qualification)}</td>
+  <td>${esc(m.validation)}</td>
+  <td>${esc(dateParis(m.heure_fige||m.heure_paris))}</td>
+  </tr>`).join("")+
+  "</tbody></table></div>";
 }
 
-function liste(v){
-  return Array.isArray(v)
-    ?v.map(valeur).join(" - ")
-    :valeur(v);
-}
-
-function nombre(v){
-  if(v===null||v===undefined||v==="")return null;
-  const n=Number(v);
-  return Number.isInteger(n)&&n>0?n:null;
-}
-
-function dateValide(v){
-  if(v===null||v===undefined||v==="")return null;
-  let d;
-  if(typeof v==="number"){
-    d=new Date(v<100000000000?v*1000:v);
-  }else{
-    d=new Date(v);
-  }
-  return Number.isNaN(d.getTime())?null:d;
-}
-
-function formatParis(v){
-  const d=dateValide(v);
-  if(!d)return valeur(v);
-  return new Intl.DateTimeFormat("fr-FR",{
-    timeZone:"Europe/Paris",
-    dateStyle:"short",
-    timeStyle:"short"
-  }).format(d);
-}
-
-function heureParis(){
-  return new Intl.DateTimeFormat("fr-FR",{
-    timeZone:"Europe/Paris",
-    dateStyle:"full",
-    timeStyle:"medium"
-  }).format(new Date());
-}
-
-function horloge(){
-  el("horloge").textContent="🕒 Heure de Paris : "+heureParis();
-}
-
-function statutHTML(s){
-  const t=valeur(s);
-  const q=t.toUpperCase();
-  let classe="yellow";
-  if(/FIGÉ|FIGE|VALIDÉ|VALIDE|VERT|OK|DÉFINITIF|DEFINITIF/.test(q)){
-    classe="green";
-  }
-  if(/REJET|ROUGE|ERREUR|ÉCHEC|ECHEC|ANNUL/.test(q)){
-    classe="red";
-  }
-  return '<span class="tag '+classe+'">'+echapper(t)+'</span>';
-}
-
-function extraire(data,cles){
-  if(Array.isArray(data))return data;
-  if(!objet(data))return [];
-  for(const cle of cles){
-    if(Array.isArray(data[cle]))return data[cle];
-  }
-  return [];
-}
-
-function enregistrements(data,cles){
-  if(Array.isArray(data))return data;
-  if(!objet(data))return [];
-  for(const cle of cles){
-    if(Array.isArray(data[cle]))return data[cle];
-    if(objet(data[cle]))return Object.entries(data[cle]).map(
-      ([id,v])=>objet(v)?{id,...v}:{id,valeur:v}
-    );
-  }
-  return Object.entries(data)
-    .filter(([k])=>![
-      "date","statut","actualise","execution",
-      "version","source","total"
-    ].includes(k))
-    .map(([id,v])=>objet(v)?{id,...v}:{id,valeur:v});
-}
-
-/* ============================================
-   IDENTIFICATION DES COURSES
-============================================ */
-
-function codeReunion(c){
-  const r=c.reunion??c.r??c.numero_reunion;
-  if(r===undefined||r===null)return "—";
-  const s=String(r).toUpperCase();
-  return s.startsWith("R")?s:"R"+s;
-}
-
-function codeCourse(c){
-  const n=c.course??c.c??c.numero_course;
-  if(n===undefined||n===null)return "—";
-  const s=String(n).toUpperCase();
-  return s.startsWith("C")?s:"C"+s;
-}
-
-function identifiant(c){
-  return valeur(c.id??c.course_id??[
-    c.date,codeReunion(c),codeCourse(c)
-  ].filter(x=>x&&x!=="—").join("-"));
-}
-
-function codeCourt(c){
-  return codeReunion(c)+codeCourse(c);
-}
-
-function nomCourse(c){
-  return valeur(c.nom??c.nom_course??c.libelle??codeCourt(c));
-}
-
-function departCourse(c){
-  return c.depart_ms??c.depart_iso??
-    c.heure_depart??c.depart??c.heure??null;
-}
-
-function partantsCourse(c){
-  return c.nombre_partants??c.nb_partants??
-    (Array.isArray(c.partants)?c.partants.length:null);
-}
-
-function chercherTrace(collection,c){
-  const id=identifiant(c);
-  const court=codeCourt(c);
-  return collection.find(x=>{
-    const k=valeur(x.course_id??x.id??x.course);
-    return k===id||k===court;
-  })||null;
-}
-
-function analysesDe(v){
-  if(!v)return {};
-  const a=v.moteurs??v.analyses??v.pronostics??{};
-  if(Array.isArray(a)){
-    return Object.fromEntries(
-      a.filter(x=>objet(x)&&MOTEURS.includes(x.moteur??x.id))
-       .map(x=>[x.moteur??x.id,x])
-    );
-  }
-  return objet(a)?a:{};
-}
-
-function moteurCourse(c,m){
-  const a=analysesDe(c);
-  return objet(a[m])?a[m]:null;
-}
-
-/* ============================================
-   PRÉSENTATION DES MOTEURS
-============================================ */
-
-function afficherMoteurs(){
-  el("listeMoteurs").innerHTML=MOTEURS.map(m=>{
-    const p=PROTOCOLE[m];
-    return `<article class="engine">
-      <h3>🧠 ${m}</h3>
-      <strong>${echapper(p.nom)}</strong>
-      <ul>${p.criteres.map(x=>
-        `<li>${echapper(x)}</li>`).join("")}</ul>
-      <p class="small">Moteur indépendant</p>
-    </article>`;
-  }).join("");
-}
-
-function afficherCriteres(){
-  el("listeCriteres").innerHTML=CRITERES.map((c,i)=>
-    `<div class="metric">
-      <strong style="font-size:17px">${i+1}</strong>
-      <span>${echapper(c)}</span>
-    </div>`
-  ).join("");
-}
-
-/* ============================================
-   VALIDATION DES ANALYSES
-============================================ */
-
-function analyserLigne(a){
-  if(!objet(a))return {
-    valide:false,raison:"Analyse non publiée"
-  };
-
-  const ordre=a.ordre_arrivee_espere??
-    a.ordre_espere??a.ordre??a.classement;
-
-  if(!Array.isArray(ordre)||!ordre.length){
-    return {valide:false,raison:"Ordre absent"};
-  }
-
-  const nums=ordre.map(nombre);
-  if(nums.some(x=>x===null)){
-    return {valide:false,raison:"Numéros invalides"};
-  }
-
-  if(new Set(nums).size!==nums.length){
-    return {valide:false,raison:"Doublons dans l'ordre"};
-  }
-
-  const gagnant=nombre(a.gagnant_espere??a.gagnant);
-  if(gagnant!==nums[0]){
-    return {valide:false,raison:"Gagnant incohérent"};
-  }
-
-  return {valide:true,ordre:nums};
-}
-
-function estFigeProuve(a,trace,c){
-  if(!trace||!a)return false;
-
-  const h=a.heure_fige??trace.heure_fige??
-    trace.created_at??trace.date_fige;
-  const depart=departCourse(c);
-
-  const d1=dateValide(h);
-  const d2=dateValide(depart);
-
-  const empreinte=a.sha256??a.hash??
-    trace.sha256??trace.hash;
-
-  return Boolean(
-    d1&&d2&&d1.getTime()<d2.getTime()&&
-    typeof empreinte==="string"&&
-    /^[a-f0-9]{64}$/i.test(empreinte)
-  );
-}
-
-/* ============================================
-   TABLEAU OFFICIEL PAR COURSE
-============================================ */
-
-function ligneMoteur(c,m){
-  const trace=chercherTrace(ETAT.figes,c);
-  const pv=chercherTrace(ETAT.pv,c);
-
-  const sourceFige=analysesDe(trace)[m]??null;
-  const sourcePV=analysesDe(pv)[m]??null;
-  const sourceCourse=moteurCourse(c,m);
-
-  const a=sourceFige??sourcePV??sourceCourse;
-
-  if(!a){
-    return `<tr>
-      <td><strong>${m}</strong></td>
-      <td colspan="7" class="small">
-        🟡 Analyse non publiée — aucun pronostic inventé
-      </td>
-    </tr>`;
-  }
-
-  const controle=analyserLigne(a);
-  const gagnant=a.gagnant_espere??a.gagnant;
-  const place=a.meilleur_place??a.place;
-  const ordre=a.ordre_arrivee_espere??
-    a.ordre_espere??a.ordre??a.classement;
-  const pari=a.pari_retenu??a.pari;
-  const qualif=a.qualification??a.statut??"EN ÉTUDE";
-  const heure=a.heure_paris??a.heure_fige??a.heure;
-
-  const fige=Boolean(
-    sourceFige&&
-    controle.valide&&
-    estFigeProuve(sourceFige,trace,c)
-  );
-
-  const validation=fige
-    ?'<span class="tag green">🔒 FIGÉ horodaté</span>'
-    :controle.valide
-      ?'<span class="tag yellow">Étude / PV non figé</span>'
-      :'<span class="tag red">'+echapper(controle.raison)+'</span>';
-
-  return `<tr>
-    <td><strong>${m}</strong></td>
-    <td>${echapper(gagnant)}</td>
-    <td>${echapper(place)}</td>
-    <td>${echapper(liste(ordre))}</td>
-    <td>${echapper(pari)}</td>
-    <td>${statutHTML(qualif)}</td>
-    <td>${validation}</td>
-    <td>${echapper(heure)}</td>
-  </tr>`;
-}
-
-function courseAvecAnalyse(c){
-  return MOTEURS.some(m=>Boolean(moteurCourse(c,m)))||
-    Boolean(chercherTrace(ETAT.pv,c))||
-    Boolean(chercherTrace(ETAT.figes,c));
-}
-
-function creerCarteCourse(c){
-  const trace=chercherTrace(ETAT.figes,c);
-  const id=identifiant(c);
-
-  return `<article class="course-card">
-    <div class="course-head">
-      <div>
-        <h3>🏇 ${echapper(codeCourt(c))} —
-          ${echapper(nomCourse(c))}</h3>
-        <p class="small">
-          ${echapper(c.hippodrome??c.lieu)} •
-          Départ : ${echapper(formatParis(departCourse(c)))} •
-          Partants : ${echapper(partantsCourse(c))}
-        </p>
-        <p class="small">
-          Identifiant : ${echapper(id)}
-        </p>
-      </div>
-      <div>
-        <span class="tag blue">TABLEAU OFFICIEL MPAA X1000</span>
-        ${trace?'<span class="tag yellow">Trace FIGÉ chargée</span>':""}
-      </div>
-    </div>
-    <div class="tablewrap">
-      <table>
-        <thead><tr>
-          <th>Moteur</th>
-          <th>🥇 Gagnant espéré</th>
-          <th>🥈 Meilleur placé</th>
-          <th>🏆 Ordre d'arrivée espéré</th>
-          <th>🎯 Pari retenu</th>
-          <th>Qualification</th>
-          <th>Validation</th>
-          <th>Heure Paris</th>
-        </tr></thead>
-        <tbody>
-          ${MOTEURS.map(m=>ligneMoteur(c,m)).join("")}
-        </tbody>
-      </table>
-    </div>
-  </article>`;
-}
-
-function remplirFiltres(){
-  const select=el("filtreReunion");
-  const ancien=select.value;
-  const reunions=[...new Set(
-    ETAT.courses.map(codeReunion)
-  )].sort();
-
-  select.innerHTML='<option value="toutes">Toutes les réunions</option>';
-
-  for(const r of reunions){
-    const o=document.createElement("option");
-    o.value=r;
-    o.textContent=r;
-    select.appendChild(o);
-  }
-
-  if([...select.options].some(o=>o.value===ancien)){
-    select.value=ancien;
-  }
-}
-
-function afficherCourses(){
-  const reunion=el("filtreReunion").value;
-  const filtre=el("filtreEtat").value;
-
-  const selection=ETAT.courses.filter(c=>{
-    if(reunion!=="toutes"&&codeReunion(c)!==reunion){
-      return false;
-    }
-    if(filtre==="analyse"&&!courseAvecAnalyse(c)){
-      return false;
-    }
-    if(filtre==="fige"&&!chercherTrace(ETAT.figes,c)){
-      return false;
-    }
-    return true;
-  });
-
-  if(!selection.length){
-    el("listeCourses").className="empty";
+function afficherCourses(courses){
+  const liste=tableau(courses);
+  if(!liste.length){
     el("listeCourses").textContent=
-      "Aucune course disponible pour cette sélection.";
+      "Aucune course PMU vérifiée disponible.";
     return;
   }
 
-  el("listeCourses").className="";
-  el("listeCourses").innerHTML=
-    selection.map(creerCarteCourse).join("");
+  el("listeCourses").innerHTML=liste.map(c=>`
+  <article>
+  <h3>${esc(c.hippodrome)} — ${esc(c.id)}</h3>
+  <p>Départ : ${esc(dateParis(c.depart))}</p>
+  <p>Partants : ${esc(c.nombre_partants)}</p>
+  <p>Statut : ${esc(c.statut)}</p>
+  ${lignesMoteurs(c.moteurs)}
+  </article>`).join("");
 }
 
-/* ============================================
-   PV, FIGÉS ET AUDITS
-============================================ */
-
-function afficherTraces(id,donnees,type){
-  const cible=el(id);
-
-  if(!donnees.length){
-    cible.className="empty";
-    cible.textContent="Aucun enregistrement chargé.";
-    return;
-  }
-
-  cible.className="";
-
-  cible.innerHTML=donnees.slice(-30).reverse().map(x=>{
-    const course=echapper(x.course_id??x.id??x.course);
-    const moteur=echapper(x.moteur);
-    const heure=echapper(
-      x.heure_fige??x.heure_paris??x.created_at??x.date
-    );
-    const hash=echapper(x.sha256??x.hash);
-    const arrivee=echapper(liste(
-      x.arrivee_officielle??x.arrivee
-    ));
-
-    return `<div class="trace">
-      <strong>${course} — ${moteur}</strong>
-      <p class="small">Horodatage : ${heure}</p>
-      ${type==="audit"
-        ?`<p>Arrivée : ${arrivee}</p>`
-        :`<p>Empreinte : ${hash}</p>`}
-      <p>Statut déclaré :
-        ${statutHTML(x.statut??"Non vérifié")}
-      </p>
-    </div>`;
-  }).join("");
+function afficherFiges(figes){
+  const liste=tableau(figes);
+  el("listeFiges").innerHTML=liste.length?
+    liste.map(f=>`
+      <article>
+      <h3>${esc(f.rapport?.course_id)}</h3>
+      <p>FIGÉ : ${esc(dateParis(f.fige_a))}</p>
+      <p>Statut : ${esc(f.statut)}</p>
+      <p>SHA256 : <small>${esc(f.sha256)}</small></p>
+      ${lignesMoteurs(f.rapport?.moteurs)}
+      </article>
+    `).join(""):
+    "Aucun FIGÉ vérifié publié.";
 }
 
-/* ============================================
-   JOURNAL DES DIFFICULTÉS
-============================================ */
-
-function afficherDifficultes(){
-  const journal=ETAT.courses.filter(c=>c.erreur);
-
-  if(!journal.length){
-    el("difficultes").className="empty";
-    el("difficultes").textContent=
-      "Aucune difficulté documentée dans les courses chargées.";
-    return;
-  }
-
-  el("difficultes").className="";
-  el("difficultes").innerHTML=journal.map(c=>
-    `<div class="trace">
-      <strong>${echapper(codeCourt(c))}</strong>
-      <p>${echapper(c.erreur)}</p>
-    </div>`
-  ).join("");
+function afficherPV(pv){
+  const liste=tableau(pv);
+  el("listePV").innerHTML=liste.length?
+    liste.map(p=>`
+      <article>
+      <h3>${esc(p.course_id)}</h3>
+      <p>${esc(p.statut)}</p>
+      <p>${esc(dateParis(p.fige_a))}</p>
+      <p>SHA256 : ${esc(p.sha256)}</p>
+      </article>
+    `).join(""):
+    "Aucun PV disponible.";
 }
 
-/* ============================================
-   CHARGEMENT DES DONNÉES
-============================================ */
-
-async function lireJSON(chemin){
-  const url="./"+chemin+"?v="+Date.now();
-  const r=await fetch(url,{cache:"no-store"});
-  if(!r.ok)throw new Error("HTTP "+r.status);
-  return await r.json();
-}
-
-async function premierDisponible(chemins){
-  const erreurs=[];
-  for(const chemin of chemins){
-    try{
-      return {data:await lireJSON(chemin),chemin};
-    }catch(e){
-      erreurs.push(chemin+" : "+e.message);
-    }
-  }
-  return {data:null,chemin:null,erreurs};
+function afficherAudits(audits){
+  const liste=tableau(audits);
+  el("listeAudits").innerHTML=liste.length?
+    liste.map(a=>`
+      <article>
+      <h3>${esc(a.course_id)}</h3>
+      <p>Arrivée : ${esc(tableau(a.arrivee).join(" - "))}</p>
+      <p>Statut : ${esc(a.statut)}</p>
+      <p>Source : ${esc(a.source)}</p>
+      <div class="tablewrap"><table>
+      <thead><tr>
+      <th>Moteur</th><th>Gagnant trouvé</th>
+      <th>Chevaux dans les cinq</th>
+      <th>Ordre exact</th>
+      </tr></thead><tbody>
+      ${tableau(a.moteurs).map(m=>`<tr>
+      <td>${esc(m.moteur)}</td>
+      <td>${m.gagnant_trouve?"Oui":"Non"}</td>
+      <td>${esc(m.chevaux_dans_les_cinq)}</td>
+      <td>${m.ordre_exact?"Oui":"Non"}</td>
+      </tr>`).join("")}
+      </tbody></table></div>
+      </article>
+    `).join(""):
+    "Aucun audit officiel disponible.";
 }
 
 async function charger(){
-  if(chargementEnCours)return;
-  chargementEnCours=true;
+  const chemins=[
+    "data/courses.json",
+    "data/pv.json",
+    "data/figes.json",
+    "data/audits.json",
+    "data/rapport.json"
+  ];
 
-  el("etat").className="tag yellow";
-  el("etat").textContent="🟡 Chargement en cours";
+  const reponses=await Promise.allSettled(
+    chemins.map(json)
+  );
 
-  try{
-    const cles=Object.keys(CHEMINS);
-    const resultats=await Promise.all(
-      cles.map(k=>premierDisponible(CHEMINS[k]))
-    );
+  const donnees=reponses.map(r=>
+    r.status==="fulfilled"?r.value:null
+  );
 
-    const fichiers={};
-    const sources={};
-    const erreurs=[];
+  const [courses,pv,figes,audits,rapport]=donnees;
+  const listeCourses=tableau(courses?.courses);
+  const listePV=tableau(pv?.pv);
+  const listeFiges=tableau(figes?.figes);
+  const listeAudits=tableau(audits?.audits);
 
-    cles.forEach((k,i)=>{
-      fichiers[k]=resultats[i].data;
-      sources[k]=resultats[i].chemin;
-      if(!resultats[i].chemin){
-        erreurs.push(...(resultats[i].erreurs||[]));
-      }
-    });
+  el("nbCourses").textContent=listeCourses.length;
+  el("nbPV").textContent=listePV.length;
+  el("nbFiges").textContent=listeFiges.length;
+  el("nbAudits").textContent=listeAudits.length;
 
-    ETAT.courses=extraire(fichiers.courses,[
-      "courses","tableau_officiel","analyses"
-    ]);
-    ETAT.pv=enregistrements(fichiers.pv,["pv","proces_verbaux"]);
-    ETAT.figes=enregistrements(fichiers.figes,["figes","pv"]);
-    ETAT.audits=enregistrements(fichiers.audits,[
-      "audits","resultats"
-    ]);
-    ETAT.rapport=fichiers.rapport;
-    ETAT.sources=sources;
-    ETAT.erreurs=erreurs;
+  afficherCourses(listeCourses);
+  afficherPV(listePV);
+  afficherFiges(listeFiges);
+  afficherAudits(listeAudits);
 
-    el("nbCourses").textContent=ETAT.courses.length;
-    el("nbPV").textContent=ETAT.pv.length;
-    el("nbFiges").textContent=ETAT.figes.length;
-    el("nbAudits").textContent=ETAT.audits.length;
+  el("etat").textContent=rapport?.status||
+    "🔴 Rapport indisponible";
 
-    remplirFiltres();
-    afficherCourses();
-    afficherTraces("listePV",ETAT.pv,"pv");
-    afficherTraces("listeFiges",ETAT.figes,"fige");
-    afficherTraces("listeAudits",ETAT.audits,"audit");
-    afficherDifficultes();
+  el("actualisation").textContent=
+    "Dernier rapport : "+
+    dateParis(rapport?.generated_at_paris);
 
-    const rapport=ETAT.rapport;
-    el("rapport").textContent=rapport
-      ?JSON.stringify(rapport,null,2)
-      :"Rapport indisponible.";
+  el("rapport").textContent=rapport?
+    JSON.stringify(rapport,null,2):
+    "Aucun rapport publié.";
 
-    el("actualisation").textContent=
-      "Dernière exécution déclarée : "+
-      valeur(rapport?.execution??rapport?.actualise)+
-      " | Statut déclaré : "+
-      valeur(rapport?.statut);
+  const erreurs=reponses.flatMap((r,i)=>
+    r.status==="rejected"?
+    [chemins[i]+" : "+r.reason.message]:[]
+  );
 
-    el("fichiers").innerHTML=cles.map(k=>
-      `<p>${sources[k]
-        ?'<span class="tag green">Chargé</span>'
-        :'<span class="tag yellow">Absent</span>'}
-        ${echapper(k)} :
-        ${echapper(sources[k]??"Aucun fichier accessible")}
-      </p>`
-    ).join("");
+  const difficultes=[
+    ...erreurs,
+    ...tableau(rapport?.difficultes).map(
+      x=>x.difficulte||JSON.stringify(x)
+    )
+  ];
 
-    if(ETAT.courses.length){
-      el("etat").className="tag green";
-      el("etat").textContent="🟢 Courses chargées";
-    }else{
-      el("etat").className="tag yellow";
-      el("etat").textContent="🟡 Courses indisponibles";
-    }
-
-    el("etatPMU").textContent=
-      "Courses chargées : "+ETAT.courses.length+
-      " | Fichiers manquants : "+
-      cles.filter(k=>!sources[k]).length+
-      " | Analyses non vérifiées automatiquement.";
-
-    el("maj").textContent=
-      "Dernière consultation du site : "+heureParis();
-
-  }catch(e){
-    el("etat").className="tag red";
-    el("etat").textContent="🔴 Erreur de chargement";
-    el("etatPMU").textContent=e.message;
-  }finally{
-    chargementEnCours=false;
-  }
+  el("difficultes").innerHTML=difficultes.length?
+    difficultes.map(x=>"<p>"+esc(x)+"</p>").join(""):
+    "Aucune difficulté signalée.";
 }
 
-/* ============================================
-   INITIALISATION
-============================================ */
+function horloge(){
+  el("horloge").textContent=
+    "🕒 Heure de Paris : "+dateParis(new Date());
+}
 
-afficherMoteurs();
-afficherCriteres();
 horloge();
-
-el("boutonMaj").addEventListener("click",charger);
-el("boutonSysteme").addEventListener("click",charger);
-el("filtreReunion").addEventListener("change",afficherCourses);
-el("filtreEtat").addEventListener("change",afficherCourses);
-
-charger();
-
 setInterval(horloge,1000);
+charger();
 setInterval(charger,60000);
-
 </script>
 </body>
 </html>
