@@ -1,9 +1,8 @@
 {
   "logiciel": "X1000 PHOENIX",
-  "version": "PUBLICATION_CORRIGEE",
-  "status": "🟡 COURSES DISPONIBLES",
-  "generated_at_paris": "2026-10-27T20:13:20.469523+01:00",
-  "mode": "DONNEES_SOURCEES_UNIQUEMENT",
+  "version": "PUBLICATION-4.0",
+  "status": "COURSES_SANS_ANALYSES",
+  "generated_at_paris": "2026-10-27T20:29:23.908763+01:00",
   "moteurs_actifs": [
     "M1",
     "M2",
@@ -11,16 +10,22 @@
     "M4",
     "M5"
   ],
-  "source_donnees": null,
-  "moteurs": [],
-  "difficultes": [
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "data/course.json absent : aucune analyse nouvelle possible"
-    }
-  ],
   "courses_count": 24,
+  "analyses_count": 0,
   "pv_count": 0,
   "figes_count": 0,
-  "audits_count": 0
+  "audits_count": 0,
+  "collecte": {
+    "logiciel": "X1000 PHOENIX",
+    "version": "M1-M5-3.0",
+    "execution": "2026-10-27T20:29:17.837014+01:00",
+    "date": "2026-10-27",
+    "statut": "COLLECTE_OK",
+    "courses": 24,
+    "analyses": 0,
+    "figes_verifies": 0,
+    "erreurs": []
+  },
+  "difficultes": [],
+  "avertissement": "Aucune donnee ou arrivee inventee. Les FIGES sont uniquement ceux authentifies par phoenix.py."
 }
