@@ -9,13 +9,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: x1000-phoenix-production
+  group: x1000-phoenix-automatisation
   cancel-in-progress: false
 
 jobs:
   phoenix:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 14
 
     steps:
       - name: Recuperer le depot
@@ -32,20 +32,41 @@ jobs:
       - name: Verifier la syntaxe
         run: |
           python -m py_compile phoenix.py
-          python -m py_compile publication.py
           python -m py_compile pmu_engine.py
+          python -m py_compile publication.py
 
-      - name: Collecter les donnees PMU
+      - name: Collecter et analyser PMU
         id: collecte
-        continue-on-error: true
-        run: |
-          python pmu_engine.py
+        run: python pmu_engine.py
 
-      - name: Publier les donnees
+      - name: Publier les rapports
+        if: success() || failure()
+        run: python publication.py
+
+      - name: Diagnostic des donnees
+        if: success() || failure()
         run: |
-          python publication.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          for nom in ("rapport.json", "publication_rapport.json"):
+              chemin = Path("data") / nom
+              if not chemin.exists():
+                  print(f"::warning::{nom} absent")
+                  continue
+
+              rapport = json.loads(
+                  chemin.read_text(encoding="utf-8")
+              )
+              print(json.dumps(rapport, ensure_ascii=False, indent=2))
+
+              if rapport.get("statut") == "ERREUR":
+                  print("::error::Collecte PMU en erreur")
+          PY
 
       - name: Verifier les JSON
+        if: success() || failure()
         run: |
           python - <<'PY'
           import json
@@ -57,43 +78,34 @@ jobs:
               print("OK:", chemin)
           PY
 
-      - name: Enregistrer les rapports
-        shell: bash
+      - name: Enregistrer les donnees
+        if: success() || failure()
         run: |
           set -e
-
           git config user.name "github-actions[bot]"
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          mkdir -p data
           git add -A data/
 
           if git diff --cached --quiet; then
-            echo "Aucun changement."
+            echo "Aucune modification."
             exit 0
           fi
 
-          git commit -m "PHOENIX: publication M1-M5"
+          git commit -m "PHOENIX: actualisation PMU M1-M5"
 
           for tentative in 1 2 3; do
             git fetch origin main
-
             if git rebase origin/main; then
               if git push origin HEAD:main; then
-                echo "Publication reussie."
+                echo "Rapports enregistres."
                 exit 0
               fi
             fi
-
             git rebase --abort || true
             sleep 5
           done
 
-          echo "Echec de publication."
+          echo "::error::Publication Git echouee"
           exit 1
-
-      - name: Signaler un echec de collecte
-        if: steps.collecte.outcome == 'failure'
-        run: |
-          echo "::warning::Collecte PMU en echec."
-          echo "Verifier les donnees et le journal."
