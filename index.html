@@ -773,4 +773,283 @@ function creerCarteCourse(c){
           Départ : ${echapper(formatParis(departCourse(c)))} •
           Partants : ${echapper(partantsCourse(c))}
         </p>
-   
+        <p class="small">
+          Identifiant : ${echapper(id)}
+        </p>
+      </div>
+      <div>
+        <span class="tag blue">TABLEAU OFFICIEL MPAA X1000</span>
+        ${trace?'<span class="tag yellow">Trace FIGÉ chargée</span>':""}
+      </div>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr>
+          <th>Moteur</th>
+          <th>🥇 Gagnant espéré</th>
+          <th>🥈 Meilleur placé</th>
+          <th>🏆 Ordre d'arrivée espéré</th>
+          <th>🎯 Pari retenu</th>
+          <th>Qualification</th>
+          <th>Validation</th>
+          <th>Heure Paris</th>
+        </tr></thead>
+        <tbody>
+          ${MOTEURS.map(m=>ligneMoteur(c,m)).join("")}
+        </tbody>
+      </table>
+    </div>
+  </article>`;
+}
+
+function remplirFiltres(){
+  const select=el("filtreReunion");
+  const ancien=select.value;
+  const reunions=[...new Set(
+    ETAT.courses.map(codeReunion)
+  )].sort();
+
+  select.innerHTML='<option value="toutes">Toutes les réunions</option>';
+
+  for(const r of reunions){
+    const o=document.createElement("option");
+    o.value=r;
+    o.textContent=r;
+    select.appendChild(o);
+  }
+
+  if([...select.options].some(o=>o.value===ancien)){
+    select.value=ancien;
+  }
+}
+
+function afficherCourses(){
+  const reunion=el("filtreReunion").value;
+  const filtre=el("filtreEtat").value;
+
+  const selection=ETAT.courses.filter(c=>{
+    if(reunion!=="toutes"&&codeReunion(c)!==reunion){
+      return false;
+    }
+    if(filtre==="analyse"&&!courseAvecAnalyse(c)){
+      return false;
+    }
+    if(filtre==="fige"&&!chercherTrace(ETAT.figes,c)){
+      return false;
+    }
+    return true;
+  });
+
+  if(!selection.length){
+    el("listeCourses").className="empty";
+    el("listeCourses").textContent=
+      "Aucune course disponible pour cette sélection.";
+    return;
+  }
+
+  el("listeCourses").className="";
+  el("listeCourses").innerHTML=
+    selection.map(creerCarteCourse).join("");
+}
+
+/* ============================================
+   PV, FIGÉS ET AUDITS
+============================================ */
+
+function afficherTraces(id,donnees,type){
+  const cible=el(id);
+
+  if(!donnees.length){
+    cible.className="empty";
+    cible.textContent="Aucun enregistrement chargé.";
+    return;
+  }
+
+  cible.className="";
+
+  cible.innerHTML=donnees.slice(-30).reverse().map(x=>{
+    const course=echapper(x.course_id??x.id??x.course);
+    const moteur=echapper(x.moteur);
+    const heure=echapper(
+      x.heure_fige??x.heure_paris??x.created_at??x.date
+    );
+    const hash=echapper(x.sha256??x.hash);
+    const arrivee=echapper(liste(
+      x.arrivee_officielle??x.arrivee
+    ));
+
+    return `<div class="trace">
+      <strong>${course} — ${moteur}</strong>
+      <p class="small">Horodatage : ${heure}</p>
+      ${type==="audit"
+        ?`<p>Arrivée : ${arrivee}</p>`
+        :`<p>Empreinte : ${hash}</p>`}
+      <p>Statut déclaré :
+        ${statutHTML(x.statut??"Non vérifié")}
+      </p>
+    </div>`;
+  }).join("");
+}
+
+/* ============================================
+   JOURNAL DES DIFFICULTÉS
+============================================ */
+
+function afficherDifficultes(){
+  const journal=ETAT.courses.filter(c=>c.erreur);
+
+  if(!journal.length){
+    el("difficultes").className="empty";
+    el("difficultes").textContent=
+      "Aucune difficulté documentée dans les courses chargées.";
+    return;
+  }
+
+  el("difficultes").className="";
+  el("difficultes").innerHTML=journal.map(c=>
+    `<div class="trace">
+      <strong>${echapper(codeCourt(c))}</strong>
+      <p>${echapper(c.erreur)}</p>
+    </div>`
+  ).join("");
+}
+
+/* ============================================
+   CHARGEMENT DES DONNÉES
+============================================ */
+
+async function lireJSON(chemin){
+  const url="./"+chemin+"?v="+Date.now();
+  const r=await fetch(url,{cache:"no-store"});
+  if(!r.ok)throw new Error("HTTP "+r.status);
+  return await r.json();
+}
+
+async function premierDisponible(chemins){
+  const erreurs=[];
+  for(const chemin of chemins){
+    try{
+      return {data:await lireJSON(chemin),chemin};
+    }catch(e){
+      erreurs.push(chemin+" : "+e.message);
+    }
+  }
+  return {data:null,chemin:null,erreurs};
+}
+
+async function charger(){
+  if(chargementEnCours)return;
+  chargementEnCours=true;
+
+  el("etat").className="tag yellow";
+  el("etat").textContent="🟡 Chargement en cours";
+
+  try{
+    const cles=Object.keys(CHEMINS);
+    const resultats=await Promise.all(
+      cles.map(k=>premierDisponible(CHEMINS[k]))
+    );
+
+    const fichiers={};
+    const sources={};
+    const erreurs=[];
+
+    cles.forEach((k,i)=>{
+      fichiers[k]=resultats[i].data;
+      sources[k]=resultats[i].chemin;
+      if(!resultats[i].chemin){
+        erreurs.push(...(resultats[i].erreurs||[]));
+      }
+    });
+
+    ETAT.courses=extraire(fichiers.courses,[
+      "courses","tableau_officiel","analyses"
+    ]);
+    ETAT.pv=enregistrements(fichiers.pv,["pv","proces_verbaux"]);
+    ETAT.figes=enregistrements(fichiers.figes,["figes","pv"]);
+    ETAT.audits=enregistrements(fichiers.audits,[
+      "audits","resultats"
+    ]);
+    ETAT.rapport=fichiers.rapport;
+    ETAT.sources=sources;
+    ETAT.erreurs=erreurs;
+
+    el("nbCourses").textContent=ETAT.courses.length;
+    el("nbPV").textContent=ETAT.pv.length;
+    el("nbFiges").textContent=ETAT.figes.length;
+    el("nbAudits").textContent=ETAT.audits.length;
+
+    remplirFiltres();
+    afficherCourses();
+    afficherTraces("listePV",ETAT.pv,"pv");
+    afficherTraces("listeFiges",ETAT.figes,"fige");
+    afficherTraces("listeAudits",ETAT.audits,"audit");
+    afficherDifficultes();
+
+    const rapport=ETAT.rapport;
+    el("rapport").textContent=rapport
+      ?JSON.stringify(rapport,null,2)
+      :"Rapport indisponible.";
+
+    el("actualisation").textContent=
+      "Dernière exécution déclarée : "+
+      valeur(rapport?.execution??rapport?.actualise)+
+      " | Statut déclaré : "+
+      valeur(rapport?.statut);
+
+    el("fichiers").innerHTML=cles.map(k=>
+      `<p>${sources[k]
+        ?'<span class="tag green">Chargé</span>'
+        :'<span class="tag yellow">Absent</span>'}
+        ${echapper(k)} :
+        ${echapper(sources[k]??"Aucun fichier accessible")}
+      </p>`
+    ).join("");
+
+    if(ETAT.courses.length){
+      el("etat").className="tag green";
+      el("etat").textContent="🟢 Courses chargées";
+    }else{
+      el("etat").className="tag yellow";
+      el("etat").textContent="🟡 Courses indisponibles";
+    }
+
+    el("etatPMU").textContent=
+      "Courses chargées : "+ETAT.courses.length+
+      " | Fichiers manquants : "+
+      cles.filter(k=>!sources[k]).length+
+      " | Analyses non vérifiées automatiquement.";
+
+    el("maj").textContent=
+      "Dernière consultation du site : "+heureParis();
+
+  }catch(e){
+    el("etat").className="tag red";
+    el("etat").textContent="🔴 Erreur de chargement";
+    el("etatPMU").textContent=e.message;
+  }finally{
+    chargementEnCours=false;
+  }
+}
+
+/* ============================================
+   INITIALISATION
+============================================ */
+
+afficherMoteurs();
+afficherCriteres();
+horloge();
+
+el("boutonMaj").addEventListener("click",charger);
+el("boutonSysteme").addEventListener("click",charger);
+el("filtreReunion").addEventListener("change",afficherCourses);
+el("filtreEtat").addEventListener("change",afficherCourses);
+
+charger();
+
+setInterval(horloge,1000);
+setInterval(charger,60000);
+
+</script>
+</body>
+</html>
