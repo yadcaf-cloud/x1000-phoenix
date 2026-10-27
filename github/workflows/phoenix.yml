@@ -1,0 +1,44 @@
+name: X1000 PHOENIX
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phoenix-data
+  cancel-in-progress: false
+
+jobs:
+  analyser:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Analyse des données
+        run: |
+          python phoenix.py \
+            --input data/course.json \
+            --output data/latest.json
+
+      - name: Vérifier les moteurs
+        run: python -m unittest discover -s tests -v
+
+      - name: Publier le rapport
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Actualisation PHOENIX'
+            git push
+          fi
+          
