@@ -3,24 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>🇸🇳🔥 X1000 PHOENIX — Intelligence vivante</title>
+<meta name="theme-color" content="#0d1628">
+<meta name="description" content="X1000 PHOENIX, intelligence hippique M1 à M5, analyses PMU, pronostics, PV, FIGÉS et audits vérifiables.">
+<title>🇸🇳🧠🔥 X1000 PHOENIX — Intelligence hippique vivante</title>
+
 <style>
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
   background: #0d1628;
   color: #edf3ff;
   font: 15px Arial, sans-serif;
 }
+
 header, main, footer {
-  max-width: 1150px;
+  max-width: 1200px;
   margin: auto;
   padding: 18px;
 }
-h1 { font-size: 30px; color: #ffcc62; }
+
+h1 { color: #ffcc62; font-size: 30px; }
 h2 { color: #8ecbff; }
 h3 { color: #e5efff; }
+
 p, li { line-height: 1.65; }
+
 section, article {
   background: #17243b;
   border: 1px solid #354660;
@@ -28,23 +36,30 @@ section, article {
   padding: 18px;
   margin: 15px 0;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
   gap: 12px;
 }
+
 .scroll { overflow-x: auto; }
+
 table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 850px;
+  min-width: 950px;
 }
+
 th, td {
   padding: 12px;
   border-bottom: 1px solid #40516a;
   text-align: left;
+  vertical-align: top;
 }
+
 th { color: #9fd4ff; }
+
 button {
   padding: 12px;
   margin: 5px;
@@ -55,40 +70,91 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+
+button:hover { background: #3488dc; }
+
+a { color: #8ecbff; }
+
 .badge {
   display: inline-block;
   background: #59471f;
   color: #ffe5a2;
-  padding: 6px 10px;
+  padding: 7px 12px;
   border-radius: 20px;
 }
+
 .green { color: #76e9a5; }
 .yellow { color: #ffdc79; }
 .red { color: #ff9292; }
+
 small { color: #b4c4d8; }
+
 pre {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+  background: #101c30;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 12px;
+}
+
+.status-card {
+  background: #101c30;
+  border: 1px solid #40516a;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.status-card strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.number {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffcc62;
+}
+
+.notice {
+  padding: 12px;
+  border-left: 4px solid #ffdc79;
+  background: #263047;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #354660;
 }
 </style>
 </head>
 
 <body>
+
 <header>
 <h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
 <h2>L'INTELLIGENCE HIPPIQUE VIVANTE</h2>
 <p>Moteurs indépendants M1 à M5</p>
 <p>
-<strong>Comprendre avant de choisir.
+<strong>
+Comprendre avant de choisir.
 Démontrer avant de valider.
-Apprendre après chaque course.</strong>
+Apprendre après chaque course.
+</strong>
 </p>
 <span class="badge" id="etat">
-Chargement des données
+🟡 Chargement des données
 </span>
 </header>
 
 <main>
+
 <section>
 <h2>🏇 Mission principale</h2>
 <p>
@@ -98,9 +164,34 @@ Identifier les meilleurs gagnants, les meilleurs
 placés et les combinaisons les plus défendables.
 </p>
 <p>
-Ne jamais suivre aveuglément un favori.
-Rechercher les chevaux cachés et les progrès
-sous-estimés, sans confondre grosse cote et qualité.
+Détecter les favoris fragiles, rechercher les
+chevaux cachés et les progrès sous-estimés,
+sans confondre grosse cote et qualité sportive.
+</p>
+</section>
+
+<section>
+<h2>📡 Centre de contrôle PMU</h2>
+<div class="status-grid">
+  <div class="status-card">
+    <strong>🏇 Courses chargées</strong>
+    <span class="number" id="nombre-courses">—</span>
+  </div>
+  <div class="status-card">
+    <strong>📋 PV enregistrés</strong>
+    <span class="number" id="nombre-pv">—</span>
+  </div>
+  <div class="status-card">
+    <strong>🔒 FIGÉS</strong>
+    <span class="number" id="nombre-figes">—</span>
+  </div>
+  <div class="status-card">
+    <strong>🔬 Audits</strong>
+    <span class="number" id="nombre-audits">—</span>
+  </div>
+</div>
+<p id="etat-pmu" class="yellow">
+En attente des données réelles PMU.
 </p>
 </section>
 
@@ -117,10 +208,11 @@ sous-estimés, sans confondre grosse cote et qualité.
 <section>
 <h2>🏆 Tableau officiel X1000 PHOENIX</h2>
 <p>
-Chaque moteur choisit indépendamment son meilleur
-Simple Gagnant, son meilleur Simple Placé et sa
-combinaison classée dans l'ordre d'arrivée espéré.
+Chaque moteur présente son gagnant espéré,
+son meilleur placé et sa combinaison classée
+dans l'ordre d'arrivée espéré.
 </p>
+
 <div class="scroll">
 <table>
 <thead>
@@ -136,7 +228,37 @@ combinaison classée dans l'ordre d'arrivée espéré.
 <th>Heure Paris</th>
 </tr>
 </thead>
-<tbody id="tableau"></tbody>
+<tbody id="tableau">
+<tr>
+<td colspan="9">
+🟡 En attente des analyses vérifiées.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h2>🏇 Courses PMU récupérées</h2>
+<div class="scroll">
+<table>
+<thead>
+<tr>
+<th>Réunion</th>
+<th>Course</th>
+<th>Hippodrome</th>
+<th>Nom</th>
+<th>Partants</th>
+<th>Départ Paris</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody id="tableau-courses">
+<tr>
+<td colspan="7">Chargement en attente.</td>
+</tr>
+</tbody>
 </table>
 </div>
 </section>
@@ -148,9 +270,9 @@ Un favori doit justifier son rang par ses
 performances, sa forme et ses aptitudes.
 </p>
 <p>
-Un cheval négligé par la presse peut être supérieur,
-mais il doit présenter des arguments sportifs
-vérifiables.
+Un cheval négligé peut présenter une chance
+sportive intéressante, mais celle-ci doit être
+justifiée par des données vérifiables.
 </p>
 <p>
 Aucun cheval ne doit être ajouté uniquement
@@ -177,30 +299,46 @@ antérieure au départ. Une arrivée doit être
 officielle et définitive avant son audit.
 </small>
 </p>
+
+<h3>📋 Derniers audits disponibles</h3>
+<pre id="audits-pmu">En attente...</pre>
 </section>
 
 <section>
-<h2>⚙️ Automatisation</h2>
+<h2>⚙️ Automatisation GitHub Actions</h2>
 <p id="actualisation">
 En attente du dernier rapport.
 </p>
-<button onclick="charger()">
+<button type="button" onclick="charger()">
 🔄 Actualiser les données
 </button>
 <p>
-<a style="color:#8ecbff"
-href="https://github.com/yadcaf-cloud/x1000-phoenix/actions">
+<a href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
+target="_blank" rel="noopener noreferrer">
 Consulter GitHub Actions
 </a>
 </p>
+<h3>Dernier rapport technique</h3>
+<pre id="rapport-pmu">En attente...</pre>
 </section>
+
+<section>
+<h2>🛡️ Transparence et sécurité</h2>
+<div class="notice">
+Les données manquantes ne sont jamais inventées.
+Un pronostic ne devient pas un FIGÉ par simple
+affichage. Les arrivées doivent être vérifiées
+avant toute comparaison officielle.
+</div>
+</section>
+
 </main>
 
 <footer>
 <p>
 🇸🇳🔥 Étudier chaque cheval. Comprendre chaque course.
 Déjouer les apparences. Choisir avec méthode.
-Figé avant le départ. Vérifier après l'arrivée.
+Figer avant le départ. Vérifier après l'arrivée.
 Apprendre pour demain.
 </p>
 <small>
@@ -212,75 +350,63 @@ Aucun gain n'est garanti.
 <script>
 "use strict";
 
-/* PROTOCOLE MAÎTRE DES CINQ MOTEURS */
+/* ==========================================
+   PROTOCOLE MAÎTRE X1000 PHOENIX
+========================================== */
 
 const PROTOCOLE = Object.freeze({
   philosophie:
     "Comprendre, démontrer, valider, apprendre",
 
-  principes: [
-    "Ne jamais inventer une donnée",
-    "Analyser chaque cheval individuellement",
-    "Comparer les concurrents techniquement",
-    "Détecter les favoris fragiles",
-    "Rechercher les chevaux sous-estimés",
-    "Justifier chaque position de la combinaison",
-    "Ne pas compléter artificiellement un pari",
-    "Expliquer les difficultés et incertitudes",
-    "Ne jamais figer après le départ",
-    "Auditer uniquement les résultats officiels",
-    "Conserver les prévisions historiques"
-  ],
-
   moteurs: {
     M1: {
       nom: "Intelligence des performances",
       priorites: [
-        "forme actuelle",
-        "performances récentes",
-        "progression",
-        "régularité",
-        "valeur sportive"
+        "Forme actuelle",
+        "Performances récentes",
+        "Progression",
+        "Régularité",
+        "Valeur sportive"
       ]
     },
     M2: {
       nom: "Intelligence des aptitudes",
       priorites: [
-        "distance",
-        "terrain",
-        "hippodrome",
-        "discipline",
-        "conditions techniques"
+        "Distance",
+        "Terrain",
+        "Hippodrome",
+        "Discipline",
+        "Conditions techniques"
       ]
     },
     M3: {
       nom: "Intelligence des concurrents",
       priorites: [
-        "opposition",
-        "lignes de courses",
-        "rapports de force",
-        "tactique",
-        "hiérarchie"
+        "Opposition",
+        "Lignes de courses",
+        "Rapports de force",
+        "Tactique",
+        "Hiérarchie"
       ]
     },
     M4: {
       nom: "Intelligence des révélations",
       priorites: [
-        "chevaux cachés",
-        "progrès discrets",
-        "favoris fragiles",
-        "performances masquées",
-        "opportunités vérifiables"
+        "Chevaux cachés",
+        "Progrès discrets",
+        "Favoris fragiles",
+        "Performances masquées",
+        "Opportunités vérifiables"
       ]
     },
     M5: {
       nom: "Intelligence de la robustesse",
       priorites: [
-        "risques",
-        "incertitudes",
-        "scénarios alternatifs",
-        "cohérence",
-        "résistance des choix"
+        "Risques",
+        "Incertitudes",
+        "Scénarios alternatifs",
+        "Cohérence",
+        "Résistance des choix"
       ]
     }
   },
@@ -299,27 +425,12 @@ const PROTOCOLE = Object.freeze({
     "Favoris potentiellement trompeurs",
     "Chevaux cachés et sous-estimés",
     "Données manquantes ou contradictoires"
-  ],
-
-  selection: {
-    gagnant:
-      "Meilleure probabilité estimée de victoire",
-    place:
-      "Meilleure probabilité estimée de placement",
-    ordre:
-      "Classement décroissant des chances estimées",
-    justification:
-      "Chaque position exige des arguments vérifiables"
-  },
-
-  validation: {
-    etude: "🟡 EN ÉTUDE",
-    fige: "🟢 FIGÉ",
-    exclu: "🔴 EXCLU"
-  }
+  ]
 });
 
-/* AFFICHAGE SÉCURISÉ */
+/* ==========================================
+   OUTILS DE SÉCURITÉ
+========================================== */
 
 function nettoyer(valeur) {
   return String(valeur ?? "—").replace(
@@ -334,23 +445,52 @@ function nettoyer(valeur) {
   );
 }
 
-function afficherMoteurs() {
-  const cible = document.getElementById("moteurs");
+function entier(valeur) {
+  const n = Number(valeur);
+  return Number.isInteger(n) && n > 0 ? n : null;
+}
 
-  cible.innerHTML = Object.entries(
-    PROTOCOLE.moteurs
-  ).map(([id, moteur]) => `
-    <article>
-      <h3>🧠 ${id}</h3>
-      <strong>${nettoyer(moteur.nom)}</strong>
-      <ul>
-        ${moteur.priorites.map(
-          p => `<li>${nettoyer(p)}</li>`
-        ).join("")}
-      </ul>
-      <small>Analyse indépendante</small>
-    </article>
-  `).join("");
+function formatParis(valeur) {
+  if (!valeur) return "—";
+  const date = new Date(valeur);
+  if (Number.isNaN(date.getTime())) return "—";
+  return new Intl.DateTimeFormat("fr-FR", {
+    timeZone: "Europe/Paris",
+    dateStyle: "short",
+    timeStyle: "short"
+  }).format(date);
+}
+
+async function chargerJSON(nom) {
+  const url = "./data/" + nom + "?t=" + Date.now();
+  const reponse = await fetch(url, { cache: "no-store" });
+
+  if (!reponse.ok) {
+    throw new Error(nom + " : HTTP " + reponse.status);
+  }
+
+  return await reponse.json();
+}
+
+/* ==========================================
+   AFFICHAGE DES MOTEURS
+========================================== */
+
+function afficherMoteurs() {
+  document.getElementById("moteurs").innerHTML =
+    Object.entries(PROTOCOLE.moteurs).map(
+      ([id, moteur]) => `
+      <article>
+        <h3>🧠 ${id}</h3>
+        <strong>${nettoyer(moteur.nom)}</strong>
+        <ul>
+          ${moteur.priorites.map(
+            p => `<li>${nettoyer(p)}</li>`
+          ).join("")}
+        </ul>
+        <small>Analyse indépendante</small>
+      </article>
+    `).join("");
 }
 
 function afficherCriteres() {
@@ -362,177 +502,323 @@ function afficherCriteres() {
     "</ul>";
 }
 
-/* VALIDATION DES RAPPORTS */
+/* ==========================================
+   VALIDATION DES PRONOSTICS
+========================================== */
 
 function valideLigne(ligne) {
   if (!ligne || typeof ligne !== "object") {
     return false;
   }
 
-  if (!Object.hasOwn(
+  if (!Object.prototype.hasOwnProperty.call(
     PROTOCOLE.moteurs,
     ligne.moteur
-  )) {
+  )) return false;
+
+  const ordre = ligne.ordre_espere || ligne.ordre;
+
+  if (!Array.isArray(ordre) || !ordre.length) {
     return false;
   }
 
-  const ordre = ligne.ordre;
+  const numeros = ordre.map(entier);
 
-  if (!Array.isArray(ordre)) {
+  if (numeros.some(n => n === null)) {
     return false;
   }
 
-  if (ordre.some(n =>
-    !Number.isInteger(n) || n <= 0
-  )) {
+  if (new Set(numeros).size !== numeros.length) {
     return false;
   }
 
-  if (new Set(ordre).size !== ordre.length) {
-    return false;
-  }
+  const gagnant = entier(
+    ligne.gagnant_espere ?? ligne.gagnant
+  );
 
-  if (ordre.length > 0 &&
-      ligne.gagnant !== ordre[0]) {
-    return false;
-  }
-
-  return true;
+  return gagnant === numeros[0];
 }
 
-function afficherTableau(lignes) {
+/* ==========================================
+   TABLEAU OFFICIEL
+========================================== */
+
+function afficherTableau(courses, figes, pv) {
   const cible = document.getElementById("tableau");
+  const lignes = [];
 
-  const valides = lignes.filter(valideLigne);
+  for (const course of courses) {
+    const cid =
+      course.date + "-R" + course.reunion +
+      "-C" + course.course;
 
-  if (!valides.length) {
+    const trace = figes[cid] || pv[cid];
+    const moteurs = Array.isArray(trace?.moteurs)
+      ? trace.moteurs
+      : Array.isArray(course.moteurs)
+        ? course.moteurs
+        : [];
+
+    const estFige = Boolean(figes[cid]);
+    const depart = formatParis(course.depart_ms);
+
+    for (const m of moteurs) {
+      if (!valideLigne(m)) continue;
+
+      const ordre = m.ordre_espere || m.ordre;
+
+      lignes.push({
+        moteur: m.moteur,
+        course: "R" + course.reunion +
+                "C" + course.course,
+        gagnant: m.gagnant_espere ?? m.gagnant,
+        place: m.meilleur_place ?? m.place,
+        ordre: ordre,
+        pari: m.pari_retenu || "Non validé",
+        qualification: m.qualification || "EN ÉTUDE",
+        validation: estFige
+          ? "🟢 FIGÉ enregistré"
+          : "🟡 PV / étude",
+        heure: depart
+      });
+    }
+  }
+
+  if (!lignes.length) {
     cible.innerHTML = `
       <tr>
         <td colspan="9">
-          🟡 Aucune sélection vérifiée disponible.
+          🟡 Aucun pronostic disponible.
         </td>
-      </tr>
-    `;
+      </tr>`;
     return;
   }
 
-  cible.innerHTML = valides.map(l => {
-    const statut = l.validation || "🟡 EN ÉTUDE";
-
-    // Un statut affiché n'est pas une preuve de FIGÉ.
-    // La preuve doit être vérifiée côté moteur.
-    return `
-      <tr>
-        <td>${nettoyer(l.moteur)}</td>
-        <td>${nettoyer(l.course)}</td>
-        <td>${nettoyer(l.gagnant)}</td>
-        <td>${nettoyer(l.place)}</td>
-        <td>${nettoyer(l.ordre.join(" - "))}</td>
-        <td>${nettoyer(l.pari)}</td>
-        <td>${nettoyer(l.qualification)}</td>
-        <td>${nettoyer(statut)}</td>
-        <td>${nettoyer(l.heure_paris)}</td>
-      </tr>
-    `;
-  }).join("");
+  cible.innerHTML = lignes.map(l => `
+    <tr>
+      <td>${nettoyer(l.moteur)}</td>
+      <td>${nettoyer(l.course)}</td>
+      <td>${nettoyer(l.gagnant)}</td>
+      <td>${nettoyer(l.place)}</td>
+      <td>${nettoyer(l.ordre.join(" - "))}</td>
+      <td>${nettoyer(l.pari)}</td>
+      <td>${nettoyer(l.qualification)}</td>
+      <td>${nettoyer(l.validation)}</td>
+      <td>${nettoyer(l.heure)}</td>
+    </tr>
+  `).join("");
 }
 
-/* JOURNAL DES DIFFICULTÉS */
+/* ==========================================
+   COURSES RÉELLES PMU
+========================================== */
 
-function afficherDifficultes(journal) {
+function afficherCourses(courses) {
+  const cible = document.getElementById(
+    "tableau-courses"
+  );
+
+  if (!courses.length) {
+    cible.innerHTML = `
+      <tr>
+        <td colspan="7">
+          🟡 Aucune course récupérée.
+        </td>
+      </tr>`;
+    return;
+  }
+
+  cible.innerHTML = courses.map(c => `
+    <tr>
+      <td>R${nettoyer(c.reunion)}</td>
+      <td>C${nettoyer(c.course)}</td>
+      <td>${nettoyer(c.hippodrome)}</td>
+      <td>${nettoyer(c.nom)}</td>
+      <td>${nettoyer(c.nombre_partants)}</td>
+      <td>${nettoyer(formatParis(c.depart_ms))}</td>
+      <td>${nettoyer(c.statut)}</td>
+    </tr>
+  `).join("");
+}
+
+/* ==========================================
+   JOURNAL DES DIFFICULTÉS
+========================================== */
+
+function afficherDifficultes(courses) {
+  const journal = [];
+
+  for (const course of courses) {
+    if (course.erreur) {
+      journal.push({
+        course:
+          "R" + course.reunion + "C" + course.course,
+        difficulte: course.erreur
+      });
+    }
+  }
+
   const cible = document.getElementById(
     "difficultes"
   );
 
-  if (!Array.isArray(journal) || !journal.length) {
+  if (!journal.length) {
     cible.textContent =
-      "Aucune difficulté documentée dans le rapport.";
+      "Aucune erreur documentée dans les données chargées.";
     return;
   }
 
   cible.innerHTML = journal.map(d => `
     <article>
-      <h3>${nettoyer(d.moteur)}</h3>
-      <p><strong>Difficulté :</strong>
-      ${nettoyer(d.difficulte)}</p>
-      <p><strong>Conséquence :</strong>
-      ${nettoyer(d.consequence)}</p>
-      <p><strong>Solution :</strong>
-      ${nettoyer(d.solution)}</p>
-      <p><strong>Question non résolue :</strong>
-      ${nettoyer(d.question)}</p>
+      <h3>${nettoyer(d.course)}</h3>
+      <p class="yellow">
+        ${nettoyer(d.difficulte)}
+      </p>
     </article>
   `).join("");
 }
 
-/* TRAÇABILITÉ */
+/* ==========================================
+   PV - FIGÉS - AUDITS
+========================================== */
 
-function afficherTraces(rapport) {
-  const pv = Number(rapport.pv_count) || 0;
-  const figes = Number(rapport.figes_count) || 0;
-  const audits = Number(rapport.audits_count) || 0;
+function afficherTraces(pv, figes, audits) {
+  const nPV = Object.keys(pv).length;
+  const nFiges = Object.keys(figes).length;
+  const nAudits = Object.keys(audits).length;
+
+  document.getElementById("nombre-pv")
+    .textContent = nPV;
+
+  document.getElementById("nombre-figes")
+    .textContent = nFiges;
+
+  document.getElementById("nombre-audits")
+    .textContent = nAudits;
 
   document.getElementById("traces").textContent =
-    `PV : ${pv} | FIGÉS : ${figes} | Audits : ${audits}`;
+    "PV enregistrés : " + nPV +
+    " | FIGÉS enregistrés : " + nFiges +
+    " | Audits enregistrés : " + nAudits;
+
+  const derniers = Object.entries(audits).slice(-10);
+
+  document.getElementById("audits-pmu").textContent =
+    derniers.length
+      ? JSON.stringify(
+          Object.fromEntries(derniers), null, 2
+        )
+      : "Aucun audit officiel disponible.";
 }
 
-/* CHARGEMENT DES DONNÉES */
+/* ==========================================
+   CHARGEMENT CENTRALISÉ
+========================================== */
+
+let chargementEnCours = false;
 
 async function charger() {
+  if (chargementEnCours) return;
+  chargementEnCours = true;
+
   const etat = document.getElementById("etat");
+  const etatPMU = document.getElementById("etat-pmu");
+
   etat.textContent = "🟡 Vérification en cours";
 
   try {
-    const reponse = await fetch(
-      "./data/latest.json?t=" + Date.now(),
-      { cache: "no-store" }
+    const noms = [
+      "courses.json",
+      "rapport.json",
+      "pv.json",
+      "figes.json",
+      "audits.json"
+    ];
+
+    const resultats = await Promise.allSettled(
+      noms.map(chargerJSON)
     );
 
-    if (!reponse.ok) {
-      throw new Error("Rapport indisponible");
-    }
+    const donnees = {};
+    const erreurs = [];
 
-    const rapport = await reponse.json();
+    resultats.forEach((r, i) => {
+      if (r.status === "fulfilled") {
+        donnees[noms[i]] = r.value;
+      } else {
+        erreurs.push(
+          noms[i] + " : " + r.reason.message
+        );
+      }
+    });
 
-    if (!rapport ||
-        !Array.isArray(rapport.moteurs)) {
-      throw new Error("Format de rapport invalide");
-    }
+    const fichierCourses = donnees["courses.json"];
+    const courses = Array.isArray(fichierCourses?.courses)
+      ? fichierCourses.courses
+      : [];
 
-    afficherTableau(rapport.moteurs);
-    afficherDifficultes(rapport.difficultes);
-    afficherTraces(rapport);
+    const rapport = donnees["rapport.json"] || {};
+    const pv = donnees["pv.json"] || {};
+    const figes = donnees["figes.json"] || {};
+    const audits = donnees["audits.json"] || {};
 
-    document.getElementById(
-      "actualisation"
-    ).textContent =
-      "Dernier rapport : " +
-      (rapport.generated_at_paris || "inconnu");
+    afficherCourses(courses);
+    afficherTableau(courses, figes, pv);
+    afficherDifficultes(courses);
+    afficherTraces(pv, figes, audits);
 
-    etat.textContent =
-      rapport.status || "🟡 Rapport chargé";
+    document.getElementById("nombre-courses")
+      .textContent = fichierCourses ? courses.length : "—";
+
+    document.getElementById("rapport-pmu")
+      .textContent = Object.keys(rapport).length
+        ? JSON.stringify(rapport, null, 2)
+        : "Rapport indisponible.";
+
+    document.getElementById("actualisation")
+      .textContent =
+        "Dernière exécution : " +
+        (rapport.execution || "inconnue") +
+        " | Statut : " +
+        (rapport.statut || "non vérifié");
+
+    const complet =
+      erreurs.length === 0 &&
+      rapport.statut === "OK" &&
+      courses.length > 0;
+
+    etat.textContent = complet
+      ? "🟢 Données chargées"
+      : "🟡 Données partielles ou non vérifiées";
+
+    etatPMU.textContent =
+      "Courses récupérées : " + courses.length +
+      " | Actualisation : " +
+      (fichierCourses?.actualise || "inconnue") +
+      (erreurs.length
+        ? " | Erreurs : " + erreurs.join(" ; ")
+        : "");
 
   } catch (erreur) {
-    etat.textContent =
-      "🟡 Données vérifiées indisponibles";
-
-    afficherTableau([]);
-    afficherDifficultes([]);
-    afficherTraces({});
-
-    document.getElementById(
-      "actualisation"
-    ).textContent =
-      "Connexion aux données non opérationnelle.";
+    etat.textContent = "🔴 Erreur de chargement";
+    etatPMU.textContent = erreur.message;
+  } finally {
+    chargementEnCours = false;
   }
 }
 
-/* INITIALISATION */
+/* ==========================================
+   INITIALISATION
+========================================== */
 
 afficherMoteurs();
 afficherCriteres();
 charger();
+
+// Actualisation visuelle toutes les 60 secondes.
+// Ne déclenche pas le moteur Python.
+setInterval(charger, 60000);
+
 </script>
 </body>
-  </html>
-  
+</html>
