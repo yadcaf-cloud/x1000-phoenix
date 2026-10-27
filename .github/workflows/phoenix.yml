@@ -1,53 +1,60 @@
-name: X1000 PHOENIX - M1 M5
+name: X1000 PHOENIX - AUTOMATISATION M1 M5
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: x1000-phoenix
+  group: x1000-phoenix-production
   cancel-in-progress: false
 
 jobs:
-  analyse:
+  phoenix:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
 
     steps:
       - name: Recuperer le depot
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
           fetch-depth: 0
+          persist-credentials: true
 
       - name: Installer Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Verifier les programmes
+      - name: Verifier la syntaxe
         run: |
           python -m py_compile phoenix.py
           python -m py_compile publication.py
+          python -m py_compile pmu_engine.py
 
-      - name: Executer les moteurs et publier
+      - name: Collecter les donnees PMU
+        id: collecte
+        continue-on-error: true
+        run: |
+          python pmu_engine.py
+
+      - name: Publier les donnees
         run: |
           python publication.py
 
-      - name: Verifier les fichiers JSON
+      - name: Verifier les JSON
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
 
-          for path in Path("data").rglob("*.json"):
-              with path.open(encoding="utf-8") as f:
+          for chemin in Path("data").rglob("*.json"):
+              with chemin.open(encoding="utf-8") as f:
                   json.load(f)
-              print("OK:", path)
+              print("OK:", chemin)
           PY
 
       - name: Enregistrer les rapports
@@ -66,7 +73,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "PHOENIX: actualisation des rapports"
+          git commit -m "PHOENIX: publication M1-M5"
 
           for tentative in 1 2 3; do
             git fetch origin main
@@ -79,8 +86,14 @@ jobs:
             fi
 
             git rebase --abort || true
-            sleep 3
+            sleep 5
           done
 
-          echo "Publication impossible."
+          echo "Echec de publication."
           exit 1
+
+      - name: Signaler un echec de collecte
+        if: steps.collecte.outcome == 'failure'
+        run: |
+          echo "::warning::Collecte PMU en echec."
+          echo "Verifier les donnees et le journal."
