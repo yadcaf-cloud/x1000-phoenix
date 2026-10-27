@@ -247,5 +247,88 @@
       }
     ],
     "sha256": "0aa9e4d5a449ea88cb26b45b8a606e666a01d7b94f41e254902f73b9d4d4b566"
+  },
+  "2026-10-27-R4-C5": {
+    "course": "2026-10-27-R4-C5",
+    "fige_a": "2026-10-27T18:17:07.874054+01:00",
+    "depart": "2026-10-27T18:20:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ],
+    "sha256": "0173cb2b66bcb52edc2a842367c29d289af30c30b17a87a24d2c3305852ad549"
   }
 }
