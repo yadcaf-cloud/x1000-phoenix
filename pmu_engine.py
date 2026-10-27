@@ -1,179 +1,153 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-X1000 PHOENIX — COLLECTEUR PMU 2.0
-M1 à M5 — données réelles et traçables.
+X1000 PHOENIX — M1 A M5
+Collecte PMU, analyse, FIGES, audits.
 
-- Programme PMU
-- Courses physiquement disputées en France
-- Partants et non-partants
-- Sources URL et empreintes SHA256
-- Aucune note inventée
-- Aucun résultat inventé
-- Aucun faux FIGÉ
-- Publication compatible avec publication.py
+Donnees reelles uniquement.
+Scores heuristiques explicites.
+Aucun resultat ou pari invente.
 
-Python 3.12 — bibliothèque standard.
+Compatible Python 3.12 et GitHub Actions.
 """
 
 import datetime as dt
-import hashlib
 import json
-import os
+import math
 import re
-import urllib.error
 import urllib.request
+import urllib.error
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from phoenix import (
+    figer, auditer, verifier_fige,
+    lire, ecrire, maintenant
+)
+
 PARIS = ZoneInfo("Europe/Paris")
-BASE = "https://online.turfinfo.api.pmu.fr/rest/client/61"
 DATA = Path("data")
+BASE = "https://online.turfinfo.api.pmu.fr/rest/client/61"
+
 DATA.mkdir(parents=True, exist_ok=True)
 
-TIMEOUT = 25
-MAX_COURSES = 250
-MOTEURS = ("M1", "M2", "M3", "M4", "M5")
+# Poids forme recente / regularite / gains.
+# Ces poids ne sont pas des probabilites.
+POIDS = {
+    "M1": (0.60, 0.30, 0.10),
+    "M2": (0.35, 0.55, 0.10),
+    "M3": (0.45, 0.20, 0.35),
+    "M4": (0.25, 0.35, 0.40),
+    "M5": (0.40, 0.40, 0.20)
+}
 
-
-def maintenant():
-    return dt.datetime.now(PARIS)
-
-
-def horodatage(ms):
-    if type(ms) not in (int, float) or ms <= 0:
-        raise ValueError("Horodatage PMU invalide")
-    return dt.datetime.fromtimestamp(ms / 1000, PARIS)
-
-
-def entier(valeur):
-    if isinstance(valeur, bool):
-        return None
-    try:
-        n = int(valeur)
-        return n if n > 0 else None
-    except (TypeError, ValueError, OverflowError):
-        return None
-
-
-def texte(valeur):
-    if isinstance(valeur, dict):
-        return str(
-            valeur.get("libelle")
-            or valeur.get("libelleCourt")
-            or valeur.get("nom")
-            or valeur.get("code")
-            or ""
-        )
-    return str(valeur) if valeur is not None else ""
-
-
-def liste(valeur):
-    return valeur if isinstance(valeur, list) else []
-
-
-def lire(nom, defaut=None):
-    chemin = DATA / nom
-    if not chemin.exists():
-        return defaut
-    with chemin.open(encoding="utf-8") as f:
-        return json.load(f)
-
-
-def sauver(nom, objet):
-    chemin = DATA / nom
-    chemin.parent.mkdir(parents=True, exist_ok=True)
-    temporaire = chemin.with_suffix(
-        chemin.suffix + ".tmp"
-    )
-    temporaire.write_text(
-        json.dumps(
-            objet,
-            ensure_ascii=False,
-            indent=2,
-            allow_nan=False
-        ) + "\n",
-        encoding="utf-8"
-    )
-    os.replace(temporaire, chemin)
-
-
-def empreinte_octets(contenu):
-    return hashlib.sha256(contenu).hexdigest()
+CRITERES = (
+    "forme_recente",
+    "regularite",
+    "gains_carriere"
+)
 
 
 def api(chemin):
     url = BASE + chemin
-    requete = urllib.request.Request(
+
+    req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "X1000-Phoenix/2.0",
+            "User-Agent": "X1000-Phoenix/3.0",
             "Accept": "application/json"
         }
     )
 
     with urllib.request.urlopen(
-        requete, timeout=TIMEOUT
-    ) as reponse:
-        contenu = reponse.read()
-        adresse_finale = reponse.geturl()
-        type_contenu = reponse.headers.get(
-            "Content-Type", ""
+        req, timeout=25
+    ) as response:
+        if not response.geturl().startswith("https://"):
+            raise ValueError("Source non securisee")
+        contenu = response.read()
+
+    return json.loads(contenu.decode("utf-8")), url
+
+
+def entier(v):
+    if isinstance(v, bool):
+        return None
+    try:
+        n = int(v)
+        return n if n > 0 else None
+    except (TypeError, ValueError, OverflowError):
+        return None
+
+
+def nombre(v):
+    if isinstance(v, bool) or v is None:
+        return None
+    try:
+        n = float(v)
+        if math.isfinite(n) and n >= 0:
+            return n
+    except (TypeError, ValueError, OverflowError):
+        pass
+    return None
+
+
+def texte(v):
+    if isinstance(v, dict):
+        return str(
+            v.get("libelle")
+            or v.get("libelleCourt")
+            or v.get("nom")
+            or v.get("code")
+            or ""
         )
-
-    if not adresse_finale.startswith("https://"):
-        raise ValueError("Source non HTTPS")
-
-    if "json" not in type_contenu.lower():
-        raise ValueError("Réponse non JSON")
-
-    objet = json.loads(contenu.decode("utf-8"))
-
-    return objet, {
-        "url": adresse_finale,
-        "sha256": empreinte_octets(contenu),
-        "collecte_a": maintenant().isoformat(),
-        "type": "API_PMU"
-    }
+    return str(v) if v is not None else ""
 
 
-def pays_francais(reunion):
+def liste(v):
+    return v if isinstance(v, list) else []
+
+
+def horodatage(ms):
+    n = entier(ms)
+    if n is None:
+        raise ValueError("Heure de depart invalide")
+    return dt.datetime.fromtimestamp(n / 1000, PARIS)
+
+
+def source_francaise(reunion):
     hippo = reunion.get("hippodrome") or {}
     if not isinstance(hippo, dict):
         return False
 
     pays = hippo.get("pays") or reunion.get("pays")
-
     if isinstance(pays, dict):
-        pays = (
-            pays.get("code")
-            or pays.get("libelle")
-        )
+        pays = pays.get("code") or pays.get("libelle")
 
     return str(pays or "").upper().strip() in (
         "FR", "FRA", "FRANCE"
     )
 
 
-def programme_courses(objet, date):
-    if not isinstance(objet, dict):
-        raise ValueError("Programme PMU invalide")
+def programme(date):
+    code = date.strftime("%d%m%Y")
+    objet, url = api(
+        f"/programme/{code}?specialisation=INTERNET"
+    )
 
-    programme = objet.get("programme", objet)
-    if not isinstance(programme, dict):
-        raise ValueError("Structure programme invalide")
+    bloc = objet.get("programme", objet)
+    if not isinstance(bloc, dict):
+        raise ValueError("Programme invalide")
 
-    reunions = programme.get("reunions")
+    reunions = bloc.get("reunions")
     if not isinstance(reunions, list):
-        raise ValueError("Réunions PMU indisponibles")
+        raise ValueError("Reunions indisponibles")
 
     courses = []
 
     for reunion in reunions:
         if not isinstance(reunion, dict):
             continue
-
-        if not pays_francais(reunion):
+        if not source_francaise(reunion):
             continue
 
         rn = entier(
@@ -184,74 +158,79 @@ def programme_courses(objet, date):
             continue
 
         hippo = reunion.get("hippodrome") or {}
-        nom_hippo = texte(
+        nom = texte(
             hippo.get("libelleCourt")
             or hippo.get("libelleLong")
         )
 
-        for course in liste(reunion.get("courses")):
-            if not isinstance(course, dict):
+        for c in liste(reunion.get("courses")):
+            if not isinstance(c, dict):
                 continue
 
             cn = entier(
-                course.get("numOrdre")
-                or course.get("numCourse")
+                c.get("numOrdre")
+                or c.get("numCourse")
             )
-            depart_ms = entier(
-                course.get("heureDepart")
-            )
+            ms = entier(c.get("heureDepart"))
 
-            if cn is None or depart_ms is None:
+            if cn is None or ms is None:
                 continue
 
             courses.append({
-                "id": f"{date}-R{rn}-C{cn}",
-                "date": date,
+                "id": (
+                    f"{date.isoformat()}-R{rn}-C{cn}"
+                ),
                 "reunion": rn,
                 "course": cn,
-                "hippodrome": nom_hippo,
-                "nom": texte(course.get("libelle")),
-                "depart": horodatage(
-                    depart_ms
-                ).isoformat(),
-                "discipline": texte(
-                    course.get("discipline")
-                ),
-                "partants": [],
-                "moteurs": [],
-                "statut": "PARTANTS_NON_CHARGES"
+                "hippodrome": nom,
+                "depart": horodatage(ms).isoformat(),
+                "nom": texte(c.get("libelle")),
+                "source_programme": url
             })
 
-    return courses[:MAX_COURSES]
+    return courses
 
 
-def extraire_partants(objet):
-    if isinstance(objet, dict):
-        participants = objet.get("participants")
-    else:
-        participants = objet
+def participants(course, date):
+    code = date.strftime("%d%m%Y")
 
-    if not isinstance(participants, list):
-        raise ValueError("Participants indisponibles")
+    chemin = (
+        f"/programme/{code}/"
+        f"R{course['reunion']}/"
+        f"C{course['course']}/participants"
+        "?specialisation=INTERNET"
+    )
 
-    resultat = []
+    objet, url = api(chemin)
+
+    brut = (
+        objet.get("participants")
+        if isinstance(objet, dict)
+        else objet
+    )
+
+    if not isinstance(brut, list):
+        raise ValueError("Participants absents")
+
+    chevaux = []
     numeros = set()
 
-    for p in participants:
+    for p in brut:
         if not isinstance(p, dict):
             continue
 
-        numero = entier(p.get("numPmu"))
+        n = entier(p.get("numPmu"))
 
-        if numero is None or numero in numeros:
+        if n is None or n in numeros:
             continue
 
-        numeros.add(numero)
+        numeros.add(n)
 
-        resultat.append({
-            "numero": numero,
+        chevaux.append({
+            "numero": n,
             "nom": texte(p.get("nom")),
             "musique": texte(p.get("musique")),
+            "gains": nombre(p.get("gainCarriere")),
             "jockey": texte(
                 p.get("jockey") or p.get("driver")
             ),
@@ -263,185 +242,425 @@ def extraire_partants(objet):
             )
         })
 
-    if not resultat:
-        raise ValueError("Aucun partant exploitable")
+    return chevaux, url
+
+
+def rangs_musique(musique):
+    """
+    Lecture prudente des rangs dans la musique.
+
+    Exemple: 1a2a3a -> [1,2,3].
+    0 = rang non classe dans les dix premiers.
+    D, A, T et autres codes non classes
+    ne sont pas convertis en classements.
+
+    Les musiques non interpretables sont exclues.
+    """
+    s = str(musique or "").lower()
+
+    if not s:
+        return []
+
+    # Exige des codes de discipline reconnus.
+    tokens = re.findall(
+        r"(\d{1,2})([apmh])", s
+    )
+
+    rangs = []
+
+    for chiffre, discipline in tokens[:5]:
+        n = int(chiffre)
+        if n == 0:
+            n = 11
+        if 1 <= n <= 11:
+            rangs.append(n)
+
+    return rangs
+
+
+def indicateurs(chevaux):
+    actifs = [
+        c for c in chevaux
+        if not c["non_partant"]
+    ]
+
+    # Pour comparer les chevaux, les deux
+    # variables doivent etre disponibles.
+    # Ne jamais remplacer les valeurs absentes
+    # par une note moyenne fictive.
+    if len(actifs) < 5:
+        return []
+
+    if any(
+        c["gains"] is None
+        or not rangs_musique(c["musique"])
+        for c in actifs
+    ):
+        return []
+
+    maximum = max(c["gains"] for c in actifs)
+
+    if maximum <= 0:
+        return []
+
+    resultat = []
+
+    for c in actifs:
+        rangs = rangs_musique(c["musique"])
+
+        # Plus le rang est faible,
+        # meilleur est l'indicateur.
+        points = [
+            max(0, 11 - r) / 10
+            for r in rangs
+        ]
+
+        forme = sum(points) / len(points)
+
+        # Regularite : proportion des
+        # rangs connus dans les cinq premiers.
+        regularite = sum(
+            r <= 5 for r in rangs
+        ) / len(rangs)
+
+        gains = c["gains"] / maximum
+
+        resultat.append({
+            "numero": c["numero"],
+            "forme_recente": round(forme, 6),
+            "regularite": round(regularite, 6),
+            "gains_carriere": round(gains, 6),
+            "observations": len(rangs)
+        })
 
     return resultat
 
 
-def course_compatible_phoenix(course):
-    """
-    Ne transmettre aucune note inventée.
-    Les cinq critères doivent être fournis
-    par une étude documentée indépendante.
-    """
-    partants = course.get("partants", [])
+def analyser_course(course, chevaux, source):
+    profils = indicateurs(chevaux)
 
-    if len([
-        p for p in partants
-        if not p.get("non_partant")
-    ]) < 5:
-        return False
+    if len(profils) < 5:
+        return None
 
-    criteres = (
-        "forme",
-        "aptitude",
-        "regularite",
-        "entourage",
-        "valeur"
-    )
+    instant = maintenant()
+    sorties = []
 
-    for cheval in partants:
-        if cheval.get("non_partant"):
-            continue
+    for moteur, poids in POIDS.items():
+        scores = []
 
-        notes = cheval.get("notes")
-
-        if not isinstance(notes, dict):
-            return False
-
-        for critere in criteres:
-            valeur = notes.get(critere)
-            if type(valeur) not in (int, float):
-                return False
-            if not 0 <= valeur <= 10:
-                return False
-
-    return True
-
-
-def collecter(date):
-    code = dt.datetime.strptime(
-        date, "%Y-%m-%d"
-    ).strftime("%d%m%Y")
-
-    objet, provenance = api(
-        f"/programme/{code}?specialisation=INTERNET"
-    )
-
-    courses = programme_courses(objet, date)
-    erreurs = []
-
-    for course in courses:
-        rn = course["reunion"]
-        cn = course["course"]
-
-        chemin = (
-            f"/programme/{code}/R{rn}/C{cn}"
-            "/participants?specialisation=INTERNET"
-        )
-
-        try:
-            participants, source = api(chemin)
-            partants = extraire_partants(
-                participants
+        for p in profils:
+            score = sum(
+                p[critere] * coefficient
+                for critere, coefficient
+                in zip(CRITERES, poids)
             )
 
-            course["partants"] = partants
-            course["nombre_partants"] = sum(
-                not p["non_partant"]
-                for p in partants
-            )
-            course["source"] = source["url"]
-            course["provenance"] = {
-                "programme": provenance,
-                "participants": source
-            }
-
-            # Les moteurs M1-M5 ne sont pas
-            # alimentés par des notes fictives.
-            course["moteurs"] = []
-            course["statut"] = (
-                "DONNEES_PMU_COLLECTEES_"
-                "ANALYSE_NON_DISPONIBLE"
-            )
-
-        except (
-            urllib.error.URLError,
-            ValueError,
-            TypeError,
-            KeyError,
-            OSError
-        ) as exc:
-            course["statut"] = "ERREUR_SOURCE"
-            course["erreur"] = str(exc)
-            course["source"] = provenance["url"]
-
-            erreurs.append({
-                "course_id": course["id"],
-                "erreur": str(exc)
+            scores.append({
+                "numero": p["numero"],
+                "score": round(score, 6)
             })
 
-    # Ne pas effacer les archives PV/FIGÉS.
-    # Ne pas fabriquer de FIGÉ expérimental.
-    sauver("courses.json", {
-        "date": date,
-        "actualise": maintenant().isoformat(),
-        "source_programme": provenance,
-        "courses": courses
-    })
+        scores.sort(
+            key=lambda x: (
+                -x["score"], x["numero"]
+            )
+        )
 
-    # Écarter l'ancien course.json s'il est
-    # invalide : publication.py ne doit pas
-    # l'analyser comme une nouvelle course.
-    entree = DATA / "course.json"
+        ordre = [
+            s["numero"] for s in scores[:5]
+        ]
 
-    if entree.exists():
-        try:
-            ancien = lire("course.json")
-            if (
-                not isinstance(ancien, dict)
-                or not ancien.get("source", "").startswith(
-                    "https://"
-                )
-                or not course_compatible_phoenix(
-                    ancien
-                )
-            ):
-                entree.unlink()
-        except (
-            ValueError, TypeError,
-            AttributeError, OSError
-        ):
-            if entree.exists():
-                entree.unlink()
+        ecart = (
+            scores[0]["score"]
+            - scores[1]["score"]
+        )
+
+        sorties.append({
+            "moteur": moteur,
+            "gagnant_espere": ordre[0],
+            "meilleur_place": ordre[1],
+            "ordre_espere": ordre,
+            "pari_retenu": None,
+            "qualification": (
+                "VERT" if ecart >= 0.05
+                else "JAUNE"
+            ),
+            "validation": "EXPERIMENTAL",
+            "heure_paris": instant.isoformat(),
+            "ecart_scores": round(ecart, 6),
+            "scores": scores
+        })
 
     return {
-        "courses": len(courses),
-        "erreurs": erreurs,
-        "source": provenance
+        "logiciel": "X1000 PHOENIX",
+        "course_id": course["id"],
+        "hippodrome": course["hippodrome"],
+        "depart": course["depart"],
+        "source": source,
+        "analyse_a": instant.isoformat(),
+        "nombre_partants": len(profils),
+        "moteurs": sorties,
+        "statut": "ANALYSE_EXPERIMENTALE",
+        "indicateurs": profils,
+        "methode": {
+            "variables": list(CRITERES),
+            "poids": {
+                k: list(v)
+                for k, v in POIDS.items()
+            },
+            "notes_inventees": False,
+            "probabilites_calibrees": False
+        },
+        "avertissement": (
+            "Classement heuristique experimental. "
+            "La musique ne capture pas toutes les "
+            "performances. Les gains dependent "
+            "notamment de la carriere et ne sont "
+            "pas une mesure directe de la forme. "
+            "Aucune garantie de resultat."
+        )
     }
 
 
+def figes_existants():
+    resultat = []
+
+    dossier = DATA / "figes"
+    if not dossier.exists():
+        return resultat
+
+    for chemin in sorted(dossier.glob("*.json")):
+        try:
+            objet = lire(chemin)
+            verifier_fige(objet)
+            resultat.append(objet)
+        except (
+            ValueError, KeyError,
+            TypeError, OSError
+        ) as exc:
+            print("FIGE rejete :", chemin, exc)
+
+    return resultat
+
+
+def traiter_course(course, date):
+    chevaux, url = participants(course, date)
+
+    course["partants"] = chevaux
+    course["source"] = url
+    course["nombre_partants"] = sum(
+        not c["non_partant"]
+        for c in chevaux
+    )
+
+    depart = dt.datetime.fromisoformat(
+        course["depart"]
+    )
+
+    secondes = (
+        depart - maintenant()
+    ).total_seconds()
+
+    anciens = figes_existants()
+
+    existant = next(
+        (
+            f for f in anciens
+            if f["rapport"]["course_id"]
+            == course["id"]
+        ),
+        None
+    )
+
+    if existant is not None:
+        course["moteurs"] = (
+            existant["rapport"]["moteurs"]
+        )
+        course["statut"] = "FIGE_VERIFIE"
+        return course
+
+    # Pas de nouvelle prediction apres depart.
+    if secondes <= 0:
+        course["moteurs"] = []
+        course["statut"] = "COURSE_DEMARREE"
+        return course
+
+    analyse = analyser_course(
+        course, chevaux, url
+    )
+
+    if analyse is None:
+        course["moteurs"] = []
+        course["statut"] = (
+            "DONNEES_INSUFFISANTES"
+        )
+        return course
+
+    course["moteurs"] = analyse["moteurs"]
+    course["statut"] = (
+        "ANALYSE_EXPERIMENTALE"
+    )
+
+    # FIGE uniquement dans les 20 minutes
+    # avant depart, via phoenix.py.
+    # Pas de verrou apres le depart.
+    if 0 < secondes <= 1200:
+        document = figer(analyse)
+
+        if document is not None:
+            verifier_fige(document)
+            course["statut"] = "FIGE_VERIFIE"
+            course["moteurs"] = (
+                document["rapport"]["moteurs"]
+            )
+
+    return course
+
+
+def audits_officiels():
+    """
+    Aucun audit sans arrivee definitive
+    avec URL de provenance.
+    """
+    chemin = DATA / "arrivees_officielles.json"
+
+    if not chemin.exists():
+        return
+
+    objet = lire(chemin)
+
+    if not isinstance(objet, dict):
+        return
+
+    arrivees = liste(objet.get("courses"))
+    figes = figes_existants()
+
+    for arrivee in arrivees:
+        if not isinstance(arrivee, dict):
+            continue
+
+        if arrivee.get("statut") != "definitive":
+            continue
+
+        source = arrivee.get("source", "")
+        if not isinstance(source, str):
+            continue
+        if not source.startswith("https://"):
+            continue
+
+        cid = arrivee.get("course_id")
+
+        for f in figes:
+            if f["rapport"]["course_id"] != cid:
+                continue
+
+            bilan = auditer(f, arrivee)
+
+            dossier = DATA / "audits"
+            dossier.mkdir(
+                parents=True, exist_ok=True
+            )
+
+            nom = re.sub(
+                r"[^A-Za-z0-9_-]",
+                "_", str(cid)
+            )
+
+            cible = dossier / (nom + ".json")
+
+            if not cible.exists():
+                ecrire(cible, bilan)
+
+
 def main():
-    date = maintenant().date().isoformat()
+    instant = maintenant()
+    date = instant.date()
 
     rapport = {
         "logiciel": "X1000 PHOENIX",
-        "date": date,
-        "execution": maintenant().isoformat(),
+        "version": "M1-M5-3.0",
+        "execution": instant.isoformat(),
+        "date": date.isoformat(),
         "statut": "ERREUR",
         "courses": 0,
+        "analyses": 0,
+        "figes_verifies": 0,
         "erreurs": []
     }
 
     try:
-        resultat = collecter(date)
-        rapport["courses"] = resultat["courses"]
-        rapport["erreurs"] = resultat["erreurs"]
-        rapport["source"] = resultat["source"]
+        courses = programme(date)
+        sorties = []
 
-        if rapport["courses"] == 0:
-            rapport["statut"] = "AUCUNE_COURSE"
-        elif rapport["erreurs"]:
-            rapport["statut"] = "PARTIEL"
-        else:
-            rapport["statut"] = "COLLECTE_OK"
+        for course in courses:
+            try:
+                resultat = traiter_course(
+                    course, date
+                )
+                sorties.append(resultat)
+
+            except (
+                ValueError, TypeError,
+                KeyError, OSError,
+                urllib.error.URLError
+            ) as exc:
+                course["moteurs"] = []
+                course["statut"] = "ERREUR_SOURCE"
+                course["erreur"] = str(exc)
+                sorties.append(course)
+
+                rapport["erreurs"].append({
+                    "course": course["id"],
+                    "erreur": str(exc)
+                })
+
+        rapport["courses"] = len(sorties)
+        rapport["analyses"] = sum(
+            bool(c.get("moteurs"))
+            for c in sorties
+        )
+        rapport["figes_verifies"] = sum(
+            c.get("statut") == "FIGE_VERIFIE"
+            for c in sorties
+        )
+
+        ecrire(DATA / "courses.json", {
+            "date": date.isoformat(),
+            "actualise": maintenant().isoformat(),
+            "courses": sorties
+        })
+
+        # Ne pas recreer de course.json :
+        # publication.py doit utiliser directement
+        # les courses deja analysees.
+        ancien = DATA / "course.json"
+
+        if ancien.exists():
+            # On ne supprime pas une archive.
+            # Seule une entree de travail invalide
+            # peut etre ecartee.
+            try:
+                from phoenix import valider_course
+                valider_course(lire(ancien))
+            except (
+                ValueError, TypeError,
+                KeyError, OSError
+            ):
+                ancien.rename(
+                    DATA / "course_ancien_invalide.json"
+                )
+
+        audits_officiels()
+
+        rapport["statut"] = (
+            "PARTIEL" if rapport["erreurs"]
+            else "COLLECTE_OK"
+        )
 
     except Exception as exc:
         rapport["erreurs"].append(str(exc))
 
-    sauver("rapport.json", rapport)
+    ecrire(DATA / "rapport.json", rapport)
 
     print(json.dumps(
         rapport,
