@@ -3,12 +3,536 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>X1000 PHOENIX</title>
+<title>🇸🇳🔥 X1000 PHOENIX — Intelligence vivante</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0d1628;
+  color: #edf3ff;
+  font: 15px Arial, sans-serif;
+}
+header, main, footer {
+  max-width: 1150px;
+  margin: auto;
+  padding: 18px;
+}
+h1 { font-size: 30px; color: #ffcc62; }
+h2 { color: #8ecbff; }
+h3 { color: #e5efff; }
+p, li { line-height: 1.65; }
+section, article {
+  background: #17243b;
+  border: 1px solid #354660;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 15px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 12px;
+}
+.scroll { overflow-x: auto; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #40516a;
+  text-align: left;
+}
+th { color: #9fd4ff; }
+button {
+  padding: 12px;
+  margin: 5px;
+  border: 0;
+  border-radius: 9px;
+  background: #276cb9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.badge {
+  display: inline-block;
+  background: #59471f;
+  color: #ffe5a2;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+.green { color: #76e9a5; }
+.yellow { color: #ffdc79; }
+.red { color: #ff9292; }
+small { color: #b4c4d8; }
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+</style>
 </head>
-<body style="background:#101827;color:white;text-align:center;font-family:Arial;padding:30px">
-<h1>🇸🇳🔥 X1000 PHOENIX</h1>
-<h2>Intelligence hippique M1 à M5</h2>
-<p>Bienvenue sur le nouveau logiciel X1000 PHOENIX.</p>
-<p>Statut : installation en cours.</p>
+
+<body>
+<header>
+<h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
+<h2>L'INTELLIGENCE HIPPIQUE VIVANTE</h2>
+<p>Moteurs indépendants M1 à M5</p>
+<p>
+<strong>Comprendre avant de choisir.
+Démontrer avant de valider.
+Apprendre après chaque course.</strong>
+</p>
+<span class="badge" id="etat">
+Chargement des données
+</span>
+</header>
+
+<main>
+<section>
+<h2>🏇 Mission principale</h2>
+<p>
+Étudier chaque course selon sa réalité sportive.
+Examiner minutieusement chaque cheval.
+Identifier les meilleurs gagnants, les meilleurs
+placés et les combinaisons les plus défendables.
+</p>
+<p>
+Ne jamais suivre aveuglément un favori.
+Rechercher les chevaux cachés et les progrès
+sous-estimés, sans confondre grosse cote et qualité.
+</p>
+</section>
+
+<section>
+<h2>🧠 Les cinq moteurs indépendants</h2>
+<div class="grid" id="moteurs"></div>
+</section>
+
+<section>
+<h2>🔬 Protocole technique cheval par cheval</h2>
+<div id="criteres"></div>
+</section>
+
+<section>
+<h2>🏆 Tableau officiel X1000 PHOENIX</h2>
+<p>
+Chaque moteur choisit indépendamment son meilleur
+Simple Gagnant, son meilleur Simple Placé et sa
+combinaison classée dans l'ordre d'arrivée espéré.
+</p>
+<div class="scroll">
+<table>
+<thead>
+<tr>
+<th>Moteur</th>
+<th>Course</th>
+<th>🥇 Gagnant</th>
+<th>🥈 Placé</th>
+<th>🏆 Ordre espéré</th>
+<th>🎯 Pari</th>
+<th>Qualification</th>
+<th>Validation</th>
+<th>Heure Paris</th>
+</tr>
+</thead>
+<tbody id="tableau"></tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h2>🕵️ Favoris trompeurs et chevaux cachés</h2>
+<p>
+Un favori doit justifier son rang par ses
+performances, sa forme et ses aptitudes.
+</p>
+<p>
+Un cheval négligé par la presse peut être supérieur,
+mais il doit présenter des arguments sportifs
+vérifiables.
+</p>
+<p>
+Aucun cheval ne doit être ajouté uniquement
+pour remplir une combinaison.
+</p>
+</section>
+
+<section>
+<h2>📖 Journal des difficultés</h2>
+<div id="difficultes">
+En attente des analyses des moteurs.
+</div>
+</section>
+
+<section>
+<h2>🔒 PV — FIGÉS — AUDITS</h2>
+<div id="traces">
+Aucun enregistrement vérifié chargé.
+</div>
+<p>
+<small>
+Un FIGÉ valide exige une preuve d'enregistrement
+antérieure au départ. Une arrivée doit être
+officielle et définitive avant son audit.
+</small>
+</p>
+</section>
+
+<section>
+<h2>⚙️ Automatisation</h2>
+<p id="actualisation">
+En attente du dernier rapport.
+</p>
+<button onclick="charger()">
+🔄 Actualiser les données
+</button>
+<p>
+<a style="color:#8ecbff"
+href="https://github.com/yadcaf-cloud/x1000-phoenix/actions">
+Consulter GitHub Actions
+</a>
+</p>
+</section>
+</main>
+
+<footer>
+<p>
+🇸🇳🔥 Étudier chaque cheval. Comprendre chaque course.
+Déjouer les apparences. Choisir avec méthode.
+Figé avant le départ. Vérifier après l'arrivée.
+Apprendre pour demain.
+</p>
+<small>
+X1000 PHOENIX — Les pronostics sont incertains.
+Aucun gain n'est garanti.
+</small>
+</footer>
+
+<script>
+"use strict";
+
+/* PROTOCOLE MAÎTRE DES CINQ MOTEURS */
+
+const PROTOCOLE = Object.freeze({
+  philosophie:
+    "Comprendre, démontrer, valider, apprendre",
+
+  principes: [
+    "Ne jamais inventer une donnée",
+    "Analyser chaque cheval individuellement",
+    "Comparer les concurrents techniquement",
+    "Détecter les favoris fragiles",
+    "Rechercher les chevaux sous-estimés",
+    "Justifier chaque position de la combinaison",
+    "Ne pas compléter artificiellement un pari",
+    "Expliquer les difficultés et incertitudes",
+    "Ne jamais figer après le départ",
+    "Auditer uniquement les résultats officiels",
+    "Conserver les prévisions historiques"
+  ],
+
+  moteurs: {
+    M1: {
+      nom: "Intelligence des performances",
+      priorites: [
+        "forme actuelle",
+        "performances récentes",
+        "progression",
+        "régularité",
+        "valeur sportive"
+      ]
+    },
+    M2: {
+      nom: "Intelligence des aptitudes",
+      priorites: [
+        "distance",
+        "terrain",
+        "hippodrome",
+        "discipline",
+        "conditions techniques"
+      ]
+    },
+    M3: {
+      nom: "Intelligence des concurrents",
+      priorites: [
+        "opposition",
+        "lignes de courses",
+        "rapports de force",
+        "tactique",
+        "hiérarchie"
+      ]
+    },
+    M4: {
+      nom: "Intelligence des révélations",
+      priorites: [
+        "chevaux cachés",
+        "progrès discrets",
+        "favoris fragiles",
+        "performances masquées",
+        "opportunités vérifiables"
+      ]
+    },
+    M5: {
+      nom: "Intelligence de la robustesse",
+      priorites: [
+        "risques",
+        "incertitudes",
+        "scénarios alternatifs",
+        "cohérence",
+        "résistance des choix"
+      ]
+    }
+  },
+
+  criteres: [
+    "Valeur sportive et performances",
+    "Forme actuelle et fraîcheur",
+    "Distance et aptitude au parcours",
+    "Terrain et profil de piste",
+    "Jockey ou driver",
+    "Entraîneur et entourage",
+    "Origines et pedigree",
+    "Ferrure ou poids selon la discipline",
+    "Qualité de l'opposition",
+    "Scénarios tactiques",
+    "Favoris potentiellement trompeurs",
+    "Chevaux cachés et sous-estimés",
+    "Données manquantes ou contradictoires"
+  ],
+
+  selection: {
+    gagnant:
+      "Meilleure probabilité estimée de victoire",
+    place:
+      "Meilleure probabilité estimée de placement",
+    ordre:
+      "Classement décroissant des chances estimées",
+    justification:
+      "Chaque position exige des arguments vérifiables"
+  },
+
+  validation: {
+    etude: "🟡 EN ÉTUDE",
+    fige: "🟢 FIGÉ",
+    exclu: "🔴 EXCLU"
+  }
+});
+
+/* AFFICHAGE SÉCURISÉ */
+
+function nettoyer(valeur) {
+  return String(valeur ?? "—").replace(
+    /[&<>"']/g,
+    c => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    })[c]
+  );
+}
+
+function afficherMoteurs() {
+  const cible = document.getElementById("moteurs");
+
+  cible.innerHTML = Object.entries(
+    PROTOCOLE.moteurs
+  ).map(([id, moteur]) => `
+    <article>
+      <h3>🧠 ${id}</h3>
+      <strong>${nettoyer(moteur.nom)}</strong>
+      <ul>
+        ${moteur.priorites.map(
+          p => `<li>${nettoyer(p)}</li>`
+        ).join("")}
+      </ul>
+      <small>Analyse indépendante</small>
+    </article>
+  `).join("");
+}
+
+function afficherCriteres() {
+  document.getElementById("criteres").innerHTML =
+    "<ul>" +
+    PROTOCOLE.criteres.map(
+      c => `<li>${nettoyer(c)}</li>`
+    ).join("") +
+    "</ul>";
+}
+
+/* VALIDATION DES RAPPORTS */
+
+function valideLigne(ligne) {
+  if (!ligne || typeof ligne !== "object") {
+    return false;
+  }
+
+  if (!Object.hasOwn(
+    PROTOCOLE.moteurs,
+    ligne.moteur
+  )) {
+    return false;
+  }
+
+  const ordre = ligne.ordre;
+
+  if (!Array.isArray(ordre)) {
+    return false;
+  }
+
+  if (ordre.some(n =>
+    !Number.isInteger(n) || n <= 0
+  )) {
+    return false;
+  }
+
+  if (new Set(ordre).size !== ordre.length) {
+    return false;
+  }
+
+  if (ordre.length > 0 &&
+      ligne.gagnant !== ordre[0]) {
+    return false;
+  }
+
+  return true;
+}
+
+function afficherTableau(lignes) {
+  const cible = document.getElementById("tableau");
+
+  const valides = lignes.filter(valideLigne);
+
+  if (!valides.length) {
+    cible.innerHTML = `
+      <tr>
+        <td colspan="9">
+          🟡 Aucune sélection vérifiée disponible.
+        </td>
+      </tr>
+    `;
+    return;
+  }
+
+  cible.innerHTML = valides.map(l => {
+    const statut = l.validation || "🟡 EN ÉTUDE";
+
+    // Un statut affiché n'est pas une preuve de FIGÉ.
+    // La preuve doit être vérifiée côté moteur.
+    return `
+      <tr>
+        <td>${nettoyer(l.moteur)}</td>
+        <td>${nettoyer(l.course)}</td>
+        <td>${nettoyer(l.gagnant)}</td>
+        <td>${nettoyer(l.place)}</td>
+        <td>${nettoyer(l.ordre.join(" - "))}</td>
+        <td>${nettoyer(l.pari)}</td>
+        <td>${nettoyer(l.qualification)}</td>
+        <td>${nettoyer(statut)}</td>
+        <td>${nettoyer(l.heure_paris)}</td>
+      </tr>
+    `;
+  }).join("");
+}
+
+/* JOURNAL DES DIFFICULTÉS */
+
+function afficherDifficultes(journal) {
+  const cible = document.getElementById(
+    "difficultes"
+  );
+
+  if (!Array.isArray(journal) || !journal.length) {
+    cible.textContent =
+      "Aucune difficulté documentée dans le rapport.";
+    return;
+  }
+
+  cible.innerHTML = journal.map(d => `
+    <article>
+      <h3>${nettoyer(d.moteur)}</h3>
+      <p><strong>Difficulté :</strong>
+      ${nettoyer(d.difficulte)}</p>
+      <p><strong>Conséquence :</strong>
+      ${nettoyer(d.consequence)}</p>
+      <p><strong>Solution :</strong>
+      ${nettoyer(d.solution)}</p>
+      <p><strong>Question non résolue :</strong>
+      ${nettoyer(d.question)}</p>
+    </article>
+  `).join("");
+}
+
+/* TRAÇABILITÉ */
+
+function afficherTraces(rapport) {
+  const pv = Number(rapport.pv_count) || 0;
+  const figes = Number(rapport.figes_count) || 0;
+  const audits = Number(rapport.audits_count) || 0;
+
+  document.getElementById("traces").textContent =
+    `PV : ${pv} | FIGÉS : ${figes} | Audits : ${audits}`;
+}
+
+/* CHARGEMENT DES DONNÉES */
+
+async function charger() {
+  const etat = document.getElementById("etat");
+  etat.textContent = "🟡 Vérification en cours";
+
+  try {
+    const reponse = await fetch(
+      "./data/latest.json?t=" + Date.now(),
+      { cache: "no-store" }
+    );
+
+    if (!reponse.ok) {
+      throw new Error("Rapport indisponible");
+    }
+
+    const rapport = await reponse.json();
+
+    if (!rapport ||
+        !Array.isArray(rapport.moteurs)) {
+      throw new Error("Format de rapport invalide");
+    }
+
+    afficherTableau(rapport.moteurs);
+    afficherDifficultes(rapport.difficultes);
+    afficherTraces(rapport);
+
+    document.getElementById(
+      "actualisation"
+    ).textContent =
+      "Dernier rapport : " +
+      (rapport.generated_at_paris || "inconnu");
+
+    etat.textContent =
+      rapport.status || "🟡 Rapport chargé";
+
+  } catch (erreur) {
+    etat.textContent =
+      "🟡 Données vérifiées indisponibles";
+
+    afficherTableau([]);
+    afficherDifficultes([]);
+    afficherTraces({});
+
+    document.getElementById(
+      "actualisation"
+    ).textContent =
+      "Connexion aux données non opérationnelle.";
+  }
+}
+
+/* INITIALISATION */
+
+afficherMoteurs();
+afficherCriteres();
+charger();
+</script>
 </body>
-</html>
+  </html>
+  
