@@ -1,8 +1,8 @@
 {
   "logiciel": "X1000 PHOENIX",
-  "version": "PUBLICATION-4.0",
-  "status": "COURSES_SANS_ANALYSES",
-  "generated_at_paris": "2026-10-27T22:57:07.319641+01:00",
+  "version": "PUBLICATION-UNIFIEE-5.0",
+  "status": "DONNEES_INDISPONIBLES",
+  "generated_at_paris": "2026-10-27T23:24:23.152779+01:00",
   "moteurs_actifs": [
     "M1",
     "M2",
@@ -10,22 +10,194 @@
     "M4",
     "M5"
   ],
-  "courses_count": 24,
+  "source_donnees": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/27102026",
+  "courses_collectees": 0,
+  "courses_count": 0,
   "analyses_count": 0,
   "pv_count": 0,
   "figes_count": 0,
   "audits_count": 0,
-  "collecte": {
-    "logiciel": "X1000 PHOENIX",
-    "version": "M1-M5-3.0",
-    "execution": "2026-10-27T20:38:06.619559+01:00",
-    "date": "2026-10-27",
-    "statut": "COLLECTE_OK",
-    "courses": 24,
-    "analyses": 0,
-    "figes_verifies": 0,
-    "erreurs": []
-  },
-  "difficultes": [],
-  "avertissement": "Aucune donnee ou arrivee inventee. Les FIGES sont uniquement ceux authentifies par phoenix.py."
+  "difficultes": [
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R1C1: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R1C2: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R1C3: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R1C4: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R1C5: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R1C6: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R1C7: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R1C8: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R2C1: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R2C2: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R2C3: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R2C4: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R2C5: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R2C6: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R2C7: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R3C1: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R3C2: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R3C3: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R3C4: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R3C5: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R3C6: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R3C7: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R3C8: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R4C1: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R4C2: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R4C3: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R4C4: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R4C5: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R4C6: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R4C7: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R4C8: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R5C1: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R5C2: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R5C3: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R5C4: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R5C5: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R5C6: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R5C7: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R5C8: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R6C4: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R6C5: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R6C6: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R6C7: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R6C8: Participants non disponibles"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "R6C9: Participants non disponibles"
+    }
+  ],
+  "avertissement": "Aucune course ou arrivee inventee. FIGES originaux conserves."
 }
