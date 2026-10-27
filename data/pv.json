@@ -1,1 +1,822 @@
-{}
+{
+  "2026-10-27-R1-C6": {
+    "course": "2026-10-27-R1-C6",
+    "cree_a": "2026-10-27T16:18:14.451843+01:00",
+    "depart": "2026-10-27T16:50:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 6,
+        "meilleur_place": 2,
+        "ordre_espere": [
+          6,
+          2,
+          14,
+          13,
+          1
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 6,
+        "meilleur_place": 2,
+        "ordre_espere": [
+          6,
+          2,
+          14,
+          13,
+          1
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 6,
+        "meilleur_place": 2,
+        "ordre_espere": [
+          6,
+          2,
+          14,
+          13,
+          1
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 6,
+        "meilleur_place": 2,
+        "ordre_espere": [
+          6,
+          2,
+          14,
+          13,
+          1
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 6,
+        "meilleur_place": 2,
+        "ordre_espere": [
+          6,
+          2,
+          14,
+          13,
+          1
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  },
+  "2026-10-27-R1-C7": {
+    "course": "2026-10-27-R1-C7",
+    "cree_a": "2026-10-27T16:18:14.689134+01:00",
+    "depart": "2026-10-27T17:25:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 3,
+        "meilleur_place": 6,
+        "ordre_espere": [
+          3,
+          6,
+          14,
+          10,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 3,
+        "meilleur_place": 6,
+        "ordre_espere": [
+          3,
+          6,
+          14,
+          10,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 3,
+        "meilleur_place": 6,
+        "ordre_espere": [
+          3,
+          6,
+          14,
+          10,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 3,
+        "meilleur_place": 6,
+        "ordre_espere": [
+          3,
+          6,
+          14,
+          10,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 3,
+        "meilleur_place": 6,
+        "ordre_espere": [
+          3,
+          6,
+          14,
+          10,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  },
+  "2026-10-27-R1-C8": {
+    "course": "2026-10-27-R1-C8",
+    "cree_a": "2026-10-27T16:18:14.984087+01:00",
+    "depart": "2026-10-27T18:00:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 1,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          1,
+          4,
+          12,
+          6,
+          13
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  },
+  "2026-10-27-R4-C2": {
+    "course": "2026-10-27-R4-C2",
+    "cree_a": "2026-10-27T16:18:16.777344+01:00",
+    "depart": "2026-10-27T16:32:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 6,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          6,
+          4,
+          5,
+          14,
+          10
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 6,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          6,
+          4,
+          5,
+          14,
+          10
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 6,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          6,
+          4,
+          5,
+          14,
+          10
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 6,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          6,
+          4,
+          5,
+          14,
+          10
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 6,
+        "meilleur_place": 4,
+        "ordre_espere": [
+          6,
+          4,
+          5,
+          14,
+          10
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  },
+  "2026-10-27-R4-C3": {
+    "course": "2026-10-27-R4-C3",
+    "cree_a": "2026-10-27T16:18:16.979623+01:00",
+    "depart": "2026-10-27T17:07:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 10,
+        "meilleur_place": 11,
+        "ordre_espere": [
+          10,
+          11,
+          12,
+          9,
+          14
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 10,
+        "meilleur_place": 11,
+        "ordre_espere": [
+          10,
+          11,
+          12,
+          9,
+          14
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 10,
+        "meilleur_place": 11,
+        "ordre_espere": [
+          10,
+          11,
+          12,
+          9,
+          14
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 10,
+        "meilleur_place": 11,
+        "ordre_espere": [
+          10,
+          11,
+          12,
+          9,
+          14
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 10,
+        "meilleur_place": 11,
+        "ordre_espere": [
+          10,
+          11,
+          12,
+          9,
+          14
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  },
+  "2026-10-27-R4-C4": {
+    "course": "2026-10-27-R4-C4",
+    "cree_a": "2026-10-27T16:18:17.107538+01:00",
+    "depart": "2026-10-27T17:42:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 3,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          3,
+          10,
+          9,
+          11,
+          2
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 3,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          3,
+          10,
+          9,
+          11,
+          2
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 3,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          3,
+          10,
+          9,
+          11,
+          2
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 3,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          3,
+          10,
+          9,
+          11,
+          2
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 3,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          3,
+          10,
+          9,
+          11,
+          2
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  },
+  "2026-10-27-R4-C5": {
+    "course": "2026-10-27-R4-C5",
+    "cree_a": "2026-10-27T16:18:17.270205+01:00",
+    "depart": "2026-10-27T18:20:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 5,
+        "meilleur_place": 18,
+        "ordre_espere": [
+          5,
+          18,
+          4,
+          13,
+          9
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  },
+  "2026-10-27-R4-C6": {
+    "course": "2026-10-27-R4-C6",
+    "cree_a": "2026-10-27T16:18:17.391508+01:00",
+    "depart": "2026-10-27T18:55:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 6,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          6,
+          10,
+          7,
+          9,
+          11
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 6,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          6,
+          10,
+          7,
+          9,
+          11
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 6,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          6,
+          10,
+          7,
+          9,
+          11
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 6,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          6,
+          10,
+          7,
+          9,
+          11
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 6,
+        "meilleur_place": 10,
+        "ordre_espere": [
+          6,
+          10,
+          7,
+          9,
+          11
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  },
+  "2026-10-27-R4-C7": {
+    "course": "2026-10-27-R4-C7",
+    "cree_a": "2026-10-27T16:18:17.512298+01:00",
+    "depart": "2026-10-27T19:27:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 14,
+        "meilleur_place": 13,
+        "ordre_espere": [
+          14,
+          13,
+          15,
+          9,
+          4
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 14,
+        "meilleur_place": 13,
+        "ordre_espere": [
+          14,
+          13,
+          15,
+          9,
+          4
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 14,
+        "meilleur_place": 13,
+        "ordre_espere": [
+          14,
+          13,
+          15,
+          9,
+          4
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 14,
+        "meilleur_place": 13,
+        "ordre_espere": [
+          14,
+          13,
+          15,
+          9,
+          4
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 14,
+        "meilleur_place": 13,
+        "ordre_espere": [
+          14,
+          13,
+          15,
+          9,
+          4
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  },
+  "2026-10-27-R4-C8": {
+    "course": "2026-10-27-R4-C8",
+    "cree_a": "2026-10-27T16:18:17.736156+01:00",
+    "depart": "2026-10-27T19:59:00+01:00",
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 1,
+        "meilleur_place": 8,
+        "ordre_espere": [
+          1,
+          8,
+          2,
+          4,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 1,
+        "meilleur_place": 8,
+        "ordre_espere": [
+          1,
+          8,
+          2,
+          4,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 1,
+        "meilleur_place": 8,
+        "ordre_espere": [
+          1,
+          8,
+          2,
+          4,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 1,
+        "meilleur_place": 8,
+        "ordre_espere": [
+          1,
+          8,
+          2,
+          4,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 1,
+        "meilleur_place": 8,
+        "ordre_espere": [
+          1,
+          8,
+          2,
+          4,
+          5
+        ],
+        "qualification": "EXPERIMENTAL",
+        "validation": "DONNEES_PARTIELLES",
+        "pari_retenu": null
+      }
+    ]
+  }
+}
