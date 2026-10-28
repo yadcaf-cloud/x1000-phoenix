@@ -200,10 +200,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C1/participants",
-      "collecte_a": "2026-10-28T20:49:08.544844+01:00",
+      "collecte_a": "2026-10-28T21:05:44.717066+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.275425+01:00"
+      "analyse_a": "2026-10-28T21:05:53.750102+01:00"
     },
     {
       "id": "2026-10-28-R1-C1",
@@ -332,10 +332,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C1/participants",
-      "collecte_a": "2026-10-28T20:49:05.236119+01:00",
+      "collecte_a": "2026-10-28T21:05:41.408717+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.275700+01:00"
+      "analyse_a": "2026-10-28T21:05:53.750404+01:00"
     },
     {
       "id": "2026-10-28-R2-C2",
@@ -548,10 +548,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C2/participants",
-      "collecte_a": "2026-10-28T20:49:08.939184+01:00",
+      "collecte_a": "2026-10-28T21:05:45.037848+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.275730+01:00"
+      "analyse_a": "2026-10-28T21:05:53.750444+01:00"
     },
     {
       "id": "2026-10-28-R1-C2",
@@ -666,7 +666,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
-      "collecte_a": "2026-10-28T20:49:05.553430+01:00",
+      "collecte_a": "2026-10-28T21:05:41.765155+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -960,7 +960,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.275748+01:00"
+      "analyse_a": "2026-10-28T21:05:53.750468+01:00"
     },
     {
       "id": "2026-10-28-R2-C3",
@@ -1159,10 +1159,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C3/participants",
-      "collecte_a": "2026-10-28T20:49:09.334180+01:00",
+      "collecte_a": "2026-10-28T21:05:45.492546+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.276248+01:00"
+      "analyse_a": "2026-10-28T21:05:53.750923+01:00"
     },
     {
       "id": "2026-10-28-R1-C3",
@@ -1277,7 +1277,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C3/participants",
-      "collecte_a": "2026-10-28T20:49:05.930861+01:00",
+      "collecte_a": "2026-10-28T21:05:42.360731+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -1571,7 +1571,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.276282+01:00"
+      "analyse_a": "2026-10-28T21:05:53.750965+01:00"
     },
     {
       "id": "2026-10-28-R2-C4",
@@ -1800,10 +1800,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C4/participants",
-      "collecte_a": "2026-10-28T20:49:09.911599+01:00",
+      "collecte_a": "2026-10-28T21:05:45.862613+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.276523+01:00"
+      "analyse_a": "2026-10-28T21:05:53.751226+01:00"
     },
     {
       "id": "2026-10-28-R1-C4",
@@ -2030,10 +2030,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C4/participants",
-      "collecte_a": "2026-10-28T20:49:06.505182+01:00",
+      "collecte_a": "2026-10-28T21:05:42.681438+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.276546+01:00"
+      "analyse_a": "2026-10-28T21:05:53.751259+01:00"
     },
     {
       "id": "2026-10-28-R2-C5",
@@ -2162,7 +2162,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C5/participants",
-      "collecte_a": "2026-10-28T20:49:10.243309+01:00",
+      "collecte_a": "2026-10-28T21:05:46.176306+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -2476,7 +2476,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.276561+01:00"
+      "analyse_a": "2026-10-28T21:05:53.751279+01:00"
     },
     {
       "id": "2026-10-28-R1-C5",
@@ -2661,10 +2661,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C5/participants",
-      "collecte_a": "2026-10-28T20:49:06.905897+01:00",
+      "collecte_a": "2026-10-28T21:05:42.998830+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.276812+01:00"
+      "analyse_a": "2026-10-28T21:05:53.751558+01:00"
     },
     {
       "id": "2026-10-28-R2-C6",
@@ -2879,10 +2879,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C6/participants",
-      "collecte_a": "2026-10-28T20:49:10.585587+01:00",
+      "collecte_a": "2026-10-28T21:05:46.690032+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.276841+01:00"
+      "analyse_a": "2026-10-28T21:05:53.751592+01:00"
     },
     {
       "id": "2026-10-28-R1-C6",
@@ -3039,7 +3039,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C6/participants",
-      "collecte_a": "2026-10-28T20:49:07.220837+01:00",
+      "collecte_a": "2026-10-28T21:05:43.313132+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -3393,7 +3393,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.276857+01:00"
+      "analyse_a": "2026-10-28T21:05:53.751612+01:00"
     },
     {
       "id": "2026-10-28-R2-C7",
@@ -3620,10 +3620,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C7/participants",
-      "collecte_a": "2026-10-28T20:49:10.900199+01:00",
+      "collecte_a": "2026-10-28T21:05:47.002126+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.277119+01:00"
+      "analyse_a": "2026-10-28T21:05:53.751894+01:00"
     },
     {
       "id": "2026-10-28-R1-C7",
@@ -3794,10 +3794,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C7/participants",
-      "collecte_a": "2026-10-28T20:49:07.802311+01:00",
+      "collecte_a": "2026-10-28T21:05:44.055768+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.277141+01:00"
+      "analyse_a": "2026-10-28T21:05:53.751924+01:00"
     },
     {
       "id": "2026-10-28-R2-C8",
@@ -4026,7 +4026,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
-      "collecte_a": "2026-10-28T20:49:11.249933+01:00",
+      "collecte_a": "2026-10-28T21:05:47.474246+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -4460,7 +4460,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.277156+01:00"
+      "analyse_a": "2026-10-28T21:05:53.751943+01:00"
     },
     {
       "id": "2026-10-28-R1-C8",
@@ -4659,7 +4659,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C8/participants",
-      "collecte_a": "2026-10-28T20:49:08.252661+01:00",
+      "collecte_a": "2026-10-28T21:05:44.386679+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -5073,7 +5073,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.277468+01:00"
+      "analyse_a": "2026-10-28T21:05:53.752281+01:00"
     },
     {
       "id": "2026-10-28-R3-C1",
@@ -5272,7 +5272,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
-      "collecte_a": "2026-10-28T20:49:11.546599+01:00",
+      "collecte_a": "2026-10-28T21:05:47.788683+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -5686,7 +5686,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.277780+01:00"
+      "analyse_a": "2026-10-28T21:05:53.752626+01:00"
     },
     {
       "id": "2026-10-28-R4-C1",
@@ -5871,7 +5871,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C1/participants",
-      "collecte_a": "2026-10-28T20:49:14.900602+01:00",
+      "collecte_a": "2026-10-28T21:05:50.938225+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -6265,7 +6265,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.278087+01:00"
+      "analyse_a": "2026-10-28T21:05:53.752958+01:00"
     },
     {
       "id": "2026-10-28-R3-C2",
@@ -6492,7 +6492,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
-      "collecte_a": "2026-10-28T20:49:11.854050+01:00",
+      "collecte_a": "2026-10-28T21:05:48.535270+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -6946,7 +6946,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.278369+01:00"
+      "analyse_a": "2026-10-28T21:05:53.753269+01:00"
     },
     {
       "id": "2026-10-28-R4-C2",
@@ -7161,7 +7161,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
-      "collecte_a": "2026-10-28T20:49:15.206643+01:00",
+      "collecte_a": "2026-10-28T21:05:51.367596+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -7575,7 +7575,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.278687+01:00"
+      "analyse_a": "2026-10-28T21:05:53.753654+01:00"
     },
     {
       "id": "2026-10-28-R3-C3",
@@ -7774,7 +7774,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
-      "collecte_a": "2026-10-28T20:49:12.295110+01:00",
+      "collecte_a": "2026-10-28T21:05:48.850682+01:00",
       "statut": "FIGE_VERIFIE",
       "moteurs": [
         {
@@ -8188,7 +8188,7 @@
           ]
         }
       ],
-      "analyse_a": "2026-10-28T20:49:17.278999+01:00"
+      "analyse_a": "2026-10-28T21:05:53.753985+01:00"
     },
     {
       "id": "2026-10-28-R4-C3",
@@ -8403,10 +8403,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
-      "collecte_a": "2026-10-28T20:49:15.550925+01:00",
+      "collecte_a": "2026-10-28T21:05:51.697473+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279298+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754306+01:00"
     },
     {
       "id": "2026-10-28-R3-C4",
@@ -8605,10 +8605,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
-      "collecte_a": "2026-10-28T20:49:12.613116+01:00",
+      "collecte_a": "2026-10-28T21:05:49.168027+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279325+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754339+01:00"
     },
     {
       "id": "2026-10-28-R4-C4",
@@ -8795,10 +8795,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
-      "collecte_a": "2026-10-28T20:49:15.902095+01:00",
+      "collecte_a": "2026-10-28T21:05:52.017201+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279342+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754358+01:00"
     },
     {
       "id": "2026-10-28-R3-C5",
@@ -8943,10 +8943,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
-      "collecte_a": "2026-10-28T20:49:13.363289+01:00",
+      "collecte_a": "2026-10-28T21:05:49.484761+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279356+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754375+01:00"
     },
     {
       "id": "2026-10-28-R4-C5",
@@ -9117,10 +9117,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C5/participants",
-      "collecte_a": "2026-10-28T20:49:16.236428+01:00",
+      "collecte_a": "2026-10-28T21:05:52.491343+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279369+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754407+01:00"
     },
     {
       "id": "2026-10-28-R3-C6",
@@ -9263,10 +9263,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
-      "collecte_a": "2026-10-28T20:49:13.966708+01:00",
+      "collecte_a": "2026-10-28T21:05:49.943246+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279385+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754425+01:00"
     },
     {
       "id": "2026-10-28-R4-C6",
@@ -9397,10 +9397,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
-      "collecte_a": "2026-10-28T20:49:16.827921+01:00",
+      "collecte_a": "2026-10-28T21:05:53.277846+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279399+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754441+01:00"
     },
     {
       "id": "2026-10-28-R4-C7",
@@ -9571,10 +9571,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
-      "collecte_a": "2026-10-28T20:49:17.124734+01:00",
+      "collecte_a": "2026-10-28T21:05:53.599429+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279412+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754456+01:00"
     },
     {
       "id": "2026-10-28-R3-C7",
@@ -9719,10 +9719,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
-      "collecte_a": "2026-10-28T20:49:14.267666+01:00",
+      "collecte_a": "2026-10-28T21:05:50.257555+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279424+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754472+01:00"
     },
     {
       "id": "2026-10-28-R3-C8",
@@ -9893,10 +9893,10 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
-      "collecte_a": "2026-10-28T20:49:14.574036+01:00",
+      "collecte_a": "2026-10-28T21:05:50.574572+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [],
-      "analyse_a": "2026-10-28T20:49:17.279437+01:00"
+      "analyse_a": "2026-10-28T21:05:53.754488+01:00"
     }
   ]
 }
