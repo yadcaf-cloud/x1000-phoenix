@@ -7,37 +7,66 @@
 <title>🇸🇳🧠🔥 X1000 PHOENIX — Intelligence vivante</title>
 <style>
 :root{
- --bg:#071827;--panel:#10283a;--line:#345469;
- --text:#f0f6fc;--green:#27d58c;--yellow:#ffcf58;
- --red:#ff7070;--blue:#65c7ff;--gold:#ffd06a;
+ --bg:#071827;
+ --panel:#10283a;
+ --line:#345469;
+ --text:#f0f6fc;
+ --green:#27d58c;
+ --yellow:#ffcf58;
+ --red:#ff7070;
+ --blue:#65c7ff;
+ --gold:#ffd06a;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
- margin:0;background:var(--bg);color:var(--text);
+ margin:0;
+ background:var(--bg);
+ color:var(--text);
  font:15px/1.55 system-ui,Arial,sans-serif;
 }
 header{
- padding:25px 12px;text-align:center;
+ padding:25px 12px;
+ text-align:center;
  background:linear-gradient(135deg,#123b48,#071827);
  border-bottom:2px solid var(--gold);
 }
-h1{font-size:clamp(24px,6vw,35px);color:var(--gold);margin:0}
+h1{
+ font-size:clamp(24px,6vw,35px);
+ color:var(--gold);
+ margin:0;
+}
 h2{font-size:21px;color:var(--green)}
 h3{font-size:16px;color:var(--blue)}
 nav{
- display:flex;gap:8px;overflow-x:auto;
- padding:11px;background:#0b2132;
- position:sticky;top:0;z-index:10;
+ display:flex;
+ gap:8px;
+ overflow-x:auto;
+ padding:11px;
+ background:#0b2132;
+ position:sticky;
+ top:0;
+ z-index:10;
 }
 nav a{
- color:white;text-decoration:none;white-space:nowrap;
- background:#1b4054;padding:9px 12px;border-radius:9px;
+ color:white;
+ text-decoration:none;
+ white-space:nowrap;
+ background:#1b4054;
+ padding:9px 12px;
+ border-radius:9px;
 }
-main{max-width:1250px;margin:auto;padding:12px}
+main{
+ max-width:1250px;
+ margin:auto;
+ padding:12px;
+}
 section{
- background:var(--panel);border:1px solid var(--line);
- border-radius:14px;padding:16px;margin:15px 0;
+ background:var(--panel);
+ border:1px solid var(--line);
+ border-radius:14px;
+ padding:16px;
+ margin:15px 0;
  scroll-margin-top:80px;
 }
 .grid{
@@ -46,65 +75,107 @@ section{
  gap:10px;
 }
 .card{
- background:#0b2334;border:1px solid var(--line);
- border-radius:10px;padding:13px;white-space:pre-line;
+ background:#0b2334;
+ border:1px solid var(--line);
+ border-radius:10px;
+ padding:13px;
+ white-space:pre-line;
 }
-.value{font-size:26px;font-weight:800;color:var(--green)}
+.value{
+ font-size:26px;
+ font-weight:800;
+ color:var(--green);
+}
 .controls{
  display:grid;
  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
- gap:11px;margin:14px 0;
+ gap:11px;
+ margin:14px 0;
 }
-label{display:block;margin-bottom:5px;color:#b3c6d4}
+label{
+ display:block;
+ margin-bottom:5px;
+ color:#b3c6d4;
+}
 input,select,button{
- font:inherit;border-radius:8px;padding:11px;
+ font:inherit;
+ border-radius:8px;
+ padding:11px;
  max-width:100%;
 }
 input,select{
- width:100%;background:#071827;
- border:1px solid #567488;color:white;
+ width:100%;
+ background:#071827;
+ border:1px solid #567488;
+ color:white;
 }
 button{
- background:#147b60;color:white;
+ background:#147b60;
+ color:white;
  border:1px solid #3ac69a;
- font-weight:700;cursor:pointer;margin:4px;
+ font-weight:700;
+ cursor:pointer;
+ margin:4px;
 }
 button:disabled{opacity:.5}
 .secondary{background:#235272}
 .tablewrap{overflow-x:auto}
 table{
- width:100%;min-width:780px;
- border-collapse:collapse;font-size:14px;
+ width:100%;
+ min-width:780px;
+ border-collapse:collapse;
+ font-size:14px;
 }
 th,td{
- padding:10px 8px;text-align:left;
- vertical-align:top;border-bottom:1px solid var(--line);
+ padding:10px 8px;
+ text-align:left;
+ vertical-align:top;
+ border-bottom:1px solid var(--line);
 }
-th{background:#1a3d51;color:#b4f5d7}
+th{
+ background:#1a3d51;
+ color:#b4f5d7;
+}
 tr:nth-child(even){background:#142f42}
 .good{color:var(--green)}
 .warn{color:var(--yellow)}
 .bad,.np{color:var(--red)}
 .muted,small{color:#b3c6d4}
 .message{
- padding:12px;background:#0b2030;
- border:1px solid var(--line);border-radius:9px;
- margin:10px 0;white-space:pre-wrap;
+ padding:12px;
+ background:#0b2030;
+ border:1px solid var(--line);
+ border-radius:9px;
+ margin:10px 0;
+ white-space:pre-wrap;
  overflow-wrap:anywhere;
 }
 a{color:var(--blue)}
 pre{
- background:#061420;color:#d1eaf8;
- padding:12px;border-radius:9px;
- white-space:pre-wrap;overflow-wrap:anywhere;
- max-height:370px;overflow:auto;
+ background:#061420;
+ color:#d1eaf8;
+ padding:12px;
+ border-radius:9px;
+ white-space:pre-wrap;
+ overflow-wrap:anywhere;
+ max-height:370px;
+ overflow:auto;
 }
 details{
- border:1px solid var(--line);border-radius:9px;
- padding:11px;margin:9px 0;
+ border:1px solid var(--line);
+ border-radius:9px;
+ padding:11px;
+ margin:9px 0;
 }
-summary{cursor:pointer;font-weight:700}
-footer{text-align:center;padding:24px;color:#b3c6d4}
+summary{
+ cursor:pointer;
+ font-weight:700;
+}
+footer{
+ text-align:center;
+ padding:24px;
+ color:#b3c6d4;
+}
 </style>
 </head>
 <body>
@@ -114,7 +185,9 @@ footer{text-align:center;padding:24px;color:#b3c6d4}
 <p>INTELLIGENCE HIPPIQUE VIVANTE</p>
 <p>Cinq moteurs M1 à M5 — Analyse • FIGÉ • Audit</p>
 <div id="horloge">Heure de Paris : —</div>
-<strong id="etatGeneral" class="warn">🟡 Initialisation</strong>
+<strong id="etatGeneral" class="warn">
+🟡 Initialisation
+</strong>
 </header>
 
 <nav>
@@ -133,15 +206,35 @@ footer{text-align:center;padding:24px;color:#b3c6d4}
 <section>
 <h2>🔥 Centre de commandement</h2>
 <div class="grid">
-<div class="card"><div class="value" id="nbCourses">—</div>Courses publiées</div>
-<div class="card"><div class="value">5</div>Moteurs M1–M5</div>
-<div class="card"><div class="value" id="nbAnalyses">—</div>Courses analysées</div>
-<div class="card"><div class="value" id="nbPV">—</div>PV publiés</div>
-<div class="card"><div class="value" id="nbFiges">—</div>FIGÉS publiés</div>
-<div class="card"><div class="value" id="nbAudits">—</div>Audits publiés</div>
+<div class="card">
+<div class="value" id="nbCourses">—</div>
+Courses PMU publiées
+</div>
+<div class="card">
+<div class="value">5</div>
+Moteurs M1–M5
+</div>
+<div class="card">
+<div class="value" id="nbAnalyses">—</div>
+Courses analysées
+</div>
+<div class="card">
+<div class="value" id="nbPV">—</div>
+PV publiés
+</div>
+<div class="card">
+<div class="value" id="nbFiges">—</div>
+FIGÉS publiés
+</div>
+<div class="card">
+<div class="value" id="nbAudits">—</div>
+Audits publiés
+</div>
 </div>
 <div id="etatAccueil" class="message">Chargement...</div>
-<button id="btnRefresh">🔄 Actualiser toutes les données</button>
+<button id="btnRefresh">
+🔄 Actualiser toutes les données
+</button>
 </section>
 
 <section id="pmu">
@@ -153,20 +246,38 @@ footer{text-align:center;padding:24px;color:#b3c6d4}
 </div>
 <div>
 <label for="reunion">Réunion</label>
-<select id="reunion"><option value="">Toutes</option></select>
+<select id="reunion">
+<option value="">Toutes</option>
+</select>
 </div>
 <div>
 <label for="course">Course</label>
-<select id="course"><option value="">Choisir</option></select>
+<select id="course">
+<option value="">Choisir</option>
+</select>
 </div>
 </div>
+
 <button id="btnPartants">🐎 Afficher les partants</button>
-<button id="btnAnalyses" class="secondary">🧠 Tableau M1–M5</button>
+<button id="btnAnalyses" class="secondary">
+🧠 Tableau M1–M5
+</button>
+
 <div id="etatPMU" class="message">En attente...</div>
+
 <div class="grid">
-<div class="card"><h3>Course</h3><div id="infoCourse">—</div></div>
-<div class="card"><h3>Partants</h3><div id="infoPartants">—</div></div>
-<div class="card"><h3>Récupération</h3><div id="infoDate">—</div></div>
+<div class="card">
+<h3>Course</h3>
+<div id="infoCourse">—</div>
+</div>
+<div class="card">
+<h3>Partants</h3>
+<div id="infoPartants">—</div>
+</div>
+<div class="card">
+<h3>Récupération</h3>
+<div id="infoDate">—</div>
+</div>
 </div>
 <p id="sourcePMU" class="muted">Source non chargée.</p>
 </section>
@@ -175,13 +286,21 @@ footer{text-align:center;padding:24px;color:#b3c6d4}
 <h2>🐎 Partants PMU</h2>
 <div class="tablewrap">
 <table>
-<thead><tr>
-<th>N°</th><th>Cheval</th><th>Jockey / Driver</th>
-<th>Entraîneur</th><th>Musique</th>
-<th>Cote</th><th>Statut</th>
-</tr></thead>
+<thead>
+<tr>
+<th>N°</th>
+<th>Cheval</th>
+<th>Jockey / Driver</th>
+<th>Entraîneur</th>
+<th>Musique</th>
+<th>Cote</th>
+<th>Statut</th>
+</tr>
+</thead>
 <tbody id="lignesPartants">
-<tr><td colspan="7">Aucune donnée chargée.</td></tr>
+<tr>
+<td colspan="7">Aucune donnée chargée.</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -189,10 +308,14 @@ footer{text-align:center;padding:24px;color:#b3c6d4}
 
 <section id="tableau">
 <h2>🏆 Tableau officiel X1000 — M1 à M5</h2>
-<p class="muted">Seules les analyses réellement publiées sont affichées. Aucun pronostic fictif.</p>
+<p class="muted">
+Seules les analyses réellement publiées sont affichées.
+Aucun pronostic fictif.
+</p>
 <div class="tablewrap">
 <table>
-<thead><tr>
+<thead>
+<tr>
 <th>Moteur</th>
 <th>🥇 Gagnant espéré</th>
 <th>🥈 Meilleur placé</th>
@@ -201,7 +324,8 @@ footer{text-align:center;padding:24px;color:#b3c6d4}
 <th>Qualification</th>
 <th>Validation</th>
 <th>Heure Paris</th>
-</tr></thead>
+</tr>
+</thead>
 <tbody id="lignesMoteurs"></tbody>
 </table>
 </div>
@@ -209,7 +333,9 @@ footer{text-align:center;padding:24px;color:#b3c6d4}
 
 <section id="publications">
 <h2>📚 Courses et analyses publiées</h2>
-<div id="listePublications" class="message">Chargement...</div>
+<div id="listePublications" class="message">
+Chargement...
+</div>
 </section>
 
 <section id="figes">
@@ -218,13 +344,19 @@ footer{text-align:center;padding:24px;color:#b3c6d4}
 <div id="listeFiges" class="message">Chargement...</div>
 <h3>Procès-verbaux publiés</h3>
 <div id="listePV" class="message">Chargement...</div>
-<p class="muted">Les FIGÉS sont créés et archivés par le moteur Python. Cette interface ne modifie pas les archives officielles.</p>
+<p class="muted">
+Les archives officielles ne sont jamais modifiées
+par cette interface.
+</p>
 </section>
 
 <section id="audits">
 <h2>📊 Audits après course</h2>
 <div id="listeAudits" class="message">Chargement...</div>
-<p class="muted">Les audits nécessitent une arrivée officielle vérifiée et un FIGÉ antérieur au départ.</p>
+<p class="muted">
+Un audit exige un FIGÉ antérieur au départ
+et une arrivée officielle vérifiée.
+</p>
 </section>
 
 <section id="systeme">
@@ -252,7 +384,12 @@ Statut GitHub Actions non vérifié.
 
 <footer>
 🇸🇳🔥 X1000 PHOENIX — Intelligence vivante
-<p><small>Aucun pari réel n'est exécuté. Aucun gain n'est garanti.</small></p>
+<p>
+<small>
+Aucun pari réel n'est exécuté.
+Aucun gain n'est garanti.
+</small>
+</p>
 </footer>
 
 <script>
@@ -302,8 +439,9 @@ Statut GitHub Actions non vérifié.
 
   const liste = x => Array.isArray(x) ? x : [];
 
-  const val = (x, def="—") =>
-    x === null || x === undefined || x === "" ? def : x;
+  const val = (x, def = "—") =>
+    x === null || x === undefined || x === ""
+      ? def : x;
 
   function champ(obj, ...cles) {
     for (const cle of cles) {
@@ -317,6 +455,16 @@ Statut GitHub Actions non vérifié.
     return undefined;
   }
 
+  function extraire(obj, cles) {
+    if (Array.isArray(obj)) return obj;
+    if (!obj || typeof obj !== "object") return [];
+
+    for (const cle of cles) {
+      if (Array.isArray(obj[cle])) return obj[cle];
+    }
+    return [];
+  }
+
   function dateParis() {
     const p = new Intl.DateTimeFormat("en-GB", {
       timeZone: "Europe/Paris",
@@ -325,7 +473,8 @@ Statut GitHub Actions non vérifié.
       day: "2-digit"
     }).formatToParts(new Date());
 
-    const lire = k => p.find(x => x.type === k)?.value;
+    const lire = k =>
+      p.find(x => x.type === k)?.value;
 
     return [
       lire("year"),
@@ -345,11 +494,14 @@ Statut GitHub Actions non vérifié.
 
   function formatDate(v) {
     if (!v) return "—";
+
     if (/^\d{4}-\d{2}-\d{2}$/.test(String(v))) {
       return String(v);
     }
+
     const d = new Date(v);
-    if (isNaN(d.getTime())) return String(v);
+    if (Number.isNaN(d.getTime())) return String(v);
+
     return new Intl.DateTimeFormat("fr-FR", {
       timeZone: "Europe/Paris",
       dateStyle: "short",
@@ -358,11 +510,14 @@ Statut GitHub Actions non vérifié.
   }
 
   function journal(message) {
-    const heure = new Date().toLocaleTimeString("fr-FR", {
-      timeZone: "Europe/Paris"
-    });
+    const heure = new Date().toLocaleTimeString(
+      "fr-FR", {timeZone: "Europe/Paris"}
+    );
+
     S.logs.push(heure + " " + message);
-    $("journal").textContent = S.logs.slice(-100).join("\n");
+
+    $("journal").textContent =
+      S.logs.slice(-100).join("\n");
   }
 
   function erreur(message) {
@@ -370,21 +525,14 @@ Statut GitHub Actions non vérifié.
     journal("ERREUR : " + message);
   }
 
-  function extraire(obj, cles) {
-    if (Array.isArray(obj)) return obj;
-    if (!obj || typeof obj !== "object") return [];
-    for (const cle of cles) {
-      if (Array.isArray(obj[cle])) return obj[cle];
-    }
-    return [];
-  }
-
   async function fetchJSON(chemin) {
     const url = new URL(chemin, BASE);
     url.searchParams.set("v", Date.now());
 
     const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), 20000);
+    const timer = setTimeout(
+      () => ctrl.abort(), 20000
+    );
 
     try {
       const r = await fetch(url.href, {
@@ -393,12 +541,16 @@ Statut GitHub Actions non vérifié.
         headers: {Accept: "application/json"}
       });
 
-      if (!r.ok) throw new Error("HTTP " + r.status);
+      if (!r.ok) {
+        throw new Error("HTTP " + r.status);
+      }
 
       const data = await r.json();
+
       if (!data || typeof data !== "object") {
         throw new Error("JSON invalide");
       }
+
       return data;
     } finally {
       clearTimeout(timer);
@@ -411,14 +563,19 @@ Statut GitHub Actions non vérifié.
     for (const chemin of FICHIERS[nom]) {
       try {
         const data = await fetchJSON(chemin);
+
         S.fichiers[nom] = {
           ok: true,
           chemin
         };
+
         journal("OK " + chemin);
         return data;
+
       } catch (e) {
-        erreurs.push(chemin + " : " + e.message);
+        erreurs.push(
+          chemin + " : " + e.message
+        );
       }
     }
 
@@ -438,41 +595,61 @@ Statut GitHub Actions non vérifié.
   }
 
   function identite(c) {
-    const date = champ(c, "date") ||
-      S.collecte?.date || dateParis();
+    if (!c) return "";
+
+    const id = champ(c, "id", "course_id");
+
+    if (
+      id &&
+      /^\d{4}-\d{2}-\d{2}-R\d+-C\d+$/.test(String(id))
+    ) {
+      return String(id);
+    }
 
     const r = champ(c, "reunion", "numero_reunion");
     const n = champ(c, "course", "numero_course");
+    const date = champ(c, "date") || S.collecte?.date;
 
-    if (r !== undefined && n !== undefined) {
-      return date + "-R" + Number(r) + "-C" + Number(n);
+    if (
+      r !== undefined &&
+      n !== undefined &&
+      date
+    ) {
+      return date + "-R" + Number(r) +
+        "-C" + Number(n);
     }
 
-    return String(champ(c, "id", "course_id") || "");
+    return String(id || "");
   }
 
   function nonPartant(p) {
     const statut = String(p?.statut || "")
-      .toUpperCase().replace(/[ -]/g, "_");
+      .toUpperCase()
+      .replace(/[ -]/g, "_");
 
     return p?.non_partant === true ||
       p?.nonPartant === true ||
-      ["NP", "NON_PARTANT", "NONPARTANT", "FORFAIT"]
-        .includes(statut);
+      [
+        "NP",
+        "NON_PARTANT",
+        "NONPARTANT",
+        "FORFAIT"
+      ].includes(statut);
   }
 
   function chevaux(c) {
     return liste(c?.partants)
       .filter(x => x && typeof x === "object")
       .slice()
-      .sort((a,b) =>
-        Number(champ(a,"numero","num") || 0) -
-        Number(champ(b,"numero","num") || 0)
+      .sort((a, b) =>
+        Number(champ(a, "numero", "num") || 0) -
+        Number(champ(b, "numero", "num") || 0)
       );
   }
 
   function remplir(select, options, titre) {
     select.replaceChildren(new Option(titre, ""));
+
     options.forEach(o => {
       select.add(new Option(o.label, o.value));
     });
@@ -485,9 +662,9 @@ Statut GitHub Actions non vérifié.
       .filter(c =>
         c &&
         typeof c === "object" &&
-        c.localisation_france_verifiee !== false
+        c.localisation_france_verifiee === true
       )
-      .sort((a,b) =>
+      .sort((a, b) =>
         String(a.depart || "").localeCompare(
           String(b.depart || "")
         )
@@ -498,23 +675,27 @@ Statut GitHub Actions non vérifié.
       ["courses"]
     );
 
-    for (const c of S.publicationCourses) {
-      if (!S.courses.some(x => identite(x) === identite(c))) {
-        S.courses.push(c);
-      }
-    }
+    // Les archives ne sont pas mélangées
+    // avec la collecte PMU actuelle.
   }
 
-  function reunions(prefer="") {
+  function reunions(prefer = "") {
     const rs = [...new Set(
       S.courses.map(c =>
-        String(champ(c,"reunion","numero_reunion") ?? "")
+        String(
+          champ(c, "reunion", "numero_reunion") ?? ""
+        )
       )
-    )].filter(Boolean).sort((a,b) => Number(a)-Number(b));
+    )].filter(Boolean).sort(
+      (a, b) => Number(a) - Number(b)
+    );
 
     remplir(
       $("reunion"),
-      rs.map(r => ({value:r,label:"R"+r})),
+      rs.map(r => ({
+        value: r,
+        label: "R" + r
+      })),
       "Toutes les réunions"
     );
 
@@ -523,12 +704,14 @@ Statut GitHub Actions non vérifié.
     }
   }
 
-  function coursesSelect(prefer="") {
+  function coursesSelect(prefer = "") {
     const r = $("reunion").value;
 
     const cs = S.courses.filter(c =>
       !r ||
-      String(champ(c,"reunion","numero_reunion")) === r
+      String(
+        champ(c, "reunion", "numero_reunion")
+      ) === r
     );
 
     remplir(
@@ -536,15 +719,18 @@ Statut GitHub Actions non vérifié.
       cs.map(c => ({
         value: identite(c),
         label:
-          "R" + val(champ(c,"reunion","numero_reunion")) +
-          "C" + val(champ(c,"course","numero_course")) +
+          "R" + val(champ(c, "reunion", "numero_reunion")) +
+          "C" + val(champ(c, "course", "numero_course")) +
           " — " + val(c.hippodrome) +
-          " — " + val(champ(c,"nom","libelle"))
+          " — " + val(champ(c, "nom", "libelle"))
       })),
       "Choisir une course"
     );
 
-    if (prefer && cs.some(c => identite(c) === prefer)) {
+    if (
+      prefer &&
+      cs.some(c => identite(c) === prefer)
+    ) {
       $("course").value = prefer;
     } else if (cs.length) {
       $("course").value = identite(cs[0]);
@@ -567,11 +753,20 @@ Statut GitHub Actions non vérifié.
     const c = S.selection;
 
     if (!c) {
-      ["infoCourse","infoPartants","infoDate"].forEach(
+      [
+        "infoCourse",
+        "infoPartants",
+        "infoDate"
+      ].forEach(
         id => $(id).textContent = "—"
       );
-      $("etatPMU").textContent = "Aucune course sélectionnée.";
-      $("sourcePMU").textContent = "Source non chargée.";
+
+      $("etatPMU").textContent =
+        "Aucune course sélectionnée.";
+
+      $("sourcePMU").textContent =
+        "Source non chargée.";
+
       return;
     }
 
@@ -579,15 +774,14 @@ Statut GitHub Actions non vérifié.
     const np = ps.filter(nonPartant);
 
     $("infoCourse").textContent =
-      "R" + val(champ(c,"reunion","numero_reunion")) +
-      "C" + val(champ(c,"course","numero_course")) +
-      " — " + val(champ(c,"nom","libelle")) +
+      "R" + val(c.reunion) +
+      "C" + val(c.course) +
+      " — " + val(c.nom) +
       "\n" + val(c.hippodrome) +
-      "\nDépart : " +
-      formatDate(champ(c,"depart","heure_depart"));
+      "\nDépart : " + formatDate(c.depart);
 
     $("infoPartants").textContent = ps.length
-      ? (ps.length-np.length) +
+      ? (ps.length - np.length) +
         " partants / " + np.length + " NP"
       : val(c.nombre_partants) +
         " partants déclarés (détail indisponible)";
@@ -601,12 +795,9 @@ Statut GitHub Actions non vérifié.
         " participants publiés (fraîcheur à vérifier)"
       : "🟡 Liste détaillée indisponible";
 
-    const source = champ(c,"source") ||
-      champ(S.collecte,"source");
-
     $("sourcePMU").textContent =
       "Source déclarée : " +
-      (typeof source === "string" ? source : "—") +
+      val(c.source || S.collecte?.source) +
       " — Données publiées, non du direct.";
   }
 
@@ -619,14 +810,20 @@ Statut GitHub Actions non vérifié.
     if (!ps.length) {
       const tr = tbody.insertRow();
       const td = tr.insertCell();
+
       td.colSpan = 7;
-      td.textContent = "Aucun partant détaillé publié.";
+      td.textContent =
+        "Aucun partant détaillé publié.";
+
       return;
     }
 
     for (const p of ps) {
       const tr = tbody.insertRow();
-      if (nonPartant(p)) tr.className = "np";
+
+      if (nonPartant(p)) {
+        tr.className = "np";
+      }
 
       const statut = nonPartant(p)
         ? "🔴 NON PARTANT"
@@ -635,12 +832,12 @@ Statut GitHub Actions non vérifié.
           : "🟡 À vérifier";
 
       const valeurs = [
-        champ(p,"numero","num"),
-        champ(p,"nom","cheval"),
-        champ(p,"jockey","driver"),
-        champ(p,"entraineur"),
-        champ(p,"musique"),
-        champ(p,"cote"),
+        champ(p, "numero", "num"),
+        champ(p, "nom", "cheval"),
+        champ(p, "jockey", "driver"),
+        champ(p, "entraineur"),
+        champ(p, "musique"),
+        champ(p, "cote"),
         statut
       ];
 
@@ -654,19 +851,27 @@ Statut GitHub Actions non vérifié.
     if (!c) return [];
 
     const id = identite(c);
-    const pub = S.publicationCourses.find(x =>
-      identite(x) === id
+
+    const pub = S.publicationCourses.find(
+      x => identite(x) === id
     );
 
-    const imbriquees = extraire(pub, ["moteurs","analyses"]);
+    const imbriquees = extraire(
+      pub, ["moteurs", "analyses"]
+    );
 
     const globales = S.analyses.filter(a => {
       const k = champ(
-        a,"course_id","id_course",
-        "idCourse","identifiant_course"
+        a,
+        "course_id",
+        "id_course",
+        "idCourse",
+        "identifiant_course"
       );
 
-      if (k) return String(k) === id;
+      if (k) {
+        return String(k) === id;
+      }
 
       return (
         String(a.reunion) === String(c.reunion) &&
@@ -675,7 +880,7 @@ Statut GitHub Actions non vérifié.
       );
     });
 
-    return [...imbriquees,...globales];
+    return [...imbriquees, ...globales];
   }
 
   function ordre(x) {
@@ -690,35 +895,50 @@ Statut GitHub Actions non vérifié.
 
     const aa = analysesPour(S.selection);
 
-    for (let i=1; i<=5; i++) {
+    for (let i = 1; i <= 5; i++) {
       const nom = "M" + i;
+
       const a = aa.find(x =>
-        String(champ(x,"moteur","engine") || "")
-          .toUpperCase() === nom
+        String(
+          champ(x, "moteur", "engine") || ""
+        ).toUpperCase() === nom
       );
 
       const valeurs = a ? [
         nom,
-        champ(a,"gagnant_espere","gagnant"),
-        champ(a,"meilleur_place","place"),
+        champ(a, "gagnant_espere", "gagnant"),
+        champ(a, "meilleur_place", "place"),
         ordre(champ(
-          a,"ordre_arrivee_espere","ordre_espere","ordre"
+          a,
+          "ordre_arrivee_espere",
+          "ordre_espere",
+          "ordre"
         )),
-        champ(a,"pari_retenu","pari"),
-        champ(a,"qualification"),
-        champ(a,"validation","statut"),
+        champ(a, "pari_retenu", "pari"),
+        champ(a, "qualification"),
+        champ(a, "validation", "statut"),
         formatDate(champ(
-          a,"heure_paris","horodatage","heure"
+          a,
+          "heure_paris",
+          "horodatage",
+          "heure"
         ))
       ] : [
-        nom,"—","—","—","—","—",
-        "🟡 Non publié","—"
+        nom,
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "🟡 Non publié",
+        "—"
       ];
 
       const tr = tbody.insertRow();
-      valeurs.forEach(x =>
-        tr.insertCell().textContent = val(x)
-      );
+
+      valeurs.forEach(x => {
+        tr.insertCell().textContent = val(x);
+      });
     }
   }
 
@@ -728,24 +948,27 @@ Statut GitHub Actions non vérifié.
 
     if (!donnees.length) {
       cible.textContent =
-        "Aucun " + type + " publié dans les fichiers disponibles.";
+        "Aucun " + type +
+        " publié dans les fichiers disponibles.";
       return;
     }
 
-    donnees.slice(0,150).forEach((obj,i) => {
+    donnees.slice(0, 150).forEach((obj, i) => {
       const d = document.createElement("details");
       const s = document.createElement("summary");
       const pre = document.createElement("pre");
 
       s.textContent = String(
-        champ(obj,"id","course_id","moteur") ||
-        type + " " + (i+1)
+        champ(obj, "id", "course_id", "moteur") ||
+        type + " " + (i + 1)
       ) + " — " + String(
-        champ(obj,"statut","validation") || "Publié"
+        champ(obj, "statut", "validation") ||
+        "Publié"
       );
 
-      pre.textContent = JSON.stringify(obj,null,2);
-      d.append(s,pre);
+      pre.textContent = JSON.stringify(obj, null, 2);
+
+      d.append(s, pre);
       cible.appendChild(d);
     });
   }
@@ -755,40 +978,39 @@ Statut GitHub Actions non vérifié.
     cible.replaceChildren();
 
     if (!S.courses.length) {
-      cible.textContent = "Aucune course publiée.";
+      cible.textContent =
+        "Aucune course PMU française vérifiée publiée.";
       return;
     }
 
-    S.courses.slice(0,250).forEach(c => {
+    S.courses.slice(0, 250).forEach(c => {
       const d = document.createElement("details");
       const s = document.createElement("summary");
       const p = document.createElement("p");
       const btn = document.createElement("button");
 
       s.textContent =
-        "R" + val(champ(c,"reunion","numero_reunion")) +
-        "C" + val(champ(c,"course","numero_course")) +
+        "R" + val(c.reunion) +
+        "C" + val(c.course) +
         " — " + val(c.hippodrome) +
-        " — " + val(champ(c,"nom","libelle"));
+        " — " + val(c.nom);
 
       p.textContent =
-        "Départ : " +
-        formatDate(champ(c,"depart","heure_depart")) +
+        "Départ : " + formatDate(c.depart) +
         " | Participants détaillés : " +
         chevaux(c).length +
-        " | Analyses : " + analysesPour(c).length;
+        " | Analyses : " +
+        analysesPour(c).length;
 
       btn.textContent = "Voir la course";
 
       btn.addEventListener("click", () => {
-        $("reunion").value = String(
-          champ(c,"reunion","numero_reunion")
-        );
+        $("reunion").value = String(c.reunion);
         coursesSelect(identite(c));
         location.hash = "partants";
       });
 
-      d.append(s,p,btn);
+      d.append(s, p, btn);
       cible.appendChild(d);
     });
   }
@@ -800,58 +1022,92 @@ Statut GitHub Actions non vérifié.
     Object.values(S.fichiers).forEach(f => {
       const d = document.createElement("div");
       d.className = "message";
+
       d.textContent =
         (f.ok ? "🟢 " : "🟡 ") +
         f.chemin +
         (f.ok ? " — chargé" : " — " + f.erreur);
+
       cible.appendChild(d);
     });
 
-    $("difficultes").textContent = S.erreurs.length
-      ? S.erreurs.join("\n")
-      : "Aucune erreur bloquante signalée. Certains fichiers optionnels peuvent être absents.";
+    $("difficultes").textContent =
+      S.erreurs.length
+        ? S.erreurs.join("\n")
+        : "Aucune erreur bloquante signalée. Des fichiers optionnels peuvent être absents.";
 
-    $("dernierRapport").textContent = S.rapport
-      ? JSON.stringify(S.rapport,null,2)
-      : "Rapport non disponible.";
+    $("dernierRapport").textContent =
+      S.rapport
+        ? JSON.stringify(S.rapport, null, 2)
+        : "Rapport non disponible.";
+
+    $("etatActions").textContent =
+      S.rapport
+        ? "🟡 Rapport de publication chargé. Vérifier les exécutions réelles dans GitHub Actions."
+        : "🟡 Rapport absent. Vérifier les exécutions dans GitHub Actions.";
   }
 
   function chiffres() {
-    $("nbCourses").textContent = S.courses.length;
+    $("nbCourses").textContent =
+      S.courses.length;
+
     $("nbAnalyses").textContent =
-      S.courses.filter(c => analysesPour(c).length).length;
-    $("nbPV").textContent = S.pv.length;
-    $("nbFiges").textContent = S.figes.length;
-    $("nbAudits").textContent = S.audits.length;
+      S.courses.filter(
+        c => analysesPour(c).length > 0
+      ).length;
+
+    $("nbPV").textContent =
+      S.pv.length;
+
+    $("nbFiges").textContent =
+      S.figes.length;
+
+    $("nbAudits").textContent =
+      S.audits.length;
   }
 
   function statut() {
     if (!S.collecte) {
       $("etatGeneral").textContent =
         "🔴 Collecte indisponible";
+
       $("etatGeneral").className = "bad";
+
       $("etatAccueil").textContent =
-        "Le fichier de collecte est absent ou invalide. Consultez le diagnostic.";
+        "Fichier de collecte absent ou invalide. Consulter le diagnostic.";
+
       return;
     }
 
     const date = String(S.collecte.date || "");
-    const actuel = date === dateParis();
+    const instant = Date.parse(
+      S.collecte.collecte_a || ""
+    );
 
-    $("etatGeneral").textContent = actuel
-      ? "🟢 Collecte datée d'aujourd'hui"
-      : "🟡 Collecte ancienne ou non datée";
+    const age = (Date.now() - instant) / 60000;
 
-    $("etatGeneral").className = actuel
-      ? "good" : "warn";
+    const recent =
+      date === dateParis() &&
+      Number.isFinite(age) &&
+      age >= -5 &&
+      age <= 90;
+
+    $("etatGeneral").textContent = recent
+      ? "🟢 Collecte récente (moins de 90 min)"
+      : "🟡 Collecte ancienne ou fraîcheur non vérifiée";
+
+    $("etatGeneral").className =
+      recent ? "good" : "warn";
 
     $("etatAccueil").textContent =
       S.courses.length +
-      " courses publiées. Date de collecte : " +
-      val(date) +
-      ". Dernière récupération : " +
+      " courses françaises publiées." +
+      "\nDate : " + val(date) +
+      "\nDernière collecte déclarée : " +
       formatDate(S.collecte.collecte_a) +
-      ". Une date du jour ne garantit pas des données à jour à la minute.";
+      "\nStatut du fichier : " +
+      val(S.collecte.statut) +
+      "\nUne collecte récente ne garantit pas des informations en direct.";
   }
 
   async function actualiser() {
@@ -859,41 +1115,50 @@ Statut GitHub Actions non vérifié.
 
     S.charge = true;
     $("btnRefresh").disabled = true;
-    $("etatGeneral").textContent = "🟡 Chargement...";
+
+    $("etatGeneral").textContent =
+      "🟡 Chargement...";
 
     const ancienId = S.selection
-      ? identite(S.selection) : "";
+      ? identite(S.selection)
+      : "";
 
-    const ancienneReunion = $("reunion").value;
+    const ancienneReunion =
+      $("reunion").value;
 
     S.erreurs = [];
     S.fichiers = {};
 
     try {
       const noms = Object.keys(FICHIERS);
+
       const valeurs = await Promise.all(
         noms.map(n => charger(n))
       );
 
       const data = Object.fromEntries(
-        noms.map((n,i) => [n,valeurs[i]])
+        noms.map((n, i) => [n, valeurs[i]])
       );
 
       S.collecte = data.collecte;
       S.publicationCoursesData = data.courses;
 
       S.analyses = extraire(
-        data.analyses,["analyses","items"]
+        data.analyses, ["analyses", "items"]
       );
+
       S.figes = extraire(
-        data.figes,["figes","figés","items"]
+        data.figes, ["figes", "figés", "items"]
       );
+
       S.pv = extraire(
-        data.pv,["pv","proces_verbaux","items"]
+        data.pv, ["pv", "proces_verbaux", "items"]
       );
+
       S.audits = extraire(
-        data.audits,["audits","items"]
+        data.audits, ["audits", "items"]
       );
+
       S.rapport = data.rapport;
 
       preparerCourses();
@@ -905,9 +1170,18 @@ Statut GitHub Actions non vérifié.
       coursesSelect(ancienId);
 
       afficherPublications();
-      afficherArchives("listeFiges",S.figes,"FIGÉ");
-      afficherArchives("listePV",S.pv,"PV");
-      afficherArchives("listeAudits",S.audits,"audit");
+
+      afficherArchives(
+        "listeFiges", S.figes, "FIGÉ"
+      );
+
+      afficherArchives(
+        "listePV", S.pv, "PV"
+      );
+
+      afficherArchives(
+        "listeAudits", S.audits, "audit"
+      );
 
       chiffres();
       statut();
@@ -916,21 +1190,29 @@ Statut GitHub Actions non vérifié.
 
     } catch (e) {
       erreur("Initialisation : " + e.message);
-      $("etatGeneral").textContent = "🔴 Erreur système";
+
+      $("etatGeneral").textContent =
+        "🔴 Erreur système";
+
     } finally {
       afficherDiagnostic();
+
       S.charge = false;
       $("btnRefresh").disabled = false;
     }
   }
 
-  $("reunion").addEventListener("change", () => {
-    coursesSelect();
-  });
+  $("reunion").addEventListener(
+    "change", () => coursesSelect()
+  );
 
-  $("course").addEventListener("change",selectionner);
+  $("course").addEventListener(
+    "change", selectionner
+  );
 
-  $("btnRefresh").addEventListener("click",actualiser);
+  $("btnRefresh").addEventListener(
+    "click", actualiser
+  );
 
   $("btnPartants").addEventListener("click", () => {
     selectionner();
@@ -963,16 +1245,18 @@ Statut GitHub Actions non vérifié.
   });
 
   horloge();
-  setInterval(horloge,1000);
+
+  setInterval(horloge, 1000);
 
   // Actualisation de l'interface toutes les 5 minutes.
-  // Le moteur Python reste responsable de publier les JSON.
+  // GitHub Actions / Python doit produire les JSON.
   setInterval(() => {
     if (!document.hidden) actualiser();
-  },300000);
+  }, 300000);
 
   actualiser();
 })();
 </script>
+
 </body>
 </html>
