@@ -1,0 +1,325 @@
+{
+  "statut": "FIGE_AVANT_DEPART",
+  "fige_a": "2026-10-28T12:27:12.965978+01:00",
+  "rapport": {
+    "logiciel": "X1000 PHOENIX",
+    "course_id": "2026-10-28-R1-C2",
+    "hippodrome": "HIPPODROME D'AUTEUIL",
+    "nom": "PRIX HUNORISK",
+    "depart": "2026-10-28T12:38:00+01:00",
+    "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
+    "analyse_a": "2026-10-28T12:27:12.965614+01:00",
+    "nombre_partants": 7,
+    "profils": [
+      {
+        "numero": 1,
+        "nom": "KANDY PARK",
+        "forme": 0.74,
+        "regularite": 0.714286,
+        "observations": 7
+      },
+      {
+        "numero": 2,
+        "nom": "JOST",
+        "forme": 0.58,
+        "regularite": 0.75,
+        "observations": 8
+      },
+      {
+        "numero": 3,
+        "nom": "LIBECCIO",
+        "forme": 0.62,
+        "regularite": 0.75,
+        "observations": 8
+      },
+      {
+        "numero": 4,
+        "nom": "LOUSTIC DE CIERGUE",
+        "forme": 0.62,
+        "regularite": 0.714286,
+        "observations": 7
+      },
+      {
+        "numero": 5,
+        "nom": "DO IT AGAIN",
+        "forme": 0.9,
+        "regularite": 1.0,
+        "observations": 3
+      },
+      {
+        "numero": 6,
+        "nom": "MOTY MARC",
+        "forme": 0.8,
+        "regularite": 1.0,
+        "observations": 5
+      },
+      {
+        "numero": 7,
+        "nom": "BONITA DE LA SERRE",
+        "forme": 0.92,
+        "regularite": 1.0,
+        "observations": 8
+      }
+    ],
+    "moteurs": [
+      {
+        "moteur": "M1",
+        "gagnant_espere": 7,
+        "meilleur_place": 5,
+        "ordre_espere": [
+          7,
+          5,
+          6,
+          1,
+          3
+        ],
+        "pari_retenu": null,
+        "qualification": "JAUNE",
+        "validation": "INDICATIF",
+        "ecart_scores": 0.0125,
+        "scores": [
+          {
+            "numero": 7,
+            "score": 0.95
+          },
+          {
+            "numero": 5,
+            "score": 0.9375
+          },
+          {
+            "numero": 6,
+            "score": 0.875
+          },
+          {
+            "numero": 1,
+            "score": 0.730357
+          },
+          {
+            "numero": 3,
+            "score": 0.66875
+          },
+          {
+            "numero": 4,
+            "score": 0.655357
+          },
+          {
+            "numero": 2,
+            "score": 0.64375
+          }
+        ],
+        "criteres": [
+          "forme",
+          "regularite"
+        ],
+        "heure_paris": "2026-10-28T12:27:12.965614+01:00"
+      },
+      {
+        "moteur": "M2",
+        "gagnant_espere": 7,
+        "meilleur_place": 5,
+        "ordre_espere": [
+          7,
+          5,
+          6,
+          1,
+          3
+        ],
+        "pari_retenu": null,
+        "qualification": "JAUNE",
+        "validation": "INDICATIF",
+        "ecart_scores": 0.0075,
+        "scores": [
+          {
+            "numero": 7,
+            "score": 0.97
+          },
+          {
+            "numero": 5,
+            "score": 0.9625
+          },
+          {
+            "numero": 6,
+            "score": 0.925
+          },
+          {
+            "numero": 1,
+            "score": 0.723929
+          },
+          {
+            "numero": 3,
+            "score": 0.70125
+          },
+          {
+            "numero": 2,
+            "score": 0.68625
+          },
+          {
+            "numero": 4,
+            "score": 0.678929
+          }
+        ],
+        "criteres": [
+          "forme",
+          "regularite"
+        ],
+        "heure_paris": "2026-10-28T12:27:12.965614+01:00"
+      },
+      {
+        "moteur": "M3",
+        "gagnant_espere": 7,
+        "meilleur_place": 5,
+        "ordre_espere": [
+          7,
+          5,
+          6,
+          1,
+          3
+        ],
+        "pari_retenu": null,
+        "qualification": "JAUNE",
+        "validation": "INDICATIF",
+        "ecart_scores": 0.01,
+        "scores": [
+          {
+            "numero": 7,
+            "score": 0.96
+          },
+          {
+            "numero": 5,
+            "score": 0.95
+          },
+          {
+            "numero": 6,
+            "score": 0.9
+          },
+          {
+            "numero": 1,
+            "score": 0.727143
+          },
+          {
+            "numero": 3,
+            "score": 0.685
+          },
+          {
+            "numero": 4,
+            "score": 0.667143
+          },
+          {
+            "numero": 2,
+            "score": 0.665
+          }
+        ],
+        "criteres": [
+          "forme",
+          "regularite"
+        ],
+        "heure_paris": "2026-10-28T12:27:12.965614+01:00"
+      },
+      {
+        "moteur": "M4",
+        "gagnant_espere": 7,
+        "meilleur_place": 5,
+        "ordre_espere": [
+          7,
+          5,
+          6,
+          1,
+          3
+        ],
+        "pari_retenu": null,
+        "qualification": "JAUNE",
+        "validation": "INDICATIF",
+        "ecart_scores": 0.015,
+        "scores": [
+          {
+            "numero": 7,
+            "score": 0.94
+          },
+          {
+            "numero": 5,
+            "score": 0.925
+          },
+          {
+            "numero": 6,
+            "score": 0.85
+          },
+          {
+            "numero": 1,
+            "score": 0.733571
+          },
+          {
+            "numero": 3,
+            "score": 0.6525
+          },
+          {
+            "numero": 4,
+            "score": 0.643571
+          },
+          {
+            "numero": 2,
+            "score": 0.6225
+          }
+        ],
+        "criteres": [
+          "forme",
+          "regularite"
+        ],
+        "heure_paris": "2026-10-28T12:27:12.965614+01:00"
+      },
+      {
+        "moteur": "M5",
+        "gagnant_espere": 7,
+        "meilleur_place": 5,
+        "ordre_espere": [
+          7,
+          5,
+          6,
+          1,
+          3
+        ],
+        "pari_retenu": null,
+        "qualification": "JAUNE",
+        "validation": "INDICATIF",
+        "ecart_scores": 0.005,
+        "scores": [
+          {
+            "numero": 7,
+            "score": 0.98
+          },
+          {
+            "numero": 5,
+            "score": 0.975
+          },
+          {
+            "numero": 6,
+            "score": 0.95
+          },
+          {
+            "numero": 1,
+            "score": 0.720714
+          },
+          {
+            "numero": 3,
+            "score": 0.7175
+          },
+          {
+            "numero": 2,
+            "score": 0.7075
+          },
+          {
+            "numero": 4,
+            "score": 0.690715
+          }
+        ],
+        "criteres": [
+          "forme",
+          "regularite"
+        ],
+        "heure_paris": "2026-10-28T12:27:12.965614+01:00"
+      }
+    ],
+    "statut": "ANALYSE_INDICATIVE",
+    "avertissement": "Scores heuristiques non calibres. Aucune garantie de resultat."
+  },
+  "sha256": "e863fa624b9df86cfe7205c91d894e24299a35c2e0845b833d572fd0268ac304"
+}
