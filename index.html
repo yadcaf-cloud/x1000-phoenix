@@ -1,12 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#071321">
-<title>🇸🇳🧠🔥 X1000 PHOENIX</title>
+<title>🇸🇳🧠🔥 X1000 PHOENIX — Intelligence vivante</title>
+
 <style>
-:root{
+:root {
   --bg:#071321;
   --panel:#11243a;
   --panel2:#172e48;
@@ -18,22 +20,38 @@
   --yellow:#ffcf69;
   --red:#ff8585;
 }
-*{box-sizing:border-box}
-body{
+
+* {
+  box-sizing:border-box;
+}
+
+body {
   margin:0;
   background:var(--bg);
   color:var(--text);
   font:15px/1.6 Arial,sans-serif;
 }
-header{
+
+header {
   padding:24px 14px;
   text-align:center;
   background:linear-gradient(135deg,#153b5b,#071321);
 }
-h1{color:var(--gold);font-size:27px}
-h2{color:var(--blue)}
-h3{color:var(--gold)}
-nav{
+
+h1 {
+  color:var(--gold);
+  font-size:27px;
+}
+
+h2 {
+  color:var(--blue);
+}
+
+h3 {
+  color:var(--gold);
+}
+
+nav {
   display:flex;
   gap:8px;
   overflow-x:auto;
@@ -43,7 +61,8 @@ nav{
   top:0;
   z-index:10;
 }
-nav a{
+
+nav a {
   color:white;
   background:#203b59;
   padding:9px;
@@ -51,52 +70,70 @@ nav a{
   text-decoration:none;
   white-space:nowrap;
 }
-main{
+
+main {
   max-width:1200px;
   margin:auto;
   padding:12px;
 }
-section,article{
+
+section,article {
   background:var(--panel);
   border:1px solid var(--line);
   border-radius:14px;
   padding:16px;
   margin:14px 0;
 }
-article{background:var(--panel2)}
-.grid{
+
+article {
+  background:var(--panel2);
+}
+
+.grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
   gap:10px;
 }
-.metric{
+
+.metric {
   background:var(--panel2);
   border-radius:10px;
   padding:14px;
 }
-.metric strong{
+
+.metric strong {
   display:block;
   font-size:25px;
   color:var(--gold);
 }
-.tablewrap{overflow-x:auto}
-table{
+
+.tablewrap {
+  overflow-x:auto;
+}
+
+table {
   width:100%;
   min-width:850px;
   border-collapse:collapse;
 }
-th,td{
+
+th,td {
   padding:10px;
   text-align:left;
   border-bottom:1px solid var(--line);
   vertical-align:top;
 }
-th{
+
+th {
   color:var(--gold);
   background:#1c3a59;
 }
-tr:nth-child(even){background:#172e48}
-button{
+
+tr:nth-child(even) {
+  background:#172e48;
+}
+
+button {
   background:#315477;
   color:white;
   border:0;
@@ -104,10 +141,21 @@ button{
   padding:12px;
   cursor:pointer;
 }
-button:disabled{opacity:.6;cursor:wait}
-a{color:var(--blue)}
-small,.muted{color:#a5b8ce}
-pre{
+
+button:disabled {
+  opacity:.6;
+  cursor:wait;
+}
+
+a {
+  color:var(--blue);
+}
+
+small,.muted {
+  color:#a5b8ce;
+}
+
+pre {
   white-space:pre-wrap;
   overflow-wrap:anywhere;
   background:#09192a;
@@ -116,404 +164,627 @@ pre{
   max-height:450px;
   overflow:auto;
 }
-.vert{color:var(--green)}
-.jaune{color:var(--yellow)}
-.rouge{color:var(--red)}
-.info{
+
+.vert {
+  color:var(--green);
+}
+
+.jaune {
+  color:var(--yellow);
+}
+
+.rouge {
+  color:var(--red);
+}
+
+.info {
   padding:12px;
   border:1px solid var(--line);
   border-radius:9px;
   background:#0b1b2d;
   margin:10px 0;
 }
-.empty{
+
+.empty {
   color:var(--yellow);
   padding:12px;
 }
-.source{
+
+.source {
   overflow-wrap:anywhere;
   font-size:13px;
 }
-footer{text-align:center;padding:24px}
+
+footer {
+  text-align:center;
+  padding:24px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
-<h2>INTELLIGENCE HIPPIQUE VIVANTE</h2>
-<p>Cinq moteurs indépendants M1 à M5</p>
-<p id="horloge">Heure de Paris</p>
-<strong id="etat">🟡 Vérification...</strong>
+  <h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
+  <h2>INTELLIGENCE HIPPIQUE VIVANTE</h2>
+  <p>Cinq moteurs indépendants M1 à M5</p>
+  <p id="horloge">Heure de Paris</p>
+  <strong id="etat">🟡 Vérification...</strong>
 </header>
 
 <nav>
-<a href="#accueil">Accueil</a>
-<a href="#courses">Courses</a>
-<a href="#figes">FIGÉS</a>
-<a href="#audits">Audits</a>
-<a href="#systeme">Système</a>
+  <a href="#accueil">Accueil</a>
+  <a href="#courses">Courses</a>
+  <a href="#figes">FIGÉS</a>
+  <a href="#audits">Audits</a>
+  <a href="#systeme">Système</a>
 </nav>
 
 <main>
 
 <section id="accueil">
-<h2>🔥 Centre de commandement</h2>
-<div class="grid">
-<div class="metric">
-<strong id="nbCourses">—</strong>Courses
-</div>
-<div class="metric">
-<strong id="nbMoteurs">5</strong>Moteurs
-</div>
-<div class="metric">
-<strong id="nbAnalyses">—</strong>Courses analysées
-</div>
-<div class="metric">
-<strong id="nbPV">—</strong>PV
-</div>
-<div class="metric">
-<strong id="nbFiges">—</strong>FIGÉS vérifiés
-</div>
-<div class="metric">
-<strong id="nbAudits">—</strong>Audits
-</div>
-</div>
-<p id="actualisation">Chargement des données...</p>
-<p id="fraicheur" class="muted"></p>
-<button id="bouton" type="button">🔄 Actualiser</button>
+  <h2>🔥 Centre de commandement</h2>
+
+  <div class="grid">
+    <div class="metric">
+      <strong id="nbCourses">—</strong>
+      Courses PMU
+    </div>
+
+    <div class="metric">
+      <strong id="nbMoteurs">5</strong>
+      Moteurs M1–M5
+    </div>
+
+    <div class="metric">
+      <strong id="nbAnalyses">—</strong>
+      Courses analysées
+    </div>
+
+    <div class="metric">
+      <strong id="nbPV">—</strong>
+      Procès-verbaux
+    </div>
+
+    <div class="metric">
+      <strong id="nbFiges">—</strong>
+      FIGÉS vérifiés
+    </div>
+
+    <div class="metric">
+      <strong id="nbAudits">—</strong>
+      Audits
+    </div>
+  </div>
+
+  <p id="actualisation">Chargement des données...</p>
+  <p id="fraicheur" class="muted"></p>
+
+  <button id="bouton" type="button">
+    🔄 Actualiser
+  </button>
 </section>
 
 <section id="courses">
-<h2>🏆 Tableau officiel M1–M5</h2>
-<p class="muted">
-Les classements sont expérimentaux.
-Aucune garantie de gain.
-Les analyses indicatives ne sont pas des FIGÉS.
-</p>
-<div id="listeCourses">Chargement...</div>
+  <h2>🏆 Tableau officiel M1–M5</h2>
+
+  <p class="muted">
+    Les analyses sont expérimentales.
+    Aucun pronostic ne garantit un gain.
+    Une analyse indicative n'est pas un FIGÉ.
+  </p>
+
+  <div id="listeCourses">Chargement...</div>
 </section>
 
 <section id="figes">
-<h2>🔒 FIGÉS et procès-verbaux</h2>
-<h3>FIGÉS vérifiés</h3>
-<div id="listeFiges">Chargement...</div>
-<h3>Procès-verbaux</h3>
-<div id="listePV">Chargement...</div>
+  <h2>🔒 FIGÉS et procès-verbaux</h2>
+
+  <h3>FIGÉS vérifiés</h3>
+  <div id="listeFiges">Chargement...</div>
+
+  <h3>Procès-verbaux</h3>
+  <div id="listePV">Chargement...</div>
 </section>
 
 <section id="audits">
-<h2>📊 Audits après course</h2>
-<div id="listeAudits">Chargement...</div>
+  <h2>📊 Audits après course</h2>
+  <div id="listeAudits">Chargement...</div>
 </section>
 
 <section id="systeme">
-<h2>⚙️ Automatisation GitHub</h2>
-<p>
-<a href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
-target="_blank" rel="noopener noreferrer">
-Consulter les exécutions GitHub Actions
-</a>
-</p>
-<p id="etatActions" class="muted">
-Exécution GitHub Actions non vérifiée par cette page.
-</p>
+  <h2>⚙️ Automatisation GitHub</h2>
 
-<h3>État des fichiers de publication</h3>
-<div id="fichiers">Vérification...</div>
+  <p>
+    <a
+      href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
+      target="_blank"
+      rel="noopener noreferrer">
+      Consulter les exécutions GitHub Actions
+    </a>
+  </p>
 
-<h3>Journal des difficultés</h3>
-<div id="difficultes">En attente</div>
+  <p id="etatActions" class="muted">
+    Vérification des fichiers publiés en cours.
+  </p>
 
-<h3>Dernier rapport</h3>
-<pre id="rapport">En attente</pre>
+  <h3>État des fichiers de publication</h3>
+  <div id="fichiers">Vérification...</div>
+
+  <h3>Journal des difficultés</h3>
+  <div id="difficultes">En attente</div>
+
+  <h3>Dernier rapport</h3>
+  <pre id="rapport">En attente</pre>
 </section>
 
 </main>
 
 <footer>
-🇸🇳🔥 X1000 PHOENIX — Intelligence vivante
-<p><small>
-Aucun pari réel n'est exécuté.
-Aucun pronostic ne garantit un résultat.
-</small></p>
+  🇸🇳🔥 X1000 PHOENIX — Intelligence vivante
+
+  <p>
+    <small>
+      Aucun pari réel n'est exécuté.
+      Aucun pronostic ne garantit un résultat.
+    </small>
+  </p>
 </footer>
 
 <script>
 "use strict";
 
+/* =========================================
+   X1000 PHOENIX — INTERFACE OFFICIELLE
+   ========================================= */
+
 const el = id => document.getElementById(id);
-const NOMS = ["courses","pv","figes","audits","rapport"];
-const MOTEURS = ["M1","M2","M3","M4","M5"];
+
+const NOMS = [
+  "courses",
+  "pv",
+  "figes",
+  "audits",
+  "rapport"
+];
+
+const MOTEURS = [
+  "M1",
+  "M2",
+  "M3",
+  "M4",
+  "M5"
+];
+
 let chargementEnCours = false;
 
-function esc(v){
-  return String(v ?? "—").replace(/[&<>"']/g,c=>({
-    "&":"&amp;",
-    "<":"&lt;",
-    ">":"&gt;",
-    '"':"&quot;",
-    "'":"&#39;"
-  }[c]));
+/* =========================================
+   DIAGNOSTIC DES ERREURS
+   ========================================= */
+
+window.addEventListener("error", function(e) {
+  console.error("X1000 PHOENIX :", e.message);
+});
+
+window.addEventListener(
+  "unhandledrejection",
+  function(e) {
+    console.error(
+      "Erreur de chargement :",
+      e.reason
+    );
+  }
+);
+
+/* =========================================
+   FONCTIONS UTILITAIRES
+   ========================================= */
+
+function esc(v) {
+  return String(v ?? "—").replace(
+    /[&<>"']/g,
+    c => ({
+      "&":"&amp;",
+      "<":"&lt;",
+      ">":"&gt;",
+      '"':"&quot;",
+      "'":"&#39;"
+    }[c])
+  );
 }
 
-function liste(v){
+function liste(v) {
   return Array.isArray(v) ? v : [];
 }
 
-function valeur(v){
-  return v === null || v === undefined || v === ""
-    ? "—" : v;
+function valeur(v) {
+  return (
+    v === null ||
+    v === undefined ||
+    v === ""
+  ) ? "—" : v;
 }
 
-function paris(v){
-  if(!v)return "—";
-  const d = v instanceof Date ? v : new Date(v);
-  if(Number.isNaN(d.getTime()))return "—";
+function paris(v) {
+  if (!v) return "—";
 
-  return new Intl.DateTimeFormat("fr-FR",{
+  const d = v instanceof Date
+    ? v
+    : new Date(v);
+
+  if (Number.isNaN(d.getTime())) {
+    return "—";
+  }
+
+  return new Intl.DateTimeFormat("fr-FR", {
     timeZone:"Europe/Paris",
     dateStyle:"short",
     timeStyle:"medium"
   }).format(d);
 }
 
-function couleur(statut){
+function couleur(statut) {
   const s = String(statut || "")
     .toUpperCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g,"");
 
-  if(s.includes("ERREUR") ||
-     s.includes("NON VALIDE") ||
-     s.includes("REJETE") ||
-     s.includes("ECHEC")){
+  if (
+    s.includes("ERREUR") ||
+    s.includes("NON VALIDE") ||
+    s.includes("REJETE") ||
+    s.includes("ECHEC")
+  ) {
     return "rouge";
   }
-  if(s.includes("FIGE_VERIFIE") ||
-     s.includes("FIGE_AVANT_DEPART") ||
-     s.includes("VERT") ||
-     s.includes("PUBLICATION_OK")){
+
+  if (
+    s.includes("FIGE_VERIFIE") ||
+    s.includes("FIGE_AVANT_DEPART") ||
+    s.includes("VERT") ||
+    s.includes("PUBLICATION_OK")
+  ) {
     return "vert";
   }
+
   return "jaune";
 }
 
-function lienSource(url){
-  if(typeof url !== "string")return "—";
-  try{
+function lienSource(url) {
+  if (typeof url !== "string") {
+    return "—";
+  }
+
+  try {
     const u = new URL(url);
-    if(u.protocol !== "https:")return esc(url);
-    return `<a href="${esc(u.href)}"
-      target="_blank"
-      rel="noopener noreferrer">Consulter la source</a>`;
-  }catch{
+
+    if (u.protocol !== "https:") {
+      return esc(url);
+    }
+
+    return `
+      <a href="${esc(u.href)}"
+         target="_blank"
+         rel="noopener noreferrer">
+         Consulter la source
+      </a>
+    `;
+  } catch {
     return esc(url);
   }
 }
 
-async function lireJSON(nom){
+/* =========================================
+   CHARGEMENT JSON GITHUB PAGES
+   ========================================= */
+
+async function lireJSON(nom) {
   const chemin = new URL(
     "data/publication_" + nom + ".json",
     document.baseURI
   );
-  chemin.searchParams.set("v",String(Date.now()));
+
+  chemin.searchParams.set(
+    "v",
+    String(Date.now())
+  );
 
   const controleur = new AbortController();
+
   const delai = setTimeout(
-    ()=>controleur.abort(),
+    () => controleur.abort(),
     20000
   );
 
-  try{
-    const reponse = await fetch(chemin.href,{
+  try {
+    const reponse = await fetch(chemin.href, {
       cache:"no-store",
       signal:controleur.signal,
-      headers:{"Accept":"application/json"}
+      headers:{
+        "Accept":"application/json"
+      }
     });
 
-    if(!reponse.ok){
-      throw new Error("HTTP " + reponse.status);
+    if (!reponse.ok) {
+      throw new Error(
+        "HTTP " + reponse.status
+      );
     }
 
     const donnees = await reponse.json();
 
-    if(!donnees || typeof donnees !== "object" ||
-       Array.isArray(donnees)){
-      throw new Error("Format JSON incorrect");
+    if (
+      !donnees ||
+      typeof donnees !== "object" ||
+      Array.isArray(donnees)
+    ) {
+      throw new Error(
+        "Format JSON incorrect"
+      );
     }
 
-    if(nom !== "rapport" &&
-       !Array.isArray(donnees[nom])){
+    if (
+      nom !== "rapport" &&
+      !Array.isArray(donnees[nom])
+    ) {
       throw new Error(
-        "Tableau '" + nom + "' absent ou invalide"
+        "Tableau '" + nom +
+        "' absent ou invalide"
       );
     }
 
     return donnees;
-  }catch(e){
-    if(e.name === "AbortError"){
-      throw new Error("Délai de chargement dépassé");
+
+  } catch (e) {
+    if (e.name === "AbortError") {
+      throw new Error(
+        "Délai de chargement dépassé"
+      );
     }
+
     throw e;
-  }finally{
+
+  } finally {
     clearTimeout(delai);
   }
 }
 
-function tableauMoteurs(moteurs){
+/* =========================================
+   TABLEAU OFFICIEL M1–M5
+   ========================================= */
+
+function tableauMoteurs(moteurs) {
   const disponibles = liste(moteurs).filter(
     m => m && typeof m === "object"
   );
 
-  if(!disponibles.length){
-    return `<p class="empty">
-      🟡 Aucune analyse M1–M5 disponible
-      pour cette course.
-    </p>`;
+  if (!disponibles.length) {
+    return `
+      <p class="empty">
+        🟡 Aucune analyse M1–M5 disponible
+        pour cette course.
+      </p>
+    `;
   }
 
-  const lignes = disponibles.map(m=>{
+  const lignes = disponibles.map(m => {
     const ordre = liste(
       m.ordre_espere || m.ordre
     );
+
     return `
-    <tr>
-      <td><strong>${esc(m.moteur)}</strong></td>
-      <td>${esc(valeur(m.gagnant_espere))}</td>
-      <td>${esc(valeur(m.meilleur_place))}</td>
-      <td>${esc(ordre.length ? ordre.join(" - ") : "—")}</td>
-      <td>${esc(valeur(m.pari_retenu || "AUCUN"))}</td>
-      <td class="${couleur(m.qualification)}">
-        ${esc(valeur(m.qualification))}
-      </td>
-      <td class="${couleur(m.validation)}">
-        ${esc(valeur(m.validation))}
-      </td>
-      <td>${esc(paris(m.heure_paris))}</td>
-    </tr>`;
+      <tr>
+        <td><strong>${esc(m.moteur)}</strong></td>
+        <td>${esc(valeur(m.gagnant_espere))}</td>
+        <td>${esc(valeur(m.meilleur_place))}</td>
+        <td>${esc(
+          ordre.length
+            ? ordre.join(" - ")
+            : "—"
+        )}</td>
+        <td>${esc(valeur(m.pari_retenu || "AUCUN"))}</td>
+        <td class="${couleur(m.qualification)}">
+          ${esc(valeur(m.qualification))}
+        </td>
+        <td class="${couleur(m.validation)}">
+          ${esc(valeur(m.validation))}
+        </td>
+        <td>${esc(paris(m.heure_paris))}</td>
+      </tr>
+    `;
   }).join("");
 
   return `
-  <div class="tablewrap">
-  <table>
-  <thead><tr>
-    <th>Moteur</th>
-    <th>🥇 Gagnant espéré</th>
-    <th>🥈 Meilleur placé</th>
-    <th>Ordre d'arrivée espéré</th>
-    <th>🎯 Pari retenu</th>
-    <th>Qualification</th>
-    <th>Validation</th>
-    <th>Heure Paris</th>
-  </tr></thead>
-  <tbody>${lignes}</tbody>
-  </table>
-  </div>`;
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Moteur</th>
+            <th>🥇 Gagnant espéré</th>
+            <th>🥈 Meilleur placé</th>
+            <th>Ordre d'arrivée espéré</th>
+            <th>🎯 Pari retenu</th>
+            <th>Qualification</th>
+            <th>Validation</th>
+            <th>Heure Paris</th>
+          </tr>
+        </thead>
+        <tbody>${lignes}</tbody>
+      </table>
+    </div>
+  `;
 }
 
-function afficherCourses(courses){
+/* =========================================
+   AFFICHAGE DES COURSES PMU
+   ========================================= */
+
+function afficherCourses(courses) {
   const zone = el("listeCourses");
-  if(!courses.length){
-    zone.innerHTML = `<p class="empty">
-      Aucune course publiée dans le fichier JSON.
-    </p>`;
+
+  if (!courses.length) {
+    zone.innerHTML = `
+      <p class="empty">
+        🟡 Aucune course publiée dans
+        le fichier JSON.
+      </p>
+    `;
     return;
   }
 
-  const triees = [...courses].sort((a,b)=>{
+  const triees = [...courses].sort((a,b) => {
     const da = Date.parse(a.depart || "") || 0;
     const db = Date.parse(b.depart || "") || 0;
-    return da-db;
+    return da - db;
   });
 
-  zone.innerHTML = triees.map(c=>{
+  zone.innerHTML = triees.map(c => {
     const actifs = liste(c.partants).filter(
-      p=>p.non_partant !== true
+      p => p.non_partant !== true
     ).length;
 
     const nombre = c.nombre_partants ??
-      (Array.isArray(c.partants) ? actifs : "—");
+      (
+        Array.isArray(c.partants)
+          ? actifs
+          : "—"
+      );
 
     const analyses = liste(c.moteurs).length;
     const etat = valeur(c.statut);
 
     return `
-    <article>
-      <h3>${esc(valeur(c.hippodrome))}
-      — ${esc(valeur(c.id))}</h3>
-      <p><strong>${esc(valeur(c.nom))}</strong></p>
-      <p>🕒 Départ : ${esc(paris(c.depart))}</p>
-      <p>🏇 Partants : ${esc(nombre)}</p>
-      <p>🧠 Moteurs analysés : ${analyses}/5</p>
-      <p class="${couleur(etat)}">
-        Statut : ${esc(etat)}
-      </p>
-      <p class="source">
-        Source : ${lienSource(c.source)}
-      </p>
-      ${tableauMoteurs(c.moteurs)}
-    </article>`;
+      <article>
+        <h3>
+          ${esc(valeur(c.hippodrome))}
+          — ${esc(valeur(c.id))}
+        </h3>
+
+        <p>
+          <strong>${esc(valeur(c.nom))}</strong>
+        </p>
+
+        <p>🕒 Départ : ${esc(paris(c.depart))}</p>
+        <p>🏇 Partants : ${esc(nombre)}</p>
+        <p>🧠 Moteurs analysés : ${analyses}/5</p>
+
+        <p class="${couleur(etat)}">
+          Statut : ${esc(etat)}
+        </p>
+
+        <p class="source">
+          Source : ${lienSource(c.source)}
+        </p>
+
+        ${tableauMoteurs(c.moteurs)}
+      </article>
+    `;
   }).join("");
 }
 
-function rapportDuFige(f){
-  if(f && f.rapport &&
-     typeof f.rapport === "object"){
+/* =========================================
+   FIGÉS VÉRIFIÉS
+   ========================================= */
+
+function rapportDuFige(f) {
+  if (
+    f &&
+    f.rapport &&
+    typeof f.rapport === "object"
+  ) {
     return f.rapport;
   }
-  if(f && f.contenu &&
-     f.contenu.analyse){
+
+  if (
+    f &&
+    f.contenu &&
+    f.contenu.analyse
+  ) {
     return f.contenu.analyse;
   }
+
   return {};
 }
 
-function afficherFiges(figes){
-  if(!figes.length){
+function afficherFiges(figes) {
+  if (!figes.length) {
     el("listeFiges").innerHTML = `
       <p class="empty">
-      🔒 Aucun FIGÉ vérifié publié.
-      Un FIGÉ doit être créé avant le départ,
-      conservé et validé par le logiciel Python.
-      </p>`;
+        🔒 Aucun FIGÉ vérifié publié.
+        Un FIGÉ doit être créé avant
+        le départ et vérifié par Python.
+      </p>
+    `;
     return;
   }
 
-  el("listeFiges").innerHTML = figes.map(f=>{
+  el("listeFiges").innerHTML = figes.map(f => {
     const r = rapportDuFige(f);
-    const dateFige = f.fige_a || f.contenu?.fige_a;
+
+    const dateFige =
+      f.fige_a ||
+      f.contenu?.fige_a;
 
     return `
-    <article>
-      <h3>${esc(valeur(r.course_id))}</h3>
-      <p class="vert">🔒 FIGÉ publié</p>
-      <p>Heure : ${esc(paris(dateFige))}</p>
-      <p>Statut : ${esc(valeur(f.statut))}</p>
-      <p>Empreinte SHA256 :
-      <small>${esc(valeur(f.sha256))}</small></p>
-      ${tableauMoteurs(r.moteurs)}
-    </article>`;
+      <article>
+        <h3>${esc(valeur(r.course_id))}</h3>
+
+        <p class="vert">
+          🔒 FIGÉ publié
+        </p>
+
+        <p>
+          Heure : ${esc(paris(dateFige))}
+        </p>
+
+        <p>
+          Statut : ${esc(valeur(f.statut))}
+        </p>
+
+        <p>
+          Empreinte SHA256 :
+          <small>${esc(valeur(f.sha256))}</small>
+        </p>
+
+        ${tableauMoteurs(r.moteurs)}
+      </article>
+    `;
   }).join("");
 }
 
-function afficherPV(pv){
-  if(!pv.length){
-    el("listePV").innerHTML =
-      `<p class="empty">Aucun PV publié.</p>`;
+/* =========================================
+   PROCÈS-VERBAUX
+   ========================================= */
+
+function afficherPV(pv) {
+  if (!pv.length) {
+    el("listePV").innerHTML = `
+      <p class="empty">
+        📝 Aucun procès-verbal publié.
+      </p>
+    `;
     return;
   }
 
-  el("listePV").innerHTML = pv.map(p=>`
+  el("listePV").innerHTML = pv.map(p => `
     <article>
-      <h3>${esc(valeur(p.course_id || p.course))}</h3>
-      <p>Type : ${esc(valeur(p.type))}</p>
+      <h3>
+        ${esc(valeur(p.course_id || p.course))}
+      </h3>
+
+      <p>
+        Type : ${esc(valeur(p.type))}
+      </p>
+
       <p class="${couleur(p.statut)}">
         Statut : ${esc(valeur(p.statut))}
       </p>
-      <p>Création :
+
+      <p>
+        Création :
         ${esc(paris(p.cree_a || p.fige_a))}
       </p>
+
       <p class="muted">
         Un PV d'analyse non figé n'est pas
         un pronostic officiellement FIGÉ.
@@ -522,109 +793,171 @@ function afficherPV(pv){
   `).join("");
 }
 
-function afficherAudits(audits){
-  if(!audits.length){
+/* =========================================
+   AUDITS APRÈS COURSE
+   ========================================= */
+
+function afficherAudits(audits) {
+  if (!audits.length) {
     el("listeAudits").innerHTML = `
       <p class="empty">
-      📊 Aucun audit officiel validé publié.
-      L'audit exige un FIGÉ antérieur
-      et une arrivée officielle vérifiée.
-      </p>`;
+        📊 Aucun audit officiel validé publié.
+        L'audit exige un FIGÉ antérieur
+        et une arrivée officielle vérifiée.
+      </p>
+    `;
     return;
   }
 
-  el("listeAudits").innerHTML = audits.map(a=>{
-    const arrivee = a.arrivee_officielle || a.arrivee;
-    const lignes = liste(a.moteurs).map(m=>`
+  el("listeAudits").innerHTML = audits.map(a => {
+    const arrivee =
+      a.arrivee_officielle ||
+      a.arrivee;
+
+    const lignes = liste(a.moteurs).map(m => `
       <tr>
         <td>${esc(m.moteur)}</td>
-        <td>${m.gagnant_trouve === true ? "Oui" :
-          m.gagnant_trouve === false ? "Non" : "—"}</td>
-        <td>${esc(valeur(m.chevaux_dans_les_cinq))}</td>
-        <td>${m.ordre_exact_cinq === true ? "Oui" :
-          m.ordre_exact_cinq === false ? "Non" : "—"}</td>
+
+        <td>
+          ${
+            m.gagnant_trouve === true
+              ? "Oui"
+              : m.gagnant_trouve === false
+                ? "Non"
+                : "—"
+          }
+        </td>
+
+        <td>
+          ${esc(valeur(m.chevaux_dans_les_cinq))}
+        </td>
+
+        <td>
+          ${
+            m.ordre_exact_cinq === true
+              ? "Oui"
+              : m.ordre_exact_cinq === false
+                ? "Non"
+                : "—"
+          }
+        </td>
       </tr>
     `).join("");
 
     return `
-    <article>
-      <h3>${esc(valeur(a.course_id))}</h3>
-      <p>Arrivée officielle :
-        ${esc(liste(arrivee).join(" - "))}
-      </p>
-      <p>Statut : ${esc(valeur(a.statut))}</p>
-      <p>Source :
-        ${lienSource(a.source_arrivee || a.source)}
-      </p>
-      <div class="tablewrap">
-      <table>
-      <thead><tr>
-        <th>Moteur</th>
-        <th>Gagnant trouvé</th>
-        <th>Chevaux dans les cinq</th>
-        <th>Ordre exact</th>
-      </tr></thead>
-      <tbody>${lignes}</tbody>
-      </table>
-      </div>
-    </article>`;
+      <article>
+        <h3>${esc(valeur(a.course_id))}</h3>
+
+        <p>
+          Arrivée officielle :
+          ${esc(liste(arrivee).join(" - "))}
+        </p>
+
+        <p>
+          Statut : ${esc(valeur(a.statut))}
+        </p>
+
+        <p>
+          Source :
+          ${lienSource(
+            a.source_arrivee ||
+            a.source_resultat ||
+            a.source
+          )}
+        </p>
+
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Moteur</th>
+                <th>Gagnant trouvé</th>
+                <th>Chevaux dans les cinq</th>
+                <th>Ordre exact</th>
+              </tr>
+            </thead>
+
+            <tbody>${lignes}</tbody>
+          </table>
+        </div>
+      </article>
+    `;
   }).join("");
 }
 
-function afficherErreur(nom,message){
+/* =========================================
+   AFFICHAGE DES ERREURS
+   ========================================= */
+
+function afficherErreur(nom,message) {
   const zones = {
     courses:"listeCourses",
     pv:"listePV",
     figes:"listeFiges",
     audits:"listeAudits"
   };
+
   const zone = zones[nom];
-  if(zone){
+
+  if (zone) {
     el(zone).innerHTML = `
       <p class="rouge">
-      🔴 Impossible de charger ${esc(nom)} :
-      ${esc(message)}
-      </p>`;
+        🔴 Impossible de charger
+        ${esc(nom)} :
+        ${esc(message)}
+      </p>
+    `;
   }
 }
 
-function afficherFraicheur(rapport){
+/* =========================================
+   FRAÎCHEUR DES PUBLICATIONS
+   ========================================= */
+
+function afficherFraicheur(rapport) {
   const zone = el("fraicheur");
   const date = rapport?.generated_at_paris;
 
-  if(!date){
+  if (!date) {
     zone.textContent =
       "🔴 Date de publication indisponible.";
     return;
   }
 
   const instant = new Date(date).getTime();
-  const age = (Date.now()-instant)/60000;
+  const age = (Date.now() - instant) / 60000;
 
-  if(!Number.isFinite(age)){
+  if (!Number.isFinite(age)) {
     zone.textContent =
       "🟡 Date de publication invalide.";
-  }else if(age < -5){
+  } else if (age < -5) {
     zone.textContent =
       "🟡 Horodatage futur : vérifier les horloges.";
-  }else if(age <= 45){
+  } else if (age <= 45) {
     zone.textContent =
       "🟢 Publication récente.";
-  }else{
+  } else {
     zone.textContent =
       "🟡 Publication ancienne : " +
-      Math.floor(age) + " minutes. " +
-      "Vérifier GitHub Actions.";
+      Math.floor(age) +
+      " minutes. Vérifier GitHub Actions.";
   }
 }
 
-async function charger(){
-  if(chargementEnCours)return;
-  chargementEnCours = true;
-  el("bouton").disabled = true;
-  el("etat").textContent = "🟡 Actualisation...";
+/* =========================================
+   ACTUALISATION DES CINQ FICHIERS
+   ========================================= */
 
-  try{
+async function charger() {
+  if (chargementEnCours) return;
+
+  chargementEnCours = true;
+
+  el("bouton").disabled = true;
+  el("etat").textContent =
+    "🟡 Actualisation...";
+
+  try {
     const resultats = await Promise.allSettled(
       NOMS.map(lireJSON)
     );
@@ -632,140 +965,126 @@ async function charger(){
     const donnees = {};
     const erreurs = [];
 
-    resultats.forEach((resultat,i)=>{
+    resultats.forEach((resultat,i) => {
       const nom = NOMS[i];
 
-      if(resultat.status === "fulfilled"){
+      if (resultat.status === "fulfilled") {
         donnees[nom] = resultat.value;
-      }else{
+      } else {
         donnees[nom] = null;
+
         erreurs.push(
-          nom + " : " + resultat.reason.message
+          nom + " : " +
+          resultat.reason.message
         );
       }
     });
 
-    const courses = liste(donnees.courses?.courses);
-    const pv = liste(donnees.pv?.pv);
-    const figes = liste(donnees.figes?.figes);
-    const audits = liste(donnees.audits?.audits);
+    const courses = liste(
+      donnees.courses?.courses
+    );
+
+    const pv = liste(
+      donnees.pv?.pv
+    );
+
+    const figes = liste(
+      donnees.figes?.figes
+    );
+
+    const audits = liste(
+      donnees.audits?.audits
+    );
+
     const rapport = donnees.rapport;
 
+    /* Compteurs */
+
     el("nbCourses").textContent =
-      donnees.courses ? courses.length : "—";
+      donnees.courses
+        ? courses.length
+        : "—";
 
     el("nbPV").textContent =
-      donnees.pv ? pv.length : "—";
+      donnees.pv
+        ? pv.length
+        : "—";
 
     el("nbFiges").textContent =
-      donnees.figes ? figes.length : "—";
+      donnees.figes
+        ? figes.length
+        : "—";
 
     el("nbAudits").textContent =
-      donnees.audits ? audits.length : "—";
+      donnees.audits
+        ? audits.length
+        : "—";
 
     el("nbAnalyses").textContent =
-      donnees.courses ?
-      courses.filter(c=>liste(c.moteurs).length>0).length :
-      "—";
+      donnees.courses
+        ? courses.filter(
+            c => liste(c.moteurs).length > 0
+          ).length
+        : "—";
 
     el("nbMoteurs").textContent =
-      Array.isArray(rapport?.moteurs_actifs) ?
-      rapport.moteurs_actifs.length : 5;
+      Array.isArray(rapport?.moteurs_actifs)
+        ? rapport.moteurs_actifs.length
+        : MOTEURS.length;
 
-    if(donnees.courses)afficherCourses(courses);
-    else afficherErreur("courses",
-      erreurs.find(e=>e.startsWith("courses :")) || "Indisponible");
+    /* Courses */
 
-    if(donnees.pv)afficherPV(pv);
-    else afficherErreur("pv",
-      erreurs.find(e=>e.startsWith("pv :")) || "Indisponible");
-
-    if(donnees.figes)afficherFiges(figes);
-    else afficherErreur("figes",
-      erreurs.find(e=>e.startsWith("figes :")) || "Indisponible");
-
-    if(donnees.audits)afficherAudits(audits);
-    else afficherErreur("audits",
-      erreurs.find(e=>e.startsWith("audits :")) || "Indisponible");
-
-    if(rapport){
-      el("etat").textContent =
-        (erreurs.length ? "🟡 " : "📡 ") +
-        valeur(rapport.status);
-
-      el("actualisation").textContent =
-        "Dernière publication : " +
-        paris(rapport.generated_at_paris) +
-        " | Analyses : " +
-        valeur(rapport.analyses_count);
-    }else{
-      el("etat").textContent =
-        "🔴 Rapport indisponible";
-
-      el("actualisation").textContent =
-        "Dernière publication inconnue.";
+    if (donnees.courses) {
+      afficherCourses(courses);
+    } else {
+      afficherErreur(
+        "courses",
+        erreurs.find(
+          e => e.startsWith("courses :")
+        ) || "Indisponible"
+      );
     }
 
-    afficherFraicheur(rapport);
+    /* Procès-verbaux */
 
-    el("rapport").textContent = rapport ?
-      JSON.stringify(rapport,null,2) :
-      "Aucun rapport disponible.";
-
-    const etats = NOMS.map((nom,i)=>{
-      const ok = resultats[i].status === "fulfilled";
-      return `<p class="${ok?"vert":"rouge"}">
-        ${ok?"🟢":"🔴"}
-        publication_${esc(nom)}.json :
-        ${ok?"chargé":"indisponible"}
-      </p>`;
-    });
-
-    el("fichiers").innerHTML = etats.join("");
-
-    const difficultes = [
-      ...erreurs,
-      ...liste(rapport?.difficultes).map(x=>
-        typeof x === "string" ?
-        x : x.difficulte || JSON.stringify(x)
-      )
-    ];
-
-    el("difficultes").innerHTML =
-      difficultes.length ?
-      difficultes.map(x=>
-        "<p class='jaune'>" + esc(x) + "</p>"
-      ).join("") :
-      "<p class='vert'>Aucune difficulté signalée.</p>";
-
-    if(erreurs.length){
-      el("etat").textContent =
-        "🟡 Chargement partiel : " +
-        erreurs.length + " fichier(s) en erreur";
+    if (donnees.pv) {
+      afficherPV(pv);
+    } else {
+      afficherErreur(
+        "pv",
+        erreurs.find(
+          e => e.startsWith("pv :")
+        ) || "Indisponible"
+      );
     }
 
-  }catch(e){
-    el("etat").textContent =
-      "🔴 Erreur interface : " + e.message;
-    el("difficultes").textContent =
-      e.stack || e.message;
-  }finally{
-    chargementEnCours = false;
-    el("bouton").disabled = false;
-  }
-}
+    /* FIGÉS */
 
-function horloge(){
-  el("horloge").textContent =
-    "🕒 Heure de Paris : " + paris(new Date());
-}
+    if (donnees.figes) {
+      afficherFiges(figes);
+    } else {
+      afficherErreur(
+        "figes",
+        erreurs.find(
+          e => e.startsWith("figes :")
+        ) || "Indisponible"
+      );
+    }
 
-el("bouton").addEventListener("click",charger);
-horloge();
-setInterval(horloge,1000);
-charger();
-setInterval(charger,60000);
+    /* Audits */
 
-</script>
-</body>
-</html>
+    if (donnees.audits) {
+      afficherAudits(audits);
+    } else {
+      afficherErreur(
+        "audits",
+        erreurs.find(
+          e => e.startsWith("audits :")
+        ) || "Indisponible"
+      );
+    }
+
+    /* Rapport */
+
+    if (rapport) {
+      el("et
