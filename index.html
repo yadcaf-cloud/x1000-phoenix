@@ -6,87 +6,159 @@
 <title>🇸🇳🧠🔥 X1000 PHOENIX</title>
 <style>
 :root{
- --bg:#071827;--panel:#10283a;--line:#345469;
- --text:#f0f6fc;--muted:#b3c6d4;--green:#27d58c;
- --yellow:#ffcf58;--red:#ff7070;--blue:#65c7ff;
- --gold:#ffd06a
+ --bg:#071827;
+ --panel:#10283a;
+ --line:#345469;
+ --text:#f0f6fc;
+ --muted:#b3c6d4;
+ --green:#27d58c;
+ --yellow:#ffcf58;
+ --red:#ff7070;
+ --blue:#65c7ff;
+ --gold:#ffd06a;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
- margin:0;background:var(--bg);color:var(--text);
- font:15px/1.55 system-ui,Arial,sans-serif
+ margin:0;
+ background:var(--bg);
+ color:var(--text);
+ font:15px/1.55 system-ui,Arial,sans-serif;
 }
 header{
- padding:24px 12px;text-align:center;
+ padding:24px 12px;
+ text-align:center;
  background:linear-gradient(135deg,#123b48,#071827);
- border-bottom:2px solid var(--gold)
+ border-bottom:2px solid var(--gold);
 }
-h1{font-size:clamp(23px,6vw,35px);color:var(--gold);margin:0}
+h1{
+ font-size:clamp(23px,6vw,35px);
+ color:var(--gold);
+ margin:0;
+}
 h2{font-size:21px;color:var(--green)}
 nav{
- display:flex;gap:8px;overflow-x:auto;padding:11px;
- background:#0b2132;position:sticky;top:0;z-index:10
+ display:flex;
+ gap:8px;
+ overflow-x:auto;
+ padding:11px;
+ background:#0b2132;
+ position:sticky;
+ top:0;
+ z-index:10;
 }
 nav a{
- color:white;text-decoration:none;white-space:nowrap;
- background:#1b4054;padding:9px 12px;border-radius:9px
+ color:white;
+ text-decoration:none;
+ white-space:nowrap;
+ background:#1b4054;
+ padding:9px 12px;
+ border-radius:9px;
 }
 main{max-width:1250px;margin:auto;padding:12px}
 section{
- background:var(--panel);border:1px solid var(--line);
- border-radius:14px;padding:16px;margin:15px 0;
- scroll-margin-top:80px
+ background:var(--panel);
+ border:1px solid var(--line);
+ border-radius:14px;
+ padding:16px;
+ margin:15px 0;
+ scroll-margin-top:80px;
 }
 .grid{
  display:grid;
  grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
- gap:10px
+ gap:10px;
 }
 .card{
- background:#0b2334;border:1px solid var(--line);
- border-radius:10px;padding:13px;margin:8px 0
+ background:#0b2334;
+ border:1px solid var(--line);
+ border-radius:10px;
+ padding:13px;
+ margin:8px 0;
 }
-.value{font-size:26px;font-weight:800;color:var(--green)}
+.value{
+ font-size:26px;
+ font-weight:800;
+ color:var(--green);
+}
 .muted{color:var(--muted)}
 .ok{color:var(--green)}
 .warn{color:var(--yellow)}
 .bad{color:var(--red)}
 .table-wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:760px}
+table{
+ width:100%;
+ border-collapse:collapse;
+ min-width:760px;
+}
 th,td{
- padding:10px;border-bottom:1px solid var(--line);
- text-align:left;vertical-align:top
+ padding:10px;
+ border-bottom:1px solid var(--line);
+ text-align:left;
+ vertical-align:top;
 }
 th{background:#173449;color:var(--gold)}
 button,select{
- background:#1b4054;color:white;border:1px solid var(--line);
- border-radius:8px;padding:11px;font:inherit;max-width:100%
+ background:#1b4054;
+ color:white;
+ border:1px solid var(--line);
+ border-radius:8px;
+ padding:11px;
+ font:inherit;
+ max-width:100%;
 }
 button{cursor:pointer}
 button:disabled{opacity:.5}
-.controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}
+.controls{
+ display:flex;
+ gap:9px;
+ align-items:center;
+ flex-wrap:wrap;
+ margin:12px 0;
+}
 .notice{
  border-left:4px solid var(--yellow);
- background:#182f40;padding:12px;border-radius:7px;margin:10px 0
+ background:#182f40;
+ padding:12px;
+ border-radius:7px;
+ margin:10px 0;
 }
 pre{
- white-space:pre-wrap;overflow-wrap:anywhere;
- background:#081b29;padding:12px;border-radius:8px;
- max-height:420px;overflow:auto
+ white-space:pre-wrap;
+ overflow-wrap:anywhere;
+ background:#081b29;
+ padding:12px;
+ border-radius:8px;
+ max-height:420px;
+ overflow:auto;
 }
-footer{text-align:center;padding:25px;color:var(--muted)}
+footer{
+ text-align:center;
+ padding:25px;
+ color:var(--muted);
+}
 a{color:var(--blue)}
 .small{font-size:13px}
+.tag{
+ display:inline-block;
+ border:1px solid currentColor;
+ border-radius:6px;
+ padding:2px 6px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
 <p>Intelligence hippique vivante — M1 à M5</p>
-<p class="muted">Courses PMU physiquement disputées en France</p>
-<div id="etatGlobal" class="warn">🟡 Initialisation...</div>
+<p class="muted">
+Courses PMU physiquement disputées en France
+</p>
+<div id="etatGlobal" class="warn">
+🟡 Initialisation...
+</div>
 </header>
 
 <nav>
@@ -100,31 +172,74 @@ a{color:var(--blue)}
 </nav>
 
 <main>
+
 <section id="accueil">
 <h2>📡 Centre de contrôle</h2>
+
 <div class="grid">
-<div class="card">Courses publiées<div class="value" id="nbCourses">—</div></div>
-<div class="card">Courses françaises<div class="value" id="nbFrance">—</div></div>
-<div class="card">Partants<div class="value" id="nbPartants">—</div></div>
-<div class="card">Non-partants<div class="value" id="nbNP">—</div></div>
+<div class="card">
+Courses publiées
+<div class="value" id="nbCourses">—</div>
 </div>
+
+<div class="card">
+Courses françaises
+<div class="value" id="nbFrance">—</div>
+</div>
+
+<div class="card">
+Partants
+<div class="value" id="nbPartants">—</div>
+</div>
+
+<div class="card">
+Non-partants
+<div class="value" id="nbNP">—</div>
+</div>
+
+<div class="card">
+Courses sélectionnables
+<div class="value" id="nbSelection">—</div>
+</div>
+</div>
+
 <div class="controls">
-<button id="actualiser" type="button">🔄 Actualiser</button>
-<button id="recharger" type="button">🔍 Vérifier les fichiers</button>
+<button id="actualiser" type="button">
+🔄 Actualiser
+</button>
+<button id="recharger" type="button">
+🔍 Vérifier les fichiers
+</button>
 </div>
-<p id="dateMaj" class="muted">Dernière vérification : —</p>
-<div id="diagnostic" class="notice">En attente des données.</div>
+
+<p id="dateMaj" class="muted">
+Dernière vérification : —
+</p>
+
+<div id="diagnostic" class="notice">
+En attente des données.
+</div>
 </section>
 
 <section id="courses">
 <h2>🏇 Courses PMU publiées</h2>
-<p id="etatCourses" class="warn">🟡 Chargement...</p>
+
+<p id="etatCourses" class="warn">
+🟡 Chargement...
+</p>
+
 <div class="table-wrap">
 <table>
-<thead><tr>
-<th>Course</th><th>Hippodrome</th><th>Départ Paris</th>
-<th>Partants</th><th>NP</th><th>Contrôle</th>
-</tr></thead>
+<thead>
+<tr>
+<th>Course</th>
+<th>Hippodrome</th>
+<th>Départ Paris</th>
+<th>Partants</th>
+<th>NP</th>
+<th>Contrôle</th>
+</tr>
+</thead>
 <tbody id="listeCourses"></tbody>
 </table>
 </div>
@@ -132,18 +247,29 @@ a{color:var(--blue)}
 
 <section id="partants">
 <h2>🐎 Partants et non-partants</h2>
+
 <div class="controls">
 <select id="choixCourse">
 <option value="">Sélectionner une course</option>
 </select>
 </div>
-<p id="detailsCourse" class="muted">Sélectionnez une course.</p>
+
+<p id="detailsCourse" class="muted">
+Sélectionnez une course.
+</p>
+
 <div class="table-wrap">
 <table>
-<thead><tr>
-<th>N°</th><th>Cheval</th><th>Statut</th>
-<th>Jockey / Driver</th><th>Entraîneur</th><th>Musique</th>
-</tr></thead>
+<thead>
+<tr>
+<th>N°</th>
+<th>Cheval</th>
+<th>Statut</th>
+<th>Jockey / Driver</th>
+<th>Entraîneur</th>
+<th>Musique</th>
+</tr>
+</thead>
 <tbody id="listePartants"></tbody>
 </table>
 </div>
@@ -151,20 +277,36 @@ a{color:var(--blue)}
 
 <section id="tableau">
 <h2>🏆 Tableau officiel X1000 — M1 à M5</h2>
+
 <div class="notice">
+Sélection automatique de la prochaine course française
+qualifiée avant son départ.
+
 Les analyses indicatives ne sont pas des paris FIGÉS.
-Aucune combinaison n'est inventée.
+Aucun pari n'est inventé.
 </div>
+
 <div class="controls">
-<label for="choixPronostic">Course analysée :</label>
+<label for="choixPronostic">
+Course analysée :
+</label>
+
 <select id="choixPronostic">
-<option value="">Sélectionner une course</option>
+<option value="">Sélection automatique</option>
 </select>
+
+<button id="modeAuto" type="button">
+🔄 Revenir en mode automatique
+</button>
 </div>
+
+<p id="modeSelection" class="muted"></p>
 <p id="resumePronostic" class="muted"></p>
+
 <div class="table-wrap">
 <table>
-<thead><tr>
+<thead>
+<tr>
 <th>Moteur</th>
 <th>🥇 Gagnant espéré</th>
 <th>🥈 Meilleur placé</th>
@@ -173,43 +315,64 @@ Aucune combinaison n'est inventée.
 <th>Qualification</th>
 <th>Validation</th>
 <th>Heure Paris</th>
-</tr></thead>
+</tr>
+</thead>
 <tbody id="tableauMoteurs"></tbody>
 </table>
 </div>
+
 <p id="etatPronostics" class="muted"></p>
 </section>
 
 <section id="figes">
 <h2>🔒 PV et FIGÉS</h2>
-<p id="etatPV" class="warn">🟡 Chargement PV...</p>
+
+<p id="etatPV" class="warn">
+🟡 Chargement PV...
+</p>
 <div id="contenuPV"></div>
-<p id="etatFiges" class="warn">🟡 Chargement FIGÉS...</p>
+
+<p id="etatFiges" class="warn">
+🟡 Chargement FIGÉS...
+</p>
 <div id="contenuFiges"></div>
 </section>
 
 <section id="audits">
 <h2>📊 Audits après course</h2>
-<p id="etatAudits" class="warn">🟡 Chargement...</p>
+
+<p id="etatAudits" class="warn">
+🟡 Chargement...
+</p>
 <div id="contenuAudits"></div>
 </section>
 
 <section id="actions">
 <h2>⚙️ GitHub Actions</h2>
-<p id="etatActions" class="warn">🟡 Chargement...</p>
+
+<p id="etatActions" class="warn">
+🟡 Chargement...
+</p>
+
 <p>
-<a href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
-target="_blank" rel="noopener noreferrer">
+<a
+ href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
+ target="_blank"
+ rel="noopener noreferrer">
 Consulter les exécutions GitHub Actions
 </a>
 </p>
+
 <div id="contenuActions"></div>
 </section>
+
 </main>
 
 <footer>
 🇸🇳🧠🔥 X1000 PHOENIX — Intelligence vivante
-<p>Traçabilité • Données vérifiables • FIGÉS historiques</p>
+<p>
+Traçabilité • Données vérifiables • FIGÉS historiques
+</p>
 </footer>
 
 <script>
@@ -233,6 +396,7 @@ const FICHIERS={
 let publications={};
 let courses=[];
 let selectionPronostic="";
+let selectionManuelle=false;
 let sequence=0;
 
 function texte(v,d="—"){
@@ -255,13 +419,25 @@ function cellule(tr,val,classe){
 
 function dateParis(v){
  if(!v)return "—";
+
  const d=new Date(v);
  if(Number.isNaN(d.getTime()))return texte(v);
+
  return new Intl.DateTimeFormat("fr-FR",{
   timeZone:"Europe/Paris",
-  day:"2-digit",month:"2-digit",year:"numeric",
-  hour:"2-digit",minute:"2-digit"
+  day:"2-digit",
+  month:"2-digit",
+  year:"numeric",
+  hour:"2-digit",
+  minute:"2-digit"
  }).format(d);
+}
+
+function instant(v){
+ if(!v)return NaN;
+
+ const t=Date.parse(v);
+ return Number.isFinite(t)?t:NaN;
 }
 
 async function lireJSON(chemin){
@@ -278,7 +454,9 @@ async function lireJSON(chemin){
 
  const objet=await reponse.json();
 
- if(!objet||typeof objet!=="object"||Array.isArray(objet)){
+ if(!objet||
+    typeof objet!=="object"||
+    Array.isArray(objet)){
   throw Error("Structure JSON invalide");
  }
 
@@ -287,17 +465,21 @@ async function lireJSON(chemin){
 
 function collection(obj,cles){
  if(Array.isArray(obj))return obj;
+
  if(!obj||typeof obj!=="object")return [];
 
  for(const cle of cles){
   if(Array.isArray(obj[cle]))return obj[cle];
  }
+
  return [];
 }
 
 function idCourse(c){
  return texte(
-  c.id||("R"+texte(c.reunion,"?")+"C"+texte(c.course,"?"))
+  c.id||
+  ("R"+texte(c.reunion,"?")+
+   "C"+texte(c.course,"?"))
  );
 }
 
@@ -307,30 +489,39 @@ function participants(c){
 
 function np(c){
  const numeros=new Set(
-  (Array.isArray(c?.non_partants)?c.non_partants:[])
-  .map(String)
+  (Array.isArray(c?.non_partants)?
+   c.non_partants:[])
+  .map(x=>String(
+   typeof x==="object"?x.numero:x
+  ))
  );
 
  for(const p of participants(c)){
-  if(p.non_partant===true||p.statut==="NON_PARTANT"){
+  if(p.non_partant===true||
+     p.statut==="NON_PARTANT"){
    numeros.add(String(p.numero));
   }
  }
+
  return numeros;
 }
 
 function effectif(c){
  const ps=participants(c);
+
  if(ps.length){
   const non=np(c);
-  return ps.filter(p=>!non.has(String(p.numero))).length;
+  return ps.filter(
+   p=>!non.has(String(p.numero))
+  ).length;
  }
+
  const n=Number(c.nombre_partants);
  return Number.isFinite(n)&&n>=0?n:0;
 }
 
 function estFrance(c){
- return c&&c.localisation_france_verifiee===true;
+ return c?.localisation_france_verifiee===true;
 }
 
 function remplirCourses(){
@@ -344,13 +535,14 @@ function remplirCourses(){
  );
 
  const liste=Array.isArray(courses)?courses:[];
+
  const francaises=liste.filter(estFrance).sort(
   (a,b)=>String(a.depart||"").localeCompare(
    String(b.depart||"")
   )
  );
 
- const statistiques={
+ const stats={
   nbCourses:liste.length,
   nbFrance:francaises.length,
   nbPartants:francaises.reduce(
@@ -361,22 +553,19 @@ function remplirCourses(){
   )
  };
 
- for(const [id,valeur] of Object.entries(statistiques)){
-  $(id).textContent=String(valeur);
+ for(const [id,v] of Object.entries(stats)){
+  $(id).textContent=String(v);
  }
 
  if(!francaises.length){
-  const tr=tbody.insertRow();
-  const td=tr.insertCell();
+  const td=tbody.insertRow().insertCell();
   td.colSpan=6;
+
   td.textContent=liste.length?
    "🟡 Aucune course française vérifiée.":
    "🟡 Aucune course publiée.";
 
-  $("etatCourses").textContent=liste.length?
-   "🟡 Données accessibles, aucune course française vérifiée.":
-   "🟡 Liste des courses vide.";
-
+  $("etatCourses").textContent=td.textContent;
   afficherPartants(null);
   return;
  }
@@ -391,7 +580,8 @@ function remplirCourses(){
    effectif(c),
    np(c).size,
    c.depart_verifie===true?
-    "🟢 Horaire renseigné":"🟡 À confirmer"
+    "🟢 Départ vérifié":
+    "🟡 Départ à confirmer"
   ].forEach(v=>cellule(tr,v));
 
   select.add(new Option(
@@ -400,27 +590,19 @@ function remplirCourses(){
   ));
  }
 
- if(Array.from(select.options).some(
-  option=>option.value===ancienne
- )){
-  select.value=ancienne;
- }else{
-  select.selectedIndex=1;
- }
+ select.value=Array.from(select.options).some(
+  o=>o.value===ancienne
+ )?ancienne:idCourse(francaises[0]);
 
  afficherPartants(
-  francaises.find(c=>idCourse(c)===select.value)
+  francaises.find(
+   c=>idCourse(c)===select.value
+  )
  );
 
  $("etatCourses").textContent=
   "🟢 "+francaises.length+
   " course(s) française(s) publiée(s).";
-
- console.info(
-  "X1000 PHOENIX :",
-  francaises.length,
-  "courses françaises affichées."
- );
 }
 
 function afficherPartants(c){
@@ -463,7 +645,10 @@ function construireGroupes(){
 
  for(const c of courses){
   if(!c||!c.id)continue;
-  const moteurs=Array.isArray(c.moteurs)?c.moteurs:[];
+
+  const moteurs=Array.isArray(c.moteurs)?
+   c.moteurs:[];
+
   if(moteurs.length){
    groupes.set(String(c.id),{
     course:c,
@@ -478,14 +663,21 @@ function construireGroupes(){
  );
 
  for(const p of pronostics){
-  if(!p||!p.course_id||
-   !/^M[1-5]$/.test(String(p.moteur)))continue;
+  if(!p||
+     !p.course_id||
+     !/^M[1-5]$/.test(String(p.moteur))){
+   continue;
+  }
 
   const id=String(p.course_id);
 
   if(!groupes.has(id)){
+   const origine=courses.find(
+    c=>idCourse(c)===id
+   );
+
    groupes.set(id,{
-    course:{
+    course:origine||{
      id:id,
      hippodrome:p.hippodrome,
      depart:p.depart,
@@ -495,19 +687,56 @@ function construireGroupes(){
    });
   }
 
-  const groupe=groupes.get(id);
-  const index=groupe.moteurs.findIndex(
+  const g=groupes.get(id);
+  const i=g.moteurs.findIndex(
    m=>m.moteur===p.moteur
   );
 
-  if(index<0){
-   groupe.moteurs.push(p);
-  }else if(groupe.course.statut!=="FIGE_VERIFIE"){
-   groupe.moteurs[index]=p;
+  if(i<0){
+   g.moteurs.push(p);
+  }else if(g.course.statut!=="FIGE_VERIFIE"){
+   g.moteurs[i]=p;
   }
  }
 
  return groupes;
+}
+
+function ordre(m){
+ return m?.ordre_arrivee_espere??
+  m?.ordre_espere??
+  m?.ordre??
+  m?.combinaison??
+  [];
+}
+
+function qualificationVerte(m){
+ const q=String(
+  m?.qualification||""
+ ).trim().toUpperCase();
+
+ return q==="VERT"||
+  q==="🟢 VERT"||
+  q==="🟢";
+}
+
+function estSelectionnable(g){
+ const c=g.course;
+ const t=instant(c.depart);
+
+ if(!Number.isFinite(t)||t<=Date.now()){
+  return false;
+ }
+
+ if(!estFrance(c)){
+  return false;
+ }
+
+ return g.moteurs.some(m=>
+  qualificationVerte(m)&&
+  Array.isArray(ordre(m))&&
+  ordre(m).length>=5
+ );
 }
 
 function afficherPronostics(){
@@ -515,17 +744,30 @@ function afficherPronostics(){
  const select=$("choixPronostic");
  const tbody=$("tableauMoteurs");
 
- const ancien=selectionPronostic||select.value;
-
- select.replaceChildren(
-  new Option("Sélectionner une course","")
- );
  tbody.replaceChildren();
 
  const entries=[...groupes.entries()].sort(
-  (a,b)=>String(a[1].course.depart||"").localeCompare(
-   String(b[1].course.depart||"")
-  )
+  (a,b)=>{
+   const ta=instant(a[1].course.depart);
+   const tb=instant(b[1].course.depart);
+
+   return (
+    Number.isFinite(ta)?ta:Infinity
+   )-(
+    Number.isFinite(tb)?tb:Infinity
+   );
+  }
+ );
+
+ const candidats=entries.filter(
+  ([,g])=>estSelectionnable(g)
+ );
+
+ $("nbSelection").textContent=
+  String(candidats.length);
+
+ select.replaceChildren(
+  new Option("Sélection automatique","")
  );
 
  for(const [id,g] of entries){
@@ -536,55 +778,82 @@ function afficherPronostics(){
   ));
  }
 
- selectionPronostic=groupes.has(ancien)?
-  ancien:(entries.length?entries[0][0]:"");
+ if(selectionManuelle&&
+    !groupes.has(selectionPronostic)){
+  selectionManuelle=false;
+ }
+
+ selectionPronostic=selectionManuelle?
+  selectionPronostic:
+  (candidats[0]?.[0]||"");
 
  select.value=selectionPronostic;
 
- const groupe=groupes.get(selectionPronostic);
+ $("modeSelection").textContent=
+  selectionManuelle?
+  "👆 Sélection manuelle — bouton pour réactiver l'automatique.":
+  "🤖 Mode automatique — "+
+  (
+   candidats.length?
+   candidats.length+
+   " course(s) qualifiée(s), prochaine course sélectionnée.":
+   "aucune course future qualifiée actuellement."
+  );
 
- $("resumePronostic").textContent=groupe?
+ const g=groupes.get(selectionPronostic);
+
+ $("resumePronostic").textContent=g?
   selectionPronostic+" — "+
-  texte(groupe.course.hippodrome)+" — "+
-  dateParis(groupe.course.depart)+" — "+
-  texte(groupe.course.statut):
-  "Aucune analyse disponible.";
+  texte(g.course.hippodrome)+" — "+
+  dateParis(g.course.depart)+" — "+
+  texte(g.course.statut):
+  "Aucune course future française qualifiée. "+
+  "Les analyses historiques restent consultables dans le menu.";
 
  let nombre=0;
 
  for(let i=1;i<=5;i++){
   const nom="M"+i;
-  const m=groupe?.moteurs.find(
+  const m=g?.moteurs.find(
    x=>x.moteur===nom
   );
 
   if(m)nombre++;
 
-  const ordre=m?.ordre_arrivee_espere||
-   m?.ordre_espere||
-   m?.ordre||
-   m?.combinaison;
-
   const tr=tbody.insertRow();
 
-  [
+  const vals=[
    nom,
    m?.gagnant_espere??m?.gagnant,
    m?.meilleur_place??m?.place,
-   ordre,
+   ordre(m),
    m?.pari_retenu??m?.pari,
    m?.qualification,
-   m?.validation??(m?"INDICATIF":"NON PUBLIÉ"),
-   m?.heure_paris?dateParis(m.heure_paris):"—"
-  ].forEach(v=>cellule(tr,v));
+   m?.validation??(
+    m?"INDICATIF":"NON PUBLIÉ"
+   ),
+   m?.heure_paris?
+    dateParis(m.heure_paris):"—"
+  ];
+
+  vals.forEach((v,j)=>cellule(
+   tr,
+   v,
+   j===5?
+    (qualificationVerte(m)?"ok":"warn"):
+    ""
+  ));
  }
 
  $("etatPronostics").textContent=nombre?
-  nombre+" moteur(s) publié(s) pour cette course.":
-  "Aucun pronostic publié pour cette course.";
+  nombre+
+  " moteur(s) publié(s) pour cette course.":
+  "Aucun pronostic publié pour la sélection actuelle.";
 }
 
-function afficherCollection(cle,etatId,contenuId,cles){
+function afficherCollection(
+ cle,etatId,contenuId,cles
+){
  const obj=publications[cle];
  const etat=$(etatId);
  const cible=$(contenuId);
@@ -605,10 +874,12 @@ function afficherCollection(cle,etatId,contenuId,cles){
 
  for(const item of liste.slice(0,20)){
   const bloc=document.createElement("div");
-  bloc.className="card";
-
   const pre=document.createElement("pre");
-  pre.textContent=JSON.stringify(item,null,2);
+
+  bloc.className="card";
+  pre.textContent=JSON.stringify(
+   item,null,2
+  );
 
   bloc.appendChild(pre);
   cible.appendChild(bloc);
@@ -629,11 +900,15 @@ function afficherActions(){
  }
 
  $("etatActions").textContent=
-  "🟢 Rapport de publication accessible. "+
-  "L'état des exécutions doit être vérifié sur GitHub.";
+  "🟢 Rapport JSON accessible. "+
+  "Ceci ne garantit pas la réussite de la dernière exécution GitHub.";
 
  const pre=document.createElement("pre");
- pre.textContent=JSON.stringify(obj,null,2).slice(0,12000);
+
+ pre.textContent=JSON.stringify(
+  obj,null,2
+ ).slice(0,12000);
+
  cible.appendChild(pre);
 }
 
@@ -642,6 +917,7 @@ async function actualiser(){
 
  $("actualiser").disabled=true;
  $("recharger").disabled=true;
+
  $("etatGlobal").textContent=
   "🟡 Chargement des données...";
 
@@ -658,34 +934,30 @@ async function actualiser(){
   publications={};
 
   noms.forEach((nom,i)=>{
-   const resultat=resultats[i];
+   const r=resultats[i];
 
-   if(resultat.status==="fulfilled"){
-    publications[nom]=resultat.value;
+   if(r.status==="fulfilled"){
+    publications[nom]=r.value;
     etats[nom]="🟢 JSON accessible";
    }else{
     publications[nom]=null;
-    etats[nom]="🔴 "+resultat.reason.message;
+    etats[nom]="🔴 "+r.reason.message;
    }
   });
 
-  const fichierCourses=publications.courses;
+  const fichier=publications.courses;
 
   courses=collection(
-   fichierCourses,
+   fichier,
    ["courses"]
   );
 
-  if(!fichierCourses){
-   $("etatGlobal").textContent=
-    "🔴 Publication des courses indisponible";
-  }else if(!Array.isArray(fichierCourses.courses)){
-   $("etatGlobal").textContent=
-    "🔴 Format de publication des courses incorrect";
-  }else{
-   $("etatGlobal").textContent=
-    "🟢 Publication des courses accessible";
-  }
+  $("etatGlobal").textContent=
+   !fichier?
+   "🔴 Publication des courses indisponible":
+   !Array.isArray(fichier.courses)?
+   "🔴 Format des courses incorrect":
+   "🟢 Publication des courses accessible";
 
   remplirCourses();
   afficherPronostics();
@@ -717,19 +989,18 @@ async function actualiser(){
   }
 
   const rapport=publications.rapport;
+
   if(rapport){
    diagnostic.appendChild(element(
     "div",
-    "État publication : "+texte(
-     rapport.status||rapport.statut
-    )
+    "État publication : "+
+    texte(rapport.status||rapport.statut)
    ));
 
    diagnostic.appendChild(element(
     "div",
-    "Génération : "+dateParis(
-     rapport.generated_at_paris
-    )
+    "Génération : "+
+    dateParis(rapport.generated_at_paris)
    ));
   }
 
@@ -738,7 +1009,9 @@ async function actualiser(){
    dateParis(new Date().toISOString());
 
  }catch(erreur){
-  console.error("X1000 PHOENIX",erreur);
+  console.error(
+   "X1000 PHOENIX",erreur
+  );
 
   $("etatGlobal").textContent=
    "🔴 Erreur interface : "+erreur.message;
@@ -754,29 +1027,53 @@ async function actualiser(){
  }
 }
 
-$("choixCourse").addEventListener("change",()=>{
- const id=$("choixCourse").value;
+$("choixCourse").addEventListener(
+ "change",
+ ()=>{
+  afficherPartants(
+   courses.find(
+    c=>idCourse(c)===$("choixCourse").value
+   )
+  );
+ }
+);
 
- afficherPartants(
-  courses.find(c=>idCourse(c)===id)
- );
-});
+$("choixPronostic").addEventListener(
+ "change",
+ ()=>{
+  selectionPronostic=$("choixPronostic").value;
+  selectionManuelle=!!selectionPronostic;
+  afficherPronostics();
+ }
+);
 
-$("choixPronostic").addEventListener("change",()=>{
- selectionPronostic=$("choixPronostic").value;
- afficherPronostics();
-});
+$("modeAuto").addEventListener(
+ "click",
+ ()=>{
+  selectionManuelle=false;
+  selectionPronostic="";
+  afficherPronostics();
+ }
+);
 
-$("actualiser").addEventListener("click",actualiser);
-$("recharger").addEventListener("click",actualiser);
+$("actualiser").addEventListener(
+ "click",actualiser
+);
+
+$("recharger").addEventListener(
+ "click",actualiser
+);
 
 actualiser();
 
 setInterval(()=>{
- if(!document.hidden)actualiser();
+ if(!document.hidden){
+  actualiser();
+ }
 },300000);
 
 })();
 </script>
+
 </body>
 </html>
