@@ -1407,6 +1407,520 @@
         "avertissement": "Scores heuristiques non calibres. Aucune garantie de resultat."
       },
       "sha256": "02ca63b969af34dd555b1264ef5ce64874d9a408f356980714e27ccd037d41e5"
+    },
+    {
+      "statut": "FIGE_AVANT_DEPART",
+      "fige_a": "2026-10-28T15:28:40.465738+01:00",
+      "rapport": {
+        "logiciel": "X1000 PHOENIX",
+        "course_id": "2026-10-28-R2-C8",
+        "hippodrome": "HIPPODROME DU MANS",
+        "nom": "PRIX JEAN MENAND",
+        "depart": "2026-10-28T15:57:00+01:00",
+        "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
+        "analyse_a": "2026-10-28T15:28:40.465381+01:00",
+        "nombre_partants": 14,
+        "profils": [
+          {
+            "numero": 1,
+            "nom": "HIGHBARI",
+            "forme": 0.72,
+            "regularite": 0.875,
+            "observations": 8
+          },
+          {
+            "numero": 2,
+            "nom": "SIMANCAS",
+            "forme": 0.7,
+            "regularite": 0.75,
+            "observations": 8
+          },
+          {
+            "numero": 3,
+            "nom": "MAPLE TAFFY",
+            "forme": 0.62,
+            "regularite": 0.714286,
+            "observations": 7
+          },
+          {
+            "numero": 4,
+            "nom": "KAMAKURA ONE",
+            "forme": 0.62,
+            "regularite": 0.25,
+            "observations": 8
+          },
+          {
+            "numero": 5,
+            "nom": "LA PELEMOISE",
+            "forme": 0.8,
+            "regularite": 0.571429,
+            "observations": 7
+          },
+          {
+            "numero": 6,
+            "nom": "ATANASIO",
+            "forme": 0.62,
+            "regularite": 0.666667,
+            "observations": 6
+          },
+          {
+            "numero": 7,
+            "nom": "CANNELLO",
+            "forme": 0.54,
+            "regularite": 0.571429,
+            "observations": 7
+          },
+          {
+            "numero": 8,
+            "nom": "JOYEUSE SAGE",
+            "forme": 0.48,
+            "regularite": 0.375,
+            "observations": 8
+          },
+          {
+            "numero": 9,
+            "nom": "RIDE ON",
+            "forme": 0.32,
+            "regularite": 0.142857,
+            "observations": 7
+          },
+          {
+            "numero": 10,
+            "nom": "KUMRAN",
+            "forme": 0.74,
+            "regularite": 0.666667,
+            "observations": 6
+          },
+          {
+            "numero": 11,
+            "nom": "E VA BIN",
+            "forme": 0.44,
+            "regularite": 0.2,
+            "observations": 5
+          },
+          {
+            "numero": 13,
+            "nom": "LIKING",
+            "forme": 0.6,
+            "regularite": 0.571429,
+            "observations": 7
+          },
+          {
+            "numero": 14,
+            "nom": "VESCO",
+            "forme": 0.4,
+            "regularite": 0.125,
+            "observations": 8
+          },
+          {
+            "numero": 15,
+            "nom": "BLOWN BY THE WIND",
+            "forme": 0.7,
+            "regularite": 0.428571,
+            "observations": 7
+          }
+        ],
+        "moteurs": [
+          {
+            "moteur": "M1",
+            "gagnant_espere": 1,
+            "meilleur_place": 2,
+            "ordre_espere": [
+              1,
+              2,
+              5,
+              10,
+              3
+            ],
+            "pari_retenu": null,
+            "qualification": "VERT",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.059375,
+            "scores": [
+              {
+                "numero": 1,
+                "score": 0.778125
+              },
+              {
+                "numero": 2,
+                "score": 0.71875
+              },
+              {
+                "numero": 5,
+                "score": 0.714286
+              },
+              {
+                "numero": 10,
+                "score": 0.7125
+              },
+              {
+                "numero": 3,
+                "score": 0.655357
+              },
+              {
+                "numero": 6,
+                "score": 0.6375
+              },
+              {
+                "numero": 15,
+                "score": 0.598214
+              },
+              {
+                "numero": 13,
+                "score": 0.589286
+              },
+              {
+                "numero": 7,
+                "score": 0.551786
+              },
+              {
+                "numero": 4,
+                "score": 0.48125
+              },
+              {
+                "numero": 8,
+                "score": 0.440625
+              },
+              {
+                "numero": 11,
+                "score": 0.35
+              },
+              {
+                "numero": 14,
+                "score": 0.296875
+              },
+              {
+                "numero": 9,
+                "score": 0.253571
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T15:28:40.465381+01:00"
+          },
+          {
+            "moteur": "M2",
+            "gagnant_espere": 1,
+            "meilleur_place": 2,
+            "ordre_espere": [
+              1,
+              2,
+              10,
+              3,
+              5
+            ],
+            "pari_retenu": null,
+            "qualification": "VERT",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.085625,
+            "scores": [
+              {
+                "numero": 1,
+                "score": 0.816875
+              },
+              {
+                "numero": 2,
+                "score": 0.73125
+              },
+              {
+                "numero": 10,
+                "score": 0.694167
+              },
+              {
+                "numero": 3,
+                "score": 0.678929
+              },
+              {
+                "numero": 5,
+                "score": 0.657143
+              },
+              {
+                "numero": 6,
+                "score": 0.649167
+              },
+              {
+                "numero": 13,
+                "score": 0.582143
+              },
+              {
+                "numero": 7,
+                "score": 0.559643
+              },
+              {
+                "numero": 15,
+                "score": 0.530357
+              },
+              {
+                "numero": 8,
+                "score": 0.414375
+              },
+              {
+                "numero": 4,
+                "score": 0.38875
+              },
+              {
+                "numero": 11,
+                "score": 0.29
+              },
+              {
+                "numero": 14,
+                "score": 0.228125
+              },
+              {
+                "numero": 9,
+                "score": 0.209286
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T15:28:40.465381+01:00"
+          },
+          {
+            "moteur": "M3",
+            "gagnant_espere": 1,
+            "meilleur_place": 2,
+            "ordre_espere": [
+              1,
+              2,
+              10,
+              5,
+              3
+            ],
+            "pari_retenu": null,
+            "qualification": "VERT",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.0725,
+            "scores": [
+              {
+                "numero": 1,
+                "score": 0.7975
+              },
+              {
+                "numero": 2,
+                "score": 0.725
+              },
+              {
+                "numero": 10,
+                "score": 0.703334
+              },
+              {
+                "numero": 5,
+                "score": 0.685715
+              },
+              {
+                "numero": 3,
+                "score": 0.667143
+              },
+              {
+                "numero": 6,
+                "score": 0.643334
+              },
+              {
+                "numero": 13,
+                "score": 0.585714
+              },
+              {
+                "numero": 15,
+                "score": 0.564285
+              },
+              {
+                "numero": 7,
+                "score": 0.555715
+              },
+              {
+                "numero": 4,
+                "score": 0.435
+              },
+              {
+                "numero": 8,
+                "score": 0.4275
+              },
+              {
+                "numero": 11,
+                "score": 0.32
+              },
+              {
+                "numero": 14,
+                "score": 0.2625
+              },
+              {
+                "numero": 9,
+                "score": 0.231429
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T15:28:40.465381+01:00"
+          },
+          {
+            "moteur": "M4",
+            "gagnant_espere": 1,
+            "meilleur_place": 5,
+            "ordre_espere": [
+              1,
+              5,
+              10,
+              2,
+              3
+            ],
+            "pari_retenu": null,
+            "qualification": "JAUNE",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.015893,
+            "scores": [
+              {
+                "numero": 1,
+                "score": 0.75875
+              },
+              {
+                "numero": 5,
+                "score": 0.742857
+              },
+              {
+                "numero": 10,
+                "score": 0.721667
+              },
+              {
+                "numero": 2,
+                "score": 0.7125
+              },
+              {
+                "numero": 3,
+                "score": 0.643571
+              },
+              {
+                "numero": 15,
+                "score": 0.632143
+              },
+              {
+                "numero": 6,
+                "score": 0.631667
+              },
+              {
+                "numero": 13,
+                "score": 0.592857
+              },
+              {
+                "numero": 7,
+                "score": 0.547857
+              },
+              {
+                "numero": 4,
+                "score": 0.5275
+              },
+              {
+                "numero": 8,
+                "score": 0.45375
+              },
+              {
+                "numero": 11,
+                "score": 0.38
+              },
+              {
+                "numero": 14,
+                "score": 0.33125
+              },
+              {
+                "numero": 9,
+                "score": 0.275714
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T15:28:40.465381+01:00"
+          },
+          {
+            "moteur": "M5",
+            "gagnant_espere": 1,
+            "meilleur_place": 2,
+            "ordre_espere": [
+              1,
+              2,
+              3,
+              10,
+              6
+            ],
+            "pari_retenu": null,
+            "qualification": "VERT",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.09875,
+            "scores": [
+              {
+                "numero": 1,
+                "score": 0.83625
+              },
+              {
+                "numero": 2,
+                "score": 0.7375
+              },
+              {
+                "numero": 3,
+                "score": 0.690715
+              },
+              {
+                "numero": 10,
+                "score": 0.685
+              },
+              {
+                "numero": 6,
+                "score": 0.655
+              },
+              {
+                "numero": 5,
+                "score": 0.628572
+              },
+              {
+                "numero": 13,
+                "score": 0.578572
+              },
+              {
+                "numero": 7,
+                "score": 0.563572
+              },
+              {
+                "numero": 15,
+                "score": 0.496428
+              },
+              {
+                "numero": 8,
+                "score": 0.40125
+              },
+              {
+                "numero": 4,
+                "score": 0.3425
+              },
+              {
+                "numero": 11,
+                "score": 0.26
+              },
+              {
+                "numero": 14,
+                "score": 0.19375
+              },
+              {
+                "numero": 9,
+                "score": 0.187143
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T15:28:40.465381+01:00"
+          }
+        ],
+        "statut": "ANALYSE_INDICATIVE",
+        "avertissement": "Scores heuristiques non calibres. Aucune garantie de resultat."
+      },
+      "sha256": "8bb65b9886b0ee6c90728e57a904880825b1327b20456207a3ae431b117abd96"
     }
   ]
 }

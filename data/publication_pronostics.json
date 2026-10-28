@@ -1,0 +1,7884 @@
+{
+  "pronostics": [
+    {
+      "moteur": "M1",
+      "gagnant_espere": 7,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0125,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.95
+        },
+        {
+          "numero": 5,
+          "score": 0.9375
+        },
+        {
+          "numero": 6,
+          "score": 0.875
+        },
+        {
+          "numero": 1,
+          "score": 0.730357
+        },
+        {
+          "numero": 3,
+          "score": 0.66875
+        },
+        {
+          "numero": 4,
+          "score": 0.655357
+        },
+        {
+          "numero": 2,
+          "score": 0.64375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:27:12.965614+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "course_id": "2026-10-28-R1-C2",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T12:38:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 7,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0075,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.97
+        },
+        {
+          "numero": 5,
+          "score": 0.9625
+        },
+        {
+          "numero": 6,
+          "score": 0.925
+        },
+        {
+          "numero": 1,
+          "score": 0.723929
+        },
+        {
+          "numero": 3,
+          "score": 0.70125
+        },
+        {
+          "numero": 2,
+          "score": 0.68625
+        },
+        {
+          "numero": 4,
+          "score": 0.678929
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:27:12.965614+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "course_id": "2026-10-28-R1-C2",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T12:38:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 7,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.01,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.96
+        },
+        {
+          "numero": 5,
+          "score": 0.95
+        },
+        {
+          "numero": 6,
+          "score": 0.9
+        },
+        {
+          "numero": 1,
+          "score": 0.727143
+        },
+        {
+          "numero": 3,
+          "score": 0.685
+        },
+        {
+          "numero": 4,
+          "score": 0.667143
+        },
+        {
+          "numero": 2,
+          "score": 0.665
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:27:12.965614+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "course_id": "2026-10-28-R1-C2",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T12:38:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 7,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.015,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.94
+        },
+        {
+          "numero": 5,
+          "score": 0.925
+        },
+        {
+          "numero": 6,
+          "score": 0.85
+        },
+        {
+          "numero": 1,
+          "score": 0.733571
+        },
+        {
+          "numero": 3,
+          "score": 0.6525
+        },
+        {
+          "numero": 4,
+          "score": 0.643571
+        },
+        {
+          "numero": 2,
+          "score": 0.6225
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:27:12.965614+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "course_id": "2026-10-28-R1-C2",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T12:38:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 7,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.005,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.98
+        },
+        {
+          "numero": 5,
+          "score": 0.975
+        },
+        {
+          "numero": 6,
+          "score": 0.95
+        },
+        {
+          "numero": 1,
+          "score": 0.720714
+        },
+        {
+          "numero": 3,
+          "score": 0.7175
+        },
+        {
+          "numero": 2,
+          "score": 0.7075
+        },
+        {
+          "numero": 4,
+          "score": 0.690715
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:27:12.965614+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        5,
+        6,
+        1,
+        3
+      ],
+      "course_id": "2026-10-28-R1-C2",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T12:38:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 3,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        3,
+        2,
+        1,
+        5,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.041071,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.9
+        },
+        {
+          "numero": 2,
+          "score": 0.858929
+        },
+        {
+          "numero": 1,
+          "score": 0.742857
+        },
+        {
+          "numero": 5,
+          "score": 0.6625
+        },
+        {
+          "numero": 7,
+          "score": 0.659375
+        },
+        {
+          "numero": 6,
+          "score": 0.614286
+        },
+        {
+          "numero": 4,
+          "score": 0.4875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:55:47.213616+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        2,
+        1,
+        5,
+        7
+      ],
+      "course_id": "2026-10-28-R1-C3",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T13:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C3/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 3,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        3,
+        2,
+        1,
+        7,
+        5
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.081786,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.94
+        },
+        {
+          "numero": 2,
+          "score": 0.858214
+        },
+        {
+          "numero": 1,
+          "score": 0.731429
+        },
+        {
+          "numero": 7,
+          "score": 0.645625
+        },
+        {
+          "numero": 5,
+          "score": 0.6375
+        },
+        {
+          "numero": 6,
+          "score": 0.597143
+        },
+        {
+          "numero": 4,
+          "score": 0.4925
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:55:47.213616+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        2,
+        1,
+        7,
+        5
+      ],
+      "course_id": "2026-10-28-R1-C3",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T13:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C3/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 3,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        3,
+        2,
+        1,
+        7,
+        5
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.061428,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.92
+        },
+        {
+          "numero": 2,
+          "score": 0.858572
+        },
+        {
+          "numero": 1,
+          "score": 0.737143
+        },
+        {
+          "numero": 7,
+          "score": 0.6525
+        },
+        {
+          "numero": 5,
+          "score": 0.65
+        },
+        {
+          "numero": 6,
+          "score": 0.605714
+        },
+        {
+          "numero": 4,
+          "score": 0.49
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:55:47.213616+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        2,
+        1,
+        7,
+        5
+      ],
+      "course_id": "2026-10-28-R1-C3",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T13:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C3/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 3,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        3,
+        2,
+        1,
+        5,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.020714,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.88
+        },
+        {
+          "numero": 2,
+          "score": 0.859286
+        },
+        {
+          "numero": 1,
+          "score": 0.748572
+        },
+        {
+          "numero": 5,
+          "score": 0.675
+        },
+        {
+          "numero": 7,
+          "score": 0.66625
+        },
+        {
+          "numero": 6,
+          "score": 0.622857
+        },
+        {
+          "numero": 4,
+          "score": 0.485
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:55:47.213616+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        2,
+        1,
+        5,
+        7
+      ],
+      "course_id": "2026-10-28-R1-C3",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T13:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C3/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 3,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        3,
+        2,
+        1,
+        7,
+        5
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.102143,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.96
+        },
+        {
+          "numero": 2,
+          "score": 0.857857
+        },
+        {
+          "numero": 1,
+          "score": 0.725715
+        },
+        {
+          "numero": 7,
+          "score": 0.63875
+        },
+        {
+          "numero": 5,
+          "score": 0.625
+        },
+        {
+          "numero": 6,
+          "score": 0.588572
+        },
+        {
+          "numero": 4,
+          "score": 0.495
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T12:55:47.213616+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        2,
+        1,
+        7,
+        5
+      ],
+      "course_id": "2026-10-28-R1-C3",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T13:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C3/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 8,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        8,
+        2,
+        4,
+        3,
+        1
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.103125,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.96875
+        },
+        {
+          "numero": 2,
+          "score": 0.865625
+        },
+        {
+          "numero": 4,
+          "score": 0.828125
+        },
+        {
+          "numero": 3,
+          "score": 0.79375
+        },
+        {
+          "numero": 1,
+          "score": 0.771429
+        },
+        {
+          "numero": 6,
+          "score": 0.68125
+        },
+        {
+          "numero": 5,
+          "score": 0.666667
+        },
+        {
+          "numero": 7,
+          "score": 0.645833
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T13:57:18.934835+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        2,
+        4,
+        3,
+        1
+      ],
+      "course_id": "2026-10-28-R2-C5",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T14:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C5/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 8,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        8,
+        2,
+        4,
+        1,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.111875,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.98125
+        },
+        {
+          "numero": 2,
+          "score": 0.869375
+        },
+        {
+          "numero": 4,
+          "score": 0.846875
+        },
+        {
+          "numero": 1,
+          "score": 0.805714
+        },
+        {
+          "numero": 3,
+          "score": 0.77625
+        },
+        {
+          "numero": 6,
+          "score": 0.70875
+        },
+        {
+          "numero": 5,
+          "score": 0.666667
+        },
+        {
+          "numero": 7,
+          "score": 0.654167
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T13:57:18.934835+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        2,
+        4,
+        1,
+        3
+      ],
+      "course_id": "2026-10-28-R2-C5",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T14:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C5/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 8,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        8,
+        2,
+        4,
+        1,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.1075,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.975
+        },
+        {
+          "numero": 2,
+          "score": 0.8675
+        },
+        {
+          "numero": 4,
+          "score": 0.8375
+        },
+        {
+          "numero": 1,
+          "score": 0.788571
+        },
+        {
+          "numero": 3,
+          "score": 0.785
+        },
+        {
+          "numero": 6,
+          "score": 0.695
+        },
+        {
+          "numero": 5,
+          "score": 0.666667
+        },
+        {
+          "numero": 7,
+          "score": 0.65
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T13:57:18.934835+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        2,
+        4,
+        1,
+        3
+      ],
+      "course_id": "2026-10-28-R2-C5",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T14:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C5/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 8,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        8,
+        2,
+        4,
+        3,
+        1
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.09875,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.9625
+        },
+        {
+          "numero": 2,
+          "score": 0.86375
+        },
+        {
+          "numero": 4,
+          "score": 0.81875
+        },
+        {
+          "numero": 3,
+          "score": 0.8025
+        },
+        {
+          "numero": 1,
+          "score": 0.754286
+        },
+        {
+          "numero": 6,
+          "score": 0.6675
+        },
+        {
+          "numero": 5,
+          "score": 0.666667
+        },
+        {
+          "numero": 7,
+          "score": 0.641667
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T13:57:18.934835+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        2,
+        4,
+        3,
+        1
+      ],
+      "course_id": "2026-10-28-R2-C5",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T14:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C5/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 8,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        8,
+        2,
+        4,
+        1,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.11625,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.9875
+        },
+        {
+          "numero": 2,
+          "score": 0.87125
+        },
+        {
+          "numero": 4,
+          "score": 0.85625
+        },
+        {
+          "numero": 1,
+          "score": 0.822857
+        },
+        {
+          "numero": 3,
+          "score": 0.7675
+        },
+        {
+          "numero": 6,
+          "score": 0.7225
+        },
+        {
+          "numero": 5,
+          "score": 0.666667
+        },
+        {
+          "numero": 7,
+          "score": 0.658334
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T13:57:18.934835+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        2,
+        4,
+        1,
+        3
+      ],
+      "course_id": "2026-10-28-R2-C5",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T14:12:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C5/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        10,
+        4,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.015625,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.765625
+        },
+        {
+          "numero": 2,
+          "score": 0.75
+        },
+        {
+          "numero": 10,
+          "score": 0.7
+        },
+        {
+          "numero": 4,
+          "score": 0.675
+        },
+        {
+          "numero": 3,
+          "score": 0.667857
+        },
+        {
+          "numero": 6,
+          "score": 0.58125
+        },
+        {
+          "numero": 8,
+          "score": 0.55
+        },
+        {
+          "numero": 7,
+          "score": 0.515625
+        },
+        {
+          "numero": 5,
+          "score": 0.46875
+        },
+        {
+          "numero": 9,
+          "score": 0.453125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T14:41:38.374118+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        10,
+        4,
+        3
+      ],
+      "course_id": "2026-10-28-R1-C6",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T15:05:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C6/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        4,
+        10,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.089375,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.859375
+        },
+        {
+          "numero": 2,
+          "score": 0.77
+        },
+        {
+          "numero": 4,
+          "score": 0.725
+        },
+        {
+          "numero": 10,
+          "score": 0.686667
+        },
+        {
+          "numero": 3,
+          "score": 0.686429
+        },
+        {
+          "numero": 6,
+          "score": 0.64875
+        },
+        {
+          "numero": 8,
+          "score": 0.57
+        },
+        {
+          "numero": 7,
+          "score": 0.509375
+        },
+        {
+          "numero": 5,
+          "score": 0.48125
+        },
+        {
+          "numero": 9,
+          "score": 0.421875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T14:41:38.374118+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        4,
+        10,
+        3
+      ],
+      "course_id": "2026-10-28-R1-C6",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T15:05:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C6/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        4,
+        10,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0525,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.8125
+        },
+        {
+          "numero": 2,
+          "score": 0.76
+        },
+        {
+          "numero": 4,
+          "score": 0.7
+        },
+        {
+          "numero": 10,
+          "score": 0.693334
+        },
+        {
+          "numero": 3,
+          "score": 0.677143
+        },
+        {
+          "numero": 6,
+          "score": 0.615
+        },
+        {
+          "numero": 8,
+          "score": 0.56
+        },
+        {
+          "numero": 7,
+          "score": 0.5125
+        },
+        {
+          "numero": 5,
+          "score": 0.475
+        },
+        {
+          "numero": 9,
+          "score": 0.4375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T14:41:38.374118+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        4,
+        10,
+        3
+      ],
+      "course_id": "2026-10-28-R1-C6",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T15:05:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C6/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 2,
+      "meilleur_place": 1,
+      "ordre_espere": [
+        2,
+        1,
+        10,
+        3,
+        4
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.02125,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.74
+        },
+        {
+          "numero": 1,
+          "score": 0.71875
+        },
+        {
+          "numero": 10,
+          "score": 0.706667
+        },
+        {
+          "numero": 3,
+          "score": 0.658571
+        },
+        {
+          "numero": 4,
+          "score": 0.65
+        },
+        {
+          "numero": 6,
+          "score": 0.5475
+        },
+        {
+          "numero": 8,
+          "score": 0.54
+        },
+        {
+          "numero": 7,
+          "score": 0.51875
+        },
+        {
+          "numero": 9,
+          "score": 0.46875
+        },
+        {
+          "numero": 5,
+          "score": 0.4625
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T14:41:38.374118+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        1,
+        10,
+        3,
+        4
+      ],
+      "course_id": "2026-10-28-R1-C6",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T15:05:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C6/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        4,
+        3,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.12625,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.90625
+        },
+        {
+          "numero": 2,
+          "score": 0.78
+        },
+        {
+          "numero": 4,
+          "score": 0.75
+        },
+        {
+          "numero": 3,
+          "score": 0.695715
+        },
+        {
+          "numero": 6,
+          "score": 0.6825
+        },
+        {
+          "numero": 10,
+          "score": 0.68
+        },
+        {
+          "numero": 8,
+          "score": 0.58
+        },
+        {
+          "numero": 7,
+          "score": 0.50625
+        },
+        {
+          "numero": 5,
+          "score": 0.4875
+        },
+        {
+          "numero": 9,
+          "score": 0.40625
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T14:41:38.374118+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        4,
+        3,
+        6
+      ],
+      "course_id": "2026-10-28-R1-C6",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T15:05:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C6/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        5,
+        10,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.059375,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.778125
+        },
+        {
+          "numero": 2,
+          "score": 0.71875
+        },
+        {
+          "numero": 5,
+          "score": 0.714286
+        },
+        {
+          "numero": 10,
+          "score": 0.7125
+        },
+        {
+          "numero": 3,
+          "score": 0.655357
+        },
+        {
+          "numero": 6,
+          "score": 0.6375
+        },
+        {
+          "numero": 15,
+          "score": 0.598214
+        },
+        {
+          "numero": 13,
+          "score": 0.589286
+        },
+        {
+          "numero": 7,
+          "score": 0.551786
+        },
+        {
+          "numero": 4,
+          "score": 0.48125
+        },
+        {
+          "numero": 8,
+          "score": 0.440625
+        },
+        {
+          "numero": 11,
+          "score": 0.35
+        },
+        {
+          "numero": 14,
+          "score": 0.296875
+        },
+        {
+          "numero": 9,
+          "score": 0.253571
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.465381+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        5,
+        10,
+        3
+      ],
+      "course_id": "2026-10-28-R2-C8",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T15:57:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        10,
+        3,
+        5
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.085625,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.816875
+        },
+        {
+          "numero": 2,
+          "score": 0.73125
+        },
+        {
+          "numero": 10,
+          "score": 0.694167
+        },
+        {
+          "numero": 3,
+          "score": 0.678929
+        },
+        {
+          "numero": 5,
+          "score": 0.657143
+        },
+        {
+          "numero": 6,
+          "score": 0.649167
+        },
+        {
+          "numero": 13,
+          "score": 0.582143
+        },
+        {
+          "numero": 7,
+          "score": 0.559643
+        },
+        {
+          "numero": 15,
+          "score": 0.530357
+        },
+        {
+          "numero": 8,
+          "score": 0.414375
+        },
+        {
+          "numero": 4,
+          "score": 0.38875
+        },
+        {
+          "numero": 11,
+          "score": 0.29
+        },
+        {
+          "numero": 14,
+          "score": 0.228125
+        },
+        {
+          "numero": 9,
+          "score": 0.209286
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.465381+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        10,
+        3,
+        5
+      ],
+      "course_id": "2026-10-28-R2-C8",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T15:57:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        10,
+        5,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0725,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.7975
+        },
+        {
+          "numero": 2,
+          "score": 0.725
+        },
+        {
+          "numero": 10,
+          "score": 0.703334
+        },
+        {
+          "numero": 5,
+          "score": 0.685715
+        },
+        {
+          "numero": 3,
+          "score": 0.667143
+        },
+        {
+          "numero": 6,
+          "score": 0.643334
+        },
+        {
+          "numero": 13,
+          "score": 0.585714
+        },
+        {
+          "numero": 15,
+          "score": 0.564285
+        },
+        {
+          "numero": 7,
+          "score": 0.555715
+        },
+        {
+          "numero": 4,
+          "score": 0.435
+        },
+        {
+          "numero": 8,
+          "score": 0.4275
+        },
+        {
+          "numero": 11,
+          "score": 0.32
+        },
+        {
+          "numero": 14,
+          "score": 0.2625
+        },
+        {
+          "numero": 9,
+          "score": 0.231429
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.465381+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        10,
+        5,
+        3
+      ],
+      "course_id": "2026-10-28-R2-C8",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T15:57:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 1,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        1,
+        5,
+        10,
+        2,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.015893,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.75875
+        },
+        {
+          "numero": 5,
+          "score": 0.742857
+        },
+        {
+          "numero": 10,
+          "score": 0.721667
+        },
+        {
+          "numero": 2,
+          "score": 0.7125
+        },
+        {
+          "numero": 3,
+          "score": 0.643571
+        },
+        {
+          "numero": 15,
+          "score": 0.632143
+        },
+        {
+          "numero": 6,
+          "score": 0.631667
+        },
+        {
+          "numero": 13,
+          "score": 0.592857
+        },
+        {
+          "numero": 7,
+          "score": 0.547857
+        },
+        {
+          "numero": 4,
+          "score": 0.5275
+        },
+        {
+          "numero": 8,
+          "score": 0.45375
+        },
+        {
+          "numero": 11,
+          "score": 0.38
+        },
+        {
+          "numero": 14,
+          "score": 0.33125
+        },
+        {
+          "numero": 9,
+          "score": 0.275714
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.465381+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        5,
+        10,
+        2,
+        3
+      ],
+      "course_id": "2026-10-28-R2-C8",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T15:57:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        3,
+        10,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.09875,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.83625
+        },
+        {
+          "numero": 2,
+          "score": 0.7375
+        },
+        {
+          "numero": 3,
+          "score": 0.690715
+        },
+        {
+          "numero": 10,
+          "score": 0.685
+        },
+        {
+          "numero": 6,
+          "score": 0.655
+        },
+        {
+          "numero": 5,
+          "score": 0.628572
+        },
+        {
+          "numero": 13,
+          "score": 0.578572
+        },
+        {
+          "numero": 7,
+          "score": 0.563572
+        },
+        {
+          "numero": 15,
+          "score": 0.496428
+        },
+        {
+          "numero": 8,
+          "score": 0.40125
+        },
+        {
+          "numero": 4,
+          "score": 0.3425
+        },
+        {
+          "numero": 11,
+          "score": 0.26
+        },
+        {
+          "numero": 14,
+          "score": 0.19375
+        },
+        {
+          "numero": 9,
+          "score": 0.187143
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.465381+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        3,
+        10,
+        6
+      ],
+      "course_id": "2026-10-28-R2-C8",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T15:57:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
+      "statut_course": "FIGE_VERIFIE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        5,
+        7,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.025,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.9
+        },
+        {
+          "numero": 2,
+          "score": 0.875
+        },
+        {
+          "numero": 5,
+          "score": 0.8625
+        },
+        {
+          "numero": 7,
+          "score": 0.83125
+        },
+        {
+          "numero": 3,
+          "score": 0.825
+        },
+        {
+          "numero": 9,
+          "score": 0.81875
+        },
+        {
+          "numero": 6,
+          "score": 0.7625
+        },
+        {
+          "numero": 10,
+          "score": 0.725
+        },
+        {
+          "numero": 13,
+          "score": 0.7
+        },
+        {
+          "numero": 8,
+          "score": 0.6
+        },
+        {
+          "numero": 12,
+          "score": 0.55
+        },
+        {
+          "numero": 11,
+          "score": 0.525
+        },
+        {
+          "numero": 4,
+          "score": 0.4875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.466934+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        5,
+        7,
+        3
+      ],
+      "course_id": "2026-10-28-R1-C8",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T16:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        5,
+        3,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.015,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.94
+        },
+        {
+          "numero": 2,
+          "score": 0.925
+        },
+        {
+          "numero": 5,
+          "score": 0.9175
+        },
+        {
+          "numero": 3,
+          "score": 0.895
+        },
+        {
+          "numero": 7,
+          "score": 0.79875
+        },
+        {
+          "numero": 9,
+          "score": 0.79125
+        },
+        {
+          "numero": 6,
+          "score": 0.7775
+        },
+        {
+          "numero": 10,
+          "score": 0.755
+        },
+        {
+          "numero": 13,
+          "score": 0.686667
+        },
+        {
+          "numero": 8,
+          "score": 0.56
+        },
+        {
+          "numero": 12,
+          "score": 0.53
+        },
+        {
+          "numero": 11,
+          "score": 0.515
+        },
+        {
+          "numero": 4,
+          "score": 0.4525
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.466934+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        5,
+        3,
+        7
+      ],
+      "course_id": "2026-10-28-R1-C8",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T16:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        5,
+        3,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.02,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.92
+        },
+        {
+          "numero": 2,
+          "score": 0.9
+        },
+        {
+          "numero": 5,
+          "score": 0.89
+        },
+        {
+          "numero": 3,
+          "score": 0.86
+        },
+        {
+          "numero": 7,
+          "score": 0.815
+        },
+        {
+          "numero": 9,
+          "score": 0.805
+        },
+        {
+          "numero": 6,
+          "score": 0.77
+        },
+        {
+          "numero": 10,
+          "score": 0.74
+        },
+        {
+          "numero": 13,
+          "score": 0.693334
+        },
+        {
+          "numero": 8,
+          "score": 0.58
+        },
+        {
+          "numero": 12,
+          "score": 0.54
+        },
+        {
+          "numero": 11,
+          "score": 0.52
+        },
+        {
+          "numero": 4,
+          "score": 0.47
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.466934+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        5,
+        3,
+        7
+      ],
+      "course_id": "2026-10-28-R1-C8",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T16:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        7,
+        5,
+        9
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.03,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.88
+        },
+        {
+          "numero": 2,
+          "score": 0.85
+        },
+        {
+          "numero": 7,
+          "score": 0.8475
+        },
+        {
+          "numero": 5,
+          "score": 0.835
+        },
+        {
+          "numero": 9,
+          "score": 0.8325
+        },
+        {
+          "numero": 3,
+          "score": 0.79
+        },
+        {
+          "numero": 6,
+          "score": 0.755
+        },
+        {
+          "numero": 10,
+          "score": 0.71
+        },
+        {
+          "numero": 13,
+          "score": 0.706667
+        },
+        {
+          "numero": 8,
+          "score": 0.62
+        },
+        {
+          "numero": 12,
+          "score": 0.56
+        },
+        {
+          "numero": 11,
+          "score": 0.53
+        },
+        {
+          "numero": 4,
+          "score": 0.505
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.466934+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        7,
+        5,
+        9
+      ],
+      "course_id": "2026-10-28-R1-C8",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T16:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 1,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        1,
+        2,
+        5,
+        3,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.01,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.96
+        },
+        {
+          "numero": 2,
+          "score": 0.95
+        },
+        {
+          "numero": 5,
+          "score": 0.945
+        },
+        {
+          "numero": 3,
+          "score": 0.93
+        },
+        {
+          "numero": 6,
+          "score": 0.785
+        },
+        {
+          "numero": 7,
+          "score": 0.7825
+        },
+        {
+          "numero": 9,
+          "score": 0.7775
+        },
+        {
+          "numero": 10,
+          "score": 0.77
+        },
+        {
+          "numero": 13,
+          "score": 0.68
+        },
+        {
+          "numero": 8,
+          "score": 0.54
+        },
+        {
+          "numero": 12,
+          "score": 0.52
+        },
+        {
+          "numero": 11,
+          "score": 0.51
+        },
+        {
+          "numero": 4,
+          "score": 0.435
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.466934+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        2,
+        5,
+        3,
+        6
+      ],
+      "course_id": "2026-10-28-R1-C8",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T16:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 4,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        4,
+        3,
+        12,
+        8,
+        13
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.019643,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.725
+        },
+        {
+          "numero": 3,
+          "score": 0.705357
+        },
+        {
+          "numero": 12,
+          "score": 0.69375
+        },
+        {
+          "numero": 8,
+          "score": 0.6875
+        },
+        {
+          "numero": 13,
+          "score": 0.64375
+        },
+        {
+          "numero": 5,
+          "score": 0.6375
+        },
+        {
+          "numero": 10,
+          "score": 0.63125
+        },
+        {
+          "numero": 9,
+          "score": 0.5375
+        },
+        {
+          "numero": 11,
+          "score": 0.525
+        },
+        {
+          "numero": 2,
+          "score": 0.5125
+        },
+        {
+          "numero": 1,
+          "score": 0.390625
+        },
+        {
+          "numero": 7,
+          "score": 0.3875
+        },
+        {
+          "numero": 6,
+          "score": 0.203125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467178+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        3,
+        12,
+        8,
+        13
+      ],
+      "course_id": "2026-10-28-R3-C1",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T16:35:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 4,
+      "meilleur_place": 12,
+      "ordre_espere": [
+        4,
+        12,
+        3,
+        13,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.03875,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.755
+        },
+        {
+          "numero": 12,
+          "score": 0.71625
+        },
+        {
+          "numero": 3,
+          "score": 0.708929
+        },
+        {
+          "numero": 13,
+          "score": 0.68625
+        },
+        {
+          "numero": 8,
+          "score": 0.679167
+        },
+        {
+          "numero": 10,
+          "score": 0.67875
+        },
+        {
+          "numero": 5,
+          "score": 0.649167
+        },
+        {
+          "numero": 9,
+          "score": 0.5225
+        },
+        {
+          "numero": 11,
+          "score": 0.515
+        },
+        {
+          "numero": 2,
+          "score": 0.4675
+        },
+        {
+          "numero": 1,
+          "score": 0.384375
+        },
+        {
+          "numero": 7,
+          "score": 0.365833
+        },
+        {
+          "numero": 6,
+          "score": 0.121875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467178+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        12,
+        3,
+        13,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C1",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T16:35:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 4,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        4,
+        3,
+        12,
+        8,
+        13
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.032857,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.74
+        },
+        {
+          "numero": 3,
+          "score": 0.707143
+        },
+        {
+          "numero": 12,
+          "score": 0.705
+        },
+        {
+          "numero": 8,
+          "score": 0.683334
+        },
+        {
+          "numero": 13,
+          "score": 0.665
+        },
+        {
+          "numero": 10,
+          "score": 0.655
+        },
+        {
+          "numero": 5,
+          "score": 0.643334
+        },
+        {
+          "numero": 9,
+          "score": 0.53
+        },
+        {
+          "numero": 11,
+          "score": 0.52
+        },
+        {
+          "numero": 2,
+          "score": 0.49
+        },
+        {
+          "numero": 1,
+          "score": 0.3875
+        },
+        {
+          "numero": 7,
+          "score": 0.376667
+        },
+        {
+          "numero": 6,
+          "score": 0.1625
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467178+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        3,
+        12,
+        8,
+        13
+      ],
+      "course_id": "2026-10-28-R3-C1",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T16:35:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 4,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        4,
+        3,
+        8,
+        12,
+        5
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.006429,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.71
+        },
+        {
+          "numero": 3,
+          "score": 0.703571
+        },
+        {
+          "numero": 8,
+          "score": 0.691667
+        },
+        {
+          "numero": 12,
+          "score": 0.6825
+        },
+        {
+          "numero": 5,
+          "score": 0.631667
+        },
+        {
+          "numero": 13,
+          "score": 0.6225
+        },
+        {
+          "numero": 10,
+          "score": 0.6075
+        },
+        {
+          "numero": 9,
+          "score": 0.545
+        },
+        {
+          "numero": 2,
+          "score": 0.535
+        },
+        {
+          "numero": 11,
+          "score": 0.53
+        },
+        {
+          "numero": 7,
+          "score": 0.398333
+        },
+        {
+          "numero": 1,
+          "score": 0.39375
+        },
+        {
+          "numero": 6,
+          "score": 0.24375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467178+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        3,
+        8,
+        12,
+        5
+      ],
+      "course_id": "2026-10-28-R3-C1",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T16:35:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 4,
+      "meilleur_place": 12,
+      "ordre_espere": [
+        4,
+        12,
+        3,
+        13,
+        10
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0425,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.77
+        },
+        {
+          "numero": 12,
+          "score": 0.7275
+        },
+        {
+          "numero": 3,
+          "score": 0.710714
+        },
+        {
+          "numero": 13,
+          "score": 0.7075
+        },
+        {
+          "numero": 10,
+          "score": 0.7025
+        },
+        {
+          "numero": 8,
+          "score": 0.675
+        },
+        {
+          "numero": 5,
+          "score": 0.655
+        },
+        {
+          "numero": 9,
+          "score": 0.515
+        },
+        {
+          "numero": 11,
+          "score": 0.51
+        },
+        {
+          "numero": 2,
+          "score": 0.445
+        },
+        {
+          "numero": 1,
+          "score": 0.38125
+        },
+        {
+          "numero": 7,
+          "score": 0.355
+        },
+        {
+          "numero": 6,
+          "score": 0.08125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467178+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        12,
+        3,
+        13,
+        10
+      ],
+      "course_id": "2026-10-28-R3-C1",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T16:35:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 3,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        3,
+        8,
+        2,
+        6,
+        4
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.079018,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.796875
+        },
+        {
+          "numero": 8,
+          "score": 0.717857
+        },
+        {
+          "numero": 2,
+          "score": 0.696875
+        },
+        {
+          "numero": 6,
+          "score": 0.596875
+        },
+        {
+          "numero": 4,
+          "score": 0.5875
+        },
+        {
+          "numero": 1,
+          "score": 0.540625
+        },
+        {
+          "numero": 5,
+          "score": 0.4875
+        },
+        {
+          "numero": 10,
+          "score": 0.453125
+        },
+        {
+          "numero": 9,
+          "score": 0.36875
+        },
+        {
+          "numero": 7,
+          "score": 0.25625
+        },
+        {
+          "numero": 11,
+          "score": 0.21875
+        },
+        {
+          "numero": 12,
+          "score": 0.21875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467405+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        8,
+        2,
+        6,
+        4
+      ],
+      "course_id": "2026-10-28-R4-C1",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T16:52:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 3,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        3,
+        8,
+        2,
+        6,
+        4
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.061696,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.778125
+        },
+        {
+          "numero": 8,
+          "score": 0.716429
+        },
+        {
+          "numero": 2,
+          "score": 0.668125
+        },
+        {
+          "numero": 6,
+          "score": 0.608125
+        },
+        {
+          "numero": 4,
+          "score": 0.5525
+        },
+        {
+          "numero": 1,
+          "score": 0.474375
+        },
+        {
+          "numero": 5,
+          "score": 0.4525
+        },
+        {
+          "numero": 10,
+          "score": 0.421875
+        },
+        {
+          "numero": 9,
+          "score": 0.32125
+        },
+        {
+          "numero": 7,
+          "score": 0.25375
+        },
+        {
+          "numero": 11,
+          "score": 0.13125
+        },
+        {
+          "numero": 12,
+          "score": 0.13125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467405+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        8,
+        2,
+        6,
+        4
+      ],
+      "course_id": "2026-10-28-R4-C1",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T16:52:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 3,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        3,
+        8,
+        2,
+        6,
+        4
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.070357,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.7875
+        },
+        {
+          "numero": 8,
+          "score": 0.717143
+        },
+        {
+          "numero": 2,
+          "score": 0.6825
+        },
+        {
+          "numero": 6,
+          "score": 0.6025
+        },
+        {
+          "numero": 4,
+          "score": 0.57
+        },
+        {
+          "numero": 1,
+          "score": 0.5075
+        },
+        {
+          "numero": 5,
+          "score": 0.47
+        },
+        {
+          "numero": 10,
+          "score": 0.4375
+        },
+        {
+          "numero": 9,
+          "score": 0.345
+        },
+        {
+          "numero": 7,
+          "score": 0.255
+        },
+        {
+          "numero": 11,
+          "score": 0.175
+        },
+        {
+          "numero": 12,
+          "score": 0.175
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467405+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        8,
+        2,
+        6,
+        4
+      ],
+      "course_id": "2026-10-28-R4-C1",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T16:52:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 3,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        3,
+        8,
+        2,
+        4,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.087678,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.80625
+        },
+        {
+          "numero": 8,
+          "score": 0.718572
+        },
+        {
+          "numero": 2,
+          "score": 0.71125
+        },
+        {
+          "numero": 4,
+          "score": 0.605
+        },
+        {
+          "numero": 6,
+          "score": 0.59125
+        },
+        {
+          "numero": 1,
+          "score": 0.57375
+        },
+        {
+          "numero": 5,
+          "score": 0.505
+        },
+        {
+          "numero": 10,
+          "score": 0.46875
+        },
+        {
+          "numero": 9,
+          "score": 0.3925
+        },
+        {
+          "numero": 11,
+          "score": 0.2625
+        },
+        {
+          "numero": 12,
+          "score": 0.2625
+        },
+        {
+          "numero": 7,
+          "score": 0.2575
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467405+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        8,
+        2,
+        4,
+        6
+      ],
+      "course_id": "2026-10-28-R4-C1",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T16:52:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 3,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        3,
+        8,
+        2,
+        6,
+        4
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.053035,
+      "scores": [
+        {
+          "numero": 3,
+          "score": 0.76875
+        },
+        {
+          "numero": 8,
+          "score": 0.715715
+        },
+        {
+          "numero": 2,
+          "score": 0.65375
+        },
+        {
+          "numero": 6,
+          "score": 0.61375
+        },
+        {
+          "numero": 4,
+          "score": 0.535
+        },
+        {
+          "numero": 1,
+          "score": 0.44125
+        },
+        {
+          "numero": 5,
+          "score": 0.435
+        },
+        {
+          "numero": 10,
+          "score": 0.40625
+        },
+        {
+          "numero": 9,
+          "score": 0.2975
+        },
+        {
+          "numero": 7,
+          "score": 0.2525
+        },
+        {
+          "numero": 11,
+          "score": 0.0875
+        },
+        {
+          "numero": 12,
+          "score": 0.0875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467405+01:00",
+      "ordre_arrivee_espere": [
+        3,
+        8,
+        2,
+        6,
+        4
+      ],
+      "course_id": "2026-10-28-R4-C1",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T16:52:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C1/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 8,
+      "meilleur_place": 11,
+      "ordre_espere": [
+        8,
+        11,
+        9,
+        2,
+        5
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0375,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.925
+        },
+        {
+          "numero": 11,
+          "score": 0.8875
+        },
+        {
+          "numero": 9,
+          "score": 0.859375
+        },
+        {
+          "numero": 2,
+          "score": 0.808929
+        },
+        {
+          "numero": 5,
+          "score": 0.79375
+        },
+        {
+          "numero": 12,
+          "score": 0.75
+        },
+        {
+          "numero": 15,
+          "score": 0.746429
+        },
+        {
+          "numero": 10,
+          "score": 0.571875
+        },
+        {
+          "numero": 6,
+          "score": 0.485714
+        },
+        {
+          "numero": 13,
+          "score": 0.485714
+        },
+        {
+          "numero": 14,
+          "score": 0.4625
+        },
+        {
+          "numero": 3,
+          "score": 0.458333
+        },
+        {
+          "numero": 4,
+          "score": 0.4375
+        },
+        {
+          "numero": 7,
+          "score": 0.4375
+        },
+        {
+          "numero": 1,
+          "score": 0.359375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467597+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        11,
+        9,
+        2,
+        5
+      ],
+      "course_id": "2026-10-28-R3-C2",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:10:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 8,
+      "meilleur_place": 11,
+      "ordre_espere": [
+        8,
+        11,
+        9,
+        2,
+        15
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0225,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.955
+        },
+        {
+          "numero": 11,
+          "score": 0.9325
+        },
+        {
+          "numero": 9,
+          "score": 0.915625
+        },
+        {
+          "numero": 2,
+          "score": 0.828214
+        },
+        {
+          "numero": 15,
+          "score": 0.790714
+        },
+        {
+          "numero": 5,
+          "score": 0.77625
+        },
+        {
+          "numero": 12,
+          "score": 0.716667
+        },
+        {
+          "numero": 10,
+          "score": 0.593125
+        },
+        {
+          "numero": 6,
+          "score": 0.462857
+        },
+        {
+          "numero": 13,
+          "score": 0.462857
+        },
+        {
+          "numero": 4,
+          "score": 0.4625
+        },
+        {
+          "numero": 14,
+          "score": 0.4375
+        },
+        {
+          "numero": 7,
+          "score": 0.4225
+        },
+        {
+          "numero": 3,
+          "score": 0.408333
+        },
+        {
+          "numero": 1,
+          "score": 0.315625
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467597+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        11,
+        9,
+        2,
+        15
+      ],
+      "course_id": "2026-10-28-R3-C2",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:10:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 8,
+      "meilleur_place": 11,
+      "ordre_espere": [
+        8,
+        11,
+        9,
+        2,
+        5
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.03,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.94
+        },
+        {
+          "numero": 11,
+          "score": 0.91
+        },
+        {
+          "numero": 9,
+          "score": 0.8875
+        },
+        {
+          "numero": 2,
+          "score": 0.818572
+        },
+        {
+          "numero": 5,
+          "score": 0.785
+        },
+        {
+          "numero": 15,
+          "score": 0.768571
+        },
+        {
+          "numero": 12,
+          "score": 0.733334
+        },
+        {
+          "numero": 10,
+          "score": 0.5825
+        },
+        {
+          "numero": 6,
+          "score": 0.474286
+        },
+        {
+          "numero": 13,
+          "score": 0.474286
+        },
+        {
+          "numero": 4,
+          "score": 0.45
+        },
+        {
+          "numero": 14,
+          "score": 0.45
+        },
+        {
+          "numero": 3,
+          "score": 0.433333
+        },
+        {
+          "numero": 7,
+          "score": 0.43
+        },
+        {
+          "numero": 1,
+          "score": 0.3375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467597+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        11,
+        9,
+        2,
+        5
+      ],
+      "course_id": "2026-10-28-R3-C2",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:10:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 8,
+      "meilleur_place": 11,
+      "ordre_espere": [
+        8,
+        11,
+        9,
+        5,
+        2
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.045,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.91
+        },
+        {
+          "numero": 11,
+          "score": 0.865
+        },
+        {
+          "numero": 9,
+          "score": 0.83125
+        },
+        {
+          "numero": 5,
+          "score": 0.8025
+        },
+        {
+          "numero": 2,
+          "score": 0.799286
+        },
+        {
+          "numero": 12,
+          "score": 0.766667
+        },
+        {
+          "numero": 15,
+          "score": 0.724286
+        },
+        {
+          "numero": 10,
+          "score": 0.56125
+        },
+        {
+          "numero": 6,
+          "score": 0.497143
+        },
+        {
+          "numero": 13,
+          "score": 0.497143
+        },
+        {
+          "numero": 3,
+          "score": 0.483333
+        },
+        {
+          "numero": 14,
+          "score": 0.475
+        },
+        {
+          "numero": 7,
+          "score": 0.445
+        },
+        {
+          "numero": 4,
+          "score": 0.425
+        },
+        {
+          "numero": 1,
+          "score": 0.38125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467597+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        11,
+        9,
+        5,
+        2
+      ],
+      "course_id": "2026-10-28-R3-C2",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:10:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 8,
+      "meilleur_place": 11,
+      "ordre_espere": [
+        8,
+        11,
+        9,
+        2,
+        15
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.015,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.97
+        },
+        {
+          "numero": 11,
+          "score": 0.955
+        },
+        {
+          "numero": 9,
+          "score": 0.94375
+        },
+        {
+          "numero": 2,
+          "score": 0.837857
+        },
+        {
+          "numero": 15,
+          "score": 0.812857
+        },
+        {
+          "numero": 5,
+          "score": 0.7675
+        },
+        {
+          "numero": 12,
+          "score": 0.7
+        },
+        {
+          "numero": 10,
+          "score": 0.60375
+        },
+        {
+          "numero": 4,
+          "score": 0.475
+        },
+        {
+          "numero": 6,
+          "score": 0.451428
+        },
+        {
+          "numero": 13,
+          "score": 0.451428
+        },
+        {
+          "numero": 14,
+          "score": 0.425
+        },
+        {
+          "numero": 7,
+          "score": 0.415
+        },
+        {
+          "numero": 3,
+          "score": 0.383333
+        },
+        {
+          "numero": 1,
+          "score": 0.29375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467597+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        11,
+        9,
+        2,
+        15
+      ],
+      "course_id": "2026-10-28-R3-C2",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:10:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 8,
+      "meilleur_place": 4,
+      "ordre_espere": [
+        8,
+        4,
+        12,
+        1,
+        11
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.10625,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.69375
+        },
+        {
+          "numero": 4,
+          "score": 0.5875
+        },
+        {
+          "numero": 12,
+          "score": 0.5875
+        },
+        {
+          "numero": 1,
+          "score": 0.460714
+        },
+        {
+          "numero": 11,
+          "score": 0.453125
+        },
+        {
+          "numero": 5,
+          "score": 0.45
+        },
+        {
+          "numero": 3,
+          "score": 0.4375
+        },
+        {
+          "numero": 2,
+          "score": 0.416667
+        },
+        {
+          "numero": 10,
+          "score": 0.415625
+        },
+        {
+          "numero": 6,
+          "score": 0.375
+        },
+        {
+          "numero": 13,
+          "score": 0.34375
+        },
+        {
+          "numero": 9,
+          "score": 0.31875
+        },
+        {
+          "numero": 14,
+          "score": 0.1875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467810+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        4,
+        12,
+        1,
+        11
+      ],
+      "course_id": "2026-10-28-R4-C2",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T17:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 8,
+      "meilleur_place": 4,
+      "ordre_espere": [
+        8,
+        4,
+        12,
+        1,
+        11
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.16375,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.71625
+        },
+        {
+          "numero": 4,
+          "score": 0.5525
+        },
+        {
+          "numero": 12,
+          "score": 0.5525
+        },
+        {
+          "numero": 1,
+          "score": 0.447857
+        },
+        {
+          "numero": 11,
+          "score": 0.421875
+        },
+        {
+          "numero": 5,
+          "score": 0.403333
+        },
+        {
+          "numero": 10,
+          "score": 0.399375
+        },
+        {
+          "numero": 3,
+          "score": 0.395833
+        },
+        {
+          "numero": 2,
+          "score": 0.383333
+        },
+        {
+          "numero": 13,
+          "score": 0.30625
+        },
+        {
+          "numero": 6,
+          "score": 0.291667
+        },
+        {
+          "numero": 9,
+          "score": 0.29125
+        },
+        {
+          "numero": 14,
+          "score": 0.1125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467810+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        4,
+        12,
+        1,
+        11
+      ],
+      "course_id": "2026-10-28-R4-C2",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T17:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 8,
+      "meilleur_place": 4,
+      "ordre_espere": [
+        8,
+        4,
+        12,
+        1,
+        11
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.135,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.705
+        },
+        {
+          "numero": 4,
+          "score": 0.57
+        },
+        {
+          "numero": 12,
+          "score": 0.57
+        },
+        {
+          "numero": 1,
+          "score": 0.454286
+        },
+        {
+          "numero": 11,
+          "score": 0.4375
+        },
+        {
+          "numero": 5,
+          "score": 0.426667
+        },
+        {
+          "numero": 3,
+          "score": 0.416666
+        },
+        {
+          "numero": 10,
+          "score": 0.4075
+        },
+        {
+          "numero": 2,
+          "score": 0.4
+        },
+        {
+          "numero": 6,
+          "score": 0.333334
+        },
+        {
+          "numero": 13,
+          "score": 0.325
+        },
+        {
+          "numero": 9,
+          "score": 0.305
+        },
+        {
+          "numero": 14,
+          "score": 0.15
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467810+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        4,
+        12,
+        1,
+        11
+      ],
+      "course_id": "2026-10-28-R4-C2",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T17:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 8,
+      "meilleur_place": 4,
+      "ordre_espere": [
+        8,
+        4,
+        12,
+        5,
+        11
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0775,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.6825
+        },
+        {
+          "numero": 4,
+          "score": 0.605
+        },
+        {
+          "numero": 12,
+          "score": 0.605
+        },
+        {
+          "numero": 5,
+          "score": 0.473333
+        },
+        {
+          "numero": 11,
+          "score": 0.46875
+        },
+        {
+          "numero": 1,
+          "score": 0.467143
+        },
+        {
+          "numero": 3,
+          "score": 0.458333
+        },
+        {
+          "numero": 2,
+          "score": 0.433334
+        },
+        {
+          "numero": 10,
+          "score": 0.42375
+        },
+        {
+          "numero": 6,
+          "score": 0.416667
+        },
+        {
+          "numero": 13,
+          "score": 0.3625
+        },
+        {
+          "numero": 9,
+          "score": 0.3325
+        },
+        {
+          "numero": 14,
+          "score": 0.225
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467810+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        4,
+        12,
+        5,
+        11
+      ],
+      "course_id": "2026-10-28-R4-C2",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T17:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 8,
+      "meilleur_place": 4,
+      "ordre_espere": [
+        8,
+        4,
+        12,
+        1,
+        11
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.1925,
+      "scores": [
+        {
+          "numero": 8,
+          "score": 0.7275
+        },
+        {
+          "numero": 4,
+          "score": 0.535
+        },
+        {
+          "numero": 12,
+          "score": 0.535
+        },
+        {
+          "numero": 1,
+          "score": 0.441428
+        },
+        {
+          "numero": 11,
+          "score": 0.40625
+        },
+        {
+          "numero": 10,
+          "score": 0.39125
+        },
+        {
+          "numero": 5,
+          "score": 0.38
+        },
+        {
+          "numero": 3,
+          "score": 0.375
+        },
+        {
+          "numero": 2,
+          "score": 0.366667
+        },
+        {
+          "numero": 13,
+          "score": 0.2875
+        },
+        {
+          "numero": 9,
+          "score": 0.2775
+        },
+        {
+          "numero": 6,
+          "score": 0.25
+        },
+        {
+          "numero": 14,
+          "score": 0.075
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.467810+01:00",
+      "ordre_arrivee_espere": [
+        8,
+        4,
+        12,
+        1,
+        11
+      ],
+      "course_id": "2026-10-28-R4-C2",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T17:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 12,
+      "meilleur_place": 13,
+      "ordre_espere": [
+        12,
+        13,
+        5,
+        1,
+        11
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0,
+      "scores": [
+        {
+          "numero": 12,
+          "score": 0.9125
+        },
+        {
+          "numero": 13,
+          "score": 0.9125
+        },
+        {
+          "numero": 5,
+          "score": 0.9
+        },
+        {
+          "numero": 1,
+          "score": 0.85625
+        },
+        {
+          "numero": 11,
+          "score": 0.853125
+        },
+        {
+          "numero": 2,
+          "score": 0.85
+        },
+        {
+          "numero": 7,
+          "score": 0.815625
+        },
+        {
+          "numero": 10,
+          "score": 0.692857
+        },
+        {
+          "numero": 3,
+          "score": 0.680357
+        },
+        {
+          "numero": 9,
+          "score": 0.675
+        },
+        {
+          "numero": 6,
+          "score": 0.671875
+        },
+        {
+          "numero": 8,
+          "score": 0.621875
+        },
+        {
+          "numero": 4,
+          "score": 0.510714
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468009+01:00",
+      "ordre_arrivee_espere": [
+        12,
+        13,
+        5,
+        1,
+        11
+      ],
+      "course_id": "2026-10-28-R3-C3",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:45:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 12,
+      "meilleur_place": 13,
+      "ordre_espere": [
+        12,
+        13,
+        5,
+        11,
+        2
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0,
+      "scores": [
+        {
+          "numero": 12,
+          "score": 0.9475
+        },
+        {
+          "numero": 13,
+          "score": 0.9475
+        },
+        {
+          "numero": 5,
+          "score": 0.94
+        },
+        {
+          "numero": 11,
+          "score": 0.861875
+        },
+        {
+          "numero": 2,
+          "score": 0.843333
+        },
+        {
+          "numero": 7,
+          "score": 0.839375
+        },
+        {
+          "numero": 1,
+          "score": 0.81375
+        },
+        {
+          "numero": 10,
+          "score": 0.701429
+        },
+        {
+          "numero": 3,
+          "score": 0.693929
+        },
+        {
+          "numero": 9,
+          "score": 0.671667
+        },
+        {
+          "numero": 6,
+          "score": 0.653125
+        },
+        {
+          "numero": 8,
+          "score": 0.623125
+        },
+        {
+          "numero": 4,
+          "score": 0.477857
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468009+01:00",
+      "ordre_arrivee_espere": [
+        12,
+        13,
+        5,
+        11,
+        2
+      ],
+      "course_id": "2026-10-28-R3-C3",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:45:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 12,
+      "meilleur_place": 13,
+      "ordre_espere": [
+        12,
+        13,
+        5,
+        11,
+        2
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0,
+      "scores": [
+        {
+          "numero": 12,
+          "score": 0.93
+        },
+        {
+          "numero": 13,
+          "score": 0.93
+        },
+        {
+          "numero": 5,
+          "score": 0.92
+        },
+        {
+          "numero": 11,
+          "score": 0.8575
+        },
+        {
+          "numero": 2,
+          "score": 0.846666
+        },
+        {
+          "numero": 1,
+          "score": 0.835
+        },
+        {
+          "numero": 7,
+          "score": 0.8275
+        },
+        {
+          "numero": 10,
+          "score": 0.697143
+        },
+        {
+          "numero": 3,
+          "score": 0.687143
+        },
+        {
+          "numero": 9,
+          "score": 0.673334
+        },
+        {
+          "numero": 6,
+          "score": 0.6625
+        },
+        {
+          "numero": 8,
+          "score": 0.6225
+        },
+        {
+          "numero": 4,
+          "score": 0.494286
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468009+01:00",
+      "ordre_arrivee_espere": [
+        12,
+        13,
+        5,
+        11,
+        2
+      ],
+      "course_id": "2026-10-28-R3-C3",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:45:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 12,
+      "meilleur_place": 13,
+      "ordre_espere": [
+        12,
+        13,
+        5,
+        1,
+        2
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0,
+      "scores": [
+        {
+          "numero": 12,
+          "score": 0.895
+        },
+        {
+          "numero": 13,
+          "score": 0.895
+        },
+        {
+          "numero": 5,
+          "score": 0.88
+        },
+        {
+          "numero": 1,
+          "score": 0.8775
+        },
+        {
+          "numero": 2,
+          "score": 0.853333
+        },
+        {
+          "numero": 11,
+          "score": 0.84875
+        },
+        {
+          "numero": 7,
+          "score": 0.80375
+        },
+        {
+          "numero": 10,
+          "score": 0.688572
+        },
+        {
+          "numero": 6,
+          "score": 0.68125
+        },
+        {
+          "numero": 9,
+          "score": 0.676667
+        },
+        {
+          "numero": 3,
+          "score": 0.673571
+        },
+        {
+          "numero": 8,
+          "score": 0.62125
+        },
+        {
+          "numero": 4,
+          "score": 0.527143
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468009+01:00",
+      "ordre_arrivee_espere": [
+        12,
+        13,
+        5,
+        1,
+        2
+      ],
+      "course_id": "2026-10-28-R3-C3",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:45:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 12,
+      "meilleur_place": 13,
+      "ordre_espere": [
+        12,
+        13,
+        5,
+        11,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0,
+      "scores": [
+        {
+          "numero": 12,
+          "score": 0.965
+        },
+        {
+          "numero": 13,
+          "score": 0.965
+        },
+        {
+          "numero": 5,
+          "score": 0.96
+        },
+        {
+          "numero": 11,
+          "score": 0.86625
+        },
+        {
+          "numero": 7,
+          "score": 0.85125
+        },
+        {
+          "numero": 2,
+          "score": 0.84
+        },
+        {
+          "numero": 1,
+          "score": 0.7925
+        },
+        {
+          "numero": 10,
+          "score": 0.705715
+        },
+        {
+          "numero": 3,
+          "score": 0.700715
+        },
+        {
+          "numero": 9,
+          "score": 0.67
+        },
+        {
+          "numero": 6,
+          "score": 0.64375
+        },
+        {
+          "numero": 8,
+          "score": 0.62375
+        },
+        {
+          "numero": 4,
+          "score": 0.461428
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468009+01:00",
+      "ordre_arrivee_espere": [
+        12,
+        13,
+        5,
+        11,
+        7
+      ],
+      "course_id": "2026-10-28-R3-C3",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:45:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 4,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        4,
+        5,
+        8,
+        6,
+        2
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.15,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.78125
+        },
+        {
+          "numero": 5,
+          "score": 0.63125
+        },
+        {
+          "numero": 8,
+          "score": 0.6125
+        },
+        {
+          "numero": 6,
+          "score": 0.525
+        },
+        {
+          "numero": 2,
+          "score": 0.5125
+        },
+        {
+          "numero": 1,
+          "score": 0.510714
+        },
+        {
+          "numero": 13,
+          "score": 0.5
+        },
+        {
+          "numero": 7,
+          "score": 0.395833
+        },
+        {
+          "numero": 12,
+          "score": 0.3625
+        },
+        {
+          "numero": 10,
+          "score": 0.35
+        },
+        {
+          "numero": 14,
+          "score": 0.25
+        },
+        {
+          "numero": 3,
+          "score": 0.225
+        },
+        {
+          "numero": 9,
+          "score": 0.2125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468204+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        5,
+        8,
+        6,
+        2
+      ],
+      "course_id": "2026-10-28-R4-C3",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:02:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 4,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        4,
+        5,
+        8,
+        6,
+        13
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.09,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.76875
+        },
+        {
+          "numero": 5,
+          "score": 0.67875
+        },
+        {
+          "numero": 8,
+          "score": 0.5675
+        },
+        {
+          "numero": 6,
+          "score": 0.515
+        },
+        {
+          "numero": 13,
+          "score": 0.5
+        },
+        {
+          "numero": 1,
+          "score": 0.477857
+        },
+        {
+          "numero": 2,
+          "score": 0.4675
+        },
+        {
+          "numero": 7,
+          "score": 0.370833
+        },
+        {
+          "numero": 12,
+          "score": 0.284167
+        },
+        {
+          "numero": 10,
+          "score": 0.276667
+        },
+        {
+          "numero": 14,
+          "score": 0.15
+        },
+        {
+          "numero": 3,
+          "score": 0.135
+        },
+        {
+          "numero": 9,
+          "score": 0.1275
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468204+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        5,
+        8,
+        6,
+        13
+      ],
+      "course_id": "2026-10-28-R4-C3",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:02:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 4,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        4,
+        5,
+        8,
+        6,
+        13
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.12,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.775
+        },
+        {
+          "numero": 5,
+          "score": 0.655
+        },
+        {
+          "numero": 8,
+          "score": 0.59
+        },
+        {
+          "numero": 6,
+          "score": 0.52
+        },
+        {
+          "numero": 13,
+          "score": 0.5
+        },
+        {
+          "numero": 1,
+          "score": 0.494286
+        },
+        {
+          "numero": 2,
+          "score": 0.49
+        },
+        {
+          "numero": 7,
+          "score": 0.383333
+        },
+        {
+          "numero": 12,
+          "score": 0.323333
+        },
+        {
+          "numero": 10,
+          "score": 0.313334
+        },
+        {
+          "numero": 14,
+          "score": 0.2
+        },
+        {
+          "numero": 3,
+          "score": 0.18
+        },
+        {
+          "numero": 9,
+          "score": 0.17
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468204+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        5,
+        8,
+        6,
+        13
+      ],
+      "course_id": "2026-10-28-R4-C3",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:02:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 4,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        4,
+        8,
+        5,
+        2,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.1525,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.7875
+        },
+        {
+          "numero": 8,
+          "score": 0.635
+        },
+        {
+          "numero": 5,
+          "score": 0.6075
+        },
+        {
+          "numero": 2,
+          "score": 0.535
+        },
+        {
+          "numero": 6,
+          "score": 0.53
+        },
+        {
+          "numero": 1,
+          "score": 0.527143
+        },
+        {
+          "numero": 13,
+          "score": 0.5
+        },
+        {
+          "numero": 7,
+          "score": 0.408333
+        },
+        {
+          "numero": 12,
+          "score": 0.401667
+        },
+        {
+          "numero": 10,
+          "score": 0.386667
+        },
+        {
+          "numero": 14,
+          "score": 0.3
+        },
+        {
+          "numero": 3,
+          "score": 0.27
+        },
+        {
+          "numero": 9,
+          "score": 0.255
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468204+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        8,
+        5,
+        2,
+        6
+      ],
+      "course_id": "2026-10-28-R4-C3",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:02:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 4,
+      "meilleur_place": 5,
+      "ordre_espere": [
+        4,
+        5,
+        8,
+        6,
+        13
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.06,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.7625
+        },
+        {
+          "numero": 5,
+          "score": 0.7025
+        },
+        {
+          "numero": 8,
+          "score": 0.545
+        },
+        {
+          "numero": 6,
+          "score": 0.51
+        },
+        {
+          "numero": 13,
+          "score": 0.5
+        },
+        {
+          "numero": 1,
+          "score": 0.461428
+        },
+        {
+          "numero": 2,
+          "score": 0.445
+        },
+        {
+          "numero": 7,
+          "score": 0.358333
+        },
+        {
+          "numero": 12,
+          "score": 0.245
+        },
+        {
+          "numero": 10,
+          "score": 0.24
+        },
+        {
+          "numero": 14,
+          "score": 0.1
+        },
+        {
+          "numero": 3,
+          "score": 0.09
+        },
+        {
+          "numero": 9,
+          "score": 0.085
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468204+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        5,
+        8,
+        6,
+        13
+      ],
+      "course_id": "2026-10-28-R4-C3",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:02:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 4,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        4,
+        3,
+        7,
+        9,
+        10
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.19375,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.9375
+        },
+        {
+          "numero": 3,
+          "score": 0.74375
+        },
+        {
+          "numero": 7,
+          "score": 0.7
+        },
+        {
+          "numero": 9,
+          "score": 0.7
+        },
+        {
+          "numero": 10,
+          "score": 0.692857
+        },
+        {
+          "numero": 11,
+          "score": 0.684375
+        },
+        {
+          "numero": 8,
+          "score": 0.65625
+        },
+        {
+          "numero": 5,
+          "score": 0.6
+        },
+        {
+          "numero": 12,
+          "score": 0.560714
+        },
+        {
+          "numero": 13,
+          "score": 0.45
+        },
+        {
+          "numero": 1,
+          "score": 0.425
+        },
+        {
+          "numero": 6,
+          "score": 0.3625
+        },
+        {
+          "numero": 2,
+          "score": 0.321875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468461+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        3,
+        7,
+        9,
+        10
+      ],
+      "course_id": "2026-10-28-R3-C4",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:20:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 4,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        4,
+        3,
+        9,
+        10,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.21625,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.9625
+        },
+        {
+          "numero": 3,
+          "score": 0.74625
+        },
+        {
+          "numero": 9,
+          "score": 0.74
+        },
+        {
+          "numero": 10,
+          "score": 0.701429
+        },
+        {
+          "numero": 8,
+          "score": 0.69375
+        },
+        {
+          "numero": 7,
+          "score": 0.686667
+        },
+        {
+          "numero": 11,
+          "score": 0.660625
+        },
+        {
+          "numero": 5,
+          "score": 0.56
+        },
+        {
+          "numero": 12,
+          "score": 0.507857
+        },
+        {
+          "numero": 13,
+          "score": 0.47
+        },
+        {
+          "numero": 1,
+          "score": 0.388333
+        },
+        {
+          "numero": 6,
+          "score": 0.2975
+        },
+        {
+          "numero": 2,
+          "score": 0.243125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468461+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        3,
+        9,
+        10,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C4",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:20:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 4,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        4,
+        3,
+        9,
+        10,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.205,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.95
+        },
+        {
+          "numero": 3,
+          "score": 0.745
+        },
+        {
+          "numero": 9,
+          "score": 0.72
+        },
+        {
+          "numero": 10,
+          "score": 0.697143
+        },
+        {
+          "numero": 7,
+          "score": 0.693334
+        },
+        {
+          "numero": 8,
+          "score": 0.675
+        },
+        {
+          "numero": 11,
+          "score": 0.6725
+        },
+        {
+          "numero": 5,
+          "score": 0.58
+        },
+        {
+          "numero": 12,
+          "score": 0.534285
+        },
+        {
+          "numero": 13,
+          "score": 0.46
+        },
+        {
+          "numero": 1,
+          "score": 0.406666
+        },
+        {
+          "numero": 6,
+          "score": 0.33
+        },
+        {
+          "numero": 2,
+          "score": 0.2825
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468461+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        3,
+        9,
+        10,
+        7
+      ],
+      "course_id": "2026-10-28-R3-C4",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:20:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 4,
+      "meilleur_place": 3,
+      "ordre_espere": [
+        4,
+        3,
+        7,
+        11,
+        10
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.1825,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.925
+        },
+        {
+          "numero": 3,
+          "score": 0.7425
+        },
+        {
+          "numero": 7,
+          "score": 0.706667
+        },
+        {
+          "numero": 11,
+          "score": 0.69625
+        },
+        {
+          "numero": 10,
+          "score": 0.688572
+        },
+        {
+          "numero": 9,
+          "score": 0.68
+        },
+        {
+          "numero": 8,
+          "score": 0.6375
+        },
+        {
+          "numero": 5,
+          "score": 0.62
+        },
+        {
+          "numero": 12,
+          "score": 0.587143
+        },
+        {
+          "numero": 1,
+          "score": 0.443333
+        },
+        {
+          "numero": 13,
+          "score": 0.44
+        },
+        {
+          "numero": 6,
+          "score": 0.395
+        },
+        {
+          "numero": 2,
+          "score": 0.36125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468461+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        3,
+        7,
+        11,
+        10
+      ],
+      "course_id": "2026-10-28-R3-C4",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:20:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 4,
+      "meilleur_place": 9,
+      "ordre_espere": [
+        4,
+        9,
+        3,
+        8,
+        10
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.215,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.975
+        },
+        {
+          "numero": 9,
+          "score": 0.76
+        },
+        {
+          "numero": 3,
+          "score": 0.7475
+        },
+        {
+          "numero": 8,
+          "score": 0.7125
+        },
+        {
+          "numero": 10,
+          "score": 0.705715
+        },
+        {
+          "numero": 7,
+          "score": 0.68
+        },
+        {
+          "numero": 11,
+          "score": 0.64875
+        },
+        {
+          "numero": 5,
+          "score": 0.54
+        },
+        {
+          "numero": 12,
+          "score": 0.481428
+        },
+        {
+          "numero": 13,
+          "score": 0.48
+        },
+        {
+          "numero": 1,
+          "score": 0.37
+        },
+        {
+          "numero": 6,
+          "score": 0.265
+        },
+        {
+          "numero": 2,
+          "score": 0.20375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468461+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        9,
+        3,
+        8,
+        10
+      ],
+      "course_id": "2026-10-28-R3-C4",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:20:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 1,
+      "meilleur_place": 11,
+      "ordre_espere": [
+        1,
+        11,
+        8,
+        5,
+        2
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.083929,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.821429
+        },
+        {
+          "numero": 11,
+          "score": 0.7375
+        },
+        {
+          "numero": 8,
+          "score": 0.709375
+        },
+        {
+          "numero": 5,
+          "score": 0.65625
+        },
+        {
+          "numero": 2,
+          "score": 0.6375
+        },
+        {
+          "numero": 10,
+          "score": 0.6
+        },
+        {
+          "numero": 4,
+          "score": 0.592857
+        },
+        {
+          "numero": 9,
+          "score": 0.5875
+        },
+        {
+          "numero": 7,
+          "score": 0.559375
+        },
+        {
+          "numero": 3,
+          "score": 0.5375
+        },
+        {
+          "numero": 6,
+          "score": 0.469643
+        },
+        {
+          "numero": 12,
+          "score": 0.35
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468679+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        11,
+        8,
+        5,
+        2
+      ],
+      "course_id": "2026-10-28-R4-C4",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:37:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 1,
+      "meilleur_place": 11,
+      "ordre_espere": [
+        1,
+        11,
+        5,
+        8,
+        4
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.073214,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.835714
+        },
+        {
+          "numero": 11,
+          "score": 0.7625
+        },
+        {
+          "numero": 5,
+          "score": 0.69375
+        },
+        {
+          "numero": 8,
+          "score": 0.675625
+        },
+        {
+          "numero": 4,
+          "score": 0.641429
+        },
+        {
+          "numero": 2,
+          "score": 0.6225
+        },
+        {
+          "numero": 10,
+          "score": 0.6
+        },
+        {
+          "numero": 7,
+          "score": 0.585625
+        },
+        {
+          "numero": 9,
+          "score": 0.5525
+        },
+        {
+          "numero": 3,
+          "score": 0.5225
+        },
+        {
+          "numero": 6,
+          "score": 0.396071
+        },
+        {
+          "numero": 12,
+          "score": 0.343333
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468679+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        11,
+        5,
+        8,
+        4
+      ],
+      "course_id": "2026-10-28-R4-C4",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:37:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 1,
+      "meilleur_place": 11,
+      "ordre_espere": [
+        1,
+        11,
+        8,
+        5,
+        2
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.078572,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.828572
+        },
+        {
+          "numero": 11,
+          "score": 0.75
+        },
+        {
+          "numero": 8,
+          "score": 0.6925
+        },
+        {
+          "numero": 5,
+          "score": 0.675
+        },
+        {
+          "numero": 2,
+          "score": 0.63
+        },
+        {
+          "numero": 4,
+          "score": 0.617143
+        },
+        {
+          "numero": 10,
+          "score": 0.6
+        },
+        {
+          "numero": 7,
+          "score": 0.5725
+        },
+        {
+          "numero": 9,
+          "score": 0.57
+        },
+        {
+          "numero": 3,
+          "score": 0.53
+        },
+        {
+          "numero": 6,
+          "score": 0.432857
+        },
+        {
+          "numero": 12,
+          "score": 0.346666
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468679+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        11,
+        8,
+        5,
+        2
+      ],
+      "course_id": "2026-10-28-R4-C4",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:37:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 1,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        1,
+        8,
+        11,
+        2,
+        5
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.088036,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.814286
+        },
+        {
+          "numero": 8,
+          "score": 0.72625
+        },
+        {
+          "numero": 11,
+          "score": 0.725
+        },
+        {
+          "numero": 2,
+          "score": 0.645
+        },
+        {
+          "numero": 5,
+          "score": 0.6375
+        },
+        {
+          "numero": 9,
+          "score": 0.605
+        },
+        {
+          "numero": 10,
+          "score": 0.6
+        },
+        {
+          "numero": 4,
+          "score": 0.568572
+        },
+        {
+          "numero": 7,
+          "score": 0.54625
+        },
+        {
+          "numero": 3,
+          "score": 0.545
+        },
+        {
+          "numero": 6,
+          "score": 0.506428
+        },
+        {
+          "numero": 12,
+          "score": 0.353333
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468679+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        8,
+        11,
+        2,
+        5
+      ],
+      "course_id": "2026-10-28-R4-C4",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:37:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 1,
+      "meilleur_place": 11,
+      "ordre_espere": [
+        1,
+        11,
+        5,
+        4,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.067857,
+      "scores": [
+        {
+          "numero": 1,
+          "score": 0.842857
+        },
+        {
+          "numero": 11,
+          "score": 0.775
+        },
+        {
+          "numero": 5,
+          "score": 0.7125
+        },
+        {
+          "numero": 4,
+          "score": 0.665714
+        },
+        {
+          "numero": 8,
+          "score": 0.65875
+        },
+        {
+          "numero": 2,
+          "score": 0.615
+        },
+        {
+          "numero": 10,
+          "score": 0.6
+        },
+        {
+          "numero": 7,
+          "score": 0.59875
+        },
+        {
+          "numero": 9,
+          "score": 0.535
+        },
+        {
+          "numero": 3,
+          "score": 0.515
+        },
+        {
+          "numero": 6,
+          "score": 0.359286
+        },
+        {
+          "numero": 12,
+          "score": 0.34
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468679+01:00",
+      "ordre_arrivee_espere": [
+        1,
+        11,
+        5,
+        4,
+        8
+      ],
+      "course_id": "2026-10-28-R4-C4",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T18:37:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 9,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        9,
+        2,
+        4,
+        8,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.018304,
+      "scores": [
+        {
+          "numero": 9,
+          "score": 0.758929
+        },
+        {
+          "numero": 2,
+          "score": 0.740625
+        },
+        {
+          "numero": 4,
+          "score": 0.70625
+        },
+        {
+          "numero": 8,
+          "score": 0.705357
+        },
+        {
+          "numero": 3,
+          "score": 0.651786
+        },
+        {
+          "numero": 1,
+          "score": 0.65
+        },
+        {
+          "numero": 5,
+          "score": 0.584375
+        },
+        {
+          "numero": 6,
+          "score": 0.575
+        },
+        {
+          "numero": 7,
+          "score": 0.571875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468869+01:00",
+      "ordre_arrivee_espere": [
+        9,
+        2,
+        4,
+        8,
+        3
+      ],
+      "course_id": "2026-10-28-R3-C5",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:55:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 9,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        9,
+        2,
+        4,
+        8,
+        1
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.003839,
+      "scores": [
+        {
+          "numero": 9,
+          "score": 0.798214
+        },
+        {
+          "numero": 2,
+          "score": 0.794375
+        },
+        {
+          "numero": 4,
+          "score": 0.72375
+        },
+        {
+          "numero": 8,
+          "score": 0.708929
+        },
+        {
+          "numero": 1,
+          "score": 0.656667
+        },
+        {
+          "numero": 3,
+          "score": 0.619643
+        },
+        {
+          "numero": 6,
+          "score": 0.611667
+        },
+        {
+          "numero": 5,
+          "score": 0.600625
+        },
+        {
+          "numero": 7,
+          "score": 0.593125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468869+01:00",
+      "ordre_arrivee_espere": [
+        9,
+        2,
+        4,
+        8,
+        1
+      ],
+      "course_id": "2026-10-28-R3-C5",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:55:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 9,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        9,
+        2,
+        4,
+        8,
+        1
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.011071,
+      "scores": [
+        {
+          "numero": 9,
+          "score": 0.778571
+        },
+        {
+          "numero": 2,
+          "score": 0.7675
+        },
+        {
+          "numero": 4,
+          "score": 0.715
+        },
+        {
+          "numero": 8,
+          "score": 0.707143
+        },
+        {
+          "numero": 1,
+          "score": 0.653334
+        },
+        {
+          "numero": 3,
+          "score": 0.635714
+        },
+        {
+          "numero": 6,
+          "score": 0.593333
+        },
+        {
+          "numero": 5,
+          "score": 0.5925
+        },
+        {
+          "numero": 7,
+          "score": 0.5825
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468869+01:00",
+      "ordre_arrivee_espere": [
+        9,
+        2,
+        4,
+        8,
+        1
+      ],
+      "course_id": "2026-10-28-R3-C5",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:55:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 9,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        9,
+        2,
+        8,
+        4,
+        3
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.025536,
+      "scores": [
+        {
+          "numero": 9,
+          "score": 0.739286
+        },
+        {
+          "numero": 2,
+          "score": 0.71375
+        },
+        {
+          "numero": 8,
+          "score": 0.703571
+        },
+        {
+          "numero": 4,
+          "score": 0.6975
+        },
+        {
+          "numero": 3,
+          "score": 0.667857
+        },
+        {
+          "numero": 1,
+          "score": 0.646667
+        },
+        {
+          "numero": 5,
+          "score": 0.57625
+        },
+        {
+          "numero": 7,
+          "score": 0.56125
+        },
+        {
+          "numero": 6,
+          "score": 0.556667
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468869+01:00",
+      "ordre_arrivee_espere": [
+        9,
+        2,
+        8,
+        4,
+        3
+      ],
+      "course_id": "2026-10-28-R3-C5",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:55:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 2,
+      "meilleur_place": 9,
+      "ordre_espere": [
+        2,
+        9,
+        4,
+        8,
+        1
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.003393,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.82125
+        },
+        {
+          "numero": 9,
+          "score": 0.817857
+        },
+        {
+          "numero": 4,
+          "score": 0.7325
+        },
+        {
+          "numero": 8,
+          "score": 0.710714
+        },
+        {
+          "numero": 1,
+          "score": 0.66
+        },
+        {
+          "numero": 6,
+          "score": 0.63
+        },
+        {
+          "numero": 5,
+          "score": 0.60875
+        },
+        {
+          "numero": 7,
+          "score": 0.60375
+        },
+        {
+          "numero": 3,
+          "score": 0.603572
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.468869+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        9,
+        4,
+        8,
+        1
+      ],
+      "course_id": "2026-10-28-R3-C5",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T18:55:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 7,
+      "meilleur_place": 6,
+      "ordre_espere": [
+        7,
+        6,
+        4,
+        5,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0125,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.76875
+        },
+        {
+          "numero": 6,
+          "score": 0.75625
+        },
+        {
+          "numero": 4,
+          "score": 0.65
+        },
+        {
+          "numero": 5,
+          "score": 0.605357
+        },
+        {
+          "numero": 8,
+          "score": 0.575
+        },
+        {
+          "numero": 3,
+          "score": 0.525
+        },
+        {
+          "numero": 1,
+          "score": 0.475
+        },
+        {
+          "numero": 9,
+          "score": 0.45
+        },
+        {
+          "numero": 2,
+          "score": 0.4
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469059+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        6,
+        4,
+        5,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C6",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 7,
+      "meilleur_place": 6,
+      "ordre_espere": [
+        7,
+        6,
+        4,
+        5,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0075,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.76125
+        },
+        {
+          "numero": 6,
+          "score": 0.75375
+        },
+        {
+          "numero": 4,
+          "score": 0.656667
+        },
+        {
+          "numero": 5,
+          "score": 0.648929
+        },
+        {
+          "numero": 8,
+          "score": 0.545
+        },
+        {
+          "numero": 3,
+          "score": 0.515
+        },
+        {
+          "numero": 9,
+          "score": 0.47
+        },
+        {
+          "numero": 1,
+          "score": 0.445
+        },
+        {
+          "numero": 2,
+          "score": 0.32
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469059+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        6,
+        4,
+        5,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C6",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 7,
+      "meilleur_place": 6,
+      "ordre_espere": [
+        7,
+        6,
+        4,
+        5,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.01,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.765
+        },
+        {
+          "numero": 6,
+          "score": 0.755
+        },
+        {
+          "numero": 4,
+          "score": 0.653334
+        },
+        {
+          "numero": 5,
+          "score": 0.627143
+        },
+        {
+          "numero": 8,
+          "score": 0.56
+        },
+        {
+          "numero": 3,
+          "score": 0.52
+        },
+        {
+          "numero": 1,
+          "score": 0.46
+        },
+        {
+          "numero": 9,
+          "score": 0.46
+        },
+        {
+          "numero": 2,
+          "score": 0.36
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469059+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        6,
+        4,
+        5,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C6",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 7,
+      "meilleur_place": 6,
+      "ordre_espere": [
+        7,
+        6,
+        4,
+        8,
+        5
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.015,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.7725
+        },
+        {
+          "numero": 6,
+          "score": 0.7575
+        },
+        {
+          "numero": 4,
+          "score": 0.646667
+        },
+        {
+          "numero": 8,
+          "score": 0.59
+        },
+        {
+          "numero": 5,
+          "score": 0.583572
+        },
+        {
+          "numero": 3,
+          "score": 0.53
+        },
+        {
+          "numero": 1,
+          "score": 0.49
+        },
+        {
+          "numero": 2,
+          "score": 0.44
+        },
+        {
+          "numero": 9,
+          "score": 0.44
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469059+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        6,
+        4,
+        8,
+        5
+      ],
+      "course_id": "2026-10-28-R3-C6",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 7,
+      "meilleur_place": 6,
+      "ordre_espere": [
+        7,
+        6,
+        5,
+        4,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.005,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.7575
+        },
+        {
+          "numero": 6,
+          "score": 0.7525
+        },
+        {
+          "numero": 5,
+          "score": 0.670714
+        },
+        {
+          "numero": 4,
+          "score": 0.66
+        },
+        {
+          "numero": 8,
+          "score": 0.53
+        },
+        {
+          "numero": 3,
+          "score": 0.51
+        },
+        {
+          "numero": 9,
+          "score": 0.48
+        },
+        {
+          "numero": 1,
+          "score": 0.43
+        },
+        {
+          "numero": 2,
+          "score": 0.28
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469059+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        6,
+        5,
+        4,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C6",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:27:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 4,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        4,
+        8,
+        5,
+        2,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.078125,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.725
+        },
+        {
+          "numero": 8,
+          "score": 0.646875
+        },
+        {
+          "numero": 5,
+          "score": 0.6125
+        },
+        {
+          "numero": 2,
+          "score": 0.528125
+        },
+        {
+          "numero": 7,
+          "score": 0.5
+        },
+        {
+          "numero": 1,
+          "score": 0.478125
+        },
+        {
+          "numero": 6,
+          "score": 0.453125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469210+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        8,
+        5,
+        2,
+        7
+      ],
+      "course_id": "2026-10-28-R4-C6",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T19:43:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 4,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        4,
+        8,
+        5,
+        2,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.130208,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.768333
+        },
+        {
+          "numero": 8,
+          "score": 0.638125
+        },
+        {
+          "numero": 5,
+          "score": 0.5675
+        },
+        {
+          "numero": 2,
+          "score": 0.466875
+        },
+        {
+          "numero": 7,
+          "score": 0.46
+        },
+        {
+          "numero": 1,
+          "score": 0.436875
+        },
+        {
+          "numero": 6,
+          "score": 0.421875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469210+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        8,
+        5,
+        2,
+        7
+      ],
+      "course_id": "2026-10-28-R4-C6",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T19:43:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 4,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        4,
+        8,
+        5,
+        2,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.104167,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.746667
+        },
+        {
+          "numero": 8,
+          "score": 0.6425
+        },
+        {
+          "numero": 5,
+          "score": 0.59
+        },
+        {
+          "numero": 2,
+          "score": 0.4975
+        },
+        {
+          "numero": 7,
+          "score": 0.48
+        },
+        {
+          "numero": 1,
+          "score": 0.4575
+        },
+        {
+          "numero": 6,
+          "score": 0.4375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469210+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        8,
+        5,
+        2,
+        7
+      ],
+      "course_id": "2026-10-28-R4-C6",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T19:43:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 4,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        4,
+        8,
+        5,
+        2,
+        7
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.052083,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.703333
+        },
+        {
+          "numero": 8,
+          "score": 0.65125
+        },
+        {
+          "numero": 5,
+          "score": 0.635
+        },
+        {
+          "numero": 2,
+          "score": 0.55875
+        },
+        {
+          "numero": 7,
+          "score": 0.52
+        },
+        {
+          "numero": 1,
+          "score": 0.49875
+        },
+        {
+          "numero": 6,
+          "score": 0.46875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469210+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        8,
+        5,
+        2,
+        7
+      ],
+      "course_id": "2026-10-28-R4-C6",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T19:43:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 4,
+      "meilleur_place": 8,
+      "ordre_espere": [
+        4,
+        8,
+        5,
+        7,
+        2
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.15625,
+      "scores": [
+        {
+          "numero": 4,
+          "score": 0.79
+        },
+        {
+          "numero": 8,
+          "score": 0.63375
+        },
+        {
+          "numero": 5,
+          "score": 0.545
+        },
+        {
+          "numero": 7,
+          "score": 0.44
+        },
+        {
+          "numero": 2,
+          "score": 0.43625
+        },
+        {
+          "numero": 1,
+          "score": 0.41625
+        },
+        {
+          "numero": 6,
+          "score": 0.40625
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469210+01:00",
+      "ordre_arrivee_espere": [
+        4,
+        8,
+        5,
+        7,
+        2
+      ],
+      "course_id": "2026-10-28-R4-C6",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T19:43:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 7,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.009375,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.9625
+        },
+        {
+          "numero": 2,
+          "score": 0.953125
+        },
+        {
+          "numero": 6,
+          "score": 0.925
+        },
+        {
+          "numero": 1,
+          "score": 0.8875
+        },
+        {
+          "numero": 8,
+          "score": 0.875
+        },
+        {
+          "numero": 4,
+          "score": 0.8125
+        },
+        {
+          "numero": 9,
+          "score": 0.69375
+        },
+        {
+          "numero": 3,
+          "score": 0.684375
+        },
+        {
+          "numero": 5,
+          "score": 0.584375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469359+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C7",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:59:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 7,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.005625,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.9775
+        },
+        {
+          "numero": 2,
+          "score": 0.971875
+        },
+        {
+          "numero": 6,
+          "score": 0.955
+        },
+        {
+          "numero": 1,
+          "score": 0.9325
+        },
+        {
+          "numero": 8,
+          "score": 0.925
+        },
+        {
+          "numero": 4,
+          "score": 0.820833
+        },
+        {
+          "numero": 9,
+          "score": 0.71625
+        },
+        {
+          "numero": 3,
+          "score": 0.660625
+        },
+        {
+          "numero": 5,
+          "score": 0.600625
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469359+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C7",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:59:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 7,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.0075,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.97
+        },
+        {
+          "numero": 2,
+          "score": 0.9625
+        },
+        {
+          "numero": 6,
+          "score": 0.94
+        },
+        {
+          "numero": 1,
+          "score": 0.91
+        },
+        {
+          "numero": 8,
+          "score": 0.9
+        },
+        {
+          "numero": 4,
+          "score": 0.816666
+        },
+        {
+          "numero": 9,
+          "score": 0.705
+        },
+        {
+          "numero": 3,
+          "score": 0.6725
+        },
+        {
+          "numero": 5,
+          "score": 0.5925
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469359+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C7",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:59:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 7,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.01125,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.955
+        },
+        {
+          "numero": 2,
+          "score": 0.94375
+        },
+        {
+          "numero": 6,
+          "score": 0.91
+        },
+        {
+          "numero": 1,
+          "score": 0.865
+        },
+        {
+          "numero": 8,
+          "score": 0.85
+        },
+        {
+          "numero": 4,
+          "score": 0.808333
+        },
+        {
+          "numero": 3,
+          "score": 0.69625
+        },
+        {
+          "numero": 9,
+          "score": 0.6825
+        },
+        {
+          "numero": 5,
+          "score": 0.57625
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469359+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C7",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:59:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 7,
+      "meilleur_place": 2,
+      "ordre_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.00375,
+      "scores": [
+        {
+          "numero": 7,
+          "score": 0.985
+        },
+        {
+          "numero": 2,
+          "score": 0.98125
+        },
+        {
+          "numero": 6,
+          "score": 0.97
+        },
+        {
+          "numero": 1,
+          "score": 0.955
+        },
+        {
+          "numero": 8,
+          "score": 0.95
+        },
+        {
+          "numero": 4,
+          "score": 0.825
+        },
+        {
+          "numero": 9,
+          "score": 0.7275
+        },
+        {
+          "numero": 3,
+          "score": 0.64875
+        },
+        {
+          "numero": 5,
+          "score": 0.60875
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469359+01:00",
+      "ordre_arrivee_espere": [
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "course_id": "2026-10-28-R3-C7",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T19:59:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 2,
+      "meilleur_place": 1,
+      "ordre_espere": [
+        2,
+        1,
+        5,
+        11,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.05,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.878125
+        },
+        {
+          "numero": 1,
+          "score": 0.828125
+        },
+        {
+          "numero": 5,
+          "score": 0.78125
+        },
+        {
+          "numero": 11,
+          "score": 0.771429
+        },
+        {
+          "numero": 6,
+          "score": 0.6
+        },
+        {
+          "numero": 7,
+          "score": 0.560714
+        },
+        {
+          "numero": 10,
+          "score": 0.5
+        },
+        {
+          "numero": 8,
+          "score": 0.448214
+        },
+        {
+          "numero": 4,
+          "score": 0.421875
+        },
+        {
+          "numero": 3,
+          "score": 0.390625
+        },
+        {
+          "numero": 9,
+          "score": 0.359375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469510+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        1,
+        5,
+        11,
+        6
+      ],
+      "course_id": "2026-10-28-R4-C7",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T20:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 2,
+      "meilleur_place": 1,
+      "ordre_espere": [
+        2,
+        1,
+        11,
+        5,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.03,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.876875
+        },
+        {
+          "numero": 1,
+          "score": 0.846875
+        },
+        {
+          "numero": 11,
+          "score": 0.805714
+        },
+        {
+          "numero": 5,
+          "score": 0.76875
+        },
+        {
+          "numero": 6,
+          "score": 0.6
+        },
+        {
+          "numero": 7,
+          "score": 0.507857
+        },
+        {
+          "numero": 10,
+          "score": 0.46
+        },
+        {
+          "numero": 8,
+          "score": 0.440357
+        },
+        {
+          "numero": 4,
+          "score": 0.353125
+        },
+        {
+          "numero": 3,
+          "score": 0.334375
+        },
+        {
+          "numero": 9,
+          "score": 0.315625
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469510+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        1,
+        11,
+        5,
+        6
+      ],
+      "course_id": "2026-10-28-R4-C7",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T20:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 2,
+      "meilleur_place": 1,
+      "ordre_espere": [
+        2,
+        1,
+        11,
+        5,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.04,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.8775
+        },
+        {
+          "numero": 1,
+          "score": 0.8375
+        },
+        {
+          "numero": 11,
+          "score": 0.788571
+        },
+        {
+          "numero": 5,
+          "score": 0.775
+        },
+        {
+          "numero": 6,
+          "score": 0.6
+        },
+        {
+          "numero": 7,
+          "score": 0.534285
+        },
+        {
+          "numero": 10,
+          "score": 0.48
+        },
+        {
+          "numero": 8,
+          "score": 0.444285
+        },
+        {
+          "numero": 4,
+          "score": 0.3875
+        },
+        {
+          "numero": 3,
+          "score": 0.3625
+        },
+        {
+          "numero": 9,
+          "score": 0.3375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469510+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        1,
+        11,
+        5,
+        6
+      ],
+      "course_id": "2026-10-28-R4-C7",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T20:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 2,
+      "meilleur_place": 1,
+      "ordre_espere": [
+        2,
+        1,
+        5,
+        11,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.06,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.87875
+        },
+        {
+          "numero": 1,
+          "score": 0.81875
+        },
+        {
+          "numero": 5,
+          "score": 0.7875
+        },
+        {
+          "numero": 11,
+          "score": 0.754286
+        },
+        {
+          "numero": 6,
+          "score": 0.6
+        },
+        {
+          "numero": 7,
+          "score": 0.587143
+        },
+        {
+          "numero": 10,
+          "score": 0.52
+        },
+        {
+          "numero": 4,
+          "score": 0.45625
+        },
+        {
+          "numero": 8,
+          "score": 0.452143
+        },
+        {
+          "numero": 3,
+          "score": 0.41875
+        },
+        {
+          "numero": 9,
+          "score": 0.38125
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469510+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        1,
+        5,
+        11,
+        6
+      ],
+      "course_id": "2026-10-28-R4-C7",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T20:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 2,
+      "meilleur_place": 1,
+      "ordre_espere": [
+        2,
+        1,
+        11,
+        5,
+        6
+      ],
+      "pari_retenu": null,
+      "qualification": "JAUNE",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.02,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.87625
+        },
+        {
+          "numero": 1,
+          "score": 0.85625
+        },
+        {
+          "numero": 11,
+          "score": 0.822857
+        },
+        {
+          "numero": 5,
+          "score": 0.7625
+        },
+        {
+          "numero": 6,
+          "score": 0.6
+        },
+        {
+          "numero": 7,
+          "score": 0.481428
+        },
+        {
+          "numero": 10,
+          "score": 0.44
+        },
+        {
+          "numero": 8,
+          "score": 0.436428
+        },
+        {
+          "numero": 4,
+          "score": 0.31875
+        },
+        {
+          "numero": 3,
+          "score": 0.30625
+        },
+        {
+          "numero": 9,
+          "score": 0.29375
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469510+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        1,
+        11,
+        5,
+        6
+      ],
+      "course_id": "2026-10-28-R4-C7",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T20:15:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M1",
+      "gagnant_espere": 2,
+      "meilleur_place": 9,
+      "ordre_espere": [
+        2,
+        9,
+        7,
+        1,
+        11
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.175,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.95
+        },
+        {
+          "numero": 9,
+          "score": 0.775
+        },
+        {
+          "numero": 7,
+          "score": 0.69375
+        },
+        {
+          "numero": 1,
+          "score": 0.6625
+        },
+        {
+          "numero": 11,
+          "score": 0.65625
+        },
+        {
+          "numero": 10,
+          "score": 0.564286
+        },
+        {
+          "numero": 4,
+          "score": 0.525
+        },
+        {
+          "numero": 6,
+          "score": 0.5125
+        },
+        {
+          "numero": 8,
+          "score": 0.43125
+        },
+        {
+          "numero": 3,
+          "score": 0.4
+        },
+        {
+          "numero": 5,
+          "score": 0.3625
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469675+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        9,
+        7,
+        1,
+        11
+      ],
+      "course_id": "2026-10-28-R3-C8",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T20:31:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M2",
+      "gagnant_espere": 2,
+      "meilleur_place": 9,
+      "ordre_espere": [
+        2,
+        9,
+        7,
+        11,
+        1
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.171667,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.97
+        },
+        {
+          "numero": 9,
+          "score": 0.798333
+        },
+        {
+          "numero": 7,
+          "score": 0.71625
+        },
+        {
+          "numero": 11,
+          "score": 0.69375
+        },
+        {
+          "numero": 1,
+          "score": 0.664167
+        },
+        {
+          "numero": 10,
+          "score": 0.567143
+        },
+        {
+          "numero": 6,
+          "score": 0.5075
+        },
+        {
+          "numero": 4,
+          "score": 0.448333
+        },
+        {
+          "numero": 3,
+          "score": 0.373333
+        },
+        {
+          "numero": 8,
+          "score": 0.35875
+        },
+        {
+          "numero": 5,
+          "score": 0.2975
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469675+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        9,
+        7,
+        11,
+        1
+      ],
+      "course_id": "2026-10-28-R3-C8",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T20:31:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M3",
+      "gagnant_espere": 2,
+      "meilleur_place": 9,
+      "ordre_espere": [
+        2,
+        9,
+        7,
+        11,
+        1
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.173334,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.96
+        },
+        {
+          "numero": 9,
+          "score": 0.786666
+        },
+        {
+          "numero": 7,
+          "score": 0.705
+        },
+        {
+          "numero": 11,
+          "score": 0.675
+        },
+        {
+          "numero": 1,
+          "score": 0.663334
+        },
+        {
+          "numero": 10,
+          "score": 0.565715
+        },
+        {
+          "numero": 6,
+          "score": 0.51
+        },
+        {
+          "numero": 4,
+          "score": 0.486667
+        },
+        {
+          "numero": 8,
+          "score": 0.395
+        },
+        {
+          "numero": 3,
+          "score": 0.386667
+        },
+        {
+          "numero": 5,
+          "score": 0.33
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469675+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        9,
+        7,
+        11,
+        1
+      ],
+      "course_id": "2026-10-28-R3-C8",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T20:31:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M4",
+      "gagnant_espere": 2,
+      "meilleur_place": 9,
+      "ordre_espere": [
+        2,
+        9,
+        7,
+        1,
+        11
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.176667,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.94
+        },
+        {
+          "numero": 9,
+          "score": 0.763333
+        },
+        {
+          "numero": 7,
+          "score": 0.6825
+        },
+        {
+          "numero": 1,
+          "score": 0.661667
+        },
+        {
+          "numero": 11,
+          "score": 0.6375
+        },
+        {
+          "numero": 4,
+          "score": 0.563333
+        },
+        {
+          "numero": 10,
+          "score": 0.562857
+        },
+        {
+          "numero": 6,
+          "score": 0.515
+        },
+        {
+          "numero": 8,
+          "score": 0.4675
+        },
+        {
+          "numero": 3,
+          "score": 0.413333
+        },
+        {
+          "numero": 5,
+          "score": 0.395
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469675+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        9,
+        7,
+        1,
+        11
+      ],
+      "course_id": "2026-10-28-R3-C8",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T20:31:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    },
+    {
+      "moteur": "M5",
+      "gagnant_espere": 2,
+      "meilleur_place": 9,
+      "ordre_espere": [
+        2,
+        9,
+        7,
+        11,
+        1
+      ],
+      "pari_retenu": null,
+      "qualification": "VERT",
+      "validation": "INDICATIF",
+      "ecart_scores": 0.17,
+      "scores": [
+        {
+          "numero": 2,
+          "score": 0.98
+        },
+        {
+          "numero": 9,
+          "score": 0.81
+        },
+        {
+          "numero": 7,
+          "score": 0.7275
+        },
+        {
+          "numero": 11,
+          "score": 0.7125
+        },
+        {
+          "numero": 1,
+          "score": 0.665
+        },
+        {
+          "numero": 10,
+          "score": 0.568572
+        },
+        {
+          "numero": 6,
+          "score": 0.505
+        },
+        {
+          "numero": 4,
+          "score": 0.41
+        },
+        {
+          "numero": 3,
+          "score": 0.36
+        },
+        {
+          "numero": 8,
+          "score": 0.3225
+        },
+        {
+          "numero": 5,
+          "score": 0.265
+        }
+      ],
+      "criteres": [
+        "forme",
+        "regularite"
+      ],
+      "heure_paris": "2026-10-28T15:28:40.469675+01:00",
+      "ordre_arrivee_espere": [
+        2,
+        9,
+        7,
+        11,
+        1
+      ],
+      "course_id": "2026-10-28-R3-C8",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T20:31:00+01:00",
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
+      "statut_course": "ANALYSE_INDICATIVE"
+    }
+  ]
+}
