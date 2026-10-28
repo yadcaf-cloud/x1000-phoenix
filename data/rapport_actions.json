@@ -1,8 +1,8 @@
 {
   "logiciel": "X1000 PHOENIX",
   "version": "PUBLICATION-UNIFIEE-6.0",
-  "status": "PUBLICATION_PARTIELLE",
-  "generated_at_paris": "2026-10-28T17:18:12.472873+01:00",
+  "status": "PUBLICATION_OK",
+  "generated_at_paris": "2026-10-28T18:33:03.466018+01:00",
   "moteurs_actifs": [
     "M1",
     "M2",
@@ -13,92 +13,11 @@
   "source_donnees": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026",
   "courses_collectees": 31,
   "courses_count": 31,
-  "analyses_count": 20,
-  "pronostics_count": 100,
-  "pv_count": 11,
+  "analyses_count": 11,
+  "pronostics_count": 55,
+  "pv_count": 31,
   "figes_count": 11,
   "audits_count": 0,
-  "difficultes": [
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R2-C1: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R1-C1: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R2-C2: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R1-C2: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R2-C3: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R1-C3: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R2-C4: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R1-C4: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R2-C5: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R1-C5: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R2-C6: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R1-C6: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R2-C7: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R1-C7: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R2-C8: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R1-C8: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R3-C1: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R4-C1: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R3-C2: analyse non disponible: Course deja partie"
-    },
-    {
-      "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R4-C5: analyse non disponible: Musique insuffisante pour le cheval 4"
-    }
-  ],
+  "difficultes": [],
   "avertissement": "Aucune course inventee. FIGES originaux conserves. Analyses indicatives non garanties."
 }
