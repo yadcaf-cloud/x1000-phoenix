@@ -1,1210 +1,600 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#071321">
 <title>🇸🇳🧠🔥 X1000 PHOENIX — Intelligence vivante</title>
-
 <style>
-:root {
-  --bg:#071321;
-  --panel:#11243a;
-  --panel2:#172e48;
-  --line:#304760;
-  --text:#edf5ff;
-  --gold:#ffd06a;
-  --blue:#74c7ff;
-  --green:#36df9b;
-  --yellow:#ffcf69;
-  --red:#ff8585;
+:root{
+ --bg:#071321;--panel:#11243a;--panel2:#172e48;
+ --line:#304760;--text:#edf5ff;--gold:#ffd06a;
+ --blue:#74c7ff;--green:#36df9b;--yellow:#ffcf69;
+ --red:#ff8585
 }
-
-* {
-  box-sizing:border-box;
-}
-
-body {
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font:15px/1.6 Arial,sans-serif;
-}
-
-header {
-  padding:24px 14px;
-  text-align:center;
-  background:linear-gradient(135deg,#153b5b,#071321);
-}
-
-h1 {
-  color:var(--gold);
-  font-size:27px;
-}
-
-h2 {
-  color:var(--blue);
-}
-
-h3 {
-  color:var(--gold);
-}
-
-nav {
-  display:flex;
-  gap:8px;
-  overflow-x:auto;
-  padding:10px;
-  background:#0b1b2d;
-  position:sticky;
-  top:0;
-  z-index:10;
-}
-
-nav a {
-  color:white;
-  background:#203b59;
-  padding:9px;
-  border-radius:8px;
-  text-decoration:none;
-  white-space:nowrap;
-}
-
-main {
-  max-width:1200px;
-  margin:auto;
-  padding:12px;
-}
-
-section,article {
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:14px;
-  padding:16px;
-  margin:14px 0;
-}
-
-article {
-  background:var(--panel2);
-}
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
-  gap:10px;
-}
-
-.metric {
-  background:var(--panel2);
-  border-radius:10px;
-  padding:14px;
-}
-
-.metric strong {
-  display:block;
-  font-size:25px;
-  color:var(--gold);
-}
-
-.tablewrap {
-  overflow-x:auto;
-}
-
-table {
-  width:100%;
-  min-width:850px;
-  border-collapse:collapse;
-}
-
-th,td {
-  padding:10px;
-  text-align:left;
-  border-bottom:1px solid var(--line);
-  vertical-align:top;
-}
-
-th {
-  color:var(--gold);
-  background:#1c3a59;
-}
-
-tr:nth-child(even) {
-  background:#172e48;
-}
-
-button {
-  background:#315477;
-  color:white;
-  border:0;
-  border-radius:8px;
-  padding:12px;
-  cursor:pointer;
-}
-
-button:disabled {
-  opacity:.6;
-  cursor:wait;
-}
-
-a {
-  color:var(--blue);
-}
-
-small,.muted {
-  color:#a5b8ce;
-}
-
-pre {
-  white-space:pre-wrap;
-  overflow-wrap:anywhere;
-  background:#09192a;
-  padding:12px;
-  border-radius:9px;
-  max-height:450px;
-  overflow:auto;
-}
-
-.vert {
-  color:var(--green);
-}
-
-.jaune {
-  color:var(--yellow);
-}
-
-.rouge {
-  color:var(--red);
-}
-
-.info {
-  padding:12px;
-  border:1px solid var(--line);
-  border-radius:9px;
-  background:#0b1b2d;
-  margin:10px 0;
-}
-
-.empty {
-  color:var(--yellow);
-  padding:12px;
-}
-
-.source {
-  overflow-wrap:anywhere;
-  font-size:13px;
-}
-
-footer {
-  text-align:center;
-  padding:24px;
-}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+ font:15px/1.6 Arial,sans-serif}
+header{padding:24px 12px;text-align:center;
+ background:linear-gradient(135deg,#153b5b,#071321);
+ border-bottom:2px solid var(--gold)}
+h1{color:var(--gold);font-size:26px;margin:0}
+h2{color:var(--gold);font-size:20px}
+h3{color:var(--blue);font-size:17px}
+a{color:var(--blue)}
+nav{display:flex;gap:8px;overflow-x:auto;padding:10px;
+ background:#0b1b2d;position:sticky;top:0;z-index:10}
+nav a{color:white;background:#203b59;padding:9px;
+ border-radius:8px;text-decoration:none;white-space:nowrap}
+main{max-width:1200px;margin:auto;padding:12px}
+section,article{background:var(--panel);border:1px solid var(--line);
+ border-radius:14px;padding:16px;margin:14px 0}
+article{background:var(--panel2)}
+.grid{display:grid;grid-template-columns:
+ repeat(auto-fit,minmax(155px,1fr));gap:10px}
+.metric{background:var(--panel2);border-radius:10px;padding:14px}
+.metric strong{display:block;color:var(--gold);font-size:24px}
+label{display:block;color:var(--blue);margin-bottom:4px}
+input,button{font:inherit;padding:11px;border-radius:8px}
+input{width:100%;background:#071827;color:white;
+ border:1px solid #52708b}
+button{background:#225f91;color:white;border:1px solid #5899c9;
+ font-weight:bold;cursor:pointer;margin:5px 3px 5px 0}
+button:disabled{opacity:.5;cursor:not-allowed}
+.green{background:#146b50}
+.gold{background:#79591b}
+.tablewrap{overflow-x:auto}
+table{width:100%;min-width:750px;border-collapse:collapse}
+th,td{padding:9px;text-align:left;vertical-align:top;
+ border-bottom:1px solid var(--line)}
+th{background:#24415e;color:var(--gold)}
+tr:nth-child(even){background:#152d46}
+.ok{color:var(--green)}
+.warn{color:var(--yellow)}
+.bad{color:var(--red)}
+.muted,small{color:#b5c8db}
+.status{padding:12px;border-radius:9px;background:#203750;
+ margin:10px 0;white-space:pre-wrap}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;
+ background:#071827;padding:12px;border-radius:8px;
+ max-height:350px;overflow:auto}
+.empty{color:var(--yellow);padding:10px}
+.source{overflow-wrap:anywhere;font-size:13px}
+footer{text-align:center;padding:24px;color:#a8bdd0}
 </style>
 </head>
-
 <body>
 
 <header>
-  <h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
-  <h2>INTELLIGENCE HIPPIQUE VIVANTE</h2>
-  <p>Cinq moteurs indépendants M1 à M5</p>
-  <p id="horloge">Heure de Paris</p>
-  <strong id="etat">🟡 Vérification...</strong>
+<h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
+<h2>INTELLIGENCE HIPPIQUE VIVANTE</h2>
+<p>Cinq moteurs M1 à M5 — Analyse • FIGÉ • Audit</p>
+<p id="horloge">Heure de Paris</p>
+<strong id="etatGlobal" class="warn">🟡 Initialisation</strong>
 </header>
 
 <nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#courses">Courses</a>
-  <a href="#figes">FIGÉS</a>
-  <a href="#audits">Audits</a>
-  <a href="#systeme">Système</a>
+<a href="#accueil">Accueil</a>
+<a href="#connexion">PMU</a>
+<a href="#partants">Partants</a>
+<a href="#tableau">Tableau</a>
+<a href="#publications">Publications</a>
+<a href="#figes">FIGÉS</a>
+<a href="#audits">Audits</a>
+<a href="#systeme">Système</a>
 </nav>
 
 <main>
 
 <section id="accueil">
-  <h2>🔥 Centre de commandement</h2>
-
-  <div class="grid">
-    <div class="metric">
-      <strong id="nbCourses">—</strong>
-      Courses PMU
-    </div>
-
-    <div class="metric">
-      <strong id="nbMoteurs">5</strong>
-      Moteurs M1–M5
-    </div>
-
-    <div class="metric">
-      <strong id="nbAnalyses">—</strong>
-      Courses analysées
-    </div>
-
-    <div class="metric">
-      <strong id="nbPV">—</strong>
-      Procès-verbaux
-    </div>
-
-    <div class="metric">
-      <strong id="nbFiges">—</strong>
-      FIGÉS vérifiés
-    </div>
-
-    <div class="metric">
-      <strong id="nbAudits">—</strong>
-      Audits
-    </div>
-  </div>
-
-  <p id="actualisation">Chargement des données...</p>
-  <p id="fraicheur" class="muted"></p>
-
-  <button id="bouton" type="button">
-    🔄 Actualiser
-  </button>
+<h2>🔥 Centre de commandement</h2>
+<div class="grid">
+<div class="metric"><strong id="nbCourses">—</strong>Courses publiées</div>
+<div class="metric"><strong id="nbMoteurs">5</strong>Moteurs M1–M5</div>
+<div class="metric"><strong id="nbAnalyses">—</strong>Courses analysées</div>
+<div class="metric"><strong id="nbPV">—</strong>PV publiés</div>
+<div class="metric"><strong id="nbFiges">—</strong>FIGÉS publiés</div>
+<div class="metric"><strong id="nbAudits">—</strong>Audits publiés</div>
+</div>
+<p id="actualisation" class="muted">En attente.</p>
+<p id="fraicheur" class="muted"></p>
+<button id="actualiserTout">🔄 Actualiser les publications</button>
 </section>
 
-<section id="courses">
-  <h2>🏆 Tableau officiel M1–M5</h2>
+<section id="connexion">
+<h2>📡 Connexion directe PMU</h2>
+<div class="grid">
+<div>
+<label for="date">Date</label>
+<input type="date" id="date">
+</div>
+<div>
+<label for="reunion">Réunion</label>
+<input type="number" id="reunion" min="1" value="1">
+</div>
+<div>
+<label for="course">Course</label>
+<input type="number" id="course" min="1" value="2">
+</div>
+</div>
+<button id="chargerPMU">📡 Charger les partants</button>
+<button id="analyserPMU" class="green" disabled>
+🧠 Analyser M1–M5
+</button>
+<div id="etatPMU" class="status">En attente de connexion.</div>
+<div class="grid">
+<article><h3>Course</h3><div id="courseId">—</div></article>
+<article><h3>Partants</h3><div id="nombrePartants">—</div></article>
+<article><h3>Récupération</h3><div id="heurePMU">—</div></article>
+</div>
+<p class="source" id="sourcePMU">Source non chargée.</p>
+<small>Le navigateur peut bloquer la connexion directe à l'API PMU (CORS). Aucun résultat fictif ne sera affiché.</small>
+</section>
 
-  <p class="muted">
-    Les analyses sont expérimentales.
-    Aucun pronostic ne garantit un gain.
-    Une analyse indicative n'est pas un FIGÉ.
-  </p>
+<section id="partants">
+<h2>🐎 Partants PMU</h2>
+<div class="tablewrap">
+<table>
+<thead><tr>
+<th>N°</th><th>Cheval</th><th>Jockey / Driver</th>
+<th>Entraîneur</th><th>Musique</th><th>Cote</th><th>Statut</th>
+</tr></thead>
+<tbody id="listePartants">
+<tr><td colspan="7">Aucune donnée chargée.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
 
-  <div id="listeCourses">Chargement...</div>
+<section id="tableau">
+<h2>🏆 Tableau officiel X1000 — M1 à M5</h2>
+<p class="muted">Analyses expérimentales, non validées statistiquement. Une analyse indicative n'est pas un FIGÉ officiel.</p>
+<div id="tableauDirect">Aucune analyse directe.</div>
+</section>
+
+<section id="publications">
+<h2>📚 Courses et analyses publiées</h2>
+<div id="listeCourses">Chargement...</div>
 </section>
 
 <section id="figes">
-  <h2>🔒 FIGÉS et procès-verbaux</h2>
-
-  <h3>FIGÉS vérifiés</h3>
-  <div id="listeFiges">Chargement...</div>
-
-  <h3>Procès-verbaux</h3>
-  <div id="listePV">Chargement...</div>
+<h2>🔒 FIGÉS et procès-verbaux</h2>
+<h3>FIGÉS publiés par le système</h3>
+<div id="figesPublies">Chargement...</div>
+<h3>Procès-verbaux publiés</h3>
+<div id="listePV">Chargement...</div>
+<h3>FIGÉs locaux du navigateur</h3>
+<p class="muted">Une sauvegarde locale ne constitue pas une validation officielle. Elle reste sur cet appareil et peut disparaître si les données du navigateur sont effacées.</p>
+<div class="grid">
+<div>
+<label for="departVerifie">Départ officiel vérifié (heure de Paris)</label>
+<input type="datetime-local" id="departVerifie">
+</div>
+</div>
+<button id="figerLocal" class="gold" disabled>
+🔒 Enregistrer un FIGÉ local avant départ
+</button>
+<button id="exporter">📥 Exporter le journal JSON</button>
+<div id="figesLocaux"></div>
 </section>
 
 <section id="audits">
-  <h2>📊 Audits après course</h2>
-  <div id="listeAudits">Chargement...</div>
+<h2>📊 Audits après course</h2>
+<h3>Audits publiés</h3>
+<div id="listeAudits">Chargement...</div>
+<h3>Comparaison manuelle locale</h3>
+<p class="muted">Saisissez une arrivée définitive et son URL. Cette comparaison n'authentifie pas automatiquement la source.</p>
+<div class="grid">
+<div>
+<label for="arrivee">Arrivée dans l'ordre</label>
+<input id="arrivee" placeholder="1-5-7-3-2">
+</div>
+<div>
+<label for="urlResultat">Source HTTPS</label>
+<input type="url" id="urlResultat" placeholder="https://...">
+</div>
+</div>
+<button id="auditerLocal">📊 Comparer aux FIGÉS locaux</button>
+<pre id="rapportAudit">Aucune comparaison.</pre>
 </section>
 
 <section id="systeme">
-  <h2>⚙️ Automatisation GitHub</h2>
-
-  <p>
-    <a
-      href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
-      target="_blank"
-      rel="noopener noreferrer">
-      Consulter les exécutions GitHub Actions
-    </a>
-  </p>
-
-  <p id="etatActions" class="muted">
-    Vérification des fichiers publiés en cours.
-  </p>
-
-  <h3>État des fichiers de publication</h3>
-  <div id="fichiers">Vérification...</div>
-
-  <h3>Journal des difficultés</h3>
-  <div id="difficultes">En attente</div>
-
-  <h3>Dernier rapport</h3>
-  <pre id="rapport">En attente</pre>
+<h2>⚙️ Diagnostic et GitHub Actions</h2>
+<p><a href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
+ target="_blank" rel="noopener noreferrer">
+Consulter GitHub Actions
+</a></p>
+<p id="etatActions">Statut distant non vérifié.</p>
+<h3>Fichiers JSON publiés</h3>
+<div id="fichiers"></div>
+<h3>Difficultés</h3>
+<div id="difficultes"></div>
+<h3>Dernier rapport</h3>
+<pre id="rapport">Non chargé.</pre>
+<h3>Journal technique</h3>
+<pre id="journal">Initialisation...</pre>
 </section>
 
 </main>
-
 <footer>
-  🇸🇳🔥 X1000 PHOENIX — Intelligence vivante
-
-  <p>
-    <small>
-      Aucun pari réel n'est exécuté.
-      Aucun pronostic ne garantit un résultat.
-    </small>
-  </p>
+🇸🇳🔥 X1000 PHOENIX — Intelligence vivante
+<p><small>Aucun pari réel n'est exécuté. Aucun gain n'est garanti.</small></p>
 </footer>
 
 <script>
 "use strict";
 
-/* =========================================
-   X1000 PHOENIX — INTERFACE OFFICIELLE
-   ========================================= */
+const $=id=>document.getElementById(id);
+const API="https://online.turfinfo.api.pmu.fr/rest/client/7/programme/";
+const NOMS=["courses","pv","figes","audits","rapport"];
+const MOTEURS=["M1","M2","M3","M4","M5"];
+const STOCKAGE="x1000_phoenix_figes_v1";
 
-const el = id => document.getElementById(id);
+let participants=[];
+let analyses=[];
+let courseActive="";
+let sourceActive="";
+let signatureActive="";
+let heureChargement="";
+let departActif=null;
+let generation=0;
+let chargementPublications=false;
+let publications={};
 
-const NOMS = [
-  "courses",
-  "pv",
-  "figes",
-  "audits",
-  "rapport"
-];
-
-const MOTEURS = [
-  "M1",
-  "M2",
-  "M3",
-  "M4",
-  "M5"
-];
-
-let chargementEnCours = false;
-
-/* =========================================
-   DIAGNOSTIC DES ERREURS
-   ========================================= */
-
-window.addEventListener("error", function(e) {
-  console.error("X1000 PHOENIX :", e.message);
-});
-
-window.addEventListener(
-  "unhandledrejection",
-  function(e) {
-    console.error(
-      "Erreur de chargement :",
-      e.reason
-    );
-  }
-);
-
-/* =========================================
-   FONCTIONS UTILITAIRES
-   ========================================= */
-
-function esc(v) {
-  return String(v ?? "—").replace(
-    /[&<>"']/g,
-    c => ({
-      "&":"&amp;",
-      "<":"&lt;",
-      ">":"&gt;",
-      '"':"&quot;",
-      "'":"&#39;"
-    }[c])
-  );
+function esc(v){
+ return String(v??"—").replace(/[&<>"']/g,c=>({
+  "&":"&amp;","<":"&lt;",">":"&gt;",
+  '"':"&quot;","'":"&#39;"
+ })[c]);
 }
-
-function liste(v) {
-  return Array.isArray(v) ? v : [];
+function liste(v){return Array.isArray(v)?v:[]}
+function valeur(v){return v===null||v===undefined||v===""?"—":v}
+function journal(s){
+ $("journal").textContent=new Date().toLocaleString("fr-FR")+
+ " — "+s+"\n"+$("journal").textContent.slice(0,12000);
 }
-
-function valeur(v) {
-  return (
-    v === null ||
-    v === undefined ||
-    v === ""
-  ) ? "—" : v;
+function paris(v=new Date()){
+ const d=v instanceof Date?v:new Date(v);
+ if(!Number.isFinite(d.getTime()))return "—";
+ return new Intl.DateTimeFormat("fr-FR",{
+  timeZone:"Europe/Paris",dateStyle:"short",timeStyle:"medium"
+ }).format(d);
 }
-
-function paris(v) {
-  if (!v) return "—";
-
-  const d = v instanceof Date
-    ? v
-    : new Date(v);
-
-  if (Number.isNaN(d.getTime())) {
-    return "—";
-  }
-
-  return new Intl.DateTimeFormat("fr-FR", {
-    timeZone:"Europe/Paris",
-    dateStyle:"short",
-    timeStyle:"medium"
-  }).format(d);
+function jourParis(){
+ const parts=new Intl.DateTimeFormat("en-CA",{
+  timeZone:"Europe/Paris",year:"numeric",month:"2-digit",day:"2-digit"
+ }).formatToParts(new Date());
+ const get=k=>parts.find(p=>p.type===k)?.value;
+ return get("year")+"-"+get("month")+"-"+get("day");
 }
-
-function couleur(statut) {
-  const s = String(statut || "")
-    .toUpperCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g,"");
-
-  if (
-    s.includes("ERREUR") ||
-    s.includes("NON VALIDE") ||
-    s.includes("REJETE") ||
-    s.includes("ECHEC")
-  ) {
-    return "rouge";
-  }
-
-  if (
-    s.includes("FIGE_VERIFIE") ||
-    s.includes("FIGE_AVANT_DEPART") ||
-    s.includes("VERT") ||
-    s.includes("PUBLICATION_OK")
-  ) {
-    return "vert";
-  }
-
-  return "jaune";
+function statutClasse(v){
+ const s=String(v||"").toUpperCase()
+ .normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+ if(/ERREUR|ECHEC|REJETE|NON VALIDE|NON_PARTANT/.test(s))return "bad";
+ if(/VERIFIE|PUBLICATION_OK|VALIDE|PARTANT/.test(s))return "ok";
+ return "warn";
 }
-
-function lienSource(url) {
-  if (typeof url !== "string") {
-    return "—";
-  }
-
-  try {
-    const u = new URL(url);
-
-    if (u.protocol !== "https:") {
-      return esc(url);
-    }
-
-    return `
-      <a href="${esc(u.href)}"
-         target="_blank"
-         rel="noopener noreferrer">
-         Consulter la source
-      </a>
-    `;
-  } catch {
-    return esc(url);
-  }
+function lien(url){
+ try{
+  const u=new URL(url);
+  if(u.protocol!=="https:")return esc(url);
+  return '<a href="'+esc(u.href)+
+   '" target="_blank" rel="noopener noreferrer">Source</a>';
+ }catch{return esc(url||"—")}
 }
-
-/* =========================================
-   CHARGEMENT JSON GITHUB PAGES
-   ========================================= */
-
-async function lireJSON(nom) {
-  const chemin = new URL(
-    "data/publication_" + nom + ".json",
-    document.baseURI
-  );
-
-  chemin.searchParams.set(
-    "v",
-    String(Date.now())
-  );
-
-  const controleur = new AbortController();
-
-  const delai = setTimeout(
-    () => controleur.abort(),
-    20000
-  );
-
-  try {
-    const reponse = await fetch(chemin.href, {
-      cache:"no-store",
-      signal:controleur.signal,
-      headers:{
-        "Accept":"application/json"
-      }
-    });
-
-    if (!reponse.ok) {
-      throw new Error(
-        "HTTP " + reponse.status
-      );
-    }
-
-    const donnees = await reponse.json();
-
-    if (
-      !donnees ||
-      typeof donnees !== "object" ||
-      Array.isArray(donnees)
-    ) {
-      throw new Error(
-        "Format JSON incorrect"
-      );
-    }
-
-    if (
-      nom !== "rapport" &&
-      !Array.isArray(donnees[nom])
-    ) {
-      throw new Error(
-        "Tableau '" + nom +
-        "' absent ou invalide"
-      );
-    }
-
-    return donnees;
-
-  } catch (e) {
-    if (e.name === "AbortError") {
-      throw new Error(
-        "Délai de chargement dépassé"
-      );
-    }
-
-    throw e;
-
-  } finally {
-    clearTimeout(delai);
-  }
+function cellule(tr,v){
+ const td=document.createElement("td");
+ td.textContent=String(valeur(v));
+ tr.appendChild(td);
+ return td;
 }
-
-/* =========================================
-   TABLEAU OFFICIEL M1–M5
-   ========================================= */
-
-function tableauMoteurs(moteurs) {
-  const disponibles = liste(moteurs).filter(
-    m => m && typeof m === "object"
-  );
-
-  if (!disponibles.length) {
-    return `
-      <p class="empty">
-        🟡 Aucune analyse M1–M5 disponible
-        pour cette course.
-      </p>
-    `;
-  }
-
-  const lignes = disponibles.map(m => {
-    const ordre = liste(
-      m.ordre_espere || m.ordre
-    );
-
-    return `
-      <tr>
-        <td><strong>${esc(m.moteur)}</strong></td>
-        <td>${esc(valeur(m.gagnant_espere))}</td>
-        <td>${esc(valeur(m.meilleur_place))}</td>
-        <td>${esc(
-          ordre.length
-            ? ordre.join(" - ")
-            : "—"
-        )}</td>
-        <td>${esc(valeur(m.pari_retenu || "AUCUN"))}</td>
-        <td class="${couleur(m.qualification)}">
-          ${esc(valeur(m.qualification))}
-        </td>
-        <td class="${couleur(m.validation)}">
-          ${esc(valeur(m.validation))}
-        </td>
-        <td>${esc(paris(m.heure_paris))}</td>
-      </tr>
-    `;
-  }).join("");
-
-  return `
-    <div class="tablewrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Moteur</th>
-            <th>🥇 Gagnant espéré</th>
-            <th>🥈 Meilleur placé</th>
-            <th>Ordre d'arrivée espéré</th>
-            <th>🎯 Pari retenu</th>
-            <th>Qualification</th>
-            <th>Validation</th>
-            <th>Heure Paris</th>
-          </tr>
-        </thead>
-        <tbody>${lignes}</tbody>
-      </table>
-    </div>
-  `;
+function dateSelection(){
+ const d=$("date").value;
+ const r=Number($("reunion").value);
+ const c=Number($("course").value);
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(d)||
+ !Number.isInteger(r)||r<1||
+ !Number.isInteger(c)||c<1)throw Error("Sélection invalide");
+ return {
+  id:d+"-R"+r+"-C"+c,
+  chemin:d.slice(8,10)+d.slice(5,7)+d.slice(0,4)+
+   "/R"+r+"/C"+c
+ };
 }
-
-/* =========================================
-   AFFICHAGE DES COURSES PMU
-   ========================================= */
-
-function afficherCourses(courses) {
-  const zone = el("listeCourses");
-
-  if (!courses.length) {
-    zone.innerHTML = `
-      <p class="empty">
-        🟡 Aucune course publiée dans
-        le fichier JSON.
-      </p>
-    `;
-    return;
-  }
-
-  const triees = [...courses].sort((a,b) => {
-    const da = Date.parse(a.depart || "") || 0;
-    const db = Date.parse(b.depart || "") || 0;
-    return da - db;
+function signature(p){
+ return JSON.stringify(p.map(x=>[
+  x.numPmu,x.nom,x.statut,x.musique,
+  x.driver,x.entraineur,x.dernierRapportDirect?.rapport
+ ]));
+}
+function estPartant(p){
+ const s=String(p.statut||"").toUpperCase();
+ return s==="PARTANT" || s==="PARTICIPANT";
+}
+function resetDirect(){
+ participants=[];analyses=[];courseActive="";
+ sourceActive="";signatureActive="";heureChargement="";
+ departActif=null;
+ $("analyserPMU").disabled=true;
+ $("figerLocal").disabled=true;
+ $("listePartants").innerHTML=
+  '<tr><td colspan="7">Aucune donnée chargée.</td></tr>';
+ $("tableauDirect").textContent="Aucune analyse directe.";
+ $("courseId").textContent="—";
+ $("nombrePartants").textContent="—";
+ $("heurePMU").textContent="—";
+ $("sourcePMU").textContent="Source non chargée.";
+}
+async function fetchJSON(url,delai=18000){
+ const ctrl=new AbortController();
+ const timer=setTimeout(()=>ctrl.abort(),delai);
+ try{
+  const rep=await fetch(url,{
+   cache:"no-store",signal:ctrl.signal,
+   headers:{"Accept":"application/json"}
   });
-
-  zone.innerHTML = triees.map(c => {
-    const actifs = liste(c.partants).filter(
-      p => p.non_partant !== true
-    ).length;
-
-    const nombre = c.nombre_partants ??
-      (
-        Array.isArray(c.partants)
-          ? actifs
-          : "—"
-      );
-
-    const analyses = liste(c.moteurs).length;
-    const etat = valeur(c.statut);
-
-    return `
-      <article>
-        <h3>
-          ${esc(valeur(c.hippodrome))}
-          — ${esc(valeur(c.id))}
-        </h3>
-
-        <p>
-          <strong>${esc(valeur(c.nom))}</strong>
-        </p>
-
-        <p>🕒 Départ : ${esc(paris(c.depart))}</p>
-        <p>🏇 Partants : ${esc(nombre)}</p>
-        <p>🧠 Moteurs analysés : ${analyses}/5</p>
-
-        <p class="${couleur(etat)}">
-          Statut : ${esc(etat)}
-        </p>
-
-        <p class="source">
-          Source : ${lienSource(c.source)}
-        </p>
-
-        ${tableauMoteurs(c.moteurs)}
-      </article>
-    `;
-  }).join("");
+  if(!rep.ok)throw Error("HTTP "+rep.status);
+  return await rep.json();
+ }finally{clearTimeout(timer)}
 }
-
-/* =========================================
-   FIGÉS VÉRIFIÉS
-   ========================================= */
-
-function rapportDuFige(f) {
-  if (
-    f &&
-    f.rapport &&
-    typeof f.rapport === "object"
-  ) {
-    return f.rapport;
+async function chargerPMU(){
+ const ticket=++generation;
+ resetDirect();
+ $("chargerPMU").disabled=true;
+ $("etatPMU").textContent="🟡 Connexion en cours...";
+ try{
+  const sel=dateSelection();
+  const url=API+sel.chemin+"/participants";
+  const data=await fetchJSON(url);
+  if(ticket!==generation)return;
+  if(!Array.isArray(data.participants)||!data.participants.length)
+   throw Error("Participants absents du JSON");
+  const nums=new Set();
+  for(const p of data.participants){
+   if(!Number.isInteger(p.numPmu)||!p.nom||nums.has(p.numPmu))
+    throw Error("Liste de participants incohérente");
+   nums.add(p.numPmu);
   }
-
-  if (
-    f &&
-    f.contenu &&
-    f.contenu.analyse
-  ) {
-    return f.contenu.analyse;
-  }
-
-  return {};
+  participants=data.participants;
+  courseActive=sel.id;
+  sourceActive=url;
+  signatureActive=signature(participants);
+  heureChargement=new Date().toISOString();
+  $("courseId").textContent=courseActive;
+  $("nombrePartants").textContent=
+   participants.filter(estPartant).length+" / "+participants.length;
+  $("heurePMU").textContent=paris();
+  $("sourcePMU").innerHTML="Source : "+lien(url);
+  afficherPartants();
+  $("analyserPMU").disabled=false;
+  $("etatPMU").textContent="🟢 Données chargées : "+
+   participants.length+" participants.";
+  journal("API PMU : "+courseActive+" chargée");
+ }catch(e){
+  if(ticket!==generation)return;
+  $("etatPMU").textContent="🔴 Connexion impossible : "+e.message+
+   ". Vérifiez la disponibilité de l'API et CORS.";
+  journal("API PMU : "+e.message);
+ }finally{
+  if(ticket===generation)$("chargerPMU").disabled=false;
+ }
 }
-
-function afficherFiges(figes) {
-  if (!figes.length) {
-    el("listeFiges").innerHTML = `
-      <p class="empty">
-        🔒 Aucun FIGÉ vérifié publié.
-        Un FIGÉ doit être créé avant
-        le départ et vérifié par Python.
-      </p>
-    `;
-    return;
-  }
-
-  el("listeFiges").innerHTML = figes.map(f => {
-    const r = rapportDuFige(f);
-
-    const dateFige =
-      f.fige_a ||
-      f.contenu?.fige_a;
-
-    return `
-      <article>
-        <h3>${esc(valeur(r.course_id))}</h3>
-
-        <p class="vert">
-          🔒 FIGÉ publié
-        </p>
-
-        <p>
-          Heure : ${esc(paris(dateFige))}
-        </p>
-
-        <p>
-          Statut : ${esc(valeur(f.statut))}
-        </p>
-
-        <p>
-          Empreinte SHA256 :
-          <small>${esc(valeur(f.sha256))}</small>
-        </p>
-
-        ${tableauMoteurs(r.moteurs)}
-      </article>
-    `;
-  }).join("");
+function afficherPartants(){
+ const tbody=$("listePartants");
+ tbody.replaceChildren();
+ for(const p of participants){
+  const tr=document.createElement("tr");
+  cellule(tr,p.numPmu);
+  cellule(tr,p.nom);
+  cellule(tr,p.driver);
+  cellule(tr,p.entraineur);
+  cellule(tr,p.musique);
+  cellule(tr,p.dernierRapportDirect?.rapport);
+  cellule(tr,p.statut).className=estPartant(p)?"ok":"bad";
+  tbody.appendChild(tr);
+ }
 }
-
-/* =========================================
-   PROCÈS-VERBAUX
-   ========================================= */
-
-function afficherPV(pv) {
-  if (!pv.length) {
-    el("listePV").innerHTML = `
-      <p class="empty">
-        📝 Aucun procès-verbal publié.
-      </p>
-    `;
-    return;
-  }
-
-  el("listePV").innerHTML = pv.map(p => `
-    <article>
-      <h3>
-        ${esc(valeur(p.course_id || p.course))}
-      </h3>
-
-      <p>
-        Type : ${esc(valeur(p.type))}
-      </p>
-
-      <p class="${couleur(p.statut)}">
-        Statut : ${esc(valeur(p.statut))}
-      </p>
-
-      <p>
-        Création :
-        ${esc(paris(p.cree_a || p.fige_a))}
-      </p>
-
-      <p class="muted">
-        Un PV d'analyse non figé n'est pas
-        un pronostic officiellement FIGÉ.
-      </p>
-    </article>
-  `).join("");
+function stats(p){
+ const n=Number(p.nombreCourses)||0;
+ const v=Number(p.nombreVictoires)||0;
+ const pl=Number(p.nombrePlaces)||0;
+ return {v:n?Math.min(1,v/n):0,
+  p:n?Math.min(1,pl/n):0,
+  exp:Math.min(n,30)/30};
 }
-
-/* =========================================
-   AUDITS APRÈS COURSE
-   ========================================= */
-
-function afficherAudits(audits) {
-  if (!audits.length) {
-    el("listeAudits").innerHTML = `
-      <p class="empty">
-        📊 Aucun audit officiel validé publié.
-        L'audit exige un FIGÉ antérieur
-        et une arrivée officielle vérifiée.
-      </p>
-    `;
-    return;
-  }
-
-  el("listeAudits").innerHTML = audits.map(a => {
-    const arrivee =
-      a.arrivee_officielle ||
-      a.arrivee;
-
-    const lignes = liste(a.moteurs).map(m => `
-      <tr>
-        <td>${esc(m.moteur)}</td>
-
-        <td>
-          ${
-            m.gagnant_trouve === true
-              ? "Oui"
-              : m.gagnant_trouve === false
-                ? "Non"
-                : "—"
-          }
-        </td>
-
-        <td>
-          ${esc(valeur(m.chevaux_dans_les_cinq))}
-        </td>
-
-        <td>
-          ${
-            m.ordre_exact_cinq === true
-              ? "Oui"
-              : m.ordre_exact_cinq === false
-                ? "Non"
-                : "—"
-          }
-        </td>
-      </tr>
-    `).join("");
-
-    return `
-      <article>
-        <h3>${esc(valeur(a.course_id))}</h3>
-
-        <p>
-          Arrivée officielle :
-          ${esc(liste(arrivee).join(" - "))}
-        </p>
-
-        <p>
-          Statut : ${esc(valeur(a.statut))}
-        </p>
-
-        <p>
-          Source :
-          ${lienSource(
-            a.source_arrivee ||
-            a.source_resultat ||
-            a.source
-          )}
-        </p>
-
-        <div class="tablewrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Moteur</th>
-                <th>Gagnant trouvé</th>
-                <th>Chevaux dans les cinq</th>
-                <th>Ordre exact</th>
-              </tr>
-            </thead>
-
-            <tbody>${lignes}</tbody>
-          </table>
-        </div>
-      </article>
-    `;
-  }).join("");
+function forme(p){
+ const matches=String(p.musique||"")
+  .replace(/\([^)]*\)/g,"").match(/[0-9][a-zA-Z]/g)||[];
+ const valeurs=matches.slice(0,5).map(x=>{
+  const n=parseInt(x,10);
+  return n>=1&&n<=9?(10-n)/9:0;
+ });
+ return valeurs.length?
+  valeurs.reduce((a,b)=>a+b,0)/valeurs.length:0;
 }
-
-/* =========================================
-   AFFICHAGE DES ERREURS
-   ========================================= */
-
-function afficherErreur(nom,message) {
-  const zones = {
-    courses:"listeCourses",
-    pv:"listePV",
-    figes:"listeFiges",
-    audits:"listeAudits"
+function score(p,m){
+ const s=stats(p),f=forme(p);
+ const cote=Number(p.dernierRapportDirect?.rapport);
+ const marche=cote>0?1/(1+cote):0;
+ switch(m){
+  case "M1":return 4*s.v+2*f+marche;
+  case "M2":return 4*s.p+2*f+s.exp;
+  case "M3":return 3*f+2*s.v;
+  case "M4":return 2*s.p+2*s.exp+f;
+  case "M5":return 2*s.v+2*s.p+f+marche;
+  default:return 0;
+ }
+}
+function analyserPMU(){
+ const actifs=participants.filter(estPartant);
+ if(actifs.length<2){
+  $("etatPMU").textContent="🔴 Pas assez de partants confirmés.";
+  return;
+ }
+ analyses=MOTEURS.map(m=>{
+  const tri=[...actifs].sort((a,b)=>
+   score(b,m)-score(a,m)||a.numPmu-b.numPmu);
+  const ordre=tri.map(p=>p.numPmu);
+  return {
+   moteur:m,gagnant_espere:ordre[0],
+   meilleur_place:ordre[1],ordre_espere:ordre,
+   pari_retenu:"Simple placé n°"+ordre[0],
+   qualification:"HEURISTIQUE",
+   validation:"NON FIGÉ",
+   heure_paris:new Date().toISOString()
   };
-
-  const zone = zones[nom];
-
-  if (zone) {
-    el(zone).innerHTML = `
-      <p class="rouge">
-        🔴 Impossible de charger
-        ${esc(nom)} :
-        ${esc(message)}
-      </p>
-    `;
-  }
+ });
+ $("tableauDirect").innerHTML=tableauMoteurs(analyses);
+ $("figerLocal").disabled=false;
+ $("etatPMU").textContent=
+  "🟡 M1–M5 calculés : analyses expérimentales.";
+ journal("Analyses directes terminées");
 }
-
-/* =========================================
-   FRAÎCHEUR DES PUBLICATIONS
-   ========================================= */
-
-function afficherFraicheur(rapport) {
-  const zone = el("fraicheur");
-  const date = rapport?.generated_at_paris;
-
-  if (!date) {
-    zone.textContent =
-      "🔴 Date de publication indisponible.";
-    return;
-  }
-
-  const instant = new Date(date).getTime();
-  const age = (Date.now() - instant) / 60000;
-
-  if (!Number.isFinite(age)) {
-    zone.textContent =
-      "🟡 Date de publication invalide.";
-  } else if (age < -5) {
-    zone.textContent =
-      "🟡 Horodatage futur : vérifier les horloges.";
-  } else if (age <= 45) {
-    zone.textContent =
-      "🟢 Publication récente.";
-  } else {
-    zone.textContent =
-      "🟡 Publication ancienne : " +
-      Math.floor(age) +
-      " minutes. Vérifier GitHub Actions.";
-  }
+function tableauMoteurs(moteurs){
+ const ms=liste(moteurs);
+ if(!ms.length)return '<p class="empty">Aucune analyse disponible.</p>';
+ const lignes=ms.map(m=>{
+  const ordre=liste(m.ordre_espere||m.ordre);
+  return "<tr><td>"+esc(m.moteur)+"</td><td>"+
+   esc(m.gagnant_espere??m.gagnant)+"</td><td>"+
+   esc(m.meilleur_place??m.place)+"</td><td>"+
+   esc(ordre.join(" - "))+"</td><td>"+
+   esc(m.pari_retenu??m.pari)+"</td><td>"+
+   esc(m.qualification)+"</td><td class='"+
+   statutClasse(m.validation)+"'>"+
+   esc(m.validation)+"</td><td>"+
+   esc(paris(m.heure_paris||m.heure))+"</td></tr>";
+ }).join("");
+ return '<div class="tablewrap"><table><thead><tr>'+
+ '<th>Moteur</th><th>🥇 Gagnant espéré</th>'+
+ '<th>🥈 Meilleur placé</th><th>Ordre espéré</th>'+
+ '<th>🎯 Pari</th><th>Qualification</th>'+
+ '<th>Validation</th><th>Heure Paris</th>'+
+ '</tr></thead><tbody>'+lignes+'</tbody></table></div>';
 }
-
-/* =========================================
-   ACTUALISATION DES CINQ FICHIERS
-   ========================================= */
-
-async function charger() {
-  if (chargementEnCours) return;
-
-  chargementEnCours = true;
-
-  el("bouton").disabled = true;
-  el("etat").textContent =
-    "🟡 Actualisation...";
-
-  try {
-    const resultats = await Promise.allSettled(
-      NOMS.map(lireJSON)
-    );
-
-    const donnees = {};
-    const erreurs = [];
-
-    resultats.forEach((resultat,i) => {
-      const nom = NOMS[i];
-
-      if (resultat.status === "fulfilled") {
-        donnees[nom] = resultat.value;
-      } else {
-        donnees[nom] = null;
-
-        erreurs.push(
-          nom + " : " +
-          resultat.reason.message
-        );
-      }
-    });
-
-    const courses = liste(
-      donnees.courses?.courses
-    );
-
-    const pv = liste(
-      donnees.pv?.pv
-    );
-
-    const figes = liste(
-      donnees.figes?.figes
-    );
-
-    const audits = liste(
-      donnees.audits?.audits
-    );
-
-    const rapport = donnees.rapport;
-
-    /* Compteurs */
-
-    el("nbCourses").textContent =
-      donnees.courses
-        ? courses.length
-        : "—";
-
-    el("nbPV").textContent =
-      donnees.pv
-        ? pv.length
-        : "—";
-
-    el("nbFiges").textContent =
-      donnees.figes
-        ? figes.length
-        : "—";
-
-    el("nbAudits").textContent =
-      donnees.audits
-        ? audits.length
-        : "—";
-
-    el("nbAnalyses").textContent =
-      donnees.courses
-        ? courses.filter(
-            c => liste(c.moteurs).length > 0
-          ).length
-        : "—";
-
-    el("nbMoteurs").textContent =
-      Array.isArray(rapport?.moteurs_actifs)
-        ? rapport.moteurs_actifs.length
-        : MOTEURS.length;
-
-    /* Courses */
-
-    if (donnees.courses) {
-      afficherCourses(courses);
-    } else {
-      afficherErreur(
-        "courses",
-        erreurs.find(
-          e => e.startsWith("courses :")
-        ) || "Indisponible"
-      );
-    }
-
-    /* Procès-verbaux */
-
-    if (donnees.pv) {
-      afficherPV(pv);
-    } else {
-      afficherErreur(
-        "pv",
-        erreurs.find(
-          e => e.startsWith("pv :")
-        ) || "Indisponible"
-      );
-    }
-
-    /* FIGÉS */
-
-    if (donnees.figes) {
-      afficherFiges(figes);
-    } else {
-      afficherErreur(
-        "figes",
-        erreurs.find(
-          e => e.startsWith("figes :")
-        ) || "Indisponible"
-      );
-    }
-
-    /* Audits */
-
-    if (donnees.audits) {
-      afficherAudits(audits);
-    } else {
-      afficherErreur(
-        "audits",
-        erreurs.find(
-          e => e.startsWith("audits :")
-        ) || "Indisponible"
-      );
-    }
-
-    /* Rapport */
-
-    if (rapport) {
-      el("etat").textContent =
-        (erreurs.length ? "🟡 " : "📡 ") +
-        valeur(rapport.status);
-
-      el("actualisation").textContent =
-        "Dernière publication : " +
-        paris(rapport.generated_at_paris) +
-        " | Analyses : " +
-        valeur(rapport.analyses_count);
-
-    } else {
-      el("etat").textContent =
-        "🔴 Rapport indisponible";
-
-      el("actualisation").textContent =
-        "Dernière publication inconnue.";
-    }
-
-    afficherFraicheur(rapport);
-
-    el("rapport").textContent =
-      rapport
-        ? JSON.stringify(rapport,null,2)
-        : "Aucun rapport disponible.";
-
-    /* État des fichiers */
-
-    const etats = NOMS.map((nom,i) => {
-      const ok =
-        resultats[i].status === "fulfilled";
-
-      return `
-        <p class="${ok ? "vert" : "rouge"}">
-          ${ok ? "🟢" : "🔴"}
-          publication_${esc(nom)}.json :
-          ${ok ? "chargé" : "indisponible"}
-        </p>
-      `;
-    });
-
-    el("fichiers").innerHTML =
-      etats.join("");
-
-    /* Difficultés */
-
-    const difficultes = [
-      ...erreurs,
-      ...liste(rapport?.difficultes).map(x =>
-        typeof x === "string"
-          ? x
-          : x.difficulte || JSON.stringify(x)
-      )
-    ];
-
-    el("difficultes").innerHTML =
-      difficultes.length
-        ? difficultes.map(x =>
-            "<p class='jaune'>" +
-            esc(x) +
-            "</p>"
-          ).join("")
-        : "<p class='vert'>Aucune difficulté signalée.</p>";
-
-    if (erreurs.length) {
-      el("etat").textContent =
-        "🟡 Chargement partiel : " +
-        erreurs.length +
-        " fichier(s) en erreur";
-    }
-
-    el("etatActions").textContent =
-      rapport
-        ? "Dernier rapport publié : " +
-          paris(rapport.generated_at_paris) +
-          ". Consulter GitHub Actions pour vérifier l'exécution."
-        : "🔴 Aucun rapport de publication accessible.";
-
-  } catch (e) {
-    el("etat").textContent =
-      "🔴 Erreur interface : " +
-      e.message;
-
-    el("difficultes").textContent =
-      e.stack || e.message;
-
-  } finally {
-    chargementEnCours = false;
-    el("bouton").disabled = false;
-  }
+function lireFigesLocaux(){
+ try{
+  const v=JSON.parse(localStorage.getItem(STOCKAGE)||"[]");
+  return Array.isArray(v)?v:[];
+ }catch{return []}
 }
-
-/* =========================================
-   HORLOGE PARIS
-   ========================================= */
-
-function horloge() {
-  el("horloge").textContent =
-    "🕒 Heure de Paris : " +
-    paris(new Date());
+function enregistrerFige(){
+ if(!analyses.length||!courseActive)return;
+ const depart=$("departVerifie").value;
+ if(!depart){
+  alert("Indiquez d'abord le départ officiel vérifié.");
+  return;
+ }
+ // datetime-local correspond à l'heure de Paris.
+ // Conversion via Intl pour gérer correctement été/hiver.
+ const [date,heure]=depart.split("T");
+ const [an,mo,jo]=date.split("-").map(Number);
+ const [h,mi]=heure.split(":").map(Number);
+ const cible=Date.UTC(an,mo-1,jo,h,mi);
+ const formats=new Intl.DateTimeFormat("en-GB",{
+  timeZone:"Europe/Paris",year:"numeric",month:"2-digit",
+  day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"
+ });
+ function minuteParis(ms){
+  const p=formats.formatToParts(new Date(ms));
+  const g=k=>Number(p.find(x=>x.type===k)?.value);
+  return Date.UTC(g("year"),g("month")-1,g("day"),
+   g("hour"),g("minute"));
+ }
+ const candidats=[-120,-60,0,60,120].map(x=>cible+x*60000)
+  .filter(ms=>minuteParis(ms)===cible);
+ if(!candidats.length){
+  alert("Heure de départ invalide pour le fuseau de Paris.");
+  return;
+ }
+ const departUTC=Math.min(...candidats);
+ if(Date.now()>=departUTC){
+  alert("Départ atteint ou dépassé : FIGÉ refusé.");
+  return;
+ }
+ if(!confirm("Confirmez-vous que cette heure de départ "+
+ "provient d'une source officielle actuelle ?"))return;
+ const figes=lireFigesLocaux();
+ const version=figes.filter(f=>f.course===courseActive)
+  .reduce((n,f)=>Math.max(n,Number(f.version)||0),0)+1;
+ const objet={
+  id:courseActive+"-V"+version,
+  course:courseActive,version,
+  creeLe:new Date().toISOString(),
+  departDeclare:new Date(departUTC).toISOString(),
+  source:sourceActive,chargement:heureChargement,
+  signature:signatureActive,
+  statut:"FIGÉ LOCAL — DÉPART DÉCLARÉ",
+  methode:"heuristique-v1",
+  analyses:JSON.parse(JSON.stringify(analyses))
+ };
+ try{
+  figes.push(objet);
+  localStorage.setItem(STOCKAGE,JSON.stringify(figes));
+  afficherFigesLocaux();
+  journal("FIGÉ local enregistré : "+objet.id);
+  alert("FIGÉ local V"+version+" enregistré.");
+ }catch(e){alert("Sauvegarde impossible : "+e.message)}
 }
-
-/* =========================================
-   DÉMARRAGE AUTOMATIQUE
-   ========================================= */
-
-el("bouton").addEventListener(
-  "click",
-  charger
-);
-
-horloge();
-
-setInterval(horloge,1000);
-
-charger();
-
-setInterval(charger,60000);
-
-</script>
-
-</body>
-</html>
+function afficherFigesLocaux(){
+ const fs=lireFigesLocaux().slice().reverse();
+ $("figesLocaux").innerHTML=fs.length?fs.map(f=>
+  "<article><strong>"+esc(f.id)+"</strong><p>"+
+  esc(paris(f.creeLe))+" — "+esc(f.statut)+"</p>"+
+  tableauMoteurs(f.analyses)+"</article>"
+ ).join(""):'<p class="empty">Aucun FIGÉ local.</p>';
+}
+function exporter(){
+ const blob=new Blob([JSON.stringify({
+  logiciel:"X1000 PHOENIX",
+  exporteLe:new Date().toISOString(),
+  figes:lireFigesLocaux()
+ },null,2)],{type:"application/json"});
+ const url=URL.createObjectURL(blob);
+ const a=document.createElement("a");
+ a.href=url;a.download="X1000_PHOENIX_FIGES.json";
+ document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function auditerLocal(){
+ const brut=$("arrivee").value.trim();
+ if(!/^\d+(?:[\s,;-]+\d+)*$/.test(brut)){
+  $("rapportAudit").textContent="Arrivée invalide.";return;
+ }
+ const arr=brut.split(/[\s,;-]+/).map(Number);
+ if(new Set(arr).size!==arr.length){
+  $("rapportAudit").textContent="Numéros répétés.";return;
+ }
+ let url;
+ try{
+  url=new URL($("urlResultat").value);
+  if(url.protocol!=="https:")throw Error();
+ }catch{
+  $("rapportAudit").textContent="Source HTTPS obligatoire.";return;
+ }
+ const fs=lireFigesLocaux().filter(f=>f.course===courseActive);
+ if(!fs.length){
+  $("rapportAudit").textContent="Aucun FIGÉ local pour cette course.";
+  return;
+ }
+ const lignes=[];
+ for(const f of fs)for(const m of liste(f.analyses)){
+  const gagnant=m.gagnant_espere??m.gagnant;
+  const rang=arr.indexOf(gagnant)+1;
+  lignes.push(f.id+" "+m.moteur+
+   " | Gagnant exact : "+(gagnant===arr[0]?"OUI":"NON")+
+   " | Rang : "+(rang||"absent"));
+ }
+ $("rapportAudit").textContent=
+  "Comparaison indicative — "+courseActive+
+  "\nArrivée saisie : "+arr.join("-")+
+  "\nSource déclarée : "+url.href+
+  "\n\n"+lignes.join("\n")+
+  "\n\nAuthenticité de la source non vérifiée automatiquement.";
+}
+async function lirePublication(nom){
+ const url=new URL("data/publication_"+nom+".json",document.baseURI);
+ url.searchParams.set("v",Date.now());
+ const data=await fetchJSON(url.href,20000);
+ if(!data||typeof data!=="object"||Array.i
