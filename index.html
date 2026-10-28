@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -597,4 +596,157 @@ async function lirePublication(nom){
  const url=new URL("data/publication_"+nom+".json",document.baseURI);
  url.searchParams.set("v",Date.now());
  const data=await fetchJSON(url.href,20000);
- if(!data||typeof data!=="object"||Array.i
+ if(!data||typeof data!=="object"||Array.isArray(data))
+  throw Error("JSON invalide");
+ if(nom!=="rapport"&&!Array.isArray(data[nom]))
+  throw Error("Tableau '"+nom+"' absent");
+ return data;
+}
+function afficherCourses(cs){
+ $("listeCourses").innerHTML=cs.length?
+ [...cs].sort((a,b)=>
+  (Date.parse(a.depart)||0)-(Date.parse(b.depart)||0)
+ ).map(c=>
+  "<article><h3>"+esc(c.hippodrome)+" — "+
+  esc(c.id)+"</h3><p>"+esc(c.nom)+"</p>"+
+  "<p>Départ : "+esc(paris(c.depart))+
+  " | Partants : "+esc(c.nombre_partants??liste(c.partants).length)+
+  "</p><p>Statut : "+esc(c.statut)+
+  " | "+lien(c.source)+"</p>"+
+  tableauMoteurs(c.moteurs)+"</article>"
+ ).join(""):'<p class="empty">Aucune course publiée.</p>';
+}
+function afficherPV(pv){
+ $("listePV").innerHTML=pv.length?pv.map(p=>
+  "<article><strong>"+esc(p.course_id||p.course)+
+  "</strong><p>Type : "+esc(p.type)+
+  " | Statut : "+esc(p.statut)+
+  "</p><p>Création : "+esc(paris(p.cree_a||p.fige_a))+
+  "</p></article>"
+ ).join(""):'<p class="empty">Aucun PV publié.</p>';
+}
+function afficherFigesPublies(fs){
+ $("figesPublies").innerHTML=fs.length?fs.map(f=>{
+  const r=f.rapport||f.contenu?.analyse||{};
+  return "<article><h3>"+esc(r.course_id||f.course_id)+
+   "</h3><p>Statut déclaré : "+esc(f.statut)+
+   "</p><p>Heure : "+esc(paris(f.fige_a||f.contenu?.fige_a))+
+   "</p><p>SHA256 déclaré : "+esc(f.sha256)+
+   "</p><p class='muted'>Empreinte non recalculée dans cette interface.</p>"+
+   tableauMoteurs(r.moteurs||f.moteurs)+"</article>";
+ }).join(""):'<p class="empty">Aucun FIGÉ publié.</p>';
+}
+function afficherAudits(as){
+ $("listeAudits").innerHTML=as.length?as.map(a=>
+  "<article><h3>"+esc(a.course_id)+
+  "</h3><p>Arrivée : "+
+  esc(liste(a.arrivee_officielle||a.arrivee).join(" - "))+
+  "</p><p>Statut déclaré : "+esc(a.statut)+
+  " | "+lien(a.source_arrivee||a.source_resultat||a.source)+
+  "</p>"+tableauMoteurs(a.moteurs)+"</article>"
+ ).join(""):'<p class="empty">Aucun audit publié.</p>';
+}
+function fraicheur(r){
+ const d=r?.generated_at_paris;
+ if(!d){$("fraicheur").textContent="Date de publication absente.";return}
+ const age=(Date.now()-Date.parse(d))/60000;
+ $("fraicheur").textContent=!Number.isFinite(age)?
+  "Horodatage invalide.":
+  age< -5?"Horodatage futur.":
+  age<=45?"🟢 Publication récente.":
+  "🟡 Publication ancienne : "+Math.floor(age)+" minutes.";
+}
+async function chargerPublications(){
+ if(chargementPublications)return;
+ chargementPublications=true;
+ $("actualiserTout").disabled=true;
+ $("etatGlobal").textContent="🟡 Actualisation...";
+ try{
+  const res=await Promise.allSettled(NOMS.map(lirePublication));
+  const erreurs=[];
+  publications={};
+  res.forEach((r,i)=>{
+   const nom=NOMS[i];
+   publications[nom]=r.status==="fulfilled"?r.value:null;
+   if(r.status==="rejected")erreurs.push(nom+" : "+r.reason.message);
+  });
+  const cs=liste(publications.courses?.courses);
+  const pv=liste(publications.pv?.pv);
+  const fs=liste(publications.figes?.figes);
+  const as=liste(publications.audits?.audits);
+  const r=publications.rapport;
+  $("nbCourses").textContent=publications.courses?cs.length:"—";
+  $("nbPV").textContent=publications.pv?pv.length:"—";
+  $("nbFiges").textContent=publications.figes?fs.length:"—";
+  $("nbAudits").textContent=publications.audits?as.length:"—";
+  $("nbAnalyses").textContent=publications.courses?
+   cs.filter(c=>liste(c.moteurs).length>0).length:"—";
+  $("nbMoteurs").textContent=Array.isArray(r?.moteurs_actifs)?
+   r.moteurs_actifs.length:5;
+  const erreur=nom=>'<p class="bad">🔴 '+esc(
+   erreurs.find(x=>x.startsWith(nom+" :"))||"Fichier indisponible"
+  )+'</p>';
+  publications.courses?afficherCourses(cs):
+   $("listeCourses").innerHTML=erreur("courses");
+  publications.pv?afficherPV(pv):
+   $("listePV").innerHTML=erreur("pv");
+  publications.figes?afficherFigesPublies(fs):
+   $("figesPublies").innerHTML=erreur("figes");
+  publications.audits?afficherAudits(as):
+   $("listeAudits").innerHTML=erreur("audits");
+  $("rapport").textContent=r?JSON.stringify(r,null,2):
+   "Rapport indisponible.";
+  $("fichiers").innerHTML=NOMS.map(n=>
+   "<p class='"+(publications[n]?"ok":"bad")+"'>"+
+   (publications[n]?"🟢":"🔴")+
+   " data/publication_"+esc(n)+".json</p>"
+  ).join("");
+  const difficultes=liste(r?.difficultes).map(x=>
+   typeof x==="string"?x:JSON.stringify(x));
+  $("difficultes").textContent=
+   [...erreurs,...difficultes].join("\n")||"Aucune difficulté déclarée.";
+  $("etatActions").textContent=
+   "La présence des fichiers ne prouve pas l'exécution "+
+   "réussie de GitHub Actions. Consultez l'historique GitHub.";
+  $("actualisation").textContent="Dernière consultation : "+paris();
+  fraicheur(r);
+  $("etatGlobal").textContent=erreurs.length?
+   "🟡 Publication partielle ("+erreurs.length+" erreur(s))":
+   "🟢 Cinq fichiers JSON chargés";
+  journal("Publications : "+(5-erreurs.length)+"/5 chargées");
+ }catch(e){
+  $("etatGlobal").textContent="🔴 Erreur : "+e.message;
+  journal("Erreur publications : "+e.message);
+ }finally{
+  chargementPublications=false;
+  $("actualiserTout").disabled=false;
+ }
+}
+function horloge(){
+ $("horloge").textContent="🕒 Paris : "+paris();
+}
+window.addEventListener("error",e=>journal("Erreur JS : "+e.message));
+window.addEventListener("unhandledrejection",
+ e=>journal("Promesse rejetée : "+String(e.reason)));
+
+$("date").value=jourParis();
+$("chargerPMU").addEventListener("click",chargerPMU);
+$("analyserPMU").addEventListener("click",analyserPMU);
+$("actualiserTout").addEventListener("click",chargerPublications);
+$("figerLocal").addEventListener("click",enregistrerFige);
+$("exporter").addEventListener("click",exporter);
+$("auditerLocal").addEventListener("click",auditerLocal);
+["date","reunion","course"].forEach(id=>
+ $(id).addEventListener("change",()=>{
+  generation++;resetDirect();
+  $("etatPMU").textContent="Sélection modifiée. Rechargez les données.";
+ })
+);
+horloge();
+setInterval(horloge,1000);
+afficherFigesLocaux();
+chargerPublications();
+journal("X1000 PHOENIX initialisé.");
+</script>
+</body>
+</html>
