@@ -20,37 +20,48 @@
 }
 *{box-sizing:border-box}
 body{
-  margin:0;background:var(--bg);
+  margin:0;
+  background:var(--bg);
   color:var(--text);
   font:15px/1.6 Arial,sans-serif;
 }
 header{
-  padding:24px 14px;text-align:center;
+  padding:24px 14px;
+  text-align:center;
   background:linear-gradient(135deg,#153b5b,#071321);
 }
 h1{color:var(--gold);font-size:27px}
 h2{color:var(--blue)}
 h3{color:var(--gold)}
 nav{
-  display:flex;gap:8px;
-  overflow-x:auto;padding:10px;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding:10px;
   background:#0b1b2d;
-  position:sticky;top:0;z-index:10;
+  position:sticky;
+  top:0;
+  z-index:10;
 }
 nav a{
-  color:white;background:#203b59;
-  padding:9px;border-radius:8px;
-  text-decoration:none;white-space:nowrap;
+  color:white;
+  background:#203b59;
+  padding:9px;
+  border-radius:8px;
+  text-decoration:none;
+  white-space:nowrap;
 }
 main{
   max-width:1200px;
-  margin:auto;padding:12px;
+  margin:auto;
+  padding:12px;
 }
 section,article{
   background:var(--panel);
   border:1px solid var(--line);
   border-radius:14px;
-  padding:16px;margin:14px 0;
+  padding:16px;
+  margin:14px 0;
 }
 article{background:var(--panel2)}
 .grid{
@@ -60,19 +71,23 @@ article{background:var(--panel2)}
 }
 .metric{
   background:var(--panel2);
-  border-radius:10px;padding:14px;
+  border-radius:10px;
+  padding:14px;
 }
 .metric strong{
-  display:block;font-size:25px;
+  display:block;
+  font-size:25px;
   color:var(--gold);
 }
 .tablewrap{overflow-x:auto}
 table{
-  width:100%;min-width:850px;
+  width:100%;
+  min-width:850px;
   border-collapse:collapse;
 }
 th,td{
-  padding:10px;text-align:left;
+  padding:10px;
+  text-align:left;
   border-bottom:1px solid var(--line);
   vertical-align:top;
 }
@@ -82,22 +97,43 @@ th{
 }
 tr:nth-child(even){background:#172e48}
 button{
-  background:#315477;color:white;
-  border:0;border-radius:8px;
-  padding:12px;cursor:pointer;
+  background:#315477;
+  color:white;
+  border:0;
+  border-radius:8px;
+  padding:12px;
+  cursor:pointer;
 }
+button:disabled{opacity:.6;cursor:wait}
 a{color:var(--blue)}
 small,.muted{color:#a5b8ce}
 pre{
   white-space:pre-wrap;
   overflow-wrap:anywhere;
   background:#09192a;
-  padding:12px;border-radius:9px;
-  max-height:450px;overflow:auto;
+  padding:12px;
+  border-radius:9px;
+  max-height:450px;
+  overflow:auto;
 }
 .vert{color:var(--green)}
 .jaune{color:var(--yellow)}
 .rouge{color:var(--red)}
+.info{
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:#0b1b2d;
+  margin:10px 0;
+}
+.empty{
+  color:var(--yellow);
+  padding:12px;
+}
+.source{
+  overflow-wrap:anywhere;
+  font-size:13px;
+}
 footer{text-align:center;padding:24px}
 </style>
 </head>
@@ -120,27 +156,32 @@ footer{text-align:center;padding:24px}
 </nav>
 
 <main>
+
 <section id="accueil">
 <h2>🔥 Centre de commandement</h2>
 <div class="grid">
 <div class="metric">
-<strong id="nbCourses">0</strong>Courses
+<strong id="nbCourses">—</strong>Courses
 </div>
 <div class="metric">
-<strong>5</strong>Moteurs
+<strong id="nbMoteurs">5</strong>Moteurs
 </div>
 <div class="metric">
-<strong id="nbPV">0</strong>PV
+<strong id="nbAnalyses">—</strong>Courses analysées
 </div>
 <div class="metric">
-<strong id="nbFiges">0</strong>FIGÉS vérifiés
+<strong id="nbPV">—</strong>PV
 </div>
 <div class="metric">
-<strong id="nbAudits">0</strong>Audits
+<strong id="nbFiges">—</strong>FIGÉS vérifiés
+</div>
+<div class="metric">
+<strong id="nbAudits">—</strong>Audits
 </div>
 </div>
-<p id="actualisation">En attente</p>
-<button id="bouton">🔄 Actualiser</button>
+<p id="actualisation">Chargement des données...</p>
+<p id="fraicheur" class="muted"></p>
+<button id="bouton" type="button">🔄 Actualiser</button>
 </section>
 
 <section id="courses">
@@ -148,6 +189,7 @@ footer{text-align:center;padding:24px}
 <p class="muted">
 Les classements sont expérimentaux.
 Aucune garantie de gain.
+Les analyses indicatives ne sont pas des FIGÉS.
 </p>
 <div id="listeCourses">Chargement...</div>
 </section>
@@ -173,11 +215,20 @@ target="_blank" rel="noopener noreferrer">
 Consulter les exécutions GitHub Actions
 </a>
 </p>
+<p id="etatActions" class="muted">
+Exécution GitHub Actions non vérifiée par cette page.
+</p>
+
+<h3>État des fichiers de publication</h3>
+<div id="fichiers">Vérification...</div>
+
 <h3>Journal des difficultés</h3>
 <div id="difficultes">En attente</div>
+
 <h3>Dernier rapport</h3>
 <pre id="rapport">En attente</pre>
 </section>
+
 </main>
 
 <footer>
@@ -191,10 +242,13 @@ Aucun pronostic ne garantit un résultat.
 <script>
 "use strict";
 
-const el=id=>document.getElementById(id);
+const el = id => document.getElementById(id);
+const NOMS = ["courses","pv","figes","audits","rapport"];
+const MOTEURS = ["M1","M2","M3","M4","M5"];
+let chargementEnCours = false;
 
 function esc(v){
-  return String(v??"—").replace(/[&<>"']/g,c=>({
+  return String(v ?? "—").replace(/[&<>"']/g,c=>({
     "&":"&amp;",
     "<":"&lt;",
     ">":"&gt;",
@@ -204,13 +258,19 @@ function esc(v){
 }
 
 function liste(v){
-  return Array.isArray(v)?v:[];
+  return Array.isArray(v) ? v : [];
+}
+
+function valeur(v){
+  return v === null || v === undefined || v === ""
+    ? "—" : v;
 }
 
 function paris(v){
   if(!v)return "—";
-  const d=new Date(v);
+  const d = v instanceof Date ? v : new Date(v);
   if(Number.isNaN(d.getTime()))return "—";
+
   return new Intl.DateTimeFormat("fr-FR",{
     timeZone:"Europe/Paris",
     dateStyle:"short",
@@ -218,202 +278,486 @@ function paris(v){
   }).format(d);
 }
 
-async function lireJSON(nom){
-  const reponse=await fetch(
-    "data/publication_"+nom+".json?v="+Date.now(),
-    {cache:"no-store"}
-  );
-  if(!reponse.ok){
-    throw Error(nom+" : HTTP "+reponse.status);
-  }
-  return reponse.json();
-}
-
 function couleur(statut){
-  const s=String(statut||"").toUpperCase();
-  if(s.includes("FIGE")||s.includes("VERT"))
-    return "vert";
-  if(s.includes("ERREUR")||s.includes("NON VALIDE"))
+  const s = String(statut || "")
+    .toUpperCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"");
+
+  if(s.includes("ERREUR") ||
+     s.includes("NON VALIDE") ||
+     s.includes("REJETE") ||
+     s.includes("ECHEC")){
     return "rouge";
+  }
+  if(s.includes("FIGE_VERIFIE") ||
+     s.includes("FIGE_AVANT_DEPART") ||
+     s.includes("VERT") ||
+     s.includes("PUBLICATION_OK")){
+    return "vert";
+  }
   return "jaune";
 }
 
+function lienSource(url){
+  if(typeof url !== "string")return "—";
+  try{
+    const u = new URL(url);
+    if(u.protocol !== "https:")return esc(url);
+    return `<a href="${esc(u.href)}"
+      target="_blank"
+      rel="noopener noreferrer">Consulter la source</a>`;
+  }catch{
+    return esc(url);
+  }
+}
+
+async function lireJSON(nom){
+  const chemin = new URL(
+    "data/publication_" + nom + ".json",
+    document.baseURI
+  );
+  chemin.searchParams.set("v",String(Date.now()));
+
+  const controleur = new AbortController();
+  const delai = setTimeout(
+    ()=>controleur.abort(),
+    20000
+  );
+
+  try{
+    const reponse = await fetch(chemin.href,{
+      cache:"no-store",
+      signal:controleur.signal,
+      headers:{"Accept":"application/json"}
+    });
+
+    if(!reponse.ok){
+      throw new Error("HTTP " + reponse.status);
+    }
+
+    const donnees = await reponse.json();
+
+    if(!donnees || typeof donnees !== "object" ||
+       Array.isArray(donnees)){
+      throw new Error("Format JSON incorrect");
+    }
+
+    if(nom !== "rapport" &&
+       !Array.isArray(donnees[nom])){
+      throw new Error(
+        "Tableau '" + nom + "' absent ou invalide"
+      );
+    }
+
+    return donnees;
+  }catch(e){
+    if(e.name === "AbortError"){
+      throw new Error("Délai de chargement dépassé");
+    }
+    throw e;
+  }finally{
+    clearTimeout(delai);
+  }
+}
+
 function tableauMoteurs(moteurs){
-  if(!liste(moteurs).length){
-    return "<p>Aucune analyse disponible.</p>";
+  const disponibles = liste(moteurs).filter(
+    m => m && typeof m === "object"
+  );
+
+  if(!disponibles.length){
+    return `<p class="empty">
+      🟡 Aucune analyse M1–M5 disponible
+      pour cette course.
+    </p>`;
   }
 
-  const lignes=liste(moteurs).map(m=>`
+  const lignes = disponibles.map(m=>{
+    const ordre = liste(
+      m.ordre_espere || m.ordre
+    );
+    return `
     <tr>
-      <td>${esc(m.moteur)}</td>
-      <td>${esc(m.gagnant_espere)}</td>
-      <td>${esc(m.meilleur_place)}</td>
-      <td>${esc(liste(m.ordre_espere).join(" - "))}</td>
-      <td>${esc(m.pari_retenu||"AUCUN")}</td>
+      <td><strong>${esc(m.moteur)}</strong></td>
+      <td>${esc(valeur(m.gagnant_espere))}</td>
+      <td>${esc(valeur(m.meilleur_place))}</td>
+      <td>${esc(ordre.length ? ordre.join(" - ") : "—")}</td>
+      <td>${esc(valeur(m.pari_retenu || "AUCUN"))}</td>
       <td class="${couleur(m.qualification)}">
-        ${esc(m.qualification)}
+        ${esc(valeur(m.qualification))}
       </td>
       <td class="${couleur(m.validation)}">
-        ${esc(m.validation)}
+        ${esc(valeur(m.validation))}
       </td>
       <td>${esc(paris(m.heure_paris))}</td>
-    </tr>
-  `).join("");
+    </tr>`;
+  }).join("");
 
   return `
   <div class="tablewrap">
   <table>
   <thead><tr>
-  <th>Moteur</th>
-  <th>🥇 Gagnant espéré</th>
-  <th>🥈 Meilleur placé</th>
-  <th>Ordre d'arrivée espéré</th>
-  <th>🎯 Pari retenu</th>
-  <th>Qualification</th>
-  <th>Validation</th>
-  <th>Heure Paris</th>
+    <th>Moteur</th>
+    <th>🥇 Gagnant espéré</th>
+    <th>🥈 Meilleur placé</th>
+    <th>Ordre d'arrivée espéré</th>
+    <th>🎯 Pari retenu</th>
+    <th>Qualification</th>
+    <th>Validation</th>
+    <th>Heure Paris</th>
   </tr></thead>
   <tbody>${lignes}</tbody>
-  </table></div>`;
+  </table>
+  </div>`;
 }
 
 function afficherCourses(courses){
-  el("listeCourses").innerHTML=liste(courses).length?
-    liste(courses).map(c=>`
-      <article>
-      <h3>${esc(c.hippodrome)} — ${esc(c.id)}</h3>
-      <p>Départ : ${esc(paris(c.depart))}</p>
-      <p>Partants : ${esc(c.nombre_partants)}</p>
-      <p>Statut : ${esc(c.statut)}</p>
-      <p>Source : ${esc(c.source)}</p>
+  const zone = el("listeCourses");
+  if(!courses.length){
+    zone.innerHTML = `<p class="empty">
+      Aucune course publiée dans le fichier JSON.
+    </p>`;
+    return;
+  }
+
+  const triees = [...courses].sort((a,b)=>{
+    const da = Date.parse(a.depart || "") || 0;
+    const db = Date.parse(b.depart || "") || 0;
+    return da-db;
+  });
+
+  zone.innerHTML = triees.map(c=>{
+    const actifs = liste(c.partants).filter(
+      p=>p.non_partant !== true
+    ).length;
+
+    const nombre = c.nombre_partants ??
+      (Array.isArray(c.partants) ? actifs : "—");
+
+    const analyses = liste(c.moteurs).length;
+    const etat = valeur(c.statut);
+
+    return `
+    <article>
+      <h3>${esc(valeur(c.hippodrome))}
+      — ${esc(valeur(c.id))}</h3>
+      <p><strong>${esc(valeur(c.nom))}</strong></p>
+      <p>🕒 Départ : ${esc(paris(c.depart))}</p>
+      <p>🏇 Partants : ${esc(nombre)}</p>
+      <p>🧠 Moteurs analysés : ${analyses}/5</p>
+      <p class="${couleur(etat)}">
+        Statut : ${esc(etat)}
+      </p>
+      <p class="source">
+        Source : ${lienSource(c.source)}
+      </p>
       ${tableauMoteurs(c.moteurs)}
-      </article>
-    `).join(""):
-    "<p>Aucune course vérifiée publiée.</p>";
+    </article>`;
+  }).join("");
+}
+
+function rapportDuFige(f){
+  if(f && f.rapport &&
+     typeof f.rapport === "object"){
+    return f.rapport;
+  }
+  if(f && f.contenu &&
+     f.contenu.analyse){
+    return f.contenu.analyse;
+  }
+  return {};
 }
 
 function afficherFiges(figes){
-  el("listeFiges").innerHTML=liste(figes).length?
-    liste(figes).map(f=>`
-      <article>
-      <h3>${esc(f.rapport?.course_id)}</h3>
-      <p class="vert">🔒 FIGÉ AVANT DÉPART</p>
-      <p>Heure : ${esc(paris(f.fige_a))}</p>
+  if(!figes.length){
+    el("listeFiges").innerHTML = `
+      <p class="empty">
+      🔒 Aucun FIGÉ vérifié publié.
+      Un FIGÉ doit être créé avant le départ,
+      conservé et validé par le logiciel Python.
+      </p>`;
+    return;
+  }
+
+  el("listeFiges").innerHTML = figes.map(f=>{
+    const r = rapportDuFige(f);
+    const dateFige = f.fige_a || f.contenu?.fige_a;
+
+    return `
+    <article>
+      <h3>${esc(valeur(r.course_id))}</h3>
+      <p class="vert">🔒 FIGÉ publié</p>
+      <p>Heure : ${esc(paris(dateFige))}</p>
+      <p>Statut : ${esc(valeur(f.statut))}</p>
       <p>Empreinte SHA256 :
-      <small>${esc(f.sha256)}</small></p>
-      ${tableauMoteurs(f.rapport?.moteurs)}
-      </article>
-    `).join(""):
-    "<p>Aucun FIGÉ vérifié publié.</p>";
+      <small>${esc(valeur(f.sha256))}</small></p>
+      ${tableauMoteurs(r.moteurs)}
+    </article>`;
+  }).join("");
 }
 
 function afficherPV(pv){
-  el("listePV").innerHTML=liste(pv).length?
-    liste(pv).map(p=>`
-      <article>
-      <h3>${esc(p.course_id||p.course)}</h3>
-      <p>Statut : ${esc(p.statut||"EXPERIMENTAL")}</p>
-      <p>Création : ${esc(paris(p.cree_a||p.fige_a))}</p>
-      <p class="muted">
-      Un PV expérimental n'est pas un FIGÉ vérifié.
+  if(!pv.length){
+    el("listePV").innerHTML =
+      `<p class="empty">Aucun PV publié.</p>`;
+    return;
+  }
+
+  el("listePV").innerHTML = pv.map(p=>`
+    <article>
+      <h3>${esc(valeur(p.course_id || p.course))}</h3>
+      <p>Type : ${esc(valeur(p.type))}</p>
+      <p class="${couleur(p.statut)}">
+        Statut : ${esc(valeur(p.statut))}
       </p>
-      </article>
-    `).join(""):
-    "<p>Aucun PV disponible.</p>";
+      <p>Création :
+        ${esc(paris(p.cree_a || p.fige_a))}
+      </p>
+      <p class="muted">
+        Un PV d'analyse non figé n'est pas
+        un pronostic officiellement FIGÉ.
+      </p>
+    </article>
+  `).join("");
 }
 
 function afficherAudits(audits){
-  el("listeAudits").innerHTML=liste(audits).length?
-    liste(audits).map(a=>{
-      const arrivee=a.arrivee_officielle||a.arrivee;
-      return `
-      <article>
-      <h3>${esc(a.course_id)}</h3>
-      <p>Arrivée : ${esc(liste(arrivee).join(" - "))}</p>
-      <p>Statut : ${esc(a.statut)}</p>
-      <p>Source : ${esc(a.source_arrivee||a.source)}</p>
+  if(!audits.length){
+    el("listeAudits").innerHTML = `
+      <p class="empty">
+      📊 Aucun audit officiel validé publié.
+      L'audit exige un FIGÉ antérieur
+      et une arrivée officielle vérifiée.
+      </p>`;
+    return;
+  }
+
+  el("listeAudits").innerHTML = audits.map(a=>{
+    const arrivee = a.arrivee_officielle || a.arrivee;
+    const lignes = liste(a.moteurs).map(m=>`
+      <tr>
+        <td>${esc(m.moteur)}</td>
+        <td>${m.gagnant_trouve === true ? "Oui" :
+          m.gagnant_trouve === false ? "Non" : "—"}</td>
+        <td>${esc(valeur(m.chevaux_dans_les_cinq))}</td>
+        <td>${m.ordre_exact_cinq === true ? "Oui" :
+          m.ordre_exact_cinq === false ? "Non" : "—"}</td>
+      </tr>
+    `).join("");
+
+    return `
+    <article>
+      <h3>${esc(valeur(a.course_id))}</h3>
+      <p>Arrivée officielle :
+        ${esc(liste(arrivee).join(" - "))}
+      </p>
+      <p>Statut : ${esc(valeur(a.statut))}</p>
+      <p>Source :
+        ${lienSource(a.source_arrivee || a.source)}
+      </p>
       <div class="tablewrap">
       <table>
       <thead><tr>
-      <th>Moteur</th>
-      <th>Gagnant trouvé</th>
-      <th>Chevaux dans les cinq</th>
-      <th>Ordre exact</th>
+        <th>Moteur</th>
+        <th>Gagnant trouvé</th>
+        <th>Chevaux dans les cinq</th>
+        <th>Ordre exact</th>
       </tr></thead>
-      <tbody>
-      ${liste(a.moteurs).map(m=>`
-        <tr>
-        <td>${esc(m.moteur)}</td>
-        <td>${m.gagnant_trouve===true?"Oui":
-          m.gagnant_trouve===false?"Non":"—"}</td>
-        <td>${esc(m.chevaux_dans_les_cinq)}</td>
-        <td>${m.ordre_exact_cinq===true?"Oui":
-          m.ordre_exact_cinq===false?"Non":"—"}</td>
-        </tr>
-      `).join("")}
-      </tbody></table></div>
-      </article>`;
-    }).join(""):
-    "<p>Aucun audit officiel validé publié.</p>";
+      <tbody>${lignes}</tbody>
+      </table>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+function afficherErreur(nom,message){
+  const zones = {
+    courses:"listeCourses",
+    pv:"listePV",
+    figes:"listeFiges",
+    audits:"listeAudits"
+  };
+  const zone = zones[nom];
+  if(zone){
+    el(zone).innerHTML = `
+      <p class="rouge">
+      🔴 Impossible de charger ${esc(nom)} :
+      ${esc(message)}
+      </p>`;
+  }
+}
+
+function afficherFraicheur(rapport){
+  const zone = el("fraicheur");
+  const date = rapport?.generated_at_paris;
+
+  if(!date){
+    zone.textContent =
+      "🔴 Date de publication indisponible.";
+    return;
+  }
+
+  const instant = new Date(date).getTime();
+  const age = (Date.now()-instant)/60000;
+
+  if(!Number.isFinite(age)){
+    zone.textContent =
+      "🟡 Date de publication invalide.";
+  }else if(age < -5){
+    zone.textContent =
+      "🟡 Horodatage futur : vérifier les horloges.";
+  }else if(age <= 45){
+    zone.textContent =
+      "🟢 Publication récente.";
+  }else{
+    zone.textContent =
+      "🟡 Publication ancienne : " +
+      Math.floor(age) + " minutes. " +
+      "Vérifier GitHub Actions.";
+  }
 }
 
 async function charger(){
-  const noms=["courses","pv","figes","audits","rapport"];
-  const resultats=await Promise.allSettled(
-    noms.map(lireJSON)
-  );
+  if(chargementEnCours)return;
+  chargementEnCours = true;
+  el("bouton").disabled = true;
+  el("etat").textContent = "🟡 Actualisation...";
 
-  const valeurs=resultats.map(r=>
-    r.status==="fulfilled"?r.value:null
-  );
+  try{
+    const resultats = await Promise.allSettled(
+      NOMS.map(lireJSON)
+    );
 
-  const [c,p,f,a,r]=valeurs;
-  const courses=liste(c?.courses);
-  const pv=liste(p?.pv);
-  const figes=liste(f?.figes);
-  const audits=liste(a?.audits);
+    const donnees = {};
+    const erreurs = [];
 
-  el("nbCourses").textContent=courses.length;
-  el("nbPV").textContent=pv.length;
-  el("nbFiges").textContent=figes.length;
-  el("nbAudits").textContent=audits.length;
+    resultats.forEach((resultat,i)=>{
+      const nom = NOMS[i];
 
-  afficherCourses(courses);
-  afficherPV(pv);
-  afficherFiges(figes);
-  afficherAudits(audits);
+      if(resultat.status === "fulfilled"){
+        donnees[nom] = resultat.value;
+      }else{
+        donnees[nom] = null;
+        erreurs.push(
+          nom + " : " + resultat.reason.message
+        );
+      }
+    });
 
-  el("etat").textContent=r?.status||
-    "🔴 Rapport indisponible";
+    const courses = liste(donnees.courses?.courses);
+    const pv = liste(donnees.pv?.pv);
+    const figes = liste(donnees.figes?.figes);
+    const audits = liste(donnees.audits?.audits);
+    const rapport = donnees.rapport;
 
-  el("actualisation").textContent=
-    "Dernière publication : "+
-    paris(r?.generated_at_paris);
+    el("nbCourses").textContent =
+      donnees.courses ? courses.length : "—";
 
-  el("rapport").textContent=r?
-    JSON.stringify(r,null,2):
-    "Aucun rapport disponible.";
+    el("nbPV").textContent =
+      donnees.pv ? pv.length : "—";
 
-  const erreurs=resultats.flatMap((x,i)=>
-    x.status==="rejected"?
-    [noms[i]+" : "+x.reason.message]:[]
-  );
+    el("nbFiges").textContent =
+      donnees.figes ? figes.length : "—";
 
-  const difficultes=[
-    ...erreurs,
-    ...liste(r?.difficultes).map(x=>
-      x.difficulte||JSON.stringify(x)
-    )
-  ];
+    el("nbAudits").textContent =
+      donnees.audits ? audits.length : "—";
 
-  el("difficultes").innerHTML=difficultes.length?
-    difficultes.map(x=>"<p>"+esc(x)+"</p>").join(""):
-    "<p>Aucune difficulté signalée.</p>";
+    el("nbAnalyses").textContent =
+      donnees.courses ?
+      courses.filter(c=>liste(c.moteurs).length>0).length :
+      "—";
+
+    el("nbMoteurs").textContent =
+      Array.isArray(rapport?.moteurs_actifs) ?
+      rapport.moteurs_actifs.length : 5;
+
+    if(donnees.courses)afficherCourses(courses);
+    else afficherErreur("courses",
+      erreurs.find(e=>e.startsWith("courses :")) || "Indisponible");
+
+    if(donnees.pv)afficherPV(pv);
+    else afficherErreur("pv",
+      erreurs.find(e=>e.startsWith("pv :")) || "Indisponible");
+
+    if(donnees.figes)afficherFiges(figes);
+    else afficherErreur("figes",
+      erreurs.find(e=>e.startsWith("figes :")) || "Indisponible");
+
+    if(donnees.audits)afficherAudits(audits);
+    else afficherErreur("audits",
+      erreurs.find(e=>e.startsWith("audits :")) || "Indisponible");
+
+    if(rapport){
+      el("etat").textContent =
+        (erreurs.length ? "🟡 " : "📡 ") +
+        valeur(rapport.status);
+
+      el("actualisation").textContent =
+        "Dernière publication : " +
+        paris(rapport.generated_at_paris) +
+        " | Analyses : " +
+        valeur(rapport.analyses_count);
+    }else{
+      el("etat").textContent =
+        "🔴 Rapport indisponible";
+
+      el("actualisation").textContent =
+        "Dernière publication inconnue.";
+    }
+
+    afficherFraicheur(rapport);
+
+    el("rapport").textContent = rapport ?
+      JSON.stringify(rapport,null,2) :
+      "Aucun rapport disponible.";
+
+    const etats = NOMS.map((nom,i)=>{
+      const ok = resultats[i].status === "fulfilled";
+      return `<p class="${ok?"vert":"rouge"}">
+        ${ok?"🟢":"🔴"}
+        publication_${esc(nom)}.json :
+        ${ok?"chargé":"indisponible"}
+      </p>`;
+    });
+
+    el("fichiers").innerHTML = etats.join("");
+
+    const difficultes = [
+      ...erreurs,
+      ...liste(rapport?.difficultes).map(x=>
+        typeof x === "string" ?
+        x : x.difficulte || JSON.stringify(x)
+      )
+    ];
+
+    el("difficultes").innerHTML =
+      difficultes.length ?
+      difficultes.map(x=>
+        "<p class='jaune'>" + esc(x) + "</p>"
+      ).join("") :
+      "<p class='vert'>Aucune difficulté signalée.</p>";
+
+    if(erreurs.length){
+      el("etat").textContent =
+        "🟡 Chargement partiel : " +
+        erreurs.length + " fichier(s) en erreur";
+    }
+
+  }catch(e){
+    el("etat").textContent =
+      "🔴 Erreur interface : " + e.message;
+    el("difficultes").textContent =
+      e.stack || e.message;
+  }finally{
+    chargementEnCours = false;
+    el("bouton").disabled = false;
+  }
 }
 
 function horloge(){
-  el("horloge").textContent=
-    "🕒 Heure de Paris : "+paris(new Date());
+  el("horloge").textContent =
+    "🕒 Heure de Paris : " + paris(new Date());
 }
 
 el("bouton").addEventListener("click",charger);
@@ -421,6 +765,7 @@ horloge();
 setInterval(horloge,1000);
 charger();
 setInterval(charger,60000);
+
 </script>
 </body>
 </html>
