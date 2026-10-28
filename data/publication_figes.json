@@ -2408,6 +2408,493 @@
         "avertissement": "Scores heuristiques non calibres. Aucune garantie de resultat."
       },
       "sha256": "8bb65b9886b0ee6c90728e57a904880825b1327b20456207a3ae431b117abd96"
+    },
+    {
+      "statut": "FIGE_AVANT_DEPART",
+      "fige_a": "2026-10-28T16:15:25.229675+01:00",
+      "rapport": {
+        "logiciel": "X1000 PHOENIX",
+        "course_id": "2026-10-28-R3-C1",
+        "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+        "nom": "PRIX DES SAINTES MARIES",
+        "depart": "2026-10-28T16:37:00+01:00",
+        "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
+        "analyse_a": "2026-10-28T16:15:25.229423+01:00",
+        "nombre_partants": 13,
+        "profils": [
+          {
+            "numero": 1,
+            "nom": "LEONITO STAR",
+            "forme": 0.4,
+            "regularite": 0.375,
+            "observations": 8
+          },
+          {
+            "numero": 2,
+            "nom": "LE DOCTOR",
+            "forme": 0.58,
+            "regularite": 0.4,
+            "observations": 5
+          },
+          {
+            "numero": 3,
+            "nom": "LITCHI JULRY",
+            "forme": 0.7,
+            "regularite": 0.714286,
+            "observations": 7
+          },
+          {
+            "numero": 4,
+            "nom": "LAIOS JULRY",
+            "forme": 0.68,
+            "regularite": 0.8,
+            "observations": 5
+          },
+          {
+            "numero": 5,
+            "nom": "LENNON",
+            "forme": 0.62,
+            "regularite": 0.666667,
+            "observations": 6
+          },
+          {
+            "numero": 6,
+            "nom": "LOS ANGELES LAKERS",
+            "forme": 0.325,
+            "regularite": 0.0,
+            "observations": 4
+          },
+          {
+            "numero": 7,
+            "nom": "LITTLE KING ELEVEN",
+            "forme": 0.42,
+            "regularite": 0.333333,
+            "observations": 6
+          },
+          {
+            "numero": 8,
+            "nom": "LINGFIELD",
+            "forme": 0.7,
+            "regularite": 0.666667,
+            "observations": 6
+          },
+          {
+            "numero": 9,
+            "nom": "LORENZO PAULOIS",
+            "forme": 0.56,
+            "regularite": 0.5,
+            "observations": 8
+          },
+          {
+            "numero": 10,
+            "nom": "LUCKY DAY",
+            "forme": 0.56,
+            "regularite": 0.75,
+            "observations": 8
+          },
+          {
+            "numero": 11,
+            "nom": "LIDO DE LOU",
+            "forme": 0.54,
+            "regularite": 0.5,
+            "observations": 6
+          },
+          {
+            "numero": 12,
+            "nom": "LOGO DE BERTRANGE",
+            "forme": 0.66,
+            "regularite": 0.75,
+            "observations": 8
+          },
+          {
+            "numero": 13,
+            "nom": "LOOKING SIXTY ONE",
+            "forme": 0.58,
+            "regularite": 0.75,
+            "observations": 8
+          }
+        ],
+        "moteurs": [
+          {
+            "moteur": "M1",
+            "gagnant_espere": 4,
+            "meilleur_place": 3,
+            "ordre_espere": [
+              4,
+              3,
+              12,
+              8,
+              13
+            ],
+            "pari_retenu": null,
+            "qualification": "JAUNE",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.019643,
+            "scores": [
+              {
+                "numero": 4,
+                "score": 0.725
+              },
+              {
+                "numero": 3,
+                "score": 0.705357
+              },
+              {
+                "numero": 12,
+                "score": 0.69375
+              },
+              {
+                "numero": 8,
+                "score": 0.6875
+              },
+              {
+                "numero": 13,
+                "score": 0.64375
+              },
+              {
+                "numero": 5,
+                "score": 0.6375
+              },
+              {
+                "numero": 10,
+                "score": 0.63125
+              },
+              {
+                "numero": 9,
+                "score": 0.5375
+              },
+              {
+                "numero": 11,
+                "score": 0.525
+              },
+              {
+                "numero": 2,
+                "score": 0.5125
+              },
+              {
+                "numero": 1,
+                "score": 0.390625
+              },
+              {
+                "numero": 7,
+                "score": 0.3875
+              },
+              {
+                "numero": 6,
+                "score": 0.203125
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T16:15:25.229423+01:00"
+          },
+          {
+            "moteur": "M2",
+            "gagnant_espere": 4,
+            "meilleur_place": 12,
+            "ordre_espere": [
+              4,
+              12,
+              3,
+              13,
+              8
+            ],
+            "pari_retenu": null,
+            "qualification": "JAUNE",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.03875,
+            "scores": [
+              {
+                "numero": 4,
+                "score": 0.755
+              },
+              {
+                "numero": 12,
+                "score": 0.71625
+              },
+              {
+                "numero": 3,
+                "score": 0.708929
+              },
+              {
+                "numero": 13,
+                "score": 0.68625
+              },
+              {
+                "numero": 8,
+                "score": 0.679167
+              },
+              {
+                "numero": 10,
+                "score": 0.67875
+              },
+              {
+                "numero": 5,
+                "score": 0.649167
+              },
+              {
+                "numero": 9,
+                "score": 0.5225
+              },
+              {
+                "numero": 11,
+                "score": 0.515
+              },
+              {
+                "numero": 2,
+                "score": 0.4675
+              },
+              {
+                "numero": 1,
+                "score": 0.384375
+              },
+              {
+                "numero": 7,
+                "score": 0.365833
+              },
+              {
+                "numero": 6,
+                "score": 0.121875
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T16:15:25.229423+01:00"
+          },
+          {
+            "moteur": "M3",
+            "gagnant_espere": 4,
+            "meilleur_place": 3,
+            "ordre_espere": [
+              4,
+              3,
+              12,
+              8,
+              13
+            ],
+            "pari_retenu": null,
+            "qualification": "JAUNE",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.032857,
+            "scores": [
+              {
+                "numero": 4,
+                "score": 0.74
+              },
+              {
+                "numero": 3,
+                "score": 0.707143
+              },
+              {
+                "numero": 12,
+                "score": 0.705
+              },
+              {
+                "numero": 8,
+                "score": 0.683334
+              },
+              {
+                "numero": 13,
+                "score": 0.665
+              },
+              {
+                "numero": 10,
+                "score": 0.655
+              },
+              {
+                "numero": 5,
+                "score": 0.643334
+              },
+              {
+                "numero": 9,
+                "score": 0.53
+              },
+              {
+                "numero": 11,
+                "score": 0.52
+              },
+              {
+                "numero": 2,
+                "score": 0.49
+              },
+              {
+                "numero": 1,
+                "score": 0.3875
+              },
+              {
+                "numero": 7,
+                "score": 0.376667
+              },
+              {
+                "numero": 6,
+                "score": 0.1625
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T16:15:25.229423+01:00"
+          },
+          {
+            "moteur": "M4",
+            "gagnant_espere": 4,
+            "meilleur_place": 3,
+            "ordre_espere": [
+              4,
+              3,
+              8,
+              12,
+              5
+            ],
+            "pari_retenu": null,
+            "qualification": "JAUNE",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.006429,
+            "scores": [
+              {
+                "numero": 4,
+                "score": 0.71
+              },
+              {
+                "numero": 3,
+                "score": 0.703571
+              },
+              {
+                "numero": 8,
+                "score": 0.691667
+              },
+              {
+                "numero": 12,
+                "score": 0.6825
+              },
+              {
+                "numero": 5,
+                "score": 0.631667
+              },
+              {
+                "numero": 13,
+                "score": 0.6225
+              },
+              {
+                "numero": 10,
+                "score": 0.6075
+              },
+              {
+                "numero": 9,
+                "score": 0.545
+              },
+              {
+                "numero": 2,
+                "score": 0.535
+              },
+              {
+                "numero": 11,
+                "score": 0.53
+              },
+              {
+                "numero": 7,
+                "score": 0.398333
+              },
+              {
+                "numero": 1,
+                "score": 0.39375
+              },
+              {
+                "numero": 6,
+                "score": 0.24375
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T16:15:25.229423+01:00"
+          },
+          {
+            "moteur": "M5",
+            "gagnant_espere": 4,
+            "meilleur_place": 12,
+            "ordre_espere": [
+              4,
+              12,
+              3,
+              13,
+              10
+            ],
+            "pari_retenu": null,
+            "qualification": "JAUNE",
+            "validation": "INDICATIF",
+            "ecart_scores": 0.0425,
+            "scores": [
+              {
+                "numero": 4,
+                "score": 0.77
+              },
+              {
+                "numero": 12,
+                "score": 0.7275
+              },
+              {
+                "numero": 3,
+                "score": 0.710714
+              },
+              {
+                "numero": 13,
+                "score": 0.7075
+              },
+              {
+                "numero": 10,
+                "score": 0.7025
+              },
+              {
+                "numero": 8,
+                "score": 0.675
+              },
+              {
+                "numero": 5,
+                "score": 0.655
+              },
+              {
+                "numero": 9,
+                "score": 0.515
+              },
+              {
+                "numero": 11,
+                "score": 0.51
+              },
+              {
+                "numero": 2,
+                "score": 0.445
+              },
+              {
+                "numero": 1,
+                "score": 0.38125
+              },
+              {
+                "numero": 7,
+                "score": 0.355
+              },
+              {
+                "numero": 6,
+                "score": 0.08125
+              }
+            ],
+            "criteres": [
+              "forme",
+              "regularite"
+            ],
+            "heure_paris": "2026-10-28T16:15:25.229423+01:00"
+          }
+        ],
+        "statut": "ANALYSE_INDICATIVE",
+        "avertissement": "Scores heuristiques non calibres. Aucune garantie de resultat."
+      },
+      "sha256": "4945fe967a66b423e855b96f58abd74c525db431f0a1dbc1ce990be696d70b55"
     }
   ]
 }
