@@ -14,34 +14,117 @@ concurrency:
 
 jobs:
   phoenix:
+    name: Intelligence hippique M1-M5
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
+    env:
+      TZ: Europe/Paris
+      PYTHONUNBUFFERED: "1"
+
     steps:
+      # ==========================================
+      # 1. RECUPERATION DU DEPOT
+      # ==========================================
+
       - name: Recuperer le depot
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
+
+      # ==========================================
+      # 2. INSTALLATION PYTHON
+      # ==========================================
 
       - name: Installer Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Verifier Python
+      # ==========================================
+      # 3. VERIFICATION DES PROGRAMMES
+      # ==========================================
+
+      - name: Verifier les fichiers Python
         run: |
+          set -e
+
+          python --version
+
           python -m py_compile phoenix.py
           python -m py_compile pmu_engine.py
           python -m py_compile publication.py
+
+          if [ -f diagnostic_phoenix.py ]; then
+            python -m py_compile diagnostic_phoenix.py
+          fi
+
+          if [ -f analyser_moteurs.py ]; then
+            python -m py_compile analyser_moteurs.py
+          fi
+
+          echo "Verification Python terminee"
+
+      # ==========================================
+      # 4. TEST DU MOTEUR PMU
+      # ==========================================
+
+      - name: Tester le moteur PMU
+        run: |
+          set -e
           python pmu_engine.py --self-test
+
+      # ==========================================
+      # 5. COLLECTE DES COURSES PMU
+      # ==========================================
 
       - name: Collecter les courses PMU
         id: collecte
         continue-on-error: true
-        run: python pmu_engine.py
+        run: |
+          set -e
+
+          echo "Debut collecte PMU"
+
+          python pmu_engine.py
+
+          echo "Collecte terminee"
+
+      # ==========================================
+      # 6. ANALYSES ET FIGES M1-M5
+      # ==========================================
 
       - name: Produire les analyses et FIGES
-        run: python publication.py
+        id: publication
+        run: |
+          set -e
+
+          echo "Publication X1000 PHOENIX"
+
+          python publication.py
+
+          echo "Publication terminee"
+
+      # ==========================================
+      # 7. DIAGNOSTIC DES PUBLICATIONS
+      # ==========================================
+
+      - name: Diagnostiquer les publications X1000
+        id: diagnostic
+        run: |
+          set -e
+
+          if [ -f diagnostic_phoenix.py ]; then
+            python diagnostic_phoenix.py
+          else
+            echo "::warning::diagnostic_phoenix.py absent"
+            echo "Diagnostic non execute"
+          fi
+
+      # ==========================================
+      # 8. VERIFICATION DES DONNEES JSON
+      # ==========================================
 
       - name: Verifier les fichiers JSON
         run: |
@@ -49,15 +132,130 @@ jobs:
           import json
           from pathlib import Path
 
-          for path in Path("data").rglob("*.json"):
-              with path.open(encoding="utf-8") as f:
-                  json.load(f)
-              print("OK:", path)
+          base = Path("data")
+
+          if not base.is_dir():
+              raise SystemExit(
+                  "ERREUR: dossier data absent"
+              )
+
+          fichiers = sorted(base.rglob("*.json"))
+
+          if not fichiers:
+              raise SystemExit(
+                  "ERREUR: aucun fichier JSON"
+              )
+
+          erreurs = []
+
+          for path in fichiers:
+              try:
+                  with path.open(
+                      encoding="utf-8"
+                  ) as f:
+                      json.load(f)
+
+                  print("OK:", path)
+
+              except (
+                  OSError,
+                  ValueError,
+                  UnicodeError
+              ) as exc:
+                  erreurs.append(
+                      f"{path}: {exc}"
+                  )
+
+          if erreurs:
+              for erreur in erreurs:
+                  print("ERREUR:", erreur)
+
+              raise SystemExit(
+                  "Validation JSON echouee"
+              )
+
+          print(
+              f"{len(fichiers)} fichiers JSON valides"
+          )
           PY
 
-      - name: Publier les donnees
+      # ==========================================
+      # 9. CONTROLE DE LA COLLECTE
+      # ==========================================
+
+      - name: Controler le rapport PMU
+        if: always()
         run: |
-          git config user.name "github-actions[bot]"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path(
+              "data/publication_rapport.json"
+          )
+
+          if not path.exists():
+              print(
+                  "::warning::Rapport absent"
+              )
+              raise SystemExit(0)
+
+          with path.open(
+              encoding="utf-8"
+          ) as f:
+              rapport = json.load(f)
+
+          print(
+              "Statut:",
+              rapport.get("status", "INCONNU")
+          )
+
+          for cle in (
+              "courses_collectees",
+              "courses_count",
+              "analyses_count",
+              "pronostics_count",
+              "pv_count",
+              "figes_count",
+              "audits_count"
+          ):
+              print(
+                  cle,
+                  rapport.get(cle, 0)
+              )
+
+          if not rapport.get(
+              "courses_collectees", 0
+          ):
+              print(
+                  "::warning::Aucune course PMU collectee"
+              )
+
+          if not rapport.get(
+              "audits_count", 0
+          ):
+              print(
+                  "::warning::Aucun audit disponible"
+              )
+
+          if rapport.get("difficultes"):
+              print(
+                  "::warning::Difficultes signalees"
+              )
+          PY
+
+      # ==========================================
+      # 10. PUBLICATION GITHUB
+      # ==========================================
+
+      - name: Publier les donnees
+        if: success()
+        run: |
+          set -e
+
+          git config user.name \
+            "github-actions[bot]"
+
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
@@ -68,9 +266,12 @@ jobs:
             exit 0
           fi
 
-          git commit -m "PHOENIX: publication M1-M5"
+          git commit -m \
+            "PHOENIX: publication M1-M5"
 
           for i in 1 2 3; do
+            echo "Tentative $i"
+
             git fetch origin main
 
             if git rebase origin/main; then
@@ -81,7 +282,38 @@ jobs:
             fi
 
             git rebase --abort || true
+
             sleep 5
           done
 
+          echo "::error::Echec publication"
           exit 1
+
+      # ==========================================
+      # 11. BILAN FINAL
+      # ==========================================
+
+      - name: Bilan X1000 PHOENIX
+        if: always()
+        env:
+          COLLECTE_RESULT: ${{ steps.collecte.outcome }}
+          PUBLICATION_RESULT: ${{ steps.publication.outcome }}
+          DIAGNOSTIC_RESULT: ${{ steps.diagnostic.outcome }}
+        run: |
+          echo "================================"
+          echo "X1000 PHOENIX - BILAN"
+          echo "================================"
+
+          echo "Collecte: $COLLECTE_RESULT"
+          echo "Publication: $PUBLICATION_RESULT"
+          echo "Diagnostic: $DIAGNOSTIC_RESULT"
+
+          echo "Heure de Paris:"
+          TZ=Europe/Paris date \
+            '+%d/%m/%Y %H:%M:%S'
+
+          if [ "$COLLECTE_RESULT" != "success" ]; then
+            echo "::warning::Collecte PMU non reussie"
+          fi
+
+          echo "Fin du passage X1000 PHOENIX"
