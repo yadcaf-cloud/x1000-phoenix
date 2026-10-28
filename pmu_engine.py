@@ -1,3 +1,4 @@
+Python
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -887,4 +888,35 @@ def main():
     )
     print(
         "Courses :",
-        statistiques["course
+        statistiques["courses"]
+    )
+    print(
+        "Partants :",
+        statistiques["partants"]
+    )
+    print(
+        "Non-partants :",
+        statistiques["non_partants"]
+    )
+    print(
+        "Erreurs :",
+        statistiques["erreurs"]
+    )
+
+    for erreur in resultat["erreurs"]:
+        print("ALERTE :", erreur)
+
+    for avertissement in resultat["avertissements"]:
+        print("INFO :", avertissement)
+
+    print("Fichier :", destination)
+    print("=" * 48)
+
+    if resultat["statut"] == "ECHEC":
+        return 1
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
