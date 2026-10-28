@@ -23,31 +23,50 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
- margin:0;background:var(--bg);color:var(--text);
+ margin:0;
+ background:var(--bg);
+ color:var(--text);
  font:15px/1.55 system-ui,Arial,sans-serif;
 }
 header{
- padding:25px 12px;text-align:center;
+ padding:25px 12px;
+ text-align:center;
  background:linear-gradient(135deg,#123b48,#071827);
  border-bottom:2px solid var(--gold);
 }
-h1{font-size:clamp(23px,6vw,35px);color:var(--gold);margin:0}
+h1{
+ font-size:clamp(23px,6vw,35px);
+ color:var(--gold);
+ margin:0;
+}
 h2{font-size:21px;color:var(--green);margin-top:0}
 h3{font-size:17px;color:var(--gold)}
 p{margin:9px 0}
 nav{
- display:flex;gap:8px;overflow-x:auto;
- padding:11px;background:#0b2132;
- position:sticky;top:0;z-index:10;
+ display:flex;
+ gap:8px;
+ overflow-x:auto;
+ padding:11px;
+ background:#0b2132;
+ position:sticky;
+ top:0;
+ z-index:10;
 }
 nav a{
- color:white;text-decoration:none;white-space:nowrap;
- background:#1b4054;padding:9px 12px;border-radius:9px;
+ color:white;
+ text-decoration:none;
+ white-space:nowrap;
+ background:#1b4054;
+ padding:9px 12px;
+ border-radius:9px;
 }
 main{max-width:1250px;margin:auto;padding:12px}
 section{
- background:var(--panel);border:1px solid var(--line);
- border-radius:14px;padding:16px;margin:15px 0;
+ background:var(--panel);
+ border:1px solid var(--line);
+ border-radius:14px;
+ padding:16px;
+ margin:15px 0;
  scroll-margin-top:80px;
 }
 .grid{
@@ -56,52 +75,97 @@ section{
  gap:10px;
 }
 .card{
- background:var(--card);border:1px solid var(--line);
- border-radius:10px;padding:13px;margin:8px 0;
+ background:var(--card);
+ border:1px solid var(--line);
+ border-radius:10px;
+ padding:13px;
+ margin:8px 0;
  overflow-wrap:anywhere;
 }
-.value{font-size:27px;font-weight:800;color:var(--blue)}
+.value{
+ font-size:27px;
+ font-weight:800;
+ color:var(--blue);
+}
 .muted{color:var(--muted)}
 .ok{color:var(--green)}
 .warn{color:var(--yellow)}
 .bad{color:var(--red)}
 .table-wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:760px}
+table{
+ width:100%;
+ border-collapse:collapse;
+ min-width:760px;
+}
 th,td{
- padding:10px;border-bottom:1px solid var(--line);
- text-align:left;vertical-align:top;
+ padding:10px;
+ border-bottom:1px solid var(--line);
+ text-align:left;
+ vertical-align:top;
 }
 th{background:#173449;color:var(--gold)}
 button,select{
- background:#1b4054;color:white;border:1px solid var(--line);
- border-radius:8px;padding:11px;font:inherit;max-width:100%;
+ background:#1b4054;
+ color:white;
+ border:1px solid var(--line);
+ border-radius:8px;
+ padding:11px;
+ font:inherit;
+ max-width:100%;
 }
 button{cursor:pointer}
 button:disabled{opacity:.5;cursor:wait}
-.controls{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:12px 0}
+.controls{
+ display:flex;
+ gap:9px;
+ align-items:center;
+ flex-wrap:wrap;
+ margin:12px 0;
+}
 .notice{
  border-left:4px solid var(--yellow);
- background:#182f40;padding:12px;border-radius:7px;margin:10px 0;
+ background:#182f40;
+ padding:12px;
+ border-radius:7px;
+ margin:10px 0;
 }
 pre{
- white-space:pre-wrap;overflow-wrap:anywhere;
- background:#081b29;padding:12px;border-radius:8px;
- max-height:420px;overflow:auto;font-size:12px;
+ white-space:pre-wrap;
+ overflow-wrap:anywhere;
+ background:#081b29;
+ padding:12px;
+ border-radius:8px;
+ max-height:420px;
+ overflow:auto;
+ font-size:12px;
 }
 details{margin:8px 0}
-summary{cursor:pointer;font-weight:600;color:var(--blue)}
+summary{
+ cursor:pointer;
+ font-weight:600;
+ color:var(--blue);
+}
 a{color:var(--blue)}
-footer{text-align:center;padding:25px;color:var(--muted)}
+footer{
+ text-align:center;
+ padding:25px;
+ color:var(--muted);
+}
 .small{font-size:13px}
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
 <p>INTELLIGENCE HIPPIQUE VIVANTE — M1 À M5</p>
-<p class="muted">Courses PMU physiquement disputées en France</p>
-<p id="etatGlobal" class="warn" role="status">🟡 Initialisation...</p>
+<p class="muted">
+Courses PMU physiquement disputées en France
+</p>
+<p id="etatGlobal" class="warn" role="status">
+🟡 Initialisation...
+</p>
 <p id="horloge" class="muted"></p>
 </header>
 
@@ -131,13 +195,16 @@ footer{text-align:center;padding:25px;color:var(--muted)}
 <div class="card">FIGÉS<div class="value" id="nbFiges">—</div></div>
 <div class="card">Audits<div class="value" id="nbAudits">—</div></div>
 </div>
+
 <div class="controls">
 <button id="actualiser" type="button">🔄 Actualiser</button>
 <button id="verifier" type="button">🔍 Vérifier les fichiers</button>
 </div>
 <p id="dateMaj" class="muted">Dernière vérification : —</p>
 <p id="datePublication" class="muted">Dernière publication : —</p>
-<div id="diagnosticCourt" class="notice">En attente des données.</div>
+<div id="diagnosticCourt" class="notice">
+En attente des données.
+</div>
 </section>
 
 <section id="courses">
@@ -147,8 +214,12 @@ footer{text-align:center;padding:25px;color:var(--muted)}
 <table>
 <thead>
 <tr>
-<th>Course</th><th>Hippodrome</th><th>Départ Paris</th>
-<th>Partants</th><th>NP</th><th>Contrôle</th>
+<th>Course</th>
+<th>Hippodrome</th>
+<th>Départ Paris</th>
+<th>Partants</th>
+<th>NP</th>
+<th>Contrôle</th>
 </tr>
 </thead>
 <tbody id="listeCourses"></tbody>
@@ -163,13 +234,19 @@ footer{text-align:center;padding:25px;color:var(--muted)}
 <option value="">Sélectionner une course</option>
 </select>
 </div>
-<p id="detailsCourse" class="muted">Sélectionnez une course.</p>
+<p id="detailsCourse" class="muted">
+Sélectionnez une course.
+</p>
 <div class="table-wrap">
 <table>
 <thead>
 <tr>
-<th>N°</th><th>Cheval</th><th>Statut</th>
-<th>Jockey / Driver</th><th>Entraîneur</th><th>Musique</th>
+<th>N°</th>
+<th>Cheval</th>
+<th>Statut</th>
+<th>Jockey / Driver</th>
+<th>Entraîneur</th>
+<th>Musique</th>
 </tr>
 </thead>
 <tbody id="listePartants"></tbody>
@@ -180,7 +257,7 @@ footer{text-align:center;padding:25px;color:var(--muted)}
 <section id="tableau">
 <h2>🏆 Tableau officiel X1000 — M1 à M5</h2>
 <div class="notice">
-Les moteurs M1 à M5 sont affichés séparément.
+Les cinq moteurs sont affichés séparément.
 Une analyse indicative ne constitue pas un pari officiel FIGÉ.
 Aucun pronostic n'est fabriqué pour remplir le tableau.
 </div>
@@ -189,7 +266,9 @@ Aucun pronostic n'est fabriqué pour remplir le tableau.
 <select id="choixPronostic">
 <option value="">Sélection automatique</option>
 </select>
-<button id="modeAuto" type="button">🤖 Mode automatique</button>
+<button id="modeAuto" type="button">
+🤖 Mode automatique
+</button>
 </div>
 <p id="modeSelection" class="muted"></p>
 <p id="resumePronostic" class="muted"></p>
@@ -229,8 +308,15 @@ Aucun pronostic n'est fabriqué pour remplir le tableau.
 </section>
 
 <section id="actions">
-<h2>⚙️ GitHub Actions</h2>
-<p id="etatActions" class="warn">🟡 Vérification...</p>
+<h2>⚙️ GitHub Actions — M1 à M5</h2>
+<p id="etatActions" class="warn" role="status">
+🟡 Vérification...
+</p>
+<div class="controls">
+<button id="actualiserActions" type="button">
+🔄 Actualiser GitHub Actions
+</button>
+</div>
 <div id="contenuActions"></div>
 <p>
 <a href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
@@ -254,7 +340,9 @@ Consulter GitHub Actions
 <footer>
 🇸🇳🧠🔥 X1000 PHOENIX — Intelligence vivante
 <p>Traçabilité • Données vérifiables • FIGÉS historiques</p>
-<p class="small">Les pronostics ne garantissent aucun gain.</p>
+<p class="small">
+Les pronostics ne garantissent aucun gain.
+</p>
 </footer>
 
 <script>
@@ -263,8 +351,10 @@ Consulter GitHub Actions
 (()=>{
 const OWNER="yadcaf-cloud";
 const REPO="x1000-phoenix";
+const WORKFLOW="phoenix.yml";
 const API=`https://api.github.com/repos/${OWNER}/${REPO}`;
 const ROOT=new URL("./",document.baseURI);
+const ACTIONS_URL=`https://github.com/${OWNER}/${REPO}/actions`;
 const $=id=>document.getElementById(id);
 
 const CHEMINS={
@@ -304,86 +394,71 @@ let figes=[];
 let audits=[];
 let selectionPronostic="";
 let selectionManuelle=false;
-let sequence=0;
 let chargement=false;
+let chargementActions=false;
+let derniereVerificationActions=0;
+let statutActions=null;
+let historiqueActions=[];
+let controleurActions=null;
 
 function objet(v){
  return v!==null&&typeof v==="object"&&!Array.isArray(v);
 }
-
 function liste(v){
  return Array.isArray(v)?v:[];
 }
-
 function txt(v,defaut="—"){
  if(v===null||v===undefined||v==="")return defaut;
  if(Array.isArray(v))return v.map(x=>txt(x)).join(" - ");
  if(typeof v==="object")return JSON.stringify(v);
  return String(v);
 }
-
 function el(tag,val="",classe=""){
  const e=document.createElement(tag);
  e.textContent=txt(val,"");
  if(classe)e.className=classe;
  return e;
 }
-
 function cellule(tr,val,classe=""){
  tr.appendChild(el("td",val,classe));
 }
-
 function statut(id,message,classe="warn"){
  const e=$(id);
+ if(!e)return;
  e.textContent=message;
  e.className=classe;
 }
-
 function dateParis(v){
  if(!v)return "—";
  const d=new Date(v);
  if(Number.isNaN(d.getTime()))return txt(v);
  return new Intl.DateTimeFormat("fr-FR",{
   timeZone:"Europe/Paris",
-  day:"2-digit",month:"2-digit",year:"numeric",
-  hour:"2-digit",minute:"2-digit"
+  dateStyle:"short",
+  timeStyle:"medium"
  }).format(d);
 }
-
 function horloge(){
- $("horloge").textContent=
-  "Heure de Paris : "+new Intl.DateTimeFormat("fr-FR",{
-   timeZone:"Europe/Paris",
-   dateStyle:"short",
-   timeStyle:"medium"
-  }).format(new Date());
+ $("horloge").textContent="Heure de Paris : "+dateParis(new Date());
 }
-
 function timestamp(v){
  if(!v)return NaN;
  const t=Date.parse(v);
  return Number.isFinite(t)?t:NaN;
 }
-
 function idCourse(c){
  if(!objet(c))return "";
- if(c.id!==undefined&&c.id!==null)return String(c.id);
- if(c.course_id!==undefined&&c.course_id!==null)return String(c.course_id);
- return "";
+ return String(c.id??c.course_id??"");
 }
-
 function depart(c){
  return c.depart||c.heure_depart||c.date_depart||null;
 }
-
 function participants(c){
  return liste(c.partants||c.chevaux||c.participants);
 }
-
 function numero(p){
  return String(p.numero??p.num??p.numPmu??"");
 }
-
 function nonPartants(c){
  const resultat=new Set();
  for(const p of liste(c.non_partants||c.nonPartants)){
@@ -402,7 +477,6 @@ function nonPartants(c){
  }
  return resultat;
 }
-
 function effectif(c){
  const n=Number(c.nombre_partants);
  if(c.nombre_partants!==null&&c.nombre_partants!==undefined&&
@@ -412,7 +486,6 @@ function effectif(c){
  const np=nonPartants(c);
  return ps.filter(p=>objet(p)&&!np.has(numero(p))).length;
 }
-
 function france(c){
  if(c.localisation_france_verifiee===true||
     c.course_francaise===true)return true;
@@ -441,10 +514,6 @@ async function lireJSON(chemin,externe=false){
  }finally{
   clearTimeout(minuterie);
  }
-}
-
-async function lireAPI(url){
- return lireJSON(url,true);
 }
 
 function extraire(data,nom){
@@ -521,7 +590,9 @@ function afficherCourses(){
   avecEffectifs.reduce((s,c)=>s+effectif(c),0):"—";
 
  const avecNP=francaises.filter(c=>
-  Array.isArray(c.non_partants)||Array.isArray(c.partants)
+  Array.isArray(c.non_partants)||
+  Array.isArray(c.nonPartants)||
+  participants(c).length>0
  );
  $("nbNP").textContent=avecNP.length?
   avecNP.reduce((s,c)=>s+nonPartants(c).size,0):"—";
@@ -566,7 +637,6 @@ function afficherPartants(){
   $("detailsCourse").textContent="Aucune course sélectionnée.";
   return;
  }
-
  const ps=participants(c);
  const np=nonPartants(c);
  $("detailsCourse").textContent=
@@ -580,7 +650,6 @@ function afficherPartants(){
   td.textContent="Liste des chevaux non publiée.";
   return;
  }
-
  for(const p of ps){
   if(!objet(p))continue;
   const absent=np.has(numero(p));
@@ -600,12 +669,10 @@ function ordre(m){
         m?.ordre_espere??
         m?.ordre??m?.combinaison??[];
 }
-
 function qualificationVerte(m){
  const q=String(m?.qualification||"").toUpperCase();
  return q.includes("VERT")||q.includes("🟢");
 }
-
 function groupesAnalyses(){
  const map=new Map();
 
@@ -614,7 +681,8 @@ function groupesAnalyses(){
   if(!map.has(id))map.set(id,[]);
   const groupe=map.get(id);
   const nom=String(m.moteur||m.nom||"").toUpperCase();
-  if(!groupe.some(x=>String(x.moteur||x.nom||"").toUpperCase()===nom)){
+  if(!groupe.some(x=>
+   String(x.moteur||x.nom||"").toUpperCase()===nom)){
    groupe.push(m);
   }
  }
@@ -624,7 +692,6 @@ function groupesAnalyses(){
    ajouter(idCourse(c),m);
   }
  }
-
  for(const a of analyses){
   if(!objet(a))continue;
   const id=String(a.course_id||a.id||"");
@@ -642,13 +709,12 @@ function afficherPronostics(){
  const possibles=courses.filter(c=>{
   const t=timestamp(depart(c));
   if(!france(c)||!Number.isFinite(t)||t<=Date.now())return false;
-  return (map.get(idCourse(c))||[]).some(m=>
-   qualificationVerte(m)&&
-   (Array.isArray(ordre(m))?
-    ordre(m).length>=5:
-    typeof ordre(m)==="string"&&
-    ordre(m).trim().split(/[\s,;-]+/).length>=5)
-  );
+  return (map.get(idCourse(c))||[]).some(m=>{
+   const o=ordre(m);
+   const longueur=Array.isArray(o)?o.length:
+    typeof o==="string"?o.trim().split(/[\s,;-]+/).length:0;
+   return qualificationVerte(m)&&longueur>=5;
+  });
  }).sort((a,b)=>timestamp(depart(a))-timestamp(depart(b)));
 
  $("nbSelection").textContent=possibles.length;
@@ -737,12 +803,10 @@ function afficherDocuments(nom,etatId,contenuId){
   statut(etatId,"🟡 Aucun document publié");
   return;
  }
-
  statut(etatId,
   `🟢 ${items.length} document(s) publié(s) — validité à examiner`,
   "ok"
  );
-
  items.slice(0,100).forEach((d,i)=>{
   const details=document.createElement("details");
   details.className="card";
@@ -757,72 +821,171 @@ function afficherDocuments(nom,etatId,contenuId){
  });
 }
 
+/* GITHUB ACTIONS — VERSION UNIFIÉE */
+
+function etatRun(run){
+ if(run.status!=="completed"){
+  return ["🟡 En cours","warn"];
+ }
+ switch(run.conclusion){
+  case "success":return ["🟢 Réussie","ok"];
+  case "failure":return ["🔴 Échec","bad"];
+  case "cancelled":return ["⚪ Annulée","warn"];
+  case "timed_out":return ["🔴 Délai dépassé","bad"];
+  case "skipped":return ["⚪ Ignorée","warn"];
+  default:return ["🟡 Indéterminée","warn"];
+ }
+}
+
+function ajouterLigne(parent,titre,valeur){
+ const p=document.createElement("p");
+ const strong=document.createElement("strong");
+ strong.textContent=titre+" : ";
+ p.append(strong,document.createTextNode(txt(valeur)));
+ parent.appendChild(p);
+}
+
+function ajouterLien(parent,url,libelle){
+ if(typeof url!=="string"||
+  !url.startsWith(`https://github.com/${OWNER}/${REPO}/actions/runs/`)){
+  return;
+ }
+ const a=document.createElement("a");
+ a.href=url;
+ a.target="_blank";
+ a.rel="noopener noreferrer";
+ a.textContent=libelle;
+ parent.appendChild(a);
+}
+
 async function afficherActions(){
+ if(chargementActions)return;
+ chargementActions=true;
+ $("actualiserActions").disabled=true;
  const cible=$("contenuActions");
+
+ if(controleurActions)controleurActions.abort();
+ const controle=new AbortController();
+ controleurActions=controle;
+ const minuterie=setTimeout(()=>controle.abort(),12000);
+
+ statut("etatActions","🟡 Consultation de GitHub Actions...");
  cible.replaceChildren();
 
  try{
-  const data=await lireAPI(`${API}/actions/runs?per_page=5`);
+  const url=API+
+   "/actions/workflows/"+
+   encodeURIComponent(WORKFLOW)+
+   "/runs?per_page=5";
+
+  const response=await fetch(url,{
+   cache:"no-store",
+   signal:controle.signal,
+   headers:{"Accept":"application/vnd.github+json"}
+  });
+
+  if(!response.ok){
+   if(response.status===403||response.status===429){
+    throw Error("Limite API GitHub ou accès refusé");
+   }
+   if(response.status===404){
+    throw Error("Workflow introuvable");
+   }
+   throw Error("GitHub HTTP "+response.status);
+  }
+
+  const data=await response.json();
   const runs=liste(data.workflow_runs);
+  historiqueActions=runs;
+  derniereVerificationActions=Date.now();
 
   if(!runs.length){
+   statutActions="AUCUNE_EXECUTION";
    statut("etatActions","🟡 Aucune exécution publique trouvée");
+   cible.appendChild(el("p",
+    "Le workflow existe peut-être, mais aucune exécution n'est publiée."));
    return;
   }
 
   const derniere=runs[0];
-  const classe=derniere.conclusion==="success"?"ok":
-   derniere.conclusion==="failure"?"bad":"warn";
+  const [etat,classe]=etatRun(derniere);
+  statutActions=derniere.conclusion||derniere.status;
 
   statut("etatActions",
-   `Dernière exécution : ${txt(derniere.conclusion||derniere.status)}`,
-   classe
+   etat+" — GitHub Actions M1–M5",classe
   );
 
-  for(const r of runs){
+  const info=el("div","","card");
+  ajouterLigne(info,"Dernière exécution",dateParis(derniere.created_at));
+  ajouterLigne(info,"Numéro","#"+txt(derniere.run_number));
+  ajouterLigne(info,"Déclenchement",derniere.event);
+  ajouterLigne(info,"État",etat);
+  ajouterLigne(info,"Vérification API",dateParis(new Date()));
+  cible.appendChild(info);
+
+  cible.appendChild(el("h3","Historique des exécutions"));
+
+  for(const run of runs){
+   const [etatActuel]=etatRun(run);
    const bloc=el("div","","card");
-   bloc.appendChild(el("strong",r.name));
-   bloc.appendChild(el("p",
-    `${dateParis(r.created_at)} — ${txt(r.status)} — `+
-    `${txt(r.conclusion,"En cours")}`
-   ));
-   if(typeof r.html_url==="string"&&
-      r.html_url.startsWith(
-       `https://github.com/${OWNER}/${REPO}/actions/`
-      )){
-    const a=document.createElement("a");
-    a.href=r.html_url;
-    a.target="_blank";
-    a.rel="noopener noreferrer";
-    a.textContent="Voir le rapport";
-    bloc.appendChild(a);
-   }
+   ajouterLigne(bloc,"Exécution","#"+txt(run.run_number));
+   ajouterLigne(bloc,"Statut",etatActuel);
+   ajouterLigne(bloc,"Heure Paris",dateParis(run.created_at));
+   ajouterLien(bloc,run.html_url,"🔍 Voir les détails GitHub");
    cible.appendChild(bloc);
   }
+
  }catch(e){
-  const local=donnees.actions;
+  statutActions="INACCESSIBLE";
+  historiqueActions=[];
+  derniereVerificationActions=Date.now();
+
   statut("etatActions",
-   local?
-    "🟡 API GitHub inaccessible — rapport local non vérifié en direct.":
-    `🟡 Impossible de consulter GitHub Actions : ${e.message}`
-  );
-  if(local){
+   "🟡 Vérification GitHub indisponible","warn");
+
+  cible.appendChild(el("p",
+   "Le statut réel du workflow ne peut pas être confirmé : "+e.message
+  ));
+
+  if(donnees.actions){
+   const details=document.createElement("details");
+   const titre=document.createElement("summary");
+   titre.textContent="Rapport local de publication (non vérifié en direct)";
    const pre=document.createElement("pre");
-   pre.textContent=JSON.stringify(local,null,2).slice(0,12000);
-   cible.appendChild(pre);
+   pre.textContent=JSON.stringify(donnees.actions,null,2).slice(0,12000);
+   details.append(titre,pre);
+   cible.appendChild(details);
   }
+ }finally{
+  clearTimeout(minuterie);
+  if(controleurActions===controle)controleurActions=null;
+  chargementActions=false;
+  $("actualiserActions").disabled=false;
  }
 }
 
 function verifier(){
  const rapport={
   projet:"X1000 PHOENIX",
+  version_interface:"7.1-UNIFIEE",
   verification_navigateur:dateParis(new Date()),
   courses:courses.length,
   pronostics:analyses.length,
   pv:pv.length,
   figes:figes.length,
   audits:audits.length,
+  github_actions:{
+   statut:statutActions,
+   derniere_verification:derniereVerificationActions?
+    dateParis(derniereVerificationActions):null,
+   executions:historiqueActions.map(r=>({
+    numero:r.run_number,
+    statut:r.status,
+    conclusion:r.conclusion,
+    date:r.created_at,
+    url:r.html_url
+   }))
+  },
   publication:donnees.rapport,
   collecte:donnees.collecte?{
    date:donnees.collecte.date,
@@ -865,7 +1028,6 @@ function verifier(){
 async function actualiser(){
  if(chargement)return;
  chargement=true;
- const ticket=++sequence;
  $("actualiser").disabled=true;
  $("verifier").disabled=true;
  statut("etatGlobal","🟡 Vérification en cours...");
@@ -876,14 +1038,13 @@ async function actualiser(){
  try{
   const noms=Object.keys(CHEMINS);
   const resultats=await Promise.allSettled(noms.map(charger));
-  if(ticket!==sequence)return;
 
   donnees={};
   noms.forEach((nom,i)=>{
    donnees[nom]=resultats[i].status==="fulfilled"?
     resultats[i].value:null;
    if(resultats[i].status==="rejected"){
-    erreurs.push(`${nom}: ${resultats[i].reason.message}`);
+    erreurs.push(`${nom}: ${String(resultats[i].reason)}`);
    }
   });
 
@@ -923,21 +1084,21 @@ async function actualiser(){
   $("dateMaj").textContent=
    "Dernière vérification navigateur : "+dateParis(new Date());
 
-  verifier();
   await afficherActions();
+  verifier();
 
  }catch(e){
   erreurs.push("Interface : "+e.message);
   statut("etatGlobal","🔴 Erreur interface : "+e.message,"bad");
   verifier();
  }finally{
-  if(ticket===sequence){
-   chargement=false;
-   $("actualiser").disabled=false;
-   $("verifier").disabled=false;
-  }
+  chargement=false;
+  $("actualiser").disabled=false;
+  $("verifier").disabled=false;
  }
 }
+
+/* ÉVÉNEMENTS */
 
 $("choixCourse").addEventListener("change",afficherPartants);
 
@@ -956,16 +1117,31 @@ $("modeAuto").addEventListener("click",()=>{
 $("actualiser").addEventListener("click",actualiser);
 $("verifier").addEventListener("click",verifier);
 
+$("actualiserActions").addEventListener("click",async()=>{
+ await afficherActions();
+ verifier();
+});
+
 horloge();
 setInterval(horloge,1000);
 
 actualiser();
 
+/* Actualisation des données toutes les 5 minutes */
 setInterval(()=>{
  if(!document.hidden&&!chargement)actualiser();
 },300000);
 
+/* Actualisation GitHub Actions toutes les 2 minutes */
+setInterval(async()=>{
+ if(document.hidden||chargement||chargementActions)return;
+ if(Date.now()-derniereVerificationActions<120000)return;
+ await afficherActions();
+ verifier();
+},120000);
+
 })();
 </script>
+
 </body>
 </html>
