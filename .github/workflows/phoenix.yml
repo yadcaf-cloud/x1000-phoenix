@@ -1,4 +1,4 @@
-name: X1000 PHOENIX - M1 M5
+name: X1000 PHOENIX - INTELLIGENCE M1-M5
 
 on:
   workflow_dispatch:
@@ -23,9 +23,8 @@ jobs:
       PYTHONUNBUFFERED: "1"
 
     steps:
-      # ==========================================
-      # 1. RECUPERATION DU DEPOT
-      # ==========================================
+
+      # 1 - RECUPERATION
 
       - name: Recuperer le depot
         uses: actions/checkout@v4
@@ -33,101 +32,178 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      # ==========================================
-      # 2. INSTALLATION PYTHON
-      # ==========================================
+      # 2 - PYTHON
 
       - name: Installer Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      # ==========================================
-      # 3. VERIFICATION DES PROGRAMMES
-      # ==========================================
+      # 3 - VERIFICATION DU LOGICIEL
 
-      - name: Verifier les fichiers Python
+      - name: Verifier les programmes
         run: |
-          set -e
+          set -euo pipefail
 
           python --version
 
-          python -m py_compile phoenix.py
-          python -m py_compile pmu_engine.py
-          python -m py_compile publication.py
+          for fichier in \
+            phoenix.py \
+            pmu_engine.py \
+            analyser_moteurs.py \
+            publication.py \
+            reparer_figes_audits.py
+          do
+            if [ ! -f "$fichier" ]; then
+              echo "::error::Fichier absent: $fichier"
+              exit 1
+            fi
 
-          if [ -f diagnostic_phoenix.py ]; then
-            python -m py_compile diagnostic_phoenix.py
-          fi
+            python -m py_compile "$fichier"
+          done
 
-          if [ -f analyser_moteurs.py ]; then
-            python -m py_compile analyser_moteurs.py
-          fi
+          echo "Programmes Python valides"
 
-          echo "Verification Python terminee"
-
-      # ==========================================
-      # 4. TEST DU MOTEUR PMU
-      # ==========================================
+      # 4 - TEST PMU
 
       - name: Tester le moteur PMU
+        id: test_pmu
         run: |
-          set -e
+          set -euo pipefail
           python pmu_engine.py --self-test
 
-      # ==========================================
-      # 5. COLLECTE DES COURSES PMU
-      # ==========================================
+      # 5 - SAUVEGARDE DES FIGES
+
+      - name: Sauvegarder les FIGES historiques
+        run: |
+          set -euo pipefail
+
+          mkdir -p /tmp/phoenix-historique
+
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          base = Path("data")
+          sauvegarde = Path("/tmp/phoenix-historique")
+          inventaire = {}
+
+          for path in sorted(base.rglob("*.json")):
+              relatif = path.relative_to(base)
+
+              if (
+                  "fige" in path.name.lower()
+                  or "figes" in path.parts
+                  or "journaux" in path.parts
+                  or "pv" in path.name.lower()
+                  or "audit" in path.name.lower()
+              ):
+                  contenu = path.read_bytes()
+                  inventaire[str(relatif)] = (
+                      hashlib.sha256(contenu).hexdigest()
+                  )
+
+                  destination = sauvegarde / relatif
+                  destination.parent.mkdir(
+                      parents=True,
+                      exist_ok=True
+                  )
+                  destination.write_bytes(contenu)
+
+          (sauvegarde / "inventaire.json").write_text(
+              json.dumps(inventaire, indent=2),
+              encoding="utf-8"
+          )
+
+          print(
+              "Fichiers historiques sauvegardes:",
+              len(inventaire)
+          )
+          PY
+
+      # 6 - COLLECTE PMU
 
       - name: Collecter les courses PMU
         id: collecte
-        continue-on-error: true
         run: |
-          set -e
+          set -euo pipefail
 
           echo "Debut collecte PMU"
-
           python pmu_engine.py
-
           echo "Collecte terminee"
 
-      # ==========================================
-      # 6. ANALYSES ET FIGES M1-M5
-      # ==========================================
+      # 7 - ANALYSES M1-M5
 
-      - name: Produire les analyses et FIGES
-        id: publication
+      - name: Produire les analyses M1-M5
+        id: analyses
+        if: steps.collecte.outcome == 'success'
         run: |
-          set -e
+          set -euo pipefail
 
-          echo "Publication X1000 PHOENIX"
-
+          echo "Analyses X1000 PHOENIX"
           python publication.py
+          echo "Analyses terminees"
 
-          echo "Publication terminee"
+      # 8 - PROTECTION HISTORIQUE
 
-      # ==========================================
-      # 7. DIAGNOSTIC DES PUBLICATIONS
-      # ==========================================
-
-      - name: Diagnostiquer les publications X1000
-        id: diagnostic
+      - name: Controler les FIGES historiques
+        if: steps.analyses.outcome == 'success'
         run: |
-          set -e
+          set -euo pipefail
 
-          if [ -f diagnostic_phoenix.py ]; then
-            python diagnostic_phoenix.py
-          else
-            echo "::warning::diagnostic_phoenix.py absent"
-            echo "Diagnostic non execute"
-          fi
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
 
-      # ==========================================
-      # 8. VERIFICATION DES DONNEES JSON
-      # ==========================================
+          base = Path("data")
+          sauvegarde = Path("/tmp/phoenix-historique")
+
+          inventaire = json.loads(
+              (sauvegarde / "inventaire.json")
+              .read_text(encoding="utf-8")
+          )
+
+          for relatif, empreinte in inventaire.items():
+              actuel = base / relatif
+              original = sauvegarde / relatif
+
+              if not actuel.exists():
+                  actuel.parent.mkdir(
+                      parents=True,
+                      exist_ok=True
+                  )
+                  actuel.write_bytes(
+                      original.read_bytes()
+                  )
+                  print("Historique restaure:", relatif)
+                  continue
+
+              if hashlib.sha256(
+                  actuel.read_bytes()
+              ).hexdigest() != empreinte:
+
+                  actuel.write_bytes(
+                      original.read_bytes()
+                  )
+
+                  print(
+                      "::warning::Historique modifie "
+                      "et restaure:", relatif
+                  )
+
+          print("Protection historique terminee")
+          PY
+
+      # 9 - VALIDATION JSON
 
       - name: Verifier les fichiers JSON
+        id: json
+        if: steps.analyses.outcome == 'success'
         run: |
+          set -euo pipefail
+
           python - <<'PY'
           import json
           from pathlib import Path
@@ -136,14 +212,14 @@ jobs:
 
           if not base.is_dir():
               raise SystemExit(
-                  "ERREUR: dossier data absent"
+                  "Dossier data absent"
               )
 
           fichiers = sorted(base.rglob("*.json"))
 
           if not fichiers:
               raise SystemExit(
-                  "ERREUR: aucun fichier JSON"
+                  "Aucun fichier JSON"
               )
 
           erreurs = []
@@ -179,31 +255,62 @@ jobs:
           )
           PY
 
-      # ==========================================
-      # 9. CONTROLE DE LA COLLECTE
-      # ==========================================
+      # 10 - DIAGNOSTIC DES PUBLICATIONS
 
-      - name: Controler le rapport PMU
-        if: always()
+      - name: Diagnostiquer les publications
+        id: diagnostic
+        if: steps.json.outcome == 'success'
         run: |
+          set -euo pipefail
+
           python - <<'PY'
           import json
           from pathlib import Path
 
-          path = Path(
-              "data/publication_rapport.json"
+          base = Path("data")
+
+          obligatoires = (
+              "publication_courses.json",
+              "publication_figes.json",
+              "publication_audits.json",
+              "publication_rapport.json",
           )
 
-          if not path.exists():
-              print(
-                  "::warning::Rapport absent"
-              )
-              raise SystemExit(0)
+          absents = []
 
-          with path.open(
-              encoding="utf-8"
-          ) as f:
-              rapport = json.load(f)
+          for nom in obligatoires:
+              path = base / nom
+
+              if not path.exists():
+                  absents.append(nom)
+                  print(
+                      "::warning::Fichier absent:",
+                      nom
+                  )
+                  continue
+
+              with path.open(
+                  encoding="utf-8"
+              ) as f:
+                  document = json.load(f)
+
+              print("Publication valide:", nom)
+
+          if absents:
+              raise SystemExit(
+                  "Publications obligatoires absentes: "
+                  + ", ".join(absents)
+              )
+
+          rapport = json.loads(
+              (base / "publication_rapport.json")
+              .read_text(encoding="utf-8")
+          )
+
+          if not isinstance(rapport, dict):
+              raise SystemExit(
+                  "Rapport PMU invalide"
+              )
 
           print(
               "Statut:",
@@ -217,41 +324,28 @@ jobs:
               "pronostics_count",
               "pv_count",
               "figes_count",
-              "audits_count"
+              "audits_count",
           ):
               print(
                   cle,
-                  rapport.get(cle, 0)
-              )
-
-          if not rapport.get(
-              "courses_collectees", 0
-          ):
-              print(
-                  "::warning::Aucune course PMU collectee"
-              )
-
-          if not rapport.get(
-              "audits_count", 0
-          ):
-              print(
-                  "::warning::Aucun audit disponible"
+                  rapport.get(cle, "NON RENSEIGNE")
               )
 
           if rapport.get("difficultes"):
               print(
-                  "::warning::Difficultes signalees"
+                  "::warning::Difficultes detectees"
               )
+
+          print("Diagnostic termine")
           PY
 
-      # ==========================================
-      # 10. PUBLICATION GITHUB
-      # ==========================================
+      # 11 - PUBLICATION GITHUB
 
       - name: Publier les donnees
-        if: success()
+        id: github
+        if: steps.diagnostic.outcome == 'success'
         run: |
-          set -e
+          set -euo pipefail
 
           git config user.name \
             "github-actions[bot]"
@@ -262,15 +356,15 @@ jobs:
           git add -A data/
 
           if git diff --cached --quiet; then
-            echo "Aucune modification"
+            echo "Aucune nouvelle modification"
             exit 0
           fi
 
           git commit -m \
-            "PHOENIX: publication M1-M5"
+            "PHOENIX: actualisation M1-M5"
 
           for i in 1 2 3; do
-            echo "Tentative $i"
+            echo "Publication tentative $i"
 
             git fetch origin main
 
@@ -289,31 +383,43 @@ jobs:
           echo "::error::Echec publication"
           exit 1
 
-      # ==========================================
-      # 11. BILAN FINAL
-      # ==========================================
+      # 12 - BILAN FINAL
 
       - name: Bilan X1000 PHOENIX
         if: always()
         env:
+          TEST_RESULT: ${{ steps.test_pmu.outcome }}
           COLLECTE_RESULT: ${{ steps.collecte.outcome }}
-          PUBLICATION_RESULT: ${{ steps.publication.outcome }}
+          ANALYSES_RESULT: ${{ steps.analyses.outcome }}
+          JSON_RESULT: ${{ steps.json.outcome }}
           DIAGNOSTIC_RESULT: ${{ steps.diagnostic.outcome }}
+          GITHUB_RESULT: ${{ steps.github.outcome }}
         run: |
           echo "================================"
-          echo "X1000 PHOENIX - BILAN"
+          echo "X1000 PHOENIX - BILAN FINAL"
           echo "================================"
 
+          echo "Test PMU: $TEST_RESULT"
           echo "Collecte: $COLLECTE_RESULT"
-          echo "Publication: $PUBLICATION_RESULT"
+          echo "Analyses: $ANALYSES_RESULT"
+          echo "JSON: $JSON_RESULT"
           echo "Diagnostic: $DIAGNOSTIC_RESULT"
+          echo "GitHub: $GITHUB_RESULT"
 
           echo "Heure de Paris:"
           TZ=Europe/Paris date \
             '+%d/%m/%Y %H:%M:%S'
 
           if [ "$COLLECTE_RESULT" != "success" ]; then
-            echo "::warning::Collecte PMU non reussie"
+            echo "::warning::Collecte PMU echouee"
+          fi
+
+          if [ "$ANALYSES_RESULT" != "success" ]; then
+            echo "::warning::Analyses non terminees"
+          fi
+
+          if [ "$GITHUB_RESULT" != "success" ]; then
+            echo "::warning::Publication non confirmee"
           fi
 
           echo "Fin du passage X1000 PHOENIX"
