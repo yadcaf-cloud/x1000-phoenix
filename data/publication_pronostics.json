@@ -3638,7 +3638,7 @@
       ],
       "course_id": "2026-10-28-R4-C2",
       "hippodrome": "HIPPODROME D'AMIENS",
-      "depart": "2026-10-28T17:27:00+01:00",
+      "depart": "2026-10-28T17:29:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
       "statut_course": "FIGE_VERIFIE"
     },
@@ -3725,7 +3725,7 @@
       ],
       "course_id": "2026-10-28-R4-C2",
       "hippodrome": "HIPPODROME D'AMIENS",
-      "depart": "2026-10-28T17:27:00+01:00",
+      "depart": "2026-10-28T17:29:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
       "statut_course": "FIGE_VERIFIE"
     },
@@ -3812,7 +3812,7 @@
       ],
       "course_id": "2026-10-28-R4-C2",
       "hippodrome": "HIPPODROME D'AMIENS",
-      "depart": "2026-10-28T17:27:00+01:00",
+      "depart": "2026-10-28T17:29:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
       "statut_course": "FIGE_VERIFIE"
     },
@@ -3899,7 +3899,7 @@
       ],
       "course_id": "2026-10-28-R4-C2",
       "hippodrome": "HIPPODROME D'AMIENS",
-      "depart": "2026-10-28T17:27:00+01:00",
+      "depart": "2026-10-28T17:29:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
       "statut_course": "FIGE_VERIFIE"
     },
@@ -3986,7 +3986,7 @@
       ],
       "course_id": "2026-10-28-R4-C2",
       "hippodrome": "HIPPODROME D'AMIENS",
-      "depart": "2026-10-28T17:27:00+01:00",
+      "depart": "2026-10-28T17:29:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
       "statut_course": "FIGE_VERIFIE"
     },
@@ -4063,7 +4063,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+      "heure_paris": "2026-10-28T17:18:12.465326+01:00",
       "ordre_arrivee_espere": [
         12,
         13,
@@ -4075,7 +4075,7 @@
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-28T17:45:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
-      "statut_course": "ANALYSE_INDICATIVE"
+      "statut_course": "FIGE_VERIFIE"
     },
     {
       "moteur": "M2",
@@ -4150,7 +4150,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+      "heure_paris": "2026-10-28T17:18:12.465326+01:00",
       "ordre_arrivee_espere": [
         12,
         13,
@@ -4162,7 +4162,7 @@
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-28T17:45:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
-      "statut_course": "ANALYSE_INDICATIVE"
+      "statut_course": "FIGE_VERIFIE"
     },
     {
       "moteur": "M3",
@@ -4237,7 +4237,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+      "heure_paris": "2026-10-28T17:18:12.465326+01:00",
       "ordre_arrivee_espere": [
         12,
         13,
@@ -4249,7 +4249,7 @@
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-28T17:45:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
-      "statut_course": "ANALYSE_INDICATIVE"
+      "statut_course": "FIGE_VERIFIE"
     },
     {
       "moteur": "M4",
@@ -4324,7 +4324,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+      "heure_paris": "2026-10-28T17:18:12.465326+01:00",
       "ordre_arrivee_espere": [
         12,
         13,
@@ -4336,7 +4336,7 @@
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-28T17:45:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
-      "statut_course": "ANALYSE_INDICATIVE"
+      "statut_course": "FIGE_VERIFIE"
     },
     {
       "moteur": "M5",
@@ -4411,7 +4411,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+      "heure_paris": "2026-10-28T17:18:12.465326+01:00",
       "ordre_arrivee_espere": [
         12,
         13,
@@ -4423,7 +4423,7 @@
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-28T17:45:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
-      "statut_course": "ANALYSE_INDICATIVE"
+      "statut_course": "FIGE_VERIFIE"
     },
     {
       "moteur": "M1",
@@ -4498,7 +4498,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+      "heure_paris": "2026-10-28T17:18:12.466781+01:00",
       "ordre_arrivee_espere": [
         4,
         5,
@@ -4585,7 +4585,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+      "heure_paris": "2026-10-28T17:18:12.466781+01:00",
       "ordre_arrivee_espere": [
         4,
         5,
@@ -4672,7 +4672,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+      "heure_paris": "2026-10-28T17:18:12.466781+01:00",
       "ordre_arrivee_espere": [
         4,
         5,
@@ -4759,7 +4759,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+      "heure_paris": "2026-10-28T17:18:12.466781+01:00",
       "ordre_arrivee_espere": [
         4,
         8,
@@ -4846,7 +4846,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+      "heure_paris": "2026-10-28T17:18:12.466781+01:00",
       "ordre_arrivee_espere": [
         4,
         5,
@@ -4933,7 +4933,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467051+01:00",
       "ordre_arrivee_espere": [
         4,
         3,
@@ -5020,7 +5020,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467051+01:00",
       "ordre_arrivee_espere": [
         4,
         3,
@@ -5107,7 +5107,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467051+01:00",
       "ordre_arrivee_espere": [
         4,
         3,
@@ -5194,7 +5194,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467051+01:00",
       "ordre_arrivee_espere": [
         4,
         3,
@@ -5281,7 +5281,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467051+01:00",
       "ordre_arrivee_espere": [
         4,
         9,
@@ -5364,7 +5364,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467297+01:00",
       "ordre_arrivee_espere": [
         1,
         11,
@@ -5447,7 +5447,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467297+01:00",
       "ordre_arrivee_espere": [
         1,
         11,
@@ -5530,7 +5530,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467297+01:00",
       "ordre_arrivee_espere": [
         1,
         11,
@@ -5613,7 +5613,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467297+01:00",
       "ordre_arrivee_espere": [
         1,
         8,
@@ -5696,7 +5696,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467297+01:00",
       "ordre_arrivee_espere": [
         1,
         11,
@@ -5751,10 +5751,6 @@
           "score": 0.65
         },
         {
-          "numero": 5,
-          "score": 0.584375
-        },
-        {
           "numero": 6,
           "score": 0.575
         },
@@ -5767,7 +5763,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467532+01:00",
       "ordre_arrivee_espere": [
         9,
         2,
@@ -5826,10 +5822,6 @@
           "score": 0.611667
         },
         {
-          "numero": 5,
-          "score": 0.600625
-        },
-        {
           "numero": 7,
           "score": 0.593125
         }
@@ -5838,7 +5830,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467532+01:00",
       "ordre_arrivee_espere": [
         9,
         2,
@@ -5897,10 +5889,6 @@
           "score": 0.593333
         },
         {
-          "numero": 5,
-          "score": 0.5925
-        },
-        {
           "numero": 7,
           "score": 0.5825
         }
@@ -5909,7 +5897,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467532+01:00",
       "ordre_arrivee_espere": [
         9,
         2,
@@ -5964,10 +5952,6 @@
           "score": 0.646667
         },
         {
-          "numero": 5,
-          "score": 0.57625
-        },
-        {
           "numero": 7,
           "score": 0.56125
         },
@@ -5980,7 +5964,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467532+01:00",
       "ordre_arrivee_espere": [
         9,
         2,
@@ -6035,10 +6019,6 @@
           "score": 0.63
         },
         {
-          "numero": 5,
-          "score": 0.60875
-        },
-        {
           "numero": 7,
           "score": 0.60375
         },
@@ -6051,7 +6031,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467532+01:00",
       "ordre_arrivee_espere": [
         2,
         9,
@@ -6122,7 +6102,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467786+01:00",
       "ordre_arrivee_espere": [
         7,
         6,
@@ -6193,7 +6173,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467786+01:00",
       "ordre_arrivee_espere": [
         7,
         6,
@@ -6264,7 +6244,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467786+01:00",
       "ordre_arrivee_espere": [
         7,
         6,
@@ -6335,7 +6315,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467786+01:00",
       "ordre_arrivee_espere": [
         7,
         6,
@@ -6406,7 +6386,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467786+01:00",
       "ordre_arrivee_espere": [
         7,
         6,
@@ -6469,7 +6449,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467982+01:00",
       "ordre_arrivee_espere": [
         4,
         8,
@@ -6532,7 +6512,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467982+01:00",
       "ordre_arrivee_espere": [
         4,
         8,
@@ -6595,7 +6575,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467982+01:00",
       "ordre_arrivee_espere": [
         4,
         8,
@@ -6658,7 +6638,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467982+01:00",
       "ordre_arrivee_espere": [
         4,
         8,
@@ -6721,7 +6701,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+      "heure_paris": "2026-10-28T17:18:12.467982+01:00",
       "ordre_arrivee_espere": [
         4,
         8,
@@ -6792,7 +6772,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468147+01:00",
       "ordre_arrivee_espere": [
         7,
         2,
@@ -6863,7 +6843,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468147+01:00",
       "ordre_arrivee_espere": [
         7,
         2,
@@ -6934,7 +6914,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468147+01:00",
       "ordre_arrivee_espere": [
         7,
         2,
@@ -7005,7 +6985,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468147+01:00",
       "ordre_arrivee_espere": [
         7,
         2,
@@ -7076,7 +7056,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468147+01:00",
       "ordre_arrivee_espere": [
         7,
         2,
@@ -7155,7 +7135,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468327+01:00",
       "ordre_arrivee_espere": [
         2,
         1,
@@ -7234,7 +7214,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468327+01:00",
       "ordre_arrivee_espere": [
         2,
         1,
@@ -7313,7 +7293,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468327+01:00",
       "ordre_arrivee_espere": [
         2,
         1,
@@ -7392,7 +7372,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468327+01:00",
       "ordre_arrivee_espere": [
         2,
         1,
@@ -7471,7 +7451,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468327+01:00",
       "ordre_arrivee_espere": [
         2,
         1,
@@ -7550,7 +7530,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468575+01:00",
       "ordre_arrivee_espere": [
         2,
         9,
@@ -7629,7 +7609,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468575+01:00",
       "ordre_arrivee_espere": [
         2,
         9,
@@ -7708,7 +7688,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468575+01:00",
       "ordre_arrivee_espere": [
         2,
         9,
@@ -7787,7 +7767,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468575+01:00",
       "ordre_arrivee_espere": [
         2,
         9,
@@ -7866,7 +7846,7 @@
         "forme",
         "regularite"
       ],
-      "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+      "heure_paris": "2026-10-28T17:18:12.468575+01:00",
       "ordre_arrivee_espere": [
         2,
         9,

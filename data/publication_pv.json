@@ -1,474 +1,12 @@
 {
   "pv": [
     {
-      "pv_id": "ANALYSE-2026-10-28-R3-C2",
-      "course_id": "2026-10-28-R3-C2",
-      "type": "PV_ANALYSE",
-      "statut": "FIGE_VERIFIE",
-      "cree_a": "2026-10-28T17:07:06.726739+01:00",
-      "depart": "2026-10-28T17:12:00+01:00",
-      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
-      "moteurs": [
-        {
-          "moteur": "M1",
-          "gagnant_espere": 8,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            8,
-            11,
-            9,
-            2,
-            5
-          ],
-          "pari_retenu": null,
-          "qualification": "JAUNE",
-          "validation": "INDICATIF",
-          "ecart_scores": 0.0375,
-          "scores": [
-            {
-              "numero": 8,
-              "score": 0.925
-            },
-            {
-              "numero": 11,
-              "score": 0.8875
-            },
-            {
-              "numero": 9,
-              "score": 0.859375
-            },
-            {
-              "numero": 2,
-              "score": 0.808929
-            },
-            {
-              "numero": 5,
-              "score": 0.79375
-            },
-            {
-              "numero": 12,
-              "score": 0.75
-            },
-            {
-              "numero": 15,
-              "score": 0.746429
-            },
-            {
-              "numero": 10,
-              "score": 0.571875
-            },
-            {
-              "numero": 6,
-              "score": 0.485714
-            },
-            {
-              "numero": 13,
-              "score": 0.485714
-            },
-            {
-              "numero": 14,
-              "score": 0.4625
-            },
-            {
-              "numero": 3,
-              "score": 0.458333
-            },
-            {
-              "numero": 4,
-              "score": 0.4375
-            },
-            {
-              "numero": 7,
-              "score": 0.4375
-            },
-            {
-              "numero": 1,
-              "score": 0.359375
-            }
-          ],
-          "criteres": [
-            "forme",
-            "regularite"
-          ],
-          "heure_paris": "2026-10-28T17:07:06.726739+01:00",
-          "ordre_arrivee_espere": [
-            8,
-            11,
-            9,
-            2,
-            5
-          ]
-        },
-        {
-          "moteur": "M2",
-          "gagnant_espere": 8,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            8,
-            11,
-            9,
-            2,
-            15
-          ],
-          "pari_retenu": null,
-          "qualification": "JAUNE",
-          "validation": "INDICATIF",
-          "ecart_scores": 0.0225,
-          "scores": [
-            {
-              "numero": 8,
-              "score": 0.955
-            },
-            {
-              "numero": 11,
-              "score": 0.9325
-            },
-            {
-              "numero": 9,
-              "score": 0.915625
-            },
-            {
-              "numero": 2,
-              "score": 0.828214
-            },
-            {
-              "numero": 15,
-              "score": 0.790714
-            },
-            {
-              "numero": 5,
-              "score": 0.77625
-            },
-            {
-              "numero": 12,
-              "score": 0.716667
-            },
-            {
-              "numero": 10,
-              "score": 0.593125
-            },
-            {
-              "numero": 6,
-              "score": 0.462857
-            },
-            {
-              "numero": 13,
-              "score": 0.462857
-            },
-            {
-              "numero": 4,
-              "score": 0.4625
-            },
-            {
-              "numero": 14,
-              "score": 0.4375
-            },
-            {
-              "numero": 7,
-              "score": 0.4225
-            },
-            {
-              "numero": 3,
-              "score": 0.408333
-            },
-            {
-              "numero": 1,
-              "score": 0.315625
-            }
-          ],
-          "criteres": [
-            "forme",
-            "regularite"
-          ],
-          "heure_paris": "2026-10-28T17:07:06.726739+01:00",
-          "ordre_arrivee_espere": [
-            8,
-            11,
-            9,
-            2,
-            15
-          ]
-        },
-        {
-          "moteur": "M3",
-          "gagnant_espere": 8,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            8,
-            11,
-            9,
-            2,
-            5
-          ],
-          "pari_retenu": null,
-          "qualification": "JAUNE",
-          "validation": "INDICATIF",
-          "ecart_scores": 0.03,
-          "scores": [
-            {
-              "numero": 8,
-              "score": 0.94
-            },
-            {
-              "numero": 11,
-              "score": 0.91
-            },
-            {
-              "numero": 9,
-              "score": 0.8875
-            },
-            {
-              "numero": 2,
-              "score": 0.818572
-            },
-            {
-              "numero": 5,
-              "score": 0.785
-            },
-            {
-              "numero": 15,
-              "score": 0.768571
-            },
-            {
-              "numero": 12,
-              "score": 0.733334
-            },
-            {
-              "numero": 10,
-              "score": 0.5825
-            },
-            {
-              "numero": 6,
-              "score": 0.474286
-            },
-            {
-              "numero": 13,
-              "score": 0.474286
-            },
-            {
-              "numero": 4,
-              "score": 0.45
-            },
-            {
-              "numero": 14,
-              "score": 0.45
-            },
-            {
-              "numero": 3,
-              "score": 0.433333
-            },
-            {
-              "numero": 7,
-              "score": 0.43
-            },
-            {
-              "numero": 1,
-              "score": 0.3375
-            }
-          ],
-          "criteres": [
-            "forme",
-            "regularite"
-          ],
-          "heure_paris": "2026-10-28T17:07:06.726739+01:00",
-          "ordre_arrivee_espere": [
-            8,
-            11,
-            9,
-            2,
-            5
-          ]
-        },
-        {
-          "moteur": "M4",
-          "gagnant_espere": 8,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            8,
-            11,
-            9,
-            5,
-            2
-          ],
-          "pari_retenu": null,
-          "qualification": "JAUNE",
-          "validation": "INDICATIF",
-          "ecart_scores": 0.045,
-          "scores": [
-            {
-              "numero": 8,
-              "score": 0.91
-            },
-            {
-              "numero": 11,
-              "score": 0.865
-            },
-            {
-              "numero": 9,
-              "score": 0.83125
-            },
-            {
-              "numero": 5,
-              "score": 0.8025
-            },
-            {
-              "numero": 2,
-              "score": 0.799286
-            },
-            {
-              "numero": 12,
-              "score": 0.766667
-            },
-            {
-              "numero": 15,
-              "score": 0.724286
-            },
-            {
-              "numero": 10,
-              "score": 0.56125
-            },
-            {
-              "numero": 6,
-              "score": 0.497143
-            },
-            {
-              "numero": 13,
-              "score": 0.497143
-            },
-            {
-              "numero": 3,
-              "score": 0.483333
-            },
-            {
-              "numero": 14,
-              "score": 0.475
-            },
-            {
-              "numero": 7,
-              "score": 0.445
-            },
-            {
-              "numero": 4,
-              "score": 0.425
-            },
-            {
-              "numero": 1,
-              "score": 0.38125
-            }
-          ],
-          "criteres": [
-            "forme",
-            "regularite"
-          ],
-          "heure_paris": "2026-10-28T17:07:06.726739+01:00",
-          "ordre_arrivee_espere": [
-            8,
-            11,
-            9,
-            5,
-            2
-          ]
-        },
-        {
-          "moteur": "M5",
-          "gagnant_espere": 8,
-          "meilleur_place": 11,
-          "ordre_espere": [
-            8,
-            11,
-            9,
-            2,
-            15
-          ],
-          "pari_retenu": null,
-          "qualification": "JAUNE",
-          "validation": "INDICATIF",
-          "ecart_scores": 0.015,
-          "scores": [
-            {
-              "numero": 8,
-              "score": 0.97
-            },
-            {
-              "numero": 11,
-              "score": 0.955
-            },
-            {
-              "numero": 9,
-              "score": 0.94375
-            },
-            {
-              "numero": 2,
-              "score": 0.837857
-            },
-            {
-              "numero": 15,
-              "score": 0.812857
-            },
-            {
-              "numero": 5,
-              "score": 0.7675
-            },
-            {
-              "numero": 12,
-              "score": 0.7
-            },
-            {
-              "numero": 10,
-              "score": 0.60375
-            },
-            {
-              "numero": 4,
-              "score": 0.475
-            },
-            {
-              "numero": 6,
-              "score": 0.451428
-            },
-            {
-              "numero": 13,
-              "score": 0.451428
-            },
-            {
-              "numero": 14,
-              "score": 0.425
-            },
-            {
-              "numero": 7,
-              "score": 0.415
-            },
-            {
-              "numero": 3,
-              "score": 0.383333
-            },
-            {
-              "numero": 1,
-              "score": 0.29375
-            }
-          ],
-          "criteres": [
-            "forme",
-            "regularite"
-          ],
-          "heure_paris": "2026-10-28T17:07:06.726739+01:00",
-          "ordre_arrivee_espere": [
-            8,
-            11,
-            9,
-            2,
-            15
-          ]
-        }
-      ],
-      "sha256": "02d0eaabccca3c0ccb0fdef9c48395704f21441311233ec1b4bf6d9e148a0575"
-    },
-    {
       "pv_id": "ANALYSE-2026-10-28-R4-C2",
       "course_id": "2026-10-28-R4-C2",
       "type": "PV_ANALYSE",
       "statut": "FIGE_VERIFIE",
-      "cree_a": "2026-10-28T17:07:06.728693+01:00",
-      "depart": "2026-10-28T17:27:00+01:00",
+      "cree_a": "2026-10-28T17:18:12.464212+01:00",
+      "depart": "2026-10-28T17:29:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
       "moteurs": [
         {
@@ -544,7 +82,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.728693+01:00",
+          "heure_paris": "2026-10-28T17:18:12.464212+01:00",
           "ordre_arrivee_espere": [
             8,
             4,
@@ -626,7 +164,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.728693+01:00",
+          "heure_paris": "2026-10-28T17:18:12.464212+01:00",
           "ordre_arrivee_espere": [
             8,
             4,
@@ -708,7 +246,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.728693+01:00",
+          "heure_paris": "2026-10-28T17:18:12.464212+01:00",
           "ordre_arrivee_espere": [
             8,
             4,
@@ -790,7 +328,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.728693+01:00",
+          "heure_paris": "2026-10-28T17:18:12.464212+01:00",
           "ordre_arrivee_espere": [
             8,
             4,
@@ -872,7 +410,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.728693+01:00",
+          "heure_paris": "2026-10-28T17:18:12.464212+01:00",
           "ordre_arrivee_espere": [
             8,
             4,
@@ -888,8 +426,8 @@
       "pv_id": "ANALYSE-2026-10-28-R3-C3",
       "course_id": "2026-10-28-R3-C3",
       "type": "PV_ANALYSE",
-      "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.730042+01:00",
+      "statut": "FIGE_VERIFIE",
+      "cree_a": "2026-10-28T17:18:12.465326+01:00",
       "depart": "2026-10-28T17:45:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
       "moteurs": [
@@ -966,7 +504,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+          "heure_paris": "2026-10-28T17:18:12.465326+01:00",
           "ordre_arrivee_espere": [
             12,
             13,
@@ -1048,7 +586,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+          "heure_paris": "2026-10-28T17:18:12.465326+01:00",
           "ordre_arrivee_espere": [
             12,
             13,
@@ -1130,7 +668,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+          "heure_paris": "2026-10-28T17:18:12.465326+01:00",
           "ordre_arrivee_espere": [
             12,
             13,
@@ -1212,7 +750,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+          "heure_paris": "2026-10-28T17:18:12.465326+01:00",
           "ordre_arrivee_espere": [
             12,
             13,
@@ -1294,7 +832,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730042+01:00",
+          "heure_paris": "2026-10-28T17:18:12.465326+01:00",
           "ordre_arrivee_espere": [
             12,
             13,
@@ -1303,14 +841,15 @@
             7
           ]
         }
-      ]
+      ],
+      "sha256": "818c69a5035925fff6cacd6dd5ed68ae0c5a6e70b91d2445372f82c39c312c19"
     },
     {
       "pv_id": "ANALYSE-2026-10-28-R4-C3",
       "course_id": "2026-10-28-R4-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.730315+01:00",
+      "cree_a": "2026-10-28T17:18:12.466781+01:00",
       "depart": "2026-10-28T18:02:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
       "moteurs": [
@@ -1387,7 +926,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+          "heure_paris": "2026-10-28T17:18:12.466781+01:00",
           "ordre_arrivee_espere": [
             4,
             5,
@@ -1469,7 +1008,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+          "heure_paris": "2026-10-28T17:18:12.466781+01:00",
           "ordre_arrivee_espere": [
             4,
             5,
@@ -1551,7 +1090,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+          "heure_paris": "2026-10-28T17:18:12.466781+01:00",
           "ordre_arrivee_espere": [
             4,
             5,
@@ -1633,7 +1172,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+          "heure_paris": "2026-10-28T17:18:12.466781+01:00",
           "ordre_arrivee_espere": [
             4,
             8,
@@ -1715,7 +1254,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730315+01:00",
+          "heure_paris": "2026-10-28T17:18:12.466781+01:00",
           "ordre_arrivee_espere": [
             4,
             5,
@@ -1731,7 +1270,7 @@
       "course_id": "2026-10-28-R3-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.730596+01:00",
+      "cree_a": "2026-10-28T17:18:12.467051+01:00",
       "depart": "2026-10-28T18:20:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
       "moteurs": [
@@ -1808,7 +1347,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467051+01:00",
           "ordre_arrivee_espere": [
             4,
             3,
@@ -1890,7 +1429,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467051+01:00",
           "ordre_arrivee_espere": [
             4,
             3,
@@ -1972,7 +1511,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467051+01:00",
           "ordre_arrivee_espere": [
             4,
             3,
@@ -2054,7 +1593,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467051+01:00",
           "ordre_arrivee_espere": [
             4,
             3,
@@ -2136,7 +1675,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730596+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467051+01:00",
           "ordre_arrivee_espere": [
             4,
             9,
@@ -2152,7 +1691,7 @@
       "course_id": "2026-10-28-R4-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.730846+01:00",
+      "cree_a": "2026-10-28T17:18:12.467297+01:00",
       "depart": "2026-10-28T18:37:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
       "moteurs": [
@@ -2225,7 +1764,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467297+01:00",
           "ordre_arrivee_espere": [
             1,
             11,
@@ -2303,7 +1842,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467297+01:00",
           "ordre_arrivee_espere": [
             1,
             11,
@@ -2381,7 +1920,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467297+01:00",
           "ordre_arrivee_espere": [
             1,
             11,
@@ -2459,7 +1998,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467297+01:00",
           "ordre_arrivee_espere": [
             1,
             8,
@@ -2537,7 +2076,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.730846+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467297+01:00",
           "ordre_arrivee_espere": [
             1,
             11,
@@ -2553,7 +2092,7 @@
       "course_id": "2026-10-28-R3-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.731096+01:00",
+      "cree_a": "2026-10-28T17:18:12.467532+01:00",
       "depart": "2026-10-28T18:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
       "moteurs": [
@@ -2598,10 +2137,6 @@
               "score": 0.65
             },
             {
-              "numero": 5,
-              "score": 0.584375
-            },
-            {
               "numero": 6,
               "score": 0.575
             },
@@ -2614,7 +2149,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467532+01:00",
           "ordre_arrivee_espere": [
             9,
             2,
@@ -2668,10 +2203,6 @@
               "score": 0.611667
             },
             {
-              "numero": 5,
-              "score": 0.600625
-            },
-            {
               "numero": 7,
               "score": 0.593125
             }
@@ -2680,7 +2211,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467532+01:00",
           "ordre_arrivee_espere": [
             9,
             2,
@@ -2734,10 +2265,6 @@
               "score": 0.593333
             },
             {
-              "numero": 5,
-              "score": 0.5925
-            },
-            {
               "numero": 7,
               "score": 0.5825
             }
@@ -2746,7 +2273,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467532+01:00",
           "ordre_arrivee_espere": [
             9,
             2,
@@ -2796,10 +2323,6 @@
               "score": 0.646667
             },
             {
-              "numero": 5,
-              "score": 0.57625
-            },
-            {
               "numero": 7,
               "score": 0.56125
             },
@@ -2812,7 +2335,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467532+01:00",
           "ordre_arrivee_espere": [
             9,
             2,
@@ -2862,10 +2385,6 @@
               "score": 0.63
             },
             {
-              "numero": 5,
-              "score": 0.60875
-            },
-            {
               "numero": 7,
               "score": 0.60375
             },
@@ -2878,7 +2397,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731096+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467532+01:00",
           "ordre_arrivee_espere": [
             2,
             9,
@@ -2894,7 +2413,7 @@
       "course_id": "2026-10-28-R3-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.731340+01:00",
+      "cree_a": "2026-10-28T17:18:12.467786+01:00",
       "depart": "2026-10-28T19:27:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
       "moteurs": [
@@ -2955,7 +2474,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467786+01:00",
           "ordre_arrivee_espere": [
             7,
             6,
@@ -3021,7 +2540,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467786+01:00",
           "ordre_arrivee_espere": [
             7,
             6,
@@ -3087,7 +2606,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467786+01:00",
           "ordre_arrivee_espere": [
             7,
             6,
@@ -3153,7 +2672,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467786+01:00",
           "ordre_arrivee_espere": [
             7,
             6,
@@ -3219,7 +2738,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731340+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467786+01:00",
           "ordre_arrivee_espere": [
             7,
             6,
@@ -3235,7 +2754,7 @@
       "course_id": "2026-10-28-R4-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.731610+01:00",
+      "cree_a": "2026-10-28T17:18:12.467982+01:00",
       "depart": "2026-10-28T19:43:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
       "moteurs": [
@@ -3288,7 +2807,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467982+01:00",
           "ordre_arrivee_espere": [
             4,
             8,
@@ -3346,7 +2865,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467982+01:00",
           "ordre_arrivee_espere": [
             4,
             8,
@@ -3404,7 +2923,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467982+01:00",
           "ordre_arrivee_espere": [
             4,
             8,
@@ -3462,7 +2981,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467982+01:00",
           "ordre_arrivee_espere": [
             4,
             8,
@@ -3520,7 +3039,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731610+01:00",
+          "heure_paris": "2026-10-28T17:18:12.467982+01:00",
           "ordre_arrivee_espere": [
             4,
             8,
@@ -3536,7 +3055,7 @@
       "course_id": "2026-10-28-R3-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.731780+01:00",
+      "cree_a": "2026-10-28T17:18:12.468147+01:00",
       "depart": "2026-10-28T19:59:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
       "moteurs": [
@@ -3597,7 +3116,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468147+01:00",
           "ordre_arrivee_espere": [
             7,
             2,
@@ -3663,7 +3182,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468147+01:00",
           "ordre_arrivee_espere": [
             7,
             2,
@@ -3729,7 +3248,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468147+01:00",
           "ordre_arrivee_espere": [
             7,
             2,
@@ -3795,7 +3314,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468147+01:00",
           "ordre_arrivee_espere": [
             7,
             2,
@@ -3861,7 +3380,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731780+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468147+01:00",
           "ordre_arrivee_espere": [
             7,
             2,
@@ -3877,7 +3396,7 @@
       "course_id": "2026-10-28-R4-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.731964+01:00",
+      "cree_a": "2026-10-28T17:18:12.468327+01:00",
       "depart": "2026-10-28T20:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
       "moteurs": [
@@ -3946,7 +3465,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468327+01:00",
           "ordre_arrivee_espere": [
             2,
             1,
@@ -4020,7 +3539,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468327+01:00",
           "ordre_arrivee_espere": [
             2,
             1,
@@ -4094,7 +3613,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468327+01:00",
           "ordre_arrivee_espere": [
             2,
             1,
@@ -4168,7 +3687,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468327+01:00",
           "ordre_arrivee_espere": [
             2,
             1,
@@ -4242,7 +3761,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.731964+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468327+01:00",
           "ordre_arrivee_espere": [
             2,
             1,
@@ -4258,7 +3777,7 @@
       "course_id": "2026-10-28-R3-C8",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-28T17:07:06.732170+01:00",
+      "cree_a": "2026-10-28T17:18:12.468575+01:00",
       "depart": "2026-10-28T20:31:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
       "moteurs": [
@@ -4327,7 +3846,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468575+01:00",
           "ordre_arrivee_espere": [
             2,
             9,
@@ -4401,7 +3920,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468575+01:00",
           "ordre_arrivee_espere": [
             2,
             9,
@@ -4475,7 +3994,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468575+01:00",
           "ordre_arrivee_espere": [
             2,
             9,
@@ -4549,7 +4068,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468575+01:00",
           "ordre_arrivee_espere": [
             2,
             9,
@@ -4623,7 +4142,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T17:07:06.732170+01:00",
+          "heure_paris": "2026-10-28T17:18:12.468575+01:00",
           "ordre_arrivee_espere": [
             2,
             9,
