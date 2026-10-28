@@ -1,44 +1,257 @@
+
 name: X1000 PHOENIX
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 * * * *'
+    - cron: "15 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: phoenix-data
+  group: x1000-phoenix
   cancel-in-progress: false
 
 jobs:
   analyser:
+    name: Analyse hippique M1-M5
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      TZ: Europe/Paris
+      PYTHONUNBUFFERED: "1"
 
     steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      # 1. RECUPERER LE DEPOT
+
+      - name: Recuperer le depot
+        uses: actions/checkout@v4
         with:
-          python-version: '3.12'
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
 
-      - name: Analyse des données
+      # 2. INSTALLER PYTHON
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. VERIFIER LES PROGRAMMES
+
+      - name: Verifier Python et les moteurs
         run: |
-          python phoenix.py \
-            --input data/course.json \
-            --output data/latest.json
+          set -e
 
-      - name: Vérifier les moteurs
-        run: python -m unittest discover -s tests -v
+          python --version
 
-      - name: Publier le rapport
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/latest.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'Actualisation PHOENIX'
-            git push
+          python -m py_compile phoenix.py
+          python -m py_compile pmu_engine.py
+          python -m py_compile publication.py
+
+          if [ -f analyser_moteurs.py ]; then
+            python -m py_compile analyser_moteurs.py
           fi
-          
+
+          if [ -f diagnostic_phoenix.py ]; then
+            python -m py_compile diagnostic_phoenix.py
+          fi
+
+          python pmu_engine.py --self-test
+
+      # 4. EXECUTER LES TESTS DISPONIBLES
+
+      - name: Verifier les moteurs M1-M5
+        run: |
+          set -e
+
+          if [ -d tests ] && \
+             find tests -name 'test*.py' \
+             -print -quit | grep -q .; then
+
+            python -m unittest discover \
+              -s tests \
+              -p "test*.py" \
+              -v
+
+          else
+            echo "::warning::Aucun test unitaire disponible"
+          fi
+
+      # 5. COLLECTER LES COURSES PMU
+
+      - name: Collecter les courses PMU
+        id: collecte
+        continue-on-error: true
+        run: |
+          set -e
+
+          echo "Collecte des courses PMU"
+
+          python pmu_engine.py
+
+      # 6. PRODUIRE LES ANALYSES ET FIGES
+
+      - name: Produire les analyses M1-M5
+        id: publication
+        run: |
+          set -e
+
+          python publication.py
+
+      # 7. DIAGNOSTIQUER LES PUBLICATIONS
+
+      - name: Diagnostiquer les publications X1000
+        id: diagnostic
+        run: |
+          set -e
+
+          if [ -f diagnostic_phoenix.py ]; then
+            python diagnostic_phoenix.py
+          else
+            echo "::warning::Diagnostic absent"
+          fi
+
+      # 8. CONTROLER LES JSON
+
+      - name: Verifier les donnees JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          base = Path("data")
+
+          if not base.is_dir():
+              raise SystemExit("Dossier data absent")
+
+          fichiers = sorted(base.rglob("*.json"))
+
+          if not fichiers:
+              raise SystemExit("Aucun JSON disponible")
+
+          for fichier in fichiers:
+              with fichier.open(encoding="utf-8") as f:
+                  json.load(f)
+              print("OK:", fichier)
+
+          print("JSON verifies:", len(fichiers))
+          PY
+
+      # 9. CONTROLER LE RAPPORT
+
+      - name: Verifier le rapport PHOENIX
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/publication_rapport.json")
+
+          if not path.exists():
+              raise SystemExit(
+                  "Rapport de publication absent"
+              )
+
+          with path.open(encoding="utf-8") as f:
+              rapport = json.load(f)
+
+          print("Statut:", rapport.get("status"))
+          print(
+              "Courses:",
+              rapport.get("courses_count", 0)
+          )
+          print(
+              "Analyses:",
+              rapport.get("analyses_count", 0)
+          )
+          print(
+              "FIGES:",
+              rapport.get("figes_count", 0)
+          )
+          print(
+              "Audits:",
+              rapport.get("audits_count", 0)
+          )
+
+          if rapport.get("difficultes"):
+              print(
+                  "::warning::Difficultes detectees"
+              )
+          PY
+
+      # 10. PUBLIER LES DONNEES
+
+      - name: Publier les rapports
+        id: git_publication
+        run: |
+          set -e
+
+          git config user.name \
+            "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A data/
+
+          if git diff --cached --quiet; then
+            echo "Aucune modification"
+            exit 0
+          fi
+
+          git commit -m \
+            "PHOENIX: actualisation M1-M5"
+
+          for tentative in 1 2 3; do
+            echo "Publication tentative $tentative"
+
+            git fetch origin main
+
+            if git rebase origin/main; then
+              if git push origin HEAD:main; then
+                echo "Publication reussie"
+                exit 0
+              fi
+            fi
+
+            git rebase --abort || true
+            sleep 5
+          done
+
+          echo "::error::Publication impossible"
+          exit 1
+
+      # 11. BILAN FINAL
+
+      - name: Bilan automatique X1000
+        if: always()
+        env:
+          COLLECTE: ${{ steps.collecte.outcome }}
+          PUBLICATION: ${{ steps.publication.outcome }}
+          DIAGNOSTIC: ${{ steps.diagnostic.outcome }}
+          GIT_PUBLICATION: ${{ steps.git_publication.outcome }}
+        run: |
+          echo "================================"
+          echo "X1000 PHOENIX"
+          echo "INTELLIGENCE HIPPIQUE M1-M5"
+          echo "================================"
+
+          echo "Collecte: $COLLECTE"
+          echo "Analyses: $PUBLICATION"
+          echo "Diagnostic: $DIAGNOSTIC"
+          echo "GitHub: $GIT_PUBLICATION"
+
+          echo "Heure de Paris:"
+          TZ=Europe/Paris date \
+            '+%d/%m/%Y %H:%M:%S'
+
+          if [ "$COLLECTE" != "success" ]; then
+            echo "::warning::Collecte incomplete"
+          fi
+
+          echo "Fin du traitement PHOENIX"
