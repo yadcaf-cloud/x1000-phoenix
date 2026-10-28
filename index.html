@@ -1086,4 +1086,125 @@ async function charger() {
     /* Rapport */
 
     if (rapport) {
-      el("et
+      el("etat").textContent =
+        (erreurs.length ? "🟡 " : "📡 ") +
+        valeur(rapport.status);
+
+      el("actualisation").textContent =
+        "Dernière publication : " +
+        paris(rapport.generated_at_paris) +
+        " | Analyses : " +
+        valeur(rapport.analyses_count);
+
+    } else {
+      el("etat").textContent =
+        "🔴 Rapport indisponible";
+
+      el("actualisation").textContent =
+        "Dernière publication inconnue.";
+    }
+
+    afficherFraicheur(rapport);
+
+    el("rapport").textContent =
+      rapport
+        ? JSON.stringify(rapport,null,2)
+        : "Aucun rapport disponible.";
+
+    /* État des fichiers */
+
+    const etats = NOMS.map((nom,i) => {
+      const ok =
+        resultats[i].status === "fulfilled";
+
+      return `
+        <p class="${ok ? "vert" : "rouge"}">
+          ${ok ? "🟢" : "🔴"}
+          publication_${esc(nom)}.json :
+          ${ok ? "chargé" : "indisponible"}
+        </p>
+      `;
+    });
+
+    el("fichiers").innerHTML =
+      etats.join("");
+
+    /* Difficultés */
+
+    const difficultes = [
+      ...erreurs,
+      ...liste(rapport?.difficultes).map(x =>
+        typeof x === "string"
+          ? x
+          : x.difficulte || JSON.stringify(x)
+      )
+    ];
+
+    el("difficultes").innerHTML =
+      difficultes.length
+        ? difficultes.map(x =>
+            "<p class='jaune'>" +
+            esc(x) +
+            "</p>"
+          ).join("")
+        : "<p class='vert'>Aucune difficulté signalée.</p>";
+
+    if (erreurs.length) {
+      el("etat").textContent =
+        "🟡 Chargement partiel : " +
+        erreurs.length +
+        " fichier(s) en erreur";
+    }
+
+    el("etatActions").textContent =
+      rapport
+        ? "Dernier rapport publié : " +
+          paris(rapport.generated_at_paris) +
+          ". Consulter GitHub Actions pour vérifier l'exécution."
+        : "🔴 Aucun rapport de publication accessible.";
+
+  } catch (e) {
+    el("etat").textContent =
+      "🔴 Erreur interface : " +
+      e.message;
+
+    el("difficultes").textContent =
+      e.stack || e.message;
+
+  } finally {
+    chargementEnCours = false;
+    el("bouton").disabled = false;
+  }
+}
+
+/* =========================================
+   HORLOGE PARIS
+   ========================================= */
+
+function horloge() {
+  el("horloge").textContent =
+    "🕒 Heure de Paris : " +
+    paris(new Date());
+}
+
+/* =========================================
+   DÉMARRAGE AUTOMATIQUE
+   ========================================= */
+
+el("bouton").addEventListener(
+  "click",
+  charger
+);
+
+horloge();
+
+setInterval(horloge,1000);
+
+charger();
+
+setInterval(charger,60000);
+
+</script>
+
+</body>
+</html>
