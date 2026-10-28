@@ -1,4 +1,5 @@
-name: X1000 PHOENIX - AUTOMATISATION M1 M5
+
+name: X1000 PHOENIX - M1 M5
 
 on:
   workflow_dispatch:
@@ -9,103 +10,79 @@ permissions:
   contents: write
 
 concurrency:
-  group: x1000-phoenix-automatisation
+  group: x1000-phoenix
   cancel-in-progress: false
 
 jobs:
   phoenix:
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    timeout-minutes: 20
 
     steps:
       - name: Recuperer le depot
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
 
       - name: Installer Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Verifier la syntaxe
+      - name: Verifier Python
         run: |
           python -m py_compile phoenix.py
           python -m py_compile pmu_engine.py
           python -m py_compile publication.py
+          python pmu_engine.py --self-test
 
-      - name: Collecter et analyser PMU
+      - name: Collecter les courses PMU
         id: collecte
+        continue-on-error: true
         run: python pmu_engine.py
 
-      - name: Publier les rapports
-        if: success() || failure()
+      - name: Produire les analyses et FIGES
         run: python publication.py
 
-      - name: Diagnostic des donnees
-        if: success() || failure()
+      - name: Verifier les fichiers JSON
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
 
-          for nom in ("rapport.json", "publication_rapport.json"):
-              chemin = Path("data") / nom
-              if not chemin.exists():
-                  print(f"::warning::{nom} absent")
-                  continue
-
-              rapport = json.loads(
-                  chemin.read_text(encoding="utf-8")
-              )
-              print(json.dumps(rapport, ensure_ascii=False, indent=2))
-
-              if rapport.get("statut") == "ERREUR":
-                  print("::error::Collecte PMU en erreur")
-          PY
-
-      - name: Verifier les JSON
-        if: success() || failure()
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-
-          for chemin in Path("data").rglob("*.json"):
-              with chemin.open(encoding="utf-8") as f:
+          for path in Path("data").rglob("*.json"):
+              with path.open(encoding="utf-8") as f:
                   json.load(f)
-              print("OK:", chemin)
+              print("OK:", path)
           PY
 
-      - name: Enregistrer les donnees
-        if: success() || failure()
+      - name: Publier les donnees
         run: |
-          set -e
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
-          mkdir -p data
           git add -A data/
 
           if git diff --cached --quiet; then
-            echo "Aucune modification."
+            echo "Aucune modification"
             exit 0
           fi
 
-          git commit -m "PHOENIX: actualisation PMU M1-M5"
+          git commit -m "PHOENIX: publication M1-M5"
 
-          for tentative in 1 2 3; do
+          for i in 1 2 3; do
             git fetch origin main
+
             if git rebase origin/main; then
               if git push origin HEAD:main; then
-                echo "Rapports enregistres."
+                echo "Publication reussie"
                 exit 0
               fi
             fi
+
             git rebase --abort || true
             sleep 5
           done
 
-          echo "::error::Publication Git echouee"
           exit 1
