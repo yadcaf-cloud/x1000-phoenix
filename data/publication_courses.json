@@ -200,7 +200,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C1/participants",
-      "collecte_a": "2026-10-28T11:47:13.667937+01:00",
+      "collecte_a": "2026-10-28T11:50:32.901663+01:00",
       "statut": "DONNEES_NON_ANALYSEES"
     },
     {
@@ -330,7 +330,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C1/participants",
-      "collecte_a": "2026-10-28T11:47:11.016505+01:00",
+      "collecte_a": "2026-10-28T11:50:29.819309+01:00",
       "statut": "DONNEES_NON_ANALYSEES"
     },
     {
@@ -544,7 +544,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C2/participants",
-      "collecte_a": "2026-10-28T11:47:13.961708+01:00",
+      "collecte_a": "2026-10-28T11:50:33.211864+01:00",
       "statut": "DONNEES_NON_ANALYSEES"
     },
     {
@@ -660,7 +660,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
-      "collecte_a": "2026-10-28T11:47:11.399410+01:00",
+      "collecte_a": "2026-10-28T11:50:30.121821+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -712,7 +712,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.832941+01:00"
+          "heure_paris": "2026-10-28T11:50:41.395993+01:00"
         },
         {
           "moteur": "M2",
@@ -763,7 +763,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.832941+01:00"
+          "heure_paris": "2026-10-28T11:50:41.395993+01:00"
         },
         {
           "moteur": "M3",
@@ -814,7 +814,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.832941+01:00"
+          "heure_paris": "2026-10-28T11:50:41.395993+01:00"
         },
         {
           "moteur": "M4",
@@ -865,7 +865,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.832941+01:00"
+          "heure_paris": "2026-10-28T11:50:41.395993+01:00"
         },
         {
           "moteur": "M5",
@@ -916,10 +916,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.832941+01:00"
+          "heure_paris": "2026-10-28T11:50:41.395993+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.832941+01:00"
+      "analyse_a": "2026-10-28T11:50:41.395993+01:00"
     },
     {
       "id": "2026-10-28-R2-C3",
@@ -1118,7 +1118,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C3/participants",
-      "collecte_a": "2026-10-28T11:47:14.518757+01:00",
+      "collecte_a": "2026-10-28T11:50:33.517090+01:00",
       "statut": "DONNEES_NON_ANALYSEES"
     },
     {
@@ -1234,7 +1234,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C3/participants",
-      "collecte_a": "2026-10-28T11:47:11.673545+01:00",
+      "collecte_a": "2026-10-28T11:50:30.601014+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -1286,7 +1286,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833365+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396466+01:00"
         },
         {
           "moteur": "M2",
@@ -1337,7 +1337,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833365+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396466+01:00"
         },
         {
           "moteur": "M3",
@@ -1388,7 +1388,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833365+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396466+01:00"
         },
         {
           "moteur": "M4",
@@ -1439,7 +1439,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833365+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396466+01:00"
         },
         {
           "moteur": "M5",
@@ -1490,10 +1490,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833365+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396466+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.833365+01:00"
+      "analyse_a": "2026-10-28T11:50:41.396466+01:00"
     },
     {
       "id": "2026-10-28-R2-C4",
@@ -1720,7 +1720,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C4/participants",
-      "collecte_a": "2026-10-28T11:47:15.069260+01:00",
+      "collecte_a": "2026-10-28T11:50:33.906308+01:00",
       "statut": "DONNEES_NON_ANALYSEES"
     },
     {
@@ -1948,7 +1948,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C4/participants",
-      "collecte_a": "2026-10-28T11:47:11.943458+01:00",
+      "collecte_a": "2026-10-28T11:50:30.903638+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -2032,7 +2032,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833573+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396672+01:00"
         },
         {
           "moteur": "M2",
@@ -2115,7 +2115,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833573+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396672+01:00"
         },
         {
           "moteur": "M3",
@@ -2198,7 +2198,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833573+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396672+01:00"
         },
         {
           "moteur": "M4",
@@ -2281,7 +2281,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833573+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396672+01:00"
         },
         {
           "moteur": "M5",
@@ -2364,10 +2364,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833573+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396672+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.833573+01:00"
+      "analyse_a": "2026-10-28T11:50:41.396672+01:00"
     },
     {
       "id": "2026-10-28-R2-C5",
@@ -2496,7 +2496,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C5/participants",
-      "collecte_a": "2026-10-28T11:47:15.342416+01:00",
+      "collecte_a": "2026-10-28T11:50:34.207595+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -2552,7 +2552,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833839+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396937+01:00"
         },
         {
           "moteur": "M2",
@@ -2607,7 +2607,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833839+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396937+01:00"
         },
         {
           "moteur": "M3",
@@ -2662,7 +2662,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833839+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396937+01:00"
         },
         {
           "moteur": "M4",
@@ -2717,7 +2717,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833839+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396937+01:00"
         },
         {
           "moteur": "M5",
@@ -2772,10 +2772,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.833839+01:00"
+          "heure_paris": "2026-10-28T11:50:41.396937+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.833839+01:00"
+      "analyse_a": "2026-10-28T11:50:41.396937+01:00"
     },
     {
       "id": "2026-10-28-R1-C5",
@@ -2960,7 +2960,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C5/participants",
-      "collecte_a": "2026-10-28T11:47:12.218292+01:00",
+      "collecte_a": "2026-10-28T11:50:31.295845+01:00",
       "statut": "DONNEES_NON_ANALYSEES"
     },
     {
@@ -3176,7 +3176,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C6/participants",
-      "collecte_a": "2026-10-28T11:47:15.892189+01:00",
+      "collecte_a": "2026-10-28T11:50:34.595066+01:00",
       "statut": "DONNEES_NON_ANALYSEES"
     },
     {
@@ -3334,7 +3334,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C6/participants",
-      "collecte_a": "2026-10-28T11:47:12.770808+01:00",
+      "collecte_a": "2026-10-28T11:50:31.602155+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -3398,7 +3398,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834143+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397216+01:00"
         },
         {
           "moteur": "M2",
@@ -3461,7 +3461,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834143+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397216+01:00"
         },
         {
           "moteur": "M3",
@@ -3524,7 +3524,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834143+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397216+01:00"
         },
         {
           "moteur": "M4",
@@ -3587,7 +3587,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834143+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397216+01:00"
         },
         {
           "moteur": "M5",
@@ -3650,10 +3650,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834143+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397216+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.834143+01:00"
+      "analyse_a": "2026-10-28T11:50:41.397216+01:00"
     },
     {
       "id": "2026-10-28-R2-C7",
@@ -3880,7 +3880,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C7/participants",
-      "collecte_a": "2026-10-28T11:47:16.165592+01:00",
+      "collecte_a": "2026-10-28T11:50:35.175507+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -3964,7 +3964,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834347+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397445+01:00"
         },
         {
           "moteur": "M2",
@@ -4047,7 +4047,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834347+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397445+01:00"
         },
         {
           "moteur": "M3",
@@ -4130,7 +4130,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834347+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397445+01:00"
         },
         {
           "moteur": "M4",
@@ -4213,7 +4213,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834347+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397445+01:00"
         },
         {
           "moteur": "M5",
@@ -4296,10 +4296,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834347+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397445+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.834347+01:00"
+      "analyse_a": "2026-10-28T11:50:41.397445+01:00"
     },
     {
       "id": "2026-10-28-R1-C7",
@@ -4470,7 +4470,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C7/participants",
-      "collecte_a": "2026-10-28T11:47:13.097787+01:00",
+      "collecte_a": "2026-10-28T11:50:32.028717+01:00",
       "statut": "DONNEES_NON_ANALYSEES"
     },
     {
@@ -4698,7 +4698,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
-      "collecte_a": "2026-10-28T11:47:16.719940+01:00",
+      "collecte_a": "2026-10-28T11:50:35.472862+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -4782,7 +4782,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834662+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397760+01:00"
         },
         {
           "moteur": "M2",
@@ -4865,7 +4865,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834662+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397760+01:00"
         },
         {
           "moteur": "M3",
@@ -4948,7 +4948,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834662+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397760+01:00"
         },
         {
           "moteur": "M4",
@@ -5031,7 +5031,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834662+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397760+01:00"
         },
         {
           "moteur": "M5",
@@ -5114,10 +5114,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834662+01:00"
+          "heure_paris": "2026-10-28T11:50:41.397760+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.834662+01:00"
+      "analyse_a": "2026-10-28T11:50:41.397760+01:00"
     },
     {
       "id": "2026-10-28-R1-C8",
@@ -5316,7 +5316,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C8/participants",
-      "collecte_a": "2026-10-28T11:47:13.373025+01:00",
+      "collecte_a": "2026-10-28T11:50:32.607345+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -5392,7 +5392,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834926+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398021+01:00"
         },
         {
           "moteur": "M2",
@@ -5467,7 +5467,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834926+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398021+01:00"
         },
         {
           "moteur": "M3",
@@ -5542,7 +5542,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834926+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398021+01:00"
         },
         {
           "moteur": "M4",
@@ -5617,7 +5617,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834926+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398021+01:00"
         },
         {
           "moteur": "M5",
@@ -5692,10 +5692,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.834926+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398021+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.834926+01:00"
+      "analyse_a": "2026-10-28T11:50:41.398021+01:00"
     },
     {
       "id": "2026-10-28-R3-C1",
@@ -5894,7 +5894,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
-      "collecte_a": "2026-10-28T11:47:16.995197+01:00",
+      "collecte_a": "2026-10-28T11:50:36.035519+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -5970,7 +5970,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835183+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398275+01:00"
         },
         {
           "moteur": "M2",
@@ -6045,7 +6045,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835183+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398275+01:00"
         },
         {
           "moteur": "M3",
@@ -6120,7 +6120,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835183+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398275+01:00"
         },
         {
           "moteur": "M4",
@@ -6195,7 +6195,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835183+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398275+01:00"
         },
         {
           "moteur": "M5",
@@ -6270,10 +6270,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835183+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398275+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.835183+01:00"
+      "analyse_a": "2026-10-28T11:50:41.398275+01:00"
     },
     {
       "id": "2026-10-28-R4-C1",
@@ -6458,7 +6458,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C1/participants",
-      "collecte_a": "2026-10-28T11:47:19.318353+01:00",
+      "collecte_a": "2026-10-28T11:50:38.990905+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -6530,7 +6530,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835423+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398517+01:00"
         },
         {
           "moteur": "M2",
@@ -6601,7 +6601,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835423+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398517+01:00"
         },
         {
           "moteur": "M3",
@@ -6672,7 +6672,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835423+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398517+01:00"
         },
         {
           "moteur": "M4",
@@ -6743,7 +6743,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835423+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398517+01:00"
         },
         {
           "moteur": "M5",
@@ -6814,10 +6814,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835423+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398517+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.835423+01:00"
+      "analyse_a": "2026-10-28T11:50:41.398517+01:00"
     },
     {
       "id": "2026-10-28-R3-C2",
@@ -7044,7 +7044,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
-      "collecte_a": "2026-10-28T11:47:17.264993+01:00",
+      "collecte_a": "2026-10-28T11:50:36.602518+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -7128,7 +7128,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835682+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398774+01:00"
         },
         {
           "moteur": "M2",
@@ -7211,7 +7211,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835682+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398774+01:00"
         },
         {
           "moteur": "M3",
@@ -7294,7 +7294,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835682+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398774+01:00"
         },
         {
           "moteur": "M4",
@@ -7377,7 +7377,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835682+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398774+01:00"
         },
         {
           "moteur": "M5",
@@ -7460,10 +7460,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835682+01:00"
+          "heure_paris": "2026-10-28T11:50:41.398774+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.835682+01:00"
+      "analyse_a": "2026-10-28T11:50:41.398774+01:00"
     },
     {
       "id": "2026-10-28-R4-C2",
@@ -7678,7 +7678,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
-      "collecte_a": "2026-10-28T11:47:19.588820+01:00",
+      "collecte_a": "2026-10-28T11:50:39.284093+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -7754,7 +7754,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835929+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399022+01:00"
         },
         {
           "moteur": "M2",
@@ -7829,7 +7829,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835929+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399022+01:00"
         },
         {
           "moteur": "M3",
@@ -7904,7 +7904,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835929+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399022+01:00"
         },
         {
           "moteur": "M4",
@@ -7979,7 +7979,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835929+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399022+01:00"
         },
         {
           "moteur": "M5",
@@ -8054,10 +8054,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.835929+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399022+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.835929+01:00"
+      "analyse_a": "2026-10-28T11:50:41.399022+01:00"
     },
     {
       "id": "2026-10-28-R3-C3",
@@ -8256,7 +8256,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
-      "collecte_a": "2026-10-28T11:47:17.539199+01:00",
+      "collecte_a": "2026-10-28T11:50:36.895441+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -8332,7 +8332,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836192+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399281+01:00"
         },
         {
           "moteur": "M2",
@@ -8407,7 +8407,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836192+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399281+01:00"
         },
         {
           "moteur": "M3",
@@ -8482,7 +8482,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836192+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399281+01:00"
         },
         {
           "moteur": "M4",
@@ -8557,7 +8557,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836192+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399281+01:00"
         },
         {
           "moteur": "M5",
@@ -8632,10 +8632,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836192+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399281+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.836192+01:00"
+      "analyse_a": "2026-10-28T11:50:41.399281+01:00"
     },
     {
       "id": "2026-10-28-R4-C3",
@@ -8850,7 +8850,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
-      "collecte_a": "2026-10-28T11:47:19.962963+01:00",
+      "collecte_a": "2026-10-28T11:50:39.579764+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -8926,7 +8926,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836431+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399521+01:00"
         },
         {
           "moteur": "M2",
@@ -9001,7 +9001,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836431+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399521+01:00"
         },
         {
           "moteur": "M3",
@@ -9076,7 +9076,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836431+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399521+01:00"
         },
         {
           "moteur": "M4",
@@ -9151,7 +9151,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836431+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399521+01:00"
         },
         {
           "moteur": "M5",
@@ -9226,10 +9226,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836431+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399521+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.836431+01:00"
+      "analyse_a": "2026-10-28T11:50:41.399521+01:00"
     },
     {
       "id": "2026-10-28-R3-C4",
@@ -9428,7 +9428,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
-      "collecte_a": "2026-10-28T11:47:17.812851+01:00",
+      "collecte_a": "2026-10-28T11:50:37.199989+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -9504,7 +9504,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836665+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399750+01:00"
         },
         {
           "moteur": "M2",
@@ -9579,7 +9579,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836665+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399750+01:00"
         },
         {
           "moteur": "M3",
@@ -9654,7 +9654,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836665+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399750+01:00"
         },
         {
           "moteur": "M4",
@@ -9729,7 +9729,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836665+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399750+01:00"
         },
         {
           "moteur": "M5",
@@ -9804,10 +9804,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836665+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399750+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.836665+01:00"
+      "analyse_a": "2026-10-28T11:50:41.399750+01:00"
     },
     {
       "id": "2026-10-28-R4-C4",
@@ -9992,7 +9992,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
-      "collecte_a": "2026-10-28T11:47:20.514795+01:00",
+      "collecte_a": "2026-10-28T11:50:39.878810+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -10064,7 +10064,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836894+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399979+01:00"
         },
         {
           "moteur": "M2",
@@ -10135,7 +10135,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836894+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399979+01:00"
         },
         {
           "moteur": "M3",
@@ -10206,7 +10206,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836894+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399979+01:00"
         },
         {
           "moteur": "M4",
@@ -10277,7 +10277,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836894+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399979+01:00"
         },
         {
           "moteur": "M5",
@@ -10348,10 +10348,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.836894+01:00"
+          "heure_paris": "2026-10-28T11:50:41.399979+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.836894+01:00"
+      "analyse_a": "2026-10-28T11:50:41.399979+01:00"
     },
     {
       "id": "2026-10-28-R3-C5",
@@ -10494,7 +10494,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
-      "collecte_a": "2026-10-28T11:47:18.085696+01:00",
+      "collecte_a": "2026-10-28T11:50:37.499892+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -10554,7 +10554,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837137+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400197+01:00"
         },
         {
           "moteur": "M2",
@@ -10613,7 +10613,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837137+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400197+01:00"
         },
         {
           "moteur": "M3",
@@ -10672,7 +10672,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837137+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400197+01:00"
         },
         {
           "moteur": "M4",
@@ -10731,7 +10731,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837137+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400197+01:00"
         },
         {
           "moteur": "M5",
@@ -10790,10 +10790,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837137+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400197+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.837137+01:00"
+      "analyse_a": "2026-10-28T11:50:41.400197+01:00"
     },
     {
       "id": "2026-10-28-R4-C5",
@@ -10964,7 +10964,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C5/participants",
-      "collecte_a": "2026-10-28T11:47:20.786997+01:00",
+      "collecte_a": "2026-10-28T11:50:40.449114+01:00",
       "statut": "DONNEES_NON_ANALYSEES"
     },
     {
@@ -11108,7 +11108,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
-      "collecte_a": "2026-10-28T11:47:18.358529+01:00",
+      "collecte_a": "2026-10-28T11:50:37.792336+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -11168,7 +11168,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837369+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400453+01:00"
         },
         {
           "moteur": "M2",
@@ -11227,7 +11227,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837369+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400453+01:00"
         },
         {
           "moteur": "M3",
@@ -11286,7 +11286,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837369+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400453+01:00"
         },
         {
           "moteur": "M4",
@@ -11345,7 +11345,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837369+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400453+01:00"
         },
         {
           "moteur": "M5",
@@ -11404,10 +11404,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837369+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400453+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.837369+01:00"
+      "analyse_a": "2026-10-28T11:50:41.400453+01:00"
     },
     {
       "id": "2026-10-28-R4-C6",
@@ -11538,7 +11538,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
-      "collecte_a": "2026-10-28T11:47:21.094382+01:00",
+      "collecte_a": "2026-10-28T11:50:40.921327+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -11590,7 +11590,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837572+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400657+01:00"
         },
         {
           "moteur": "M2",
@@ -11641,7 +11641,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837572+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400657+01:00"
         },
         {
           "moteur": "M3",
@@ -11692,7 +11692,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837572+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400657+01:00"
         },
         {
           "moteur": "M4",
@@ -11743,7 +11743,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837572+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400657+01:00"
         },
         {
           "moteur": "M5",
@@ -11794,10 +11794,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837572+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400657+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.837572+01:00"
+      "analyse_a": "2026-10-28T11:50:41.400657+01:00"
     },
     {
       "id": "2026-10-28-R3-C7",
@@ -11940,7 +11940,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
-      "collecte_a": "2026-10-28T11:47:18.742906+01:00",
+      "collecte_a": "2026-10-28T11:50:38.130560+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -12000,7 +12000,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837732+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400816+01:00"
         },
         {
           "moteur": "M2",
@@ -12059,7 +12059,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837732+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400816+01:00"
         },
         {
           "moteur": "M3",
@@ -12118,7 +12118,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837732+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400816+01:00"
         },
         {
           "moteur": "M4",
@@ -12177,7 +12177,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837732+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400816+01:00"
         },
         {
           "moteur": "M5",
@@ -12236,10 +12236,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837732+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400816+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.837732+01:00"
+      "analyse_a": "2026-10-28T11:50:41.400816+01:00"
     },
     {
       "id": "2026-10-28-R4-C7",
@@ -12410,7 +12410,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
-      "collecte_a": "2026-10-28T11:47:21.681864+01:00",
+      "collecte_a": "2026-10-28T11:50:41.244822+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -12478,7 +12478,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837912+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400992+01:00"
         },
         {
           "moteur": "M2",
@@ -12545,7 +12545,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837912+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400992+01:00"
         },
         {
           "moteur": "M3",
@@ -12612,7 +12612,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837912+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400992+01:00"
         },
         {
           "moteur": "M4",
@@ -12679,7 +12679,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837912+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400992+01:00"
         },
         {
           "moteur": "M5",
@@ -12746,10 +12746,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.837912+01:00"
+          "heure_paris": "2026-10-28T11:50:41.400992+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.837912+01:00"
+      "analyse_a": "2026-10-28T11:50:41.400992+01:00"
     },
     {
       "id": "2026-10-28-R3-C8",
@@ -12920,7 +12920,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
-      "collecte_a": "2026-10-28T11:47:19.013673+01:00",
+      "collecte_a": "2026-10-28T11:50:38.424728+01:00",
       "statut": "ANALYSE_INDICATIVE",
       "moteurs": [
         {
@@ -12988,7 +12988,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.838149+01:00"
+          "heure_paris": "2026-10-28T11:50:41.401192+01:00"
         },
         {
           "moteur": "M2",
@@ -13055,7 +13055,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.838149+01:00"
+          "heure_paris": "2026-10-28T11:50:41.401192+01:00"
         },
         {
           "moteur": "M3",
@@ -13122,7 +13122,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.838149+01:00"
+          "heure_paris": "2026-10-28T11:50:41.401192+01:00"
         },
         {
           "moteur": "M4",
@@ -13189,7 +13189,7 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.838149+01:00"
+          "heure_paris": "2026-10-28T11:50:41.401192+01:00"
         },
         {
           "moteur": "M5",
@@ -13256,10 +13256,10 @@
             "forme",
             "regularite"
           ],
-          "heure_paris": "2026-10-28T11:47:21.838149+01:00"
+          "heure_paris": "2026-10-28T11:50:41.401192+01:00"
         }
       ],
-      "analyse_a": "2026-10-28T11:47:21.838149+01:00"
+      "analyse_a": "2026-10-28T11:50:41.401192+01:00"
     }
   ]
 }
