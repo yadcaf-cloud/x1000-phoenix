@@ -2,7 +2,7 @@
   "logiciel": "X1000 PHOENIX",
   "version": "PUBLICATION-UNIFIEE-6.0",
   "status": "PUBLICATION_PARTIELLE",
-  "generated_at_paris": "2026-10-28T16:15:25.236094+01:00",
+  "generated_at_paris": "2026-10-28T16:26:14.647249+01:00",
   "moteurs_actifs": [
     "M1",
     "M2",
@@ -15,8 +15,8 @@
   "courses_count": 31,
   "analyses_count": 20,
   "pronostics_count": 100,
-  "pv_count": 15,
-  "figes_count": 7,
+  "pv_count": 14,
+  "figes_count": 8,
   "audits_count": 0,
   "difficultes": [
     {
@@ -78,6 +78,10 @@
     {
       "moteur": "SYSTEME",
       "difficulte": "2026-10-28-R2-C8: analyse non disponible: Course deja partie"
+    },
+    {
+      "moteur": "SYSTEME",
+      "difficulte": "2026-10-28-R1-C8: analyse non disponible: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
