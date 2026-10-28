@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "date": "2026-10-28",
-  "collecte_a": "2026-10-28T14:41:09.723598+01:00",
+  "collecte_a": "2026-10-28T14:44:51.594336+01:00",
   "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026",
   "statut": "OK",
   "courses": [
@@ -205,7 +205,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C1/participants",
-      "collecte_a": "2026-10-28T14:41:14.782090+01:00",
+      "collecte_a": "2026-10-28T14:44:56.311798+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -335,7 +335,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C1/participants",
-      "collecte_a": "2026-10-28T14:41:11.224232+01:00",
+      "collecte_a": "2026-10-28T14:44:52.784782+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -549,7 +549,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C2/participants",
-      "collecte_a": "2026-10-28T14:41:15.160906+01:00",
+      "collecte_a": "2026-10-28T14:44:56.686388+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -665,7 +665,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
-      "collecte_a": "2026-10-28T14:41:11.601320+01:00",
+      "collecte_a": "2026-10-28T14:44:53.084765+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -865,7 +865,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C3/participants",
-      "collecte_a": "2026-10-28T14:41:15.639902+01:00",
+      "collecte_a": "2026-10-28T14:44:57.010586+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -981,7 +981,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C3/participants",
-      "collecte_a": "2026-10-28T14:41:11.977823+01:00",
+      "collecte_a": "2026-10-28T14:44:53.634001+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1211,7 +1211,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C4/participants",
-      "collecte_a": "2026-10-28T14:41:16.022204+01:00",
+      "collecte_a": "2026-10-28T14:44:57.358560+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1439,7 +1439,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C4/participants",
-      "collecte_a": "2026-10-28T14:41:12.443282+01:00",
+      "collecte_a": "2026-10-28T14:44:54.076195+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1569,7 +1569,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C5/participants",
-      "collecte_a": "2026-10-28T14:41:16.402427+01:00",
+      "collecte_a": "2026-10-28T14:44:57.667686+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1755,7 +1755,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C5/participants",
-      "collecte_a": "2026-10-28T14:41:13.173281+01:00",
+      "collecte_a": "2026-10-28T14:44:54.817226+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1971,7 +1971,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C6/participants",
-      "collecte_a": "2026-10-28T14:41:16.781888+01:00",
+      "collecte_a": "2026-10-28T14:44:58.061549+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2129,7 +2129,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C6/participants",
-      "collecte_a": "2026-10-28T14:41:13.583701+01:00",
+      "collecte_a": "2026-10-28T14:44:55.157752+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2321,7 +2321,7 @@
           "musique": "9p1p4p2p7p5p2p3p(25)6p",
           "gains": null,
           "jockey": "",
-          "driver": "A.CRASTUS",
+          "driver": "L. BAILS",
           "entraineur": "J.PARIZE",
           "age": 6,
           "sexe": "FEMELLES",
@@ -2357,7 +2357,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C7/participants",
-      "collecte_a": "2026-10-28T14:41:17.162843+01:00",
+      "collecte_a": "2026-10-28T14:44:58.386208+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2529,7 +2529,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C7/participants",
-      "collecte_a": "2026-10-28T14:41:13.963616+01:00",
+      "collecte_a": "2026-10-28T14:44:55.595639+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2759,7 +2759,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
-      "collecte_a": "2026-10-28T14:41:17.539337+01:00",
+      "collecte_a": "2026-10-28T14:44:58.773067+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2959,7 +2959,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C8/participants",
-      "collecte_a": "2026-10-28T14:41:14.356030+01:00",
+      "collecte_a": "2026-10-28T14:44:55.982952+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3159,7 +3159,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
-      "collecte_a": "2026-10-28T14:41:17.917262+01:00",
+      "collecte_a": "2026-10-28T14:44:59.066027+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3345,7 +3345,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C1/participants",
-      "collecte_a": "2026-10-28T14:41:20.943067+01:00",
+      "collecte_a": "2026-10-28T14:45:02.144935+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3573,7 +3573,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
-      "collecte_a": "2026-10-28T14:41:18.297650+01:00",
+      "collecte_a": "2026-10-28T14:44:59.641102+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3789,7 +3789,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
-      "collecte_a": "2026-10-28T14:41:21.320665+01:00",
+      "collecte_a": "2026-10-28T14:45:02.451414+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3989,7 +3989,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
-      "collecte_a": "2026-10-28T14:41:18.677897+01:00",
+      "collecte_a": "2026-10-28T14:45:00.035084+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4205,7 +4205,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
-      "collecte_a": "2026-10-28T14:41:21.699037+01:00",
+      "collecte_a": "2026-10-28T14:45:02.790146+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4405,7 +4405,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
-      "collecte_a": "2026-10-28T14:41:19.056949+01:00",
+      "collecte_a": "2026-10-28T14:45:00.343124+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4591,7 +4591,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
-      "collecte_a": "2026-10-28T14:41:22.337251+01:00",
+      "collecte_a": "2026-10-28T14:45:03.125369+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4735,7 +4735,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
-      "collecte_a": "2026-10-28T14:41:19.434743+01:00",
+      "collecte_a": "2026-10-28T14:45:00.642793+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4907,7 +4907,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C5/participants",
-      "collecte_a": "2026-10-28T14:41:22.715791+01:00",
+      "collecte_a": "2026-10-28T14:45:03.425125+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -5051,7 +5051,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
-      "collecte_a": "2026-10-28T14:41:19.811918+01:00",
+      "collecte_a": "2026-10-28T14:45:00.945193+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -5183,7 +5183,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
-      "collecte_a": "2026-10-28T14:41:23.092408+01:00",
+      "collecte_a": "2026-10-28T14:45:03.725629+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -5327,7 +5327,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
-      "collecte_a": "2026-10-28T14:41:20.190776+01:00",
+      "collecte_a": "2026-10-28T14:45:01.247116+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -5499,7 +5499,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
-      "collecte_a": "2026-10-28T14:41:23.471777+01:00",
+      "collecte_a": "2026-10-28T14:45:04.017205+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -5671,7 +5671,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
-      "collecte_a": "2026-10-28T14:41:20.565149+01:00",
+      "collecte_a": "2026-10-28T14:45:01.843310+01:00",
       "statut": "PARTANTS_CHARGES"
     }
   ],
