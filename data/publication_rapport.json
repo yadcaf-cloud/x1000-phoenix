@@ -2,7 +2,7 @@
   "logiciel": "X1000 PHOENIX",
   "version": "PUBLICATION-UNIFIEE-6.0",
   "status": "PUBLICATION_PARTIELLE",
-  "generated_at_paris": "2026-10-28T15:33:19.356295+01:00",
+  "generated_at_paris": "2026-10-28T15:42:37.130457+01:00",
   "moteurs_actifs": [
     "M1",
     "M2",
@@ -73,7 +73,7 @@
     },
     {
       "moteur": "SYSTEME",
-      "difficulte": "2026-10-28-R1-C7: analyse non disponible: Musique insuffisante pour le cheval 5"
+      "difficulte": "2026-10-28-R1-C7: analyse non disponible: Course deja partie"
     },
     {
       "moteur": "SYSTEME",
