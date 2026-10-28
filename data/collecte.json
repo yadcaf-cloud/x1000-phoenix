@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "date": "2026-10-28",
-  "collecte_a": "2026-10-28T20:18:57.150556+01:00",
+  "collecte_a": "2026-10-28T20:48:52.373059+01:00",
   "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026",
   "statut": "OK",
   "courses": [
@@ -205,7 +205,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C1/participants",
-      "collecte_a": "2026-10-28T20:19:00.890256+01:00",
+      "collecte_a": "2026-10-28T20:48:56.409727+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -335,7 +335,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C1/participants",
-      "collecte_a": "2026-10-28T20:18:58.017578+01:00",
+      "collecte_a": "2026-10-28T20:48:53.354860+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -549,7 +549,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C2/participants",
-      "collecte_a": "2026-10-28T20:19:01.199728+01:00",
+      "collecte_a": "2026-10-28T20:48:56.728904+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -665,7 +665,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C2/participants",
-      "collecte_a": "2026-10-28T20:18:58.345330+01:00",
+      "collecte_a": "2026-10-28T20:48:53.821300+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -865,7 +865,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C3/participants",
-      "collecte_a": "2026-10-28T20:19:01.610763+01:00",
+      "collecte_a": "2026-10-28T20:48:57.045460+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -981,7 +981,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C3/participants",
-      "collecte_a": "2026-10-28T20:18:58.687126+01:00",
+      "collecte_a": "2026-10-28T20:48:54.214106+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1211,7 +1211,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C4/participants",
-      "collecte_a": "2026-10-28T20:19:02.012918+01:00",
+      "collecte_a": "2026-10-28T20:48:57.394637+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1439,7 +1439,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C4/participants",
-      "collecte_a": "2026-10-28T20:18:58.985716+01:00",
+      "collecte_a": "2026-10-28T20:48:54.564442+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1569,7 +1569,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C5/participants",
-      "collecte_a": "2026-10-28T20:19:02.338852+01:00",
+      "collecte_a": "2026-10-28T20:48:57.722563+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1755,7 +1755,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C5/participants",
-      "collecte_a": "2026-10-28T20:18:59.423274+01:00",
+      "collecte_a": "2026-10-28T20:48:54.900881+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -1971,7 +1971,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C6/participants",
-      "collecte_a": "2026-10-28T20:19:02.654230+01:00",
+      "collecte_a": "2026-10-28T20:48:58.245113+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2129,7 +2129,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C6/participants",
-      "collecte_a": "2026-10-28T20:18:59.735225+01:00",
+      "collecte_a": "2026-10-28T20:48:55.211915+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2357,7 +2357,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C7/participants",
-      "collecte_a": "2026-10-28T20:19:03.010228+01:00",
+      "collecte_a": "2026-10-28T20:48:58.717218+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2529,7 +2529,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C7/participants",
-      "collecte_a": "2026-10-28T20:19:00.115259+01:00",
+      "collecte_a": "2026-10-28T20:48:55.686196+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2759,7 +2759,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R2/C8/participants",
-      "collecte_a": "2026-10-28T20:19:03.566618+01:00",
+      "collecte_a": "2026-10-28T20:48:59.063053+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -2959,7 +2959,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R1/C8/participants",
-      "collecte_a": "2026-10-28T20:19:00.501473+01:00",
+      "collecte_a": "2026-10-28T20:48:55.992469+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3159,7 +3159,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C1/participants",
-      "collecte_a": "2026-10-28T20:19:03.867102+01:00",
+      "collecte_a": "2026-10-28T20:48:59.399003+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3345,7 +3345,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C1/participants",
-      "collecte_a": "2026-10-28T20:19:06.284435+01:00",
+      "collecte_a": "2026-10-28T20:49:02.215563+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3573,7 +3573,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C2/participants",
-      "collecte_a": "2026-10-28T20:19:04.177650+01:00",
+      "collecte_a": "2026-10-28T20:48:59.742104+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3789,7 +3789,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C2/participants",
-      "collecte_a": "2026-10-28T20:19:06.594213+01:00",
+      "collecte_a": "2026-10-28T20:49:02.535529+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -3989,7 +3989,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C3/participants",
-      "collecte_a": "2026-10-28T20:19:04.472450+01:00",
+      "collecte_a": "2026-10-28T20:49:00.165221+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4205,7 +4205,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C3/participants",
-      "collecte_a": "2026-10-28T20:19:06.890450+01:00",
+      "collecte_a": "2026-10-28T20:49:03.015918+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4405,7 +4405,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C4/participants",
-      "collecte_a": "2026-10-28T20:19:04.770590+01:00",
+      "collecte_a": "2026-10-28T20:49:00.493554+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4593,7 +4593,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C4/participants",
-      "collecte_a": "2026-10-28T20:19:07.200472+01:00",
+      "collecte_a": "2026-10-28T20:49:03.327020+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4739,7 +4739,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C5/participants",
-      "collecte_a": "2026-10-28T20:19:05.068586+01:00",
+      "collecte_a": "2026-10-28T20:49:00.800512+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -4911,7 +4911,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C5/participants",
-      "collecte_a": "2026-10-28T20:19:07.492762+01:00",
+      "collecte_a": "2026-10-28T20:49:03.647314+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -5055,7 +5055,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C6/participants",
-      "collecte_a": "2026-10-28T20:19:05.363045+01:00",
+      "collecte_a": "2026-10-28T20:49:01.146072+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -5187,151 +5187,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C6/participants",
-      "collecte_a": "2026-10-28T20:19:07.796973+01:00",
-      "statut": "PARTANTS_CHARGES"
-    },
-    {
-      "id": "2026-10-28-R3-C7",
-      "reunion": 3,
-      "course": 7,
-      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
-      "localisation_france_verifiee": true,
-      "nom": "PRIX DU CLOS SIMONETTE",
-      "depart": "2026-10-28T20:10:00+01:00",
-      "depart_verifie": true,
-      "nombre_participants": 9,
-      "nombre_partants": 9,
-      "non_partants": [],
-      "partants": [
-        {
-          "numero": 1,
-          "nom": "NELSON D'HERMES",
-          "non_partant": false,
-          "statut": "PARTANT",
-          "musique": "2a5a1m2aDa4a",
-          "gains": null,
-          "jockey": "",
-          "driver": "D. BEKAERT",
-          "entraineur": "J.M. ROUBAUD",
-          "age": 3,
-          "sexe": "HONGRES",
-          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
-        },
-        {
-          "numero": 2,
-          "nom": "NIRVANA D'HERMES",
-          "non_partant": false,
-          "statut": "PARTANT",
-          "musique": "Da2aDa3aDaDa1a1aDa",
-          "gains": null,
-          "jockey": "",
-          "driver": "S. STEFANO",
-          "entraineur": "J.M. ROUBAUD",
-          "age": 3,
-          "sexe": "MALES",
-          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
-        },
-        {
-          "numero": 3,
-          "nom": "NORMAND VILLETOT",
-          "non_partant": false,
-          "statut": "PARTANT",
-          "musique": "1a6a5a1a6a7a3a2a",
-          "gains": null,
-          "jockey": "",
-          "driver": "TH. BRIAND",
-          "entraineur": "TH. BONNARDEL",
-          "age": 3,
-          "sexe": "HONGRES",
-          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
-        },
-        {
-          "numero": 4,
-          "nom": "NICKEL CHROME",
-          "non_partant": false,
-          "statut": "PARTANT",
-          "musique": "7a4a1a2a1aDaDaDa(25)3a",
-          "gains": null,
-          "jockey": "",
-          "driver": "S. CINGLAND",
-          "entraineur": "S. CINGLAND",
-          "age": 3,
-          "sexe": "HONGRES",
-          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
-        },
-        {
-          "numero": 5,
-          "nom": "NORIA DE BERTRANGE",
-          "non_partant": false,
-          "statut": "PARTANT",
-          "musique": "4a4a4a6a9a5a4a6aDa4a",
-          "gains": null,
-          "jockey": "",
-          "driver": "E. GOUT",
-          "entraineur": "E. GOUT",
-          "age": 3,
-          "sexe": "FEMELLES",
-          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
-        },
-        {
-          "numero": 6,
-          "nom": "NOVELTY",
-          "non_partant": false,
-          "statut": "PARTANT",
-          "musique": "2a3a2a1a3a(25)1a",
-          "gains": null,
-          "jockey": "",
-          "driver": "Y.A. BRIAND",
-          "entraineur": "TH. BONNARDEL",
-          "age": 3,
-          "sexe": "FEMELLES",
-          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
-        },
-        {
-          "numero": 7,
-          "nom": "NATALIA JAMES",
-          "non_partant": false,
-          "statut": "PARTANT",
-          "musique": "3a1aDa1a1a2a",
-          "gains": null,
-          "jockey": "",
-          "driver": "P. VERCRUYSSE",
-          "entraineur": "P. VERCRUYSSE",
-          "age": 3,
-          "sexe": "FEMELLES",
-          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
-        },
-        {
-          "numero": 8,
-          "nom": "NIGHT OF CARLESS",
-          "non_partant": false,
-          "statut": "PARTANT",
-          "musique": "5a3a3a1a3a4a3a1a6a5a",
-          "gains": null,
-          "jockey": "",
-          "driver": "N. MORTAGNE",
-          "entraineur": "N. MORTAGNE",
-          "age": 3,
-          "sexe": "FEMELLES",
-          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
-        },
-        {
-          "numero": 9,
-          "nom": "NOT ALONE",
-          "non_partant": false,
-          "statut": "PARTANT",
-          "musique": "5aDa4a2a7a4aDa8a2a3a",
-          "gains": null,
-          "jockey": "",
-          "driver": "J. ASSELIE",
-          "entraineur": "Y. HUREL",
-          "age": 3,
-          "sexe": "FEMELLES",
-          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
-        }
-      ],
-      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
-      "collecte_a": "2026-10-28T20:19:05.674371+01:00",
+      "collecte_a": "2026-10-28T20:49:03.972610+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -5503,7 +5359,153 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R4/C7/participants",
-      "collecte_a": "2026-10-28T20:19:08.099646+01:00",
+      "collecte_a": "2026-10-28T20:49:04.302685+01:00",
+      "statut": "PARTANTS_CHARGES"
+    },
+    {
+      "id": "2026-10-28-R3-C7",
+      "reunion": 3,
+      "course": 7,
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "localisation_france_verifiee": true,
+      "nom": "PRIX DU CLOS SIMONETTE",
+      "depart": "2026-10-28T20:37:00+01:00",
+      "depart_verifie": true,
+      "nombre_participants": 9,
+      "nombre_partants": 8,
+      "non_partants": [
+        7
+      ],
+      "partants": [
+        {
+          "numero": 1,
+          "nom": "NELSON D'HERMES",
+          "non_partant": false,
+          "statut": "PARTANT",
+          "musique": "2a5a1m2aDa4a",
+          "gains": null,
+          "jockey": "",
+          "driver": "D. BEKAERT",
+          "entraineur": "J.M. ROUBAUD",
+          "age": 3,
+          "sexe": "HONGRES",
+          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
+        },
+        {
+          "numero": 2,
+          "nom": "NIRVANA D'HERMES",
+          "non_partant": false,
+          "statut": "PARTANT",
+          "musique": "Da2aDa3aDaDa1a1aDa",
+          "gains": null,
+          "jockey": "",
+          "driver": "S. STEFANO",
+          "entraineur": "J.M. ROUBAUD",
+          "age": 3,
+          "sexe": "MALES",
+          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
+        },
+        {
+          "numero": 3,
+          "nom": "NORMAND VILLETOT",
+          "non_partant": false,
+          "statut": "PARTANT",
+          "musique": "1a6a5a1a6a7a3a2a",
+          "gains": null,
+          "jockey": "",
+          "driver": "TH. BRIAND",
+          "entraineur": "TH. BONNARDEL",
+          "age": 3,
+          "sexe": "HONGRES",
+          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
+        },
+        {
+          "numero": 4,
+          "nom": "NICKEL CHROME",
+          "non_partant": false,
+          "statut": "PARTANT",
+          "musique": "7a4a1a2a1aDaDaDa(25)3a",
+          "gains": null,
+          "jockey": "",
+          "driver": "S. CINGLAND",
+          "entraineur": "S. CINGLAND",
+          "age": 3,
+          "sexe": "HONGRES",
+          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
+        },
+        {
+          "numero": 5,
+          "nom": "NORIA DE BERTRANGE",
+          "non_partant": false,
+          "statut": "PARTANT",
+          "musique": "4a4a4a6a9a5a4a6aDa4a",
+          "gains": null,
+          "jockey": "",
+          "driver": "E. GOUT",
+          "entraineur": "E. GOUT",
+          "age": 3,
+          "sexe": "FEMELLES",
+          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
+        },
+        {
+          "numero": 6,
+          "nom": "NOVELTY",
+          "non_partant": false,
+          "statut": "PARTANT",
+          "musique": "2a3a2a1a3a(25)1a",
+          "gains": null,
+          "jockey": "",
+          "driver": "Y.A. BRIAND",
+          "entraineur": "TH. BONNARDEL",
+          "age": 3,
+          "sexe": "FEMELLES",
+          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
+        },
+        {
+          "numero": 7,
+          "nom": "NATALIA JAMES",
+          "non_partant": true,
+          "statut": "NON_PARTANT",
+          "musique": "3a1aDa1a1a2a",
+          "gains": null,
+          "jockey": "",
+          "driver": "P. VERCRUYSSE",
+          "entraineur": "P. VERCRUYSSE",
+          "age": 3,
+          "sexe": "FEMELLES",
+          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
+        },
+        {
+          "numero": 8,
+          "nom": "NIGHT OF CARLESS",
+          "non_partant": false,
+          "statut": "PARTANT",
+          "musique": "5a3a3a1a3a4a3a1a6a5a",
+          "gains": null,
+          "jockey": "",
+          "driver": "N. MORTAGNE",
+          "entraineur": "N. MORTAGNE",
+          "age": 3,
+          "sexe": "FEMELLES",
+          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
+        },
+        {
+          "numero": 9,
+          "nom": "NOT ALONE",
+          "non_partant": false,
+          "statut": "PARTANT",
+          "musique": "5aDa4a2a7a4aDa8a2a3a",
+          "gains": null,
+          "jockey": "",
+          "driver": "J. ASSELIE",
+          "entraineur": "Y. HUREL",
+          "age": 3,
+          "sexe": "FEMELLES",
+          "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants"
+        }
+      ],
+      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C7/participants",
+      "collecte_a": "2026-10-28T20:49:01.500330+01:00",
       "statut": "PARTANTS_CHARGES"
     },
     {
@@ -5513,7 +5515,7 @@
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "localisation_france_verifiee": true,
       "nom": "PRIX DE MALMOUSQUE",
-      "depart": "2026-10-28T20:31:00+01:00",
+      "depart": "2026-10-28T21:00:00+01:00",
       "depart_verifie": true,
       "nombre_participants": 11,
       "nombre_partants": 11,
@@ -5675,7 +5677,7 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/28102026/R3/C8/participants",
-      "collecte_a": "2026-10-28T20:19:05.971527+01:00",
+      "collecte_a": "2026-10-28T20:49:01.854189+01:00",
       "statut": "PARTANTS_CHARGES"
     }
   ],
@@ -5685,8 +5687,8 @@
     "reunions": 4,
     "courses_prevues": 31,
     "courses": 31,
-    "partants": 354,
-    "non_partants": 10,
+    "partants": 353,
+    "non_partants": 11,
     "erreurs": 0
   }
 }
