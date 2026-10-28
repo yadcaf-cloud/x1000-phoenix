@@ -2,20 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#071827">
-<title>🇸🇳🧠🔥 X1000 PHOENIX — Intelligence vivante</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🇸🇳🧠🔥 X1000 PHOENIX</title>
 <style>
 :root{
- --bg:#071827;
- --panel:#10283a;
- --line:#345469;
- --text:#f0f6fc;
- --muted:#b3c6d4;
- --green:#27d58c;
- --yellow:#ffcf58;
- --red:#ff7070;
- --blue:#65c7ff;
+ --bg:#071827;--panel:#10283a;--line:#345469;
+ --text:#f0f6fc;--muted:#b3c6d4;--green:#27d58c;
+ --yellow:#ffcf58;--red:#ff7070;--blue:#65c7ff;
  --gold:#ffd06a;
 }
 *{box-sizing:border-box}
@@ -31,7 +24,6 @@ header{
 }
 h1{font-size:clamp(23px,6vw,35px);color:var(--gold);margin:0}
 h2{font-size:21px;color:var(--green)}
-h3{font-size:17px;color:var(--blue)}
 nav{
  display:flex;gap:8px;overflow-x:auto;padding:11px;
  background:#0b2132;position:sticky;top:0;z-index:10;
@@ -47,8 +39,7 @@ section{
  scroll-margin-top:80px;
 }
 .grid{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
  gap:10px;
 }
 .card{
@@ -61,22 +52,17 @@ section{
 .warn{color:var(--yellow)}
 .bad{color:var(--red)}
 .table-wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:650px}
+table{width:100%;border-collapse:collapse;min-width:750px}
 th,td{
  padding:10px;border-bottom:1px solid var(--line);
  text-align:left;vertical-align:top;
 }
 th{background:#173449;color:var(--gold)}
-tr:hover{background:#19374a}
 button,select{
- background:#1b4054;color:white;
- border:1px solid var(--line);
- border-radius:8px;padding:11px;
- font:inherit;
+ background:#1b4054;color:white;border:1px solid var(--line);
+ border-radius:8px;padding:11px;font:inherit;
 }
 button{cursor:pointer}
-button:hover{background:#28607c}
-button:disabled{opacity:.5;cursor:default}
 .controls{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}
 .notice{
  border-left:4px solid var(--yellow);
@@ -116,56 +102,29 @@ a{color:var(--blue)}
 <section id="accueil">
 <h2>📡 Centre de contrôle</h2>
 <div class="grid">
-<div class="card">
-Courses publiées
-<div class="value" id="nbCourses">—</div>
+<div class="card">Courses publiées<div class="value" id="nbCourses">—</div></div>
+<div class="card">Courses françaises<div class="value" id="nbFrance">—</div></div>
+<div class="card">Partants<div class="value" id="nbPartants">—</div></div>
+<div class="card">Non-partants<div class="value" id="nbNP">—</div></div>
 </div>
-<div class="card">
-Courses françaises
-<div class="value" id="nbFrance">—</div>
-</div>
-<div class="card">
-Partants
-<div class="value" id="nbPartants">—</div>
-</div>
-<div class="card">
-Non-partants
-<div class="value" id="nbNP">—</div>
-</div>
-</div>
-
 <div class="controls">
 <button id="actualiser">🔄 Actualiser</button>
 <button id="recharger">🔍 Vérifier les fichiers</button>
 </div>
-
 <p id="dateMaj" class="muted">Dernière vérification : —</p>
-<div id="diagnostic" class="notice">
-En attente de lecture des données.
-</div>
+<div id="diagnostic" class="notice">En attente de lecture des données.</div>
 </section>
 
 <section id="courses">
 <h2>🏇 Courses PMU publiées</h2>
-<p class="muted">
-Seules les courses explicitement identifiées comme françaises
-sont affichées dans le tableau.
-</p>
+<p class="muted">Seules les courses explicitement identifiées comme françaises sont affichées.</p>
 <div class="table-wrap">
 <table>
-<thead>
-<tr>
-<th>Course</th>
-<th>Hippodrome</th>
-<th>Départ Paris</th>
-<th>Partants</th>
-<th>NP</th>
-<th>Contrôle</th>
-</tr>
-</thead>
-<tbody id="listeCourses">
-<tr><td colspan="6">Chargement...</td></tr>
-</tbody>
+<thead><tr>
+<th>Course</th><th>Hippodrome</th><th>Départ Paris</th>
+<th>Partants</th><th>NP</th><th>Contrôle</th>
+</tr></thead>
+<tbody id="listeCourses"></tbody>
 </table>
 </div>
 </section>
@@ -177,21 +136,13 @@ sont affichées dans le tableau.
 <option value="">Sélectionner une course</option>
 </select>
 </div>
-<div id="detailsCourse" class="muted">
-Sélectionnez une course pour afficher ses chevaux.
-</div>
+<div id="detailsCourse" class="muted">Sélectionnez une course.</div>
 <div class="table-wrap">
 <table>
-<thead>
-<tr>
-<th>N°</th>
-<th>Cheval</th>
-<th>Statut</th>
-<th>Jockey / Driver</th>
-<th>Entraîneur</th>
-<th>Musique</th>
-</tr>
-</thead>
+<thead><tr>
+<th>N°</th><th>Cheval</th><th>Statut</th>
+<th>Jockey / Driver</th><th>Entraîneur</th><th>Musique</th>
+</tr></thead>
 <tbody id="listePartants"></tbody>
 </table>
 </div>
@@ -200,14 +151,19 @@ Sélectionnez une course pour afficher ses chevaux.
 <section id="tableau">
 <h2>🏆 Tableau officiel X1000 — M1 à M5</h2>
 <div class="notice">
-Les pronostics ne sont affichés que s'ils sont présents
-dans un fichier de publication vérifiable.
-Aucun résultat ne sera inventé.
+Une course à la fois. Les analyses indicatives ne sont pas des paris FIGÉS.
+Aucune sélection n'est inventée.
 </div>
+<div class="controls">
+<label for="choixPronostic">Course analysée :</label>
+<select id="choixPronostic">
+<option value="">Sélectionner une course</option>
+</select>
+</div>
+<div id="resumePronostic" class="muted"></div>
 <div class="table-wrap">
 <table>
-<thead>
-<tr>
+<thead><tr>
 <th>Moteur</th>
 <th>🥇 Gagnant espéré</th>
 <th>🥈 Meilleur placé</th>
@@ -216,8 +172,7 @@ Aucun résultat ne sera inventé.
 <th>Qualification</th>
 <th>Validation</th>
 <th>Heure Paris</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody id="tableauMoteurs"></tbody>
 </table>
 </div>
@@ -238,9 +193,7 @@ Aucun résultat ne sera inventé.
 
 <section id="actions">
 <h2>⚙️ GitHub Actions</h2>
-<p id="etatActions" class="warn">
-🟡 Vérification du rapport de publication en attente.
-</p>
+<p id="etatActions" class="warn">🟡 Vérification du rapport en attente</p>
 <p>
 <a href="https://github.com/yadcaf-cloud/x1000-phoenix/actions"
 target="_blank" rel="noopener noreferrer">
@@ -269,30 +222,32 @@ const FICHIERS={
  collecte:"data/collecte.json",
  pronostics:"data/publication_pronostics.json",
  figes:"data/publication_figes.json",
+ pv:"data/publication_pv.json",
  audits:"data/publication_audits.json",
  actions:"data/rapport_actions.json"
 };
 
-let courses=[];
 let publications={};
-let chargement=0;
+let courses=[];
+let selectionPronostic="";
+let sequence=0;
 
-function texte(v,defaut="—"){
- if(v===null||v===undefined||v==="")return defaut;
+function texte(v,d="—"){
+ if(v===null||v===undefined||v==="")return d;
  if(Array.isArray(v))return v.join(" - ");
  if(typeof v==="object")return JSON.stringify(v);
  return String(v);
 }
 
-function element(tag,valeur,classe){
+function el(tag,val,classe){
  const e=document.createElement(tag);
- e.textContent=texte(valeur);
+ e.textContent=texte(val);
  if(classe)e.className=classe;
  return e;
 }
 
-function cellule(tr,valeur,classe){
- tr.appendChild(element("td",valeur,classe));
+function cellule(tr,val,classe){
+ tr.appendChild(el("td",val,classe));
 }
 
 function dateParis(v){
@@ -306,96 +261,72 @@ function dateParis(v){
  }).format(d);
 }
 
-function maintenantParis(){
- return dateParis(new Date().toISOString());
-}
-
 async function lireJSON(chemin){
- const url=new URL(chemin,BASE);
- url.searchParams.set("v",Date.now());
- const r=await fetch(url.toString(),{cache:"no-store"});
- if(!r.ok)throw Error("HTTP "+r.status+" : "+chemin);
- const contenu=await r.json();
- if(!contenu||typeof contenu!=="object")
-  throw Error("Structure JSON incorrecte : "+chemin);
- return contenu;
+ const u=new URL(chemin,BASE);
+ u.searchParams.set("v",Date.now());
+ const r=await fetch(u,{cache:"no-store"});
+ if(!r.ok)throw Error("HTTP "+r.status);
+ const obj=await r.json();
+ if(!obj||typeof obj!=="object")throw Error("JSON invalide");
+ return obj;
 }
 
-function estFrance(c){
- return c.localisation_france_verifiee===true;
+function collection(obj,cles){
+ if(Array.isArray(obj))return obj;
+ if(!obj||typeof obj!=="object")return [];
+ for(const k of cles){
+  if(Array.isArray(obj[k]))return obj[k];
+ }
+ return [];
 }
 
-function numeroCourse(c){
- if(c.id)return c.id;
- return "R"+texte(c.reunion,"?")+"C"+texte(c.course,"?");
-}
+const idCourse=c=>texte(
+ c.id||("R"+texte(c.reunion,"?")+"C"+texte(c.course,"?"))
+);
 
-function participants(c){
- return Array.isArray(c.partants)?c.partants:[];
-}
+const estFrance=c=>c.localisation_france_verifiee===true;
+const participants=c=>Array.isArray(c.partants)?c.partants:[];
 
-function nonPartants(c){
- const liste=participants(c);
- const nums=new Set(
-  (Array.isArray(c.non_partants)?c.non_partants:[])
-  .map(n=>String(n))
+function np(c){
+ const s=new Set(
+  (Array.isArray(c.non_partants)?c.non_partants:[]).map(String)
  );
- liste.forEach(p=>{
+ participants(c).forEach(p=>{
   if(p.non_partant===true||p.statut==="NON_PARTANT")
-   nums.add(String(p.numero));
+   s.add(String(p.numero));
  });
- return nums;
+ return s;
 }
 
 function effectif(c){
- const liste=participants(c);
- const np=nonPartants(c);
- if(liste.length)
-  return liste.filter(p=>!np.has(String(p.numero))).length;
+ const ps=participants(c);
+ if(ps.length)
+  return ps.filter(p=>!np(c).has(String(p.numero))).length;
  const n=Number(c.nombre_partants);
  return Number.isFinite(n)?n:0;
 }
 
-function discipline(c){
- return texte(
-  c.discipline||c.specialite||c.type_course||c.typeCourse,
-  ""
- ).toLowerCase();
-}
-
-function jockeyDriver(p,c){
- const j=texte(p.jockey,"");
- const d=texte(p.driver,"");
- if(j)return j;
- if(!d)return "—";
- // Les données PMU peuvent utiliser "driver" pour
- // le cavalier, y compris dans les courses de plat.
- const type=discipline(c);
- if(type.includes("plat")||type.includes("obstacle")||
-    type.includes("haie")||type.includes("steeple"))
-  return d+" (jockey présumé)";
- return d;
-}
-
 function remplirCourses(){
  const tbody=$("listeCourses");
- const select=$("choixCourse");
+ const sel=$("choixCourse");
+ const ancien=sel.value;
  tbody.replaceChildren();
- select.replaceChildren(new Option("Sélectionner une course",""));
+ sel.replaceChildren(new Option("Sélectionner une course",""));
 
- const valides=courses.filter(estFrance);
- const ordonnees=[...valides].sort((a,b)=>
-  String(a.depart||"").localeCompare(String(b.depart||""))
+ const valides=courses.filter(estFrance).sort(
+  (a,b)=>String(a.depart||"").localeCompare(String(b.depart||""))
  );
 
  $("nbCourses").textContent=courses.length;
  $("nbFrance").textContent=valides.length;
- $("nbPartants").textContent=
-  valides.reduce((s,c)=>s+effectif(c),0);
- $("nbNP").textContent=
-  valides.reduce((s,c)=>s+nonPartants(c).size,0);
+ $("nbPartants").textContent=valides.reduce(
+  (s,c)=>s+effectif(c),0
+ );
+ $("nbNP").textContent=valides.reduce(
+  (s,c)=>s+np(c).size,0
+ );
 
- if(!ordonnees.length){
+ if(!valides.length){
   const tr=tbody.insertRow();
   const td=tr.insertCell();
   td.colSpan=6;
@@ -403,26 +334,25 @@ function remplirCourses(){
   return;
  }
 
- ordonnees.forEach(c=>{
+ valides.forEach(c=>{
   const tr=tbody.insertRow();
-  const np=nonPartants(c);
-  cellule(tr,numeroCourse(c));
-  cellule(tr,c.hippodrome);
-  cellule(tr,dateParis(c.depart));
-  cellule(tr,effectif(c));
-  cellule(tr,np.size);
-  cellule(tr,c.depart_verifie===true?
-   "🟢 Départ vérifié":"🟡 À confirmer");
-  select.add(new Option(
-   numeroCourse(c)+" — "+texte(c.hippodrome),
-   numeroCourse(c)
+  [
+   idCourse(c),c.hippodrome,dateParis(c.depart),
+   effectif(c),np(c).size,
+   c.depart_verifie===true?
+    "🟢 Départ vérifié":"🟡 À confirmer"
+  ].forEach(v=>cellule(tr,v));
+  sel.add(new Option(
+   idCourse(c)+" — "+texte(c.hippodrome),idCourse(c)
   ));
  });
 
- select.onchange=()=>{
-  const c=ordonnees.find(x=>numeroCourse(x)===select.value);
-  afficherPartants(c);
- };
+ if([...sel.options].some(o=>o.value===ancien))
+  sel.value=ancien;
+
+ afficherPartants(
+  valides.find(c=>idCourse(c)===sel.value)
+ );
 }
 
 function afficherPartants(c){
@@ -434,90 +364,134 @@ function afficherPartants(c){
   return;
  }
 
- const np=nonPartants(c);
+ const non=np(c);
  $("detailsCourse").textContent=
-  numeroCourse(c)+" — "+texte(c.nom)+
+  idCourse(c)+" — "+texte(c.nom)+
   " — "+dateParis(c.depart)+
-  " — "+effectif(c)+" partants, "+np.size+" NP";
+  " — "+effectif(c)+" partants, "+non.size+" NP";
 
  participants(c).forEach(p=>{
   const tr=tbody.insertRow();
-  const estNP=np.has(String(p.numero));
-  cellule(tr,p.numero);
-  cellule(tr,p.nom);
-  cellule(tr,estNP?"🔴 NON-PARTANT":"🟢 PARTANT",
-   estNP?"bad":"ok");
-  cellule(tr,jockeyDriver(p,c));
-  cellule(tr,p.entraineur);
-  cellule(tr,p.musique);
+  const isnp=non.has(String(p.numero));
+  [
+   p.numero,p.nom,
+   isnp?"🔴 NON-PARTANT":"🟢 PARTANT",
+   p.jockey||p.driver||"—",
+   p.entraineur,p.musique
+  ].forEach((v,i)=>cellule(
+   tr,v,i===2?(isnp?"bad":"ok"):""
+  ));
  });
 }
 
-function collection(obj,cles){
- if(Array.isArray(obj))return obj;
- for(const k of cles){
-  if(Array.isArray(obj?.[k]))return obj[k];
- }
- return [];
-}
+function construireGroupes(){
+ const groupes=new Map();
 
-function valeurMoteur(p,m,cles){
- for(const k of cles){
-  if(p?.[k]!==undefined)return p[k];
-  if(m?.[k]!==undefined)return m[k];
+ for(const c of courses){
+  if(!c||!c.id)continue;
+  const liste=Array.isArray(c.moteurs)?c.moteurs:[];
+  if(liste.length)
+   groupes.set(String(c.id),{course:c,moteurs:liste});
  }
- return null;
+
+ for(const p of collection(
+  publications.pronostics,
+  ["pronostics","moteurs","tableau","paris"]
+ )){
+  if(!p||!p.course_id||
+     !/^M[1-5]$/.test(String(p.moteur)))continue;
+
+  const id=String(p.course_id);
+
+  if(!groupes.has(id)){
+   groupes.set(id,{
+    course:{
+     id,
+     hippodrome:p.hippodrome,
+     depart:p.depart,
+     statut:p.statut_course
+    },
+    moteurs:[]
+   });
+  }
+
+  const g=groupes.get(id);
+  const i=g.moteurs.findIndex(
+   m=>m.moteur===p.moteur
+  );
+
+  if(i<0)g.moteurs.push(p);
+  else if(g.course.statut!=="FIGE_VERIFIE")
+   g.moteurs[i]=p;
+ }
+
+ return groupes;
 }
 
 function afficherPronostics(){
+ const groupes=construireGroupes();
+ const sel=$("choixPronostic");
  const tbody=$("tableauMoteurs");
+ const ancien=selectionPronostic||sel.value;
+
+ sel.replaceChildren(
+  new Option("Sélectionner une course","")
+ );
  tbody.replaceChildren();
 
- const donnees=publications.pronostics;
- const liste=collection(donnees,
-  ["pronostics","moteurs","tableau","paris"]);
- let publies=0;
+ const entries=[...groupes.entries()].sort(
+  (a,b)=>String(a[1].course.depart||"").localeCompare(
+   String(b[1].course.depart||"")
+  )
+ );
+
+ for(const [id,g] of entries){
+  sel.add(new Option(
+   id+" — "+texte(g.course.hippodrome)+
+   " — "+dateParis(g.course.depart),id
+  ));
+ }
+
+ selectionPronostic=groupes.has(ancien)?
+  ancien:(entries.length?entries[0][0]:"");
+
+ sel.value=selectionPronostic;
+ const groupe=groupes.get(selectionPronostic);
+
+ $("resumePronostic").textContent=groupe?
+  selectionPronostic+" — "+
+  texte(groupe.course.hippodrome)+" — "+
+  dateParis(groupe.course.depart)+" — "+
+  texte(groupe.course.statut):
+  "Aucune analyse disponible.";
+
+ let n=0;
 
  for(let i=1;i<=5;i++){
   const nom="M"+i;
-  const p=liste.find(x=>
-   String(x.moteur||x.id||"").toUpperCase()===nom
-  )||null;
-
-  const m=donnees?.[nom]||null;
+  const m=groupe?.moteurs.find(x=>x.moteur===nom);
   const tr=tbody.insertRow();
 
-  const gagnant=valeurMoteur(p,m,
-   ["gagnant_espere","gagnant","cheval_gagnant"]);
-  const place=valeurMoteur(p,m,
-   ["meilleur_place","place","cheval_place"]);
-  const ordre=valeurMoteur(p,m,
-   ["ordre_arrivee_espere","ordre","combinaison"]);
-  const pari=valeurMoteur(p,m,
-   ["pari_retenu","pari","type_pari"]);
-  const qualification=valeurMoteur(p,m,
-   ["qualification"]);
-  const validation=valeurMoteur(p,m,
-   ["validation","statut"]);
-  const heure=valeurMoteur(p,m,
-   ["heure_paris","heure_fige","horodatage"]);
+  if(m)n++;
 
-  const existe=Boolean(p||m);
-  if(existe)publies++;
+  const ordre=m?.ordre_arrivee_espere||
+   m?.ordre_espere||m?.ordre||m?.combinaison;
 
-  cellule(tr,nom);
-  cellule(tr,gagnant);
-  cellule(tr,place);
-  cellule(tr,ordre);
-  cellule(tr,pari);
-  cellule(tr,qualification);
-  cellule(tr,existe?validation:"🟡 Non publié");
-  cellule(tr,heure?dateParis(heure):"—");
+  [
+   nom,
+   m?.gagnant_espere??m?.gagnant,
+   m?.meilleur_place??m?.place,
+   ordre,
+   m?.pari_retenu??m?.pari,
+   m?.qualification,
+   m?.validation??(m?"INDICATIF":"🟡 Non publié"),
+   m?.heure_paris?dateParis(m.heure_paris):"—"
+  ].forEach(v=>cellule(tr,v));
  }
 
- $("etatPronostics").textContent=publies?
-  publies+" moteur(s) avec données de publication.":
-  "Aucun pronostic vérifiable publié dans le fichier attendu.";
+ $("etatPronostics").textContent=n?
+  n+" moteur(s) publiés pour cette course.":
+  "Aucun pronostic publié pour cette course.";
 }
 
 function afficherCollection(cle,etatId,contenuId,cles){
@@ -532,14 +506,12 @@ function afficherCollection(cle,etatId,contenuId,cles){
  }
 
  const liste=collection(obj,cles);
- if(!liste.length){
-  etat.textContent="🟡 Fichier lu, aucune entrée publiée.";
-  return;
- }
+ etat.textContent=liste.length?
+  "🟢 "+liste.length+" entrée(s) publiées.":
+  "🟡 Fichier lu, aucune entrée publiée.";
 
- etat.textContent="🟢 "+liste.length+" entrée(s) publiées.";
  liste.slice(0,30).forEach(item=>{
-  const bloc=element("div","","card");
+  const bloc=el("div","","card");
   const pre=document.createElement("pre");
   pre.textContent=JSON.stringify(item,null,2);
   bloc.appendChild(pre);
@@ -549,98 +521,112 @@ function afficherCollection(cle,etatId,contenuId,cles){
 
 function afficherActions(){
  const obj=publications.actions;
- const etat=$("etatActions");
  const cible=$("contenuActions");
  cible.replaceChildren();
 
  if(!obj){
-  etat.textContent=
+  $("etatActions").textContent=
    "🟡 Aucun rapport JSON disponible. Vérifier GitHub Actions.";
   return;
  }
 
- etat.textContent="🟢 Rapport JSON accessible (exécution non garantie).";
+ $("etatActions").textContent=
+  "🟢 Rapport JSON accessible (exécution GitHub non garantie).";
+
  const pre=document.createElement("pre");
  pre.textContent=JSON.stringify(obj,null,2).slice(0,12000);
  cible.appendChild(pre);
 }
 
 async function actualiser(){
- const sequence=++chargement;
+ const ticket=++sequence;
  $("actualiser").disabled=true;
  $("recharger").disabled=true;
  $("etatGlobal").textContent="🟡 Chargement en cours...";
 
  try{
   const noms=Object.keys(FICHIERS);
-  const resultats=await Promise.allSettled(
+  const res=await Promise.allSettled(
    noms.map(n=>lireJSON(FICHIERS[n]))
   );
 
-  if(sequence!==chargement)return;
+  if(ticket!==sequence)return;
 
   const etats={};
   publications={};
 
-  noms.forEach((nom,i)=>{
-   const r=resultats[i];
-   if(r.status==="fulfilled"){
-    publications[nom]=r.value;
-    etats[nom]="🟢 JSON accessible";
+  noms.forEach((n,i)=>{
+   if(res[i].status==="fulfilled"){
+    publications[n]=res[i].value;
+    etats[n]="🟢 JSON accessible";
    }else{
-    publications[nom]=null;
-    etats[nom]="🟡 "+r.reason.message;
+    publications[n]=null;
+    etats[n]="🟡 "+res[i].reason.message;
    }
   });
 
-  const source=publications.courses;
-  courses=collection(source,["courses"]);
+  courses=collection(publications.courses,["courses"]);
 
-  if(!source){
-   courses=[];
-   $("etatGlobal").textContent="🔴 Courses indisponibles";
-  }else if(!Array.isArray(source.courses)){
-   $("etatGlobal").textContent="🔴 Structure courses incorrecte";
-  }else{
-   $("etatGlobal").textContent=
-    "🟢 Publication des courses accessible";
-  }
+  $("etatGlobal").textContent=
+   !publications.courses?
+   "🔴 Courses indisponibles":
+   !Array.isArray(publications.courses.courses)?
+   "🔴 Structure courses incorrecte":
+   "🟢 Publication des courses accessible";
 
   remplirCourses();
   afficherPronostics();
-  afficherCollection("figes","etatFiges","contenuFiges",
-   ["figes","pv","publications"]);
-  afficherCollection("audits","etatAudits","contenuAudits",
-   ["audits","resultats"]);
+
+  afficherCollection(
+   "figes","etatFiges","contenuFiges",
+   ["figes","publications"]
+  );
+
+  afficherCollection(
+   "audits","etatAudits","contenuAudits",
+   ["audits","resultats"]
+  );
+
   afficherActions();
 
   const diag=$("diagnostic");
   diag.replaceChildren();
+
   noms.forEach(n=>{
-   diag.appendChild(element("div",
-    FICHIERS[n]+" : "+etats[n]));
+   diag.appendChild(
+    el("div",FICHIERS[n]+" : "+etats[n])
+   );
   });
 
   $("dateMaj").textContent=
-   "Vérification du navigateur : "+maintenantParis();
+   "Vérification du navigateur : "+
+   dateParis(new Date().toISOString());
 
  }catch(e){
   $("etatGlobal").textContent="🔴 Erreur : "+e.message;
  }finally{
-  if(sequence===chargement){
+  if(ticket===sequence){
    $("actualiser").disabled=false;
    $("recharger").disabled=false;
   }
  }
 }
 
+$("choixCourse").addEventListener("change",()=>{
+ afficherPartants(
+  courses.find(c=>idCourse(c)===$("choixCourse").value)
+ );
+});
+
+$("choixPronostic").addEventListener("change",()=>{
+ selectionPronostic=$("choixPronostic").value;
+ afficherPronostics();
+});
+
 $("actualiser").onclick=actualiser;
 $("recharger").onclick=actualiser;
 
 actualiser();
-
-// Actualisation de l'affichage toutes les 5 minutes
-// uniquement pendant que la page reste ouverte.
 setInterval(actualiser,300000);
 
 })();
