@@ -1,0 +1,139 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""X1000 PHOENIX — diagnostic des publications M1–M5."""
+
+import json
+from pathlib import Path
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
+DATA = Path(__file__).resolve().parent / "data"
+PARIS = ZoneInfo("Europe/Paris")
+MOTEURS = {"M1", "M2", "M3", "M4", "M5"}
+
+
+def charger(nom, cle):
+    path = DATA / f"publication_{nom}.json"
+    if not path.exists():
+        raise FileNotFoundError(str(path))
+    with path.open(encoding="utf-8") as f:
+        doc = json.load(f)
+    if not isinstance(doc, dict):
+        raise ValueError(f"{path}: objet JSON attendu")
+    valeurs = doc.get(cle)
+    if not isinstance(valeurs, list):
+        raise ValueError(f"{path}: liste {cle} absente")
+    return valeurs
+
+
+def analyser():
+    maintenant = datetime.now(PARIS).isoformat()
+    rapport = {
+        "logiciel": "X1000 PHOENIX",
+        "diagnostic_a": maintenant,
+        "etat": "A_VERIFIER",
+        "compteurs": {},
+        "alertes": [],
+    }
+
+    ensembles = {}
+    for nom, cle in (
+        ("courses", "courses"),
+        ("pronostics", "pronostics"),
+        ("pv", "pv"),
+        ("figes", "figes"),
+        ("audits", "audits"),
+    ):
+        try:
+            ensembles[nom] = charger(nom, cle)
+        except (OSError, ValueError, TypeError) as exc:
+            ensembles[nom] = []
+            rapport["alertes"].append(str(exc))
+
+        rapport["compteurs"][nom] = len(ensembles[nom])
+
+    figes_valides = set()
+    for fige in ensembles["figes"]:
+        if not isinstance(fige, dict):
+            rapport["alertes"].append("FIGE non objet")
+            continue
+        empreinte = fige.get("sha256")
+        if isinstance(empreinte, str) and len(empreinte) == 64:
+            figes_valides.add(empreinte)
+        else:
+            rapport["alertes"].append(
+                "FIGE sans empreinte SHA256 exploitable"
+            )
+
+    paris_valides = 0
+    indicatifs = 0
+
+    for ligne in ensembles["pronostics"]:
+        if not isinstance(ligne, dict):
+            rapport["alertes"].append("Pronostic mal formé")
+            continue
+
+        if ligne.get("moteur") not in MOTEURS:
+            rapport["alertes"].append("Moteur inconnu")
+            continue
+
+        if (
+            ligne.get("validation") == "OFFICIEL_VALIDE"
+            and ligne.get("pari_retenu") not in (None, "")
+        ):
+            paris_valides += 1
+        else:
+            indicatifs += 1
+
+    rapport["compteurs"]["paris_officiels_declares"] = paris_valides
+    rapport["compteurs"]["pronostics_indicatifs"] = indicatifs
+    rapport["compteurs"]["figes_avec_empreinte"] = len(figes_valides)
+
+    audits_lies = 0
+    for audit in ensembles["audits"]:
+        if not isinstance(audit, dict):
+            continue
+        if (
+            audit.get("statut") == "AUDIT_EFFECTUE"
+            and audit.get("fige_sha256") in figes_valides
+        ):
+            audits_lies += 1
+
+    rapport["compteurs"]["audits_lies"] = audits_lies
+
+    if not ensembles["courses"]:
+        rapport["alertes"].append("Aucune course publiée")
+
+    if not ensembles["figes"]:
+        rapport["alertes"].append("Aucun FIGE publié")
+
+    if not ensembles["audits"]:
+        rapport["alertes"].append("Aucun audit publié")
+
+    if indicatifs:
+        rapport["alertes"].append(
+            f"{indicatifs} pronostics non officiels"
+        )
+
+    if rapport["alertes"]:
+        rapport["etat"] = "ATTENTION"
+    else:
+        rapport["etat"] = "CONTROLES_STRUCTURELS_OK"
+
+    # Le diagnostic ne certifie pas les sources externes,
+    # les paris, les empreintes ou les arrivées officielles.
+    DATA.mkdir(parents=True, exist_ok=True)
+    destination = DATA / "diagnostic_phoenix.json"
+    temporaire = destination.with_suffix(".tmp")
+    temporaire.write_text(
+        json.dumps(rapport, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    temporaire.replace(destination)
+
+    print(json.dumps(rapport, ensure_ascii=False, indent=2))
+    return rapport
+
+
+if __name__ == "__main__":
+    analyser()
