@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   phoenix:
-    name: Collecte PMU et selection M1-M5
+    name: Collecte PMU et selection souple M1-M5
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
@@ -40,36 +40,46 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Verifier les programmes
+      - name: Verifier le collecteur PMU
         run: |
           set -euo pipefail
           python --version
-          test -f pmu_engine.py || {
+
+          if [ ! -f pmu_engine.py ]; then
             echo "::error::pmu_engine.py absent"
             exit 1
-          }
+          fi
+
           python -m py_compile pmu_engine.py
 
-      - name: Collecter et selectionner les courses
+      - name: Collecter et qualifier les courses
         run: |
           set -euo pipefail
+
           python - <<'PY'
           import datetime as dt
           import json
           import os
-          import pathlib
           import subprocess
           import sys
           import tempfile
+          from pathlib import Path
           from zoneinfo import ZoneInfo
 
-          ROOT = pathlib.Path.cwd()
+          ROOT = Path.cwd()
           DATA = ROOT / "data"
           DATA.mkdir(parents=True, exist_ok=True)
 
           PARIS = ZoneInfo("Europe/Paris")
           now = dt.datetime.now(PARIS)
-          errors = []
+          today = now.date().isoformat()
+
+          # Controle souple sur les criteres
+          # secondaires, strict sur les
+          # informations essentielles.
+          SEUIL_VERT = 50
+          SEUIL_JAUNE = 25
+          COUVERTURE_CRITERE = 0.50
 
           MOTEURS = {
               "M1": {
@@ -147,125 +157,163 @@ jobs:
               "corde": ("corde", "place_corde"),
           }
 
-          def atomic(path, obj):
+          erreurs = []
+
+          def ecrire(path, objet):
               path.parent.mkdir(
                   parents=True,
                   exist_ok=True
               )
-              tmp = None
+
+              temporaire = None
+
               try:
                   with tempfile.NamedTemporaryFile(
                       mode="w",
                       encoding="utf-8",
                       dir=path.parent,
                       delete=False
-                  ) as f:
-                      tmp = pathlib.Path(f.name)
+                  ) as fichier:
+                      temporaire = Path(fichier.name)
+
                       json.dump(
-                          obj,
-                          f,
+                          objet,
+                          fichier,
                           ensure_ascii=False,
                           indent=2,
                           allow_nan=False
                       )
-                      f.write("\n")
-                      f.flush()
-                      os.fsync(f.fileno())
-                  os.replace(tmp, path)
-              finally:
-                  if tmp and tmp.exists():
-                      tmp.unlink()
 
-          def read(path):
+                      fichier.write("\n")
+                      fichier.flush()
+                      os.fsync(fichier.fileno())
+
+                  os.replace(temporaire, path)
+
+              finally:
+                  if (
+                      temporaire is not None
+                      and temporaire.exists()
+                  ):
+                      temporaire.unlink()
+
+          def lire(path):
               try:
                   return json.loads(
-                      path.read_text(encoding="utf-8")
+                      path.read_text(
+                          encoding="utf-8"
+                      )
                   )
+
               except (OSError, ValueError) as exc:
-                  errors.append(
+                  erreurs.append(
                       f"{path.name}: {exc}"
                   )
                   return None
 
-          def present(obj, critere):
-              if not isinstance(obj, dict):
+          def present(objet, critere):
+              if not isinstance(objet, dict):
                   return False
 
-              for key in ALIASES[critere]:
-                  val = obj.get(key)
+              for cle in ALIASES[critere]:
+                  valeur = objet.get(cle)
 
-                  if val is None or isinstance(val, bool):
+                  if valeur is None:
                       continue
 
-                  if isinstance(val, str):
-                      if val.strip():
+                  if isinstance(valeur, bool):
+                      continue
+
+                  if isinstance(valeur, str):
+                      if valeur.strip():
                           return True
-                  elif isinstance(val, (list, dict)):
-                      if val:
+
+                  elif isinstance(valeur, (list, dict)):
+                      if valeur:
                           return True
+
                   else:
                       return True
 
               return False
 
           def depart_paris(course):
-              val = course.get("depart")
-              if not isinstance(val, str):
+              valeur = course.get("depart")
+
+              if not isinstance(valeur, str):
                   return None
 
               try:
                   instant = dt.datetime.fromisoformat(
-                      val.replace("Z", "+00:00")
+                      valeur.replace("Z", "+00:00")
                   )
 
                   if instant.tzinfo is None:
+                      # Le collecteur doit fournir
+                      # l'heure locale de Paris.
                       instant = instant.replace(
                           tzinfo=PARIS
                       )
 
                   return instant.astimezone(PARIS)
+
               except ValueError:
                   return None
 
-          def evaluer(course, moteur):
+          def qualifier(course, moteur):
               criteres = MOTEURS[moteur]["criteres"]
               partants = course["partants"]
-              points = 0
+
+              disponibles = []
+              manquants = []
 
               for critere in criteres:
-                  disponibles = sum(
-                      present(p, critere)
+                  nombre = sum(
+                      present(partant, critere)
                       or present(course, critere)
-                      for p in partants
+                      for partant in partants
                   )
 
-                  if disponibles / len(partants) >= 0.8:
-                      points += 1
+                  couverture = nombre / len(partants)
+
+                  if couverture >= COUVERTURE_CRITERE:
+                      disponibles.append(critere)
+                  else:
+                      manquants.append(critere)
 
               score = round(
-                  100 * points / len(criteres)
+                  100 * len(disponibles)
+                  / len(criteres)
               )
 
-              if score >= 75:
+              if score >= SEUIL_VERT:
                   statut = "VERT"
-              elif score >= 50:
+              elif score >= SEUIL_JAUNE:
                   statut = "JAUNE"
               else:
                   statut = "ROUGE"
 
-              return score, statut
+              return {
+                  "moteur": moteur,
+                  "specialite": MOTEURS[moteur]["nom"],
+                  "score_donnees": score,
+                  "qualification": statut,
+                  "criteres_disponibles": disponibles,
+                  "criteres_a_completer": manquants,
+              }
 
-          # COLLECTE PMU
+          # 1. COLLECTE PMU
           collecte_ok = False
           script = ROOT / "pmu_engine.py"
 
-          # Retirer les sorties anciennes pour
-          # ne pas publier une collecte perimee.
-          for filename in (
+          # Eviter de relire les anciens fichiers
+          # comme s'ils venaient d'etre collectes.
+          for nom in (
               "collecte.json",
               "courses_pmu.json",
           ):
-              path = DATA / filename
+              path = DATA / nom
+
               if path.is_file():
                   path.unlink()
 
@@ -276,15 +324,19 @@ jobs:
                   check=True,
                   timeout=900
               )
+
               collecte_ok = True
+
           except (
               subprocess.CalledProcessError,
               subprocess.TimeoutExpired,
               OSError
           ) as exc:
-              errors.append(f"Collecte PMU: {exc}")
+              erreurs.append(
+                  f"Collecte PMU: {exc}"
+              )
 
-          # LECTURE DE LA COLLECTE
+          # 2. CHARGEMENT DES COURSES
           courses = []
           source = None
 
@@ -296,12 +348,14 @@ jobs:
                   if not path.is_file():
                       continue
 
-                  obj = read(path)
+                  objet = lire(path)
 
-                  if isinstance(obj, dict):
-                      lignes = obj.get("courses")
-                  elif isinstance(obj, list):
-                      lignes = obj
+                  if isinstance(objet, dict):
+                      lignes = objet.get("courses")
+
+                  elif isinstance(objet, list):
+                      lignes = objet
+
                   else:
                       lignes = None
 
@@ -310,9 +364,10 @@ jobs:
                       source = path
                       break
 
-          # VALIDATION DES COURSES
+          # 3. VERIFICATION ESSENTIELLE
           valides = []
-          deja_vus = set()
+          exclusions_essentielles = []
+          identifiants = set()
 
           for course in courses:
               if not isinstance(course, dict):
@@ -322,36 +377,63 @@ jobs:
               depart = depart_paris(course)
               partants = course.get("partants")
 
-              if not ident or depart is None:
-                  continue
+              raisons = []
 
-              if depart.date() != now.date():
-                  continue
+              if not ident:
+                  raisons.append(
+                      "Identifiant absent"
+                  )
 
-              if not isinstance(partants, list):
-                  continue
+              if depart is None:
+                  raisons.append(
+                      "Depart non verifiable"
+                  )
 
-              if len(partants) < 2:
-                  continue
+              elif depart.date().isoformat() != today:
+                  raisons.append(
+                      "Course hors programme du jour"
+                  )
 
               if (
                   course.get(
                       "localisation_france_verifiee"
                   ) is not True
               ):
+                  raisons.append(
+                      "Localisation France non verifiee"
+                  )
+
+              if not isinstance(partants, list):
+                  raisons.append(
+                      "Partants absents"
+                  )
+
+              elif len(partants) < 2:
+                  raisons.append(
+                      "Partants insuffisants"
+                  )
+
+              if raisons:
+                  exclusions_essentielles.append({
+                      "id_course": ident,
+                      "raisons": raisons,
+                  })
                   continue
 
-              if str(ident) in deja_vus:
+              if str(ident) in identifiants:
                   continue
 
-              deja_vus.add(str(ident))
+              identifiants.add(str(ident))
               valides.append(course)
 
-          # SELECTION INDEPENDANTE M1-M5
+          # 4. QUALIFICATION AUTONOME M1-M5
           selections = {
-              moteur: [] for moteur in MOTEURS
+              moteur: []
+              for moteur in MOTEURS
           }
-          exclusions = []
+
+          jaunes = []
+          rouges = []
 
           for course in valides:
               depart = depart_paris(course)
@@ -371,7 +453,7 @@ jobs:
               course["partants"] = partants
 
               for moteur in MOTEURS:
-                  score, statut = evaluer(
+                  analyse = qualifier(
                       course,
                       moteur
                   )
@@ -382,96 +464,146 @@ jobs:
                       "hippodrome": course.get(
                           "hippodrome"
                       ),
+                      "reunion": course.get(
+                          "reunion"
+                      ),
+                      "numero_course": course.get(
+                          "numero_course"
+                      ),
                       "nombre_partants": len(partants),
-                      "moteur": moteur,
-                      "specialite": MOTEURS[moteur]["nom"],
-                      "score_donnees": score,
-                      "qualification": statut,
+                      "heure_verification": (
+                          now.isoformat()
+                      ),
+                      **analyse,
                   }
 
-                  if statut == "VERT":
+                  if analyse["qualification"] == "VERT":
                       selections[moteur].append(ligne)
-                  else:
-                      exclusions.append(ligne)
 
+                  elif analyse["qualification"] == "JAUNE":
+                      jaunes.append(ligne)
+
+                  else:
+                      rouges.append(ligne)
+
+          # 5. TRI CHRONOLOGIQUE
           for moteur in selections:
               selections[moteur].sort(
-                  key=lambda c: (
-                      c["depart"],
-                      -c["score_donnees"]
+                  key=lambda ligne: (
+                      ligne["depart"],
+                      -ligne["score_donnees"]
                   )
               )
 
-          # DIAGNOSTIC
-          status = (
-              "OK" if collecte_ok and valides
+          jaunes.sort(
+              key=lambda ligne: ligne["depart"]
+          )
+
+          # 6. TABLEAU DES COURSES QUALIFIEES
+          tableau = []
+
+          for lignes in selections.values():
+              tableau.extend(lignes)
+
+          tableau.sort(
+              key=lambda ligne: (
+                  ligne["depart"],
+                  ligne["moteur"]
+              )
+          )
+
+          statut = (
+              "OK"
+              if collecte_ok and valides
               else "DEGRADE"
           )
 
           if not valides:
-              errors.append(
-                  "Aucune course francaise verifiee."
+              erreurs.append(
+                  "Aucune course francaise verifiee"
               )
 
-          atomic(
+          # 7. DIAGNOSTIC
+          ecrire(
               DATA / "diagnostic_unifie.json",
               {
-                  "version": "4.0",
-                  "date": now.date().isoformat(),
+                  "systeme": "X1000 PHOENIX",
+                  "version": "6.0",
+                  "date": today,
                   "mis_a_jour": now.isoformat(),
-                  "statut": status,
+                  "statut": statut,
                   "collecte_executee": collecte_ok,
                   "source_courses": (
                       str(source.relative_to(ROOT))
                       if source else None
                   ),
                   "courses_verifiees": len(valides),
-                  "erreurs": errors,
+                  "seuil_vert": SEUIL_VERT,
+                  "seuil_jaune": SEUIL_JAUNE,
+                  "erreurs": erreurs,
                   "note": (
-                      "Aucun pronostic, FIGE ou "
-                      "resultat invente."
+                      "Controle robuste sur les "
+                      "donnees essentielles et souple "
+                      "sur les criteres secondaires."
                   ),
               }
           )
 
-          # PUBLICATION DES COURSES
-          atomic(
+          # 8. COURSES VERIFIEES
+          ecrire(
               DATA / "courses_verifiees.json",
               {
-                  "date": now.date().isoformat(),
+                  "date": today,
                   "mis_a_jour": now.isoformat(),
-                  "statut": status,
+                  "statut": statut,
                   "courses": valides,
               }
           )
 
-          # PUBLICATION DES SELECTIONS
-          atomic(
+          # 9. PRESELECTION M1-M5
+          ecrire(
               DATA / "selection_courses_m1_m5.json",
               {
                   "systeme": "X1000 PHOENIX",
-                  "version": "4.0",
-                  "date": now.date().isoformat(),
+                  "version": "6.0",
+                  "date": today,
                   "mise_a_jour": now.isoformat(),
-                  "statut": status,
+                  "statut": statut,
                   "type": "preselection",
+                  "devise": (
+                      "Controle robuste, mais jamais "
+                      "excessivement severe."
+                  ),
+                  "seuil_vert": SEUIL_VERT,
+                  "seuil_jaune": SEUIL_JAUNE,
                   "moteurs": selections,
-                  "courses_non_retenues": exclusions,
+                  "tableau_officiel": tableau,
+                  "courses_jaunes": jaunes,
+                  "courses_rouges": rouges,
+                  "exclusions_essentielles": (
+                      exclusions_essentielles
+                  ),
                   "pronostics_generes": False,
                   "figes_modifies": False,
+                  "pari_valide": False,
                   "note": (
-                      "VERT = donnees suffisantes "
-                      "pour analyse approfondie. "
-                      "Aucun gain garanti."
+                      "VERT signifie admissible "
+                      "a une analyse approfondie. "
+                      "Ce n'est ni un pronostic "
+                      "ni une garantie de gain."
                   ),
               }
           )
 
-          print("=" * 50)
+          # 10. JOURNAL D'EXECUTION
+          print("=" * 55)
           print("X1000 PHOENIX - UNIFIE M1-M5")
-          print("Date :", now.isoformat())
-          print("Statut :", status)
+          print("=" * 55)
+          print("Heure Paris :", now.isoformat())
+          print("Statut :", statut)
           print("Courses verifiees :", len(valides))
+          print("Seuil VERT :", SEUIL_VERT)
+          print("Seuil JAUNE :", SEUIL_JAUNE)
 
           for moteur, lignes in selections.items():
               print(
@@ -479,13 +611,24 @@ jobs:
                   MOTEURS[moteur]["nom"],
                   ":",
                   len(lignes),
-                  "courses vertes"
+                  "qualifications vertes"
               )
 
-          for erreur in errors:
-              print("DIAGNOSTIC:", erreur)
+          print(
+              "Qualifications jaunes :",
+              len(jaunes)
+          )
+          print(
+              "Qualifications rouges :",
+              len(rouges)
+          )
 
-          print("=" * 50)
+          for erreur in erreurs:
+              print("DIAGNOSTIC :", erreur)
+
+          print("Aucun FIGE historique modifie.")
+          print("Aucun pronostic invente.")
+          print("=" * 55)
           PY
 
       - name: Publier les donnees sur main
@@ -502,21 +645,21 @@ jobs:
             data/selection_courses_m1_m5.json
 
           if git diff --cached --quiet; then
-            echo "Aucune modification"
+            echo "Aucune modification a publier"
             exit 0
           fi
 
-          git commit \
-            -m "X1000: collecte et selection M1-M5"
+          git commit -m \
+            "X1000: selection souple M1-M5"
 
-          # Eviter les modifications non indexees
-          # qui bloquent git rebase.
+          # Mettre de cote les autres modifications
+          # pour eviter l'erreur git rebase 128.
           if [ -n "$(git status --porcelain)" ]; then
             git stash push -u \
-              -m "X1000 temporaire"
+              -m "X1000 fichiers temporaires"
           fi
 
-          # Publication sans force.
+          # Publication sans force push.
           for i in 1 2 3 4 5; do
             git fetch origin main
 
