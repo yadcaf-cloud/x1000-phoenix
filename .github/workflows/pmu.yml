@@ -1,17 +1,21 @@
 name: X1000 PHOENIX - ANCIEN WORKFLOW DESACTIVE
 
+# Ancien workflow conserve comme archive.
+# Aucun declenchement automatique ou manuel.
+# Utiliser x1000_phoenix_unifie.yml.
+
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - branche-archive-inexistante-x1000
 
 permissions:
   contents: read
 
 jobs:
-  information:
+  archive:
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
-      - name: Information
-        run: |
-          echo "Ancien workflow desactive."
-          echo "Utiliser phoenix.yml."
-          
+      - name: Workflow desactive
+        run: echo "Workflow archive"
