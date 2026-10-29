@@ -1,0 +1,34 @@
+{
+  "logiciel": "X1000 PHOENIX",
+  "version": "X1000-PHOENIX-FIGES-AUDITS-7.0",
+  "module": "FIGES_AUDITS_M1_M5",
+  "genere_a_paris": "2026-10-29T06:23:00.589927+01:00",
+  "moteurs": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5"
+  ],
+  "figes_valides": 0,
+  "audits_valides": 0,
+  "arrivees_disponibles": 0,
+  "en_attente_arrivee": [],
+  "candidats_a_verification": [],
+  "nouveaux_audits": 0,
+  "erreurs": [
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
+    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire."
+  ],
+  "statut": "ERREURS_A_VERIFIER",
+  "note": "FIGES historiques conserves. Aucun pronostic retroactif. Aucune arrivee inventee. Les sources externes ne sont pas certifiees par ce module."
+}
