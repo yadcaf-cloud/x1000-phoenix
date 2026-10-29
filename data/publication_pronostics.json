@@ -2,181 +2,6 @@
   "pronostics": [
     {
       "moteur": "M1",
-      "gagnant_espere": 11,
-      "meilleur_place": 5,
-      "ordre_espere": [
-        11,
-        5,
-        2,
-        12,
-        10
-      ],
-      "ordre_arrivee_espere": [
-        11,
-        5,
-        2,
-        12,
-        10
-      ],
-      "classement_complet": [
-        11,
-        5,
-        2,
-        12,
-        10
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-29-R4-C2",
-      "hippodrome": "HIPPODROME DE GRAIGNES",
-      "depart": "2026-10-29T17:07:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M2",
-      "gagnant_espere": 11,
-      "meilleur_place": 2,
-      "ordre_espere": [
-        11,
-        2,
-        5,
-        9,
-        12
-      ],
-      "ordre_arrivee_espere": [
-        11,
-        2,
-        5,
-        9,
-        12
-      ],
-      "classement_complet": [
-        11,
-        2,
-        5,
-        9,
-        12
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-29-R4-C2",
-      "hippodrome": "HIPPODROME DE GRAIGNES",
-      "depart": "2026-10-29T17:07:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M3",
-      "gagnant_espere": 11,
-      "meilleur_place": 10,
-      "ordre_espere": [
-        11,
-        10,
-        5,
-        2,
-        12
-      ],
-      "ordre_arrivee_espere": [
-        11,
-        10,
-        5,
-        2,
-        12
-      ],
-      "classement_complet": [
-        11,
-        10,
-        5,
-        2,
-        12
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-29-R4-C2",
-      "hippodrome": "HIPPODROME DE GRAIGNES",
-      "depart": "2026-10-29T17:07:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M4",
-      "gagnant_espere": 2,
-      "meilleur_place": 5,
-      "ordre_espere": [
-        2,
-        5,
-        9,
-        11,
-        12
-      ],
-      "ordre_arrivee_espere": [
-        2,
-        5,
-        9,
-        11,
-        12
-      ],
-      "classement_complet": [
-        2,
-        5,
-        9,
-        11,
-        12
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-29-R4-C2",
-      "hippodrome": "HIPPODROME DE GRAIGNES",
-      "depart": "2026-10-29T17:07:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M5",
-      "gagnant_espere": 5,
-      "meilleur_place": 2,
-      "ordre_espere": [
-        5,
-        2,
-        12,
-        11,
-        10
-      ],
-      "ordre_arrivee_espere": [
-        5,
-        2,
-        12,
-        11,
-        10
-      ],
-      "classement_complet": [
-        5,
-        2,
-        12,
-        11,
-        10
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-29-R4-C2",
-      "hippodrome": "HIPPODROME DE GRAIGNES",
-      "depart": "2026-10-29T17:07:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M1",
       "gagnant_espere": 2,
       "meilleur_place": 18,
       "ordre_espere": [
@@ -207,7 +32,7 @@
       "methode": "HEURISTIQUE_MUSIQUE",
       "course_id": "2026-10-29-R1-C7",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "depart": "2026-10-29T17:25:00+01:00",
+      "depart": "2026-10-29T17:26:00+01:00",
       "statut_course": "ANALYSE_INDICATIVE"
     },
     {
@@ -242,7 +67,7 @@
       "methode": "HEURISTIQUE_MUSIQUE",
       "course_id": "2026-10-29-R1-C7",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "depart": "2026-10-29T17:25:00+01:00",
+      "depart": "2026-10-29T17:26:00+01:00",
       "statut_course": "ANALYSE_INDICATIVE"
     },
     {
@@ -277,7 +102,7 @@
       "methode": "HEURISTIQUE_MUSIQUE",
       "course_id": "2026-10-29-R1-C7",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "depart": "2026-10-29T17:25:00+01:00",
+      "depart": "2026-10-29T17:26:00+01:00",
       "statut_course": "ANALYSE_INDICATIVE"
     },
     {
@@ -312,7 +137,7 @@
       "methode": "HEURISTIQUE_MUSIQUE",
       "course_id": "2026-10-29-R1-C7",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "depart": "2026-10-29T17:25:00+01:00",
+      "depart": "2026-10-29T17:26:00+01:00",
       "statut_course": "ANALYSE_INDICATIVE"
     },
     {
@@ -347,7 +172,7 @@
       "methode": "HEURISTIQUE_MUSIQUE",
       "course_id": "2026-10-29-R1-C7",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "depart": "2026-10-29T17:25:00+01:00",
+      "depart": "2026-10-29T17:26:00+01:00",
       "statut_course": "ANALYSE_INDICATIVE"
     },
     {
