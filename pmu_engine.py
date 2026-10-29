@@ -2,26 +2,26 @@
 # -*- coding: utf-8 -*-
 
 """
-X1000 PHOENIX - Moteur de collecte PMU 3.0
+X1000 PHOENIX - MOTEUR PMU UNIFIE 5.0
 
-- Collecte des reunions et courses
-- Recuperation des partants PMU
-- Detection des non-partants
-- Gestion des erreurs reseau
-- Reessais automatiques
+Collecte officielle des donnees disponibles
+depuis l'API PMU configuree.
+
+- Reunions et courses
+- Partants et non-partants
+- Filtrage France
 - Horaires Europe/Paris
-- Publication atomique JSON
-- Diagnostic de collecte
+- Controle des donnees
+- Reessais reseau
+- JSON atomique
+- Historique preserve en cas d'echec
+- Diagnostic exploitable
 - Aucune donnee hippique inventee
 
-Execution :
-    python pmu_engine.py
-
-Date particuliere :
-    python pmu_engine.py --date 2026-10-28
-
-Test sans reseau :
-    python pmu_engine.py --self-test
+Commandes :
+ python pmu_engine.py
+ python pmu_engine.py --date 2026-10-29
+ python pmu_engine.py --self-test
 """
 
 import argparse
@@ -33,6 +33,7 @@ import random
 import re
 import socket
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -44,6 +45,8 @@ from zoneinfo import ZoneInfo
 # ==========================================
 # CONFIGURATION
 # ==========================================
+
+VERSION = "5.0"
 
 PARIS = ZoneInfo("Europe/Paris")
 
@@ -59,16 +62,20 @@ TIMEOUT = 15
 TENTATIVES = 3
 PAUSE = 0.15
 
-RETRY_HTTP = {408, 429, 500, 502, 503, 504}
+TAILLE_MAX = 8_000_000
+
+RETRY_HTTP = {
+    408, 429, 500, 502, 503, 504
+}
 
 USER_AGENT = (
     "Mozilla/5.0 "
-    "(compatible; X1000-PHOENIX/3.0)"
+    "(compatible; X1000-PHOENIX/5.0)"
 )
 
 
 # ==========================================
-# OUTILS
+# OUTILS GENERAUX
 # ==========================================
 
 def maintenant():
@@ -80,10 +87,27 @@ def entier(valeur):
         return None
 
     try:
+        if isinstance(valeur, float):
+            if not math.isfinite(valeur):
+                return None
+            if not valeur.is_integer():
+                return None
+
+        if isinstance(valeur, str):
+            valeur = valeur.strip()
+            if not re.fullmatch(r"\d+", valeur):
+                return None
+
         n = int(valeur)
         return n if n >= 0 else None
+
     except (TypeError, ValueError, OverflowError):
         return None
+
+
+def entier_positif(valeur):
+    n = entier(valeur)
+    return n if n is not None and n > 0 else None
 
 
 def nombre(valeur):
@@ -96,8 +120,7 @@ def nombre(valeur):
                 r"[\s\u00a0\u202f€]",
                 "",
                 valeur
-            )
-            valeur = valeur.replace(",", ".")
+            ).replace(",", ".")
 
         n = float(valeur)
 
@@ -121,10 +144,9 @@ def texte(valeur):
             "libelle",
             "name"
         ):
-            resultat = valeur.get(cle)
-
-            if isinstance(resultat, str):
-                return resultat.strip()
+            v = valeur.get(cle)
+            if isinstance(v, str) and v.strip():
+                return v.strip()
 
     return ""
 
@@ -135,7 +157,6 @@ def premier(objet, *cles):
 
     for cle in cles:
         valeur = objet.get(cle)
-
         if valeur is not None and valeur != "":
             return valeur
 
@@ -155,73 +176,80 @@ def musique(valeur):
     return ""
 
 
+# ==========================================
+# HORAIRES PARIS
+# ==========================================
+
 def depart_paris(valeur, jour=None):
     if valeur is None or isinstance(valeur, bool):
         return None
 
-    if isinstance(valeur, (int, float)):
-        try:
-            timestamp = float(valeur)
+    try:
+        if isinstance(valeur, (int, float)):
+            n = float(valeur)
 
-            if not math.isfinite(timestamp):
+            if not math.isfinite(n) or n <= 0:
                 return None
 
-            if timestamp <= 0:
-                return None
-
-            if timestamp > 100000000000:
-                timestamp /= 1000
+            if n > 100_000_000_000:
+                n /= 1000
 
             return dt.datetime.fromtimestamp(
-                timestamp,
-                PARIS
+                n, PARIS
             ).isoformat()
 
-        except (ValueError, OverflowError, OSError):
-            return None
+        if isinstance(valeur, str):
+            valeur = valeur.strip()
 
-    if isinstance(valeur, str):
-        valeur = valeur.strip()
+            if valeur.isdigit():
+                return depart_paris(int(valeur), jour)
 
-        if valeur.isdigit():
-            return depart_paris(int(valeur), jour)
-
-        try:
-            instant = dt.datetime.fromisoformat(
-                valeur.replace("Z", "+00:00")
-            )
-
-            if instant.tzinfo is None:
-                return None
-
-            return instant.astimezone(PARIS).isoformat()
-
-        except ValueError:
-            pass
-
-        if jour is not None:
             try:
+                instant = dt.datetime.fromisoformat(
+                    valeur.replace("Z", "+00:00")
+                )
+
+                if instant.tzinfo is not None:
+                    return instant.astimezone(
+                        PARIS
+                    ).isoformat()
+
+            except ValueError:
+                pass
+
+            if jour is not None:
                 heure = dt.time.fromisoformat(valeur)
-                instant = dt.datetime.combine(
+
+                if heure.tzinfo is not None:
+                    return None
+
+                return dt.datetime.combine(
                     jour,
                     heure,
                     tzinfo=PARIS
-                )
-                return instant.isoformat()
-            except ValueError:
-                pass
+                ).isoformat()
+
+    except (
+        ValueError,
+        OverflowError,
+        OSError,
+        TypeError
+    ):
+        pass
 
     return None
 
 
 # ==========================================
-# REQUETES API
+# API PMU
 # ==========================================
 
 def obtenir(url):
     derniere_erreur = None
 
-    for tentative in range(1, TENTATIVES + 1):
+    for tentative in range(TENTATIVES):
+        attente = 0
+
         requete = urllib.request.Request(
             url,
             headers={
@@ -238,15 +266,22 @@ def obtenir(url):
             ) as reponse:
 
                 if reponse.status != 200:
-                    raise ValueError(
+                    raise RuntimeError(
                         f"HTTP {reponse.status}"
                     )
 
-                contenu = reponse.read()
+                contenu = reponse.read(
+                    TAILLE_MAX + 1
+                )
 
                 if not contenu:
                     raise ValueError(
                         "Reponse API vide"
+                    )
+
+                if len(contenu) > TAILLE_MAX:
+                    raise ValueError(
+                        "Reponse API trop volumineuse"
                     )
 
                 return json.loads(
@@ -260,8 +295,6 @@ def obtenir(url):
                 raise RuntimeError(
                     f"HTTP {erreur.code}: {url}"
                 ) from erreur
-
-            attente = 0
 
             if erreur.code == 429:
                 retry_after = erreur.headers.get(
@@ -282,37 +315,74 @@ def obtenir(url):
             TimeoutError,
             socket.timeout,
             ConnectionError,
+            OSError,
             json.JSONDecodeError,
             UnicodeDecodeError,
-            ValueError
+            ValueError,
+            RuntimeError
         ) as erreur:
             derniere_erreur = erreur
-            attente = 0
 
-        if tentative < TENTATIVES:
+        if tentative < TENTATIVES - 1:
             delai = min(
                 15,
-                2 ** (tentative - 1)
+                2 ** tentative
                 + random.uniform(0, 0.5)
             )
 
             time.sleep(max(delai, attente))
 
     raise RuntimeError(
-        f"API inaccessible apres {TENTATIVES} "
-        f"tentatives: {derniere_erreur}"
+        "API inaccessible apres "
+        f"{TENTATIVES} tentatives : "
+        f"{derniere_erreur}"
     )
 
 
 # ==========================================
-# NORMALISATION DES PARTANTS
+# LOCALISATION
+# ==========================================
+
+def reunion_francaise(reunion):
+    pays = premier(
+        reunion,
+        "pays",
+        "codePays",
+        "paysCode"
+    )
+
+    hippo = reunion.get("hippodrome")
+
+    if pays is None and isinstance(hippo, dict):
+        pays = premier(
+            hippo,
+            "pays",
+            "codePays",
+            "paysCode"
+        )
+
+    if pays is None:
+        return None
+
+    code = texte(pays).upper()
+
+    if code in ("FR", "FRA", "FRANCE"):
+        return True
+
+    return False
+
+
+# ==========================================
+# NORMALISATION DES CHEVAUX
 # ==========================================
 
 def normaliser_participant(participant, source):
     if not isinstance(participant, dict):
-        return None
+        raise ValueError(
+            "Participant non exploitable"
+        )
 
-    numero = entier(
+    numero = entier_positif(
         premier(
             participant,
             "numPmu",
@@ -320,9 +390,6 @@ def normaliser_participant(participant, source):
             "num"
         )
     )
-
-    if numero is None or numero < 1:
-        return None
 
     nom = texte(
         premier(
@@ -332,56 +399,54 @@ def normaliser_participant(participant, source):
         )
     )
 
-    if not nom:
-        return None
+    if numero is None or not nom:
+        raise ValueError(
+            "Numero ou nom de cheval absent"
+        )
 
     statut = texte(
         participant.get("statut")
-    ).upper().replace(" ", "_").replace("-", "_")
+    ).upper().replace(
+        "-", "_"
+    ).replace(
+        " ", "_"
+    )
 
     non_partant = (
-        statut in (
+        participant.get("nonPartant") is True
+        or statut in (
             "NON_PARTANT",
             "NONPARTANT",
             "NP",
             "FORFAIT"
         )
-        or participant.get("nonPartant") is True
-    )
-
-    gains = nombre(
-        premier(
-            participant,
-            "gainCarriere",
-            "gains",
-            "gainTotal"
-        )
-    )
-
-    jockey = texte(
-        participant.get("jockey")
-    )
-
-    driver = texte(
-        participant.get("driver")
-    )
-
-    entraineur = texte(
-        participant.get("entraineur")
     )
 
     return {
         "numero": numero,
         "nom": nom,
         "non_partant": non_partant,
-        "statut": statut or "NON_RENSEIGNE",
+        "statut": statut or "INCONNU",
         "musique": musique(
             participant.get("musique")
         ),
-        "gains": gains,
-        "jockey": jockey,
-        "driver": driver,
-        "entraineur": entraineur,
+        "gains": nombre(
+            premier(
+                participant,
+                "gainCarriere",
+                "gains",
+                "gainTotal"
+            )
+        ),
+        "jockey": texte(
+            participant.get("jockey")
+        ),
+        "driver": texte(
+            participant.get("driver")
+        ),
+        "entraineur": texte(
+            participant.get("entraineur")
+        ),
         "age": entier(
             participant.get("age")
         ),
@@ -393,7 +458,7 @@ def normaliser_participant(participant, source):
 
 
 # ==========================================
-# LECTURE DES STRUCTURES PMU
+# STRUCTURES PMU
 # ==========================================
 
 def extraire_reunions(programme):
@@ -427,7 +492,9 @@ def extraire_participants(donnees):
         return donnees
 
     if isinstance(donnees, dict):
-        participants = donnees.get("participants")
+        participants = donnees.get(
+            "participants"
+        )
 
         if isinstance(participants, list):
             return participants
@@ -437,50 +504,8 @@ def extraire_participants(donnees):
     )
 
 
-def reunion_francaise(reunion):
-    """
-    Filtrage prudent :
-    on exclut seulement les reunions explicitement
-    identifiees comme etrangeres.
-
-    Une localisation inconnue reste non verifiee.
-    """
-
-    pays = premier(
-        reunion,
-        "pays",
-        "codePays",
-        "paysCode"
-    )
-
-    if pays is None:
-        hippo = reunion.get("hippodrome")
-
-        if isinstance(hippo, dict):
-            pays = premier(
-                hippo,
-                "pays",
-                "codePays",
-                "paysCode"
-            )
-
-    if pays is None:
-        return None
-
-    code = texte(pays).upper()
-
-    if code in (
-        "FR",
-        "FRA",
-        "FRANCE"
-    ):
-        return True
-
-    return False
-
-
 # ==========================================
-# COLLECTE PRINCIPALE
+# COLLECTE
 # ==========================================
 
 def collecter(jour=None):
@@ -492,7 +517,7 @@ def collecter(jour=None):
     if isinstance(jour, str):
         jour = dt.date.fromisoformat(jour)
 
-    if not isinstance(jour, dt.date):
+    if type(jour) is not dt.date:
         raise ValueError("Date invalide")
 
     date_api = jour.strftime("%d%m%Y")
@@ -502,7 +527,7 @@ def collecter(jour=None):
     )
 
     rapport = {
-        "version": "3.0",
+        "version": VERSION,
         "date": jour.isoformat(),
         "collecte_a": debut.isoformat(),
         "source": programme_url,
@@ -513,35 +538,47 @@ def collecter(jour=None):
         "statistiques": {}
     }
 
+    reunions_valides = set()
+    courses_prevues = 0
+
     try:
         programme = obtenir(programme_url)
         reunions = extraire_reunions(programme)
 
     except Exception as erreur:
         rapport["erreurs"].append(
-            f"Programme inaccessible: {erreur}"
+            f"Programme inaccessible : {erreur}"
         )
 
         rapport["statut"] = "ECHEC"
-
         rapport["statistiques"] = {
             "reunions": 0,
+            "courses_prevues": 0,
             "courses": 0,
             "partants": 0,
             "non_partants": 0,
-            "erreurs": len(rapport["erreurs"])
+            "erreurs": 1
         }
 
         return rapport
-
-    nb_reunions = 0
-    nb_courses_vues = 0
 
     for reunion in reunions:
         if not isinstance(reunion, dict):
             continue
 
-        nr = entier(
+        localisation = reunion_francaise(
+            reunion
+        )
+
+        if localisation is not True:
+            if localisation is None:
+                rapport["avertissements"].append(
+                    "Reunion ignoree : "
+                    "pays non verifie"
+                )
+            continue
+
+        nr = entier_positif(
             premier(
                 reunion,
                 "numOfficiel",
@@ -549,20 +586,13 @@ def collecter(jour=None):
             )
         )
 
-        if nr is None or nr < 1:
-            rapport["avertissements"].append(
-                "Reunion sans numero exploitable"
+        if nr is None:
+            rapport["erreurs"].append(
+                "Reunion francaise sans numero"
             )
             continue
 
-        localisation = reunion_francaise(reunion)
-
-        # Seules les reunions explicitement
-        # etrangeres sont exclues.
-        if localisation is False:
-            continue
-
-        nb_reunions += 1
+        reunions_valides.add(nr)
 
         hippodrome = texte(
             reunion.get("hippodrome")
@@ -572,7 +602,7 @@ def collecter(jour=None):
 
         if not isinstance(courses, list):
             rapport["erreurs"].append(
-                f"R{nr}: liste des courses invalide"
+                f"R{nr}: courses absentes"
             )
             continue
 
@@ -580,7 +610,7 @@ def collecter(jour=None):
             if not isinstance(info, dict):
                 continue
 
-            nc = entier(
+            nc = entier_positif(
                 premier(
                     info,
                     "numOrdre",
@@ -588,26 +618,34 @@ def collecter(jour=None):
                 )
             )
 
-            if nc is None or nc < 1:
+            if nc is None:
+                rapport["avertissements"].append(
+                    f"R{nr}: numero course absent"
+                )
                 continue
 
-            nb_courses_vues += 1
+            courses_prevues += 1
 
-            identifiant = (
+            cid = (
                 f"{jour.isoformat()}-R{nr}-C{nc}"
             )
 
-            url = (
+            source = (
                 f"{API}/programme/{date_api}"
                 f"/R{nr}/C{nc}/participants"
             )
 
             try:
-                donnees = obtenir(url)
+                donnees = obtenir(source)
 
                 participants = extraire_participants(
                     donnees
                 )
+
+                if not participants:
+                    raise ValueError(
+                        "Liste des participants vide"
+                    )
 
                 chevaux = []
                 numeros = set()
@@ -615,32 +653,18 @@ def collecter(jour=None):
                 for participant in participants:
                     cheval = normaliser_participant(
                         participant,
-                        url
+                        source
                     )
-
-                    if cheval is None:
-                        continue
 
                     numero = cheval["numero"]
 
                     if numero in numeros:
-                        rapport["avertissements"].append(
-                            f"{identifiant}: "
-                            f"numero {numero} duplique"
+                        raise ValueError(
+                            f"Numero {numero} duplique"
                         )
-                        continue
 
                     numeros.add(numero)
                     chevaux.append(cheval)
-
-                if not chevaux:
-                    raise ValueError(
-                        "Aucun partant exploitable"
-                    )
-
-                chevaux.sort(
-                    key=lambda cheval: cheval["numero"]
-                )
 
                 depart = depart_paris(
                     premier(
@@ -652,25 +676,29 @@ def collecter(jour=None):
                 )
 
                 if depart is None:
-                    rapport["avertissements"].append(
-                        f"{identifiant}: "
-                        "heure de depart indisponible"
+                    raise ValueError(
+                        "Heure de depart indisponible"
                     )
 
+                chevaux.sort(
+                    key=lambda c: c["numero"]
+                )
+
                 non_partants = [
-                    cheval["numero"]
-                    for cheval in chevaux
-                    if cheval["non_partant"]
+                    c["numero"]
+                    for c in chevaux
+                    if c["non_partant"]
                 ]
 
+                recu = maintenant().isoformat()
+
                 rapport["courses"].append({
-                    "id": identifiant,
+                    "id": cid,
+                    "course_id": cid,
                     "reunion": nr,
                     "course": nc,
                     "hippodrome": hippodrome,
-                    "localisation_france_verifiee": (
-                        localisation is True
-                    ),
+                    "localisation_france_verifiee": True,
                     "nom": texte(
                         premier(
                             info,
@@ -679,58 +707,62 @@ def collecter(jour=None):
                         )
                     ),
                     "depart": depart,
-                    "depart_verifie": depart is not None,
+                    "depart_verifie": True,
                     "nombre_participants": len(chevaux),
                     "nombre_partants": (
-                        len(chevaux) - len(non_partants)
+                        len(chevaux)
+                        - len(non_partants)
                     ),
                     "non_partants": non_partants,
                     "partants": chevaux,
-                    "source": url,
-                    "collecte_a": maintenant().isoformat(),
-                    "statut": "PARTANTS_CHARGES"
+                    "source": source,
+                    "collecte_a": recu,
+                    "statut": "PARTANTS_CHARGES",
+                    "controle_source": {
+                        "programme_url": programme_url,
+                        "participants_url": source,
+                        "participants_recus_a": recu,
+                        "mode": "API_REPONSE_DIRECTE",
+                        "structure_validee": True
+                    }
                 })
 
                 time.sleep(PAUSE)
 
             except Exception as erreur:
                 rapport["erreurs"].append(
-                    f"{identifiant}: {erreur}"
+                    f"{cid}: {erreur}"
                 )
 
     rapport["courses"].sort(
-        key=lambda course: (
-            course["depart"] is None,
-            course["depart"] or "",
-            course["reunion"],
-            course["course"]
+        key=lambda c: (
+            c["depart"],
+            c["reunion"],
+            c["course"]
         )
     )
 
-    total_partants = sum(
-        course["nombre_partants"]
-        for course in rapport["courses"]
-    )
-
-    total_np = sum(
-        len(course["non_partants"])
-        for course in rapport["courses"]
-    )
-
     rapport["statistiques"] = {
-        "reunions": nb_reunions,
-        "courses_prevues": nb_courses_vues,
+        "reunions": len(reunions_valides),
+        "courses_prevues": courses_prevues,
         "courses": len(rapport["courses"]),
-        "partants": total_partants,
-        "non_partants": total_np,
+        "partants": sum(
+            c["nombre_partants"]
+            for c in rapport["courses"]
+        ),
+        "non_partants": sum(
+            len(c["non_partants"])
+            for c in rapport["courses"]
+        ),
         "erreurs": len(rapport["erreurs"])
     }
 
     if rapport["courses"]:
-        if rapport["erreurs"]:
-            rapport["statut"] = "PARTIEL"
-        else:
-            rapport["statut"] = "OK"
+        rapport["statut"] = (
+            "PARTIEL"
+            if rapport["erreurs"]
+            else "OK"
+        )
 
     elif rapport["erreurs"]:
         rapport["statut"] = "ECHEC"
@@ -751,20 +783,31 @@ def enregistrer_json(chemin, contenu):
         exist_ok=True
     )
 
-    temporaire = chemin.with_name(
-        chemin.name + ".tmp"
-    )
+    temporaire = None
 
     try:
-        temporaire.write_text(
-            json.dumps(
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=chemin.parent,
+            prefix=chemin.name + ".",
+            suffix=".tmp",
+            delete=False
+        ) as fichier:
+
+            temporaire = Path(fichier.name)
+
+            json.dump(
                 contenu,
+                fichier,
                 ensure_ascii=False,
                 indent=2,
                 allow_nan=False
-            ),
-            encoding="utf-8"
-        )
+            )
+
+            fichier.write("\n")
+            fichier.flush()
+            os.fsync(fichier.fileno())
 
         os.replace(
             temporaire,
@@ -772,7 +815,10 @@ def enregistrer_json(chemin, contenu):
         )
 
     finally:
-        if temporaire.exists():
+        if (
+            temporaire is not None
+            and temporaire.exists()
+        ):
             temporaire.unlink()
 
 
@@ -784,12 +830,13 @@ def self_test():
     assert entier("12") == 12
     assert entier(-1) is None
     assert entier(True) is None
+    assert entier("2.5") is None
 
     assert nombre("1 234,50 €") == 1234.5
     assert nombre("NaN") is None
 
     assert depart_paris(
-        "2026-10-28T12:00:00+01:00"
+        "2026-10-29T12:00:00+01:00"
     ) is not None
 
     cheval = normaliser_participant(
@@ -801,7 +848,6 @@ def self_test():
         "test"
     )
 
-    assert cheval is not None
     assert cheval["numero"] == 4
     assert cheval["non_partant"] is True
 
@@ -809,7 +855,22 @@ def self_test():
         {"participants": []}
     ) == []
 
-    print("X1000 PHOENIX : tests locaux OK")
+    assert reunion_francaise(
+        {"pays": "FR"}
+    ) is True
+
+    assert reunion_francaise(
+        {"pays": "GB"}
+    ) is False
+
+    assert reunion_francaise(
+        {}
+    ) is None
+
+    print(
+        "X1000 PHOENIX 5.0 : "
+        "tests locaux OK"
+    )
 
 
 # ==========================================
@@ -818,68 +879,70 @@ def self_test():
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Collecte PMU X1000 PHOENIX"
+        description=(
+            "X1000 PHOENIX - "
+            "Collecte PMU unifiee"
+        )
     )
 
     parser.add_argument(
         "--date",
         default=None,
-        help="Date au format AAAA-MM-JJ"
+        help="Date AAAA-MM-JJ"
     )
 
     parser.add_argument(
         "--self-test",
         action="store_true",
-        help="Verifier les fonctions sans reseau"
+        help="Tests sans reseau"
     )
 
-    arguments = parser.parse_args()
+    args = parser.parse_args()
 
-    if arguments.self_test:
+    if args.self_test:
         self_test()
         return 0
 
     try:
-        resultat = collecter(arguments.date)
+        rapport = collecter(args.date)
 
     except (ValueError, TypeError) as erreur:
         print(
-            f"ERREUR: {erreur}",
+            f"ERREUR : {erreur}",
             file=sys.stderr
         )
         return 2
 
     destination = DATA / "collecte.json"
 
-    # Ne pas remplacer une collecte valide
-    # par une collecte vide en cas de panne.
-    if (
-        resultat["statut"] == "ECHEC"
-        and destination.exists()
-    ):
+    if rapport["statut"] == "ECHEC":
         enregistrer_json(
             DATA / "collecte_erreur.json",
-            resultat
+            rapport
         )
 
         print(
-            "ECHEC: ancienne collecte conservee."
+            "ECHEC : collecte precedente preservee"
         )
+
+        for erreur in rapport["erreurs"]:
+            print("ALERTE :", erreur)
+
         return 1
 
     enregistrer_json(
         destination,
-        resultat
+        rapport
     )
 
-    statistiques = resultat["statistiques"]
+    statistiques = rapport["statistiques"]
 
-    print("=" * 48)
-    print("X1000 PHOENIX - COLLECTE PMU")
-    print("=" * 48)
+    print("=" * 50)
+    print("X1000 PHOENIX - COLLECTE PMU 5.0")
+    print("=" * 50)
 
-    print("Date :", resultat["date"])
-    print("Statut :", resultat["statut"])
+    print("Date :", rapport["date"])
+    print("Statut :", rapport["statut"])
     print(
         "Reunions :",
         statistiques["reunions"]
@@ -901,17 +964,14 @@ def main():
         statistiques["erreurs"]
     )
 
-    for erreur in resultat["erreurs"]:
+    for erreur in rapport["erreurs"]:
         print("ALERTE :", erreur)
 
-    for avertissement in resultat["avertissements"]:
+    for avertissement in rapport["avertissements"]:
         print("INFO :", avertissement)
 
     print("Fichier :", destination)
-    print("=" * 48)
-
-    if resultat["statut"] == "ECHEC":
-        return 1
+    print("=" * 50)
 
     return 0
 
