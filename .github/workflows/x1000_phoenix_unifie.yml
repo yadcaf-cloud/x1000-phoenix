@@ -1,4 +1,4 @@
-name: X1000 PHOENIX - UNIFIE
+name: X1000 PHOENIX - UNIFIE M1-M5
 
 on:
   workflow_dispatch:
@@ -13,8 +13,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  collecte:
-    name: Collecte PMU et publication
+  phoenix:
+    name: Collecte PMU et selection M1-M5
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
@@ -28,7 +28,6 @@ jobs:
         shell: bash
 
     steps:
-
       - name: Recuperer le depot
         uses: actions/checkout@v6
         with:
@@ -41,23 +40,19 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Verifier Python et les programmes
+      - name: Verifier les programmes
         run: |
           set -euo pipefail
-
           python --version
-
-          if [ ! -f pmu_engine.py ]; then
+          test -f pmu_engine.py || {
             echo "::error::pmu_engine.py absent"
             exit 1
-          fi
-
+          }
           python -m py_compile pmu_engine.py
 
-      - name: Collecter et verifier les donnees PMU
+      - name: Collecter et selectionner les courses
         run: |
           set -euo pipefail
-
           python - <<'PY'
           import datetime as dt
           import json
@@ -76,14 +71,88 @@ jobs:
           now = dt.datetime.now(PARIS)
           errors = []
 
+          MOTEURS = {
+              "M1": {
+                  "nom": "Valeur et regularite",
+                  "criteres": [
+                      "performances",
+                      "distance",
+                      "terrain",
+                      "regularite",
+                  ],
+              },
+              "M2": {
+                  "nom": "Forme et entourage",
+                  "criteres": [
+                      "forme",
+                      "jockey",
+                      "entraineur",
+                      "performances",
+                  ],
+              },
+              "M3": {
+                  "nom": "Outsiders et faux favoris",
+                  "criteres": [
+                      "cote",
+                      "performances",
+                      "forme",
+                  ],
+              },
+              "M4": {
+                  "nom": "Tactique et combinaisons",
+                  "criteres": [
+                      "numero",
+                      "corde",
+                      "distance",
+                      "performances",
+                  ],
+              },
+              "M5": {
+                  "nom": "Risques, cotes et paris",
+                  "criteres": [
+                      "cote",
+                      "forme",
+                      "performances",
+                  ],
+              },
+          }
+
+          ALIASES = {
+              "performances": (
+                  "performances",
+                  "musique",
+                  "historique",
+              ),
+              "distance": ("distance",),
+              "terrain": (
+                  "terrain",
+                  "etat_terrain",
+              ),
+              "regularite": (
+                  "regularite",
+                  "regularite_score",
+              ),
+              "forme": (
+                  "forme",
+                  "forme_recente",
+              ),
+              "jockey": ("jockey", "driver"),
+              "entraineur": ("entraineur",),
+              "cote": (
+                  "cote",
+                  "cote_direct",
+                  "rapport_probable",
+              ),
+              "numero": ("numero", "numPmu"),
+              "corde": ("corde", "place_corde"),
+          }
+
           def atomic(path, obj):
               path.parent.mkdir(
                   parents=True,
                   exist_ok=True
               )
-
               tmp = None
-
               try:
                   with tempfile.NamedTemporaryFile(
                       mode="w",
@@ -92,7 +161,6 @@ jobs:
                       delete=False
                   ) as f:
                       tmp = pathlib.Path(f.name)
-
                       json.dump(
                           obj,
                           f,
@@ -100,13 +168,10 @@ jobs:
                           indent=2,
                           allow_nan=False
                       )
-
                       f.write("\n")
                       f.flush()
                       os.fsync(f.fileno())
-
                   os.replace(tmp, path)
-
               finally:
                   if tmp and tmp.exists():
                       tmp.unlink()
@@ -114,105 +179,159 @@ jobs:
           def read(path):
               try:
                   return json.loads(
-                      path.read_text(
-                          encoding="utf-8"
-                      )
+                      path.read_text(encoding="utf-8")
                   )
-
               except (OSError, ValueError) as exc:
                   errors.append(
                       f"{path.name}: {exc}"
                   )
                   return None
 
-          def run(script):
-              path = ROOT / script
-
-              if not path.is_file():
-                  errors.append(
-                      f"Programme absent: {script}"
-                  )
+          def present(obj, critere):
+              if not isinstance(obj, dict):
                   return False
+
+              for key in ALIASES[critere]:
+                  val = obj.get(key)
+
+                  if val is None or isinstance(val, bool):
+                      continue
+
+                  if isinstance(val, str):
+                      if val.strip():
+                          return True
+                  elif isinstance(val, (list, dict)):
+                      if val:
+                          return True
+                  else:
+                      return True
+
+              return False
+
+          def depart_paris(course):
+              val = course.get("depart")
+              if not isinstance(val, str):
+                  return None
 
               try:
-                  subprocess.run(
-                      [sys.executable, script],
-                      cwd=ROOT,
-                      check=True,
-                      timeout=900
+                  instant = dt.datetime.fromisoformat(
+                      val.replace("Z", "+00:00")
                   )
-                  return True
 
-              except (
-                  subprocess.CalledProcessError,
-                  subprocess.TimeoutExpired
-              ) as exc:
-                  errors.append(
-                      f"{script}: {exc}"
+                  if instant.tzinfo is None:
+                      instant = instant.replace(
+                          tzinfo=PARIS
+                      )
+
+                  return instant.astimezone(PARIS)
+              except ValueError:
+                  return None
+
+          def evaluer(course, moteur):
+              criteres = MOTEURS[moteur]["criteres"]
+              partants = course["partants"]
+              points = 0
+
+              for critere in criteres:
+                  disponibles = sum(
+                      present(p, critere)
+                      or present(course, critere)
+                      for p in partants
                   )
-                  return False
 
-          collecte_ok = run("pmu_engine.py")
+                  if disponibles / len(partants) >= 0.8:
+                      points += 1
 
+              score = round(
+                  100 * points / len(criteres)
+              )
+
+              if score >= 75:
+                  statut = "VERT"
+              elif score >= 50:
+                  statut = "JAUNE"
+              else:
+                  statut = "ROUGE"
+
+              return score, statut
+
+          # COLLECTE PMU
+          collecte_ok = False
+          script = ROOT / "pmu_engine.py"
+
+          # Retirer les sorties anciennes pour
+          # ne pas publier une collecte perimee.
+          for filename in (
+              "collecte.json",
+              "courses_pmu.json",
+          ):
+              path = DATA / filename
+              if path.is_file():
+                  path.unlink()
+
+          try:
+              subprocess.run(
+                  [sys.executable, str(script)],
+                  cwd=ROOT,
+                  check=True,
+                  timeout=900
+              )
+              collecte_ok = True
+          except (
+              subprocess.CalledProcessError,
+              subprocess.TimeoutExpired,
+              OSError
+          ) as exc:
+              errors.append(f"Collecte PMU: {exc}")
+
+          # LECTURE DE LA COLLECTE
           courses = []
-          source_path = None
-
-          candidates = (
-              DATA / "collecte.json",
-              DATA / "courses_pmu.json",
-          )
+          source = None
 
           if collecte_ok:
-              for candidate in candidates:
-                  if not candidate.is_file():
+              for path in (
+                  DATA / "collecte.json",
+                  DATA / "courses_pmu.json",
+              ):
+                  if not path.is_file():
                       continue
 
-                  # Eviter une ancienne collecte.
-                  mtime = dt.datetime.fromtimestamp(
-                      candidate.stat().st_mtime,
-                      PARIS
-                  )
-
-                  if mtime.date() != now.date():
-                      errors.append(
-                          f"Collecte ancienne: {candidate.name}"
-                      )
-                      continue
-
-                  obj = read(candidate)
+                  obj = read(path)
 
                   if isinstance(obj, dict):
-                      items = obj.get("courses")
-
+                      lignes = obj.get("courses")
                   elif isinstance(obj, list):
-                      items = obj
-
+                      lignes = obj
                   else:
-                      items = None
+                      lignes = None
 
-                  if isinstance(items, list):
-                      courses = items
-                      source_path = candidate
+                  if isinstance(lignes, list):
+                      courses = lignes
+                      source = path
                       break
 
-          valid = []
-          seen = set()
+          # VALIDATION DES COURSES
+          valides = []
+          deja_vus = set()
 
           for course in courses:
               if not isinstance(course, dict):
                   continue
 
               ident = course.get("id")
-              depart = course.get("depart")
+              depart = depart_paris(course)
               partants = course.get("partants")
 
-              if not ident or not depart:
+              if not ident or depart is None:
+                  continue
+
+              if depart.date() != now.date():
                   continue
 
               if not isinstance(partants, list):
                   continue
 
-              if not partants:
+              if len(partants) < 2:
                   continue
 
               if (
@@ -222,70 +341,151 @@ jobs:
               ):
                   continue
 
-              if str(ident) in seen:
+              if str(ident) in deja_vus:
                   continue
 
-              seen.add(str(ident))
-              valid.append(course)
+              deja_vus.add(str(ident))
+              valides.append(course)
 
+          # SELECTION INDEPENDANTE M1-M5
+          selections = {
+              moteur: [] for moteur in MOTEURS
+          }
+          exclusions = []
+
+          for course in valides:
+              depart = depart_paris(course)
+
+              if depart <= now:
+                  continue
+
+              partants = [
+                  p for p in course["partants"]
+                  if isinstance(p, dict)
+              ]
+
+              if len(partants) < 2:
+                  continue
+
+              course = dict(course)
+              course["partants"] = partants
+
+              for moteur in MOTEURS:
+                  score, statut = evaluer(
+                      course,
+                      moteur
+                  )
+
+                  ligne = {
+                      "id_course": course["id"],
+                      "depart": depart.isoformat(),
+                      "hippodrome": course.get(
+                          "hippodrome"
+                      ),
+                      "nombre_partants": len(partants),
+                      "moteur": moteur,
+                      "specialite": MOTEURS[moteur]["nom"],
+                      "score_donnees": score,
+                      "qualification": statut,
+                  }
+
+                  if statut == "VERT":
+                      selections[moteur].append(ligne)
+                  else:
+                      exclusions.append(ligne)
+
+          for moteur in selections:
+              selections[moteur].sort(
+                  key=lambda c: (
+                      c["depart"],
+                      -c["score_donnees"]
+                  )
+              )
+
+          # DIAGNOSTIC
           status = (
-              "OK"
-              if collecte_ok and valid
+              "OK" if collecte_ok and valides
               else "DEGRADE"
           )
 
-          if not valid:
+          if not valides:
               errors.append(
-                  "Aucune course francaise "
-                  "verifiee exploitable."
+                  "Aucune course francaise verifiee."
               )
-
-          diagnostic = {
-              "version": "2.0",
-              "date": now.date().isoformat(),
-              "mis_a_jour": now.isoformat(),
-              "statut": status,
-              "collecte_executee": collecte_ok,
-              "source_courses": (
-                  str(source_path.relative_to(ROOT))
-                  if source_path
-                  else None
-              ),
-              "courses_verifiees": len(valid),
-              "erreurs": errors,
-              "note": (
-                  "Aucun pronostic, FIGE ou "
-                  "resultat officiel invente."
-              )
-          }
 
           atomic(
               DATA / "diagnostic_unifie.json",
-              diagnostic
+              {
+                  "version": "4.0",
+                  "date": now.date().isoformat(),
+                  "mis_a_jour": now.isoformat(),
+                  "statut": status,
+                  "collecte_executee": collecte_ok,
+                  "source_courses": (
+                      str(source.relative_to(ROOT))
+                      if source else None
+                  ),
+                  "courses_verifiees": len(valides),
+                  "erreurs": errors,
+                  "note": (
+                      "Aucun pronostic, FIGE ou "
+                      "resultat invente."
+                  ),
+              }
           )
 
-          if collecte_ok and valid:
-              atomic(
-                  DATA / "courses_verifiees.json",
-                  {
-                      "date": now.date().isoformat(),
-                      "mis_a_jour": now.isoformat(),
-                      "statut": status,
-                      "courses": valid
-                  }
+          # PUBLICATION DES COURSES
+          atomic(
+              DATA / "courses_verifiees.json",
+              {
+                  "date": now.date().isoformat(),
+                  "mis_a_jour": now.isoformat(),
+                  "statut": status,
+                  "courses": valides,
+              }
+          )
+
+          # PUBLICATION DES SELECTIONS
+          atomic(
+              DATA / "selection_courses_m1_m5.json",
+              {
+                  "systeme": "X1000 PHOENIX",
+                  "version": "4.0",
+                  "date": now.date().isoformat(),
+                  "mise_a_jour": now.isoformat(),
+                  "statut": status,
+                  "type": "preselection",
+                  "moteurs": selections,
+                  "courses_non_retenues": exclusions,
+                  "pronostics_generes": False,
+                  "figes_modifies": False,
+                  "note": (
+                      "VERT = donnees suffisantes "
+                      "pour analyse approfondie. "
+                      "Aucun gain garanti."
+                  ),
+              }
+          )
+
+          print("=" * 50)
+          print("X1000 PHOENIX - UNIFIE M1-M5")
+          print("Date :", now.isoformat())
+          print("Statut :", status)
+          print("Courses verifiees :", len(valides))
+
+          for moteur, lignes in selections.items():
+              print(
+                  moteur,
+                  MOTEURS[moteur]["nom"],
+                  ":",
+                  len(lignes),
+                  "courses vertes"
               )
 
-          print("=" * 50)
-          print("X1000 PHOENIX - COLLECTE UNIFIEE")
-          print("=" * 50)
-          print("Statut :", status)
-          print("Date :", now.isoformat())
-          print("Courses verifiees :", len(valid))
-          print("Source :", source_path)
-          print("=" * 50)
+          for erreur in errors:
+              print("DIAGNOSTIC:", erreur)
 
-          for error in errors:
-              print("DIAGNOSTIC:", error)
+          print("=" * 50)
           PY
 
       - name: Publier les donnees sur main
@@ -296,37 +496,28 @@ jobs:
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Publier uniquement les fichiers attendus.
-          # Les FIGES historiques restent inchanges.
-          git add -f -- data/diagnostic_unifie.json
-
-          if [ -f data/courses_verifiees.json ]; then
-            git add -f -- data/courses_verifiees.json
-          fi
+          git add -f -- \
+            data/diagnostic_unifie.json \
+            data/courses_verifiees.json \
+            data/selection_courses_m1_m5.json
 
           if git diff --cached --quiet; then
-            echo "Aucune modification a publier"
+            echo "Aucune modification"
             exit 0
           fi
 
           git commit \
-            -m "X1000: actualisation PMU verifiee"
+            -m "X1000: collecte et selection M1-M5"
 
-          # Conserver le commit de publication.
-          # Mettre temporairement de cote les
-          # autres modifications non commitees.
+          # Eviter les modifications non indexees
+          # qui bloquent git rebase.
           if [ -n "$(git status --porcelain)" ]; then
-            git stash push \
-              --include-untracked \
-              -m "X1000 modifications temporaires"
+            git stash push -u \
+              -m "X1000 temporaire"
           fi
 
-          # Ne jamais forcer la branche main.
-          # En cas de conflit, arreter proprement.
+          # Publication sans force.
           for i in 1 2 3 4 5; do
-
-            echo "Tentative de publication $i"
-
             git fetch origin main
 
             if ! git rebase origin/main; then
@@ -340,11 +531,11 @@ jobs:
               exit 0
             fi
 
-            echo "Nouvelle tentative dans quelques secondes"
+            echo "Nouvelle tentative $i"
             sleep $((i * 3))
           done
 
-          echo "::error::Publication impossible"
+          echo "::error::Echec de publication"
           exit 1
 
       - name: Rapport final
