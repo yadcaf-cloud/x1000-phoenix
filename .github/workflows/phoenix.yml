@@ -1,24 +1,269 @@
-
-name: X1000 PHOENIX - ANCIEN WORKFLOW DESACTIVE
-
-# Aucun declenchement automatique
-# Aucun declenchement manuel
-# Aucune collecte PMU
-# Aucune modification des FIGES
-# Aucun conflit avec le workflow unifie
+name: X1000 PHOENIX - INTELLIGENCE M1-M5
 
 on:
-  push:
-    branches:
-      - __workflow_desactive__
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: x1000-phoenix-main
+  cancel-in-progress: false
 
 jobs:
-  information:
-    if: ${{ false }}
+  phoenix:
+    name: Collecte, analyses, FIGES et publication
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      TZ: Europe/Paris
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    defaults:
+      run:
+        shell: bash
+
     steps:
-      - name: Workflow desactive
-        run: echo "Ancien workflow desactive"
+      - name: Recuperer le depot
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer et verifier
+        run: |
+          set -euo pipefail
+
+          if [ -f requirements.txt ]; then
+            python -m pip install -r requirements.txt
+          fi
+
+          for f in \
+            phoenix.py \
+            pmu_engine.py \
+            analyser_moteurs.py \
+            reparer_figes_audits.py \
+            publication.py
+          do
+            if [ ! -f "$f" ]; then
+              echo "::error::Fichier manquant: $f"
+              exit 1
+            fi
+
+            python -m py_compile "$f"
+          done
+
+          mkdir -p \
+            data/figes \
+            data/pv \
+            data/audits \
+            data/journaux
+
+      - name: Inventorier les archives
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          root = Path("data")
+
+          paths = (
+              p for p in root.rglob("*.json")
+              if any(
+                  x in ("figes", "pv", "audits", "journaux")
+                  for x in p.relative_to(root).parts[:-1]
+              )
+          )
+
+          inventory = {
+              str(p.relative_to(root)):
+                  hashlib.sha256(p.read_bytes()).hexdigest()
+              for p in paths
+          }
+
+          Path("/tmp/x1000-inventory.json").write_text(
+              json.dumps(inventory),
+              encoding="utf-8"
+          )
+
+          print("Archives inventoriees:", len(inventory))
+          PY
+
+      - name: Collecter les donnees PMU
+        id: collecte
+        run: |
+          set -euo pipefail
+          python pmu_engine.py
+
+      - name: Analyser avec M1-M5
+        id: analyses
+        run: |
+          set -euo pipefail
+          python analyser_moteurs.py
+
+      - name: Verifier les FIGES PV et audits
+        id: audits
+        run: |
+          set -euo pipefail
+          python reparer_figes_audits.py
+
+      - name: Generer les publications
+        id: publication
+        run: |
+          set -euo pipefail
+          python publication.py
+
+      - name: Verifier les archives et les JSON
+        id: validation
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          root = Path("data")
+
+          inventory = json.loads(
+              Path("/tmp/x1000-inventory.json")
+              .read_text(encoding="utf-8")
+          )
+
+          for rel, expected in inventory.items():
+              p = root / rel
+
+              if (
+                  not p.is_file()
+                  or hashlib.sha256(
+                      p.read_bytes()
+                  ).hexdigest() != expected
+              ):
+                  raise SystemExit(
+                      "Archive historique modifiee "
+                      "ou supprimee: " + rel
+                  )
+
+          files = list(root.rglob("*.json"))
+
+          if not files:
+              raise SystemExit(
+                  "Aucun fichier JSON disponible"
+              )
+
+          for p in files:
+              with p.open(encoding="utf-8") as f:
+                  json.load(f)
+
+          required = (
+              "publication_courses.json",
+              "publication_pv.json",
+              "publication_figes.json",
+              "publication_audits.json",
+              "publication_rapport.json",
+          )
+
+          for name in required:
+              if not (root / name).is_file():
+                  raise SystemExit(
+                      "Publication manquante: " + name
+                  )
+
+          report = json.loads(
+              (root / "publication_rapport.json")
+              .read_text(encoding="utf-8")
+          )
+
+          if not isinstance(report, dict):
+              raise SystemExit(
+                  "Rapport de publication invalide"
+              )
+
+          print("JSON valides:", len(files))
+          print("Archives protegees:", len(inventory))
+          print(
+              "Statut:",
+              report.get("status", "INCONNU")
+          )
+
+          for issue in report.get("difficultes", []):
+              print("AVERTISSEMENT:", issue)
+          PY
+
+      - name: Publier sur GitHub
+        id: github
+        run: |
+          set -euo pipefail
+
+          git config user.name \
+            "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A data/
+
+          if git diff --cached --quiet; then
+            echo "Aucun changement a publier"
+            exit 0
+          fi
+
+          git commit -m \
+            "X1000 PHOENIX: actualisation M1-M5"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+
+              echo "::error::Conflit Git detecte"
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              echo "Publication reussie"
+              exit 0
+            fi
+
+            sleep $((attempt * 5))
+          done
+
+          echo "::error::Publication echouee"
+          exit 1
+
+      - name: Bilan final
+        if: always()
+
+        env:
+          COLLECTE: ${{ steps.collecte.outcome }}
+          ANALYSES: ${{ steps.analyses.outcome }}
+          AUDITS: ${{ steps.audits.outcome }}
+          PUBLICATION: ${{ steps.publication.outcome }}
+          VALIDATION: ${{ steps.validation.outcome }}
+          GITHUB: ${{ steps.github.outcome }}
+
+        run: |
+          {
+            echo "## X1000 PHOENIX - BILAN M1-M5"
+            echo ""
+            echo "| Etape | Statut |"
+            echo "|---|---|"
+            echo "| Collecte PMU | $COLLECTE |"
+            echo "| Analyses M1-M5 | $ANALYSES |"
+            echo "| FIGES, PV, audits | $AUDITS |"
+            echo "| Publications | $PUBLICATION |"
+            echo "| Validation et integrite | $VALIDATION |"
+            echo "| GitHub | $GITHUB |"
+            echo ""
+            echo "Heure Paris : $(TZ=Europe/Paris date '+%Y-%m-%d %H:%M:%S')"
+          } >> "$GITHUB_STEP_SUMMARY"
