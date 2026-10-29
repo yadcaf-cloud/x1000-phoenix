@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071326">
+<title>X1000 PHOENIX — Intelligence vivante</title>
+<style>
+:root {
+  --bg:#071326;
+  --panel:#10213a;
+  --panel2:#142b49;
+  --text:#edf5ff;
+  --muted:#b8c9dd;
+  --gold:#ffce52;
+  --green:#46df9a;
+  --red:#ff8585;
+  --border:#29435e;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.7;
+}
+header {
+  padding:36px 18px;
+  text-align:center;
+  background:linear-gradient(135deg,#102a4b,#071326);
+  border-bottom:2px solid var(--gold);
+}
+h1 { color:var(--gold);font-size:clamp(25px,5vw,39px); }
+h2 { color:var(--gold);font-size:24px; }
+h3 { color:var(--green);font-size:19px; }
+p { margin:12px 0; }
+nav {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+  padding:15px;
+  background:#0c1b30;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius:9px;
+}
+nav a:hover,nav a:focus {
+  background:#24496e;
+}
+main {
+  max-width:1100px;
+  margin:auto;
+  padding:20px 14px 50px;
+}
+section {
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:22px;
+  margin:20px 0;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:15px;
+}
+.card {
+  background:var(--panel2);
+  padding:18px;
+  border:1px solid var(--border);
+  border-radius:12px;
+}
+strong { color:var(--gold); }
+ul,ol { padding-left:24px; }
+li { margin:7px 0; }
+.notice {
+  border-left:4px solid var(--gold);
+  padding:14px;
+  background:#203148;
+  border-radius:7px;
+}
+.warning {
+  border-left:4px solid var(--red);
+  padding:14px;
+  background:#352336;
+  border-radius:7px;
+}
+.status {
+  color:var(--muted);
+  font-size:14px;
+}
+table {
+  width:100%;
+  border-collapse:collapse;
+  min-width:650px;
+}
+th,td {
+  padding:11px;
+  border:1px solid var(--border);
+  text-align:left;
+}
+th { background:#1d3d5f;color:var(--gold); }
+.table-wrap { overflow-x:auto; }
+footer {
+  text-align:center;
+  padding:28px 16px;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+</style>
+</head>
+
+<body>
+
+<header id="accueil">
+  <h1>🇸🇳🧠🔥 X1000 PHOENIX</h1>
+  <h2>INTELLIGENCE VIVANTE</h2>
+  <p>Analyse hippique autonome — M1 à M5</p>
+  <p>Paris étudiés • Contrôles pré-départ • FIGÉs vérifiables</p>
+  <p id="horloge">Heure de Paris : chargement...</p>
+</header>
+
+<nav aria-label="Navigation principale">
+  <a href="#mission">Mission</a>
+  <a href="#moteurs">Moteurs</a>
+  <a href="#paris">Paris</a>
+  <a href="#depart">Départs</a>
+  <a href="#figes">FIGÉs</a>
+  <a href="#audits">Audits</a>
+  <a href="#tableau">Tableau</a>
+  <a href="#protection">Protection</a>
+</nav>
+
+<main>
+
+<section id="mission">
+  <h2>🎯 Mission suprême</h2>
+  <div class="notice">
+    <strong>
+      Rechercher largement, analyser intelligemment,
+      choisir les paris les plus cohérents et FIGER
+      les décisions au bon moment AVANT le départ.
+    </strong>
+  </div>
+  <p>
+    X1000 PHOENIX est conçu pour étudier les courses PMU
+    physiquement disputées en France.
+  </p>
+  <p>
+    Les cinq moteurs M1 à M5 doivent fonctionner
+    indépendamment, avec une coordination centrale
+    respectant leurs décisions authentiques.
+  </p>
+  <p>
+    Le système doit rechercher largement les courses
+    analysables sans imposer des critères excessivement sévères.
+  </p>
+</section>
+
+<section id="selection">
+  <h2>🟢 Ratissage large et sélection souple</h2>
+  <p>
+    À chaque exécution automatique, rechercher les réunions
+    françaises accessibles, y compris les plus modestes.
+  </p>
+  <p>
+    Une course peut être qualifiée lorsqu'au moins un moteur
+    possède suffisamment d'informations fiables pour
+    produire une analyse sérieuse.
+  </p>
+  <p>
+    Ne pas exclure automatiquement une course pour un favori
+    fragile, un outsider incertain, une performance irrégulière
+    ou un désaccord entre moteurs.
+  </p>
+  <div class="notice">
+    <strong>
+      Contrôle robuste, mais souple.
+      Qualification sportive et FIGÉ officiel restent distincts.
+    </strong>
+  </div>
+</section>
+
+<section id="moteurs">
+  <h2>🧠 Les cinq moteurs autonomes</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>🥇 M1 — Statistiques</h3>
+      <p>
+        Chronos vérifiés, performances, régularité,
+        distances, oppositions et résultats historiques.
+      </p>
+    </article>
+    <article class="card">
+      <h3>🟢 M2 — Forme et entourage</h3>
+      <p>
+        Condition récente, progression, engagements,
+        jockeys, drivers, entraîneurs et aptitudes.
+      </p>
+    </article>
+    <article class="card">
+      <h3>🟡 M3 — Outsiders</h3>
+      <p>
+        Chevaux sous-estimés, favoris vulnérables
+        et possibilités de surprise justifiées.
+      </p>
+    </article>
+    <article class="card">
+      <h3>🟣 M4 — Tactique</h3>
+      <p>
+        Rythme, parcours, positions, scénarios possibles
+        et ordres d'arrivée espérés.
+      </p>
+    </article>
+    <article class="card">
+      <h3>🟠 M5 — Risques et paris</h3>
+      <p>
+        Cotes disponibles, risques, valeur éventuelle
+        et formules PMU réellement proposées.
+      </p>
+    </article>
+  </div>
+  <p>
+    <strong>
+      Aucun consensus obligatoire.
+      Aucun pronostic inventé pour un moteur absent.
+    </strong>
+  </p>
+</section>
+
+<section id="paris">
+  <h2>🎯 Analyse et choix des paris</h2>
+  <p>
+    Chaque moteur réellement exécuté peut proposer
+    son gagnant espéré, son meilleur placé,
+    son ordre d'arrivée espéré et son pari retenu.
+  </p>
+  <ul>
+    <li>Simple Gagnant ou Placé</li>
+    <li>Couplé Gagnant ou Placé</li>
+    <li>Trio</li>
+    <li>Tiercé, Quarté+ et Quinté+ lorsque proposés</li>
+    <li>Autres formules PMU effectivement disponibles</li>
+  </ul>
+  <p>
+    Les décisions doivent reposer sur les performances,
+    les aptitudes, les risques et les conditions de course.
+  </p>
+  <div class="notice">
+    <strong>
+      Ne jamais choisir un pari uniquement pour son gain potentiel.
+      Un moteur peut s'abstenir.
+    </strong>
+  </div>
+</section>
+
+<section id="depart">
+  <h2>⏰ Priorité aux courses proches du départ</h2>
+  <p>
+    À chaque exécution programmée, X1000 PHOENIX doit
+    examiner en priorité les courses dont le départ approche.
+  </p>
+  <h3>Contrôles avant validation</h3>
+  <ul>
+    <li>Date et heure de Paris</li>
+    <li>Départ annoncé et éventuels changements</li>
+    <li>Partants et non-partants</li>
+    <li>Terrain, piste et conditions de course</li>
+    <li>Ferrure, équipements et changements importants</li>
+    <li>Informations sportives récentes et vérifiables</li>
+    <li>Formules PMU proposées</li>
+    <li>Décisions authentiques des moteurs</li>
+  </ul>
+  <p>
+    Les courses aux horaires proches peuvent être
+    contrôlées ensemble, mais leurs dossiers
+    et leurs enregistrements doivent rester distincts.
+  </p>
+  <div class="notice">
+    Les contrôles programmés ne sont pas des contrôles
+    réellement exécutés. Le site doit distinguer les deux.
+  </div>
+</section>
+
+<section id="figes">
+  <h2>🔒 FIGÉs authentiques avant départ</h2>
+  <div class="warning">
+    <strong>
+      RÈGLE ABSOLUE : AUCUN FIGÉ CRÉÉ APRÈS LE DÉPART.
+    </strong>
+  </div>
+  <p>
+    Si les fonctions techniques nécessaires existent
+    et sont autorisées, le système doit :
+  </p>
+  <ol>
+    <li>Vérifier que le départ n'a pas encore eu lieu.</li>
+    <li>Confirmer les informations critiques.</li>
+    <li>Rassembler les décisions authentiques des moteurs.</li>
+    <li>Vérifier les paris proposés.</li>
+    <li>Créer le PV et le FIGÉ avant départ.</li>
+    <li>Attribuer un identifiant unique.</li>
+    <li>Enregistrer l'horodatage réel.</li>
+    <li>Conserver une empreinte de vérification.</li>
+    <li>Obtenir une preuve de stockage consultable.</li>
+    <li>Confirmer le FIGÉ uniquement après stockage vérifié.</li>
+  </ol>
+  <p>
+    <strong>
+      Sans preuve de stockage, aucun FIGÉ ne doit
+      être présenté comme officiel.
+    </strong>
+  </p>
+  <p>
+    Si le départ est passé ou si l'enregistrement échoue,
+    seule une NOTE ou une ÉTUDE séparée est autorisée.
+  </p>
+</section>
+
+<section id="arbitrage">
+  <h2>🔥 Arbitrage intelligent X1000</h2>
+  <p>
+    X1000 PHOENIX coordonne les cinq moteurs sans
+    leur imposer l'unanimité.
+  </p>
+  <p>
+    Il compare les arguments, les divergences,
+    les risques et les scénarios sportifs.
+  </p>
+  <p>
+    Une révision pré-départ ne peut être envisagée
+    que dans un processus technique contrôlé,
+    avec une information nouvelle substantielle.
+  </p>
+  <div class="notice">
+    <strong>
+      Le FIGÉ original reste immuable.
+      Chaque version confirmée possède son identifiant,
+      son horodatage réel et sa preuve de stockage.
+    </strong>
+  </div>
+</section>
+
+<section id="audits">
+  <h2>🏁 Audits après course</h2>
+  <p>
+    Après publication d'une arrivée officielle définitive,
+    comparer les résultats aux FIGÉs authentiques
+    enregistrés avant départ.
+  </p>
+  <ul>
+    <li>Identifier les réussites et les erreurs.</li>
+    <li>Comparer les analyses des moteurs.</li>
+    <li>Étudier les écarts et les risques.</li>
+    <li>Conserver les enseignements vérifiables.</li>
+    <li>Préserver intégralement les archives historiques.</li>
+  </ul>
+  <p>
+    <strong>
+      Aucun pronostic reconstruit ou modifié après l'arrivée.
+    </strong>
+  </p>
+</section>
+
+<section id="tableau">
+  <h2>🖥️ Tableau de suivi documentaire</h2>
+  <p class="status">
+    Ce tableau est informatif et séparé du tableau officiel X1000.
+    Il ne contient aucun pronostic simulé.
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Fonction</th>
+          <th>Exigence</th>
+          <th>État</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Données PMU</td>
+          <td>Source et actualisation vérifiées</td>
+          <td>Non vérifié</td>
+        </tr>
+        <tr>
+          <td>Analyses M1 à M5</td>
+          <td>Exécution authentique des moteurs</td>
+          <td>Non vérifié</td>
+        </tr>
+        <tr>
+          <td>Paris proposés</td>
+          <td>Décisions sportives justifiées</td>
+          <td>Non vérifié</td>
+        </tr>
+        <tr>
+          <td>PV et FIGÉs</td>
+          <td>Horodatage et stockage vérifiables</td>
+          <td>Non vérifié</td>
+        </tr>
+        <tr>
+          <td>Audits</td>
+          <td>Arrivées officielles définitives</td>
+          <td>Non vérifié</td>
+        </tr>
+        <tr>
+          <td>Automatisation</td>
+          <td>Dernière exécution confirmée</td>
+          <td>Non vérifié</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="protection">
+  <h2>🛡️ Protection absolue du projet</h2>
+  <p>
+    Ce renforcement ne doit pas modifier sans
+    autorisation explicite :
+  </p>
+  <ul>
+    <li>Le tableau officiel et sa présentation</li>
+    <li>Les pronostics et classements existants</li>
+    <li>Les méthodes et décisions authentiques des moteurs</li>
+    <li>Les PV, FIGÉs, audits et archives historiques</li>
+    <li>Les tâches automatiques et leurs horaires</li>
+    <li>L'identité de X1000 PHOENIX</li>
+  </ul>
+  <p>
+    Les observations complémentaires doivent rester
+    des NOTES ou ÉTUDES distinctes.
+  </p>
+</section>
+
+<section>
+  <h2>🇸🇳🧠🔥 La devise X1000 PHOENIX</h2>
+  <div class="notice">
+    <strong>
+      Rechercher toutes les possibilités.
+      Étudier chaque cheval.
+      Respecter l'autonomie des moteurs.
+      Choisir les paris avec méthode.
+      Vérifier à l'approche du départ.
+      FIGER avant la course.
+      Conserver les preuves.
+      Apprendre des résultats.
+    </strong>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>🇸🇳🧠🔥 X1000 PHOENIX — INTELLIGENCE VIVANTE</strong>
+  <p>Cinq moteurs autonomes • Paris étudiés • FIGÉs vérifiables</p>
+  <p>Aucune mise réelle. Aucune garantie de gain.</p>
+</footer>
+
+<script>
+"use strict";
+
+function afficherHeureParis() {
+  const horloge = document.getElementById("horloge");
+  const format = new Intl.DateTimeFormat("fr-FR", {
+    timeZone: "Europe/Paris",
+    dateStyle: "full",
+    timeStyle: "medium"
+  });
+  horloge.textContent = "Heure de Paris : " +
+    format.format(new Date());
+}
+
+afficherHeureParis();
+setInterval(afficherHeureParis, 1000);
+</script>
+
+</body>
+</html>
