@@ -1,5 +1,5 @@
 {
-  "genere_a": "2026-10-29T06:18:08.069966+00:00",
+  "genere_a": "2026-10-29T06:19:50.298815+00:00",
   "version": "M1-M5-heuristique-3",
   "analyses": [
     {
@@ -8,7 +8,7 @@
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
       "depart": "2026-10-29T11:05:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C1/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 7,
       "chevaux_evalues": 5,
       "moteurs": [
@@ -207,7 +207,7 @@
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
       "depart": "2026-10-29T11:35:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C2/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 7,
       "chevaux_evalues": 7,
       "moteurs": [
@@ -426,7 +426,7 @@
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
       "depart": "2026-10-29T11:51:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C1/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 5,
       "chevaux_evalues": 5,
       "moteurs": [
@@ -625,7 +625,7 @@
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
       "depart": "2026-10-29T12:07:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C3/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 11,
       "chevaux_evalues": 11,
       "moteurs": [
@@ -884,7 +884,7 @@
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
       "depart": "2026-10-29T12:23:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C2/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 5,
       "chevaux_evalues": 5,
       "moteurs": [
@@ -1083,7 +1083,7 @@
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
       "depart": "2026-10-29T12:39:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C4/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 16,
       "chevaux_evalues": 13,
       "moteurs": [
@@ -1362,7 +1362,7 @@
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
       "depart": "2026-10-29T12:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C3/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 6,
       "chevaux_evalues": 6,
       "moteurs": [
@@ -1571,7 +1571,7 @@
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
       "depart": "2026-10-29T13:11:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C5/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 16,
       "chevaux_evalues": 13,
       "moteurs": [
@@ -1850,7 +1850,7 @@
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
       "depart": "2026-10-29T13:27:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C4/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 7,
       "chevaux_evalues": 7,
       "moteurs": [
@@ -2069,7 +2069,7 @@
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
       "depart": "2026-10-29T13:43:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C6/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 7,
       "chevaux_evalues": 7,
       "moteurs": [
@@ -2288,7 +2288,7 @@
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-29T13:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C1/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
       "moteurs": [
@@ -2577,7 +2577,7 @@
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
       "depart": "2026-10-29T14:12:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C5/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 9,
       "chevaux_evalues": 9,
       "moteurs": [
@@ -2816,7 +2816,7 @@
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
       "depart": "2026-10-29T14:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C7/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 7,
       "chevaux_evalues": 7,
       "moteurs": [
@@ -3035,7 +3035,7 @@
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-29T14:30:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C2/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 15,
       "chevaux_evalues": 15,
       "moteurs": [
@@ -3334,7 +3334,7 @@
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
       "depart": "2026-10-29T14:47:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C6/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 9,
       "chevaux_evalues": 9,
       "moteurs": [
@@ -3573,7 +3573,7 @@
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-29T15:05:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C3/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
       "moteurs": [
@@ -3842,7 +3842,7 @@
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
       "depart": "2026-10-29T15:22:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C7/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 9,
       "chevaux_evalues": 9,
       "moteurs": [
@@ -4081,7 +4081,7 @@
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-29T15:40:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C4/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
       "moteurs": [
@@ -4350,7 +4350,7 @@
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
       "depart": "2026-10-29T15:57:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C8/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
       "moteurs": [
@@ -4639,7 +4639,7 @@
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-29T16:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C5/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
       "moteurs": [
@@ -4908,7 +4908,7 @@
       "hippodrome": "HIPPODROME DE GRAIGNES",
       "depart": "2026-10-29T16:32:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C1/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
       "moteurs": [
@@ -5197,7 +5197,7 @@
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-29T16:50:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C6/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
       "moteurs": [
@@ -5486,7 +5486,7 @@
       "hippodrome": "HIPPODROME DE GRAIGNES",
       "depart": "2026-10-29T17:07:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C2/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 13,
       "chevaux_evalues": 13,
       "moteurs": [
@@ -5765,7 +5765,7 @@
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-29T17:25:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C7/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 18,
       "chevaux_evalues": 18,
       "moteurs": [
@@ -6094,7 +6094,7 @@
       "hippodrome": "HIPPODROME DE GRAIGNES",
       "depart": "2026-10-29T17:42:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C3/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
       "moteurs": [
@@ -6383,7 +6383,7 @@
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-29T18:00:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C8/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
       "moteurs": [
@@ -6652,7 +6652,7 @@
       "hippodrome": "HIPPODROME DE GRAIGNES",
       "depart": "2026-10-29T18:20:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C4/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 13,
       "chevaux_evalues": 13,
       "moteurs": [
@@ -6931,7 +6931,7 @@
       "hippodrome": "HIPPODROME DE GRAIGNES",
       "depart": "2026-10-29T18:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C5/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 16,
       "chevaux_evalues": 16,
       "moteurs": [
@@ -7240,7 +7240,7 @@
       "hippodrome": "HIPPODROME DE GRAIGNES",
       "depart": "2026-10-29T19:27:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C6/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
       "moteurs": [
@@ -7509,7 +7509,7 @@
       "hippodrome": "HIPPODROME DE GRAIGNES",
       "depart": "2026-10-29T19:59:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C7/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
       "moteurs": [
@@ -7798,7 +7798,7 @@
       "hippodrome": "HIPPODROME DE GRAIGNES",
       "depart": "2026-10-29T20:31:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C8/participants",
-      "analyse_a": "2026-10-29T06:18:08.069966+00:00",
+      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
       "moteurs": [
