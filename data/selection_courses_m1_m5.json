@@ -1,0 +1,1571 @@
+{
+  "systeme": "X1000 PHOENIX",
+  "version": "4.0",
+  "date": "2026-10-29",
+  "mise_a_jour": "2026-10-29T09:02:28.089035+01:00",
+  "statut": "OK",
+  "type": "preselection",
+  "moteurs": {
+    "M1": [],
+    "M2": [
+      {
+        "id_course": "2026-10-29-R2-C1",
+        "depart": "2026-10-29T11:05:00+01:00",
+        "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+        "nombre_partants": 7,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R2-C2",
+        "depart": "2026-10-29T11:35:00+01:00",
+        "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+        "nombre_partants": 8,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R3-C1",
+        "depart": "2026-10-29T11:51:00+01:00",
+        "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+        "nombre_partants": 5,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R2-C3",
+        "depart": "2026-10-29T12:07:00+01:00",
+        "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+        "nombre_partants": 11,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R3-C2",
+        "depart": "2026-10-29T12:23:00+01:00",
+        "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+        "nombre_partants": 5,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R2-C4",
+        "depart": "2026-10-29T12:39:00+01:00",
+        "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+        "nombre_partants": 16,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R3-C3",
+        "depart": "2026-10-29T12:55:00+01:00",
+        "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+        "nombre_partants": 6,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R2-C5",
+        "depart": "2026-10-29T13:11:00+01:00",
+        "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+        "nombre_partants": 16,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R3-C4",
+        "depart": "2026-10-29T13:27:00+01:00",
+        "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+        "nombre_partants": 7,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R2-C6",
+        "depart": "2026-10-29T13:43:00+01:00",
+        "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+        "nombre_partants": 7,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R1-C1",
+        "depart": "2026-10-29T13:55:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "nombre_partants": 14,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R3-C5",
+        "depart": "2026-10-29T14:12:00+01:00",
+        "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+        "nombre_partants": 9,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R2-C7",
+        "depart": "2026-10-29T14:15:00+01:00",
+        "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+        "nombre_partants": 7,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R1-C2",
+        "depart": "2026-10-29T14:30:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "nombre_partants": 15,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R3-C6",
+        "depart": "2026-10-29T14:47:00+01:00",
+        "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+        "nombre_partants": 9,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R1-C3",
+        "depart": "2026-10-29T15:05:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "nombre_partants": 12,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R3-C7",
+        "depart": "2026-10-29T15:22:00+01:00",
+        "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+        "nombre_partants": 9,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R1-C4",
+        "depart": "2026-10-29T15:40:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "nombre_partants": 12,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R3-C8",
+        "depart": "2026-10-29T15:57:00+01:00",
+        "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+        "nombre_partants": 14,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R1-C5",
+        "depart": "2026-10-29T16:15:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "nombre_partants": 12,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R4-C1",
+        "depart": "2026-10-29T16:32:00+01:00",
+        "hippodrome": "HIPPODROME DE GRAIGNES",
+        "nombre_partants": 14,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R1-C6",
+        "depart": "2026-10-29T16:50:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "nombre_partants": 14,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R4-C2",
+        "depart": "2026-10-29T17:07:00+01:00",
+        "hippodrome": "HIPPODROME DE GRAIGNES",
+        "nombre_partants": 13,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R1-C7",
+        "depart": "2026-10-29T17:25:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "nombre_partants": 18,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R4-C3",
+        "depart": "2026-10-29T17:42:00+01:00",
+        "hippodrome": "HIPPODROME DE GRAIGNES",
+        "nombre_partants": 14,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R1-C8",
+        "depart": "2026-10-29T18:00:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "nombre_partants": 12,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R4-C4",
+        "depart": "2026-10-29T18:20:00+01:00",
+        "hippodrome": "HIPPODROME DE GRAIGNES",
+        "nombre_partants": 14,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R4-C5",
+        "depart": "2026-10-29T18:55:00+01:00",
+        "hippodrome": "HIPPODROME DE GRAIGNES",
+        "nombre_partants": 16,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R4-C6",
+        "depart": "2026-10-29T19:27:00+01:00",
+        "hippodrome": "HIPPODROME DE GRAIGNES",
+        "nombre_partants": 12,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R4-C7",
+        "depart": "2026-10-29T19:59:00+01:00",
+        "hippodrome": "HIPPODROME DE GRAIGNES",
+        "nombre_partants": 14,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      },
+      {
+        "id_course": "2026-10-29-R4-C8",
+        "depart": "2026-10-29T20:31:00+01:00",
+        "hippodrome": "HIPPODROME DE GRAIGNES",
+        "nombre_partants": 12,
+        "moteur": "M2",
+        "specialite": "Forme et entourage",
+        "score_donnees": 75,
+        "qualification": "VERT"
+      }
+    ],
+    "M3": [],
+    "M4": [],
+    "M5": []
+  },
+  "courses_non_retenues": [
+    {
+      "id_course": "2026-10-29-R2-C1",
+      "depart": "2026-10-29T11:05:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C1",
+      "depart": "2026-10-29T11:05:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C1",
+      "depart": "2026-10-29T11:05:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C1",
+      "depart": "2026-10-29T11:05:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C2",
+      "depart": "2026-10-29T11:35:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 8,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C2",
+      "depart": "2026-10-29T11:35:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 8,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C2",
+      "depart": "2026-10-29T11:35:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 8,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C2",
+      "depart": "2026-10-29T11:35:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 8,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C1",
+      "depart": "2026-10-29T11:51:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 5,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C1",
+      "depart": "2026-10-29T11:51:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 5,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C1",
+      "depart": "2026-10-29T11:51:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 5,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C1",
+      "depart": "2026-10-29T11:51:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 5,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C3",
+      "depart": "2026-10-29T12:07:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 11,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C3",
+      "depart": "2026-10-29T12:07:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 11,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C3",
+      "depart": "2026-10-29T12:07:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 11,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C3",
+      "depart": "2026-10-29T12:07:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 11,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C2",
+      "depart": "2026-10-29T12:23:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 5,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C2",
+      "depart": "2026-10-29T12:23:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 5,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C2",
+      "depart": "2026-10-29T12:23:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 5,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C2",
+      "depart": "2026-10-29T12:23:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 5,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C4",
+      "depart": "2026-10-29T12:39:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 16,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C4",
+      "depart": "2026-10-29T12:39:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 16,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C4",
+      "depart": "2026-10-29T12:39:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 16,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C4",
+      "depart": "2026-10-29T12:39:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 16,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C3",
+      "depart": "2026-10-29T12:55:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 6,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C3",
+      "depart": "2026-10-29T12:55:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 6,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C3",
+      "depart": "2026-10-29T12:55:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 6,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C3",
+      "depart": "2026-10-29T12:55:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 6,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C5",
+      "depart": "2026-10-29T13:11:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 16,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C5",
+      "depart": "2026-10-29T13:11:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 16,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C5",
+      "depart": "2026-10-29T13:11:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 16,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C5",
+      "depart": "2026-10-29T13:11:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 16,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C4",
+      "depart": "2026-10-29T13:27:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 7,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C4",
+      "depart": "2026-10-29T13:27:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 7,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C4",
+      "depart": "2026-10-29T13:27:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 7,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C4",
+      "depart": "2026-10-29T13:27:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 7,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C6",
+      "depart": "2026-10-29T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C6",
+      "depart": "2026-10-29T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C6",
+      "depart": "2026-10-29T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C6",
+      "depart": "2026-10-29T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C1",
+      "depart": "2026-10-29T13:55:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 14,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C1",
+      "depart": "2026-10-29T13:55:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 14,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C1",
+      "depart": "2026-10-29T13:55:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 14,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C1",
+      "depart": "2026-10-29T13:55:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 14,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C5",
+      "depart": "2026-10-29T14:12:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C5",
+      "depart": "2026-10-29T14:12:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C5",
+      "depart": "2026-10-29T14:12:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C5",
+      "depart": "2026-10-29T14:12:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C7",
+      "depart": "2026-10-29T14:15:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C7",
+      "depart": "2026-10-29T14:15:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C7",
+      "depart": "2026-10-29T14:15:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R2-C7",
+      "depart": "2026-10-29T14:15:00+01:00",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nombre_partants": 7,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C2",
+      "depart": "2026-10-29T14:30:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 15,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C2",
+      "depart": "2026-10-29T14:30:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 15,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C2",
+      "depart": "2026-10-29T14:30:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 15,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C2",
+      "depart": "2026-10-29T14:30:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 15,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C6",
+      "depart": "2026-10-29T14:47:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C6",
+      "depart": "2026-10-29T14:47:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C6",
+      "depart": "2026-10-29T14:47:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C6",
+      "depart": "2026-10-29T14:47:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C3",
+      "depart": "2026-10-29T15:05:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C3",
+      "depart": "2026-10-29T15:05:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C3",
+      "depart": "2026-10-29T15:05:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C3",
+      "depart": "2026-10-29T15:05:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C7",
+      "depart": "2026-10-29T15:22:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C7",
+      "depart": "2026-10-29T15:22:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C7",
+      "depart": "2026-10-29T15:22:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C7",
+      "depart": "2026-10-29T15:22:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 9,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C4",
+      "depart": "2026-10-29T15:40:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C4",
+      "depart": "2026-10-29T15:40:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C4",
+      "depart": "2026-10-29T15:40:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C4",
+      "depart": "2026-10-29T15:40:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C8",
+      "depart": "2026-10-29T15:57:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 14,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C8",
+      "depart": "2026-10-29T15:57:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 14,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C8",
+      "depart": "2026-10-29T15:57:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 14,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R3-C8",
+      "depart": "2026-10-29T15:57:00+01:00",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nombre_partants": 14,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C5",
+      "depart": "2026-10-29T16:15:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C5",
+      "depart": "2026-10-29T16:15:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C5",
+      "depart": "2026-10-29T16:15:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C5",
+      "depart": "2026-10-29T16:15:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C1",
+      "depart": "2026-10-29T16:32:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C1",
+      "depart": "2026-10-29T16:32:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C1",
+      "depart": "2026-10-29T16:32:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C1",
+      "depart": "2026-10-29T16:32:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C6",
+      "depart": "2026-10-29T16:50:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 14,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C6",
+      "depart": "2026-10-29T16:50:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 14,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C6",
+      "depart": "2026-10-29T16:50:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 14,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C6",
+      "depart": "2026-10-29T16:50:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 14,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C2",
+      "depart": "2026-10-29T17:07:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 13,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C2",
+      "depart": "2026-10-29T17:07:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 13,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C2",
+      "depart": "2026-10-29T17:07:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 13,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C2",
+      "depart": "2026-10-29T17:07:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 13,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C7",
+      "depart": "2026-10-29T17:25:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 18,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C7",
+      "depart": "2026-10-29T17:25:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 18,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C7",
+      "depart": "2026-10-29T17:25:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 18,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C7",
+      "depart": "2026-10-29T17:25:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 18,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C3",
+      "depart": "2026-10-29T17:42:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C3",
+      "depart": "2026-10-29T17:42:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C3",
+      "depart": "2026-10-29T17:42:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C3",
+      "depart": "2026-10-29T17:42:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C8",
+      "depart": "2026-10-29T18:00:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C8",
+      "depart": "2026-10-29T18:00:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C8",
+      "depart": "2026-10-29T18:00:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R1-C8",
+      "depart": "2026-10-29T18:00:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nombre_partants": 12,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C4",
+      "depart": "2026-10-29T18:20:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C4",
+      "depart": "2026-10-29T18:20:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C4",
+      "depart": "2026-10-29T18:20:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C4",
+      "depart": "2026-10-29T18:20:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C5",
+      "depart": "2026-10-29T18:55:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 16,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C5",
+      "depart": "2026-10-29T18:55:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 16,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C5",
+      "depart": "2026-10-29T18:55:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 16,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C5",
+      "depart": "2026-10-29T18:55:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 16,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C6",
+      "depart": "2026-10-29T19:27:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 12,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C6",
+      "depart": "2026-10-29T19:27:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 12,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C6",
+      "depart": "2026-10-29T19:27:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 12,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C6",
+      "depart": "2026-10-29T19:27:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 12,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C7",
+      "depart": "2026-10-29T19:59:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C7",
+      "depart": "2026-10-29T19:59:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C7",
+      "depart": "2026-10-29T19:59:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C7",
+      "depart": "2026-10-29T19:59:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 14,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C8",
+      "depart": "2026-10-29T20:31:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 12,
+      "moteur": "M1",
+      "specialite": "Valeur et regularite",
+      "score_donnees": 25,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C8",
+      "depart": "2026-10-29T20:31:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 12,
+      "moteur": "M3",
+      "specialite": "Outsiders et faux favoris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C8",
+      "depart": "2026-10-29T20:31:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 12,
+      "moteur": "M4",
+      "specialite": "Tactique et combinaisons",
+      "score_donnees": 50,
+      "qualification": "JAUNE"
+    },
+    {
+      "id_course": "2026-10-29-R4-C8",
+      "depart": "2026-10-29T20:31:00+01:00",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nombre_partants": 12,
+      "moteur": "M5",
+      "specialite": "Risques, cotes et paris",
+      "score_donnees": 33,
+      "qualification": "ROUGE"
+    }
+  ],
+  "pronostics_generes": false,
+  "figes_modifies": false,
+  "note": "VERT = donnees suffisantes pour analyse approfondie. Aucun gain garanti."
+}
