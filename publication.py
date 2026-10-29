@@ -1,279 +1,604 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""X1000 PHOENIX — publication unifiée M1–M5, archives immuables.
 
-Compatible avec pmu_engine.py, analyser_moteurs.py et phoenix.py existants.
-Les analyses heuristiques ne sont jamais des paris FIGÉS.
+"""
+X1000 PHOENIX — PUBLICATION UNIFIEE M1-M5
+Version 8.0
+
+- Analyses M1-M5
+- Controle avant depart
+- Publication PV
+- Conservation des FIGES historiques
+- Verification SHA256
+- Audits sans resultats inventes
+- Compatible GitHub Actions / GitHub Pages
+
+IMPORTANT :
+Ce module ne valide pas lui-meme de nouveaux FIGES.
+Une source independante et une validation pre-depart
+sont necessaires avant leur creation.
 """
 
 import datetime as dt
 import hashlib
 import json
+import re
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from phoenix import DATA, FIGES, lire, ecrire, verifier_fige, controle_fige, rapport_fige
+from phoenix import (
+    DATA,
+    FIGES,
+    lire,
+    ecrire,
+    verifier_fige,
+    controle_fige,
+    rapport_fige,
+)
+
 from analyser_moteurs import analyser as analyser_moteurs
 
 PARIS = ZoneInfo("Europe/Paris")
 MOTEURS = ("M1", "M2", "M3", "M4", "M5")
-VERSION = "PUBLICATION-UNIFIEE-7.2"
+VERSION = "PUBLICATION-UNIFIEE-8.0"
 
 
 def maintenant():
     return dt.datetime.now(PARIS)
 
 
+def date_heure(valeur):
+    if not isinstance(valeur, str):
+        raise ValueError("Date absente")
+
+    instant = dt.datetime.fromisoformat(
+        valeur.replace("Z", "+00:00")
+    )
+
+    if instant.tzinfo is None:
+        raise ValueError("Fuseau horaire absent")
+
+    return instant.astimezone(PARIS)
+
+
 def collection(nom, cle, erreurs):
     chemin = DATA / (nom + ".json")
+
     if not chemin.is_file():
         return []
+
     try:
         objet = lire(chemin)
+
         if isinstance(objet, list):
             return objet
-        if isinstance(objet, dict) and isinstance(objet.get(cle), list):
-            return objet[cle]
-        raise ValueError("collection JSON invalide")
+
+        if isinstance(objet, dict):
+            lignes = objet.get(cle)
+            if isinstance(lignes, list):
+                return lignes
+
+        raise ValueError("Collection JSON invalide")
+
     except (OSError, ValueError, TypeError) as exc:
-        erreurs.append(f"{chemin}: {exc}")
+        erreurs.append(f"{chemin.name}: {exc}")
         return []
 
 
 def archives(dossier, erreurs, figes=False):
     resultat = []
-    for chemin in sorted((DATA / dossier).glob("*.json")):
+
+    for chemin in sorted(
+        (DATA / dossier).glob("*.json")
+    ):
         try:
             document = lire(chemin)
+
             if not isinstance(document, dict):
-                raise ValueError("document non objet")
+                raise ValueError("Document non objet")
+
             if figes:
                 verifier_fige(document)
+
             resultat.append(document)
-        except (OSError, ValueError, TypeError, KeyError) as exc:
-            erreurs.append(f"Archive non publiable {chemin}: {exc}")
+
+        except (
+            OSError,
+            ValueError,
+            TypeError,
+            KeyError,
+        ) as exc:
+            erreurs.append(
+                f"Archive {chemin.name}: {exc}"
+            )
+
     return resultat
 
 
 def uniques(documents, cle):
-    resultat, vus = [], set()
+    resultat = []
+    vus = set()
+
     for document in documents:
         if not isinstance(document, dict):
             continue
+
         valeur = document.get(cle)
-        if not isinstance(valeur, (str, int)) or isinstance(valeur, bool):
+
+        if (
+            not isinstance(valeur, (str, int))
+            or isinstance(valeur, bool)
+        ):
             continue
-        if valeur in vus:
+
+        identifiant = str(valeur)
+
+        if identifiant in vus:
             continue
-        vus.add(valeur)
+
+        vus.add(identifiant)
         resultat.append(document)
+
     return resultat
 
 
 def charger_figes(erreurs):
-    candidats = archives("figes", erreurs, figes=True)
-    for document in collection("figes", "figes", erreurs):
+    candidats = archives(
+        "figes", erreurs, figes=True
+    )
+
+    for document in collection(
+        "figes", "figes", erreurs
+    ):
         try:
             verifier_fige(document)
             candidats.append(document)
         except (ValueError, TypeError, KeyError) as exc:
-            erreurs.append(f"FIGE historique non publiable: {exc}")
-    return uniques(candidats, "sha256")
+            erreurs.append(
+                f"FIGE historique invalide: {exc}"
+            )
+
+    resultat = []
+    vus = set()
+
+    for document in candidats:
+        sha = document.get("sha256")
+
+        if not isinstance(sha, str):
+            continue
+
+        try:
+            cid = str(
+                rapport_fige(document)["course_id"]
+            )
+        except (ValueError, TypeError, KeyError):
+            continue
+
+        cle = (cid, sha.lower())
+
+        if cle in vus:
+            continue
+
+        vus.add(cle)
+        resultat.append(document)
+
+    return resultat
 
 
 def charger_audits(erreurs, figes):
     empreintes = {
-        f["sha256"].lower() for f in figes
+        f["sha256"].lower()
+        for f in figes
         if isinstance(f.get("sha256"), str)
     }
-    candidats = archives("audits", erreurs) + collection("audits", "audits", erreurs)
+
+    candidats = (
+        archives("audits", erreurs)
+        + collection("audits", "audits", erreurs)
+    )
+
     resultat = []
+
     for audit in candidats:
         sha = audit.get("fige_sha256")
-        source = audit.get("source_arrivee") or audit.get("source_resultat")
         arrivee = audit.get("arrivee_officielle")
-        valide = (
-            isinstance(sha, str) and sha.lower() in empreintes
+        source = (
+            audit.get("source_arrivee")
+            or audit.get("source_resultat")
+        )
+
+        structure_valide = (
+            isinstance(sha, str)
+            and sha.lower() in empreintes
             and audit.get("statut") == "AUDIT_EFFECTUE"
-            and isinstance(source, str) and source.startswith("https://")
-            and isinstance(arrivee, list) and len(arrivee) >= 5
-            and all(type(n) is int and n > 0 for n in arrivee)
+            and isinstance(source, str)
+            and source.startswith("https://")
+            and isinstance(arrivee, list)
+            and len(arrivee) >= 5
+            and all(
+                type(n) is int and n > 0
+                for n in arrivee
+            )
             and len(set(arrivee)) == len(arrivee)
         )
-        if valide:
-            resultat.append(audit)
+
+        if structure_valide:
+            copie = dict(audit)
+            copie["verification_publication"] = (
+                "STRUCTURE_VALIDE_SOURCE_NON_REVERIFIEE"
+            )
+            resultat.append(copie)
         else:
-            erreurs.append(f"Audit non publiable: {audit.get('course_id', '?')}")
-    # Plusieurs audits de FIGÉS distincts pour une course restent possibles.
-    return uniques(resultat, "fige_sha256")
+            erreurs.append(
+                "Audit incomplet ou incoherent: "
+                + str(audit.get("course_id", "?"))
+            )
+
+    return resultat
 
 
-def moteurs_analyse(analyse):
-    bloc = analyse.get("moteurs", {})
-    if not isinstance(bloc, dict):
+def normaliser_moteurs(analyse):
+    bloc = analyse.get("moteurs", [])
+
+    if isinstance(bloc, dict):
+        bloc = [
+            dict(valeur, moteur=nom)
+            for nom, valeur in bloc.items()
+            if isinstance(valeur, dict)
+        ]
+
+    if not isinstance(bloc, list):
         return []
+
     resultat = []
-    for nom in MOTEURS:
-        moteur = bloc.get(nom, {})
+    vus = set()
+
+    for moteur in bloc:
         if not isinstance(moteur, dict):
             continue
-        ordre = moteur.get("ordre_arrivee_espere", [])
-        if not isinstance(ordre, list) or not ordre:
+
+        nom = moteur.get("moteur")
+
+        if nom not in MOTEURS or nom in vus:
             continue
+
+        vus.add(nom)
+
+        ordre = (
+            moteur.get("ordre_espere")
+            or moteur.get("ordre_arrivee_espere")
+            or []
+        )
+
+        if not isinstance(ordre, list):
+            continue
+
+        try:
+            numeros = [
+                int(n)
+                for n in ordre
+                if type(n) is int
+                or (
+                    isinstance(n, str)
+                    and re.fullmatch(r"[1-9]\d*", n)
+                )
+            ]
+        except (TypeError, ValueError):
+            continue
+
+        if (
+            len(numeros) != len(ordre)
+            or len(set(numeros)) != len(numeros)
+            or any(n <= 0 for n in numeros)
+        ):
+            continue
+
+        top = numeros[:5]
+
         resultat.append({
             "moteur": nom,
-            "gagnant_espere": moteur.get("gagnant_espere"),
-            "meilleur_place": moteur.get("meilleur_place"),
-            "ordre_espere": ordre[:5],
-            "ordre_arrivee_espere": ordre[:5],
-            "classement_complet": moteur.get("classement_complet", []),
+            "gagnant_espere": (
+                top[0] if top else None
+            ),
+            "meilleur_place": (
+                top[1] if len(top) > 1 else None
+            ),
+            "ordre_espere": top,
+            "ordre_arrivee_espere": top,
+            "classement_complet": (
+                moteur.get("classement_complet", [])
+            ),
             "qualification": "ETUDE_NON_VALIDEE",
             "validation": "NON_FIGE",
             "pari_retenu": None,
-            "analyse_a": analyse.get("analyse_a"),
             "methode": "HEURISTIQUE_MUSIQUE",
         })
+
     return resultat
 
 
-def moteurs_historiques(rapport):
-    resultat = []
-    for moteur in rapport.get("moteurs", []):
-        if not isinstance(moteur, dict) or moteur.get("moteur") not in MOTEURS:
-            continue
-        copie = dict(moteur)
-        ordre = (copie.get("ordre_arrivee_espere")
-                 or copie.get("ordre_espere") or copie.get("ordre") or [])
-        if not isinstance(ordre, list):
-            ordre = []
-        copie["ordre_espere"] = ordre[:5]
-        copie["ordre_arrivee_espere"] = ordre[:5]
-        resultat.append(copie)
-    return resultat
+def controle_avant_depart(course, instant):
+    """Controle local, sans prétendre verifier le PMU."""
+    raisons = []
+
+    if not isinstance(course, dict):
+        return False, ["Course invalide"]
+
+    if course.get("localisation_france_verifiee") is not True:
+        raisons.append("Localisation non confirmee")
+
+    if course.get("depart_verifie") is not True:
+        raisons.append("Depart non confirme")
+
+    try:
+        depart = date_heure(course.get("depart"))
+        if instant >= depart:
+            raisons.append("Depart atteint ou passe")
+    except (ValueError, TypeError, OverflowError):
+        raisons.append("Horaire invalide")
+
+    partants = course.get("partants")
+
+    if not isinstance(partants, list) or not partants:
+        raisons.append("Partants absents")
+    else:
+        numeros = set()
+        actifs = 0
+
+        for cheval in partants:
+            if not isinstance(cheval, dict):
+                raisons.append("Fiche cheval invalide")
+                continue
+
+            numero = cheval.get("numero")
+
+            if (
+                type(numero) is int
+                and numero > 0
+            ):
+                n = numero
+            elif (
+                isinstance(numero, str)
+                and re.fullmatch(
+                    r"[1-9]\d*", numero.strip()
+                )
+            ):
+                n = int(numero.strip())
+            else:
+                raisons.append("Numero invalide")
+                continue
+
+            if n in numeros:
+                raisons.append("Numero duplique")
+
+            numeros.add(n)
+
+            if (
+                cheval.get("non_partant") is not True
+                and str(
+                    cheval.get("statut", "")
+                ).upper() not in (
+                    "NON_PARTANT",
+                    "NON-PARTANT",
+                    "NP",
+                )
+            ):
+                actifs += 1
+
+        if actifs < 2:
+            raisons.append("Partants actifs insuffisants")
+
+    source = course.get("source")
+
+    if (
+        not isinstance(source, str)
+        or not source.startswith("https://")
+    ):
+        raisons.append("URL source absente ou invalide")
+
+    return len(raisons) == 0, raisons
 
 
 def collecte_du_jour(erreurs):
     chemin = DATA / "collecte.json"
+
     if not chemin.is_file():
-        erreurs.append("Collecte PMU absente : data/collecte.json")
+        erreurs.append("Collecte PMU absente")
         return {}, []
+
     try:
         collecte = lire(chemin)
+
         if not isinstance(collecte, dict):
-            raise ValueError("collecte non objet")
+            raise ValueError("Collecte invalide")
+
         if collecte.get("date") != maintenant().date().isoformat():
-            raise ValueError("collecte d'une autre date")
-        if collecte.get("statut") not in ("OK", "PARTIEL", "AUCUNE_COURSE"):
-            raise ValueError("collecte en echec")
+            raise ValueError("Collecte d'une autre date")
+
+        if collecte.get("statut") not in (
+            "OK", "PARTIEL", "AUCUNE_COURSE"
+        ):
+            raise ValueError("Statut collecte invalide")
+
         courses = collecte.get("courses")
+
         if not isinstance(courses, list):
-            raise ValueError("liste de courses invalide")
-        erreurs.extend(str(e) for e in collecte.get("erreurs", []))
+            raise ValueError("Courses absentes")
+
+        for erreur in collecte.get("erreurs", []):
+            erreurs.append(str(erreur))
+
         return collecte, courses
+
     except (OSError, ValueError, TypeError) as exc:
-        erreurs.append(f"Collecte non exploitable: {exc}")
+        erreurs.append(f"Collecte inexploitable: {exc}")
         return {}, []
 
 
 def empreintes_archives():
-    """Inventaire binaire pour détecter toute mutation d'archives pendant la publication."""
     resultat = {}
-    for dossier in ("figes", "pv", "audits", "journaux"):
-        for chemin in sorted((DATA / dossier).rglob("*")):
+
+    for dossier in (
+        "figes", "pv", "audits", "journaux"
+    ):
+        racine = DATA / dossier
+
+        if not racine.exists():
+            continue
+
+        for chemin in sorted(racine.rglob("*")):
             if chemin.is_file():
-                resultat[str(chemin.relative_to(DATA))] = hashlib.sha256(
+                resultat[
+                    str(chemin.relative_to(DATA))
+                ] = hashlib.sha256(
                     chemin.read_bytes()
                 ).hexdigest()
+
     return resultat
 
 
 def publier():
     DATA.mkdir(parents=True, exist_ok=True)
     FIGES.mkdir(parents=True, exist_ok=True)
+
     avant = empreintes_archives()
     erreurs = []
-    collecte, courses_brutes = collecte_du_jour(erreurs)
     instant = maintenant()
-    courses, pv = [], []
 
-    for course in courses_brutes:
-        if not isinstance(course, dict) or not course.get("id"):
-            erreurs.append("Course sans identifiant valide")
+    collecte, brutes = collecte_du_jour(erreurs)
+
+    courses = []
+    pv_nouveaux = []
+
+    for course in brutes:
+        if not isinstance(course, dict):
+            erreurs.append("Course non objet")
             continue
-        cid = str(course["id"])
+
+        cid = course.get("id") or course.get("course_id")
+
+        if not cid:
+            erreurs.append("Course sans identifiant")
+            continue
+
+        cid = str(cid)
         ligne = dict(course)
+        ligne["id"] = cid
         ligne["moteurs"] = []
-        ligne["statut"] = "DONNEES_NON_ANALYSEES"
-        depart = course.get("depart")
-        avant_depart = False
-        try:
-            if isinstance(depart, str):
-                horaire = dt.datetime.fromisoformat(depart.replace("Z", "+00:00"))
-                avant_depart = horaire.tzinfo is not None and instant < horaire
-        except ValueError:
-            pass
+        ligne["statut"] = "NON_ANALYSEE"
 
-        if (course.get("localisation_france_verifiee") is True
-                and course.get("depart_verifie") is True
-                and isinstance(course.get("partants"), list)
-                and avant_depart):
+        admissible, raisons = controle_avant_depart(
+            course, instant
+        )
+
+        if admissible:
             try:
-                analyse = analyser_moteurs(course, instant)
-                moteurs = moteurs_analyse(analyse)
-                ligne["moteurs"] = moteurs
-                ligne["analyse_a"] = analyse.get("analyse_a")
-                ligne["statut"] = (
-                    "ANALYSE_INDICATIVE" if moteurs else "DONNEES_INSUFFISANTES"
+                analyse = analyser_moteurs(
+                    course, instant
                 )
-            except (ValueError, TypeError, KeyError, OverflowError) as exc:
-                erreurs.append(f"{cid}: analyse impossible: {exc}")
-        elif not avant_depart:
-            ligne["statut"] = "DEPART_PASSE_SANS_NOUVELLE_ANALYSE"
-        elif course.get("localisation_france_verifiee") is not True:
-            ligne["statut"] = "LOCALISATION_NON_VERIFIEE"
-        else:
-            ligne["statut"] = "DONNEES_INSUFFISANTES"
 
-        pv.append({
-            "pv_id": "ANALYSE-" + cid,
-            "course_id": cid,
-            "type": "PV_ANALYSE",
-            "statut": "PV_ANALYSE_NON_FIGE",
-            "cree_a": ligne.get("analyse_a", instant.isoformat()),
-            "depart": depart,
-            "source": course.get("source"),
-            "moteurs": ligne["moteurs"],
-            "avertissement": "Analyse indicative, aucun pari FIGE par ce PV",
-        })
+                moteurs = normaliser_moteurs(analyse)
+
+                ligne["moteurs"] = moteurs
+                ligne["analyse_a"] = analyse.get(
+                    "analyse_a"
+                )
+
+                ligne["statut"] = (
+                    "ANALYSE_INDICATIVE"
+                    if any(
+                        m.get("ordre_espere")
+                        for m in moteurs
+                    )
+                    else "DONNEES_INSUFFISANTES"
+                )
+
+            except (
+                ValueError,
+                TypeError,
+                KeyError,
+                OverflowError,
+            ) as exc:
+                erreurs.append(
+                    f"{cid}: analyse impossible: {exc}"
+                )
+                ligne["statut"] = "ERREUR_ANALYSE"
+
+        else:
+            ligne["statut"] = "CONTROLE_NON_SATISFAIT"
+            ligne["difficultes"] = raisons
+
+        # Un PV est une photographie de l'analyse.
+        # Il ne devient jamais automatiquement un FIGE.
+        if ligne["moteurs"]:
+            pv_nouveaux.append({
+                "pv_id": (
+                    "ANALYSE-"
+                    + cid
+                    + "-"
+                    + instant.strftime("%Y%m%dT%H%M%S%f")
+                ),
+                "course_id": cid,
+                "type": "PV_ANALYSE",
+                "statut": "PV_ANALYSE_NON_FIGE",
+                "cree_a": instant.isoformat(),
+                "depart": course.get("depart"),
+                "source": course.get("source"),
+                "moteurs": ligne["moteurs"],
+                "avertissement": (
+                    "Analyse indicative. "
+                    "Aucun FIGE officiel cree."
+                ),
+            })
+
         courses.append(ligne)
 
     figes = charger_figes(erreurs)
     audits = charger_audits(erreurs, figes)
-    index = {str(c["id"]): c for c in courses}
+
+    index = {
+        str(c["id"]): c
+        for c in courses
+    }
+
     for document in figes:
         try:
             rapport = rapport_fige(document)
             cid = str(rapport["course_id"])
-            moteurs = moteurs_historiques(rapport)
-            integrite = controle_fige(document)["integrite"]
+            integrite = controle_fige(
+                document
+            )["integrite"]
+
             if cid not in index:
                 ligne = {
-                    "id": cid, "hippodrome": rapport.get("hippodrome"),
-                    "depart": rapport.get("depart"), "source": rapport.get("source"),
-                    "nombre_partants": rapport.get("nombre_partants"),
-                    "moteurs": moteurs, "statut": "FIGE_HISTORIQUE",
-                    "integrite": integrite,
+                    "id": cid,
+                    "hippodrome": rapport.get(
+                        "hippodrome"
+                    ),
+                    "depart": rapport.get("depart"),
+                    "source": rapport.get("source"),
+                    "moteurs": [],
+                    "statut": "FIGE_HISTORIQUE",
                 }
                 courses.append(ligne)
                 index[cid] = ligne
-            else:
-                index[cid]["moteurs"] = moteurs
-                index[cid]["statut"] = "FIGE_HISTORIQUE"
-                index[cid]["integrite"] = integrite
+
+            index[cid].setdefault(
+                "figes_historiques", []
+            ).append({
+                "sha256": document.get("sha256"),
+                "integrite": integrite,
+                "moteurs": rapport.get("moteurs", []),
+                "fige_a": rapport.get("fige_a"),
+            })
+
         except (ValueError, TypeError, KeyError) as exc:
-            erreurs.append(f"FIGE historique non exploitable: {exc}")
+            erreurs.append(
+                f"FIGE historique: {exc}"
+            )
 
     pronostics = []
+
     for course in courses:
         for moteur in course.get("moteurs", []):
             entree = dict(moteur)
@@ -281,50 +606,101 @@ def publier():
                 "course_id": course.get("id"),
                 "hippodrome": course.get("hippodrome"),
                 "depart": course.get("depart"),
-                "source": course.get("source"),
                 "statut_course": course.get("statut"),
             })
             pronostics.append(entree)
 
-    # Les anciens PV sont consultables, sans les transformer en FIGES.
-    pv = uniques(pv + archives("pv", erreurs) + collection("pv", "pv", erreurs), "pv_id")
-    analyses_count = sum(c.get("statut") == "ANALYSE_INDICATIVE" for c in courses)
+    pv = uniques(
+        archives("pv", erreurs)
+        + collection("pv", "pv", erreurs)
+        + pv_nouveaux,
+        "pv_id"
+    )
+
+    analyses_count = sum(
+        c.get("statut") == "ANALYSE_INDICATIVE"
+        for c in courses
+    )
+
     rapport = {
-        "logiciel": "X1000 PHOENIX", "version": VERSION,
+        "logiciel": "X1000 PHOENIX",
+        "version": VERSION,
         "generated_at_paris": maintenant().isoformat(),
         "source_donnees": collecte.get("source"),
         "moteurs_actifs": list(MOTEURS),
-        "courses_collectees": len(courses_brutes),
+        "courses_collectees": len(brutes),
         "courses_count": len(courses),
         "analyses_count": analyses_count,
         "pronostics_count": len(pronostics),
-        "pv_count": len(pv), "figes_count": len(figes),
+        "pv_count": len(pv),
+        "figes_count": len(figes),
         "audits_count": len(audits),
-        "status": ("PUBLICATION_PARTIELLE" if erreurs else
-                   "ANALYSES_DISPONIBLES" if analyses_count else
-                   "AUCUNE_ANALYSE"),
-        "difficultes": [{"moteur": "SYSTEME", "difficulte": x} for x in erreurs],
+        "nouveaux_figes": 0,
+        "status": (
+            "PUBLICATION_PARTIELLE"
+            if erreurs
+            else "ANALYSES_DISPONIBLES"
+            if analyses_count
+            else "AUCUNE_ANALYSE"
+        ),
+        "difficultes": [
+            {
+                "moteur": "SYSTEME",
+                "difficulte": erreur,
+            }
+            for erreur in erreurs
+        ],
         "avertissement": (
-            "Scores heuristiques non calibres. Aucun nouveau FIGE cree. "
-            "Les originaux historiques ne sont pas modifies."
+            "Analyses heuristiques non validees. "
+            "Aucun nouveau FIGE cree. "
+            "Les archives originales sont conservees. "
+            "Les sources PMU ne sont pas reverifiees "
+            "en direct par ce module."
         ),
     }
-    # Vérifier avant les écritures, puis après : les archives restent en lecture seule.
+
     if empreintes_archives() != avant:
-        raise RuntimeError("Archives historiques modifiees pendant le traitement")
-    for nom, cle, objets in (
-        ("courses", "courses", courses),
-        ("pronostics", "pronostics", pronostics),
-        ("pv", "pv", pv),
-        ("figes", "figes", figes),
-        ("audits", "audits", audits),
-    ):
-        ecrire(DATA / f"publication_{nom}.json", {cle: objets})
-    ecrire(DATA / "publication_rapport.json", rapport)
-    ecrire(DATA / "rapport_actions.json", rapport)
+        raise RuntimeError(
+            "Archives modifiees avant publication"
+        )
+
+    publications = (
+        ("courses", courses),
+        ("pronostics", pronostics),
+        ("pv", pv),
+        ("figes", figes),
+        ("audits", audits),
+    )
+
+    for nom, objets in publications:
+        ecrire(
+            DATA / f"publication_{nom}.json",
+            {nom: objets}
+        )
+
+    ecrire(
+        DATA / "publication_rapport.json",
+        rapport
+    )
+
+    ecrire(
+        DATA / "rapport_actions.json",
+        rapport
+    )
+
     if empreintes_archives() != avant:
-        raise RuntimeError("Archives historiques modifiees : publication non valide")
-    print(json.dumps(rapport, ensure_ascii=False, indent=2))
+        raise RuntimeError(
+            "Archives historiques modifiees"
+        )
+
+    print(
+        json.dumps(
+            rapport,
+            ensure_ascii=False,
+            indent=2
+        )
+    )
+
     return rapport
 
 
