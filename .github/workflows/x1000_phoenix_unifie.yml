@@ -9,12 +9,12 @@ permissions:
   contents: write
 
 concurrency:
-  group: x1000-phoenix-unifie
+  group: x1000-phoenix-main
   cancel-in-progress: false
 
 jobs:
   phoenix:
-    name: Collecte PMU et selection souple M1-M5
+    name: Collecte PMU - M1 M5 - PV FIGES AUDITS
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
@@ -29,609 +29,482 @@ jobs:
 
     steps:
       - name: Recuperer le depot
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
           persist-credentials: true
 
       - name: Installer Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Verifier le collecteur PMU
+      - name: Installer et verifier les programmes
         run: |
           set -euo pipefail
           python --version
 
-          if [ ! -f pmu_engine.py ]; then
-            echo "::error::pmu_engine.py absent"
-            exit 1
+          if [ -f requirements.txt ]; then
+            python -m pip install -r requirements.txt
           fi
 
-          python -m py_compile pmu_engine.py
+          for fichier in \
+            phoenix.py \
+            pmu_engine.py \
+            analyser_moteurs.py \
+            reparer_figes_audits.py \
+            reparer_qualifications_audits.py \
+            publication.py
+          do
+            if [ -f "$fichier" ]; then
+              python -m py_compile "$fichier"
+              echo "OK : $fichier"
+            else
+              echo "::warning::Absent : $fichier"
+            fi
+          done
 
-      - name: Collecter et qualifier les courses
+          test -f pmu_engine.py || {
+            echo "::error::Collecteur PMU absent"
+            exit 1
+          }
+
+          mkdir -p data/figes data/pv \
+            data/audits data/journaux
+
+      - name: Inventorier les archives historiques
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          root = Path("data")
+          dossiers = {"figes", "pv", "audits", "journaux"}
+
+          inventaire = {}
+
+          for p in root.rglob("*.json"):
+              if any(
+                  partie in dossiers
+                  for partie in p.relative_to(root).parts[:-1]
+              ):
+                  inventaire[str(p.relative_to(root))] = (
+                      hashlib.sha256(p.read_bytes()).hexdigest()
+                  )
+
+          Path("/tmp/x1000-archives.json").write_text(
+              json.dumps(inventaire, indent=2),
+              encoding="utf-8"
+          )
+
+          print("Archives protegees :", len(inventaire))
+          PY
+
+      - name: Collecter les courses PMU
+        id: collecte
+        run: |
+          set -euo pipefail
+
+          # Eviter la reutilisation silencieuse
+          # de fichiers de collecte precedents.
+          rm -f data/collecte.json data/courses_pmu.json
+
+          python pmu_engine.py
+
+      - name: Qualifier les courses M1-M5
+        id: qualifications
         run: |
           set -euo pipefail
 
           python - <<'PY'
           import datetime as dt
           import json
-          import os
-          import subprocess
-          import sys
-          import tempfile
           from pathlib import Path
           from zoneinfo import ZoneInfo
 
-          ROOT = Path.cwd()
-          DATA = ROOT / "data"
-          DATA.mkdir(parents=True, exist_ok=True)
-
+          DATA = Path("data")
           PARIS = ZoneInfo("Europe/Paris")
           now = dt.datetime.now(PARIS)
           today = now.date().isoformat()
 
-          # Controle souple sur les criteres
-          # secondaires, strict sur les
-          # informations essentielles.
-          SEUIL_VERT = 50
-          SEUIL_JAUNE = 25
-          COUVERTURE_CRITERE = 0.50
-
           MOTEURS = {
-              "M1": {
-                  "nom": "Valeur et regularite",
-                  "criteres": [
-                      "performances",
-                      "distance",
-                      "terrain",
-                      "regularite",
-                  ],
-              },
-              "M2": {
-                  "nom": "Forme et entourage",
-                  "criteres": [
-                      "forme",
-                      "jockey",
-                      "entraineur",
-                      "performances",
-                  ],
-              },
-              "M3": {
-                  "nom": "Outsiders et faux favoris",
-                  "criteres": [
-                      "cote",
-                      "performances",
-                      "forme",
-                  ],
-              },
-              "M4": {
-                  "nom": "Tactique et combinaisons",
-                  "criteres": [
-                      "numero",
-                      "corde",
-                      "distance",
-                      "performances",
-                  ],
-              },
-              "M5": {
-                  "nom": "Risques, cotes et paris",
-                  "criteres": [
-                      "cote",
-                      "forme",
-                      "performances",
-                  ],
-              },
+              "M1": ["performances", "distance", "terrain", "regularite"],
+              "M2": ["forme", "jockey", "entraineur", "performances"],
+              "M3": ["cote", "performances", "forme"],
+              "M4": ["numero", "corde", "distance", "performances"],
+              "M5": ["cote", "forme", "performances"],
           }
 
           ALIASES = {
-              "performances": (
-                  "performances",
-                  "musique",
-                  "historique",
-              ),
-              "distance": ("distance",),
-              "terrain": (
-                  "terrain",
-                  "etat_terrain",
-              ),
-              "regularite": (
-                  "regularite",
-                  "regularite_score",
-              ),
-              "forme": (
-                  "forme",
-                  "forme_recente",
-              ),
-              "jockey": ("jockey", "driver"),
-              "entraineur": ("entraineur",),
-              "cote": (
-                  "cote",
-                  "cote_direct",
-                  "rapport_probable",
-              ),
-              "numero": ("numero", "numPmu"),
-              "corde": ("corde", "place_corde"),
+              "performances": ["performances", "musique", "historique"],
+              "distance": ["distance"],
+              "terrain": ["terrain", "etat_terrain"],
+              "regularite": ["regularite", "regularite_score"],
+              "forme": ["forme", "forme_recente"],
+              "jockey": ["jockey", "driver"],
+              "entraineur": ["entraineur"],
+              "cote": ["cote", "cote_direct", "rapport_probable"],
+              "numero": ["numero", "numPmu"],
+              "corde": ["corde", "place_corde"],
           }
 
-          erreurs = []
-
-          def ecrire(path, objet):
-              path.parent.mkdir(
-                  parents=True,
-                  exist_ok=True
+          def sauver(nom, objet):
+              chemin = DATA / nom
+              chemin.write_text(
+                  json.dumps(
+                      objet,
+                      ensure_ascii=False,
+                      indent=2,
+                      allow_nan=False
+                  ) + "\n",
+                  encoding="utf-8"
               )
 
-              temporaire = None
-
-              try:
-                  with tempfile.NamedTemporaryFile(
-                      mode="w",
-                      encoding="utf-8",
-                      dir=path.parent,
-                      delete=False
-                  ) as fichier:
-                      temporaire = Path(fichier.name)
-
-                      json.dump(
-                          objet,
-                          fichier,
-                          ensure_ascii=False,
-                          indent=2,
-                          allow_nan=False
-                      )
-
-                      fichier.write("\n")
-                      fichier.flush()
-                      os.fsync(fichier.fileno())
-
-                  os.replace(temporaire, path)
-
-              finally:
-                  if (
-                      temporaire is not None
-                      and temporaire.exists()
-                  ):
-                      temporaire.unlink()
-
-          def lire(path):
-              try:
-                  return json.loads(
-                      path.read_text(
-                          encoding="utf-8"
-                      )
-                  )
-
-              except (OSError, ValueError) as exc:
-                  erreurs.append(
-                      f"{path.name}: {exc}"
-                  )
-                  return None
-
-          def present(objet, critere):
+          def disponible(objet, critere):
               if not isinstance(objet, dict):
                   return False
 
               for cle in ALIASES[critere]:
-                  valeur = objet.get(cle)
-
-                  if valeur is None:
+                  v = objet.get(cle)
+                  if v is None or isinstance(v, bool):
                       continue
-
-                  if isinstance(valeur, bool):
-                      continue
-
-                  if isinstance(valeur, str):
-                      if valeur.strip():
-                          return True
-
-                  elif isinstance(valeur, (list, dict)):
-                      if valeur:
-                          return True
-
-                  else:
+                  if isinstance(v, str) and v.strip():
                       return True
-
+                  if isinstance(v, (list, dict)) and v:
+                      return True
+                  if isinstance(v, (int, float)):
+                      return True
               return False
 
-          def depart_paris(course):
+          def depart(course):
               valeur = course.get("depart")
-
               if not isinstance(valeur, str):
                   return None
-
               try:
-                  instant = dt.datetime.fromisoformat(
+                  d = dt.datetime.fromisoformat(
                       valeur.replace("Z", "+00:00")
                   )
-
-                  if instant.tzinfo is None:
-                      # Le collecteur doit fournir
-                      # l'heure locale de Paris.
-                      instant = instant.replace(
-                          tzinfo=PARIS
-                      )
-
-                  return instant.astimezone(PARIS)
-
+                  if d.tzinfo is None:
+                      d = d.replace(tzinfo=PARIS)
+                  return d.astimezone(PARIS)
               except ValueError:
                   return None
 
           def qualifier(course, moteur):
-              criteres = MOTEURS[moteur]["criteres"]
               partants = course["partants"]
-
-              disponibles = []
-              manquants = []
+              criteres = MOTEURS[moteur]
+              ok = []
+              manque = []
 
               for critere in criteres:
-                  nombre = sum(
-                      present(partant, critere)
-                      or present(course, critere)
-                      for partant in partants
-                  )
+                  couverture = sum(
+                      disponible(p, critere)
+                      or disponible(course, critere)
+                      for p in partants
+                  ) / len(partants)
 
-                  couverture = nombre / len(partants)
-
-                  if couverture >= COUVERTURE_CRITERE:
-                      disponibles.append(critere)
+                  if couverture >= 0.50:
+                      ok.append(critere)
                   else:
-                      manquants.append(critere)
+                      manque.append(critere)
 
-              score = round(
-                  100 * len(disponibles)
-                  / len(criteres)
+              score = round(100 * len(ok) / len(criteres))
+              statut = (
+                  "VERT" if score >= 50
+                  else "JAUNE" if score >= 25
+                  else "ROUGE"
               )
-
-              if score >= SEUIL_VERT:
-                  statut = "VERT"
-              elif score >= SEUIL_JAUNE:
-                  statut = "JAUNE"
-              else:
-                  statut = "ROUGE"
 
               return {
                   "moteur": moteur,
-                  "specialite": MOTEURS[moteur]["nom"],
                   "score_donnees": score,
                   "qualification": statut,
-                  "criteres_disponibles": disponibles,
-                  "criteres_a_completer": manquants,
+                  "criteres_disponibles": ok,
+                  "criteres_a_completer": manque,
               }
 
-          # 1. COLLECTE PMU
-          collecte_ok = False
-          script = ROOT / "pmu_engine.py"
-
-          # Eviter de relire les anciens fichiers
-          # comme s'ils venaient d'etre collectes.
-          for nom in (
-              "collecte.json",
-              "courses_pmu.json",
-          ):
-              path = DATA / nom
-
-              if path.is_file():
-                  path.unlink()
-
-          try:
-              subprocess.run(
-                  [sys.executable, str(script)],
-                  cwd=ROOT,
-                  check=True,
-                  timeout=900
-              )
-
-              collecte_ok = True
-
-          except (
-              subprocess.CalledProcessError,
-              subprocess.TimeoutExpired,
-              OSError
-          ) as exc:
-              erreurs.append(
-                  f"Collecte PMU: {exc}"
-              )
-
-          # 2. CHARGEMENT DES COURSES
+          erreurs = []
           courses = []
           source = None
 
-          if collecte_ok:
-              for path in (
-                  DATA / "collecte.json",
-                  DATA / "courses_pmu.json",
-              ):
-                  if not path.is_file():
-                      continue
+          for nom in ("collecte.json", "courses_pmu.json"):
+              chemin = DATA / nom
+              if not chemin.is_file():
+                  continue
 
-                  objet = lire(path)
-
-                  if isinstance(objet, dict):
-                      lignes = objet.get("courses")
-
-                  elif isinstance(objet, list):
-                      lignes = objet
-
-                  else:
-                      lignes = None
-
+              try:
+                  objet = json.loads(
+                      chemin.read_text(encoding="utf-8")
+                  )
+                  lignes = (
+                      objet.get("courses")
+                      if isinstance(objet, dict)
+                      else objet
+                  )
                   if isinstance(lignes, list):
                       courses = lignes
-                      source = path
+                      source = nom
                       break
+              except (OSError, ValueError) as e:
+                  erreurs.append(f"{nom}: {e}")
 
-          # 3. VERIFICATION ESSENTIELLE
+          if source is None:
+              erreurs.append("Aucune collecte au format reconnu")
+
           valides = []
-          exclusions_essentielles = []
-          identifiants = set()
+          exclusions = []
+          deja_vus = set()
 
           for course in courses:
               if not isinstance(course, dict):
                   continue
 
               ident = course.get("id")
-              depart = depart_paris(course)
+              d = depart(course)
               partants = course.get("partants")
-
               raisons = []
 
               if not ident:
-                  raisons.append(
-                      "Identifiant absent"
-                  )
+                  raisons.append("Identifiant absent")
+              if d is None:
+                  raisons.append("Depart absent ou invalide")
+              elif d.date() != now.date():
+                  raisons.append("Hors programme du jour")
 
-              if depart is None:
-                  raisons.append(
-                      "Depart non verifiable"
-                  )
-
-              elif depart.date().isoformat() != today:
-                  raisons.append(
-                      "Course hors programme du jour"
-                  )
-
-              if (
-                  course.get(
-                      "localisation_france_verifiee"
-                  ) is not True
-              ):
-                  raisons.append(
-                      "Localisation France non verifiee"
-                  )
+              if course.get("localisation_france_verifiee") is not True:
+                  raisons.append("France non verifiee")
 
               if not isinstance(partants, list):
-                  raisons.append(
-                      "Partants absents"
-                  )
-
-              elif len(partants) < 2:
-                  raisons.append(
-                      "Partants insuffisants"
-                  )
+                  raisons.append("Partants absents")
+              else:
+                  partants = [
+                      p for p in partants
+                      if isinstance(p, dict)
+                      and p.get("non_partant") is not True
+                  ]
+                  if len(partants) < 2:
+                      raisons.append("Partants insuffisants")
 
               if raisons:
-                  exclusions_essentielles.append({
+                  exclusions.append({
                       "id_course": ident,
                       "raisons": raisons,
                   })
                   continue
 
-              if str(ident) in identifiants:
+              if str(ident) in deja_vus:
                   continue
 
-              identifiants.add(str(ident))
-              valides.append(course)
+              deja_vus.add(str(ident))
+              copie = dict(course)
+              copie["partants"] = partants
+              valides.append(copie)
 
-          # 4. QUALIFICATION AUTONOME M1-M5
-          selections = {
-              moteur: []
-              for moteur in MOTEURS
-          }
-
+          selections = {m: [] for m in MOTEURS}
           jaunes = []
           rouges = []
 
           for course in valides:
-              depart = depart_paris(course)
-
-              if depart <= now:
+              d = depart(course)
+              if d is None or d <= now:
                   continue
-
-              partants = [
-                  p for p in course["partants"]
-                  if isinstance(p, dict)
-              ]
-
-              if len(partants) < 2:
-                  continue
-
-              course = dict(course)
-              course["partants"] = partants
 
               for moteur in MOTEURS:
-                  analyse = qualifier(
-                      course,
-                      moteur
-                  )
-
+                  analyse = qualifier(course, moteur)
                   ligne = {
                       "id_course": course["id"],
-                      "depart": depart.isoformat(),
-                      "hippodrome": course.get(
-                          "hippodrome"
-                      ),
-                      "reunion": course.get(
-                          "reunion"
-                      ),
-                      "numero_course": course.get(
-                          "numero_course"
-                      ),
-                      "nombre_partants": len(partants),
-                      "heure_verification": (
-                          now.isoformat()
-                      ),
+                      "depart": d.isoformat(),
+                      "hippodrome": course.get("hippodrome"),
+                      "reunion": course.get("reunion"),
+                      "numero_course": course.get("numero_course"),
+                      "nombre_partants": len(course["partants"]),
+                      "heure_verification": now.isoformat(),
                       **analyse,
                   }
 
-                  if analyse["qualification"] == "VERT":
+                  statut = analyse["qualification"]
+                  if statut == "VERT":
                       selections[moteur].append(ligne)
-
-                  elif analyse["qualification"] == "JAUNE":
+                  elif statut == "JAUNE":
                       jaunes.append(ligne)
-
                   else:
                       rouges.append(ligne)
 
-          # 5. TRI CHRONOLOGIQUE
-          for moteur in selections:
-              selections[moteur].sort(
-                  key=lambda ligne: (
-                      ligne["depart"],
-                      -ligne["score_donnees"]
-                  )
-              )
-
-          jaunes.sort(
-              key=lambda ligne: ligne["depart"]
+          tableau = sorted(
+              [
+                  ligne
+                  for lignes in selections.values()
+                  for ligne in lignes
+              ],
+              key=lambda x: (x["depart"], x["moteur"])
           )
-
-          # 6. TABLEAU DES COURSES QUALIFIEES
-          tableau = []
 
           for lignes in selections.values():
-              tableau.extend(lignes)
+              lignes.sort(key=lambda x: x["depart"])
 
-          tableau.sort(
-              key=lambda ligne: (
-                  ligne["depart"],
-                  ligne["moteur"]
-              )
-          )
+          jaunes.sort(key=lambda x: x["depart"])
+          rouges.sort(key=lambda x: x["depart"])
 
-          statut = (
-              "OK"
-              if collecte_ok and valides
-              else "DEGRADE"
-          )
+          statut = "OK" if source and valides else "DEGRADE"
 
-          if not valides:
-              erreurs.append(
-                  "Aucune course francaise verifiee"
-              )
+          diagnostic = {
+              "systeme": "X1000 PHOENIX",
+              "version": "7.0",
+              "date": today,
+              "mis_a_jour": now.isoformat(),
+              "statut": statut,
+              "collecte_executee": source is not None,
+              "source_courses": source,
+              "courses_collectees": len(courses),
+              "courses_verifiees": len(valides),
+              "courses_qualifiees": len(tableau),
+              "qualifications_jaunes": len(jaunes),
+              "qualifications_rouges": len(rouges),
+              "exclusions_essentielles": exclusions,
+              "erreurs": erreurs,
+          }
 
-          # 7. DIAGNOSTIC
-          ecrire(
-              DATA / "diagnostic_unifie.json",
-              {
-                  "systeme": "X1000 PHOENIX",
-                  "version": "6.0",
-                  "date": today,
-                  "mis_a_jour": now.isoformat(),
-                  "statut": statut,
-                  "collecte_executee": collecte_ok,
-                  "source_courses": (
-                      str(source.relative_to(ROOT))
-                      if source else None
-                  ),
-                  "courses_verifiees": len(valides),
-                  "seuil_vert": SEUIL_VERT,
-                  "seuil_jaune": SEUIL_JAUNE,
-                  "erreurs": erreurs,
-                  "note": (
-                      "Controle robuste sur les "
-                      "donnees essentielles et souple "
-                      "sur les criteres secondaires."
-                  ),
-              }
-          )
+          sauver("diagnostic_unifie.json", diagnostic)
+          sauver("courses_verifiees.json", {
+              "date": today,
+              "mis_a_jour": now.isoformat(),
+              "statut": statut,
+              "courses": valides,
+          })
+          sauver("selection_courses_m1_m5.json", {
+              "systeme": "X1000 PHOENIX",
+              "version": "7.0",
+              "date": today,
+              "mise_a_jour": now.isoformat(),
+              "statut": statut,
+              "type": "preselection",
+              "seuil_vert": 50,
+              "seuil_jaune": 25,
+              "moteurs": selections,
+              "tableau_officiel": tableau,
+              "courses_jaunes": jaunes,
+              "courses_rouges": rouges,
+              "exclusions_essentielles": exclusions,
+              "pronostics_generes": False,
+              "figes_modifies": False,
+              "pari_valide": False,
+          })
 
-          # 8. COURSES VERIFIEES
-          ecrire(
-              DATA / "courses_verifiees.json",
-              {
-                  "date": today,
-                  "mis_a_jour": now.isoformat(),
-                  "statut": statut,
-                  "courses": valides,
-              }
-          )
-
-          # 9. PRESELECTION M1-M5
-          ecrire(
-              DATA / "selection_courses_m1_m5.json",
-              {
-                  "systeme": "X1000 PHOENIX",
-                  "version": "6.0",
-                  "date": today,
-                  "mise_a_jour": now.isoformat(),
-                  "statut": statut,
-                  "type": "preselection",
-                  "devise": (
-                      "Controle robuste, mais jamais "
-                      "excessivement severe."
-                  ),
-                  "seuil_vert": SEUIL_VERT,
-                  "seuil_jaune": SEUIL_JAUNE,
-                  "moteurs": selections,
-                  "tableau_officiel": tableau,
-                  "courses_jaunes": jaunes,
-                  "courses_rouges": rouges,
-                  "exclusions_essentielles": (
-                      exclusions_essentielles
-                  ),
-                  "pronostics_generes": False,
-                  "figes_modifies": False,
-                  "pari_valide": False,
-                  "note": (
-                      "VERT signifie admissible "
-                      "a une analyse approfondie. "
-                      "Ce n'est ni un pronostic "
-                      "ni une garantie de gain."
-                  ),
-              }
-          )
-
-          # 10. JOURNAL D'EXECUTION
-          print("=" * 55)
-          print("X1000 PHOENIX - UNIFIE M1-M5")
-          print("=" * 55)
-          print("Heure Paris :", now.isoformat())
-          print("Statut :", statut)
+          print("Courses collectees :", len(courses))
           print("Courses verifiees :", len(valides))
-          print("Seuil VERT :", SEUIL_VERT)
-          print("Seuil JAUNE :", SEUIL_JAUNE)
-
-          for moteur, lignes in selections.items():
-              print(
-                  moteur,
-                  MOTEURS[moteur]["nom"],
-                  ":",
-                  len(lignes),
-                  "qualifications vertes"
-              )
-
-          print(
-              "Qualifications jaunes :",
-              len(jaunes)
-          )
-          print(
-              "Qualifications rouges :",
-              len(rouges)
-          )
-
+          print("Qualifications vertes :", len(tableau))
+          print("Qualifications jaunes :", len(jaunes))
+          print("Qualifications rouges :", len(rouges))
+          print("Exclusions :", len(exclusions))
           for erreur in erreurs:
               print("DIAGNOSTIC :", erreur)
-
-          print("Aucun FIGE historique modifie.")
-          print("Aucun pronostic invente.")
-          print("=" * 55)
           PY
 
-      - name: Publier les donnees sur main
+      - name: Analyser les moteurs M1-M5
+        id: analyses
+        run: |
+          set -euo pipefail
+
+          if [ -f analyser_moteurs.py ]; then
+            python analyser_moteurs.py
+          else
+            echo "::warning::Analyseur absent"
+          fi
+
+      - name: Reparer les FIGES PV et audits
+        id: audits
+        run: |
+          set -euo pipefail
+
+          if [ -f reparer_figes_audits.py ]; then
+            python reparer_figes_audits.py
+          else
+            echo "::warning::Reparateur FIGES absent"
+          fi
+
+      - name: Reparer qualifications et diagnostics
+        id: reparation
+        run: |
+          set -euo pipefail
+
+          if [ -f reparer_qualifications_audits.py ]; then
+            python reparer_qualifications_audits.py
+          else
+            echo "::warning::Reparateur qualifications absent"
+          fi
+
+          for fichier in \
+            data/publication_qualifications.json \
+            data/publication_diagnostic_audits.json
+          do
+            if [ -f "$fichier" ]; then
+              python -m json.tool "$fichier" > /dev/null
+              echo "JSON valide : $fichier"
+            else
+              echo "::warning::Publication absente : $fichier"
+            fi
+          done
+
+      - name: Generer les publications
+        id: publication
+        run: |
+          set -euo pipefail
+
+          if [ -f publication.py ]; then
+            python publication.py
+          else
+            echo "::warning::publication.py absent"
+          fi
+
+      - name: Verifier archives et JSON
+        id: validation
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          root = Path("data")
+          inventaire = json.loads(
+              Path("/tmp/x1000-archives.json")
+              .read_text(encoding="utf-8")
+          )
+
+          for rel, attendu in inventaire.items():
+              chemin = root / rel
+              if not chemin.is_file():
+                  raise SystemExit("Archive supprimee : " + rel)
+              actuel = hashlib.sha256(
+                  chemin.read_bytes()
+              ).hexdigest()
+              if actuel != attendu:
+                  raise SystemExit("Archive modifiee : " + rel)
+
+          fichiers = list(root.rglob("*.json"))
+          for chemin in fichiers:
+              with chemin.open(encoding="utf-8") as f:
+                  json.load(f)
+
+          requis = (
+              "diagnostic_unifie.json",
+              "courses_verifiees.json",
+              "selection_courses_m1_m5.json",
+          )
+
+          for nom in requis:
+              if not (root / nom).is_file():
+                  raise SystemExit("JSON requis absent : " + nom)
+
+          print("JSON valides :", len(fichiers))
+          print("Archives protegees :", len(inventaire))
+          PY
+
+      - name: Publier les donnees sur GitHub
+        id: github
         run: |
           set -euo pipefail
 
@@ -639,28 +512,42 @@ jobs:
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # Publier les nouveaux JSON sans supprimer
+          # les archives historiques.
           git add -f -- \
             data/diagnostic_unifie.json \
             data/courses_verifiees.json \
             data/selection_courses_m1_m5.json
+
+          for fichier in \
+            data/publication_courses.json \
+            data/publication_pv.json \
+            data/publication_figes.json \
+            data/publication_audits.json \
+            data/publication_rapport.json \
+            data/publication_qualifications.json \
+            data/publication_diagnostic_audits.json
+          do
+            if [ -f "$fichier" ]; then
+              git add -f -- "$fichier"
+            fi
+          done
 
           if git diff --cached --quiet; then
             echo "Aucune modification a publier"
             exit 0
           fi
 
-          git commit -m \
-            "X1000: selection souple M1-M5"
+          git commit -m "X1000: actualisation unifiee M1-M5"
 
-          # Mettre de cote les autres modifications
-          # pour eviter l'erreur git rebase 128.
+          # Conserver les modifications non indexees
+          # hors du rebase.
           if [ -n "$(git status --porcelain)" ]; then
             git stash push -u \
-              -m "X1000 fichiers temporaires"
+              -m "X1000 temporaires"
           fi
 
-          # Publication sans force push.
-          for i in 1 2 3 4 5; do
+          for tentative in 1 2 3 4 5; do
             git fetch origin main
 
             if ! git rebase origin/main; then
@@ -670,25 +557,41 @@ jobs:
             fi
 
             if git push origin HEAD:main; then
-              echo "Publication X1000 reussie"
+              echo "Publication reussie"
               exit 0
             fi
 
-            echo "Nouvelle tentative $i"
-            sleep $((i * 3))
+            sleep $((tentative * 3))
           done
 
-          echo "::error::Echec de publication"
+          echo "::error::Publication echouee"
           exit 1
 
-      - name: Rapport final
+      - name: Bilan final X1000 PHOENIX
         if: always()
+        env:
+          COLLECTE: ${{ steps.collecte.outcome }}
+          QUALIFICATIONS: ${{ steps.qualifications.outcome }}
+          ANALYSES: ${{ steps.analyses.outcome }}
+          AUDITS: ${{ steps.audits.outcome }}
+          REPARATION: ${{ steps.reparation.outcome }}
+          PUBLICATION: ${{ steps.publication.outcome }}
+          VALIDATION: ${{ steps.validation.outcome }}
+          GITHUB: ${{ steps.github.outcome }}
         run: |
-          echo "=================================="
-          echo "X1000 PHOENIX - RAPPORT FINAL"
-          echo "=================================="
-          echo "Date Paris : $(TZ=Europe/Paris date)"
-          echo "Depot : $GITHUB_REPOSITORY"
-          echo "Branche : main"
-          echo "Execution : $GITHUB_RUN_ID"
-          echo "=================================="
+          {
+            echo "## X1000 PHOENIX - BILAN M1-M5"
+            echo ""
+            echo "| Etape | Statut |"
+            echo "|---|---|"
+            echo "| Collecte PMU | $COLLECTE |"
+            echo "| Qualifications | $QUALIFICATIONS |"
+            echo "| Analyses M1-M5 | $ANALYSES |"
+            echo "| FIGES PV audits | $AUDITS |"
+            echo "| Reparation | $REPARATION |"
+            echo "| Publications | $PUBLICATION |"
+            echo "| Validation | $VALIDATION |"
+            echo "| GitHub | $GITHUB |"
+            echo ""
+            echo "Heure Paris : $(TZ=Europe/Paris date)"
+          } >> "$GITHUB_STEP_SUMMARY"
