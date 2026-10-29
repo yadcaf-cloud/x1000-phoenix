@@ -14,24 +14,50 @@ concurrency:
 
 jobs:
   collecte:
+    name: Collecte PMU et publication
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
+    env:
+      TZ: Europe/Paris
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+
+    defaults:
+      run:
+        shell: bash
+
     steps:
+
       - name: Recuperer le depot
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
+          ref: main
           fetch-depth: 0
+          persist-credentials: true
 
       - name: Installer Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      - name: Collecter et publier sans inventer
-        shell: bash
+      - name: Verifier Python et les programmes
         run: |
           set -euo pipefail
+
+          python --version
+
+          if [ ! -f pmu_engine.py ]; then
+            echo "::error::pmu_engine.py absent"
+            exit 1
+          fi
+
+          python -m py_compile pmu_engine.py
+
+      - name: Collecter et verifier les donnees PMU
+        run: |
+          set -euo pipefail
+
           python - <<'PY'
           import datetime as dt
           import json
@@ -44,7 +70,7 @@ jobs:
 
           ROOT = pathlib.Path.cwd()
           DATA = ROOT / "data"
-          DATA.mkdir(exist_ok=True)
+          DATA.mkdir(parents=True, exist_ok=True)
 
           PARIS = ZoneInfo("Europe/Paris")
           now = dt.datetime.now(PARIS)
@@ -55,22 +81,35 @@ jobs:
                   parents=True,
                   exist_ok=True
               )
-              with tempfile.NamedTemporaryFile(
-                  "w",
-                  encoding="utf-8",
-                  dir=path.parent,
-                  delete=False
-              ) as f:
-                  json.dump(
-                      obj,
-                      f,
-                      ensure_ascii=False,
-                      indent=2,
-                      allow_nan=False
-                  )
-                  f.write("\n")
-                  tmp = f.name
-              os.replace(tmp, path)
+
+              tmp = None
+
+              try:
+                  with tempfile.NamedTemporaryFile(
+                      mode="w",
+                      encoding="utf-8",
+                      dir=path.parent,
+                      delete=False
+                  ) as f:
+                      tmp = pathlib.Path(f.name)
+
+                      json.dump(
+                          obj,
+                          f,
+                          ensure_ascii=False,
+                          indent=2,
+                          allow_nan=False
+                      )
+
+                      f.write("\n")
+                      f.flush()
+                      os.fsync(f.fileno())
+
+                  os.replace(tmp, path)
+
+              finally:
+                  if tmp and tmp.exists():
+                      tmp.unlink()
 
           def read(path):
               try:
@@ -79,14 +118,17 @@ jobs:
                           encoding="utf-8"
                       )
                   )
+
               except (OSError, ValueError) as exc:
                   errors.append(
-                      f"{path}: {exc}"
+                      f"{path.name}: {exc}"
                   )
                   return None
 
           def run(script):
-              if not (ROOT / script).is_file():
+              path = ROOT / script
+
+              if not path.is_file():
                   errors.append(
                       f"Programme absent: {script}"
                   )
@@ -113,56 +155,78 @@ jobs:
           collecte_ok = run("pmu_engine.py")
 
           courses = []
-          source_path = DATA / "courses_pmu.json"
+          source_path = None
 
-          for candidate in (
+          candidates = (
               DATA / "collecte.json",
-          ):
-              if not candidate.exists():
-                  continue
+              DATA / "courses_pmu.json",
+          )
 
-              obj = read(candidate)
+          if collecte_ok:
+              for candidate in candidates:
+                  if not candidate.is_file():
+                      continue
 
-              if (
-                  isinstance(obj, dict)
-                  and isinstance(
-                      obj.get("courses"), list
+                  # Eviter une ancienne collecte.
+                  mtime = dt.datetime.fromtimestamp(
+                      candidate.stat().st_mtime,
+                      PARIS
                   )
-              ):
-                  courses = obj["courses"]
-                  source_path = candidate
-                  break
 
-              if isinstance(obj, list):
-                  courses = obj
-                  source_path = candidate
-                  break
+                  if mtime.date() != now.date():
+                      errors.append(
+                          f"Collecte ancienne: {candidate.name}"
+                      )
+                      continue
+
+                  obj = read(candidate)
+
+                  if isinstance(obj, dict):
+                      items = obj.get("courses")
+
+                  elif isinstance(obj, list):
+                      items = obj
+
+                  else:
+                      items = None
+
+                  if isinstance(items, list):
+                      courses = items
+                      source_path = candidate
+                      break
 
           valid = []
+          seen = set()
 
-          for c in courses:
-              if not isinstance(c, dict):
+          for course in courses:
+              if not isinstance(course, dict):
                   continue
 
-              if not isinstance(
-                  c.get("partants"), list
-              ):
+              ident = course.get("id")
+              depart = course.get("depart")
+              partants = course.get("partants")
+
+              if not ident or not depart:
                   continue
 
-              if not c.get("id"):
+              if not isinstance(partants, list):
                   continue
 
-              if not c.get("depart"):
+              if not partants:
                   continue
 
               if (
-                  c.get(
+                  course.get(
                       "localisation_france_verifiee"
                   ) is not True
               ):
                   continue
 
-              valid.append(c)
+              if str(ident) in seen:
+                  continue
+
+              seen.add(str(ident))
+              valid.append(course)
 
           status = (
               "OK"
@@ -173,29 +237,31 @@ jobs:
           if not valid:
               errors.append(
                   "Aucune course francaise "
-                  "verifiee et exploitable."
+                  "verifiee exploitable."
               )
+
+          diagnostic = {
+              "version": "2.0",
+              "date": now.date().isoformat(),
+              "mis_a_jour": now.isoformat(),
+              "statut": status,
+              "collecte_executee": collecte_ok,
+              "source_courses": (
+                  str(source_path.relative_to(ROOT))
+                  if source_path
+                  else None
+              ),
+              "courses_verifiees": len(valid),
+              "erreurs": errors,
+              "note": (
+                  "Aucun pronostic, FIGE ou "
+                  "resultat officiel invente."
+              )
+          }
 
           atomic(
               DATA / "diagnostic_unifie.json",
-              {
-                  "version": "1.0",
-                  "date": now.date().isoformat(),
-                  "mis_a_jour": now.isoformat(),
-                  "statut": status,
-                  "collecte_executee": collecte_ok,
-                  "source_courses": (
-                      str(source_path.relative_to(ROOT))
-                      if source_path.exists()
-                      else None
-                  ),
-                  "courses_verifiees": len(valid),
-                  "erreurs": errors,
-                  "note": (
-                      "Aucun pronostic ni resultat "
-                      "cree artificiellement."
-                  )
-              }
+              diagnostic
           )
 
           if collecte_ok and valid:
@@ -209,42 +275,86 @@ jobs:
                   }
               )
 
-          print(
-              f"X1000 PHOENIX : {status} ; "
-              f"courses verifiees : {len(valid)}"
-          )
+          print("=" * 50)
+          print("X1000 PHOENIX - COLLECTE UNIFIEE")
+          print("=" * 50)
+          print("Statut :", status)
+          print("Date :", now.isoformat())
+          print("Courses verifiees :", len(valid))
+          print("Source :", source_path)
+          print("=" * 50)
 
           for error in errors:
               print("DIAGNOSTIC:", error)
           PY
 
       - name: Publier les donnees sur main
-        shell: bash
         run: |
           set -euo pipefail
 
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/diagnostic_unifie.json
+          # Publier uniquement les fichiers attendus.
+          # Les FIGES historiques restent inchanges.
+          git add -f -- data/diagnostic_unifie.json
 
-          if test -f data/courses_verifiees.json; then
-            git add data/courses_verifiees.json
+          if [ -f data/courses_verifiees.json ]; then
+            git add -f -- data/courses_verifiees.json
           fi
 
           if git diff --cached --quiet; then
-            echo "Aucune modification"
+            echo "Aucune modification a publier"
             exit 0
           fi
 
-          git commit -m "X1000: actualisation des donnees verifiees"
+          git commit \
+            -m "X1000: actualisation PMU verifiee"
 
-          for i in 1 2 3; do
-            git pull --rebase origin main
+          # Conserver le commit de publication.
+          # Mettre temporairement de cote les
+          # autres modifications non commitees.
+          if [ -n "$(git status --porcelain)" ]; then
+            git stash push \
+              --include-untracked \
+              -m "X1000 modifications temporaires"
+          fi
+
+          # Ne jamais forcer la branche main.
+          # En cas de conflit, arreter proprement.
+          for i in 1 2 3 4 5; do
+
+            echo "Tentative de publication $i"
+
+            git fetch origin main
+
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Conflit Git detecte"
+              exit 1
+            fi
+
             if git push origin HEAD:main; then
+              echo "Publication X1000 reussie"
               exit 0
             fi
+
+            echo "Nouvelle tentative dans quelques secondes"
             sleep $((i * 3))
           done
 
+          echo "::error::Publication impossible"
           exit 1
+
+      - name: Rapport final
+        if: always()
+        run: |
+          echo "=================================="
+          echo "X1000 PHOENIX - RAPPORT FINAL"
+          echo "=================================="
+          echo "Date Paris : $(TZ=Europe/Paris date)"
+          echo "Depot : $GITHUB_REPOSITORY"
+          echo "Branche : main"
+          echo "Execution : $GITHUB_RUN_ID"
+          echo "=================================="
