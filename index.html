@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#071827">
 <title>🇸🇳🧠🔥 X1000 PHOENIX — Intelligence vivante</title>
+
 <style>
 :root{
  color-scheme:dark;
@@ -146,6 +147,7 @@ footer{
 }
 </style>
 </head>
+
 <body>
 
 <header id="accueil">
@@ -195,12 +197,15 @@ Courses PMU physiquement disputées en France
 <div class="card">Audits
 <div class="value" id="nbAudits">—</div></div>
 </div>
+
 <div class="controls">
 <button id="actualiser">🔄 Actualiser</button>
 <button id="verifier">🔍 Vérifier les fichiers</button>
 </div>
+
 <p id="dateMaj" class="muted"></p>
 <p id="datePublication" class="muted"></p>
+
 <div id="diagnosticCourt" class="notice">
 En attente des données.
 </div>
@@ -253,18 +258,21 @@ En attente des données.
 <section id="tableau">
 <h2>🏆 Tableau officiel X1000 — M1 à M5</h2>
 <div class="notice">
-Le tableau distingue les préqualifications des analyses
-prédictives. Une course qualifiée ne constitue pas un
-pronostic validé. Aucun cheval fictif n'est ajouté.
+Les analyses M1–M5 sont affichées uniquement lorsqu'elles
+existent dans les publications JSON. Une préqualification
+n'est pas un pronostic validé. Aucun cheval fictif n'est ajouté.
 Les FIGÉs historiques sont présentés séparément.
 </div>
+
 <div class="controls">
 <label for="choixPronostic">Course :</label>
 <select id="choixPronostic"></select>
 <button id="modeAuto">🤖 Mode automatique</button>
 </div>
+
 <p id="modeSelection" class="muted"></p>
 <p id="resumePronostic" class="muted"></p>
+
 <div class="table-wrap">
 <table>
 <thead>
@@ -339,147 +347,161 @@ Consulter GitHub Actions
 
 (() => {
 
-const OWNER="yadcaf-cloud";
-const REPO="x1000-phoenix";
-const ROOT=new URL("./",document.baseURI);
-const API=`https://api.github.com/repos/${OWNER}/${REPO}`;
-const $=id=>document.getElementById(id);
-const MOTEURS=["M1","M2","M3","M4","M5"];
+const OWNER = "yadcaf-cloud";
+const REPO = "x1000-phoenix";
+const ROOT = new URL("./", document.baseURI);
+const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
+const $ = id => document.getElementById(id);
+const MOTEURS = ["M1","M2","M3","M4","M5"];
 
-const CONFIG={
- courses:{
-  paths:[
-   "data/publication_courses.json",
-   "data/courses_verifiees.json",
-   "data/collecte.json",
-   "data/courses_pmu.json",
-   "data/courses.json"
-  ],
-  keys:["courses","courses_verifiees"]
- },
- pronostics:{
-  paths:[
-   "data/publication_pronostics.json",
-   "data/pronostics.json",
-   "data/analyses.json"
-  ],
-  keys:["pronostics","analyses"]
- },
- qualifications:{
-  paths:[
-   "data/publication_qualifications.json",
-   "data/selection_courses_m1_m5.json"
-  ],
-  keys:null
- },
- selection:{
-  paths:["data/selection_courses_m1_m5.json"],
-  keys:null
- },
- pv:{
-  paths:["data/publication_pv.json","data/pv.json"],
-  keys:["pv","proces_verbaux"]
- },
- figes:{
-  paths:["data/publication_figes.json","data/figes.json"],
-  keys:["figes","figés"]
- },
- audits:{
-  paths:["data/publication_audits.json","data/audits.json"],
-  keys:["audits"]
- },
- diagnosticAudits:{
-  paths:["data/publication_diagnostic_audits.json"],
-  keys:null
- },
- diagnostic:{
-  paths:["data/diagnostic_unifie.json"],
-  keys:null
- },
- rapport:{
-  paths:["data/publication_rapport.json"],
-  keys:null
- },
- collecte:{
-  paths:["data/collecte.json"],
-  keys:null
- }
+/*
+ CONFIGURATION UNIFIÉE
+ Les fichiers de publication réels sont prioritaires.
+*/
+const FICHIERS = {
+ collecte:[
+  "data/collecte.json"
+ ],
+ courses:[
+  "data/publication_courses.json",
+  "data/courses_verifiees.json",
+  "data/courses.json",
+  "data/collecte.json"
+ ],
+ analyses:[
+  "data/publication_analyses.json",
+  "data/analyses.json",
+  "data/publication_pronostics.json",
+  "data/pronostics.json"
+ ],
+ qualifications:[
+  "data/publication_qualifications.json",
+  "data/selection_courses_m1_m5.json"
+ ],
+ selection:[
+  "data/selection_courses_m1_m5.json"
+ ],
+ pv:[
+  "data/publication_pv.json",
+  "data/pv.json"
+ ],
+ figes:[
+  "data/publication_figes.json",
+  "data/figes.json"
+ ],
+ audits:[
+  "data/publication_audits.json",
+  "data/audits.json"
+ ],
+ diagnosticAudits:[
+  "data/publication_diagnostic_audits.json"
+ ],
+ diagnostic:[
+  "data/diagnostic_unifie.json"
+ ],
+ rapport:[
+  "data/publication_rapport.json",
+  "data/rapport.json"
+ ]
 };
 
-let donnees={},sources={},erreurs=[];
-let courses=[],analyses=[],pv=[],figes=[],audits=[];
-let chargement=false,chargementActions=false;
-let selectionPronostic="",selectionManuelle=false;
-let historiqueActions=[],statutActions="NON_VERIFIE";
-let dernierChargement=null;
+const CLES = {
+ courses:["courses","courses_verifiees"],
+ analyses:["analyses","pronostics"],
+ pv:["pv","proces_verbaux"],
+ figes:["figes","figés"],
+ audits:["audits"]
+};
 
-const objet=v=>
- v!==null&&typeof v==="object"&&!Array.isArray(v);
+let donnees = {};
+let sources = {};
+let erreurs = [];
+let courses = [];
+let analyses = [];
+let pv = [];
+let figes = [];
+let audits = [];
 
-const liste=v=>Array.isArray(v)?v:[];
+let chargement = false;
+let chargementActions = false;
+let selectionPronostic = "";
+let selectionManuelle = false;
+let historiqueActions = [];
+let statutActions = "NON_VERIFIE";
+let dernierChargement = null;
 
-const txt=(v,d="—")=>{
- if(v===null||v===undefined||v==="")return d;
+const objet = v =>
+ v !== null && typeof v === "object" &&
+ !Array.isArray(v);
+
+const liste = v => Array.isArray(v) ? v : [];
+
+const txt = (v,d="—") => {
+ if(v === null || v === undefined || v === "")
+  return d;
  if(Array.isArray(v))
   return v.map(x=>txt(x)).join(" - ");
- if(typeof v==="object")return JSON.stringify(v);
+ if(typeof v === "object")
+  return JSON.stringify(v);
  return String(v);
 };
 
-const premier=(o,cles)=>{
- if(!objet(o))return null;
+function premier(o,cles){
+ if(!objet(o)) return null;
  for(const k of cles){
-  if(o[k]!==undefined&&o[k]!==null&&o[k]!=="")
+  if(o[k] !== undefined &&
+     o[k] !== null &&
+     o[k] !== "")
    return o[k];
  }
  return null;
-};
+}
 
-const idCourse=c=>{
- if(!objet(c))return "";
- const id=premier(c,[
+function idCourse(c){
+ if(!objet(c)) return "";
+ const id = premier(c,[
   "course_id","id","identifiant","id_course"
  ]);
- if(id!==null)return String(id);
+ if(id !== null) return String(id);
 
- const date=txt(c.date??c.date_course,"");
- const r=premier(c,[
+ const date = txt(c.date ?? c.date_course,"");
+ const r = premier(c,[
   "reunion","numero_reunion","numReunion"
  ]);
- const n=premier(c,[
+ const n = premier(c,[
   "numero_course","numCourse","course"
  ]);
 
- if(date&&r!==null&&n!==null)
+ if(date && r !== null && n !== null)
   return `${date}-R${r}-C${n}`;
  return "";
-};
+}
 
-const depart=c=>premier(c,[
+const depart = c => premier(c,[
  "depart","heure_depart","date_depart",
  "heureDepart","dateDepart"
 ]);
 
-const participants=c=>liste(
+const participants = c => liste(
  premier(c,["partants","chevaux","participants"])
 );
 
-const numero=p=>String(
- premier(p,["numero","num","numPmu","numeroPmu"])??""
+const numero = p => String(
+ premier(p,["numero","num","numPmu","numeroPmu"]) ?? ""
 );
 
-const timestamp=v=>{
- if(!v)return NaN;
- if(v instanceof Date)return v.getTime();
- if(typeof v==="number")
-  return v<100000000000?v*1000:v;
- const t=Date.parse(String(v));
- return Number.isFinite(t)?t:NaN;
-};
+function timestamp(v){
+ if(!v) return NaN;
+ if(v instanceof Date) return v.getTime();
+ if(typeof v === "number")
+  return v < 100000000000 ? v*1000 : v;
+ const t = Date.parse(String(v));
+ return Number.isFinite(t) ? t : NaN;
+}
 
 function dateParis(v){
- const t=timestamp(v);
- if(!Number.isFinite(t))return "—";
+ const t = timestamp(v);
+ if(!Number.isFinite(t)) return "—";
  return new Intl.DateTimeFormat("fr-FR",{
   timeZone:"Europe/Paris",
   dateStyle:"short",
@@ -488,124 +510,132 @@ function dateParis(v){
 }
 
 function horloge(){
- $("horloge").textContent=
-  "Heure de Paris : "+dateParis(new Date());
+ $("horloge").textContent =
+  "Heure de Paris : " + dateParis(new Date());
 }
 
 function statut(id,message,classe="warn"){
- const e=$(id);
+ const e = $(id);
  if(e){
-  e.textContent=message;
-  e.className=classe;
+  e.textContent = message;
+  e.className = classe;
  }
 }
 
 function cellule(tr,v,classe=""){
- const td=tr.insertCell();
- td.textContent=txt(v);
- if(classe)td.className=classe;
+ const td = tr.insertCell();
+ td.textContent = txt(v);
+ if(classe) td.className = classe;
  return td;
 }
 
 function messageTable(tbody,n,message){
- const td=tbody.insertRow().insertCell();
- td.colSpan=n;
- td.textContent=message;
+ const td = tbody.insertRow().insertCell();
+ td.colSpan = n;
+ td.textContent = message;
 }
 
 function compteur(id,valeur,disponible=true){
- $(id).textContent=disponible?valeur:"—";
+ $(id).textContent = disponible ? valeur : "—";
 }
 
 function nonPartants(c){
- const resultat=new Set();
+ const resultat = new Set();
 
- for(const p of liste(c?.non_partants??c?.nonPartants)){
-  const n=objet(p)?numero(p):String(p);
-  if(n)resultat.add(n);
+ for(const p of liste(c?.non_partants ?? c?.nonPartants)){
+  const n = objet(p) ? numero(p) : String(p);
+  if(n) resultat.add(n);
  }
 
  for(const p of participants(c)){
-  if(!objet(p))continue;
-  const s=String(p.statut??p.status??"")
+  if(!objet(p)) continue;
+
+  const s = String(p.statut ?? p.status ?? "")
    .toUpperCase().replace(/[\s-]+/g,"_");
 
   if(
-   p.non_partant===true||
-   p.nonPartant===true||
+   p.non_partant === true ||
+   p.nonPartant === true ||
    ["NP","NON_PARTANT","NONPARTANT","FORFAIT"].includes(s)
   ){
-   if(numero(p))resultat.add(numero(p));
+   if(numero(p)) resultat.add(numero(p));
   }
  }
  return resultat;
 }
 
 function effectif(c){
- const p=participants(c).filter(objet);
+ const p = participants(c).filter(objet);
  if(p.length){
-  const np=nonPartants(c);
+  const np = nonPartants(c);
   return p.filter(x=>!np.has(numero(x))).length;
  }
 
- const n=premier(c,[
+ const n = premier(c,[
   "nombre_partants","nombrePartants","nb_partants"
  ]);
- return n!==null&&Number.isInteger(Number(n))&&Number(n)>=0
-  ?Number(n):null;
+ return n !== null &&
+  Number.isInteger(Number(n)) &&
+  Number(n) >= 0 ? Number(n) : null;
 }
 
 function france(c){
- return c?.localisation_france_verifiee===true||
- c?.course_francaise===true||
+ return c?.localisation_france_verifiee === true ||
+ c?.course_francaise === true ||
  ["FR","FRA","FRANCE"].includes(
-  String(c?.pays??c?.country??"").trim().toUpperCase()
+  String(c?.pays ?? c?.country ?? "")
+   .trim().toUpperCase()
  );
 }
 
-function normaliserCollection(data,config){
- if(Array.isArray(data))return data;
- if(!objet(data))throw Error("JSON non exploitable");
+function extraireCollection(data,nom){
+ if(Array.isArray(data)) return data;
+ if(!objet(data))
+  throw Error("Structure JSON invalide");
 
- for(const cle of config.keys??[]){
-  if(Array.isArray(data[cle]))return data[cle];
+ for(const cle of CLES[nom] ?? []){
+  if(Array.isArray(data[cle]))
+   return data[cle];
  }
 
  if(objet(data.data)){
-  for(const cle of config.keys??[]){
+  for(const cle of CLES[nom] ?? []){
    if(Array.isArray(data.data[cle]))
     return data.data[cle];
   }
  }
 
- throw Error("Collection attendue absente");
+ throw Error("Collection absente : " + nom);
 }
 
 async function lireJSON(chemin){
- const url=new URL(chemin,ROOT);
+ const url = new URL(chemin,ROOT);
  url.searchParams.set("_",String(Date.now()));
 
- const controle=new AbortController();
- const minuterie=setTimeout(()=>controle.abort(),10000);
+ const controle = new AbortController();
+ const minuterie = setTimeout(
+  ()=>controle.abort(),12000
+ );
 
  try{
-  const r=await fetch(url,{
+  const r = await fetch(url,{
    cache:"no-store",
    signal:controle.signal,
    headers:{Accept:"application/json"}
   });
 
-  if(!r.ok)throw Error("HTTP "+r.status);
+  if(!r.ok)
+   throw Error("HTTP " + r.status);
 
-  const data=await r.json();
+  const data = await r.json();
 
-  if(!objet(data)&&!Array.isArray(data))
-   throw Error("Structure JSON invalide");
+  if(!objet(data) && !Array.isArray(data))
+   throw Error("JSON non exploitable");
 
   return data;
 
  }catch(e){
-  if(e.name==="AbortError")
+  if(e.name === "AbortError")
    throw Error("Délai dépassé");
   throw e;
  }finally{
@@ -614,21 +644,22 @@ async function lireJSON(chemin){
 }
 
 async function charger(nom){
- const config=CONFIG[nom],problemes=[];
+ const problemes = [];
 
- for(const chemin of config.paths){
+ for(const chemin of FICHIERS[nom]){
   try{
-   const brut=await lireJSON(chemin);
-   const valeur=config.keys
-    ?normaliserCollection(brut,config)
-    :brut;
+   const brut = await lireJSON(chemin);
+   const valeur = CLES[nom]
+    ? extraireCollection(brut,nom)
+    : brut;
 
-   sources[nom]={
+   sources[nom] = {
     statut:"ACCESSIBLE",
     fichier:chemin,
-    elements:Array.isArray(valeur)?valeur.length:null,
+    elements:Array.isArray(valeur) ? valeur.length : null,
     essais:problemes
    };
+
    return valeur;
 
   }catch(e){
@@ -636,37 +667,40 @@ async function charger(nom){
   }
  }
 
- sources[nom]={
+ sources[nom] = {
   statut:"INDISPONIBLE",
-  fichier:config.paths.join(" | "),
+  fichier:FICHIERS[nom].join(" | "),
   erreurs:problemes
  };
+
  erreurs.push(nom+" : "+problemes.join(" | "));
  return null;
 }
 
 function remplirSelect(select,items,ancien,label){
  select.replaceChildren(new Option(label,""));
- const vus=new Set();
+ const vus = new Set();
 
  for(const c of items){
-  const id=idCourse(c);
-  if(!id||vus.has(id))continue;
+  const id = idCourse(c);
+  if(!id || vus.has(id)) continue;
   vus.add(id);
+
   select.add(new Option(
    `${id} — ${txt(c.hippodrome)} — ${dateParis(depart(c))}`,
    id
   ));
  }
- select.value=vus.has(ancien)?ancien:"";
+
+ select.value = vus.has(ancien) ? ancien : "";
 }
 
 function afficherCourses(){
- const tbody=$("listeCourses");
+ const tbody = $("listeCourses");
  tbody.replaceChildren();
 
- const disponible=donnees.courses!==null;
- const fr=courses.filter(france).sort(
+ const disponible = donnees.courses !== null;
+ const fr = courses.filter(france).sort(
   (a,b)=>(timestamp(depart(a))||0)-
         (timestamp(depart(b))||0)
  );
@@ -674,12 +708,13 @@ function afficherCourses(){
  compteur("nbCourses",courses.length,disponible);
  compteur("nbFrance",fr.length,disponible);
 
- const comptes=fr.map(effectif).filter(x=>x!==null);
+ const comptes = fr.map(effectif).filter(x=>x!==null);
 
  compteur(
   "nbPartants",
   comptes.reduce((a,b)=>a+b,0),
-  disponible&&(!fr.length||comptes.length===fr.length)
+  disponible &&
+  (!fr.length || comptes.length===fr.length)
  );
 
  compteur(
@@ -689,14 +724,14 @@ function afficherCourses(){
  );
 
  for(const c of fr){
-  const tr=tbody.insertRow();
+  const tr = tbody.insertRow();
   [
    idCourse(c),
    c.hippodrome,
    dateParis(depart(c)),
    effectif(c),
    nonPartants(c).size,
-   c.statut??"À contrôler"
+   c.statut ?? "À contrôler"
   ].forEach(v=>cellule(tr,v));
  }
 
@@ -704,49 +739,55 @@ function afficherCourses(){
   messageTable(
    tbody,6,
    disponible
-    ?"Aucune course française confirmée."
-    :"Source des courses indisponible."
+    ? "Aucune course française confirmée."
+    : "Source des courses indisponible."
   );
  }
 
  statut(
   "etatCourses",
   !disponible
-   ?"🔴 Fichiers de courses indisponibles"
-   :fr.length
-    ?`🟢 ${fr.length} course(s) française(s) publiée(s) — fraîcheur à contrôler`
-    :"🟡 Aucune course française confirmée",
-  !disponible?"bad":fr.length?"ok":"warn"
+   ? "🔴 Fichiers de courses indisponibles"
+   : fr.length
+    ? `🟢 ${fr.length} course(s) française(s) publiée(s) — fraîcheur à contrôler`
+    : "🟡 Aucune course française confirmée",
+  !disponible ? "bad" : fr.length ? "ok" : "warn"
  );
 
- const select=$("choixCourse"),ancien=select.value;
- remplirSelect(select,fr,ancien,"Sélectionner une course");
+ const select = $("choixCourse");
+ const ancien = select.value;
 
- if(!select.value&&fr.length)
-  select.value=idCourse(fr[0]);
+ remplirSelect(
+  select,fr,ancien,"Sélectionner une course"
+ );
+
+ if(!select.value && fr.length)
+  select.value = idCourse(fr[0]);
 
  afficherPartants();
 }
 
 function afficherPartants(){
- const tbody=$("listePartants");
+ const tbody = $("listePartants");
  tbody.replaceChildren();
 
- const c=courses.find(
+ const c = courses.find(
   x=>idCourse(x)===$("choixCourse").value
  );
 
  if(!c){
-  $("detailsCourse").textContent=
+  $("detailsCourse").textContent =
    "Sélectionnez une course.";
   messageTable(tbody,6,"Aucune course sélectionnée.");
   return;
  }
 
- const np=nonPartants(c),vus=new Set(),uniques=[];
+ const np = nonPartants(c);
+ const vus = new Set();
+ const uniques = [];
 
  for(const h of participants(c)){
-  if(!objet(h)||!numero(h)||vus.has(numero(h)))
+  if(!objet(h) || !numero(h) || vus.has(numero(h)))
    continue;
   vus.add(numero(h));
   uniques.push(h);
@@ -756,30 +797,33 @@ function afficherPartants(){
   (a,b)=>Number(numero(a))-Number(numero(b))
  );
 
- const actifs=uniques.filter(
+ const actifs = uniques.filter(
   h=>!np.has(numero(h))
  ).length;
 
- $("detailsCourse").textContent=
+ $("detailsCourse").textContent =
   `${idCourse(c)} — ${txt(c.hippodrome)} — `+
   `Départ : ${dateParis(depart(c))} — `+
   `${actifs} partants listés — `+
   `${uniques.length-actifs} non-partants listés`;
 
  for(const h of uniques){
-  const n=numero(h),absent=np.has(n);
-  const tr=tbody.insertRow();
+  const n = numero(h);
+  const absent = np.has(n);
+  const tr = tbody.insertRow();
 
   [
    n,
-   h.nom??h.cheval??h.nomCheval,
-   absent?"🔴 NON-PARTANT":"🟢 PARTANT SELON COLLECTE",
-   h.jockey||h.driver||h.nomJockey,
-   h.entraineur??h.nomEntraineur,
+   h.nom ?? h.cheval ?? h.nomCheval,
+   absent
+    ? "🔴 NON-PARTANT"
+    : "🟢 PARTANT SELON COLLECTE",
+   h.jockey || h.driver || h.nomJockey,
+   h.entraineur ?? h.nomEntraineur,
    h.musique
   ].forEach(
    (v,i)=>cellule(
-    tr,v,i===2?(absent?"bad":"ok"):""
+    tr,v,i===2 ? (absent?"bad":"ok") : ""
    )
   );
  }
@@ -791,50 +835,50 @@ function afficherPartants(){
 }
 
 function ordre(m){
- const v=m?.ordre_espere??
-  m?.ordre_arrivee_espere??m?.ordre;
+ const v = m?.ordre_espere ??
+  m?.ordre_arrivee_espere ?? m?.ordre;
 
- if(!Array.isArray(v))return [];
+ if(!Array.isArray(v)) return [];
 
- const nums=v.map(x=>Number(x));
+ const nums = v.map(x=>Number(x));
 
  if(
-  nums.some(x=>!Number.isInteger(x)||x<=0)||
+  nums.some(x=>!Number.isInteger(x)||x<=0) ||
   new Set(nums).size!==nums.length
- )return [];
+ ) return [];
 
  return nums;
 }
 
 function groupesAnalyses(){
- const map=new Map();
+ const map = new Map();
 
  function ajouter(id,m,meta={}){
-  if(!id||!objet(m))return;
+  if(!id || !objet(m)) return;
 
-  const nom=String(
-   m.moteur??m.nom??""
+  const nom = String(
+   m.moteur ?? m.nom ?? ""
   ).toUpperCase();
 
-  if(!MOTEURS.includes(nom))return;
+  if(!MOTEURS.includes(nom)) return;
 
   if(!map.has(id))
    map.set(id,new Map());
 
-  const groupe=map.get(id);
-  const item={...meta,...m,moteur:nom};
-  const ancien=groupe.get(nom);
+  const groupe = map.get(id);
+  const item = {...meta,...m,moteur:nom};
+  const ancien = groupe.get(nom);
 
-  const t=timestamp(
-   item.analyse_a??item.heure_paris
+  const t = timestamp(
+   item.analyse_a ?? item.heure_paris
   );
-  const old=timestamp(
-   ancien?.analyse_a??ancien?.heure_paris
+  const old = timestamp(
+   ancien?.analyse_a ?? ancien?.heure_paris
   );
 
   if(
-   !ancien||
-   (!Number.isFinite(old)&&Number.isFinite(t))||
+   !ancien ||
+   (!Number.isFinite(old)&&Number.isFinite(t)) ||
    (Number.isFinite(t)&&t>=old)
   ){
    groupe.set(nom,item);
@@ -842,14 +886,15 @@ function groupesAnalyses(){
  }
 
  function parcourir(a){
-  if(!objet(a))return;
+  if(!objet(a)) return;
 
-  const id=idCourse(a),bloc=a.moteurs;
+  const id = idCourse(a);
+  const bloc = a.moteurs;
 
-  if(Array.isArray(bloc)||objet(bloc)){
-   const entries=Array.isArray(bloc)
-    ?bloc
-    :Object.entries(bloc)
+  if(Array.isArray(bloc) || objet(bloc)){
+   const entries = Array.isArray(bloc)
+    ? bloc
+    : Object.entries(bloc)
      .filter(([,v])=>objet(v))
      .map(([m,v])=>({...v,moteur:m}));
 
@@ -867,12 +912,11 @@ function groupesAnalyses(){
 }
 
 function lignesSelection(){
- const data=donnees.selection;
-
- if(!objet(data)||!objet(data.moteurs))
+ const data = donnees.selection;
+ if(!objet(data) || !objet(data.moteurs))
   return [];
 
- const resultat=[];
+ const resultat = [];
 
  for(const moteur of MOTEURS){
   for(const q of liste(data.moteurs[moteur])){
@@ -885,11 +929,11 @@ function lignesSelection(){
 }
 
 function lignesQualifications(){
- const data=donnees.qualifications;
+ const data = donnees.qualifications;
 
- if(data===null)return null;
- if(Array.isArray(data))return data;
- if(!objet(data))return [];
+ if(data === null) return null;
+ if(Array.isArray(data)) return data;
+ if(!objet(data)) return [];
 
  for(const cle of [
   "qualifications",
@@ -902,7 +946,7 @@ function lignesQualifications(){
  }
 
  if(objet(data.moteurs)){
-  const resultat=[];
+  const resultat = [];
 
   for(const moteur of MOTEURS){
    for(const q of liste(data.moteurs[moteur])){
@@ -916,66 +960,58 @@ function lignesQualifications(){
  return [];
 }
 
-/* Correction stricte :
-   NON_QUALIFIEE ne doit jamais être
-   interprété comme QUALIFIEE.
-*/
 function estQualifiee(q){
- if(!objet(q))return false;
+ if(!objet(q)) return false;
 
- if(q.qualifiee===false||q.qualifie===false)
+ if(q.qualifiee===false || q.qualifie===false)
   return false;
 
- const s=String(
-  q.qualification??q.statut??""
+ const s = String(
+  q.qualification ?? q.statut ?? ""
  ).trim().toUpperCase();
 
- if(
-  /NON|INVALIDE|REFUS|REJET|ATTENTE|EXCLU/.test(s)
- )return false;
+ if(/NON|INVALIDE|REFUS|REJET|ATTENTE|EXCLU/.test(s))
+  return false;
 
- if(q.qualifiee===true||q.qualifie===true)
+ if(q.qualifiee===true || q.qualifie===true)
   return true;
 
  return [
-  "QUALIFIEE",
-  "QUALIFIE",
-  "VALIDEE",
-  "VALIDE",
-  "VERT"
+  "QUALIFIEE","QUALIFIE",
+  "VALIDEE","VALIDE","VERT"
  ].includes(s);
 }
 
 function afficherPronostics(){
- const map=groupesAnalyses();
- const qualifications=lignesQualifications();
- const selection=lignesSelection();
+ const map = groupesAnalyses();
+ const qualifications = lignesQualifications();
+ const selection = lignesSelection();
 
- const lignesQ=qualifications===null
-  ?selection:qualifications;
+ const lignesQ = qualifications===null
+  ? selection : qualifications;
 
- const idsQ=new Set();
+ const idsQ = new Set();
 
  for(const q of lignesQ){
-  if(estQualifiee(q)&&idCourse(q))
+  if(estQualifiee(q) && idCourse(q))
    idsQ.add(idCourse(q));
  }
 
- const totalDeclare=Number(
+ const totalDeclare = Number(
   donnees.qualifications?.courses_qualifiees
  );
 
- const totalQualifications=
-  donnees.qualifications?.courses_qualifiees!==undefined&&
-  Number.isInteger(totalDeclare)&&
+ const totalQualifications =
+  donnees.qualifications?.courses_qualifiees !== undefined &&
+  Number.isInteger(totalDeclare) &&
   totalDeclare>=0
-   ?totalDeclare
-   :null;
+   ? totalDeclare
+   : null;
 
  compteur(
   "nbSelection",
-  totalQualifications??idsQ.size,
-  qualifications!==null||donnees.selection!==null
+  totalQualifications ?? idsQ.size,
+  qualifications!==null || donnees.selection!==null
  );
 
  compteur(
@@ -983,10 +1019,10 @@ function afficherPronostics(){
   [...map.values()].reduce(
    (n,g)=>n+g.size,0
   ),
-  donnees.pronostics!==null||map.size>0
+  donnees.analyses!==null || map.size>0
  );
 
- const connus=new Map();
+ const connus = new Map();
 
  for(const c of courses){
   if(idCourse(c))
@@ -994,34 +1030,30 @@ function afficherPronostics(){
  }
 
  for(const a of analyses){
-  if(
-   objet(a)&&idCourse(a)&&
-   !connus.has(idCourse(a))
-  )connus.set(idCourse(a),a);
+  if(objet(a) && idCourse(a) && !connus.has(idCourse(a)))
+   connus.set(idCourse(a),a);
  }
 
  for(const q of [...selection,...lignesQ]){
-  if(
-   objet(q)&&idCourse(q)&&
-   !connus.has(idCourse(q))
-  )connus.set(idCourse(q),q);
+  if(objet(q) && idCourse(q) && !connus.has(idCourse(q)))
+   connus.set(idCourse(q),q);
  }
 
- const disponibles=[...connus.values()].filter(
-  c=>map.has(idCourse(c))||idsQ.has(idCourse(c))
+ const disponibles = [...connus.values()].filter(
+  c=>map.has(idCourse(c)) || idsQ.has(idCourse(c))
  );
 
- const futures=disponibles.filter(
+ const futures = disponibles.filter(
   c=>timestamp(depart(c))>Date.now()
  ).sort(
   (a,b)=>timestamp(depart(a))-timestamp(depart(b))
  );
 
- const qualifiees=futures.filter(
+ const qualifiees = futures.filter(
   c=>idsQ.has(idCourse(c))
  );
 
- const select=$("choixPronostic");
+ const select = $("choixPronostic");
 
  remplirSelect(
   select,
@@ -1031,89 +1063,89 @@ function afficherPronostics(){
  );
 
  if(
-  selectionManuelle&&
+  selectionManuelle &&
   !disponibles.some(
    c=>idCourse(c)===selectionPronostic
   )
- )selectionManuelle=false;
+ ) selectionManuelle=false;
 
  if(!selectionManuelle){
-  const choix=
-   qualifiees[0]??futures[0]??disponibles[0];
+  const choix =
+   qualifiees[0] ?? futures[0] ?? disponibles[0];
 
-  selectionPronostic=choix
-   ?idCourse(choix):"";
+  selectionPronostic = choix
+   ? idCourse(choix) : "";
  }
 
- select.value=selectionPronostic;
+ select.value = selectionPronostic;
 
- $("modeSelection").textContent=
+ $("modeSelection").textContent =
   selectionManuelle
-   ?"👆 Mode manuel"
-   :`🤖 Mode automatique — ${qualifiees.length} course(s) préqualifiée(s) future(s).`;
+   ? "👆 Mode manuel"
+   : `🤖 Mode automatique — ${qualifiees.length} course(s) préqualifiée(s) future(s).`;
 
- const c=connus.get(selectionPronostic);
+ const c = connus.get(selectionPronostic);
 
- $("resumePronostic").textContent=c
-  ?`${idCourse(c)} — ${txt(c.hippodrome)} — Départ : ${dateParis(depart(c))}`
-  :"Aucune course analysée ou qualifiée publiée.";
+ $("resumePronostic").textContent = c
+  ? `${idCourse(c)} — ${txt(c.hippodrome)} — Départ : ${dateParis(depart(c))}`
+  : "Aucune course analysée ou qualifiée publiée.";
 
- const tbody=$("tableauMoteurs");
+ const tbody = $("tableauMoteurs");
  tbody.replaceChildren();
 
- const groupe=map.get(selectionPronostic)??new Map();
+ const groupe = map.get(selectionPronostic) ?? new Map();
 
- const qualificationCourse=lignesQ.find(
+ const qualificationCourse = lignesQ.find(
   x=>idCourse(x)===selectionPronostic
  );
 
  for(const nom of MOTEURS){
-  const m=groupe.get(nom);
+  const m = groupe.get(nom);
 
-  const q=lignesQ.find(x=>
-   idCourse(x)===selectionPronostic&&
+  const q = lignesQ.find(x=>
+   idCourse(x)===selectionPronostic &&
    String(x.moteur??"").toUpperCase()===nom
   );
 
-  const o=m?ordre(m):[];
+  const o = m ? ordre(m) : [];
 
-  const heure=m?.analyse_a??m?.heure_paris;
+  const heure = m?.analyse_a ?? m?.heure_paris;
 
-  const avant=
-   Number.isFinite(timestamp(heure))&&
-   Number.isFinite(timestamp(depart(c)))&&
+  const avant =
+   Number.isFinite(timestamp(heure)) &&
+   Number.isFinite(timestamp(depart(c))) &&
    timestamp(heure)<timestamp(depart(c));
 
-  const tr=tbody.insertRow();
+  const tr = tbody.insertRow();
 
-  const qualification=
-   q?.qualification??
-   qualificationCourse?.qualification??
-   m?.qualification??
+  const qualification =
+   q?.qualification ??
+   qualificationCourse?.qualification ??
+   m?.qualification ??
    "NON QUALIFIÉ";
 
-  const validation=
+  const validation =
    m?.fige===true
-    ?"FIGÉ DÉCLARÉ — INTÉGRITÉ À VÉRIFIER"
-    :m
-     ?avant
-      ?"ANALYSE AVANT DÉPART — NON FIGÉ"
-      :"NON FIGÉ / HORAIRE NON CONFIRMÉ"
-     :q||qualificationCourse
-      ?"PRÉQUALIFICATION — PAS DE PRONOSTIC"
-      :"NON PUBLIÉ";
+    ? "FIGÉ DÉCLARÉ — INTÉGRITÉ À VÉRIFIER"
+    : m
+     ? avant
+      ? "ANALYSE AVANT DÉPART — NON FIGÉ"
+      : "NON FIGÉ / HORAIRE NON CONFIRMÉ"
+     : q || qualificationCourse
+      ? "PRÉQUALIFICATION — PAS DE PRONOSTIC"
+      : "NON PUBLIÉ";
 
   [
    nom,
-   m?(m.gagnant_espere??o[0]??null):null,
-   m?(m.meilleur_place??o[1]??null):null,
-   o.length?o:"Aucun ordre publié",
-   m?.pari_retenu??"Aucun pari validé",
+   m ? (m.gagnant_espere ?? o[0] ?? null) : null,
+   m ? (m.meilleur_place ?? o[1] ?? null) : null,
+   o.length ? o : "Aucun ordre publié",
+   m?.pari_retenu ?? "Aucun pari validé",
    qualification,
    validation,
    dateParis(
-    heure??
-    q?.heure_verification??
+    heure ??
+    q?.heure_verification ??
     qualificationCourse?.verifie_a
    )
   ].forEach(
@@ -1124,18 +1156,18 @@ function afficherPronostics(){
  statut(
   "etatPronostics",
   groupe.size
-   ?`${groupe.size} analyse(s) prédictive(s) publiée(s) pour cette course.`
-   :idsQ.has(selectionPronostic)
-    ?"🟡 Course préqualifiée, mais aucun pronostic M1–M5 publié."
-    :"🟡 Aucun pronostic exploitable pour cette course."
+   ? `${groupe.size} analyse(s) M1–M5 publiée(s) pour cette course.`
+   : idsQ.has(selectionPronostic)
+    ? "🟡 Course préqualifiée, mais aucun pronostic M1–M5 publié."
+    : "🟡 Aucun pronostic exploitable pour cette course."
  );
 }
 
 function afficherDocuments(nom,etatId,contenuId){
- const cible=$(contenuId);
+ const cible = $(contenuId);
  cible.replaceChildren();
 
- const items=liste(donnees[nom]);
+ const items = liste(donnees[nom]);
 
  if(donnees[nom]===null){
   statut(
@@ -1147,10 +1179,7 @@ function afficherDocuments(nom,etatId,contenuId){
  }
 
  if(!items.length){
-  statut(
-   etatId,
-   "🟡 Aucun document publié"
-  );
+  statut(etatId,"🟡 Aucun document publié");
   return;
  }
 
@@ -1161,20 +1190,18 @@ function afficherDocuments(nom,etatId,contenuId){
  );
 
  items.slice(0,100).forEach((d,i)=>{
-  const details=document.createElement("details");
-  details.className="card";
+  const details = document.createElement("details");
+  details.className = "card";
 
-  const summary=document.createElement("summary");
+  const summary = document.createElement("summary");
+  summary.textContent =
+   `${txt(d?.course_id ?? d?.id ?? d?.pv_id,
+   "Document "+(i+1))} — `+
+   txt(d?.statut ?? d?.validation ?? d?.status,
+   "État inconnu");
 
-  summary.textContent=
-   `${txt(d?.course_id??d?.id??d?.pv_id,"Document "+(i+1))} — `+
-   txt(
-    d?.statut??d?.validation??d?.status,
-    "État inconnu"
-   );
-
-  const pre=document.createElement("pre");
-  pre.textContent=JSON.stringify(d,null,2);
+  const pre = document.createElement("pre");
+  pre.textContent = JSON.stringify(d,null,2);
 
   details.append(summary,pre);
   cible.append(details);
@@ -1182,12 +1209,11 @@ function afficherDocuments(nom,etatId,contenuId){
 }
 
 function afficherDiagnosticAudits(){
- const data=donnees.diagnosticAudits;
-
- $("diagnosticAudits").textContent=
+ const data = donnees.diagnosticAudits;
+ $("diagnosticAudits").textContent =
   data===null
-   ?"Diagnostic des audits indisponible."
-   :JSON.stringify(data,null,2);
+   ? "Diagnostic des audits indisponible."
+   : JSON.stringify(data,null,2);
 }
 
 function etatRun(run){
@@ -1208,16 +1234,13 @@ function etatRun(run){
  }
 }
 
-/* Affichage de tous les workflows
-   au lieu d'un seul fichier YAML.
-*/
 async function afficherActions(){
- if(chargementActions)return;
+ if(chargementActions) return;
 
- chargementActions=true;
- $("actualiserActions").disabled=true;
+ chargementActions = true;
+ $("actualiserActions").disabled = true;
 
- const cible=$("contenuActions");
+ const cible = $("contenuActions");
  cible.replaceChildren();
 
  statut(
@@ -1225,13 +1248,13 @@ async function afficherActions(){
   "🟡 Consultation GitHub Actions..."
  );
 
- const controle=new AbortController();
- const minuterie=setTimeout(
-  ()=>controle.abort(),10000
+ const controle = new AbortController();
+ const minuterie = setTimeout(
+  ()=>controle.abort(),12000
  );
 
  try{
-  const r=await fetch(
+  const r = await fetch(
    API+"/actions/runs?per_page=20",
    {
     cache:"no-store",
@@ -1245,13 +1268,13 @@ async function afficherActions(){
   if(!r.ok)
    throw Error("HTTP "+r.status);
 
-  const data=await r.json();
-  const runs=liste(data.workflow_runs);
+  const data = await r.json();
+  const runs = liste(data.workflow_runs);
 
-  historiqueActions=runs;
+  historiqueActions = runs;
 
   if(!runs.length){
-   statutActions="AUCUNE_EXECUTION";
+   statutActions = "AUCUNE_EXECUTION";
    statut(
     "etatActions",
     "🟡 Aucune exécution GitHub Actions visible"
@@ -1259,10 +1282,8 @@ async function afficherActions(){
    return;
   }
 
-  const [etat,classe]=etatRun(runs[0]);
-
-  statutActions=
-   runs[0].conclusion??runs[0].status;
+  const [etat,classe] = etatRun(runs[0]);
+  statutActions = runs[0].conclusion ?? runs[0].status;
 
   statut(
    "etatActions",
@@ -1271,29 +1292,27 @@ async function afficherActions(){
   );
 
   for(const run of runs){
-   const bloc=document.createElement("div");
-   bloc.className="card";
+   const bloc = document.createElement("div");
+   bloc.className = "card";
 
-   const p=document.createElement("p");
-
-   p.textContent=
+   const p = document.createElement("p");
+   p.textContent =
     `${txt(run.name)} — #${txt(run.run_number)} — `+
-    `${etatRun(run)[0]} — `+
-    `${dateParis(run.created_at)}`;
+    `${etatRun(run)[0]} — ${dateParis(run.created_at)}`;
 
    bloc.append(p);
 
    if(
-    typeof run.html_url==="string"&&
+    typeof run.html_url==="string" &&
     run.html_url.startsWith(
      `https://github.com/${OWNER}/${REPO}/actions/runs/`
     )
    ){
-    const a=document.createElement("a");
-    a.href=run.html_url;
-    a.target="_blank";
-    a.rel="noopener noreferrer";
-    a.textContent="Voir les détails GitHub";
+    const a = document.createElement("a");
+    a.href = run.html_url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = "Voir les détails GitHub";
     bloc.append(a);
    }
 
@@ -1301,29 +1320,25 @@ async function afficherActions(){
   }
 
  }catch(e){
-  statutActions="INACCESSIBLE";
-
+  statutActions = "INACCESSIBLE";
   statut(
    "etatActions",
    "🟡 GitHub Actions indisponible : "+
-   (
-    e.name==="AbortError"
-     ?"Délai dépassé"
-     :e.message
-   )
+   (e.name==="AbortError"
+    ? "Délai dépassé" : e.message)
   );
 
  }finally{
   clearTimeout(minuterie);
-  chargementActions=false;
-  $("actualiserActions").disabled=false;
+  chargementActions = false;
+  $("actualiserActions").disabled = false;
  }
 }
 
 function verifier(){
- const rapport={
+ const rapport = {
   projet:"X1000 PHOENIX",
-  version_interface:"11.1-CORRIGEE",
+  version_interface:"12.0-UNIFIEE",
   verification:dateParis(new Date()),
   dernier_chargement:dateParis(dernierChargement),
   courses:courses.length,
@@ -1331,9 +1346,7 @@ function verifier(){
   pv:pv.length,
   figes:figes.length,
   audits:audits.length,
-  qualifications:lignesQualifications()?.length??null,
-  courses_qualifiees_declarees:
-   donnees.qualifications?.courses_qualifiees??null,
+  qualifications:lignesQualifications()?.length ?? null,
   github_actions:{
    statut:statutActions,
    executions:historiqueActions.map(r=>({
@@ -1352,171 +1365,149 @@ function verifier(){
    "L'accessibilité des fichiers ne prouve pas leur authenticité, leur fraîcheur ou l'intégrité cryptographique des FIGÉs."
  };
 
- $("journal").textContent=
+ $("journal").textContent =
   JSON.stringify(rapport,null,2);
 
- const cible=$("sourcesDiagnostic");
+ const cible = $("sourcesDiagnostic");
  cible.replaceChildren();
 
  for(const [nom,info] of Object.entries(sources)){
-  const bloc=document.createElement("div");
-  bloc.className="card";
+  const bloc = document.createElement("div");
+  bloc.className = "card";
 
-  const titre=document.createElement("strong");
-  titre.textContent=nom.toUpperCase();
+  const titre = document.createElement("strong");
+  titre.textContent = nom.toUpperCase();
 
-  const p=document.createElement("p");
-  p.textContent=
+  const p = document.createElement("p");
+  p.textContent =
    info.statut+" — "+txt(info.fichier);
-
-  p.className=
-   info.statut==="ACCESSIBLE"?"ok":"bad";
+  p.className =
+   info.statut==="ACCESSIBLE" ? "ok" : "bad";
 
   bloc.append(titre,p);
 
   if(info.erreurs){
-   const err=document.createElement("p");
-   err.className="bad";
-   err.textContent=info.erreurs.join(" | ");
+   const err = document.createElement("p");
+   err.className = "bad";
+   err.textContent = info.erreurs.join(" | ");
    bloc.append(err);
   }
 
   cible.append(bloc);
  }
 
- const ok=Object.values(sources).filter(
+ const ok = Object.values(sources).filter(
   s=>s.statut==="ACCESSIBLE"
  ).length;
 
- const total=Object.keys(CONFIG).length;
+ const total = Object.keys(FICHIERS).length;
 
- $("diagnosticCourt").textContent=
+ $("diagnosticCourt").textContent =
   `${ok}/${total} sources accessibles. `+
   `Courses : ${courses.length} | `+
   `Analyses : ${analyses.length} | `+
   `PV : ${pv.length} | `+
   `FIGÉs : ${figes.length} | `+
   `Audits : ${audits.length}. `+
-  (
-   erreurs.length
-    ?"Certaines sources sont absentes ou invalides."
-    :"Chargement terminé. Vérification métier nécessaire."
-  );
+  (erreurs.length
+   ? "Certaines sources sont absentes ou invalides."
+   : "Chargement terminé. Vérification métier nécessaire.");
 }
 
 async function actualiser(){
- if(chargement)return;
+ if(chargement) return;
 
- chargement=true;
-
- $("actualiser").disabled=true;
- $("verifier").disabled=true;
+ chargement = true;
+ $("actualiser").disabled = true;
+ $("verifier").disabled = true;
 
  statut(
   "etatGlobal",
   "🟡 Chargement des données..."
  );
 
- erreurs=[];
- sources={};
+ erreurs = [];
+ sources = {};
 
  try{
-  const noms=Object.keys(CONFIG);
+  const noms = Object.keys(FICHIERS);
 
-  const resultats=await Promise.all(
+  const resultats = await Promise.all(
    noms.map(charger)
   );
 
-  donnees=Object.fromEntries(
+  donnees = Object.fromEntries(
    noms.map((n,i)=>[n,resultats[i]])
   );
 
-  courses=liste(donnees.courses).filter(objet);
-  analyses=liste(donnees.pronostics).filter(objet);
-  pv=liste(donnees.pv);
-  figes=liste(donnees.figes);
-  audits=liste(donnees.audits);
+  courses = liste(donnees.courses).filter(objet);
+  analyses = liste(donnees.analyses).filter(objet);
+  pv = liste(donnees.pv);
+  figes = liste(donnees.figes);
+  audits = liste(donnees.audits);
 
-  compteur(
-   "nbPV",pv.length,donnees.pv!==null
-  );
-  compteur(
-   "nbFiges",figes.length,donnees.figes!==null
-  );
-  compteur(
-   "nbAudits",audits.length,donnees.audits!==null
-  );
+  compteur("nbPV",pv.length,donnees.pv!==null);
+  compteur("nbFiges",figes.length,donnees.figes!==null);
+  compteur("nbAudits",audits.length,donnees.audits!==null);
 
   afficherCourses();
   afficherPronostics();
 
-  afficherDocuments(
-   "pv","etatPV","contenuPV"
-  );
-  afficherDocuments(
-   "figes","etatFiges","contenuFiges"
-  );
-  afficherDocuments(
-   "audits","etatAudits","contenuAudits"
-  );
+  afficherDocuments("pv","etatPV","contenuPV");
+  afficherDocuments("figes","etatFiges","contenuFiges");
+  afficherDocuments("audits","etatAudits","contenuAudits");
 
   afficherDiagnosticAudits();
 
-  $("datePublication").textContent=
+  $("datePublication").textContent =
    "Dernière publication déclarée : "+
    dateParis(
-    donnees.rapport?.generated_at_paris??
-    donnees.rapport?.generated_at??
-    donnees.qualifications?.genere_a_paris
+    donnees.rapport?.generated_at_paris ??
+    donnees.rapport?.generated_at ??
+    donnees.analyses?.genere_a
    );
 
-  dernierChargement=new Date();
+  dernierChargement = new Date();
 
-  $("dateMaj").textContent=
+  $("dateMaj").textContent =
    "Vérification navigateur : "+
    dateParis(dernierChargement);
 
-  const disponibles=Object.values(sources).filter(
+  const disponibles = Object.values(sources).filter(
    s=>s.statut==="ACCESSIBLE"
   ).length;
 
-  const essentiels=[
-   "courses",
-   "qualifications",
-   "pv",
-   "figes",
-   "audits"
+  const essentiels = [
+   "courses","analyses","pv","figes","audits"
   ];
 
-  const absents=essentiels.filter(
+  const absents = essentiels.filter(
    n=>sources[n]?.statut!=="ACCESSIBLE"
   );
 
   statut(
    "etatGlobal",
    absents.length
-    ?`🟡 ${disponibles}/${noms.length} sources accessibles — ${absents.length} source(s) principale(s) indisponible(s)`
-    :`🟢 Sources principales accessibles (${disponibles}/${noms.length})`,
-   absents.length?"warn":"ok"
+    ? `🟡 ${disponibles}/${noms.length} sources accessibles — ${absents.length} source(s) principale(s) indisponible(s)`
+    : `🟢 Sources principales accessibles (${disponibles}/${noms.length})`,
+   absents.length ? "warn" : "ok"
   );
 
   verifier();
 
  }catch(e){
   erreurs.push("Interface : "+e.message);
-
   statut(
    "etatGlobal",
    "🔴 Erreur : "+e.message,
    "bad"
   );
-
   verifier();
 
  }finally{
-  chargement=false;
-  $("actualiser").disabled=false;
-  $("verifier").disabled=false;
+  chargement = false;
+  $("actualiser").disabled = false;
+  $("verifier").disabled = false;
  }
 
  await afficherActions();
@@ -1529,25 +1520,20 @@ $("choixCourse").addEventListener(
 
 $("choixPronostic").addEventListener(
  "change",()=>{
-  selectionPronostic=$("choixPronostic").value;
-  selectionManuelle=!!selectionPronostic;
+  selectionPronostic = $("choixPronostic").value;
+  selectionManuelle = !!selectionPronostic;
   afficherPronostics();
  }
 );
 
 $("modeAuto").addEventListener("click",()=>{
- selectionManuelle=false;
- selectionPronostic="";
+ selectionManuelle = false;
+ selectionPronostic = "";
  afficherPronostics();
 });
 
-$("actualiser").addEventListener(
- "click",actualiser
-);
-
-$("verifier").addEventListener(
- "click",verifier
-);
+$("actualiser").addEventListener("click",actualiser);
+$("verifier").addEventListener("click",verifier);
 
 $("actualiserActions").addEventListener(
  "click",async()=>{
@@ -1558,13 +1544,11 @@ $("actualiserActions").addEventListener(
 
 window.addEventListener("error",e=>{
  erreurs.push("JavaScript : "+e.message);
-
  statut(
   "etatGlobal",
   "🔴 Erreur JavaScript : "+e.message,
   "bad"
  );
-
  verifier();
 });
 
@@ -1573,7 +1557,7 @@ setInterval(horloge,30000);
 actualiser();
 
 setInterval(()=>{
- if(!document.hidden&&!chargement)
+ if(!document.hidden && !chargement)
   actualiser();
 },300000);
 
