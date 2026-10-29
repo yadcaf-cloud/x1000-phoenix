@@ -1,345 +1,5971 @@
 {
   "pv": [
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C1",
+      "pv_id": "ANALYSE-2026-10-29-R2-C1-20261029T075717570260",
       "course_id": "2026-10-29-R2-C1",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T11:05:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C1/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 1,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            1,
+            7,
+            5,
+            3,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            7,
+            5,
+            3,
+            6
+          ],
+          "classement_complet": [
+            1,
+            7,
+            5,
+            3,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 1,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            1,
+            7,
+            5,
+            3,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            7,
+            5,
+            3,
+            6
+          ],
+          "classement_complet": [
+            1,
+            7,
+            5,
+            3,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 7,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            7,
+            1,
+            5,
+            3,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            1,
+            5,
+            3,
+            6
+          ],
+          "classement_complet": [
+            7,
+            1,
+            5,
+            3,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 1,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            1,
+            7,
+            5,
+            3,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            7,
+            5,
+            3,
+            6
+          ],
+          "classement_complet": [
+            1,
+            7,
+            5,
+            3,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 7,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            7,
+            1,
+            5,
+            3,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            1,
+            5,
+            3,
+            6
+          ],
+          "classement_complet": [
+            7,
+            1,
+            5,
+            3,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C2",
+      "pv_id": "ANALYSE-2026-10-29-R2-C2-20261029T075717570260",
       "course_id": "2026-10-29-R2-C2",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T11:35:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C2/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 2,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            2,
+            5,
+            4,
+            3,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            5,
+            4,
+            3,
+            8
+          ],
+          "classement_complet": [
+            2,
+            5,
+            4,
+            3,
+            8,
+            1,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 2,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            2,
+            5,
+            4,
+            8,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            5,
+            4,
+            8,
+            3
+          ],
+          "classement_complet": [
+            2,
+            5,
+            4,
+            8,
+            3,
+            1,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 2,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            2,
+            4,
+            8,
+            5,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            4,
+            8,
+            5,
+            3
+          ],
+          "classement_complet": [
+            2,
+            4,
+            8,
+            5,
+            3,
+            1,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 2,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            2,
+            5,
+            4,
+            8,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            5,
+            4,
+            8,
+            3
+          ],
+          "classement_complet": [
+            2,
+            5,
+            4,
+            8,
+            3,
+            1,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 2,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            2,
+            5,
+            4,
+            3,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            5,
+            4,
+            3,
+            8
+          ],
+          "classement_complet": [
+            2,
+            5,
+            4,
+            3,
+            8,
+            1,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C1",
+      "pv_id": "ANALYSE-2026-10-29-R3-C1-20261029T075717570260",
       "course_id": "2026-10-29-R3-C1",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T11:51:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C1/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 4,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            4,
+            1,
+            5,
+            2,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            4,
+            1,
+            5,
+            2,
+            3
+          ],
+          "classement_complet": [
+            4,
+            1,
+            5,
+            2,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 4,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            4,
+            1,
+            5,
+            3,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            4,
+            1,
+            5,
+            3,
+            2
+          ],
+          "classement_complet": [
+            4,
+            1,
+            5,
+            3,
+            2
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 1,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            1,
+            2,
+            4,
+            5,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            2,
+            4,
+            5,
+            3
+          ],
+          "classement_complet": [
+            1,
+            2,
+            4,
+            5,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 4,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            4,
+            1,
+            5,
+            3,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            4,
+            1,
+            5,
+            3,
+            2
+          ],
+          "classement_complet": [
+            4,
+            1,
+            5,
+            3,
+            2
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 4,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            4,
+            1,
+            5,
+            2,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            4,
+            1,
+            5,
+            2,
+            3
+          ],
+          "classement_complet": [
+            4,
+            1,
+            5,
+            2,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C3",
+      "pv_id": "ANALYSE-2026-10-29-R2-C3-20261029T075717570260",
       "course_id": "2026-10-29-R2-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T12:07:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C3/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 11,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            11,
+            7,
+            6,
+            5,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            7,
+            6,
+            5,
+            4
+          ],
+          "classement_complet": [
+            11,
+            7,
+            6,
+            5,
+            4,
+            1,
+            9,
+            3,
+            10,
+            2,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 11,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            11,
+            7,
+            1,
+            5,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            7,
+            1,
+            5,
+            6
+          ],
+          "classement_complet": [
+            11,
+            7,
+            1,
+            5,
+            6,
+            3,
+            9,
+            2,
+            4,
+            8,
+            10
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 11,
+          "meilleur_place": 6,
+          "ordre_espere": [
+            11,
+            6,
+            1,
+            7,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            6,
+            1,
+            7,
+            4
+          ],
+          "classement_complet": [
+            11,
+            6,
+            1,
+            7,
+            4,
+            3,
+            5,
+            9,
+            2,
+            10,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 7,
+          "meilleur_place": 11,
+          "ordre_espere": [
+            7,
+            11,
+            1,
+            5,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            11,
+            1,
+            5,
+            6
+          ],
+          "classement_complet": [
+            7,
+            11,
+            1,
+            5,
+            6,
+            3,
+            9,
+            2,
+            4,
+            8,
+            10
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 11,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            11,
+            7,
+            1,
+            6,
+            5
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            7,
+            1,
+            6,
+            5
+          ],
+          "classement_complet": [
+            11,
+            7,
+            1,
+            6,
+            5,
+            3,
+            4,
+            9,
+            2,
+            10,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C2",
+      "pv_id": "ANALYSE-2026-10-29-R3-C2-20261029T075717570260",
       "course_id": "2026-10-29-R3-C2",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T12:23:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C2/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 2,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            2,
+            1,
+            3,
+            4,
+            5
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            1,
+            3,
+            4,
+            5
+          ],
+          "classement_complet": [
+            2,
+            1,
+            3,
+            4,
+            5
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 2,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "classement_complet": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 2,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            2,
+            5,
+            1,
+            3,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            5,
+            1,
+            3,
+            4
+          ],
+          "classement_complet": [
+            2,
+            5,
+            1,
+            3,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 2,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "classement_complet": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 2,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "classement_complet": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C4",
+      "pv_id": "ANALYSE-2026-10-29-R2-C4-20261029T075717570260",
       "course_id": "2026-10-29-R2-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T12:39:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C4/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 1,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            1,
+            2,
+            5,
+            10,
+            14
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            2,
+            5,
+            10,
+            14
+          ],
+          "classement_complet": [
+            1,
+            2,
+            5,
+            10,
+            14,
+            3,
+            4,
+            8,
+            12,
+            11,
+            15,
+            9,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 1,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            1,
+            2,
+            4,
+            3,
+            15
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            2,
+            4,
+            3,
+            15
+          ],
+          "classement_complet": [
+            1,
+            2,
+            4,
+            3,
+            15,
+            9,
+            5,
+            10,
+            14,
+            8,
+            12,
+            11,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 2,
+          "meilleur_place": 15,
+          "ordre_espere": [
+            2,
+            15,
+            3,
+            1,
+            5
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            15,
+            3,
+            1,
+            5
+          ],
+          "classement_complet": [
+            2,
+            15,
+            3,
+            1,
+            5,
+            10,
+            14,
+            9,
+            4,
+            8,
+            12,
+            11,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 1,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            1,
+            2,
+            3,
+            4,
+            15
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            2,
+            3,
+            4,
+            15
+          ],
+          "classement_complet": [
+            1,
+            2,
+            3,
+            4,
+            15,
+            9,
+            14,
+            5,
+            10,
+            8,
+            12,
+            11,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 2,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            2,
+            1,
+            3,
+            4,
+            15
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            1,
+            3,
+            4,
+            15
+          ],
+          "classement_complet": [
+            2,
+            1,
+            3,
+            4,
+            15,
+            9,
+            14,
+            5,
+            10,
+            8,
+            12,
+            11,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C3",
+      "pv_id": "ANALYSE-2026-10-29-R3-C3-20261029T075717570260",
       "course_id": "2026-10-29-R3-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T12:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C3/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 2,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            2,
+            4,
+            3,
+            1,
+            5
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            4,
+            3,
+            1,
+            5
+          ],
+          "classement_complet": [
+            2,
+            4,
+            3,
+            1,
+            5,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 2,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "classement_complet": [
+            2,
+            3,
+            5,
+            1,
+            4,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 4,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            4,
+            3,
+            2,
+            5,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            4,
+            3,
+            2,
+            5,
+            6
+          ],
+          "classement_complet": [
+            4,
+            3,
+            2,
+            5,
+            6,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 2,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            3,
+            5,
+            1,
+            4
+          ],
+          "classement_complet": [
+            2,
+            3,
+            5,
+            1,
+            4,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 2,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            2,
+            3,
+            4,
+            5,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            3,
+            4,
+            5,
+            1
+          ],
+          "classement_complet": [
+            2,
+            3,
+            4,
+            5,
+            1,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C5",
+      "pv_id": "ANALYSE-2026-10-29-R2-C5-20261029T075717570260",
       "course_id": "2026-10-29-R2-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T13:11:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C5/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 11,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            11,
+            1,
+            5,
+            12,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            1,
+            5,
+            12,
+            3
+          ],
+          "classement_complet": [
+            11,
+            1,
+            5,
+            12,
+            3,
+            2,
+            13,
+            4,
+            7,
+            10,
+            9,
+            15,
+            16
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 11,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            11,
+            1,
+            5,
+            12,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            1,
+            5,
+            12,
+            3
+          ],
+          "classement_complet": [
+            11,
+            1,
+            5,
+            12,
+            3,
+            2,
+            4,
+            13,
+            7,
+            10,
+            9,
+            15,
+            16
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 2,
+          "meilleur_place": 11,
+          "ordre_espere": [
+            2,
+            11,
+            1,
+            5,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            11,
+            1,
+            5,
+            12
+          ],
+          "classement_complet": [
+            2,
+            11,
+            1,
+            5,
+            12,
+            3,
+            13,
+            4,
+            7,
+            10,
+            9,
+            15,
+            16
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 11,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            11,
+            1,
+            5,
+            3,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            1,
+            5,
+            3,
+            12
+          ],
+          "classement_complet": [
+            11,
+            1,
+            5,
+            3,
+            12,
+            2,
+            4,
+            13,
+            7,
+            10,
+            9,
+            15,
+            16
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 11,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            11,
+            1,
+            5,
+            3,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            1,
+            5,
+            3,
+            2
+          ],
+          "classement_complet": [
+            11,
+            1,
+            5,
+            3,
+            2,
+            12,
+            4,
+            13,
+            7,
+            10,
+            16,
+            9,
+            15
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C4",
+      "pv_id": "ANALYSE-2026-10-29-R3-C4-20261029T075717570260",
       "course_id": "2026-10-29-R3-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T13:27:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C4/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 5,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            5,
+            3,
+            1,
+            4,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            3,
+            1,
+            4,
+            2
+          ],
+          "classement_complet": [
+            5,
+            3,
+            1,
+            4,
+            2,
+            7,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 1,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            1,
+            4,
+            3,
+            6,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            4,
+            3,
+            6,
+            7
+          ],
+          "classement_complet": [
+            1,
+            4,
+            3,
+            6,
+            7,
+            5,
+            2
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 1,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            1,
+            4,
+            5,
+            3,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            4,
+            5,
+            3,
+            7
+          ],
+          "classement_complet": [
+            1,
+            4,
+            5,
+            3,
+            7,
+            6,
+            2
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 1,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            1,
+            4,
+            3,
+            6,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            4,
+            3,
+            6,
+            7
+          ],
+          "classement_complet": [
+            1,
+            4,
+            3,
+            6,
+            7,
+            5,
+            2
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 1,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            1,
+            4,
+            3,
+            5,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            4,
+            3,
+            5,
+            7
+          ],
+          "classement_complet": [
+            1,
+            4,
+            3,
+            5,
+            7,
+            6,
+            2
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C6",
+      "pv_id": "ANALYSE-2026-10-29-R2-C6-20261029T075717570260",
       "course_id": "2026-10-29-R2-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T13:43:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C6/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 5,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            5,
+            4,
+            2,
+            3,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            4,
+            2,
+            3,
+            1
+          ],
+          "classement_complet": [
+            5,
+            4,
+            2,
+            3,
+            1,
+            7,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 1,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            1,
+            5,
+            3,
+            2,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            5,
+            3,
+            2,
+            4
+          ],
+          "classement_complet": [
+            1,
+            5,
+            3,
+            2,
+            4,
+            7,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 5,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            5,
+            1,
+            3,
+            4,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            1,
+            3,
+            4,
+            2
+          ],
+          "classement_complet": [
+            5,
+            1,
+            3,
+            4,
+            2,
+            6,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 1,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            1,
+            5,
+            3,
+            2,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            5,
+            3,
+            2,
+            4
+          ],
+          "classement_complet": [
+            1,
+            5,
+            3,
+            2,
+            4,
+            7,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 5,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            5,
+            1,
+            3,
+            2,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            1,
+            3,
+            2,
+            4
+          ],
+          "classement_complet": [
+            5,
+            1,
+            3,
+            2,
+            4,
+            7,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C1",
+      "pv_id": "ANALYSE-2026-10-29-R1-C1-20261029T075717570260",
       "course_id": "2026-10-29-R1-C1",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T13:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C1/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 2,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            2,
+            13,
+            3,
+            1,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            13,
+            3,
+            1,
+            12
+          ],
+          "classement_complet": [
+            2,
+            13,
+            3,
+            1,
+            12,
+            11,
+            4,
+            6,
+            7,
+            9,
+            5,
+            14,
+            10,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 1,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            1,
+            3,
+            6,
+            13,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            3,
+            6,
+            13,
+            2
+          ],
+          "classement_complet": [
+            1,
+            3,
+            6,
+            13,
+            2,
+            9,
+            11,
+            12,
+            4,
+            7,
+            8,
+            10,
+            5,
+            14
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 1,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            1,
+            13,
+            2,
+            3,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            13,
+            2,
+            3,
+            12
+          ],
+          "classement_complet": [
+            1,
+            13,
+            2,
+            3,
+            12,
+            7,
+            9,
+            11,
+            4,
+            6,
+            5,
+            14,
+            10,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 1,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            1,
+            3,
+            6,
+            13,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            3,
+            6,
+            13,
+            2
+          ],
+          "classement_complet": [
+            1,
+            3,
+            6,
+            13,
+            2,
+            9,
+            11,
+            12,
+            4,
+            7,
+            8,
+            10,
+            5,
+            14
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 1,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            1,
+            3,
+            2,
+            13,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            3,
+            2,
+            13,
+            6
+          ],
+          "classement_complet": [
+            1,
+            3,
+            2,
+            13,
+            6,
+            11,
+            9,
+            12,
+            7,
+            4,
+            5,
+            10,
+            14,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C5",
+      "pv_id": "ANALYSE-2026-10-29-R3-C5-20261029T075717570260",
       "course_id": "2026-10-29-R3-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T14:12:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C5/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 5,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            5,
+            1,
+            2,
+            6,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            1,
+            2,
+            6,
+            4
+          ],
+          "classement_complet": [
+            5,
+            1,
+            2,
+            6,
+            4,
+            9,
+            3,
+            8,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 5,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            5,
+            2,
+            1,
+            6,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            2,
+            1,
+            6,
+            4
+          ],
+          "classement_complet": [
+            5,
+            2,
+            1,
+            6,
+            4,
+            8,
+            3,
+            9,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 5,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            5,
+            1,
+            6,
+            4,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            1,
+            6,
+            4,
+            2
+          ],
+          "classement_complet": [
+            5,
+            1,
+            6,
+            4,
+            2,
+            3,
+            9,
+            8,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 5,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            5,
+            2,
+            1,
+            6,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            2,
+            1,
+            6,
+            8
+          ],
+          "classement_complet": [
+            5,
+            2,
+            1,
+            6,
+            8,
+            4,
+            9,
+            3,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 5,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            5,
+            2,
+            1,
+            6,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            2,
+            1,
+            6,
+            4
+          ],
+          "classement_complet": [
+            5,
+            2,
+            1,
+            6,
+            4,
+            3,
+            9,
+            8,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C7",
+      "pv_id": "ANALYSE-2026-10-29-R2-C7-20261029T075717570260",
       "course_id": "2026-10-29-R2-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T14:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C7/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 5,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            5,
+            1,
+            6,
+            3,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            1,
+            6,
+            3,
+            7
+          ],
+          "classement_complet": [
+            5,
+            1,
+            6,
+            3,
+            7,
+            2,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 5,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            5,
+            1,
+            2,
+            6,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            1,
+            2,
+            6,
+            3
+          ],
+          "classement_complet": [
+            5,
+            1,
+            2,
+            6,
+            3,
+            4,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 3,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            3,
+            5,
+            1,
+            6,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            3,
+            5,
+            1,
+            6,
+            7
+          ],
+          "classement_complet": [
+            3,
+            5,
+            1,
+            6,
+            7,
+            4,
+            2
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 5,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            5,
+            1,
+            2,
+            6,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            1,
+            2,
+            6,
+            3
+          ],
+          "classement_complet": [
+            5,
+            1,
+            2,
+            6,
+            3,
+            4,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 5,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            5,
+            1,
+            3,
+            6,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            1,
+            3,
+            6,
+            2
+          ],
+          "classement_complet": [
+            5,
+            1,
+            3,
+            6,
+            2,
+            7,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C2",
+      "pv_id": "ANALYSE-2026-10-29-R1-C2-20261029T075717570260",
       "course_id": "2026-10-29-R1-C2",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T14:30:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C2/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 1,
+          "meilleur_place": 14,
+          "ordre_espere": [
+            1,
+            14,
+            7,
+            5,
+            9
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            14,
+            7,
+            5,
+            9
+          ],
+          "classement_complet": [
+            1,
+            14,
+            7,
+            5,
+            9,
+            13,
+            11,
+            12,
+            3,
+            8,
+            10,
+            4,
+            15,
+            6,
+            2
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 7,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            7,
+            9,
+            14,
+            11,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            9,
+            14,
+            11,
+            12
+          ],
+          "classement_complet": [
+            7,
+            9,
+            14,
+            11,
+            12,
+            1,
+            13,
+            3,
+            5,
+            2,
+            8,
+            15,
+            10,
+            4,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 1,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            1,
+            7,
+            14,
+            13,
+            9
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            7,
+            14,
+            13,
+            9
+          ],
+          "classement_complet": [
+            1,
+            7,
+            14,
+            13,
+            9,
+            11,
+            5,
+            15,
+            3,
+            8,
+            2,
+            4,
+            6,
+            12,
+            10
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 9,
+          "meilleur_place": 14,
+          "ordre_espere": [
+            9,
+            14,
+            7,
+            11,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            9,
+            14,
+            7,
+            11,
+            12
+          ],
+          "classement_complet": [
+            9,
+            14,
+            7,
+            11,
+            12,
+            1,
+            3,
+            5,
+            2,
+            13,
+            8,
+            15,
+            10,
+            4,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 14,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            14,
+            7,
+            9,
+            1,
+            5
+          ],
+          "ordre_arrivee_espere": [
+            14,
+            7,
+            9,
+            1,
+            5
+          ],
+          "classement_complet": [
+            14,
+            7,
+            9,
+            1,
+            5,
+            11,
+            3,
+            13,
+            12,
+            2,
+            8,
+            15,
+            10,
+            4,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C6",
+      "pv_id": "ANALYSE-2026-10-29-R3-C6-20261029T075717570260",
       "course_id": "2026-10-29-R3-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T14:47:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C6/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 2,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            2,
+            1,
+            3,
+            5,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            1,
+            3,
+            5,
+            8
+          ],
+          "classement_complet": [
+            2,
+            1,
+            3,
+            5,
+            8,
+            9,
+            6,
+            4,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 2,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            2,
+            1,
+            5,
+            3,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            1,
+            5,
+            3,
+            8
+          ],
+          "classement_complet": [
+            2,
+            1,
+            5,
+            3,
+            8,
+            9,
+            6,
+            4,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 2,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            2,
+            3,
+            1,
+            5,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            3,
+            1,
+            5,
+            8
+          ],
+          "classement_complet": [
+            2,
+            3,
+            1,
+            5,
+            8,
+            9,
+            6,
+            4,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 2,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            2,
+            1,
+            5,
+            3,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            1,
+            5,
+            3,
+            8
+          ],
+          "classement_complet": [
+            2,
+            1,
+            5,
+            3,
+            8,
+            9,
+            6,
+            4,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 2,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            2,
+            1,
+            3,
+            5,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            1,
+            3,
+            5,
+            8
+          ],
+          "classement_complet": [
+            2,
+            1,
+            3,
+            5,
+            8,
+            9,
+            6,
+            4,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C3",
+      "pv_id": "ANALYSE-2026-10-29-R1-C3-20261029T075717570260",
       "course_id": "2026-10-29-R1-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T15:05:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C3/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 6,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            6,
+            9,
+            1,
+            8,
+            10
+          ],
+          "ordre_arrivee_espere": [
+            6,
+            9,
+            1,
+            8,
+            10
+          ],
+          "classement_complet": [
+            6,
+            9,
+            1,
+            8,
+            10,
+            12,
+            2,
+            7,
+            5,
+            4,
+            11,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 12,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            12,
+            5,
+            6,
+            9,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            12,
+            5,
+            6,
+            9,
+            1
+          ],
+          "classement_complet": [
+            12,
+            5,
+            6,
+            9,
+            1,
+            7,
+            11,
+            10,
+            3,
+            4,
+            2,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 5,
+          "meilleur_place": 10,
+          "ordre_espere": [
+            5,
+            10,
+            6,
+            11,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            10,
+            6,
+            11,
+            1
+          ],
+          "classement_complet": [
+            5,
+            10,
+            6,
+            11,
+            1,
+            12,
+            9,
+            8,
+            3,
+            2,
+            7,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 5,
+          "meilleur_place": 12,
+          "ordre_espere": [
+            5,
+            12,
+            6,
+            9,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            12,
+            6,
+            9,
+            1
+          ],
+          "classement_complet": [
+            5,
+            12,
+            6,
+            9,
+            1,
+            7,
+            11,
+            10,
+            3,
+            4,
+            2,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 5,
+          "meilleur_place": 6,
+          "ordre_espere": [
+            5,
+            6,
+            9,
+            1,
+            10
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            6,
+            9,
+            1,
+            10
+          ],
+          "classement_complet": [
+            5,
+            6,
+            9,
+            1,
+            10,
+            12,
+            11,
+            7,
+            2,
+            3,
+            4,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C7",
+      "pv_id": "ANALYSE-2026-10-29-R3-C7-20261029T075717570260",
       "course_id": "2026-10-29-R3-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T15:22:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C7/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 5,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            5,
+            3,
+            9,
+            8,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            3,
+            9,
+            8,
+            2
+          ],
+          "classement_complet": [
+            5,
+            3,
+            9,
+            8,
+            2,
+            4,
+            6,
+            1,
+            7
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 5,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            5,
+            9,
+            3,
+            2,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            9,
+            3,
+            2,
+            8
+          ],
+          "classement_complet": [
+            5,
+            9,
+            3,
+            2,
+            8,
+            7,
+            6,
+            4,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 5,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            5,
+            3,
+            7,
+            8,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            3,
+            7,
+            8,
+            6
+          ],
+          "classement_complet": [
+            5,
+            3,
+            7,
+            8,
+            6,
+            2,
+            9,
+            4,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 5,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            5,
+            9,
+            3,
+            2,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            9,
+            3,
+            2,
+            8
+          ],
+          "classement_complet": [
+            5,
+            9,
+            3,
+            2,
+            8,
+            7,
+            6,
+            4,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 5,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            5,
+            3,
+            9,
+            8,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            3,
+            9,
+            8,
+            2
+          ],
+          "classement_complet": [
+            5,
+            3,
+            9,
+            8,
+            2,
+            7,
+            6,
+            4,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C4",
+      "pv_id": "ANALYSE-2026-10-29-R1-C4-20261029T075717570260",
       "course_id": "2026-10-29-R1-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T15:40:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C4/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 3,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            3,
+            7,
+            11,
+            1,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            3,
+            7,
+            11,
+            1,
+            2
+          ],
+          "classement_complet": [
+            3,
+            7,
+            11,
+            1,
+            2,
+            5,
+            12,
+            6,
+            9,
+            4,
+            8,
+            10
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 3,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            3,
+            7,
+            5,
+            11,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            3,
+            7,
+            5,
+            11,
+            2
+          ],
+          "classement_complet": [
+            3,
+            7,
+            5,
+            11,
+            2,
+            6,
+            1,
+            10,
+            12,
+            9,
+            8,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 7,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            7,
+            2,
+            11,
+            3,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            2,
+            11,
+            3,
+            1
+          ],
+          "classement_complet": [
+            7,
+            2,
+            11,
+            3,
+            1,
+            6,
+            9,
+            4,
+            5,
+            12,
+            8,
+            10
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 3,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            3,
+            7,
+            5,
+            11,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            3,
+            7,
+            5,
+            11,
+            6
+          ],
+          "classement_complet": [
+            3,
+            7,
+            5,
+            11,
+            6,
+            2,
+            1,
+            10,
+            12,
+            9,
+            8,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 7,
+          "meilleur_place": 11,
+          "ordre_espere": [
+            7,
+            11,
+            3,
+            2,
+            5
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            11,
+            3,
+            2,
+            5
+          ],
+          "classement_complet": [
+            7,
+            11,
+            3,
+            2,
+            5,
+            6,
+            1,
+            12,
+            9,
+            4,
+            10,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C8",
+      "pv_id": "ANALYSE-2026-10-29-R3-C8-20261029T075717570260",
       "course_id": "2026-10-29-R3-C8",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T15:57:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C8/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 10,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            10,
+            5,
+            4,
+            14,
+            9
+          ],
+          "ordre_arrivee_espere": [
+            10,
+            5,
+            4,
+            14,
+            9
+          ],
+          "classement_complet": [
+            10,
+            5,
+            4,
+            14,
+            9,
+            2,
+            7,
+            12,
+            1,
+            8,
+            11,
+            6,
+            3,
+            13
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 10,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            10,
+            2,
+            8,
+            4,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            10,
+            2,
+            8,
+            4,
+            7
+          ],
+          "classement_complet": [
+            10,
+            2,
+            8,
+            4,
+            7,
+            5,
+            9,
+            12,
+            6,
+            1,
+            14,
+            3,
+            11,
+            13
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 4,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            4,
+            9,
+            5,
+            10,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            4,
+            9,
+            5,
+            10,
+            2
+          ],
+          "classement_complet": [
+            4,
+            9,
+            5,
+            10,
+            2,
+            12,
+            14,
+            8,
+            6,
+            7,
+            11,
+            3,
+            1,
+            13
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 10,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            10,
+            2,
+            8,
+            7,
+            5
+          ],
+          "ordre_arrivee_espere": [
+            10,
+            2,
+            8,
+            7,
+            5
+          ],
+          "classement_complet": [
+            10,
+            2,
+            8,
+            7,
+            5,
+            12,
+            4,
+            6,
+            9,
+            1,
+            14,
+            3,
+            11,
+            13
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 10,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            10,
+            5,
+            4,
+            2,
+            9
+          ],
+          "ordre_arrivee_espere": [
+            10,
+            5,
+            4,
+            2,
+            9
+          ],
+          "classement_complet": [
+            10,
+            5,
+            4,
+            2,
+            9,
+            12,
+            8,
+            7,
+            14,
+            6,
+            1,
+            11,
+            3,
+            13
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C5",
+      "pv_id": "ANALYSE-2026-10-29-R1-C5-20261029T075717570260",
       "course_id": "2026-10-29-R1-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T16:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C5/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 2,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            2,
+            1,
+            5,
+            3,
+            9
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            1,
+            5,
+            3,
+            9
+          ],
+          "classement_complet": [
+            2,
+            1,
+            5,
+            3,
+            9,
+            11,
+            12,
+            10,
+            7,
+            4,
+            8,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 2,
+          "meilleur_place": 11,
+          "ordre_espere": [
+            2,
+            11,
+            3,
+            5,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            11,
+            3,
+            5,
+            1
+          ],
+          "classement_complet": [
+            2,
+            11,
+            3,
+            5,
+            1,
+            4,
+            8,
+            10,
+            12,
+            7,
+            6,
+            9
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 2,
+          "meilleur_place": 1,
+          "ordre_espere": [
+            2,
+            1,
+            3,
+            4,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            1,
+            3,
+            4,
+            8
+          ],
+          "classement_complet": [
+            2,
+            1,
+            3,
+            4,
+            8,
+            5,
+            10,
+            11,
+            7,
+            9,
+            12,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 2,
+          "meilleur_place": 11,
+          "ordre_espere": [
+            2,
+            11,
+            3,
+            5,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            11,
+            3,
+            5,
+            1
+          ],
+          "classement_complet": [
+            2,
+            11,
+            3,
+            5,
+            1,
+            4,
+            8,
+            10,
+            12,
+            7,
+            6,
+            9
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 2,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            2,
+            3,
+            1,
+            5,
+            11
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            3,
+            1,
+            5,
+            11
+          ],
+          "classement_complet": [
+            2,
+            3,
+            1,
+            5,
+            11,
+            4,
+            10,
+            8,
+            12,
+            7,
+            6,
+            9
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C1",
+      "pv_id": "ANALYSE-2026-10-29-R4-C1-20261029T075717570260",
       "course_id": "2026-10-29-R4-C1",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T16:32:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C1/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 8,
+          "meilleur_place": 12,
+          "ordre_espere": [
+            8,
+            12,
+            5,
+            3,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            8,
+            12,
+            5,
+            3,
+            1
+          ],
+          "classement_complet": [
+            8,
+            12,
+            5,
+            3,
+            1,
+            9,
+            6,
+            7,
+            14,
+            13,
+            10,
+            2,
+            11,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 8,
+          "meilleur_place": 12,
+          "ordre_espere": [
+            8,
+            12,
+            14,
+            5,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            8,
+            12,
+            14,
+            5,
+            7
+          ],
+          "classement_complet": [
+            8,
+            12,
+            14,
+            5,
+            7,
+            13,
+            9,
+            6,
+            10,
+            3,
+            1,
+            2,
+            4,
+            11
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 8,
+          "meilleur_place": 12,
+          "ordre_espere": [
+            8,
+            12,
+            14,
+            5,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            8,
+            12,
+            14,
+            5,
+            7
+          ],
+          "classement_complet": [
+            8,
+            12,
+            14,
+            5,
+            7,
+            3,
+            1,
+            9,
+            6,
+            4,
+            13,
+            10,
+            2,
+            11
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 8,
+          "meilleur_place": 12,
+          "ordre_espere": [
+            8,
+            12,
+            14,
+            5,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            8,
+            12,
+            14,
+            5,
+            7
+          ],
+          "classement_complet": [
+            8,
+            12,
+            14,
+            5,
+            7,
+            13,
+            9,
+            6,
+            10,
+            3,
+            1,
+            2,
+            4,
+            11
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 8,
+          "meilleur_place": 12,
+          "ordre_espere": [
+            8,
+            12,
+            14,
+            5,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            8,
+            12,
+            14,
+            5,
+            7
+          ],
+          "classement_complet": [
+            8,
+            12,
+            14,
+            5,
+            7,
+            13,
+            9,
+            3,
+            6,
+            1,
+            10,
+            2,
+            4,
+            11
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C6",
+      "pv_id": "ANALYSE-2026-10-29-R1-C6-20261029T075717570260",
       "course_id": "2026-10-29-R1-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T16:50:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C6/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 7,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            7,
+            9,
+            2,
+            6,
+            11
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            9,
+            2,
+            6,
+            11
+          ],
+          "classement_complet": [
+            7,
+            9,
+            2,
+            6,
+            11,
+            10,
+            5,
+            4,
+            3,
+            12,
+            14,
+            8,
+            13,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 6,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            6,
+            9,
+            7,
+            10,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            6,
+            9,
+            7,
+            10,
+            12
+          ],
+          "classement_complet": [
+            6,
+            9,
+            7,
+            10,
+            12,
+            13,
+            2,
+            11,
+            4,
+            3,
+            14,
+            1,
+            8,
+            5
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 9,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            9,
+            7,
+            6,
+            11,
+            10
+          ],
+          "ordre_arrivee_espere": [
+            9,
+            7,
+            6,
+            11,
+            10
+          ],
+          "classement_complet": [
+            9,
+            7,
+            6,
+            11,
+            10,
+            5,
+            12,
+            14,
+            2,
+            8,
+            13,
+            4,
+            3,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 6,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            6,
+            9,
+            7,
+            10,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            6,
+            9,
+            7,
+            10,
+            12
+          ],
+          "classement_complet": [
+            6,
+            9,
+            7,
+            10,
+            12,
+            13,
+            2,
+            11,
+            4,
+            3,
+            14,
+            1,
+            8,
+            5
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 9,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            9,
+            7,
+            6,
+            10,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            9,
+            7,
+            6,
+            10,
+            12
+          ],
+          "classement_complet": [
+            9,
+            7,
+            6,
+            10,
+            12,
+            11,
+            2,
+            13,
+            4,
+            3,
+            14,
+            5,
+            8,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C2",
+      "pv_id": "ANALYSE-2026-10-29-R4-C2-20261029T075717570260",
       "course_id": "2026-10-29-R4-C2",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T17:07:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C2/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 11,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            11,
+            5,
+            2,
+            12,
+            10
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            5,
+            2,
+            12,
+            10
+          ],
+          "classement_complet": [
+            11,
+            5,
+            2,
+            12,
+            10,
+            9,
+            13,
+            3,
+            1,
+            6,
+            7,
+            4,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 11,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            11,
+            2,
+            5,
+            9,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            2,
+            5,
+            9,
+            12
+          ],
+          "classement_complet": [
+            11,
+            2,
+            5,
+            9,
+            12,
+            3,
+            10,
+            7,
+            6,
+            8,
+            13,
+            1,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 11,
+          "meilleur_place": 10,
+          "ordre_espere": [
+            11,
+            10,
+            5,
+            2,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            10,
+            5,
+            2,
+            12
+          ],
+          "classement_complet": [
+            11,
+            10,
+            5,
+            2,
+            12,
+            7,
+            8,
+            1,
+            3,
+            9,
+            13,
+            4,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 2,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            2,
+            5,
+            9,
+            11,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            5,
+            9,
+            11,
+            12
+          ],
+          "classement_complet": [
+            2,
+            5,
+            9,
+            11,
+            12,
+            3,
+            10,
+            7,
+            8,
+            13,
+            6,
+            1,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 5,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            5,
+            2,
+            12,
+            11,
+            10
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            2,
+            12,
+            11,
+            10
+          ],
+          "classement_complet": [
+            5,
+            2,
+            12,
+            11,
+            10,
+            9,
+            3,
+            13,
+            7,
+            8,
+            1,
+            6,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C7",
+      "pv_id": "ANALYSE-2026-10-29-R1-C7-20261029T075717570260",
       "course_id": "2026-10-29-R1-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T17:25:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C7/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 2,
+          "meilleur_place": 18,
+          "ordre_espere": [
+            2,
+            18,
+            13,
+            12,
+            7
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            18,
+            13,
+            12,
+            7
+          ],
+          "classement_complet": [
+            2,
+            18,
+            13,
+            12,
+            7,
+            17,
+            14,
+            1,
+            11,
+            5,
+            10,
+            16,
+            3,
+            6,
+            9,
+            8,
+            15,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 18,
+          "meilleur_place": 14,
+          "ordre_espere": [
+            18,
+            14,
+            1,
+            7,
+            17
+          ],
+          "ordre_arrivee_espere": [
+            18,
+            14,
+            1,
+            7,
+            17
+          ],
+          "classement_complet": [
+            18,
+            14,
+            1,
+            7,
+            17,
+            5,
+            2,
+            12,
+            10,
+            3,
+            11,
+            8,
+            16,
+            13,
+            15,
+            6,
+            9,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 2,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            2,
+            7,
+            13,
+            18,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            7,
+            13,
+            18,
+            3
+          ],
+          "classement_complet": [
+            2,
+            7,
+            13,
+            18,
+            3,
+            17,
+            12,
+            10,
+            9,
+            5,
+            1,
+            14,
+            6,
+            15,
+            11,
+            16,
+            4,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 18,
+          "meilleur_place": 14,
+          "ordre_espere": [
+            18,
+            14,
+            1,
+            7,
+            17
+          ],
+          "ordre_arrivee_espere": [
+            18,
+            14,
+            1,
+            7,
+            17
+          ],
+          "classement_complet": [
+            18,
+            14,
+            1,
+            7,
+            17,
+            5,
+            2,
+            12,
+            10,
+            3,
+            8,
+            11,
+            13,
+            16,
+            15,
+            6,
+            9,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 18,
+          "meilleur_place": 2,
+          "ordre_espere": [
+            18,
+            2,
+            7,
+            14,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            18,
+            2,
+            7,
+            14,
+            1
+          ],
+          "classement_complet": [
+            18,
+            2,
+            7,
+            14,
+            1,
+            17,
+            12,
+            13,
+            5,
+            3,
+            10,
+            9,
+            6,
+            15,
+            16,
+            11,
+            8,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C3",
+      "pv_id": "ANALYSE-2026-10-29-R4-C3-20261029T075717570260",
       "course_id": "2026-10-29-R4-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T17:42:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C3/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 5,
+          "meilleur_place": 12,
+          "ordre_espere": [
+            5,
+            12,
+            9,
+            13,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            12,
+            9,
+            13,
+            6
+          ],
+          "classement_complet": [
+            5,
+            12,
+            9,
+            13,
+            6,
+            3,
+            1,
+            7,
+            11,
+            2,
+            10,
+            8,
+            14,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 5,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            5,
+            9,
+            2,
+            1,
+            11
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            9,
+            2,
+            1,
+            11
+          ],
+          "classement_complet": [
+            5,
+            9,
+            2,
+            1,
+            11,
+            6,
+            3,
+            13,
+            12,
+            7,
+            14,
+            10,
+            8,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 5,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            5,
+            9,
+            1,
+            12,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            9,
+            1,
+            12,
+            6
+          ],
+          "classement_complet": [
+            5,
+            9,
+            1,
+            12,
+            6,
+            11,
+            2,
+            13,
+            10,
+            3,
+            7,
+            14,
+            8,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 5,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            5,
+            9,
+            2,
+            1,
+            11
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            9,
+            2,
+            1,
+            11
+          ],
+          "classement_complet": [
+            5,
+            9,
+            2,
+            1,
+            11,
+            6,
+            3,
+            13,
+            12,
+            7,
+            14,
+            10,
+            8,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 5,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            5,
+            9,
+            1,
+            12,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            9,
+            1,
+            12,
+            2
+          ],
+          "classement_complet": [
+            5,
+            9,
+            1,
+            12,
+            2,
+            6,
+            11,
+            13,
+            3,
+            7,
+            10,
+            14,
+            8,
+            4
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C8",
+      "pv_id": "ANALYSE-2026-10-29-R1-C8-20261029T075717570260",
       "course_id": "2026-10-29-R1-C8",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T18:00:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C8/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 1,
+          "meilleur_place": 7,
+          "ordre_espere": [
+            1,
+            7,
+            4,
+            8,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            7,
+            4,
+            8,
+            12
+          ],
+          "classement_complet": [
+            1,
+            7,
+            4,
+            8,
+            12,
+            10,
+            5,
+            11,
+            2,
+            9,
+            3,
+            6
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 4,
+          "meilleur_place": 6,
+          "ordre_espere": [
+            4,
+            6,
+            1,
+            5,
+            11
+          ],
+          "ordre_arrivee_espere": [
+            4,
+            6,
+            1,
+            5,
+            11
+          ],
+          "classement_complet": [
+            4,
+            6,
+            1,
+            5,
+            11,
+            2,
+            10,
+            9,
+            7,
+            12,
+            8,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 1,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            1,
+            5,
+            2,
+            4,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            5,
+            2,
+            4,
+            8
+          ],
+          "classement_complet": [
+            1,
+            5,
+            2,
+            4,
+            8,
+            6,
+            10,
+            7,
+            12,
+            9,
+            11,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 4,
+          "meilleur_place": 6,
+          "ordre_espere": [
+            4,
+            6,
+            1,
+            5,
+            11
+          ],
+          "ordre_arrivee_espere": [
+            4,
+            6,
+            1,
+            5,
+            11
+          ],
+          "classement_complet": [
+            4,
+            6,
+            1,
+            5,
+            11,
+            2,
+            10,
+            9,
+            7,
+            12,
+            8,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 1,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            1,
+            4,
+            5,
+            6,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            1,
+            4,
+            5,
+            6,
+            2
+          ],
+          "classement_complet": [
+            1,
+            4,
+            5,
+            6,
+            2,
+            10,
+            7,
+            11,
+            8,
+            12,
+            9,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C4",
+      "pv_id": "ANALYSE-2026-10-29-R4-C4-20261029T075717570260",
       "course_id": "2026-10-29-R4-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T18:20:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C4/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 9,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            9,
+            4,
+            1,
+            2,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            9,
+            4,
+            1,
+            2,
+            6
+          ],
+          "classement_complet": [
+            9,
+            4,
+            1,
+            2,
+            6,
+            5,
+            8,
+            11,
+            14,
+            13,
+            12,
+            3,
+            10
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 9,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            9,
+            4,
+            6,
+            2,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            9,
+            4,
+            6,
+            2,
+            1
+          ],
+          "classement_complet": [
+            9,
+            4,
+            6,
+            2,
+            1,
+            11,
+            12,
+            3,
+            10,
+            13,
+            5,
+            8,
+            14
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 9,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            9,
+            4,
+            6,
+            1,
+            11
+          ],
+          "ordre_arrivee_espere": [
+            9,
+            4,
+            6,
+            1,
+            11
+          ],
+          "classement_complet": [
+            9,
+            4,
+            6,
+            1,
+            11,
+            3,
+            2,
+            5,
+            8,
+            12,
+            13,
+            14,
+            10
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 9,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            9,
+            4,
+            6,
+            2,
+            1
+          ],
+          "ordre_arrivee_espere": [
+            9,
+            4,
+            6,
+            2,
+            1
+          ],
+          "classement_complet": [
+            9,
+            4,
+            6,
+            2,
+            1,
+            11,
+            12,
+            3,
+            10,
+            13,
+            5,
+            8,
+            14
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 9,
+          "meilleur_place": 4,
+          "ordre_espere": [
+            9,
+            4,
+            6,
+            1,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            9,
+            4,
+            6,
+            1,
+            2
+          ],
+          "classement_complet": [
+            9,
+            4,
+            6,
+            1,
+            2,
+            11,
+            5,
+            8,
+            12,
+            3,
+            13,
+            14,
+            10
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C5",
+      "pv_id": "ANALYSE-2026-10-29-R4-C5-20261029T075717570260",
       "course_id": "2026-10-29-R4-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T18:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C5/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 10,
+          "meilleur_place": 12,
+          "ordre_espere": [
+            10,
+            12,
+            16,
+            13,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            10,
+            12,
+            16,
+            13,
+            3
+          ],
+          "classement_complet": [
+            10,
+            12,
+            16,
+            13,
+            3,
+            14,
+            4,
+            5,
+            2,
+            15,
+            1,
+            11,
+            6,
+            7,
+            9,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 10,
+          "meilleur_place": 13,
+          "ordre_espere": [
+            10,
+            13,
+            16,
+            3,
+            15
+          ],
+          "ordre_arrivee_espere": [
+            10,
+            13,
+            16,
+            3,
+            15
+          ],
+          "classement_complet": [
+            10,
+            13,
+            16,
+            3,
+            15,
+            5,
+            4,
+            2,
+            11,
+            14,
+            7,
+            12,
+            1,
+            6,
+            8,
+            9
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 5,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            5,
+            3,
+            4,
+            16,
+            2
+          ],
+          "ordre_arrivee_espere": [
+            5,
+            3,
+            4,
+            16,
+            2
+          ],
+          "classement_complet": [
+            5,
+            3,
+            4,
+            16,
+            2,
+            10,
+            12,
+            13,
+            11,
+            14,
+            15,
+            1,
+            6,
+            9,
+            7,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 10,
+          "meilleur_place": 16,
+          "ordre_espere": [
+            10,
+            16,
+            3,
+            13,
+            15
+          ],
+          "ordre_arrivee_espere": [
+            10,
+            16,
+            3,
+            13,
+            15
+          ],
+          "classement_complet": [
+            10,
+            16,
+            3,
+            13,
+            15,
+            5,
+            4,
+            2,
+            11,
+            14,
+            7,
+            12,
+            1,
+            6,
+            8,
+            9
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 10,
+          "meilleur_place": 3,
+          "ordre_espere": [
+            10,
+            3,
+            16,
+            5,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            10,
+            3,
+            16,
+            5,
+            4
+          ],
+          "classement_complet": [
+            10,
+            3,
+            16,
+            5,
+            4,
+            2,
+            13,
+            12,
+            15,
+            14,
+            11,
+            1,
+            7,
+            6,
+            8,
+            9
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C6",
+      "pv_id": "ANALYSE-2026-10-29-R4-C6-20261029T075717570260",
       "course_id": "2026-10-29-R4-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T19:27:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C6/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 7,
+          "meilleur_place": 6,
+          "ordre_espere": [
+            7,
+            6,
+            11,
+            12,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            6,
+            11,
+            12,
+            8
+          ],
+          "classement_complet": [
+            7,
+            6,
+            11,
+            12,
+            8,
+            10,
+            2,
+            3,
+            5,
+            1,
+            4,
+            9
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 7,
+          "meilleur_place": 11,
+          "ordre_espere": [
+            7,
+            11,
+            6,
+            9,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            11,
+            6,
+            9,
+            8
+          ],
+          "classement_complet": [
+            7,
+            11,
+            6,
+            9,
+            8,
+            12,
+            4,
+            10,
+            5,
+            3,
+            2,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 7,
+          "meilleur_place": 11,
+          "ordre_espere": [
+            7,
+            11,
+            12,
+            10,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            11,
+            12,
+            10,
+            3
+          ],
+          "classement_complet": [
+            7,
+            11,
+            12,
+            10,
+            3,
+            1,
+            9,
+            4,
+            6,
+            8,
+            2,
+            5
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 7,
+          "meilleur_place": 11,
+          "ordre_espere": [
+            7,
+            11,
+            6,
+            9,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            11,
+            6,
+            9,
+            8
+          ],
+          "classement_complet": [
+            7,
+            11,
+            6,
+            9,
+            8,
+            12,
+            4,
+            10,
+            5,
+            2,
+            3,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 7,
+          "meilleur_place": 11,
+          "ordre_espere": [
+            7,
+            11,
+            12,
+            10,
+            6
+          ],
+          "ordre_arrivee_espere": [
+            7,
+            11,
+            12,
+            10,
+            6
+          ],
+          "classement_complet": [
+            7,
+            11,
+            12,
+            10,
+            6,
+            8,
+            2,
+            4,
+            9,
+            3,
+            5,
+            1
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C7",
+      "pv_id": "ANALYSE-2026-10-29-R4-C7-20261029T075717570260",
       "course_id": "2026-10-29-R4-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T19:59:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C7/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 11,
+          "meilleur_place": 6,
+          "ordre_espere": [
+            11,
+            6,
+            13,
+            9,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            6,
+            13,
+            9,
+            4
+          ],
+          "classement_complet": [
+            11,
+            6,
+            13,
+            9,
+            4,
+            8,
+            2,
+            12,
+            7,
+            14,
+            10,
+            1,
+            5,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 11,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            11,
+            9,
+            6,
+            13,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            9,
+            6,
+            13,
+            4
+          ],
+          "classement_complet": [
+            11,
+            9,
+            6,
+            13,
+            4,
+            2,
+            14,
+            7,
+            8,
+            1,
+            10,
+            12,
+            5,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 2,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            2,
+            9,
+            11,
+            6,
+            8
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            9,
+            11,
+            6,
+            8
+          ],
+          "classement_complet": [
+            2,
+            9,
+            11,
+            6,
+            8,
+            12,
+            1,
+            14,
+            10,
+            13,
+            4,
+            7,
+            5,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 11,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            11,
+            9,
+            6,
+            13,
+            4
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            9,
+            6,
+            13,
+            4
+          ],
+          "classement_complet": [
+            11,
+            9,
+            6,
+            13,
+            4,
+            2,
+            14,
+            7,
+            8,
+            1,
+            10,
+            12,
+            5,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 11,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            11,
+            9,
+            6,
+            2,
+            13
+          ],
+          "ordre_arrivee_espere": [
+            11,
+            9,
+            6,
+            2,
+            13
+          ],
+          "classement_complet": [
+            11,
+            9,
+            6,
+            2,
+            13,
+            4,
+            14,
+            8,
+            7,
+            12,
+            1,
+            10,
+            5,
+            3
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C8",
+      "pv_id": "ANALYSE-2026-10-29-R4-C8-20261029T075717570260",
       "course_id": "2026-10-29-R4-C8",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T06:19:50.453952+00:00",
+      "cree_a": "2026-10-29T07:57:17.570260+01:00",
       "depart": "2026-10-29T20:31:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C8/participants",
-      "moteurs": [],
-      "avertissement": "Analyse indicative, aucun pari FIGE par ce PV"
+      "moteurs": [
+        {
+          "moteur": "M1",
+          "gagnant_espere": 2,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            2,
+            9,
+            5,
+            4,
+            10
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            9,
+            5,
+            4,
+            10
+          ],
+          "classement_complet": [
+            2,
+            9,
+            5,
+            4,
+            10,
+            3,
+            11,
+            12,
+            7,
+            6,
+            1,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M2",
+          "gagnant_espere": 2,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            2,
+            5,
+            9,
+            4,
+            11
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            5,
+            9,
+            4,
+            11
+          ],
+          "classement_complet": [
+            2,
+            5,
+            9,
+            4,
+            11,
+            7,
+            6,
+            12,
+            3,
+            10,
+            1,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M3",
+          "gagnant_espere": 2,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            2,
+            9,
+            4,
+            5,
+            3
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            9,
+            4,
+            5,
+            3
+          ],
+          "classement_complet": [
+            2,
+            9,
+            4,
+            5,
+            3,
+            10,
+            12,
+            6,
+            7,
+            11,
+            1,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M4",
+          "gagnant_espere": 2,
+          "meilleur_place": 5,
+          "ordre_espere": [
+            2,
+            5,
+            9,
+            4,
+            11
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            5,
+            9,
+            4,
+            11
+          ],
+          "classement_complet": [
+            2,
+            5,
+            9,
+            4,
+            11,
+            7,
+            6,
+            12,
+            3,
+            10,
+            1,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        },
+        {
+          "moteur": "M5",
+          "gagnant_espere": 2,
+          "meilleur_place": 9,
+          "ordre_espere": [
+            2,
+            9,
+            4,
+            5,
+            12
+          ],
+          "ordre_arrivee_espere": [
+            2,
+            9,
+            4,
+            5,
+            12
+          ],
+          "classement_complet": [
+            2,
+            9,
+            4,
+            5,
+            12,
+            6,
+            7,
+            10,
+            11,
+            3,
+            1,
+            8
+          ],
+          "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
+          "pari_retenu": null,
+          "methode": "HEURISTIQUE_MUSIQUE"
+        }
+      ],
+      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
     }
   ]
 }

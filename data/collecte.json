@@ -1,12 +1,13 @@
 {
-  "version": "3.0",
+  "version": "5.0",
   "date": "2026-10-29",
-  "collecte_a": "2026-10-29T07:19:36.790015+01:00",
+  "collecte_a": "2026-10-29T07:57:05.783653+01:00",
   "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
   "statut": "OK",
   "courses": [
     {
       "id": "2026-10-29-R2-C1",
+      "course_id": "2026-10-29-R2-C1",
       "reunion": 2,
       "course": 1,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
@@ -118,11 +119,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C1/participants",
-      "collecte_a": "2026-10-29T07:19:41.630557+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:10.002388+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C1/participants",
+        "participants_recus_a": "2026-10-29T07:57:10.002388+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R2-C2",
+      "course_id": "2026-10-29-R2-C2",
       "reunion": 2,
       "course": 2,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
@@ -250,11 +259,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C2/participants",
-      "collecte_a": "2026-10-29T07:19:41.999177+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:10.366554+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C2/participants",
+        "participants_recus_a": "2026-10-29T07:57:10.366554+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R3-C1",
+      "course_id": "2026-10-29-R3-C1",
       "reunion": 3,
       "course": 1,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
@@ -338,11 +355,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C1/participants",
-      "collecte_a": "2026-10-29T07:19:44.284010+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:12.484299+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C1/participants",
+        "participants_recus_a": "2026-10-29T07:57:12.484299+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R2-C3",
+      "course_id": "2026-10-29-R2-C3",
       "reunion": 2,
       "course": 3,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
@@ -510,11 +535,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C3/participants",
-      "collecte_a": "2026-10-29T07:19:42.395693+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:10.868524+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C3/participants",
+        "participants_recus_a": "2026-10-29T07:57:10.868524+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R3-C2",
+      "course_id": "2026-10-29-R3-C2",
       "reunion": 3,
       "course": 2,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
@@ -598,11 +631,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C2/participants",
-      "collecte_a": "2026-10-29T07:19:44.652737+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:12.747072+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C2/participants",
+        "participants_recus_a": "2026-10-29T07:57:12.747072+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R2-C4",
+      "course_id": "2026-10-29-R2-C4",
       "reunion": 2,
       "course": 4,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
@@ -840,11 +881,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C4/participants",
-      "collecte_a": "2026-10-29T07:19:42.890641+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:11.126797+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C4/participants",
+        "participants_recus_a": "2026-10-29T07:57:11.126797+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R3-C3",
+      "course_id": "2026-10-29-R3-C3",
       "reunion": 3,
       "course": 3,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
@@ -942,11 +991,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C3/participants",
-      "collecte_a": "2026-10-29T07:19:44.985524+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:13.019882+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C3/participants",
+        "participants_recus_a": "2026-10-29T07:57:13.019882+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R2-C5",
+      "course_id": "2026-10-29-R2-C5",
       "reunion": 2,
       "course": 5,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
@@ -1184,11 +1241,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C5/participants",
-      "collecte_a": "2026-10-29T07:19:43.226523+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:11.487165+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C5/participants",
+        "participants_recus_a": "2026-10-29T07:57:11.487165+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R3-C4",
+      "course_id": "2026-10-29-R3-C4",
       "reunion": 3,
       "course": 4,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
@@ -1300,11 +1365,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C4/participants",
-      "collecte_a": "2026-10-29T07:19:45.354859+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:13.280743+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C4/participants",
+        "participants_recus_a": "2026-10-29T07:57:13.280743+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R2-C6",
+      "course_id": "2026-10-29-R2-C6",
       "reunion": 2,
       "course": 6,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
@@ -1416,11 +1489,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C6/participants",
-      "collecte_a": "2026-10-29T07:19:43.577644+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:11.875154+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C6/participants",
+        "participants_recus_a": "2026-10-29T07:57:11.875154+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R1-C1",
+      "course_id": "2026-10-29-R1-C1",
       "reunion": 1,
       "course": 1,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
@@ -1630,11 +1711,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C1/participants",
-      "collecte_a": "2026-10-29T07:19:38.426949+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:06.627754+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C1/participants",
+        "participants_recus_a": "2026-10-29T07:57:06.627754+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R3-C5",
+      "course_id": "2026-10-29-R3-C5",
       "reunion": 3,
       "course": 5,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
@@ -1774,11 +1863,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C5/participants",
-      "collecte_a": "2026-10-29T07:19:45.713223+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:13.547994+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C5/participants",
+        "participants_recus_a": "2026-10-29T07:57:13.547994+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R2-C7",
+      "course_id": "2026-10-29-R2-C7",
       "reunion": 2,
       "course": 7,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
@@ -1890,11 +1987,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C7/participants",
-      "collecte_a": "2026-10-29T07:19:43.910266+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:12.141646+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C7/participants",
+        "participants_recus_a": "2026-10-29T07:57:12.141646+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R1-C2",
+      "course_id": "2026-10-29-R1-C2",
       "reunion": 1,
       "course": 2,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
@@ -2118,11 +2223,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C2/participants",
-      "collecte_a": "2026-10-29T07:19:38.924323+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:07.152156+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C2/participants",
+        "participants_recus_a": "2026-10-29T07:57:07.152156+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R3-C6",
+      "course_id": "2026-10-29-R3-C6",
       "reunion": 3,
       "course": 6,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
@@ -2262,11 +2375,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C6/participants",
-      "collecte_a": "2026-10-29T07:19:46.111764+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:13.805748+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C6/participants",
+        "participants_recus_a": "2026-10-29T07:57:13.805748+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R1-C3",
+      "course_id": "2026-10-29-R1-C3",
       "reunion": 1,
       "course": 3,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
@@ -2448,11 +2569,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C3/participants",
-      "collecte_a": "2026-10-29T07:19:39.347475+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:07.567543+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C3/participants",
+        "participants_recus_a": "2026-10-29T07:57:07.567543+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R3-C7",
+      "course_id": "2026-10-29-R3-C7",
       "reunion": 3,
       "course": 7,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
@@ -2592,11 +2721,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C7/participants",
-      "collecte_a": "2026-10-29T07:19:46.471912+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:14.068233+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C7/participants",
+        "participants_recus_a": "2026-10-29T07:57:14.068233+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R1-C4",
+      "course_id": "2026-10-29-R1-C4",
       "reunion": 1,
       "course": 4,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
@@ -2778,11 +2915,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C4/participants",
-      "collecte_a": "2026-10-29T07:19:39.742790+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:07.932807+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C4/participants",
+        "participants_recus_a": "2026-10-29T07:57:07.932807+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R3-C8",
+      "course_id": "2026-10-29-R3-C8",
       "reunion": 3,
       "course": 8,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
@@ -2992,11 +3137,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C8/participants",
-      "collecte_a": "2026-10-29T07:19:46.804102+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:14.405260+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C8/participants",
+        "participants_recus_a": "2026-10-29T07:57:14.405260+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R1-C5",
+      "course_id": "2026-10-29-R1-C5",
       "reunion": 1,
       "course": 5,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
@@ -3178,11 +3331,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C5/participants",
-      "collecte_a": "2026-10-29T07:19:40.130479+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:08.462500+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C5/participants",
+        "participants_recus_a": "2026-10-29T07:57:08.462500+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R4-C1",
+      "course_id": "2026-10-29-R4-C1",
       "reunion": 4,
       "course": 1,
       "hippodrome": "HIPPODROME DE GRAIGNES",
@@ -3392,11 +3553,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C1/participants",
-      "collecte_a": "2026-10-29T07:19:47.133758+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:14.762534+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C1/participants",
+        "participants_recus_a": "2026-10-29T07:57:14.762534+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R1-C6",
+      "course_id": "2026-10-29-R1-C6",
       "reunion": 1,
       "course": 6,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
@@ -3606,11 +3775,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C6/participants",
-      "collecte_a": "2026-10-29T07:19:40.614965+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:08.849280+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C6/participants",
+        "participants_recus_a": "2026-10-29T07:57:08.849280+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R4-C2",
+      "course_id": "2026-10-29-R4-C2",
       "reunion": 4,
       "course": 2,
       "hippodrome": "HIPPODROME DE GRAIGNES",
@@ -3806,11 +3983,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C2/participants",
-      "collecte_a": "2026-10-29T07:19:47.609816+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:15.026683+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C2/participants",
+        "participants_recus_a": "2026-10-29T07:57:15.026683+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R1-C7",
+      "course_id": "2026-10-29-R1-C7",
       "reunion": 1,
       "course": 7,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
@@ -4076,11 +4261,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C7/participants",
-      "collecte_a": "2026-10-29T07:19:40.961372+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:09.233890+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C7/participants",
+        "participants_recus_a": "2026-10-29T07:57:09.233890+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R4-C3",
+      "course_id": "2026-10-29-R4-C3",
       "reunion": 4,
       "course": 3,
       "hippodrome": "HIPPODROME DE GRAIGNES",
@@ -4290,11 +4483,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C3/participants",
-      "collecte_a": "2026-10-29T07:19:47.956217+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:15.285677+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C3/participants",
+        "participants_recus_a": "2026-10-29T07:57:15.285677+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R1-C8",
+      "course_id": "2026-10-29-R1-C8",
       "reunion": 1,
       "course": 8,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
@@ -4476,11 +4677,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C8/participants",
-      "collecte_a": "2026-10-29T07:19:41.295580+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:09.742491+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C8/participants",
+        "participants_recus_a": "2026-10-29T07:57:09.742491+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R4-C4",
+      "course_id": "2026-10-29-R4-C4",
       "reunion": 4,
       "course": 4,
       "hippodrome": "HIPPODROME DE GRAIGNES",
@@ -4692,11 +4901,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C4/participants",
-      "collecte_a": "2026-10-29T07:19:48.730649+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:15.710270+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C4/participants",
+        "participants_recus_a": "2026-10-29T07:57:15.710270+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R4-C5",
+      "course_id": "2026-10-29-R4-C5",
       "reunion": 4,
       "course": 5,
       "hippodrome": "HIPPODROME DE GRAIGNES",
@@ -4934,11 +5151,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C5/participants",
-      "collecte_a": "2026-10-29T07:19:49.063167+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:15.967827+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C5/participants",
+        "participants_recus_a": "2026-10-29T07:57:15.967827+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R4-C6",
+      "course_id": "2026-10-29-R4-C6",
       "reunion": 4,
       "course": 6,
       "hippodrome": "HIPPODROME DE GRAIGNES",
@@ -5120,11 +5345,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C6/participants",
-      "collecte_a": "2026-10-29T07:19:49.434464+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:16.559327+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C6/participants",
+        "participants_recus_a": "2026-10-29T07:57:16.559327+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R4-C7",
+      "course_id": "2026-10-29-R4-C7",
       "reunion": 4,
       "course": 7,
       "hippodrome": "HIPPODROME DE GRAIGNES",
@@ -5334,11 +5567,19 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C7/participants",
-      "collecte_a": "2026-10-29T07:19:49.764754+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:16.820211+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C7/participants",
+        "participants_recus_a": "2026-10-29T07:57:16.820211+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     },
     {
       "id": "2026-10-29-R4-C8",
+      "course_id": "2026-10-29-R4-C8",
       "reunion": 4,
       "course": 8,
       "hippodrome": "HIPPODROME DE GRAIGNES",
@@ -5520,8 +5761,15 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C8/participants",
-      "collecte_a": "2026-10-29T07:19:50.095593+01:00",
-      "statut": "PARTANTS_CHARGES"
+      "collecte_a": "2026-10-29T07:57:17.197364+01:00",
+      "statut": "PARTANTS_CHARGES",
+      "controle_source": {
+        "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
+        "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C8/participants",
+        "participants_recus_a": "2026-10-29T07:57:17.197364+01:00",
+        "mode": "API_REPONSE_DIRECTE",
+        "structure_validee": true
+      }
     }
   ],
   "erreurs": [],

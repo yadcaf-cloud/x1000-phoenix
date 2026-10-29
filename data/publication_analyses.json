@@ -1,16 +1,23 @@
 {
-  "genere_a": "2026-10-29T06:19:50.298815+00:00",
-  "version": "M1-M5-heuristique-3",
+  "version": "5.0",
+  "genere_a": "2026-10-29T07:57:17.411862+01:00",
+  "source": "data/collecte.json",
+  "date_source": "2026-10-29",
   "analyses": [
     {
       "id": "2026-10-29-R2-C1",
       "course_id": "2026-10-29-R2-C1",
+      "reunion": 2,
+      "course": 1,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nom": "PRIX WWW.COURSESCHEVAUX.FR",
       "depart": "2026-10-29T11:05:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C1/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:10.002388+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 7,
       "chevaux_evalues": 5,
+      "chevaux_sans_musique": 2,
       "moteurs": [
         {
           "moteur": "M1",
@@ -45,8 +52,9 @@
             "6": 0.454545
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -81,8 +89,9 @@
             "6": 0.113636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -117,8 +126,9 @@
             "6": 0.159091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -153,8 +163,9 @@
             "6": 0.143636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -189,8 +200,9 @@
             "6": 0.176364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -199,17 +211,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R2-C2",
       "course_id": "2026-10-29-R2-C2",
+      "reunion": 2,
+      "course": 2,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nom": "PRIX DU THEATRE IMPERIAL DU CHATEAU DE FONTAINEBLEAU",
       "depart": "2026-10-29T11:35:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C2/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:10.366554+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 7,
       "chevaux_evalues": 7,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -248,8 +271,9 @@
             "6": 0.363636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -288,8 +312,9 @@
             "6": 0.090909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -328,8 +353,9 @@
             "6": 0.127273
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -368,8 +394,9 @@
             "6": 0.120909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -408,8 +435,9 @@
             "6": 0.149091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -418,17 +446,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R3-C1",
       "course_id": "2026-10-29-R3-C1",
+      "reunion": 3,
+      "course": 1,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nom": "PRIX ACE IMPACT",
       "depart": "2026-10-29T11:51:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C1/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:12.484299+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 5,
       "chevaux_evalues": 5,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -463,8 +502,9 @@
             "3": 0.407323
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -499,8 +539,9 @@
             "2": 0.327273
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -535,8 +576,9 @@
             "3": 0.124091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -571,8 +613,9 @@
             "2": 0.447273
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -607,8 +650,9 @@
             "3": 0.406364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -617,17 +661,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R2-C3",
       "course_id": "2026-10-29-R2-C3",
+      "reunion": 2,
+      "course": 3,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nom": "PRIX DE LA ROUTE DES 2 SOEURS  (CHMPT PARIS TURF DES APP. & J. JOCK.)",
       "depart": "2026-10-29T12:07:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C3/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:10.868524+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 11,
       "chevaux_evalues": 11,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -674,8 +729,9 @@
             "8": 0.445779
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -722,8 +778,9 @@
             "10": 0.243506
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -770,8 +827,9 @@
             "8": 0.136818
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -818,8 +876,9 @@
             "10": 0.372078
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -866,8 +925,9 @@
             "8": 0.36013
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -876,17 +936,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R3-C2",
       "course_id": "2026-10-29-R3-C2",
+      "reunion": 3,
+      "course": 2,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nom": "PRIX CHAPEAU ROUGE",
       "depart": "2026-10-29T12:23:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C2/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:12.747072+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 5,
       "chevaux_evalues": 5,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -921,8 +992,9 @@
             "5": 0.705844
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -957,8 +1029,9 @@
             "4": 0.483766
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -993,8 +1066,9 @@
             "4": 0.347403
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -1029,8 +1103,9 @@
             "4": 0.569481
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -1065,8 +1140,9 @@
             "4": 0.575325
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -1075,17 +1151,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R2-C4",
       "course_id": "2026-10-29-R2-C4",
+      "reunion": 2,
+      "course": 4,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nom": "PRIX COMTE ANTOINE DE GONTAUT-BIRON",
       "depart": "2026-10-29T12:39:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C4/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:11.126797+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 16,
       "chevaux_evalues": 13,
+      "chevaux_sans_musique": 3,
       "moteurs": [
         {
           "moteur": "M1",
@@ -1136,8 +1223,9 @@
             "6": 0.363636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -1188,8 +1276,9 @@
             "6": 0.090909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -1240,8 +1329,9 @@
             "6": 0.127273
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -1292,8 +1382,9 @@
             "6": 0.120909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -1344,8 +1435,9 @@
             "6": 0.149091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -1354,17 +1446,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R3-C3",
       "course_id": "2026-10-29-R3-C3",
+      "reunion": 3,
+      "course": 3,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nom": "PRIX JEAN LABORDE",
       "depart": "2026-10-29T12:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C3/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:13.019882+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 6,
       "chevaux_evalues": 6,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -1401,8 +1504,9 @@
             "6": 0.568182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -1439,8 +1543,9 @@
             "6": 0.325758
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -1477,8 +1582,9 @@
             "1": 0.326768
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -1515,8 +1621,9 @@
             "6": 0.442424
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -1553,8 +1660,9 @@
             "6": 0.474747
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -1563,17 +1671,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R2-C5",
       "course_id": "2026-10-29-R2-C5",
+      "reunion": 2,
+      "course": 5,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nom": "PRIX PATRICE QUENEDEY",
       "depart": "2026-10-29T13:11:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C5/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:11.487165+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 16,
       "chevaux_evalues": 13,
+      "chevaux_sans_musique": 3,
       "moteurs": [
         {
           "moteur": "M1",
@@ -1624,8 +1743,9 @@
             "16": 0.326705
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -1676,8 +1796,9 @@
             "16": 0.079545
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -1728,8 +1849,9 @@
             "16": 0.115341
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -1780,8 +1902,9 @@
             "16": 0.139545
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -1832,8 +1955,9 @@
             "15": 0.176364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -1842,17 +1966,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R3-C4",
       "course_id": "2026-10-29-R3-C4",
+      "reunion": 3,
+      "course": 4,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nom": "GRAND STEEPLE-CHASE DE BORDEAUX",
       "depart": "2026-10-29T13:27:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C4/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:13.280743+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 7,
       "chevaux_evalues": 7,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -1891,8 +2026,9 @@
             "6": 0.613961
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -1931,8 +2067,9 @@
             "2": 0.420455
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -1971,8 +2108,9 @@
             "2": 0.248182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -2011,8 +2149,9 @@
             "2": 0.520455
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -2051,8 +2190,9 @@
             "2": 0.512727
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -2061,17 +2201,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R2-C6",
       "course_id": "2026-10-29-R2-C6",
+      "reunion": 2,
+      "course": 6,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nom": "PRIX DU MASSIF FORESTIER",
       "depart": "2026-10-29T13:43:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C6/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:11.875154+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 7,
       "chevaux_evalues": 7,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -2110,8 +2261,9 @@
             "6": 0.418182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -2150,8 +2302,9 @@
             "6": 0.090909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -2190,8 +2343,9 @@
             "7": 0.143182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -2230,8 +2384,9 @@
             "6": 0.240909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -2270,8 +2425,9 @@
             "6": 0.330909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -2280,17 +2436,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R1-C1",
       "course_id": "2026-10-29-R1-C1",
+      "reunion": 1,
+      "course": 1,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nom": "PRIX DES CEVENNES",
       "depart": "2026-10-29T13:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C1/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:06.627754+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -2343,8 +2510,9 @@
             "8": 0.402273
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -2397,8 +2565,9 @@
             "14": 0.141414
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -2451,8 +2620,9 @@
             "8": 0.124091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -2505,8 +2675,9 @@
             "14": 0.291414
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -2559,8 +2730,9 @@
             "8": 0.356364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -2569,17 +2741,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R3-C5",
       "course_id": "2026-10-29-R3-C5",
+      "reunion": 3,
+      "course": 5,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nom": "PRIX DE PAUILLAC",
       "depart": "2026-10-29T14:12:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C5/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:13.547994+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 9,
       "chevaux_evalues": 9,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -2622,8 +2805,9 @@
             "7": 0.5125
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -2666,8 +2850,9 @@
             "7": 0.130682
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -2710,8 +2895,9 @@
             "7": 0.178182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -2754,8 +2940,9 @@
             "7": 0.250682
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -2798,8 +2985,9 @@
             "7": 0.312727
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -2808,17 +2996,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R2-C7",
       "course_id": "2026-10-29-R2-C7",
+      "reunion": 2,
+      "course": 7,
       "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "nom": "PRIX COLONEL ROBERT LABOUCHE",
       "depart": "2026-10-29T14:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C7/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:12.141646+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 7,
       "chevaux_evalues": 7,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -2857,8 +3056,9 @@
             "4": 0.553896
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -2897,8 +3097,9 @@
             "7": 0.409091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -2937,8 +3138,9 @@
             "2": 0.247222
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -2977,8 +3179,9 @@
             "7": 0.516234
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -3017,8 +3220,9 @@
             "4": 0.538442
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -3027,17 +3231,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R1-C2",
       "course_id": "2026-10-29-R1-C2",
+      "reunion": 1,
+      "course": 2,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nom": "PRIX DE FOUILLOY",
       "depart": "2026-10-29T14:30:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C2/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:07.152156+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 15,
       "chevaux_evalues": 15,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -3092,8 +3307,9 @@
             "2": 0.636364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -3148,8 +3364,9 @@
             "6": 0.299242
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -3204,8 +3421,9 @@
             "10": 0.238636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -3260,8 +3478,9 @@
             "6": 0.424242
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -3316,8 +3535,9 @@
             "6": 0.471515
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -3326,17 +3546,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R3-C6",
       "course_id": "2026-10-29-R3-C6",
+      "reunion": 3,
+      "course": 6,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nom": "PRIX DU PONT NEUF",
       "depart": "2026-10-29T14:47:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C6/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:13.805748+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 9,
       "chevaux_evalues": 9,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -3379,8 +3610,9 @@
             "7": 0.272727
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -3423,8 +3655,9 @@
             "7": 0.068182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -3467,8 +3700,9 @@
             "7": 0.095455
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -3511,8 +3745,9 @@
             "7": 0.098182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -3555,8 +3790,9 @@
             "7": 0.121818
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -3565,17 +3801,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R1-C3",
       "course_id": "2026-10-29-R1-C3",
+      "reunion": 1,
+      "course": 3,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nom": "PRIX D'EMBRUN",
       "depart": "2026-10-29T15:05:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C3/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:07.567543+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -3624,8 +3871,9 @@
             "3": 0.483333
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -3674,8 +3922,9 @@
             "8": 0.244949
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -3724,8 +3973,9 @@
             "4": 0.187727
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -3774,8 +4024,9 @@
             "8": 0.378283
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -3824,8 +4075,9 @@
             "8": 0.462424
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -3834,17 +4086,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R3-C7",
       "course_id": "2026-10-29-R3-C7",
+      "reunion": 3,
+      "course": 7,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nom": "PRIX PHILIPPE MARTIN",
       "depart": "2026-10-29T15:22:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C7/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:14.068233+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 9,
       "chevaux_evalues": 9,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -3887,8 +4150,9 @@
             "7": 0.540909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -3931,8 +4195,9 @@
             "1": 0.136364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -3975,8 +4240,9 @@
             "1": 0.21
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -4019,8 +4285,9 @@
             "1": 0.286364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -4063,8 +4330,9 @@
             "1": 0.38
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -4073,17 +4341,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R1-C4",
       "course_id": "2026-10-29-R1-C4",
+      "reunion": 1,
+      "course": 4,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nom": "PRIX D'AUBAGNE",
       "depart": "2026-10-29T15:40:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C4/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:07.932807+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -4132,8 +4411,9 @@
             "10": 0.483333
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -4182,8 +4462,9 @@
             "4": 0.386364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -4232,8 +4513,9 @@
             "10": 0.149545
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -4282,8 +4564,9 @@
             "4": 0.493506
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -4332,8 +4615,9 @@
             "8": 0.469091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -4342,17 +4626,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R3-C8",
       "course_id": "2026-10-29-R3-C8",
+      "reunion": 3,
+      "course": 8,
       "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "nom": "GRANDE COURSE DE HAIES DE BORDEAUX",
       "depart": "2026-10-29T15:57:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C8/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:14.405260+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -4405,8 +4700,9 @@
             "13": 0.405844
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -4459,8 +4755,9 @@
             "13": 0.24026
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -4513,8 +4810,9 @@
             "13": 0.127273
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -4567,8 +4865,9 @@
             "13": 0.368831
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -4621,8 +4920,9 @@
             "13": 0.351948
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -4631,17 +4931,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R1-C5",
       "course_id": "2026-10-29-R1-C5",
+      "reunion": 1,
+      "course": 5,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nom": "PRIX D'AVESNES",
       "depart": "2026-10-29T16:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C5/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:08.462500+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -4690,8 +5001,9 @@
             "6": 0.465152
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -4740,8 +5052,9 @@
             "9": 0.181818
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -4790,8 +5103,9 @@
             "6": 0.146364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -4840,8 +5154,9 @@
             "9": 0.241818
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -4890,8 +5205,9 @@
             "9": 0.298182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -4900,17 +5216,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R4-C1",
       "course_id": "2026-10-29-R4-C1",
+      "reunion": 4,
+      "course": 1,
       "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nom": "PRIX DE GRAIGNES",
       "depart": "2026-10-29T16:32:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C1/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:14.762534+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -4963,8 +5290,9 @@
             "4": 0.389205
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -5017,8 +5345,9 @@
             "11": 0.140909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -5071,8 +5400,9 @@
             "11": 0.149545
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -5125,8 +5455,9 @@
             "11": 0.290909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -5179,8 +5510,9 @@
             "11": 0.328182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -5189,17 +5521,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R1-C6",
       "course_id": "2026-10-29-R1-C6",
+      "reunion": 1,
+      "course": 6,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nom": "PRIX DU DORAT",
       "depart": "2026-10-29T16:50:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C6/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:08.849280+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -5252,8 +5595,9 @@
             "1": 0.56526
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -5306,8 +5650,9 @@
             "5": 0.284091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -5360,8 +5705,9 @@
             "1": 0.194091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -5414,8 +5760,9 @@
             "5": 0.409091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -5468,8 +5815,9 @@
             "1": 0.452078
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -5478,17 +5826,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R4-C2",
       "course_id": "2026-10-29-R4-C2",
+      "reunion": 4,
+      "course": 2,
       "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nom": "PRIX FLORENCE LECELLIER",
       "depart": "2026-10-29T17:07:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C2/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:15.026683+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 13,
       "chevaux_evalues": 13,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -5539,8 +5898,9 @@
             "8": 0.564773
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -5591,8 +5951,9 @@
             "4": 0.315657
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -5643,8 +6004,9 @@
             "6": 0.194091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -5695,8 +6057,9 @@
             "4": 0.432323
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -5747,8 +6110,9 @@
             "4": 0.43303
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -5757,17 +6121,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R1-C7",
       "course_id": "2026-10-29-R1-C7",
+      "reunion": 1,
+      "course": 7,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nom": "PRIX D'AMIENS",
       "depart": "2026-10-29T17:25:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C7/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:09.233890+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 18,
       "chevaux_evalues": 18,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -5828,8 +6203,9 @@
             "4": 0.534848
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -5890,8 +6266,9 @@
             "4": 0.132576
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -5952,8 +6329,9 @@
             "8": 0.187727
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -6014,8 +6392,9 @@
             "4": 0.282576
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -6076,8 +6455,9 @@
             "4": 0.360909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -6086,17 +6466,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R4-C3",
       "course_id": "2026-10-29-R4-C3",
+      "reunion": 4,
+      "course": 3,
       "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nom": "PRIX CENTRAKOR LA HAYE",
       "depart": "2026-10-29T17:42:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C3/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:15.285677+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -6149,8 +6540,9 @@
             "4": 0.434848
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -6203,8 +6595,9 @@
             "4": 0.121212
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -6257,8 +6650,9 @@
             "4": 0.146364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -6311,8 +6705,9 @@
             "4": 0.271212
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -6365,8 +6760,9 @@
             "4": 0.325455
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -6375,17 +6771,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R1-C8",
       "course_id": "2026-10-29-R1-C8",
+      "reunion": 1,
+      "course": 8,
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "nom": "PRIX DE SOULAC",
       "depart": "2026-10-29T18:00:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C8/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:09.742491+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -6434,8 +6841,9 @@
             "6": 0.575
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -6484,8 +6892,9 @@
             "3": 0.142045
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -6534,8 +6943,9 @@
             "3": 0.203636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -6584,8 +6994,9 @@
             "3": 0.262045
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -6634,8 +7045,9 @@
             "3": 0.334545
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -6644,17 +7056,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R4-C4",
       "course_id": "2026-10-29-R4-C4",
+      "reunion": 4,
+      "course": 4,
       "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nom": "PRIX DES ETABLISSEMENTS RAULT",
       "depart": "2026-10-29T18:20:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C4/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:15.710270+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 13,
       "chevaux_evalues": 13,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -6705,8 +7128,9 @@
             "10": 0.363636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -6757,8 +7181,9 @@
             "14": 0.232955
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -6809,8 +7234,9 @@
             "10": 0.114545
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -6861,8 +7287,9 @@
             "14": 0.364205
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -6913,8 +7340,9 @@
             "10": 0.358182
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -6923,17 +7351,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R4-C5",
       "course_id": "2026-10-29-R4-C5",
+      "reunion": 4,
+      "course": 5,
       "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nom": "PRIX ANDRE ROUER",
       "depart": "2026-10-29T18:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C5/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:15.967827+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 16,
       "chevaux_evalues": 16,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -6990,8 +7429,9 @@
             "8": 0.388636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -7048,8 +7488,9 @@
             "9": 0.098485
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -7106,8 +7547,9 @@
             "8": 0.133636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -7164,8 +7606,9 @@
             "9": 0.188485
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -7222,8 +7665,9 @@
             "9": 0.256364
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -7232,17 +7676,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R4-C6",
       "course_id": "2026-10-29-R4-C6",
+      "reunion": 4,
+      "course": 6,
       "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nom": "PRIX JEAN TP",
       "depart": "2026-10-29T19:27:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C6/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:16.559327+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -7291,8 +7746,9 @@
             "9": 0.553409
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -7341,8 +7797,9 @@
             "1": 0.352273
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -7391,8 +7848,9 @@
             "5": 0.235455
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -7441,8 +7899,9 @@
             "1": 0.434773
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -7491,8 +7950,9 @@
             "1": 0.475909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -7501,17 +7961,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R4-C7",
       "course_id": "2026-10-29-R4-C7",
+      "reunion": 4,
+      "course": 7,
       "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nom": "PRIX HENRI LEVESQUE",
       "depart": "2026-10-29T19:59:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C7/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:16.820211+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 14,
       "chevaux_evalues": 14,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -7564,8 +8035,9 @@
             "3": 0.342424
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -7618,8 +8090,9 @@
             "3": 0.083333
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -7672,8 +8145,9 @@
             "3": 0.120909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -7726,8 +8200,9 @@
             "3": 0.173333
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -7780,8 +8255,9 @@
             "3": 0.223636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -7790,17 +8266,28 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     },
     {
       "id": "2026-10-29-R4-C8",
       "course_id": "2026-10-29-R4-C8",
+      "reunion": 4,
+      "course": 8,
       "hippodrome": "HIPPODROME DE GRAIGNES",
+      "nom": "PRIX GEORGES DREUX",
       "depart": "2026-10-29T20:31:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C8/participants",
-      "analyse_a": "2026-10-29T06:19:50.298815+00:00",
+      "collecte_a": "2026-10-29T07:57:17.197364+01:00",
+      "analyse_a": "2026-10-29T07:57:17.411862+01:00",
       "nombre_partants": 12,
       "chevaux_evalues": 12,
+      "chevaux_sans_musique": 0,
       "moteurs": [
         {
           "moteur": "M1",
@@ -7849,8 +8336,9 @@
             "8": 0.488636
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M2",
@@ -7899,8 +8387,9 @@
             "8": 0.140909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M3",
@@ -7949,8 +8438,9 @@
             "8": 0.162273
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M4",
@@ -7999,8 +8489,9 @@
             "8": 0.290909
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         },
         {
           "moteur": "M5",
@@ -8049,8 +8540,9 @@
             "8": 0.339091
           },
           "qualification": "ETUDE_NON_VALIDEE",
+          "validation": "NON_FIGE",
           "pari_retenu": null,
-          "validation": "NON_FIGE"
+          "fige": false
         }
       ],
       "statut": "ANALYSE_EXPLORATOIRE",
@@ -8059,9 +8551,22 @@
       "fige": false,
       "pari_officiel": false,
       "eligible_fige": true,
-      "avertissement": "Classements heuristiques fondés uniquement sur la musique. Les indicateurs de vérification proviennent des données source et ne constituent pas une vérification indépendante. Aucune probabilité calibrée, validation officielle ou garantie de gain."
+      "controles": {
+        "france_verifiee": true,
+        "depart_verifie": true,
+        "avant_depart": true,
+        "donnees_suffisantes": true
+      },
+      "avertissement": "Classements heuristiques bases uniquement sur la musique. Les scores ne sont pas des probabilites de victoire. Aucun pari valide ou FIGE n'est cree par cet analyseur."
     }
   ],
   "erreurs": [],
-  "courses_ignorees": 11
+  "courses_ignorees": 0,
+  "statistiques": {
+    "courses_source": 31,
+    "courses_analysees": 31,
+    "courses_ignorees": 0,
+    "erreurs": 0,
+    "moteurs": 5
+  }
 }

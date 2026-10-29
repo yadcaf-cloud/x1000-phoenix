@@ -1,7 +1,7 @@
 {
   "logiciel": "X1000 PHOENIX",
-  "version": "PUBLICATION-UNIFIEE-7.2",
-  "generated_at_paris": "2026-10-29T07:19:50.463315+01:00",
+  "version": "PUBLICATION-UNIFIEE-8.0",
+  "generated_at_paris": "2026-10-29T07:57:17.585492+01:00",
   "source_donnees": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026",
   "moteurs_actifs": [
     "M1",
@@ -12,12 +12,13 @@
   ],
   "courses_collectees": 31,
   "courses_count": 42,
-  "analyses_count": 0,
-  "pronostics_count": 55,
+  "analyses_count": 31,
+  "pronostics_count": 155,
   "pv_count": 31,
   "figes_count": 11,
   "audits_count": 0,
-  "status": "AUCUNE_ANALYSE",
+  "nouveaux_figes": 0,
+  "status": "ANALYSES_DISPONIBLES",
   "difficultes": [],
-  "avertissement": "Scores heuristiques non calibres. Aucun nouveau FIGE cree. Les originaux historiques ne sont pas modifies."
+  "avertissement": "Analyses heuristiques non validees. Aucun nouveau FIGE cree. Les archives originales sont conservees. Les sources PMU ne sont pas reverifiees en direct par ce module."
 }
