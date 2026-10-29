@@ -1,11 +1,11 @@
 {
   "pv": [
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C1-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R2-C1-20261029T080635283136",
       "course_id": "2026-10-29-R2-C1",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T11:05:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C1/participants",
       "moteurs": [
@@ -37,6 +37,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -67,6 +68,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -97,6 +99,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -127,6 +130,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -157,17 +161,19 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C2-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R2-C2-20261029T080635283136",
       "course_id": "2026-10-29-R2-C2",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T11:35:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C2/participants",
       "moteurs": [
@@ -194,13 +200,12 @@
             5,
             4,
             3,
-            8,
-            1,
-            6
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -226,13 +231,12 @@
             5,
             4,
             8,
-            3,
-            1,
-            6
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -258,13 +262,12 @@
             4,
             8,
             5,
-            3,
-            1,
-            6
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -290,13 +293,12 @@
             5,
             4,
             8,
-            3,
-            1,
-            6
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -322,24 +324,24 @@
             5,
             4,
             3,
-            8,
-            1,
-            6
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C1-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R3-C1-20261029T080635283136",
       "course_id": "2026-10-29-R3-C1",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T11:51:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C1/participants",
       "moteurs": [
@@ -371,6 +373,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -401,6 +404,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -431,6 +435,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -461,6 +466,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -491,17 +497,19 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C3-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R2-C3-20261029T080635283136",
       "course_id": "2026-10-29-R2-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T12:07:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C3/participants",
       "moteurs": [
@@ -528,17 +536,12 @@
             7,
             6,
             5,
-            4,
-            1,
-            9,
-            3,
-            10,
-            2,
-            8
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -564,17 +567,12 @@
             7,
             1,
             5,
-            6,
-            3,
-            9,
-            2,
-            4,
-            8,
-            10
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -600,17 +598,12 @@
             6,
             1,
             7,
-            4,
-            3,
-            5,
-            9,
-            2,
-            10,
-            8
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -636,17 +629,12 @@
             11,
             1,
             5,
-            6,
-            3,
-            9,
-            2,
-            4,
-            8,
-            10
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -672,28 +660,24 @@
             7,
             1,
             6,
-            5,
-            3,
-            4,
-            9,
-            2,
-            10,
-            8
+            5
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C2-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R3-C2-20261029T080635283136",
       "course_id": "2026-10-29-R3-C2",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T12:23:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C2/participants",
       "moteurs": [
@@ -725,6 +709,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -755,6 +740,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -785,6 +771,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -815,6 +802,7 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -845,17 +833,19 @@
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C4-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R2-C4-20261029T080635283136",
       "course_id": "2026-10-29-R2-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T12:39:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C4/participants",
       "moteurs": [
@@ -882,19 +872,12 @@
             2,
             5,
             10,
-            14,
-            3,
-            4,
-            8,
-            12,
-            11,
-            15,
-            9,
-            6
+            14
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -920,19 +903,12 @@
             2,
             4,
             3,
-            15,
-            9,
-            5,
-            10,
-            14,
-            8,
-            12,
-            11,
-            6
+            15
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -958,19 +934,12 @@
             15,
             3,
             1,
-            5,
-            10,
-            14,
-            9,
-            4,
-            8,
-            12,
-            11,
-            6
+            5
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -996,19 +965,12 @@
             2,
             3,
             4,
-            15,
-            9,
-            14,
-            5,
-            10,
-            8,
-            12,
-            11,
-            6
+            15
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1034,30 +996,24 @@
             1,
             3,
             4,
-            15,
-            9,
-            14,
-            5,
-            10,
-            8,
-            12,
-            11,
-            6
+            15
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C3-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R3-C3-20261029T080635283136",
       "course_id": "2026-10-29-R3-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T12:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C3/participants",
       "moteurs": [
@@ -1084,12 +1040,12 @@
             4,
             3,
             1,
-            5,
-            6
+            5
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1115,12 +1071,12 @@
             3,
             5,
             1,
-            4,
-            6
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1146,12 +1102,12 @@
             3,
             2,
             5,
-            6,
-            1
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1177,12 +1133,12 @@
             3,
             5,
             1,
-            4,
-            6
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1208,23 +1164,24 @@
             3,
             4,
             5,
-            1,
-            6
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C5-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R2-C5-20261029T080635283136",
       "course_id": "2026-10-29-R2-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T13:11:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C5/participants",
       "moteurs": [
@@ -1251,19 +1208,12 @@
             1,
             5,
             12,
-            3,
-            2,
-            13,
-            4,
-            7,
-            10,
-            9,
-            15,
-            16
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1289,19 +1239,12 @@
             1,
             5,
             12,
-            3,
-            2,
-            4,
-            13,
-            7,
-            10,
-            9,
-            15,
-            16
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1327,19 +1270,12 @@
             11,
             1,
             5,
-            12,
-            3,
-            13,
-            4,
-            7,
-            10,
-            9,
-            15,
-            16
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1365,19 +1301,12 @@
             1,
             5,
             3,
-            12,
-            2,
-            4,
-            13,
-            7,
-            10,
-            9,
-            15,
-            16
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1403,30 +1332,24 @@
             1,
             5,
             3,
-            2,
-            12,
-            4,
-            13,
-            7,
-            10,
-            16,
-            9,
-            15
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C4-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R3-C4-20261029T080635283136",
       "course_id": "2026-10-29-R3-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T13:27:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C4/participants",
       "moteurs": [
@@ -1453,13 +1376,12 @@
             3,
             1,
             4,
-            2,
-            7,
-            6
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1485,13 +1407,12 @@
             4,
             3,
             6,
-            7,
-            5,
-            2
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1517,13 +1438,12 @@
             4,
             5,
             3,
-            7,
-            6,
-            2
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1549,13 +1469,12 @@
             4,
             3,
             6,
-            7,
-            5,
-            2
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1581,24 +1500,24 @@
             4,
             3,
             5,
-            7,
-            6,
-            2
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C6-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R2-C6-20261029T080635283136",
       "course_id": "2026-10-29-R2-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T13:43:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C6/participants",
       "moteurs": [
@@ -1625,13 +1544,12 @@
             4,
             2,
             3,
-            1,
-            7,
-            6
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1657,13 +1575,12 @@
             5,
             3,
             2,
-            4,
-            7,
-            6
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1689,13 +1606,12 @@
             1,
             3,
             4,
-            2,
-            6,
-            7
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1721,13 +1637,12 @@
             5,
             3,
             2,
-            4,
-            7,
-            6
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1753,24 +1668,24 @@
             1,
             3,
             2,
-            4,
-            7,
-            6
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C1-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R1-C1-20261029T080635283136",
       "course_id": "2026-10-29-R1-C1",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T13:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C1/participants",
       "moteurs": [
@@ -1797,20 +1712,12 @@
             13,
             3,
             1,
-            12,
-            11,
-            4,
-            6,
-            7,
-            9,
-            5,
-            14,
-            10,
-            8
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1836,20 +1743,12 @@
             3,
             6,
             13,
-            2,
-            9,
-            11,
-            12,
-            4,
-            7,
-            8,
-            10,
-            5,
-            14
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1875,20 +1774,12 @@
             13,
             2,
             3,
-            12,
-            7,
-            9,
-            11,
-            4,
-            6,
-            5,
-            14,
-            10,
-            8
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1914,20 +1805,12 @@
             3,
             6,
             13,
-            2,
-            9,
-            11,
-            12,
-            4,
-            7,
-            8,
-            10,
-            5,
-            14
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -1953,31 +1836,24 @@
             3,
             2,
             13,
-            6,
-            11,
-            9,
-            12,
-            7,
-            4,
-            5,
-            10,
-            14,
-            8
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C5-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R3-C5-20261029T080635283136",
       "course_id": "2026-10-29-R3-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T14:12:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C5/participants",
       "moteurs": [
@@ -2004,15 +1880,12 @@
             1,
             2,
             6,
-            4,
-            9,
-            3,
-            8,
-            7
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2038,15 +1911,12 @@
             2,
             1,
             6,
-            4,
-            8,
-            3,
-            9,
-            7
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2072,15 +1942,12 @@
             1,
             6,
             4,
-            2,
-            3,
-            9,
-            8,
-            7
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2106,15 +1973,12 @@
             2,
             1,
             6,
-            8,
-            4,
-            9,
-            3,
-            7
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2140,26 +2004,24 @@
             2,
             1,
             6,
-            4,
-            3,
-            9,
-            8,
-            7
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R2-C7-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R2-C7-20261029T080635283136",
       "course_id": "2026-10-29-R2-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T14:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R2/C7/participants",
       "moteurs": [
@@ -2186,13 +2048,12 @@
             1,
             6,
             3,
-            7,
-            2,
-            4
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2218,13 +2079,12 @@
             1,
             2,
             6,
-            3,
-            4,
-            7
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2250,13 +2110,12 @@
             5,
             1,
             6,
-            7,
-            4,
-            2
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2282,13 +2141,12 @@
             1,
             2,
             6,
-            3,
-            4,
-            7
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2314,24 +2172,24 @@
             1,
             3,
             6,
-            2,
-            7,
-            4
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C2-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R1-C2-20261029T080635283136",
       "course_id": "2026-10-29-R1-C2",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T14:30:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C2/participants",
       "moteurs": [
@@ -2358,21 +2216,12 @@
             14,
             7,
             5,
-            9,
-            13,
-            11,
-            12,
-            3,
-            8,
-            10,
-            4,
-            15,
-            6,
-            2
+            9
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2398,21 +2247,12 @@
             9,
             14,
             11,
-            12,
-            1,
-            13,
-            3,
-            5,
-            2,
-            8,
-            15,
-            10,
-            4,
-            6
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2438,21 +2278,12 @@
             7,
             14,
             13,
-            9,
-            11,
-            5,
-            15,
-            3,
-            8,
-            2,
-            4,
-            6,
-            12,
-            10
+            9
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2478,21 +2309,12 @@
             14,
             7,
             11,
-            12,
-            1,
-            3,
-            5,
-            2,
-            13,
-            8,
-            15,
-            10,
-            4,
-            6
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2518,32 +2340,24 @@
             7,
             9,
             1,
-            5,
-            11,
-            3,
-            13,
-            12,
-            2,
-            8,
-            15,
-            10,
-            4,
-            6
+            5
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C6-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R3-C6-20261029T080635283136",
       "course_id": "2026-10-29-R3-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T14:47:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C6/participants",
       "moteurs": [
@@ -2570,15 +2384,12 @@
             1,
             3,
             5,
-            8,
-            9,
-            6,
-            4,
-            7
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2604,15 +2415,12 @@
             1,
             5,
             3,
-            8,
-            9,
-            6,
-            4,
-            7
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2638,15 +2446,12 @@
             3,
             1,
             5,
-            8,
-            9,
-            6,
-            4,
-            7
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2672,15 +2477,12 @@
             1,
             5,
             3,
-            8,
-            9,
-            6,
-            4,
-            7
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2706,26 +2508,24 @@
             1,
             3,
             5,
-            8,
-            9,
-            6,
-            4,
-            7
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C3-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R1-C3-20261029T080635283136",
       "course_id": "2026-10-29-R1-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T15:05:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C3/participants",
       "moteurs": [
@@ -2752,18 +2552,12 @@
             9,
             1,
             8,
-            10,
-            12,
-            2,
-            7,
-            5,
-            4,
-            11,
-            3
+            10
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2789,18 +2583,12 @@
             5,
             6,
             9,
-            1,
-            7,
-            11,
-            10,
-            3,
-            4,
-            2,
-            8
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2826,18 +2614,12 @@
             10,
             6,
             11,
-            1,
-            12,
-            9,
-            8,
-            3,
-            2,
-            7,
-            4
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2863,18 +2645,12 @@
             12,
             6,
             9,
-            1,
-            7,
-            11,
-            10,
-            3,
-            4,
-            2,
-            8
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2900,29 +2676,24 @@
             6,
             9,
             1,
-            10,
-            12,
-            11,
-            7,
-            2,
-            3,
-            4,
-            8
+            10
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C7-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R3-C7-20261029T080635283136",
       "course_id": "2026-10-29-R3-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T15:22:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C7/participants",
       "moteurs": [
@@ -2949,15 +2720,12 @@
             3,
             9,
             8,
-            2,
-            4,
-            6,
-            1,
-            7
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -2983,15 +2751,12 @@
             9,
             3,
             2,
-            8,
-            7,
-            6,
-            4,
-            1
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3017,15 +2782,12 @@
             3,
             7,
             8,
-            6,
-            2,
-            9,
-            4,
-            1
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3051,15 +2813,12 @@
             9,
             3,
             2,
-            8,
-            7,
-            6,
-            4,
-            1
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3085,26 +2844,24 @@
             3,
             9,
             8,
-            2,
-            7,
-            6,
-            4,
-            1
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C4-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R1-C4-20261029T080635283136",
       "course_id": "2026-10-29-R1-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T15:40:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C4/participants",
       "moteurs": [
@@ -3131,18 +2888,12 @@
             7,
             11,
             1,
-            2,
-            5,
-            12,
-            6,
-            9,
-            4,
-            8,
-            10
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3168,18 +2919,12 @@
             7,
             5,
             11,
-            2,
-            6,
-            1,
-            10,
-            12,
-            9,
-            8,
-            4
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3205,18 +2950,12 @@
             2,
             11,
             3,
-            1,
-            6,
-            9,
-            4,
-            5,
-            12,
-            8,
-            10
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3242,18 +2981,12 @@
             7,
             5,
             11,
-            6,
-            2,
-            1,
-            10,
-            12,
-            9,
-            8,
-            4
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3279,29 +3012,24 @@
             11,
             3,
             2,
-            5,
-            6,
-            1,
-            12,
-            9,
-            4,
-            10,
-            8
+            5
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R3-C8-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R3-C8-20261029T080635283136",
       "course_id": "2026-10-29-R3-C8",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T15:57:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R3/C8/participants",
       "moteurs": [
@@ -3328,20 +3056,12 @@
             5,
             4,
             14,
-            9,
-            2,
-            7,
-            12,
-            1,
-            8,
-            11,
-            6,
-            3,
-            13
+            9
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3367,20 +3087,12 @@
             2,
             8,
             4,
-            7,
-            5,
-            9,
-            12,
-            6,
-            1,
-            14,
-            3,
-            11,
-            13
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3406,20 +3118,12 @@
             9,
             5,
             10,
-            2,
-            12,
-            14,
-            8,
-            6,
-            7,
-            11,
-            3,
-            1,
-            13
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3445,20 +3149,12 @@
             2,
             8,
             7,
-            5,
-            12,
-            4,
-            6,
-            9,
-            1,
-            14,
-            3,
-            11,
-            13
+            5
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3484,31 +3180,24 @@
             5,
             4,
             2,
-            9,
-            12,
-            8,
-            7,
-            14,
-            6,
-            1,
-            11,
-            3,
-            13
+            9
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C5-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R1-C5-20261029T080635283136",
       "course_id": "2026-10-29-R1-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T16:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C5/participants",
       "moteurs": [
@@ -3535,18 +3224,12 @@
             1,
             5,
             3,
-            9,
-            11,
-            12,
-            10,
-            7,
-            4,
-            8,
-            6
+            9
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3572,18 +3255,12 @@
             11,
             3,
             5,
-            1,
-            4,
-            8,
-            10,
-            12,
-            7,
-            6,
-            9
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3609,18 +3286,12 @@
             1,
             3,
             4,
-            8,
-            5,
-            10,
-            11,
-            7,
-            9,
-            12,
-            6
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3646,18 +3317,12 @@
             11,
             3,
             5,
-            1,
-            4,
-            8,
-            10,
-            12,
-            7,
-            6,
-            9
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3683,29 +3348,24 @@
             3,
             1,
             5,
-            11,
-            4,
-            10,
-            8,
-            12,
-            7,
-            6,
-            9
+            11
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C1-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R4-C1-20261029T080635283136",
       "course_id": "2026-10-29-R4-C1",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T16:32:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C1/participants",
       "moteurs": [
@@ -3732,20 +3392,12 @@
             12,
             5,
             3,
-            1,
-            9,
-            6,
-            7,
-            14,
-            13,
-            10,
-            2,
-            11,
-            4
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3771,20 +3423,12 @@
             12,
             14,
             5,
-            7,
-            13,
-            9,
-            6,
-            10,
-            3,
-            1,
-            2,
-            4,
-            11
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3810,20 +3454,12 @@
             12,
             14,
             5,
-            7,
-            3,
-            1,
-            9,
-            6,
-            4,
-            13,
-            10,
-            2,
-            11
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3849,20 +3485,12 @@
             12,
             14,
             5,
-            7,
-            13,
-            9,
-            6,
-            10,
-            3,
-            1,
-            2,
-            4,
-            11
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3888,31 +3516,24 @@
             12,
             14,
             5,
-            7,
-            13,
-            9,
-            3,
-            6,
-            1,
-            10,
-            2,
-            4,
-            11
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C6-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R1-C6-20261029T080635283136",
       "course_id": "2026-10-29-R1-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T16:50:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C6/participants",
       "moteurs": [
@@ -3939,20 +3560,12 @@
             9,
             2,
             6,
-            11,
-            10,
-            5,
-            4,
-            3,
-            12,
-            14,
-            8,
-            13,
-            1
+            11
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -3978,20 +3591,12 @@
             9,
             7,
             10,
-            12,
-            13,
-            2,
-            11,
-            4,
-            3,
-            14,
-            1,
-            8,
-            5
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4017,20 +3622,12 @@
             7,
             6,
             11,
-            10,
-            5,
-            12,
-            14,
-            2,
-            8,
-            13,
-            4,
-            3,
-            1
+            10
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4056,20 +3653,12 @@
             9,
             7,
             10,
-            12,
-            13,
-            2,
-            11,
-            4,
-            3,
-            14,
-            1,
-            8,
-            5
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4095,31 +3684,24 @@
             7,
             6,
             10,
-            12,
-            11,
-            2,
-            13,
-            4,
-            3,
-            14,
-            5,
-            8,
-            1
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C2-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R4-C2-20261029T080635283136",
       "course_id": "2026-10-29-R4-C2",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T17:07:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C2/participants",
       "moteurs": [
@@ -4146,19 +3728,12 @@
             5,
             2,
             12,
-            10,
-            9,
-            13,
-            3,
-            1,
-            6,
-            7,
-            4,
-            8
+            10
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4184,19 +3759,12 @@
             2,
             5,
             9,
-            12,
-            3,
-            10,
-            7,
-            6,
-            8,
-            13,
-            1,
-            4
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4222,19 +3790,12 @@
             10,
             5,
             2,
-            12,
-            7,
-            8,
-            1,
-            3,
-            9,
-            13,
-            4,
-            6
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4260,19 +3821,12 @@
             5,
             9,
             11,
-            12,
-            3,
-            10,
-            7,
-            8,
-            13,
-            6,
-            1,
-            4
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4298,30 +3852,24 @@
             2,
             12,
             11,
-            10,
-            9,
-            3,
-            13,
-            7,
-            8,
-            1,
-            6,
-            4
+            10
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C7-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R1-C7-20261029T080635283136",
       "course_id": "2026-10-29-R1-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T17:25:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C7/participants",
       "moteurs": [
@@ -4348,24 +3896,12 @@
             18,
             13,
             12,
-            7,
-            17,
-            14,
-            1,
-            11,
-            5,
-            10,
-            16,
-            3,
-            6,
-            9,
-            8,
-            15,
-            4
+            7
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4391,24 +3927,12 @@
             14,
             1,
             7,
-            17,
-            5,
-            2,
-            12,
-            10,
-            3,
-            11,
-            8,
-            16,
-            13,
-            15,
-            6,
-            9,
-            4
+            17
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4434,24 +3958,12 @@
             7,
             13,
             18,
-            3,
-            17,
-            12,
-            10,
-            9,
-            5,
-            1,
-            14,
-            6,
-            15,
-            11,
-            16,
-            4,
-            8
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4477,24 +3989,12 @@
             14,
             1,
             7,
-            17,
-            5,
-            2,
-            12,
-            10,
-            3,
-            8,
-            11,
-            13,
-            16,
-            15,
-            6,
-            9,
-            4
+            17
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4520,35 +4020,24 @@
             2,
             7,
             14,
-            1,
-            17,
-            12,
-            13,
-            5,
-            3,
-            10,
-            9,
-            6,
-            15,
-            16,
-            11,
-            8,
-            4
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C3-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R4-C3-20261029T080635283136",
       "course_id": "2026-10-29-R4-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T17:42:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C3/participants",
       "moteurs": [
@@ -4575,20 +4064,12 @@
             12,
             9,
             13,
-            6,
-            3,
-            1,
-            7,
-            11,
-            2,
-            10,
-            8,
-            14,
-            4
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4614,20 +4095,12 @@
             9,
             2,
             1,
-            11,
-            6,
-            3,
-            13,
-            12,
-            7,
-            14,
-            10,
-            8,
-            4
+            11
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4653,20 +4126,12 @@
             9,
             1,
             12,
-            6,
-            11,
-            2,
-            13,
-            10,
-            3,
-            7,
-            14,
-            8,
-            4
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4692,20 +4157,12 @@
             9,
             2,
             1,
-            11,
-            6,
-            3,
-            13,
-            12,
-            7,
-            14,
-            10,
-            8,
-            4
+            11
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4731,31 +4188,24 @@
             9,
             1,
             12,
-            2,
-            6,
-            11,
-            13,
-            3,
-            7,
-            10,
-            14,
-            8,
-            4
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R1-C8-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R1-C8-20261029T080635283136",
       "course_id": "2026-10-29-R1-C8",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T18:00:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R1/C8/participants",
       "moteurs": [
@@ -4782,18 +4232,12 @@
             7,
             4,
             8,
-            12,
-            10,
-            5,
-            11,
-            2,
-            9,
-            3,
-            6
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4819,18 +4263,12 @@
             6,
             1,
             5,
-            11,
-            2,
-            10,
-            9,
-            7,
-            12,
-            8,
-            3
+            11
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4856,18 +4294,12 @@
             5,
             2,
             4,
-            8,
-            6,
-            10,
-            7,
-            12,
-            9,
-            11,
-            3
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4893,18 +4325,12 @@
             6,
             1,
             5,
-            11,
-            2,
-            10,
-            9,
-            7,
-            12,
-            8,
-            3
+            11
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -4930,29 +4356,24 @@
             4,
             5,
             6,
-            2,
-            10,
-            7,
-            11,
-            8,
-            12,
-            9,
-            3
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C4-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R4-C4-20261029T080635283136",
       "course_id": "2026-10-29-R4-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T18:20:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C4/participants",
       "moteurs": [
@@ -4979,19 +4400,12 @@
             4,
             1,
             2,
-            6,
-            5,
-            8,
-            11,
-            14,
-            13,
-            12,
-            3,
-            10
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5017,19 +4431,12 @@
             4,
             6,
             2,
-            1,
-            11,
-            12,
-            3,
-            10,
-            13,
-            5,
-            8,
-            14
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5055,19 +4462,12 @@
             4,
             6,
             1,
-            11,
-            3,
-            2,
-            5,
-            8,
-            12,
-            13,
-            14,
-            10
+            11
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5093,19 +4493,12 @@
             4,
             6,
             2,
-            1,
-            11,
-            12,
-            3,
-            10,
-            13,
-            5,
-            8,
-            14
+            1
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5131,30 +4524,24 @@
             4,
             6,
             1,
-            2,
-            11,
-            5,
-            8,
-            12,
-            3,
-            13,
-            14,
-            10
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C5-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R4-C5-20261029T080635283136",
       "course_id": "2026-10-29-R4-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T18:55:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C5/participants",
       "moteurs": [
@@ -5181,22 +4568,12 @@
             12,
             16,
             13,
-            3,
-            14,
-            4,
-            5,
-            2,
-            15,
-            1,
-            11,
-            6,
-            7,
-            9,
-            8
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5222,22 +4599,12 @@
             13,
             16,
             3,
-            15,
-            5,
-            4,
-            2,
-            11,
-            14,
-            7,
-            12,
-            1,
-            6,
-            8,
-            9
+            15
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5263,22 +4630,12 @@
             3,
             4,
             16,
-            2,
-            10,
-            12,
-            13,
-            11,
-            14,
-            15,
-            1,
-            6,
-            9,
-            7,
-            8
+            2
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5304,22 +4661,12 @@
             16,
             3,
             13,
-            15,
-            5,
-            4,
-            2,
-            11,
-            14,
-            7,
-            12,
-            1,
-            6,
-            8,
-            9
+            15
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5345,33 +4692,24 @@
             3,
             16,
             5,
-            4,
-            2,
-            13,
-            12,
-            15,
-            14,
-            11,
-            1,
-            7,
-            6,
-            8,
-            9
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C6-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R4-C6-20261029T080635283136",
       "course_id": "2026-10-29-R4-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T19:27:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C6/participants",
       "moteurs": [
@@ -5398,18 +4736,12 @@
             6,
             11,
             12,
-            8,
-            10,
-            2,
-            3,
-            5,
-            1,
-            4,
-            9
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5435,18 +4767,12 @@
             11,
             6,
             9,
-            8,
-            12,
-            4,
-            10,
-            5,
-            3,
-            2,
-            1
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5472,18 +4798,12 @@
             11,
             12,
             10,
-            3,
-            1,
-            9,
-            4,
-            6,
-            8,
-            2,
-            5
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5509,18 +4829,12 @@
             11,
             6,
             9,
-            8,
-            12,
-            4,
-            10,
-            5,
-            2,
-            3,
-            1
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5546,29 +4860,24 @@
             11,
             12,
             10,
-            6,
-            8,
-            2,
-            4,
-            9,
-            3,
-            5,
-            1
+            6
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C7-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R4-C7-20261029T080635283136",
       "course_id": "2026-10-29-R4-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T19:59:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C7/participants",
       "moteurs": [
@@ -5595,20 +4904,12 @@
             6,
             13,
             9,
-            4,
-            8,
-            2,
-            12,
-            7,
-            14,
-            10,
-            1,
-            5,
-            3
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5634,20 +4935,12 @@
             9,
             6,
             13,
-            4,
-            2,
-            14,
-            7,
-            8,
-            1,
-            10,
-            12,
-            5,
-            3
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5673,20 +4966,12 @@
             9,
             11,
             6,
-            8,
-            12,
-            1,
-            14,
-            10,
-            13,
-            4,
-            7,
-            5,
-            3
+            8
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5712,20 +4997,12 @@
             9,
             6,
             13,
-            4,
-            2,
-            14,
-            7,
-            8,
-            1,
-            10,
-            12,
-            5,
-            3
+            4
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5751,31 +5028,24 @@
             9,
             6,
             2,
-            13,
-            4,
-            14,
-            8,
-            7,
-            12,
-            1,
-            10,
-            5,
-            3
+            13
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-29-R4-C8-20261029T075717570260",
+      "pv_id": "ANALYSE-2026-10-29-R4-C8-20261029T080635283136",
       "course_id": "2026-10-29-R4-C8",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-29T07:57:17.570260+01:00",
+      "cree_a": "2026-10-29T08:06:35.283136+01:00",
       "depart": "2026-10-29T20:31:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/29102026/R4/C8/participants",
       "moteurs": [
@@ -5802,18 +5072,12 @@
             9,
             5,
             4,
-            10,
-            3,
-            11,
-            12,
-            7,
-            6,
-            1,
-            8
+            10
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5839,18 +5103,12 @@
             5,
             9,
             4,
-            11,
-            7,
-            6,
-            12,
-            3,
-            10,
-            1,
-            8
+            11
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5876,18 +5134,12 @@
             9,
             4,
             5,
-            3,
-            10,
-            12,
-            6,
-            7,
-            11,
-            1,
-            8
+            3
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5913,18 +5165,12 @@
             5,
             9,
             4,
-            11,
-            7,
-            6,
-            12,
-            3,
-            10,
-            1,
-            8
+            11
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         },
         {
@@ -5950,22 +5196,17 @@
             9,
             4,
             5,
-            12,
-            6,
-            7,
-            10,
-            11,
-            3,
-            1,
-            8
+            12
           ],
           "qualification": "ETUDE_NON_VALIDEE",
           "validation": "NON_FIGE",
           "pari_retenu": null,
+          "fige": false,
           "methode": "HEURISTIQUE_MUSIQUE"
         }
       ],
-      "avertissement": "Analyse indicative. Aucun FIGE officiel cree."
+      "fige": false,
+      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     }
   ]
 }

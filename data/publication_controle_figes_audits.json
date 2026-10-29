@@ -2,7 +2,7 @@
   "logiciel": "X1000 PHOENIX",
   "version": "X1000-PHOENIX-FIGES-AUDITS-7.0",
   "module": "FIGES_AUDITS_M1_M5",
-  "genere_a_paris": "2026-10-29T07:57:17.484225+01:00",
+  "genere_a_paris": "2026-10-29T08:06:35.109847+01:00",
   "moteurs": [
     "M1",
     "M2",
@@ -17,17 +17,17 @@
   "candidats_a_verification": [],
   "nouveaux_audits": 0,
   "erreurs": [
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire.",
-    "FIGE non verifiable: Empreinte non concordante. Ancien schéma possible ou document modifié. Contrôle historique nécessaire."
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible"
   ],
   "statut": "ERREURS_A_VERIFIER",
   "note": "FIGES historiques conserves. Aucun pronostic retroactif. Aucune arrivee inventee. Les sources externes ne sont pas certifiees par ce module."
