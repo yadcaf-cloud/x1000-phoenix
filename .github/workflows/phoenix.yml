@@ -24,35 +24,51 @@ jobs:
       PYTHONUNBUFFERED: "1"
       PYTHONDONTWRITEBYTECODE: "1"
 
+    defaults:
+      run:
+        shell: bash
+
     steps:
-      # 1 - RECUPERATION DU DEPOT
+
+      # 1. RECUPERATION DU DEPOT
 
       - name: Recuperer le depot
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
+          ref: main
           fetch-depth: 0
           persist-credentials: true
 
-      # 2 - INSTALLATION PYTHON
+      # 2. INSTALLATION PYTHON
 
       - name: Installer Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      # 3 - VERIFICATION DES PROGRAMMES
+      # 3. DEPENDANCES
+
+      - name: Installer les dependances
+        run: |
+          set -euo pipefail
+          python --version
+
+          if [ -f requirements.txt ]; then
+            python -m pip install -r requirements.txt
+          fi
+
+      # 4. VERIFICATION DES PROGRAMMES
 
       - name: Verifier les programmes
         run: |
           set -euo pipefail
-          python --version
 
           for fichier in \
             phoenix.py \
             pmu_engine.py \
             analyser_moteurs.py \
-            publication.py \
-            reparer_figes_audits.py
+            reparer_figes_audits.py \
+            publication.py
           do
             if [ ! -f "$fichier" ]; then
               echo "::error::Fichier absent: $fichier"
@@ -64,20 +80,22 @@ jobs:
 
           echo "Programmes Python valides"
 
-      # 4 - PREPARATION DES DOSSIERS
+      # 5. PREPARATION DES DOSSIERS
 
       - name: Preparer les dossiers
         run: |
           set -euo pipefail
 
           mkdir -p data/figes
-          mkdir -p data/audits
           mkdir -p data/pv
+          mkdir -p data/audits
           mkdir -p data/journaux
 
-      # 5 - SAUVEGARDE DES HISTORIQUES
+          echo "Dossiers disponibles"
 
-      - name: Sauvegarder les FIGES historiques
+      # 6. INVENTAIRE DES ARCHIVES
+
+      - name: Sauvegarder les historiques
         run: |
           set -euo pipefail
 
@@ -87,59 +105,56 @@ jobs:
           from pathlib import Path
 
           base = Path("data")
-          sauvegarde = Path("/tmp/phoenix-historique")
-          sauvegarde.mkdir(parents=True, exist_ok=True)
+          backup = Path("/tmp/x1000-protection")
+          backup.mkdir(parents=True, exist_ok=True)
+
+          dossiers = {
+              "figes",
+              "pv",
+              "audits",
+              "journaux",
+          }
 
           inventaire = {}
 
           for path in sorted(base.rglob("*.json")):
               relatif = path.relative_to(base)
-              parties = [p.lower() for p in relatif.parts]
-              nom = path.name.lower()
 
-              protege = (
-                  any(
-                      p in ("figes", "pv", "audits", "journaux")
-                      for p in parties
-                  )
-                  or "fige" in nom
-                  or "audit" in nom
-                  or nom.startswith("pv")
-              )
+              if path.name.lower().startswith(
+                  "publication_"
+              ):
+                  continue
 
-              if not protege:
+              parties = {
+                  p.lower()
+                  for p in relatif.parts[:-1]
+              }
+
+              if not parties.intersection(dossiers):
                   continue
 
               contenu = path.read_bytes()
-              empreinte = hashlib.sha256(
-                  contenu
-              ).hexdigest()
 
-              inventaire[str(relatif)] = empreinte
-
-              destination = sauvegarde / relatif
-              destination.parent.mkdir(
-                  parents=True,
-                  exist_ok=True
+              inventaire[str(relatif)] = (
+                  hashlib.sha256(contenu).hexdigest()
               )
-              destination.write_bytes(contenu)
 
-          (sauvegarde / "inventaire.json").write_text(
+          (backup / "inventaire.json").write_text(
               json.dumps(
                   inventaire,
-                  indent=2,
-                  ensure_ascii=False
+                  ensure_ascii=False,
+                  indent=2
               ),
               encoding="utf-8"
           )
 
           print(
-              "Historiques sauvegardes:",
+              "Archives historiques protegees:",
               len(inventaire)
           )
           PY
 
-      # 6 - COLLECTE PMU
+      # 7. COLLECTE PMU
 
       - name: Collecter les courses PMU
         id: collecte
@@ -150,7 +165,7 @@ jobs:
           python pmu_engine.py
           echo "Collecte terminee"
 
-      # 7 - ANALYSES INDEPENDANTES M1-M5
+      # 8. ANALYSES M1-M5
 
       - name: Analyser les courses M1-M5
         id: analyses
@@ -161,20 +176,21 @@ jobs:
           python analyser_moteurs.py
           echo "Analyses terminees"
 
-      # 8 - FIGES ET AUDITS
+      # 9. FIGES PV ET AUDITS
 
-      - name: Verifier FIGES et audits
+      - name: Verifier FIGES PV et audits
         id: audits
         run: |
           set -euo pipefail
 
-          echo "Verification des FIGES"
           python reparer_figes_audits.py
+
           echo "Verification terminee"
 
-      # 9 - PROTECTION DES HISTORIQUES
+      # 10. PROTECTION DES HISTORIQUES
 
       - name: Proteger les FIGES historiques
+        id: protection
         run: |
           set -euo pipefail
 
@@ -184,31 +200,30 @@ jobs:
           from pathlib import Path
 
           base = Path("data")
-          sauvegarde = Path("/tmp/phoenix-historique")
-
           inventaire = json.loads(
-              (sauvegarde / "inventaire.json")
-              .read_text(encoding="utf-8")
+              Path(
+                  "/tmp/x1000-protection/inventaire.json"
+              ).read_text(encoding="utf-8")
           )
 
           erreurs = []
 
           for relatif, empreinte in inventaire.items():
-              actuel = base / relatif
+              fichier = base / relatif
 
-              if not actuel.exists():
+              if not fichier.is_file():
                   erreurs.append(
-                      f"Historique supprime: {relatif}"
+                      "Archive supprimee: " + relatif
                   )
                   continue
 
-              nouvelle_empreinte = hashlib.sha256(
-                  actuel.read_bytes()
+              actuelle = hashlib.sha256(
+                  fichier.read_bytes()
               ).hexdigest()
 
-              if nouvelle_empreinte != empreinte:
+              if actuelle != empreinte:
                   erreurs.append(
-                      f"Historique modifie: {relatif}"
+                      "Archive modifiee: " + relatif
                   )
 
           if erreurs:
@@ -216,17 +231,18 @@ jobs:
                   print("::error::" + erreur)
 
               raise SystemExit(
-                  "Protection historique echouee. "
-                  "Publication interrompue."
+                  "Protection historique echouee"
               )
 
           print(
-              "Protection historique validee:",
+              "Archives historiques preservees:",
               len(inventaire)
           )
+          print("Nouveaux FIGES autorises")
+          print("Publications regenerables autorisees")
           PY
 
-      # 10 - PUBLICATION DES RAPPORTS
+      # 11. GENERATION DES PUBLICATIONS
 
       - name: Generer les publications
         id: publications
@@ -237,7 +253,7 @@ jobs:
 
           echo "Publications generees"
 
-      # 11 - VALIDATION DES FICHIERS JSON
+      # 12. VALIDATION JSON
 
       - name: Verifier tous les JSON
         id: json
@@ -249,12 +265,6 @@ jobs:
           from pathlib import Path
 
           base = Path("data")
-
-          if not base.is_dir():
-              raise SystemExit(
-                  "Dossier data absent"
-              )
-
           fichiers = sorted(base.rglob("*.json"))
 
           if not fichiers:
@@ -264,14 +274,14 @@ jobs:
 
           erreurs = []
 
-          for path in fichiers:
+          for fichier in fichiers:
               try:
-                  with path.open(
+                  with fichier.open(
                       encoding="utf-8"
                   ) as f:
                       json.load(f)
 
-                  print("JSON valide:", path)
+                  print("JSON valide:", fichier)
 
               except (
                   OSError,
@@ -279,7 +289,7 @@ jobs:
                   UnicodeError
               ) as exc:
                   erreurs.append(
-                      f"{path}: {exc}"
+                      f"{fichier}: {exc}"
                   )
 
           if erreurs:
@@ -296,7 +306,7 @@ jobs:
           )
           PY
 
-      # 12 - CONTROLE DES PUBLICATIONS
+      # 13. DIAGNOSTIC DES PUBLICATIONS
 
       - name: Diagnostiquer les publications
         id: diagnostic
@@ -317,45 +327,30 @@ jobs:
               "publication_rapport.json",
           )
 
-          absents = []
-
           for nom in obligatoires:
-              path = base / nom
+              fichier = base / nom
 
-              if not path.is_file():
-                  absents.append(nom)
-                  print(
-                      "::error::Publication absente:",
-                      nom
+              if not fichier.is_file():
+                  raise SystemExit(
+                      "Publication absente: " + nom
                   )
-                  continue
 
-              with path.open(
+              with fichier.open(
                   encoding="utf-8"
               ) as f:
                   json.load(f)
 
               print("Publication valide:", nom)
 
-          if absents:
-              raise SystemExit(
-                  "Publications manquantes: "
-                  + ", ".join(absents)
-              )
-
-          rapport_path = (
-              base / "publication_rapport.json"
-          )
-
           rapport = json.loads(
-              rapport_path.read_text(
-                  encoding="utf-8"
-              )
+              (
+                  base / "publication_rapport.json"
+              ).read_text(encoding="utf-8")
           )
 
           if not isinstance(rapport, dict):
               raise SystemExit(
-                  "Rapport de publication invalide"
+                  "Rapport invalide"
               )
 
           print(
@@ -381,8 +376,7 @@ jobs:
               )
 
           difficultes = rapport.get(
-              "difficultes",
-              []
+              "difficultes", []
           )
 
           if difficultes:
@@ -400,7 +394,47 @@ jobs:
           print("Diagnostic termine")
           PY
 
-      # 13 - ENREGISTREMENT GITHUB
+      # 14. CONTROLE FINAL DES ARCHIVES
+
+      - name: Controle final des archives
+        id: final_protection
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          base = Path("data")
+
+          inventaire = json.loads(
+              Path(
+                  "/tmp/x1000-protection/inventaire.json"
+              ).read_text(encoding="utf-8")
+          )
+
+          for relatif, empreinte in inventaire.items():
+              fichier = base / relatif
+
+              if not fichier.is_file():
+                  raise SystemExit(
+                      "Archive manquante: " + relatif
+                  )
+
+              actuelle = hashlib.sha256(
+                  fichier.read_bytes()
+              ).hexdigest()
+
+              if actuelle != empreinte:
+                  raise SystemExit(
+                      "Archive alteree: " + relatif
+                  )
+
+          print("Integrite historique confirmee")
+          PY
+
+      # 15. PUBLICATION GITHUB
 
       - name: Publier les donnees sur GitHub
         id: github
@@ -423,36 +457,41 @@ jobs:
           git commit -m \
             "PHOENIX: actualisation M1-M5"
 
-          for i in 1 2 3; do
-            echo "Tentative publication $i"
+          for tentative in 1 2 3; do
+            echo "Tentative $tentative"
 
             git fetch origin main
 
-            if git rebase origin/main; then
-              if git push origin HEAD:main; then
-                echo "Publication reussie"
-                exit 0
-              fi
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Conflit Git detecte"
+              exit 1
             fi
 
-            git rebase --abort || true
+            if git push origin HEAD:main; then
+              echo "Publication reussie"
+              exit 0
+            fi
+
             sleep 5
           done
 
           echo "::error::Publication GitHub echouee"
           exit 1
 
-      # 14 - BILAN FINAL
+      # 16. BILAN FINAL
 
       - name: Bilan X1000 PHOENIX
         if: always()
         env:
-          COLLECTE_RESULT: ${{ steps.collecte.outcome }}
-          ANALYSES_RESULT: ${{ steps.analyses.outcome }}
-          AUDITS_RESULT: ${{ steps.audits.outcome }}
-          PUBLICATIONS_RESULT: ${{ steps.publications.outcome }}
+          COLLECTE: ${{ steps.collecte.outcome }}
+          ANALYSES: ${{ steps.analyses.outcome }}
+          AUDITS: ${{ steps.audits.outcome }}
+          PROTECTION: ${{ steps.protection.outcome }}
+          PUBLICATIONS: ${{ steps.publications.outcome }}
           JSON_RESULT: ${{ steps.json.outcome }}
-          DIAGNOSTIC_RESULT: ${{ steps.diagnostic.outcome }}
+          DIAGNOSTIC: ${{ steps.diagnostic.outcome }}
+          FINAL_PROTECTION: ${{ steps.final_protection.outcome }}
           GITHUB_RESULT: ${{ steps.github.outcome }}
         run: |
           {
@@ -460,13 +499,15 @@ jobs:
             echo ""
             echo "| Etape | Resultat |"
             echo "|---|---|"
-            echo "| Collecte PMU | $COLLECTE_RESULT |"
-            echo "| Analyses M1-M5 | $ANALYSES_RESULT |"
-            echo "| FIGES et audits | $AUDITS_RESULT |"
-            echo "| Publications | $PUBLICATIONS_RESULT |"
+            echo "| Collecte PMU | $COLLECTE |"
+            echo "| Analyses M1-M5 | $ANALYSES |"
+            echo "| FIGES PV et audits | $AUDITS |"
+            echo "| Protection historique | $PROTECTION |"
+            echo "| Publications | $PUBLICATIONS |"
             echo "| Validation JSON | $JSON_RESULT |"
-            echo "| Diagnostic | $DIAGNOSTIC_RESULT |"
-            echo "| GitHub | $GITHUB_RESULT |"
+            echo "| Diagnostic | $DIAGNOSTIC |"
+            echo "| Controle final | $FINAL_PROTECTION |"
+            echo "| Publication GitHub | $GITHUB_RESULT |"
             echo ""
             echo "Heure Paris : $(TZ=Europe/Paris date '+%d/%m/%Y %H:%M:%S')"
           } >> "$GITHUB_STEP_SUMMARY"
