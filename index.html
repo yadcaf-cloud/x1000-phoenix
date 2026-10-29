@@ -8,12 +8,10 @@
 <style>
 :root{
  color-scheme:dark;
- --bg:#071827;--panel:#10283a;
- --card:#0b2334;--line:#345469;
- --text:#f0f6fc;--muted:#b3c6d4;
- --green:#27d58c;--yellow:#ffcf58;
- --red:#ff7070;--blue:#65c7ff;
- --gold:#ffd06a
+ --bg:#071827;--panel:#10283a;--card:#0b2334;
+ --line:#345469;--text:#f0f6fc;--muted:#b3c6d4;
+ --green:#27d58c;--yellow:#ffcf58;--red:#ff7070;
+ --blue:#65c7ff;--gold:#ffd06a
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -168,12 +166,13 @@ footer{text-align:center;padding:25px;color:var(--muted)}
 <section id="tableau">
 <h2>🏆 Tableau officiel X1000 — M1 à M5</h2>
 <div class="notice">
-Les analyses indicatives ne sont pas des paris FIGÉS.
-Aucun cheval ni pronostic fictif n'est ajouté.
+Le tableau distingue les préqualifications des analyses
+prédictives. Une course qualifiée ne constitue pas un
+pronostic validé. Aucun cheval fictif n'est ajouté.
 Les FIGÉs historiques sont présentés séparément.
 </div>
 <div class="controls">
-<label for="choixPronostic">Course analysée :</label>
+<label for="choixPronostic">Course :</label>
 <select id="choixPronostic"></select>
 <button id="modeAuto">🤖 Mode automatique</button>
 </div>
@@ -206,6 +205,8 @@ Les FIGÉs historiques sont présentés séparément.
 <h2>📊 Audits après course</h2>
 <p id="etatAudits" class="warn"></p>
 <div id="contenuAudits"></div>
+<h3>Diagnostic des audits</h3>
+<pre id="diagnosticAudits">En attente.</pre>
 </section>
 
 <section id="actions">
@@ -238,31 +239,79 @@ target="_blank" rel="noopener noreferrer">Consulter GitHub Actions</a>
 <script>
 "use strict";
 (() => {
-const OWNER="yadcaf-cloud",REPO="x1000-phoenix";
+const OWNER="yadcaf-cloud";
+const REPO="x1000-phoenix";
 const ROOT=new URL("./",document.baseURI);
 const API=`https://api.github.com/repos/${OWNER}/${REPO}`;
 const $=id=>document.getElementById(id);
 const MOTEURS=["M1","M2","M3","M4","M5"];
-const CHEMINS={
- courses:["data/publication_courses.json","data/collecte.json","data/courses.json"],
- pronostics:["data/publication_pronostics.json","data/pronostics.json","data/analyses.json"],
- pv:["data/publication_pv.json","data/pv.json"],
- figes:["data/publication_figes.json","data/figes.json"],
- audits:["data/publication_audits.json","data/audits.json"],
- rapport:["data/publication_rapport.json"],
- collecte:["data/collecte.json"],
- actions:["data/rapport_actions.json"]
+
+const CONFIG={
+ courses:{
+  paths:[
+   "data/publication_courses.json",
+   "data/courses_verifiees.json",
+   "data/collecte.json",
+   "data/courses_pmu.json",
+   "data/courses.json"
+  ],
+  keys:["courses","courses_verifiees"]
+ },
+ pronostics:{
+  paths:[
+   "data/publication_pronostics.json",
+   "data/pronostics.json",
+   "data/analyses.json"
+  ],
+  keys:["pronostics","analyses"]
+ },
+ qualifications:{
+  paths:[
+   "data/publication_qualifications.json",
+   "data/selection_courses_m1_m5.json"
+  ],
+  keys:null
+ },
+ selection:{
+  paths:["data/selection_courses_m1_m5.json"],
+  keys:null
+ },
+ pv:{
+  paths:["data/publication_pv.json","data/pv.json"],
+  keys:["pv","proces_verbaux"]
+ },
+ figes:{
+  paths:["data/publication_figes.json","data/figes.json"],
+  keys:["figes","figés"]
+ },
+ audits:{
+  paths:["data/publication_audits.json","data/audits.json"],
+  keys:["audits"]
+ },
+ diagnosticAudits:{
+  paths:["data/publication_diagnostic_audits.json"],
+  keys:null
+ },
+ diagnostic:{
+  paths:["data/diagnostic_unifie.json"],
+  keys:null
+ },
+ rapport:{
+  paths:["data/publication_rapport.json"],
+  keys:null
+ },
+ collecte:{
+  paths:["data/collecte.json"],
+  keys:null
+ }
 };
-const CLES={
- courses:"courses",pronostics:"pronostics",
- pv:"pv",figes:"figes",audits:"audits"
-};
+
 let donnees={},sources={},erreurs=[];
 let courses=[],analyses=[],pv=[],figes=[],audits=[];
 let chargement=false,chargementActions=false;
 let selectionPronostic="",selectionManuelle=false;
-let historiqueActions=[],statutActions=null;
-let derniereVerificationActions=0;
+let historiqueActions=[],statutActions="NON_VERIFIE";
+let dernierChargement=null;
 
 const objet=v=>v!==null&&typeof v==="object"&&!Array.isArray(v);
 const liste=v=>Array.isArray(v)?v:[];
@@ -272,21 +321,48 @@ const txt=(v,d="—")=>{
  if(typeof v==="object")return JSON.stringify(v);
  return String(v);
 };
-const idCourse=c=>objet(c)?String(c.course_id??c.id??""):"";
-const depart=c=>c?.depart??c?.heure_depart??c?.date_depart??null;
-const participants=c=>liste(c?.partants??c?.chevaux??c?.participants);
-const numero=p=>String(p?.numero??p?.num??p?.numPmu??"");
+const premier=(o,cles)=>{
+ if(!objet(o))return null;
+ for(const k of cles){
+  if(o[k]!==undefined&&o[k]!==null&&o[k]!=="")return o[k];
+ }
+ return null;
+};
+const idCourse=c=>{
+ if(!objet(c))return "";
+ const id=premier(c,["course_id","id","identifiant","id_course"]);
+ if(id!==null)return String(id);
+ const date=txt(c.date??c.date_course,"");
+ const r=premier(c,["reunion","numero_reunion","numReunion"]);
+ const n=premier(c,["numero_course","numCourse"]);
+ if(date&&r!==null&&n!==null)
+  return `${date}-R${r}-C${n}`;
+ return "";
+};
+const depart=c=>premier(c,[
+ "depart","heure_depart","date_depart",
+ "heureDepart","dateDepart"
+]);
+const participants=c=>liste(
+ premier(c,["partants","chevaux","participants"])
+);
+const numero=p=>String(
+ premier(p,["numero","num","numPmu","numeroPmu"])??""
+);
 const timestamp=v=>{
- const t=v?Date.parse(v):NaN;
+ if(!v)return NaN;
+ if(v instanceof Date)return v.getTime();
+ if(typeof v==="number")return v;
+ const t=Date.parse(String(v));
  return Number.isFinite(t)?t:NaN;
 };
 function dateParis(v){
- if(!v)return "—";
- const d=new Date(v);
- if(!Number.isFinite(d.getTime()))return "Date invalide";
+ const t=timestamp(v);
+ if(!Number.isFinite(t))return "—";
  return new Intl.DateTimeFormat("fr-FR",{
-  timeZone:"Europe/Paris",dateStyle:"short",timeStyle:"medium"
- }).format(d);
+  timeZone:"Europe/Paris",
+  dateStyle:"short",timeStyle:"medium"
+ }).format(new Date(t));
 }
 function horloge(){
  $("horloge").textContent="Heure de Paris : "+dateParis(new Date());
@@ -303,7 +379,11 @@ function cellule(tr,v,classe=""){
 }
 function messageTable(tbody,n,message){
  const td=tbody.insertRow().insertCell();
- td.colSpan=n;td.textContent=message;
+ td.colSpan=n;
+ td.textContent=message;
+}
+function compteur(id,valeur,disponible=true){
+ $(id).textContent=disponible?valeur:"—";
 }
 function nonPartants(c){
  const resultat=new Set();
@@ -323,26 +403,42 @@ function nonPartants(c){
  return resultat;
 }
 function effectif(c){
- const p=participants(c);
+ const p=participants(c).filter(objet);
  if(p.length){
   const np=nonPartants(c);
-  return p.filter(x=>objet(x)&&!np.has(numero(x))).length;
+  return p.filter(x=>!np.has(numero(x))).length;
  }
- const n=c?.nombre_partants;
- return Number.isInteger(n)&&n>=0?n:null;
+ const n=premier(c,[
+  "nombre_partants","nombrePartants","nb_partants"
+ ]);
+ return n!==null&&Number.isInteger(Number(n))&&Number(n)>=0
+  ?Number(n):null;
 }
 function france(c){
- return c.localisation_france_verifiee===true||
- c.course_francaise===true||
+ return c?.localisation_france_verifiee===true||
+ c?.course_francaise===true||
  ["FR","FRA","FRANCE"].includes(
-  String(c.pays??c.country??"").trim().toUpperCase()
+  String(c?.pays??c?.country??"").trim().toUpperCase()
  );
+}
+function normaliserCollection(data,config){
+ if(Array.isArray(data))return data;
+ if(!objet(data))throw Error("JSON non exploitable");
+ for(const cle of config.keys??[]){
+  if(Array.isArray(data[cle]))return data[cle];
+ }
+ if(objet(data.data)){
+  for(const cle of config.keys??[]){
+   if(Array.isArray(data.data[cle]))return data.data[cle];
+  }
+ }
+ throw Error("Collection attendue absente");
 }
 async function lireJSON(chemin){
  const url=new URL(chemin,ROOT);
  url.searchParams.set("_",String(Date.now()));
  const controle=new AbortController();
- const minuterie=setTimeout(()=>controle.abort(),12000);
+ const minuterie=setTimeout(()=>controle.abort(),10000);
  try{
   const r=await fetch(url,{
    cache:"no-store",signal:controle.signal,
@@ -353,35 +449,35 @@ async function lireJSON(chemin){
   if(!objet(data)&&!Array.isArray(data))
    throw Error("Structure JSON invalide");
   return data;
+ }catch(e){
+  if(e.name==="AbortError")throw Error("Délai dépassé");
+  throw e;
  }finally{clearTimeout(minuterie);}
 }
-function extraire(data,nom){
- if(Array.isArray(data))return data;
- if(!objet(data))throw Error("Objet JSON invalide");
- const cle=CLES[nom];
- if(Array.isArray(data[cle]))return data[cle];
- if(nom==="pronostics"&&Array.isArray(data.analyses))
-  return data.analyses;
- throw Error("Collection "+cle+" absente");
-}
 async function charger(nom){
- const problemes=[];
- for(const chemin of CHEMINS[nom]){
+ const config=CONFIG[nom],problemes=[];
+ for(const chemin of config.paths){
   try{
-   const data=await lireJSON(chemin);
-   const valeur=CLES[nom]?extraire(data,nom):data;
+   const brut=await lireJSON(chemin);
+   const valeur=config.keys
+    ?normaliserCollection(brut,config):brut;
    sources[nom]={
-    statut:"ACCESSIBLE",fichier:chemin,
-    elements:Array.isArray(valeur)?valeur.length:null
+    statut:"ACCESSIBLE",
+    fichier:chemin,
+    elements:Array.isArray(valeur)?valeur.length:null,
+    essais:problemes
    };
    return valeur;
-  }catch(e){problemes.push(chemin+" : "+e.message);}
+  }catch(e){
+   problemes.push(chemin+" : "+e.message);
+  }
  }
  sources[nom]={
-  statut:"INDISPONIBLE",fichier:CHEMINS[nom].join(" | "),
+  statut:"INDISPONIBLE",
+  fichier:config.paths.join(" | "),
   erreurs:problemes
  };
- erreurs.push(...problemes);
+ erreurs.push(nom+" : "+problemes.join(" | "));
  return null;
 }
 function remplirSelect(select,items,ancien,label){
@@ -400,27 +496,39 @@ function remplirSelect(select,items,ancien,label){
 function afficherCourses(){
  const tbody=$("listeCourses");
  tbody.replaceChildren();
+ const disponible=donnees.courses!==null;
  const fr=courses.filter(france).sort(
   (a,b)=>(timestamp(depart(a))||0)-(timestamp(depart(b))||0)
  );
- $("nbCourses").textContent=donnees.courses===null?"—":courses.length;
- $("nbFrance").textContent=fr.length;
+ compteur("nbCourses",courses.length,disponible);
+ compteur("nbFrance",fr.length,disponible);
  const comptes=fr.map(effectif).filter(x=>x!==null);
- $("nbPartants").textContent=comptes.length
-  ?comptes.reduce((a,b)=>a+b,0):"—";
- $("nbNP").textContent=fr.length
-  ?fr.reduce((a,c)=>a+nonPartants(c).size,0):"—";
+ compteur("nbPartants",
+  comptes.reduce((a,b)=>a+b,0),
+  disponible&&(!fr.length||comptes.length===fr.length)
+ );
+ compteur("nbNP",
+  fr.reduce((a,c)=>a+nonPartants(c).size,0),
+  disponible
+ );
  for(const c of fr){
   const tr=tbody.insertRow();
-  [idCourse(c),c.hippodrome,dateParis(depart(c)),
-   effectif(c),nonPartants(c).size,c.statut??"À contrôler"]
-   .forEach(v=>cellule(tr,v));
+  [
+   idCourse(c),c.hippodrome,dateParis(depart(c)),
+   effectif(c),nonPartants(c).size,
+   c.statut??"À contrôler"
+  ].forEach(v=>cellule(tr,v));
  }
  if(!fr.length)
-  messageTable(tbody,6,"Aucune course française confirmée.");
- statut("etatCourses",fr.length
-  ?`🟢 ${fr.length} course(s) française(s) publiée(s) — fraîcheur à contrôler`
-  :"🟡 Aucune course française confirmée",fr.length?"ok":"warn");
+  messageTable(tbody,6,disponible
+   ?"Aucune course française confirmée."
+   :"Source des courses indisponible.");
+ statut("etatCourses",
+  !disponible?"🔴 Fichiers de courses indisponibles":
+  fr.length?`🟢 ${fr.length} course(s) française(s) publiée(s) — fraîcheur à contrôler`:
+  "🟡 Aucune course française confirmée",
+  !disponible?"bad":fr.length?"ok":"warn"
+ );
  const select=$("choixCourse"),ancien=select.value;
  remplirSelect(select,fr,ancien,"Sélectionner une course");
  if(!select.value&&fr.length)select.value=idCourse(fr[0]);
@@ -435,10 +543,8 @@ function afficherPartants(){
   messageTable(tbody,6,"Aucune course sélectionnée.");
   return;
  }
- const chevaux=participants(c);
- const np=nonPartants(c);
- const vus=new Set(),uniques=[];
- for(const h of chevaux){
+ const np=nonPartants(c),vus=new Set(),uniques=[];
+ for(const h of participants(c)){
   if(!objet(h)||!numero(h)||vus.has(numero(h)))continue;
   vus.add(numero(h));uniques.push(h);
  }
@@ -446,8 +552,7 @@ function afficherPartants(){
  const actifs=uniques.filter(h=>!np.has(numero(h))).length;
  $("detailsCourse").textContent=
   `${idCourse(c)} — ${txt(c.hippodrome)} — Départ : ${dateParis(depart(c))} — `+
-  `${actifs} partants — ${uniques.length-actifs} non-partants — `+
-  `Collecte : ${dateParis(c.collecte_a)}`;
+  `${actifs} partants listés — ${uniques.length-actifs} non-partants listés`;
  for(const h of uniques){
   const n=numero(h),absent=np.has(n);
   const tr=tbody.insertRow();
@@ -485,93 +590,173 @@ function groupesAnalyses(){
   if(!ancien||(!Number.isFinite(old)&&Number.isFinite(t))||
    (Number.isFinite(t)&&t>=old))groupe.set(nom,item);
  }
- for(const c of courses){
-  const bloc=c.moteurs;
-  const entries=Array.isArray(bloc)?bloc:
-   objet(bloc)?Object.entries(bloc).map(([m,v])=>({...v,moteur:m})):[];
-  for(const m of entries)ajouter(idCourse(c),m,{analyse_a:c.analyse_a});
- }
- for(const a of analyses){
-  if(!objet(a))continue;
-  const id=idCourse(a);
-  const bloc=a.moteurs;
+ function parcourir(a){
+  if(!objet(a))return;
+  const id=idCourse(a),bloc=a.moteurs;
   if(Array.isArray(bloc)||objet(bloc)){
    const entries=Array.isArray(bloc)?bloc:
-    Object.entries(bloc).map(([m,v])=>({...v,moteur:m}));
+    Object.entries(bloc)
+     .filter(([,v])=>objet(v))
+     .map(([m,v])=>({...v,moteur:m}));
    for(const m of entries)ajouter(id,m,{analyse_a:a.analyse_a});
   }else ajouter(id,a);
  }
+ courses.forEach(parcourir);
+ analyses.forEach(parcourir);
  return map;
+}
+function lignesSelection(){
+ const data=donnees.selection;
+ if(!objet(data)||!objet(data.moteurs))return [];
+ const resultat=[];
+ for(const moteur of MOTEURS){
+  for(const q of liste(data.moteurs[moteur])){
+   if(objet(q))resultat.push({...q,moteur});
+  }
+ }
+ return resultat;
+}
+function lignesQualifications(){
+ const data=donnees.qualifications;
+ if(data===null)return null;
+ if(Array.isArray(data))return data;
+ if(!objet(data))return [];
+ for(const cle of [
+  "courses_qualifiees","qualifications","selections"
+ ]){
+  if(Array.isArray(data[cle]))return data[cle];
+ }
+ if(objet(data.moteurs)){
+  const resultat=[];
+  for(const moteur of MOTEURS){
+   for(const q of liste(data.moteurs[moteur])){
+    if(objet(q))resultat.push({...q,moteur});
+   }
+  }
+  return resultat;
+ }
+ if(Array.isArray(data.tableau_officiel))
+  return data.tableau_officiel;
+ return [];
 }
 function afficherPronostics(){
  const map=groupesAnalyses();
- const disponibles=courses.filter(c=>map.has(idCourse(c)));
- const futures=disponibles.filter(c=>
-  france(c)&&timestamp(depart(c))>Date.now()
- ).sort((a,b)=>timestamp(depart(a))-timestamp(depart(b));
- const qualifiees=futures.filter(c=>
-  [...map.get(idCourse(c)).values()].some(m=>
-   ordre(m).length>=2&&
-   /VERT|QUALIFIE|🟢/i.test(String(m.qualification??""))
-  )
+ const qualifications=lignesQualifications();
+ const selection=lignesSelection();
+ const lignesQ=qualifications===null?selection:qualifications;
+ const idsQ=new Set();
+
+ for(const q of lignesQ){
+  if(!objet(q))continue;
+  const s=String(q.qualification??q.statut??"").toUpperCase();
+  if(q.qualifiee===true||q.qualifie===true||
+   /VERT|QUALIFI|VALID/.test(s)){
+   if(idCourse(q))idsQ.add(idCourse(q));
+  }
+ }
+
+ compteur("nbSelection",idsQ.size,
+  qualifications!==null||donnees.selection!==null);
+ compteur("nbPronostics",
+  [...map.values()].reduce((n,g)=>n+g.size,0),
+  donnees.pronostics!==null||map.size>0);
+
+ const connus=new Map();
+ for(const c of courses){
+  if(idCourse(c))connus.set(idCourse(c),c);
+ }
+ for(const a of analyses){
+  if(objet(a)&&idCourse(a)&&!connus.has(idCourse(a)))
+   connus.set(idCourse(a),a);
+ }
+ for(const q of [...selection,...lignesQ]){
+  if(objet(q)&&idCourse(q)&&!connus.has(idCourse(q)))
+   connus.set(idCourse(q),q);
+ }
+
+ const disponibles=[...connus.values()].filter(c=>
+  map.has(idCourse(c))||idsQ.has(idCourse(c))
  );
- $("nbSelection").textContent=qualifiees.length;
- $("nbPronostics").textContent=[...map.values()]
-  .reduce((s,g)=>s+g.size,0);
+ const futures=disponibles.filter(c=>
+  timestamp(depart(c))>Date.now()
+ ).sort((a,b)=>timestamp(depart(a))-timestamp(depart(b));
+
+ const qualifiees=futures.filter(c=>idsQ.has(idCourse(c)));
  const select=$("choixPronostic");
- remplirSelect(select,disponibles,selectionPronostic,"Sélectionner une analyse");
+ remplirSelect(select,disponibles,selectionPronostic,
+  "Sélectionner une course");
+
  if(selectionManuelle&&!disponibles.some(c=>
   idCourse(c)===selectionPronostic))selectionManuelle=false;
+
  if(!selectionManuelle){
   const choix=qualifiees[0]??futures[0]??disponibles[0];
   selectionPronostic=choix?idCourse(choix):"";
  }
  select.value=selectionPronostic;
+
  $("modeSelection").textContent=selectionManuelle
   ?"👆 Mode manuel"
-  :`🤖 Mode automatique — ${qualifiees.length} course(s) qualifiée(s) future(s).`;
- const c=courses.find(x=>idCourse(x)===selectionPronostic);
+  :`🤖 Mode automatique — ${qualifiees.length} course(s) préqualifiée(s) future(s).`;
+
+ const c=connus.get(selectionPronostic);
  $("resumePronostic").textContent=c
   ?`${idCourse(c)} — ${txt(c.hippodrome)} — Départ : ${dateParis(depart(c))}`
-  :"Aucune analyse M1–M5 publiée.";
+  :"Aucune course analysée ou qualifiée publiée.";
+
  const tbody=$("tableauMoteurs");
  tbody.replaceChildren();
  const groupe=map.get(selectionPronostic)??new Map();
+
  for(const nom of MOTEURS){
   const m=groupe.get(nom);
+  const q=lignesQ.find(x=>
+   idCourse(x)===selectionPronostic&&
+   String(x.moteur??"").toUpperCase()===nom
+  );
   const o=m?ordre(m):[];
-  const tr=tbody.insertRow();
-  const heure=m?.analyse_a??m?.heure_paris??c?.analyse_a;
+  const heure=m?.analyse_a??m?.heure_paris;
   const avant=Number.isFinite(timestamp(heure))&&
    Number.isFinite(timestamp(depart(c)))&&
    timestamp(heure)<timestamp(depart(c));
+  const tr=tbody.insertRow();
+
   [
    nom,
    m?(m.gagnant_espere??o[0]??null):null,
    m?(m.meilleur_place??o[1]??null):null,
-   o,
+   o.length?o:"Aucun ordre publié",
    m?.pari_retenu??"Aucun pari validé",
-   m?.qualification??"ÉTUDE NON VALIDÉE",
+   q?.qualification??m?.qualification??"NON QUALIFIÉ",
    m?(avant?"ANALYSE AVANT DÉPART — NON FIGÉ":
-    "NON FIGÉ / HORAIRE NON CONFIRMÉ"):"NON PUBLIÉ",
-   dateParis(heure)
+    "NON FIGÉ / HORAIRE NON CONFIRMÉ"):
+    q?"PRÉQUALIFICATION — PAS DE PRONOSTIC":"NON PUBLIÉ",
+   dateParis(heure??q?.heure_verification)
   ].forEach((v,i)=>cellule(tr,v,i===6?"warn":""));
  }
- statut("etatPronostics",groupe.size
-  ?`${groupe.size} moteur(s) affiché(s) — analyses indicatives, FIGÉs séparés.`
-  :"🟡 Aucun classement disponible pour cette course.");
+
+ statut("etatPronostics",
+  groupe.size
+   ?`${groupe.size} analyse(s) prédictive(s) publiée(s) pour cette course.`
+   :idsQ.has(selectionPronostic)
+    ?"🟡 Course préqualifiée, mais aucun pronostic M1–M5 publié."
+    :"🟡 Aucun pronostic exploitable pour cette course.");
 }
 function afficherDocuments(nom,etatId,contenuId){
  const cible=$(contenuId);
  cible.replaceChildren();
  const items=liste(donnees[nom]);
  if(donnees[nom]===null){
-  statut(etatId,"🔴 Source indisponible","bad");return;
+  statut(etatId,"🔴 Source indisponible — voir Diagnostic","bad");
+  return;
  }
  if(!items.length){
-  statut(etatId,"🟡 Aucun document publié");return;
+  statut(etatId,"🟡 Aucun document publié");
+  return;
  }
- statut(etatId,`${items.length} document(s) publié(s) — vérifier leur intégrité`,"warn");
+ statut(etatId,
+  `${items.length} document(s) accessible(s) — intégrité à vérifier`,
+  "warn");
  items.slice(0,100).forEach((d,i)=>{
   const details=document.createElement("details");
   details.className="card";
@@ -584,6 +769,12 @@ function afficherDocuments(nom,etatId,contenuId){
   details.append(summary,pre);
   cible.append(details);
  });
+}
+function afficherDiagnosticAudits(){
+ const data=donnees.diagnosticAudits;
+ $("diagnosticAudits").textContent=data===null
+  ?"Diagnostic des audits indisponible."
+  :JSON.stringify(data,null,2);
 }
 function etatRun(run){
  if(run.status!=="completed")return ["🟡 En cours","warn"];
@@ -603,23 +794,27 @@ async function afficherActions(){
  cible.replaceChildren();
  statut("etatActions","🟡 Consultation GitHub Actions...");
  const controle=new AbortController();
- const minuterie=setTimeout(()=>controle.abort(),12000);
+ const minuterie=setTimeout(()=>controle.abort(),10000);
  try{
-  const r=await fetch(API+"/actions/runs?per_page=10",{
-   cache:"no-store",signal:controle.signal,
-   headers:{Accept:"application/vnd.github+json"}
-  });
+  const r=await fetch(
+   API+"/actions/workflows/x1000_phoenix_unifie.yml/runs?per_page=10",
+   {
+    cache:"no-store",signal:controle.signal,
+    headers:{Accept:"application/vnd.github+json"}
+   }
+  );
   if(!r.ok)throw Error("HTTP "+r.status);
   const data=await r.json();
   const runs=liste(data.workflow_runs);
   historiqueActions=runs;
   if(!runs.length){
    statutActions="AUCUNE_EXECUTION";
-   statut("etatActions","🟡 Aucune exécution visible");return;
+   statut("etatActions","🟡 Aucune exécution unifiée visible");
+   return;
   }
   const [etat,classe]=etatRun(runs[0]);
   statutActions=runs[0].conclusion??runs[0].status;
-  statut("etatActions",etat+" — dernière exécution du dépôt",classe);
+  statut("etatActions",etat+" — workflow unifié",classe);
   for(const run of runs){
    const bloc=document.createElement("div");
    bloc.className="card";
@@ -629,20 +824,24 @@ async function afficherActions(){
     `${etatRun(run)[0]} — ${dateParis(run.created_at)}`;
    bloc.append(p);
    if(typeof run.html_url==="string"&&
-    run.html_url.startsWith(`https://github.com/${OWNER}/${REPO}/actions/runs/`)){
+    run.html_url.startsWith(
+     `https://github.com/${OWNER}/${REPO}/actions/runs/`
+    )){
     const a=document.createElement("a");
     a.href=run.html_url;a.target="_blank";
-    a.rel="noopener noreferrer";a.textContent="Voir les détails GitHub";
+    a.rel="noopener noreferrer";
+    a.textContent="Voir les détails GitHub";
     bloc.append(a);
    }
    cible.append(bloc);
   }
  }catch(e){
   statutActions="INACCESSIBLE";
-  statut("etatActions","🟡 GitHub Actions indisponible : "+e.message);
+  statut("etatActions",
+   "🟡 GitHub Actions indisponible : "+
+   (e.name==="AbortError"?"Délai dépassé":e.message));
  }finally{
   clearTimeout(minuterie);
-  derniereVerificationActions=Date.now();
   chargementActions=false;
   $("actualiserActions").disabled=false;
  }
@@ -650,11 +849,13 @@ async function afficherActions(){
 function verifier(){
  const rapport={
   projet:"X1000 PHOENIX",
-  version_interface:"9.0-UNIFIEE",
+  version_interface:"11.0-UNIFIEE",
   verification:dateParis(new Date()),
+  dernier_chargement:dateParis(dernierChargement),
   courses:courses.length,
   analyses:analyses.length,
   pv:pv.length,figes:figes.length,audits:audits.length,
+  qualifications:lignesQualifications()?.length??null,
   github_actions:{
    statut:statutActions,
    executions:historiqueActions.map(r=>({
@@ -663,9 +864,11 @@ function verifier(){
    }))
   },
   publication:donnees.rapport,
-  collecte:donnees.collecte,
+  diagnostic_unifie:donnees.diagnostic,
+  diagnostic_audits:donnees.diagnosticAudits,
   sources,erreurs,
-  avertissement:"Les données accessibles ne prouvent pas à elles seules la fraîcheur, l'authenticité ni l'intégrité SHA256 des FIGÉs."
+  avertissement:
+   "L'accessibilité des fichiers ne prouve pas leur authenticité, leur fraîcheur ou l'intégrité cryptographique des FIGÉs."
  };
  $("journal").textContent=JSON.stringify(rapport,null,2);
  const cible=$("sourcesDiagnostic");
@@ -687,21 +890,26 @@ function verifier(){
   }
   cible.append(bloc);
  }
+ const ok=Object.values(sources).filter(
+  s=>s.statut==="ACCESSIBLE").length;
+ const total=Object.keys(CONFIG).length;
  $("diagnosticCourt").textContent=
+  `${ok}/${total} sources accessibles. `+
   `Courses : ${courses.length} | Analyses : ${analyses.length} | `+
   `PV : ${pv.length} | FIGÉs : ${figes.length} | Audits : ${audits.length}. `+
-  (erreurs.length?"Certaines sources sont indisponibles.":
-   "Chargement terminé. Vérification métier nécessaire.");
+  (erreurs.length
+   ?"Certaines sources sont absentes ou invalides."
+   :"Chargement terminé. Vérification métier nécessaire.");
 }
 async function actualiser(){
  if(chargement)return;
  chargement=true;
  $("actualiser").disabled=true;
  $("verifier").disabled=true;
- statut("etatGlobal","🟡 Vérification en cours...");
+ statut("etatGlobal","🟡 Chargement des données...");
  erreurs=[];sources={};
  try{
-  const noms=Object.keys(CHEMINS);
+  const noms=Object.keys(CONFIG);
   const resultats=await Promise.all(noms.map(charger));
   donnees=Object.fromEntries(noms.map((n,i)=>[n,resultats[i]]));
   courses=liste(donnees.courses).filter(objet);
@@ -709,23 +917,34 @@ async function actualiser(){
   pv=liste(donnees.pv);
   figes=liste(donnees.figes);
   audits=liste(donnees.audits);
-  $("nbPV").textContent=donnees.pv===null?"—":pv.length;
-  $("nbFiges").textContent=donnees.figes===null?"—":figes.length;
-  $("nbAudits").textContent=donnees.audits===null?"—":audits.length;
+  compteur("nbPV",pv.length,donnees.pv!==null);
+  compteur("nbFiges",figes.length,donnees.figes!==null);
+  compteur("nbAudits",audits.length,donnees.audits!==null);
   afficherCourses();
   afficherPronostics();
   afficherDocuments("pv","etatPV","contenuPV");
   afficherDocuments("figes","etatFiges","contenuFiges");
   afficherDocuments("audits","etatAudits","contenuAudits");
-  $("datePublication").textContent="Dernière publication : "+
-   dateParis(donnees.rapport?.generated_at_paris);
-  $("dateMaj").textContent="Vérification navigateur : "+dateParis(new Date());
+  afficherDiagnosticAudits();
+  $("datePublication").textContent=
+   "Dernière publication déclarée : "+
+   dateParis(
+    donnees.rapport?.generated_at_paris??
+    donnees.rapport?.generated_at
+   );
+  dernierChargement=new Date();
+  $("dateMaj").textContent=
+   "Vérification navigateur : "+dateParis(dernierChargement);
   const disponibles=Object.values(sources).filter(
    s=>s.statut==="ACCESSIBLE").length;
+  const essentiels=["courses","qualifications","pv","figes","audits"];
+  const absents=essentiels.filter(n=>
+   sources[n]?.statut!=="ACCESSIBLE");
   statut("etatGlobal",
-   `🟡 ${disponibles}/${noms.length} sources JSON accessibles — contrôles à vérifier`,
-   disponibles===noms.length?"ok":"warn");
-  await afficherActions();
+   absents.length
+    ?`🟡 ${disponibles}/${noms.length} sources accessibles — ${absents.length} source(s) principale(s) indisponible(s)`
+    :`🟢 Sources principales accessibles (${disponibles}/${noms.length})`,
+   absents.length?"warn":"ok");
   verifier();
  }catch(e){
   erreurs.push("Interface : "+e.message);
@@ -736,6 +955,8 @@ async function actualiser(){
   $("actualiser").disabled=false;
   $("verifier").disabled=false;
  }
+ await afficherActions();
+ verifier();
 }
 $("choixCourse").addEventListener("change",afficherPartants);
 $("choixPronostic").addEventListener("change",()=>{
@@ -751,6 +972,11 @@ $("actualiser").addEventListener("click",actualiser);
 $("verifier").addEventListener("click",verifier);
 $("actualiserActions").addEventListener("click",async()=>{
  await afficherActions();verifier();
+});
+window.addEventListener("error",e=>{
+ erreurs.push("JavaScript : "+e.message);
+ statut("etatGlobal","🔴 Erreur JavaScript : "+e.message,"bad");
+ verifier();
 });
 horloge();
 setInterval(horloge,30000);
