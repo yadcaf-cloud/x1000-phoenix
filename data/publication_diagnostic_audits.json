@@ -1,0 +1,23 @@
+{
+  "version": "X1000-PHOENIX-10.0",
+  "genere_a_paris": "2026-10-29T15:43:51.852264+01:00",
+  "figes_verifies": 0,
+  "audits_historiques_valides": 0,
+  "audits_nouveaux_certifies": 0,
+  "candidats_a_verifier": [],
+  "en_attente_arrivee": [],
+  "note": "Aucun audit nouveau certifie sans verification de la source.",
+  "erreurs": [
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible",
+    "FIGE non verifiable: SHA256 non concordant : format historique différent ou modification possible"
+  ]
+}

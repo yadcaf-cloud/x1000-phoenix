@@ -1,0 +1,692 @@
+{
+  "version": "X1000-PHOENIX-10.0",
+  "genere_a_paris": "2026-10-29T15:43:51.841817+01:00",
+  "courses_examinees": 42,
+  "courses_qualifiees": 13,
+  "courses_non_qualifiees": 29,
+  "qualifications": [
+    {
+      "course_id": "2026-10-29-R2-C1",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "depart": "2026-10-29T11:05:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 7,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R2-C2",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "depart": "2026-10-29T11:36:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 7,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R3-C1",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "depart": "2026-10-29T11:51:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 5,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R2-C3",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "depart": "2026-10-29T12:10:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 10,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R3-C2",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "depart": "2026-10-29T12:26:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 5,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R2-C4",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "depart": "2026-10-29T12:41:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 16,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R3-C3",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "depart": "2026-10-29T12:57:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 6,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R2-C5",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "depart": "2026-10-29T13:13:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 16,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R3-C4",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "depart": "2026-10-29T13:29:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 7,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R2-C6",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "depart": "2026-10-29T13:48:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 7,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R1-C1",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "depart": "2026-10-29T13:57:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 14,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R3-C5",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "depart": "2026-10-29T14:14:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 9,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R2-C7",
+      "hippodrome": "HIPPODROME DE FONTAINEBLEAU",
+      "depart": "2026-10-29T14:20:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 7,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R1-C2",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "depart": "2026-10-29T14:31:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 15,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R3-C6",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "depart": "2026-10-29T14:47:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 9,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R1-C3",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "depart": "2026-10-29T15:07:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 12,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R3-C7",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "depart": "2026-10-29T15:24:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 9,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R1-C4",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "depart": "2026-10-29T15:40:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 12,
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R3-C8",
+      "hippodrome": "HIPPODROME BORDEAUX LE BOUSCAT",
+      "depart": "2026-10-29T15:57:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 14,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R1-C5",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "depart": "2026-10-29T16:15:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 11,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R4-C1",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "depart": "2026-10-29T16:32:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 14,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R1-C6",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "depart": "2026-10-29T16:50:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 14,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R4-C2",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "depart": "2026-10-29T17:07:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 13,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R1-C7",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "depart": "2026-10-29T17:25:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 18,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R4-C3",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "depart": "2026-10-29T17:42:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 14,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R1-C8",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "depart": "2026-10-29T18:00:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 12,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R4-C4",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "depart": "2026-10-29T18:20:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 13,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R4-C5",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "depart": "2026-10-29T18:55:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 16,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R4-C6",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "depart": "2026-10-29T19:27:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 12,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R4-C7",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "depart": "2026-10-29T19:59:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 14,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-29-R4-C8",
+      "hippodrome": "HIPPODROME DE GRAIGNES",
+      "depart": "2026-10-29T20:31:00+01:00",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "moteurs_valides": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "partants_actifs": 12,
+      "raisons": [],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R1-C2",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T12:38:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R1-C3",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T13:10:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R1-C6",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T15:05:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R1-C8",
+      "hippodrome": "HIPPODROME D'AUTEUIL",
+      "depart": "2026-10-28T16:15:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R2-C5",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T14:12:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R2-C8",
+      "hippodrome": "HIPPODROME DU MANS",
+      "depart": "2026-10-28T15:57:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R3-C1",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T16:37:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R3-C2",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:12:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R3-C3",
+      "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
+      "depart": "2026-10-28T17:45:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R4-C1",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T16:52:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    },
+    {
+      "course_id": "2026-10-28-R4-C2",
+      "hippodrome": "HIPPODROME D'AMIENS",
+      "depart": "2026-10-28T17:27:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
+      "partants_actifs": 0,
+      "raisons": [
+        "Localisation France non verifiee",
+        "Horaire de depart non verifie",
+        "Course deja partie",
+        "Horodatage collecte absent",
+        "Preuve API absente",
+        "Nombre de partants insuffisant",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-29T15:43:51.841817+01:00"
+    }
+  ],
+  "erreurs": []
+}

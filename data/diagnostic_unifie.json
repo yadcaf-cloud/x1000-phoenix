@@ -1,14 +1,16 @@
 {
   "systeme": "X1000 PHOENIX",
-  "version": "6.0",
+  "version": "7.0",
   "date": "2026-10-29",
-  "mis_a_jour": "2026-10-29T15:35:24.871175+01:00",
+  "mis_a_jour": "2026-10-29T15:43:51.694551+01:00",
   "statut": "OK",
   "collecte_executee": true,
-  "source_courses": "data/collecte.json",
+  "source_courses": "collecte.json",
+  "courses_collectees": 31,
   "courses_verifiees": 31,
-  "seuil_vert": 50,
-  "seuil_jaune": 25,
-  "erreurs": [],
-  "note": "Controle robuste sur les donnees essentielles et souple sur les criteres secondaires."
+  "courses_qualifiees": 26,
+  "qualifications_jaunes": 39,
+  "qualifications_rouges": 0,
+  "exclusions_essentielles": [],
+  "erreurs": []
 }
