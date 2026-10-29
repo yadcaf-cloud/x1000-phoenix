@@ -1,21 +1,6493 @@
 {
   "systeme": "X1000 PHOENIX",
   "version": "8.1",
-  "date": "2026-10-29",
-  "mise_a_jour": "2026-10-29T23:48:57.554773+01:00",
-  "statut": "AUCUNE_PRESELECTION",
+  "date": "2026-10-30",
+  "mise_a_jour": "2026-10-30T00:25:34.293720+01:00",
+  "statut": "OK",
   "type": "preselection",
   "seuil_vert": 50,
   "seuil_jaune": 25,
   "moteurs": {
     "M1": [],
-    "M2": [],
+    "M2": [
+      {
+        "id_course": "2026-10-30-R3-C1",
+        "depart": "2026-10-30T11:15:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 9,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C2",
+        "depart": "2026-10-30T11:46:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 5,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C3",
+        "depart": "2026-10-30T12:18:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 9,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C1",
+        "depart": "2026-10-30T12:34:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 9,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C4",
+        "depart": "2026-10-30T12:50:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 9,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C2",
+        "depart": "2026-10-30T13:08:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 8,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C5",
+        "depart": "2026-10-30T13:25:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 10,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C3",
+        "depart": "2026-10-30T13:43:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C6",
+        "depart": "2026-10-30T14:00:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 14,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C4",
+        "depart": "2026-10-30T14:18:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 13,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C7",
+        "depart": "2026-10-30T14:35:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 13,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C5",
+        "depart": "2026-10-30T14:53:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 11,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C8",
+        "depart": "2026-10-30T15:10:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 12,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C6",
+        "depart": "2026-10-30T15:28:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 10,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C1",
+        "depart": "2026-10-30T15:45:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 15,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C7",
+        "depart": "2026-10-30T16:03:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C2",
+        "depart": "2026-10-30T16:20:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C8",
+        "depart": "2026-10-30T16:38:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C3",
+        "depart": "2026-10-30T16:55:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 15,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C9",
+        "depart": "2026-10-30T17:13:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 10,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C4",
+        "depart": "2026-10-30T17:30:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C1",
+        "depart": "2026-10-30T17:48:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 11,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C5",
+        "depart": "2026-10-30T18:05:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C2",
+        "depart": "2026-10-30T18:23:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 14,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C6",
+        "depart": "2026-10-30T18:40:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C3",
+        "depart": "2026-10-30T18:58:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 11,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C7",
+        "depart": "2026-10-30T19:15:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C4",
+        "depart": "2026-10-30T19:33:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 17,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C8",
+        "depart": "2026-10-30T19:48:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C5",
+        "depart": "2026-10-30T20:22:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 17,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C6",
+        "depart": "2026-10-30T20:57:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 11,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C7",
+        "depart": "2026-10-30T21:37:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 13,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C8",
+        "depart": "2026-10-30T22:17:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 14,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M2",
+        "score_donnees": 75,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "jockey",
+          "entraineur",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "forme"
+        ]
+      }
+    ],
     "M3": [],
-    "M4": [],
+    "M4": [
+      {
+        "id_course": "2026-10-30-R3-C1",
+        "depart": "2026-10-30T11:15:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 9,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C2",
+        "depart": "2026-10-30T11:46:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 5,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C3",
+        "depart": "2026-10-30T12:18:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 9,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C1",
+        "depart": "2026-10-30T12:34:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 9,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C4",
+        "depart": "2026-10-30T12:50:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 9,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C2",
+        "depart": "2026-10-30T13:08:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 8,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C5",
+        "depart": "2026-10-30T13:25:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 10,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C3",
+        "depart": "2026-10-30T13:43:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C6",
+        "depart": "2026-10-30T14:00:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 14,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C4",
+        "depart": "2026-10-30T14:18:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 13,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C7",
+        "depart": "2026-10-30T14:35:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 13,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C5",
+        "depart": "2026-10-30T14:53:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 11,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R3-C8",
+        "depart": "2026-10-30T15:10:00+01:00",
+        "hippodrome": "HIPPODROME DE LYON-PARILLY",
+        "reunion": 3,
+        "numero_course": null,
+        "nombre_partants": 12,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C6",
+        "depart": "2026-10-30T15:28:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 10,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C1",
+        "depart": "2026-10-30T15:45:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 15,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C7",
+        "depart": "2026-10-30T16:03:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C2",
+        "depart": "2026-10-30T16:20:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C8",
+        "depart": "2026-10-30T16:38:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C3",
+        "depart": "2026-10-30T16:55:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 15,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R4-C9",
+        "depart": "2026-10-30T17:13:00+01:00",
+        "hippodrome": "HIPPODROME DE DEAUVILLE",
+        "reunion": 4,
+        "numero_course": null,
+        "nombre_partants": 10,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C4",
+        "depart": "2026-10-30T17:30:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C1",
+        "depart": "2026-10-30T17:48:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 11,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C5",
+        "depart": "2026-10-30T18:05:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C2",
+        "depart": "2026-10-30T18:23:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 14,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C6",
+        "depart": "2026-10-30T18:40:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C3",
+        "depart": "2026-10-30T18:58:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 11,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C7",
+        "depart": "2026-10-30T19:15:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C4",
+        "depart": "2026-10-30T19:33:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 17,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R5-C8",
+        "depart": "2026-10-30T19:48:00+01:00",
+        "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+        "reunion": 5,
+        "numero_course": null,
+        "nombre_partants": 16,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C5",
+        "depart": "2026-10-30T20:22:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 17,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C6",
+        "depart": "2026-10-30T20:57:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 11,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C7",
+        "depart": "2026-10-30T21:37:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 13,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      },
+      {
+        "id_course": "2026-10-30-R1-C8",
+        "depart": "2026-10-30T22:17:00+01:00",
+        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+        "reunion": 1,
+        "numero_course": null,
+        "nombre_partants": 14,
+        "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+        "moteur": "M4",
+        "score_donnees": 50,
+        "qualification": "VERT",
+        "criteres_disponibles": [
+          "numero",
+          "performances"
+        ],
+        "criteres_a_completer": [
+          "corde",
+          "distance"
+        ]
+      }
+    ],
     "M5": []
   },
-  "tableau_officiel": [],
-  "courses_jaunes": [],
+  "tableau_officiel": [
+    {
+      "id_course": "2026-10-30-R3-C1",
+      "depart": "2026-10-30T11:15:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C1",
+      "depart": "2026-10-30T11:15:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C1",
+      "depart": "2026-10-30T11:15:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C1",
+      "depart": "2026-10-30T11:15:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C1",
+      "depart": "2026-10-30T11:15:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C2",
+      "depart": "2026-10-30T11:46:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 5,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C2",
+      "depart": "2026-10-30T11:46:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 5,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C2",
+      "depart": "2026-10-30T11:46:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 5,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C2",
+      "depart": "2026-10-30T11:46:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 5,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C2",
+      "depart": "2026-10-30T11:46:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 5,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C3",
+      "depart": "2026-10-30T12:18:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C3",
+      "depart": "2026-10-30T12:18:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C3",
+      "depart": "2026-10-30T12:18:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C3",
+      "depart": "2026-10-30T12:18:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C3",
+      "depart": "2026-10-30T12:18:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C1",
+      "depart": "2026-10-30T12:34:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C1",
+      "depart": "2026-10-30T12:34:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C1",
+      "depart": "2026-10-30T12:34:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C1",
+      "depart": "2026-10-30T12:34:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C1",
+      "depart": "2026-10-30T12:34:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C4",
+      "depart": "2026-10-30T12:50:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C4",
+      "depart": "2026-10-30T12:50:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C4",
+      "depart": "2026-10-30T12:50:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C4",
+      "depart": "2026-10-30T12:50:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C4",
+      "depart": "2026-10-30T12:50:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C2",
+      "depart": "2026-10-30T13:08:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 8,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C2",
+      "depart": "2026-10-30T13:08:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 8,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C2",
+      "depart": "2026-10-30T13:08:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 8,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C2",
+      "depart": "2026-10-30T13:08:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 8,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C2",
+      "depart": "2026-10-30T13:08:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 8,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C5",
+      "depart": "2026-10-30T13:25:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C5",
+      "depart": "2026-10-30T13:25:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C5",
+      "depart": "2026-10-30T13:25:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C5",
+      "depart": "2026-10-30T13:25:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C5",
+      "depart": "2026-10-30T13:25:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C3",
+      "depart": "2026-10-30T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C3",
+      "depart": "2026-10-30T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C3",
+      "depart": "2026-10-30T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C3",
+      "depart": "2026-10-30T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C3",
+      "depart": "2026-10-30T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C6",
+      "depart": "2026-10-30T14:00:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C6",
+      "depart": "2026-10-30T14:00:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C6",
+      "depart": "2026-10-30T14:00:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C6",
+      "depart": "2026-10-30T14:00:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C6",
+      "depart": "2026-10-30T14:00:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C4",
+      "depart": "2026-10-30T14:18:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C4",
+      "depart": "2026-10-30T14:18:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C4",
+      "depart": "2026-10-30T14:18:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C4",
+      "depart": "2026-10-30T14:18:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C4",
+      "depart": "2026-10-30T14:18:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C7",
+      "depart": "2026-10-30T14:35:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C7",
+      "depart": "2026-10-30T14:35:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C7",
+      "depart": "2026-10-30T14:35:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C7",
+      "depart": "2026-10-30T14:35:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C7",
+      "depart": "2026-10-30T14:35:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C5",
+      "depart": "2026-10-30T14:53:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C5",
+      "depart": "2026-10-30T14:53:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C5",
+      "depart": "2026-10-30T14:53:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C5",
+      "depart": "2026-10-30T14:53:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C5",
+      "depart": "2026-10-30T14:53:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C8",
+      "depart": "2026-10-30T15:10:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 12,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C8",
+      "depart": "2026-10-30T15:10:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 12,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C8",
+      "depart": "2026-10-30T15:10:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 12,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C8",
+      "depart": "2026-10-30T15:10:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 12,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C8",
+      "depart": "2026-10-30T15:10:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 12,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C6",
+      "depart": "2026-10-30T15:28:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C6",
+      "depart": "2026-10-30T15:28:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C6",
+      "depart": "2026-10-30T15:28:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C6",
+      "depart": "2026-10-30T15:28:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C6",
+      "depart": "2026-10-30T15:28:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C1",
+      "depart": "2026-10-30T15:45:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C1",
+      "depart": "2026-10-30T15:45:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C1",
+      "depart": "2026-10-30T15:45:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C1",
+      "depart": "2026-10-30T15:45:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C1",
+      "depart": "2026-10-30T15:45:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C7",
+      "depart": "2026-10-30T16:03:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C7",
+      "depart": "2026-10-30T16:03:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C7",
+      "depart": "2026-10-30T16:03:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C7",
+      "depart": "2026-10-30T16:03:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C7",
+      "depart": "2026-10-30T16:03:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C2",
+      "depart": "2026-10-30T16:20:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C2",
+      "depart": "2026-10-30T16:20:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C2",
+      "depart": "2026-10-30T16:20:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C2",
+      "depart": "2026-10-30T16:20:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C2",
+      "depart": "2026-10-30T16:20:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C8",
+      "depart": "2026-10-30T16:38:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C8",
+      "depart": "2026-10-30T16:38:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C8",
+      "depart": "2026-10-30T16:38:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C8",
+      "depart": "2026-10-30T16:38:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C8",
+      "depart": "2026-10-30T16:38:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C3",
+      "depart": "2026-10-30T16:55:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C3",
+      "depart": "2026-10-30T16:55:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C3",
+      "depart": "2026-10-30T16:55:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C3",
+      "depart": "2026-10-30T16:55:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C3",
+      "depart": "2026-10-30T16:55:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C9",
+      "depart": "2026-10-30T17:13:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C9",
+      "depart": "2026-10-30T17:13:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C9",
+      "depart": "2026-10-30T17:13:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C9",
+      "depart": "2026-10-30T17:13:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C9",
+      "depart": "2026-10-30T17:13:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C4",
+      "depart": "2026-10-30T17:30:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C4",
+      "depart": "2026-10-30T17:30:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C4",
+      "depart": "2026-10-30T17:30:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C4",
+      "depart": "2026-10-30T17:30:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C4",
+      "depart": "2026-10-30T17:30:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C1",
+      "depart": "2026-10-30T17:48:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C1",
+      "depart": "2026-10-30T17:48:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C1",
+      "depart": "2026-10-30T17:48:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C1",
+      "depart": "2026-10-30T17:48:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C1",
+      "depart": "2026-10-30T17:48:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C5",
+      "depart": "2026-10-30T18:05:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C5",
+      "depart": "2026-10-30T18:05:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C5",
+      "depart": "2026-10-30T18:05:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C5",
+      "depart": "2026-10-30T18:05:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C5",
+      "depart": "2026-10-30T18:05:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C2",
+      "depart": "2026-10-30T18:23:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C2",
+      "depart": "2026-10-30T18:23:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C2",
+      "depart": "2026-10-30T18:23:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C2",
+      "depart": "2026-10-30T18:23:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C2",
+      "depart": "2026-10-30T18:23:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C6",
+      "depart": "2026-10-30T18:40:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C6",
+      "depart": "2026-10-30T18:40:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C6",
+      "depart": "2026-10-30T18:40:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C6",
+      "depart": "2026-10-30T18:40:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C6",
+      "depart": "2026-10-30T18:40:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C3",
+      "depart": "2026-10-30T18:58:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C3",
+      "depart": "2026-10-30T18:58:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C3",
+      "depart": "2026-10-30T18:58:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C3",
+      "depart": "2026-10-30T18:58:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C3",
+      "depart": "2026-10-30T18:58:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C7",
+      "depart": "2026-10-30T19:15:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C7",
+      "depart": "2026-10-30T19:15:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C7",
+      "depart": "2026-10-30T19:15:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C7",
+      "depart": "2026-10-30T19:15:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C7",
+      "depart": "2026-10-30T19:15:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C4",
+      "depart": "2026-10-30T19:33:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C4",
+      "depart": "2026-10-30T19:33:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C4",
+      "depart": "2026-10-30T19:33:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C4",
+      "depart": "2026-10-30T19:33:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C4",
+      "depart": "2026-10-30T19:33:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C8",
+      "depart": "2026-10-30T19:48:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C8",
+      "depart": "2026-10-30T19:48:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C8",
+      "depart": "2026-10-30T19:48:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C8",
+      "depart": "2026-10-30T19:48:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C8",
+      "depart": "2026-10-30T19:48:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C5",
+      "depart": "2026-10-30T20:22:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C5",
+      "depart": "2026-10-30T20:22:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C5",
+      "depart": "2026-10-30T20:22:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C5",
+      "depart": "2026-10-30T20:22:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C5",
+      "depart": "2026-10-30T20:22:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C6",
+      "depart": "2026-10-30T20:57:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C6",
+      "depart": "2026-10-30T20:57:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C6",
+      "depart": "2026-10-30T20:57:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C6",
+      "depart": "2026-10-30T20:57:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C6",
+      "depart": "2026-10-30T20:57:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C7",
+      "depart": "2026-10-30T21:37:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C7",
+      "depart": "2026-10-30T21:37:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C7",
+      "depart": "2026-10-30T21:37:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C7",
+      "depart": "2026-10-30T21:37:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C7",
+      "depart": "2026-10-30T21:37:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C8",
+      "depart": "2026-10-30T22:17:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C8",
+      "depart": "2026-10-30T22:17:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M2",
+      "score_donnees": 75,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "jockey",
+        "entraineur",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C8",
+      "depart": "2026-10-30T22:17:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C8",
+      "depart": "2026-10-30T22:17:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M4",
+      "score_donnees": 50,
+      "qualification": "VERT",
+      "criteres_disponibles": [
+        "numero",
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "corde",
+        "distance"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C8",
+      "depart": "2026-10-30T22:17:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    }
+  ],
+  "courses_jaunes": [
+    {
+      "id_course": "2026-10-30-R3-C1",
+      "depart": "2026-10-30T11:15:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C1",
+      "depart": "2026-10-30T11:15:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C1",
+      "depart": "2026-10-30T11:15:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C2",
+      "depart": "2026-10-30T11:46:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 5,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C2",
+      "depart": "2026-10-30T11:46:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 5,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C2",
+      "depart": "2026-10-30T11:46:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 5,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C3",
+      "depart": "2026-10-30T12:18:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C3",
+      "depart": "2026-10-30T12:18:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C3",
+      "depart": "2026-10-30T12:18:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C1",
+      "depart": "2026-10-30T12:34:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C1",
+      "depart": "2026-10-30T12:34:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C1",
+      "depart": "2026-10-30T12:34:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C4",
+      "depart": "2026-10-30T12:50:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C4",
+      "depart": "2026-10-30T12:50:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C4",
+      "depart": "2026-10-30T12:50:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 9,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C2",
+      "depart": "2026-10-30T13:08:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 8,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C2",
+      "depart": "2026-10-30T13:08:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 8,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C2",
+      "depart": "2026-10-30T13:08:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 8,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C5",
+      "depart": "2026-10-30T13:25:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C5",
+      "depart": "2026-10-30T13:25:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C5",
+      "depart": "2026-10-30T13:25:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C3",
+      "depart": "2026-10-30T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C3",
+      "depart": "2026-10-30T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C3",
+      "depart": "2026-10-30T13:43:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C6",
+      "depart": "2026-10-30T14:00:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C6",
+      "depart": "2026-10-30T14:00:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C6",
+      "depart": "2026-10-30T14:00:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C4",
+      "depart": "2026-10-30T14:18:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C4",
+      "depart": "2026-10-30T14:18:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C4",
+      "depart": "2026-10-30T14:18:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C7",
+      "depart": "2026-10-30T14:35:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C7",
+      "depart": "2026-10-30T14:35:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C7",
+      "depart": "2026-10-30T14:35:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C5",
+      "depart": "2026-10-30T14:53:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C5",
+      "depart": "2026-10-30T14:53:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C5",
+      "depart": "2026-10-30T14:53:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C8",
+      "depart": "2026-10-30T15:10:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 12,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C8",
+      "depart": "2026-10-30T15:10:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 12,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R3-C8",
+      "depart": "2026-10-30T15:10:00+01:00",
+      "hippodrome": "HIPPODROME DE LYON-PARILLY",
+      "reunion": 3,
+      "numero_course": null,
+      "nombre_partants": 12,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C6",
+      "depart": "2026-10-30T15:28:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C6",
+      "depart": "2026-10-30T15:28:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C6",
+      "depart": "2026-10-30T15:28:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C1",
+      "depart": "2026-10-30T15:45:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C1",
+      "depart": "2026-10-30T15:45:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C1",
+      "depart": "2026-10-30T15:45:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C7",
+      "depart": "2026-10-30T16:03:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C7",
+      "depart": "2026-10-30T16:03:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C7",
+      "depart": "2026-10-30T16:03:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C2",
+      "depart": "2026-10-30T16:20:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C2",
+      "depart": "2026-10-30T16:20:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C2",
+      "depart": "2026-10-30T16:20:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C8",
+      "depart": "2026-10-30T16:38:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C8",
+      "depart": "2026-10-30T16:38:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C8",
+      "depart": "2026-10-30T16:38:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C3",
+      "depart": "2026-10-30T16:55:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C3",
+      "depart": "2026-10-30T16:55:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C3",
+      "depart": "2026-10-30T16:55:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 15,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C9",
+      "depart": "2026-10-30T17:13:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C9",
+      "depart": "2026-10-30T17:13:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R4-C9",
+      "depart": "2026-10-30T17:13:00+01:00",
+      "hippodrome": "HIPPODROME DE DEAUVILLE",
+      "reunion": 4,
+      "numero_course": null,
+      "nombre_partants": 10,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C4",
+      "depart": "2026-10-30T17:30:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C4",
+      "depart": "2026-10-30T17:30:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C4",
+      "depart": "2026-10-30T17:30:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C1",
+      "depart": "2026-10-30T17:48:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C1",
+      "depart": "2026-10-30T17:48:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C1",
+      "depart": "2026-10-30T17:48:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C5",
+      "depart": "2026-10-30T18:05:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C5",
+      "depart": "2026-10-30T18:05:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C5",
+      "depart": "2026-10-30T18:05:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C2",
+      "depart": "2026-10-30T18:23:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C2",
+      "depart": "2026-10-30T18:23:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C2",
+      "depart": "2026-10-30T18:23:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C6",
+      "depart": "2026-10-30T18:40:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C6",
+      "depart": "2026-10-30T18:40:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C6",
+      "depart": "2026-10-30T18:40:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C3",
+      "depart": "2026-10-30T18:58:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C3",
+      "depart": "2026-10-30T18:58:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C3",
+      "depart": "2026-10-30T18:58:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C7",
+      "depart": "2026-10-30T19:15:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C7",
+      "depart": "2026-10-30T19:15:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C7",
+      "depart": "2026-10-30T19:15:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C4",
+      "depart": "2026-10-30T19:33:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C4",
+      "depart": "2026-10-30T19:33:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C4",
+      "depart": "2026-10-30T19:33:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C8",
+      "depart": "2026-10-30T19:48:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C8",
+      "depart": "2026-10-30T19:48:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R5-C8",
+      "depart": "2026-10-30T19:48:00+01:00",
+      "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
+      "reunion": 5,
+      "numero_course": null,
+      "nombre_partants": 16,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C5",
+      "depart": "2026-10-30T20:22:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C5",
+      "depart": "2026-10-30T20:22:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C5",
+      "depart": "2026-10-30T20:22:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 17,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C6",
+      "depart": "2026-10-30T20:57:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C6",
+      "depart": "2026-10-30T20:57:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C6",
+      "depart": "2026-10-30T20:57:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 11,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C7",
+      "depart": "2026-10-30T21:37:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C7",
+      "depart": "2026-10-30T21:37:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C7",
+      "depart": "2026-10-30T21:37:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 13,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C8",
+      "depart": "2026-10-30T22:17:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M1",
+      "score_donnees": 25,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "distance",
+        "terrain",
+        "regularite"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C8",
+      "depart": "2026-10-30T22:17:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M3",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    },
+    {
+      "id_course": "2026-10-30-R1-C8",
+      "depart": "2026-10-30T22:17:00+01:00",
+      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+      "reunion": 1,
+      "numero_course": null,
+      "nombre_partants": 14,
+      "heure_verification": "2026-10-30T00:25:34.293720+01:00",
+      "moteur": "M5",
+      "score_donnees": 33,
+      "qualification": "JAUNE",
+      "criteres_disponibles": [
+        "performances"
+      ],
+      "criteres_a_completer": [
+        "cote",
+        "forme"
+      ]
+    }
+  ],
   "courses_rouges": [],
   "exclusions_essentielles": [],
   "pronostics_generes": false,
