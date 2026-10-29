@@ -1,26 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""X1000 PHOENIX — orchestration M1–M5 et archives FIGÉES protégées.
 
+Commandes : python phoenix.py ; python phoenix.py --self-test
+Aucun pari heuristique n'est automatiquement transformé en FIGÉ.
 """
-🇸🇳🧠🔥 X1000 PHOENIX
-INTELLIGENCE HIPPIQUE VIVANTE — M1 À M5
-
-Gestion sécurisée :
-- Analyses des courses
-- Moteurs M1, M2, M3, M4 et M5
-- PV et FIGÉS historiques
-- Vérification SHA256
-- Protection contre les écrasements
-- Compatibilité avec publication.py
-
-Règles :
-- Aucune donnée hippique inventée
-- Aucun pronostic fictif
-- Aucun FIGÉ vide créé
-- Aucun FIGÉ historique modifié
-- Aucun résultat officiel inventé
-"""
-
+import argparse
 import datetime as dt
 import hashlib
 import hmac
@@ -28,830 +13,252 @@ import json
 import os
 import re
 import tempfile
-
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-
-# ==================================================
-# CONFIGURATION
-# ==================================================
-
 BASE = Path(__file__).resolve().parent
-
 DATA = BASE / "data"
 FIGES = DATA / "figes"
-
 PARIS = ZoneInfo("Europe/Paris")
+MOTEURS = ("M1", "M2", "M3", "M4", "M5")
 
-MOTEURS = (
-    "M1",
-    "M2",
-    "M3",
-    "M4",
-    "M5",
-)
-
-
-# ==================================================
-# HORLOGE
-# ==================================================
 
 def maintenant():
-    """Retourner l'heure actuelle de Paris."""
     return dt.datetime.now(PARIS).isoformat()
 
 
 def date_paris():
-    """Retourner la date actuelle de Paris."""
     return dt.datetime.now(PARIS).date().isoformat()
 
 
-# ==================================================
-# IDENTIFIANTS
-# ==================================================
-
 def identifiant(course_id):
-    """Créer un identifiant de fichier sécurisé."""
-
-    if course_id is None or isinstance(course_id, bool):
-        raise ValueError("Identifiant de course invalide")
-
-    valeur = str(course_id).strip()
-
-    if not valeur:
-        raise ValueError("Identifiant de course vide")
-
-    resultat = re.sub(
-        r"[^a-zA-Z0-9_-]",
-        "_",
-        valeur
-    )
-
-    if not resultat or not re.search(
-        r"[a-zA-Z0-9]",
-        resultat
-    ):
-        raise ValueError(
-            "Identifiant de course non exploitable"
-        )
-
-    return resultat
+    if not isinstance(course_id, str) or not re.fullmatch(r"[A-Za-z0-9_-]{1,120}", course_id):
+        raise ValueError("Identifiant de course invalide (ASCII, 1 à 120 caractères)")
+    return course_id
 
 
 def chemin_fige(course_id):
-    """Retourner le chemin historique d'un FIGÉ."""
+    return FIGES / (identifiant(course_id) + ".json")
 
-    return FIGES / (
-        identifiant(course_id) + ".json"
-    )
-
-
-# ==================================================
-# LECTURE JSON
-# ==================================================
 
 def _sans_doublons(paires):
-    """Refuser les clés JSON dupliquées."""
-
     resultat = {}
-
     for cle, valeur in paires:
         if cle in resultat:
-            raise ValueError(
-                f"Clé JSON dupliquée : {cle}"
-            )
-
+            raise ValueError(f"Clé JSON dupliquée : {cle}")
         resultat[cle] = valeur
-
     return resultat
+
+
+def _constante_invalide(valeur):
+    raise ValueError(f"Constante JSON non autorisée : {valeur}")
 
 
 def lire(chemin):
-    """Lire un JSON sans modifier son contenu."""
+    with Path(chemin).open("r", encoding="utf-8") as fichier:
+        return json.load(fichier, object_pairs_hook=_sans_doublons,
+                         parse_constant=_constante_invalide)
 
-    chemin = Path(chemin)
-
-    with chemin.open(
-        "r",
-        encoding="utf-8"
-    ) as fichier:
-
-        return json.load(
-            fichier,
-            object_pairs_hook=_sans_doublons
-        )
-
-
-# ==================================================
-# ÉCRITURE JSON SÉCURISÉE
-# ==================================================
-
-def _est_fige(chemin):
-    """
-    Déterminer si un chemin appartient
-    au répertoire historique FIGES.
-    """
-
-    chemin = Path(chemin).resolve()
-    dossier = FIGES.resolve()
-
-    return (
-        chemin == dossier
-        or dossier in chemin.parents
-    )
-
-
-def ecrire(chemin, document):
-    """
-    Écrire un JSON.
-
-    FIGÉS :
-        création exclusive, sans écrasement.
-
-    Autres fichiers :
-        écriture temporaire puis remplacement.
-    """
-
-    chemin = Path(chemin)
-
-    chemin.parent.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-    contenu = json.dumps(
-        document,
-        ensure_ascii=False,
-        indent=2,
-        allow_nan=False
-    ) + "\n"
-
-    if _est_fige(chemin):
-
-        if not isinstance(document, dict):
-            raise ValueError(
-                "Un FIGÉ doit être un document JSON"
-            )
-
-        verifier_fige(
-            document,
-            exiger_integrite=True
-        )
-
-        with chemin.open(
-            "x",
-            encoding="utf-8"
-        ) as fichier:
-
-            fichier.write(contenu)
-
-        return chemin
-
-    temporaire = None
-
-    try:
-
-        with tempfile.NamedTemporaryFile(
-            mode="w",
-            encoding="utf-8",
-            dir=str(chemin.parent),
-            prefix=".x1000_",
-            suffix=".tmp",
-            delete=False
-        ) as fichier:
-
-            temporaire = Path(fichier.name)
-
-            fichier.write(contenu)
-            fichier.flush()
-            os.fsync(fichier.fileno())
-
-        os.replace(
-            temporaire,
-            chemin
-        )
-
-        return chemin
-
-    finally:
-
-        if (
-            temporaire is not None
-            and temporaire.exists()
-        ):
-            temporaire.unlink()
-
-
-# ==================================================
-# EXTRACTION DES FIGÉS
-# ==================================================
 
 def rapport_fige(document):
-    """
-    Extraire le rapport d'un FIGÉ.
-
-    Formats acceptés :
-    1. document["rapport"]
-    2. document["contenu"]["analyse"]
-    """
-
     if not isinstance(document, dict):
-        raise ValueError(
-            "Document FIGÉ invalide"
-        )
-
+        raise ValueError("Document FIGÉ non objet")
     rapport = document.get("rapport")
+    if not isinstance(rapport, dict):
+        contenu = document.get("contenu")
+        rapport = contenu.get("analyse") if isinstance(contenu, dict) else None
+    if not isinstance(rapport, dict):
+        raise ValueError("Rapport FIGÉ absent ou invalide")
+    return rapport
 
-    if isinstance(rapport, dict):
-        return rapport
-
-    contenu = document.get("contenu")
-
-    if isinstance(contenu, dict):
-
-        analyse = contenu.get("analyse")
-
-        if isinstance(analyse, dict):
-            return analyse
-
-    raise ValueError(
-        "Format FIGÉ inconnu"
-    )
-
-
-# ==================================================
-# EMPREINTE SHA256
-# ==================================================
 
 def empreinte_rapport(rapport):
-    """
-    Calculer l'empreinte SHA256 canonique
-    d'un rapport.
-
-    Une empreinte détecte une modification,
-    mais ne prouve pas à elle seule l'origine
-    ni l'heure historique du document.
-    """
-
     if not isinstance(rapport, dict):
-        raise ValueError(
-            "Rapport invalide"
-        )
+        raise ValueError("Rapport invalide")
+    donnees = json.dumps(rapport, ensure_ascii=False, sort_keys=True,
+                         separators=(",", ":"), allow_nan=False).encode("utf-8")
+    return hashlib.sha256(donnees).hexdigest()
 
-    contenu = json.dumps(
-        rapport,
-        ensure_ascii=False,
-        sort_keys=True,
-        separators=(",", ":"),
-        allow_nan=False
-    ).encode("utf-8")
-
-    return hashlib.sha256(
-        contenu
-    ).hexdigest()
-
-
-# ==================================================
-# VÉRIFICATION DES FIGÉS
-# ==================================================
 
 def controle_fige(document):
-    """
-    Examiner un FIGÉ sans le modifier.
-
-    États :
-    - VERIFIE
-    - NON_VERIFIABLE
-    - INVALIDE
-
-    Les anciens formats d'empreinte ne sont
-    jamais considérés comme vérifiés
-    par simple présence de 64 caractères.
-    """
-
-    resultat = {
-        "integrite": "INVALIDE",
-        "course_id": None,
-        "moteurs": [],
-        "empreinte_presente": False,
-        "empreinte_concordante": False,
-        "message": "",
-    }
-
+    resultat = {"integrite": "INVALIDE", "course_id": None, "moteurs": [],
+                "empreinte_presente": False, "empreinte_concordante": False,
+                "message": ""}
     try:
-
         rapport = rapport_fige(document)
-
-        cid = rapport.get("course_id")
-
-        if cid is None or str(cid).strip() == "":
-            raise ValueError(
-                "Identifiant de course absent"
-            )
-
-        resultat["course_id"] = str(cid)
-
+        cid = rapport.get("course_id", rapport.get("id"))
+        identifiant(cid)
+        resultat["course_id"] = cid
         moteurs = rapport.get("moteurs")
-
-        if not isinstance(moteurs, list):
-            raise ValueError(
-                "Liste des moteurs invalide"
-            )
-
-        noms = set()
-
+        if not isinstance(moteurs, list) or not moteurs:
+            raise ValueError("Liste des moteurs absente ou vide")
+        noms = []
         for moteur in moteurs:
-
-            if not isinstance(moteur, dict):
-                raise ValueError(
-                    "Structure moteur invalide"
-                )
-
-            nom = moteur.get("moteur")
-
-            if nom not in MOTEURS:
-                raise ValueError(
-                    f"Moteur inconnu : {nom}"
-                )
-
-            if nom in noms:
-                raise ValueError(
-                    f"Moteur dupliqué : {nom}"
-                )
-
-            noms.add(nom)
-
+            if not isinstance(moteur, dict) or moteur.get("moteur") not in MOTEURS:
+                raise ValueError("Moteur inconnu ou structure invalide")
+            noms.append(moteur["moteur"])
+        if len(noms) != len(set(noms)):
+            raise ValueError("Moteurs dupliqués")
         resultat["moteurs"] = sorted(noms)
-
-        empreinte = document.get("sha256")
-
-        if not isinstance(empreinte, str):
-            raise ValueError(
-                "Empreinte SHA256 absente"
-            )
-
-        if not re.fullmatch(
-            r"[a-fA-F0-9]{64}",
-            empreinte
-        ):
-            raise ValueError(
-                "Format SHA256 invalide"
-            )
-
+        sha = document.get("sha256")
+        if not isinstance(sha, str) or not re.fullmatch(r"[0-9a-fA-F]{64}", sha):
+            resultat["integrite"] = "NON_VERIFIABLE"
+            resultat["message"] = "Empreinte SHA256 absente ou format historique inconnu"
+            return resultat
         resultat["empreinte_presente"] = True
-
-        calculee = empreinte_rapport(
-            rapport
-        )
-
-        concordance = hmac.compare_digest(
-            calculee.lower(),
-            empreinte.lower()
-        )
-
-        resultat[
-            "empreinte_concordante"
-        ] = concordance
-
-        if concordance:
-
-            resultat["integrite"] = "VERIFIE"
-
-            resultat["message"] = (
-                "Empreinte SHA256 canonique "
-                "concordante"
-            )
-
-        else:
-
-            resultat["integrite"] = (
-                "NON_VERIFIABLE"
-            )
-
-            resultat["message"] = (
-                "Empreinte non concordante. "
-                "Ancien schéma possible ou "
-                "document modifié. "
-                "Contrôle historique nécessaire."
-            )
-
-    except (
-        ValueError,
-        TypeError,
-        OverflowError
-    ) as erreur:
-
-        resultat["integrite"] = "INVALIDE"
+        concordance = hmac.compare_digest(empreinte_rapport(rapport), sha.lower())
+        resultat["empreinte_concordante"] = concordance
+        resultat["integrite"] = "VERIFIE" if concordance else "NON_VERIFIABLE"
+        resultat["message"] = ("SHA256 canonique concordant" if concordance else
+                               "SHA256 non concordant : format historique différent ou modification possible")
+    except (ValueError, TypeError, OverflowError) as erreur:
         resultat["message"] = str(erreur)
-
     return resultat
 
 
-def verifier_fige(
-    document,
-    exiger_integrite=False
-):
-    """
-    Vérifier un FIGÉ sans le modifier.
-
-    Compatibilité historique :
-    les anciens documents structurellement
-    valides peuvent rester consultables.
-
-    Pour créer un nouveau FIGÉ :
-    exiger_integrite=True.
-    """
-
+def verifier_fige(document, exiger_integrite=False):
     controle = controle_fige(document)
-
-    if controle["integrite"] == "INVALIDE":
-
-        raise ValueError(
-            controle["message"]
-        )
-
-    if (
-        exiger_integrite
-        and controle["integrite"] != "VERIFIE"
-    ):
-
-        raise ValueError(
-            "Intégrité du FIGÉ non confirmée : "
-            + controle["message"]
-        )
-
+    if controle["integrite"] == "INVALIDE" or (exiger_integrite and controle["integrite"] != "VERIFIE"):
+        raise ValueError(controle["message"])
     return True
 
 
-# ==================================================
-# STATUT DES FIGÉS
-# ==================================================
+def _est_fige(chemin):
+    chemin = Path(chemin).resolve()
+    dossier = FIGES.resolve()
+    return chemin == dossier or dossier in chemin.parents
+
+
+def ecrire(chemin, document):
+    chemin = Path(chemin)
+    if chemin.is_symlink():
+        raise ValueError("Écriture sur lien symbolique interdite")
+    if _est_fige(chemin):
+        if chemin.suffix.lower() != ".json":
+            raise ValueError("Archive FIGÉE : extension .json obligatoire")
+        verifier_fige(document, exiger_integrite=True)
+        rapport = rapport_fige(document)
+        if chemin.name != identifiant(rapport.get("course_id", rapport.get("id"))) + ".json":
+            raise ValueError("Nom de fichier FIGÉ incohérent avec la course")
+    contenu = json.dumps(document, ensure_ascii=False, indent=2, allow_nan=False) + "\n"
+    chemin.parent.mkdir(parents=True, exist_ok=True)
+    if _est_fige(chemin):
+        # O_EXCL empêche un écrasement même entre deux exécutions concurrentes.
+        fd = os.open(chemin, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as fichier:
+                fichier.write(contenu)
+                fichier.flush()
+                os.fsync(fichier.fileno())
+        except Exception:
+            # Une erreur d'écriture laisse le fichier pour examen : ne jamais supprimer une archive.
+            raise
+        return chemin
+    temporaire = None
+    try:
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=chemin.parent,
+                                         prefix=".x1000_", suffix=".tmp", delete=False) as fichier:
+            temporaire = Path(fichier.name)
+            fichier.write(contenu)
+            fichier.flush()
+            os.fsync(fichier.fileno())
+        os.replace(temporaire, chemin)
+    finally:
+        if temporaire is not None and temporaire.exists():
+            temporaire.unlink()
+    return chemin
+
 
 def statut_fige(document):
-    """
-    Déterminer si un FIGÉ contient
-    au moins un pari officiellement validé.
-
-    Le statut du pari ne constitue pas
-    une preuve d'intégrité cryptographique.
-    """
-
     verifier_fige(document)
+    moteurs = rapport_fige(document)["moteurs"]
+    return ("PARI_OFFICIEL_FIGE" if any(
+        m.get("validation") == "OFFICIEL_VALIDE" and m.get("pari_retenu") not in (None, "", [], {})
+        for m in moteurs) else "FIGE_INDICATIF")
 
-    rapport = rapport_fige(document)
-
-    moteurs = rapport.get(
-        "moteurs",
-        []
-    )
-
-    officiels = []
-
-    for moteur in moteurs:
-
-        if not isinstance(moteur, dict):
-            continue
-
-        validation = moteur.get(
-            "validation"
-        )
-
-        pari = moteur.get(
-            "pari_retenu"
-        )
-
-        if (
-            validation == "OFFICIEL_VALIDE"
-            and pari not in (
-                None,
-                "",
-                [],
-                {}
-            )
-        ):
-
-            officiels.append(
-                moteur
-            )
-
-    if officiels:
-        return "PARI_OFFICIEL_FIGE"
-
-    return "FIGE_INDICATIF"
-
-
-# ==================================================
-# BILAN HISTORIQUE
-# ==================================================
 
 def bilan_fige(document):
-    """
-    Construire un bilan de FIGÉ
-    sans modifier son contenu.
-    """
-
     verifier_fige(document)
-
-    rapport = rapport_fige(document)
     controle = controle_fige(document)
+    return {"course_id": controle["course_id"], "sha256": document.get("sha256"),
+            "integrite": controle["integrite"], "message_integrite": controle["message"],
+            "statut": statut_fige(document), "moteurs": rapport_fige(document)["moteurs"],
+            "historique_modifie": False}
 
-    return {
-        "course_id": rapport.get(
-            "course_id"
-        ),
-        "sha256": document.get(
-            "sha256"
-        ),
-        "integrite": controle[
-            "integrite"
-        ],
-        "message_integrite": controle[
-            "message"
-        ],
-        "statut": statut_fige(
-            document
-        ),
-        "moteurs": rapport.get(
-            "moteurs",
-            []
-        ),
-        "historique_modifie": False,
-    }
-
-
-# ==================================================
-# DIAGNOSTIC DES MOTEURS
-# ==================================================
 
 def diagnostic_moteurs():
-    """
-    État réel des moteurs prédictifs.
+    try:
+        from analyser_moteurs import analyser as analyse_reelle, MOTEURS as noms
+        raccordes = callable(analyse_reelle) and tuple(noms) == MOTEURS
+    except (ImportError, AttributeError):
+        raccordes = False
+    return {**{nom: ("HEURISTIQUE_RACCORDEE_NON_VALIDEE" if raccordes else "NON_RACCORDE")
+               for nom in MOTEURS}, "analyse_reelle": raccordes,
+            "nouveaux_figes": False, "heure_paris": maintenant()}
 
-    Aucun moteur ne doit être déclaré
-    opérationnel sans implémentation réelle.
-    """
-
-    return {
-        "M1": "NON_RACCORDE",
-        "M2": "NON_RACCORDE",
-        "M3": "NON_RACCORDE",
-        "M4": "NON_RACCORDE",
-        "M5": "NON_RACCORDE",
-        "analyse_reelle": False,
-        "nouveaux_figes": False,
-        "heure_paris": maintenant(),
-    }
-
-
-# ==================================================
-# ANALYSE DES COURSES
-# ==================================================
 
 def analyser(course):
-    """
-    Préparer une analyse de course.
+    from analyser_moteurs import analyser as analyse_moteurs
+    return analyse_moteurs(course)
 
-    Les cinq moteurs prédictifs réels
-    ne sont pas encore raccordés.
-
-    Ne jamais fabriquer de pronostic
-    pour remplir artificiellement
-    le tableau officiel.
-    """
-
-    if not isinstance(course, dict):
-        raise ValueError(
-            "Course invalide"
-        )
-
-    cid = course.get(
-        "id",
-        course.get("course_id")
-    )
-
-    if cid is None or str(cid).strip() == "":
-        raise ValueError(
-            "Identifiant de course absent"
-        )
-
-    return {
-        "course_id": cid,
-        "hippodrome": course.get(
-            "hippodrome"
-        ),
-        "depart": course.get(
-            "depart"
-        ),
-        "source": course.get(
-            "source"
-        ),
-        "nombre_partants": course.get(
-            "nombre_partants"
-        ),
-        "analyse_a": maintenant(),
-        "moteurs": [],
-        "validation": "EN_ATTENTE_MOTEURS",
-        "qualification": "NON_EVALUEE",
-        "pari_officiel": False,
-    }
-
-
-# ==================================================
-# GESTION DES FIGÉS
-# ==================================================
 
 def figer(analyse):
-    """
-    Récupérer un FIGÉ historique existant.
-
-    Aucun nouveau FIGÉ n'est créé
-    sans moteurs prédictifs réellement
-    raccordés et validés.
-
-    Les FIGÉS historiques restent intacts.
-    """
-
+    """Retourne uniquement une archive existante ; ne crée aucun FIGÉ heuristique."""
     if not isinstance(analyse, dict):
-        raise ValueError(
-            "Analyse invalide"
-        )
+        raise ValueError("Analyse invalide")
+    cid = identifiant(analyse.get("course_id", analyse.get("id")))
+    chemin = chemin_fige(cid)
+    if not chemin.is_file():
+        return None
+    document = lire(chemin)
+    verifier_fige(document)
+    rapport = rapport_fige(document)
+    if rapport.get("course_id", rapport.get("id")) != cid:
+        raise ValueError("FIGÉ historique associé à une autre course")
+    return document
 
-    cid = analyse.get(
-        "course_id"
-    )
-
-    if cid is None or str(cid).strip() == "":
-        raise ValueError(
-            "Course sans identifiant"
-        )
-
-    chemin = chemin_fige(
-        cid
-    )
-
-    if chemin.exists():
-
-        document = lire(
-            chemin
-        )
-
-        verifier_fige(
-            document
-        )
-
-        rapport = rapport_fige(
-            document
-        )
-
-        if str(
-            rapport.get("course_id")
-        ) != str(cid):
-
-            raise ValueError(
-                "FIGÉ historique associé "
-                "à une autre course"
-            )
-
-        return document
-
-    # Aucun FIGÉ fictif.
-    return None
-
-
-# ==================================================
-# CONTRÔLE DU DOSSIER HISTORIQUE
-# ==================================================
 
 def auditer_figes_historiques():
-    """
-    Examiner les FIGÉS existants.
-
-    Ne jamais modifier ou supprimer
-    un document historique.
-    """
-
-    resultat = {
-        "verifies": 0,
-        "non_verifiables": 0,
-        "invalides": 0,
-        "documents": [],
-        "heure_paris": maintenant(),
-    }
-
-    if not FIGES.exists():
+    resultat = {"verifies": 0, "non_verifiables": 0, "invalides": 0,
+                "documents": [], "heure_paris": maintenant()}
+    if not FIGES.is_dir():
         return resultat
-
-    for chemin in sorted(
-        FIGES.glob("*.json")
-    ):
-
+    for chemin in sorted(FIGES.glob("*.json")):
         try:
-
-            document = lire(
-                chemin
-            )
-
-            controle = controle_fige(
-                document
-            )
-
-        except Exception as erreur:
-
-            controle = {
-                "integrite": "INVALIDE",
-                "message": str(erreur),
-                "course_id": None,
-            }
-
-        etat = controle["integrite"]
-
-        if etat == "VERIFIE":
-            resultat["verifies"] += 1
-
-        elif etat == "NON_VERIFIABLE":
-            resultat["non_verifiables"] += 1
-
-        else:
-            resultat["invalides"] += 1
-
-        resultat["documents"].append({
-            "fichier": chemin.name,
-            "course_id": controle.get(
-                "course_id"
-            ),
-            "integrite": etat,
-            "message": controle.get(
-                "message"
-            ),
-        })
-
+            controle = controle_fige(lire(chemin))
+        except (OSError, ValueError, TypeError) as erreur:
+            controle = {"integrite": "INVALIDE", "message": str(erreur), "course_id": None}
+        cle = {"VERIFIE": "verifies", "NON_VERIFIABLE": "non_verifiables",
+               "INVALIDE": "invalides"}[controle["integrite"]]
+        resultat[cle] += 1
+        resultat["documents"].append({"fichier": chemin.name, **controle})
     return resultat
 
 
-# ==================================================
-# EXÉCUTION DIRECTE
-# ==================================================
+def self_test():
+    cid = "2026-10-29-R1-C1"
+    rapport = {"course_id": cid, "moteurs": [{"moteur": "M1", "validation": "NON_FIGE"}]}
+    document = {"rapport": rapport, "sha256": empreinte_rapport(rapport)}
+    assert controle_fige(document)["integrite"] == "VERIFIE"
+    assert statut_fige(document) == "FIGE_INDICATIF"
+    assert identifiant(cid) == cid
+    assert controle_fige({**document, "sha256": "0" * 64})["integrite"] == "NON_VERIFIABLE"
+    assert controle_fige({"rapport": rapport})["integrite"] == "NON_VERIFIABLE"
+    assert chemin_fige(cid).name == cid + ".json"
+    print("X1000 PHOENIX : tests locaux OK (aucun fichier historique modifié)")
+
 
 def main():
-
-    DATA.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-    FIGES.mkdir(
-        parents=True,
-        exist_ok=True
-    )
-
-    print(
-        "🇸🇳🧠🔥 X1000 PHOENIX"
-    )
-
-    print(
-        "Heure Paris :",
-        maintenant()
-    )
-
-    print(
-        "Moteurs :",
-        ", ".join(MOTEURS)
-    )
-
-    print(
-        "Protection FIGÉS : ACTIVE"
-    )
-
-    print(
-        "Analyse prédictive : EN ATTENTE"
-    )
-
-    historique = auditer_figes_historiques()
-
-    print(
-        "FIGÉS vérifiés :",
-        historique["verifies"]
-    )
-
-    print(
-        "FIGÉS non vérifiables :",
-        historique["non_verifiables"]
-    )
-
-    print(
-        "FIGÉS invalides :",
-        historique["invalides"]
-    )
-
-    print(
-        "Diagnostic :",
-        json.dumps(
-            diagnostic_moteurs(),
-            ensure_ascii=False
-        )
-    )
+    parser = argparse.ArgumentParser(description="X1000 PHOENIX - Archives et diagnostic M1-M5")
+    parser.add_argument("--self-test", action="store_true")
+    args = parser.parse_args()
+    if args.self_test:
+        self_test()
+        return 0
+    print(json.dumps({"moteurs": diagnostic_moteurs(),
+                      "archives": auditer_figes_historiques()}, ensure_ascii=False, indent=2))
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
