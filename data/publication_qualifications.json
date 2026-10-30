@@ -1,16 +1,16 @@
 {
   "version": "X1000-PHOENIX-10.0",
-  "genere_a_paris": "2026-10-30T08:11:06.812563+01:00",
+  "genere_a_paris": "2026-10-30T08:31:49.790092+01:00",
   "courses_examinees": 44,
-  "courses_qualifiees": 33,
-  "courses_non_qualifiees": 11,
+  "courses_qualifiees": 0,
+  "courses_non_qualifiees": 44,
   "qualifications": [
     {
       "course_id": "2026-10-30-R3-C1",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T11:15:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -19,15 +19,17 @@
         "M5"
       ],
       "partants_actifs": 9,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C2",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T11:46:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -36,15 +38,17 @@
         "M5"
       ],
       "partants_actifs": 5,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C3",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T12:18:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -53,15 +57,17 @@
         "M5"
       ],
       "partants_actifs": 9,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C1",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-30T12:34:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -70,15 +76,17 @@
         "M5"
       ],
       "partants_actifs": 9,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C4",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T12:50:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -87,15 +95,17 @@
         "M5"
       ],
       "partants_actifs": 9,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C2",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-30T13:08:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -104,15 +114,17 @@
         "M5"
       ],
       "partants_actifs": 8,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C5",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T13:25:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -121,15 +133,17 @@
         "M5"
       ],
       "partants_actifs": 10,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C3",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-30T13:43:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -138,15 +152,17 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C6",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T14:00:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -155,15 +171,17 @@
         "M5"
       ],
       "partants_actifs": 14,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C4",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-30T14:18:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -172,15 +190,17 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C7",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T14:35:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -189,15 +209,17 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C5",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-30T14:53:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -206,15 +228,17 @@
         "M5"
       ],
       "partants_actifs": 11,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C8",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T15:10:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -223,15 +247,17 @@
         "M5"
       ],
       "partants_actifs": 12,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C6",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-30T15:28:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -240,15 +266,17 @@
         "M5"
       ],
       "partants_actifs": 10,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C1",
       "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
       "depart": "2026-10-30T15:45:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -257,15 +285,17 @@
         "M5"
       ],
       "partants_actifs": 15,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C7",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-30T16:03:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -274,15 +304,17 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C2",
       "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
       "depart": "2026-10-30T16:20:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -291,15 +323,17 @@
         "M5"
       ],
       "partants_actifs": 15,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C8",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-30T16:38:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -308,15 +342,17 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C3",
       "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
       "depart": "2026-10-30T16:55:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -325,15 +361,17 @@
         "M5"
       ],
       "partants_actifs": 15,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C9",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-30T17:13:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -342,15 +380,17 @@
         "M5"
       ],
       "partants_actifs": 10,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C4",
       "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
       "depart": "2026-10-30T17:30:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -359,15 +399,17 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C1",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-30T17:48:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -376,15 +418,17 @@
         "M5"
       ],
       "partants_actifs": 11,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C5",
       "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
       "depart": "2026-10-30T18:05:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -393,15 +437,17 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C2",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-30T18:23:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -410,15 +456,17 @@
         "M5"
       ],
       "partants_actifs": 14,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C6",
       "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
       "depart": "2026-10-30T18:40:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -427,15 +475,17 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C3",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-30T18:58:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -444,15 +494,17 @@
         "M5"
       ],
       "partants_actifs": 11,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C7",
       "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
       "depart": "2026-10-30T19:15:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -461,15 +513,17 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C4",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-30T19:33:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -478,15 +532,17 @@
         "M5"
       ],
       "partants_actifs": 17,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C8",
       "hippodrome": "HIPPODROME DE TOULOUSE LA CEPIERE",
       "depart": "2026-10-30T19:48:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -495,15 +551,17 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C5",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-30T20:22:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -512,15 +570,17 @@
         "M5"
       ],
       "partants_actifs": 17,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C6",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-30T20:57:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -529,15 +589,17 @@
         "M5"
       ],
       "partants_actifs": 11,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C7",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-30T21:37:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -546,15 +608,17 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C8",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "depart": "2026-10-30T22:17:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -563,8 +627,10 @@
         "M5"
       ],
       "partants_actifs": 14,
-      "raisons": [],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "raisons": [
+        "Collecte trop ancienne"
+      ],
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C2",
@@ -583,7 +649,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C3",
@@ -602,7 +668,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C6",
@@ -621,7 +687,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C8",
@@ -640,7 +706,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R2-C5",
@@ -659,7 +725,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R2-C8",
@@ -678,7 +744,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R3-C1",
@@ -697,7 +763,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R3-C2",
@@ -716,7 +782,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R3-C3",
@@ -735,7 +801,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R4-C1",
@@ -754,7 +820,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     },
     {
       "course_id": "2026-10-28-R4-C2",
@@ -773,7 +839,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T08:11:06.812563+01:00"
+      "verifie_a": "2026-10-30T08:31:49.790092+01:00"
     }
   ],
   "erreurs": []
