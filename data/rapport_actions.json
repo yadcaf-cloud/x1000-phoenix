@@ -1,7 +1,7 @@
 {
   "logiciel": "X1000 PHOENIX",
   "version": "PUBLICATION-UNIFIEE-9.0",
-  "generated_at_paris": "2026-10-30T21:45:24.805533+01:00",
+  "generated_at_paris": "2026-10-30T22:24:36.974826+01:00",
   "source_donnees": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
   "moteurs_actifs": [
     "M1",
@@ -12,13 +12,13 @@
   ],
   "courses_collectees": 33,
   "courses_count": 44,
-  "analyses_count": 1,
-  "pronostics_count": 5,
-  "pv_count": 1,
+  "analyses_count": 0,
+  "pronostics_count": 0,
+  "pv_count": 0,
   "figes_count": 11,
   "audits_count": 0,
   "nouveaux_figes": 0,
-  "status": "ANALYSES_DISPONIBLES",
+  "status": "ARCHIVES_DISPONIBLES",
   "difficultes": [],
   "avertissement": "Analyses heuristiques non calibrees. Aucun nouveau FIGE automatique. Aucun resultat officiel invente. Sources externes non reverifiees independamment par publication.py."
 }
