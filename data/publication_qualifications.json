@@ -1,9 +1,9 @@
 {
   "version": "X1000-PHOENIX-10.0",
-  "genere_a_paris": "2026-10-30T12:48:34.008167+01:00",
+  "genere_a_paris": "2026-10-30T13:33:21.888258+01:00",
   "courses_examinees": 44,
-  "courses_qualifiees": 29,
-  "courses_non_qualifiees": 15,
+  "courses_qualifiees": 26,
+  "courses_non_qualifiees": 18,
   "qualifications": [
     {
       "course_id": "2026-10-30-R3-C1",
@@ -17,7 +17,7 @@
         "Course deja partie",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C2",
@@ -31,7 +31,7 @@
         "Course deja partie",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C3",
@@ -45,7 +45,7 @@
         "Course deja partie",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C1",
@@ -59,58 +59,49 @@
         "Course deja partie",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C4",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T12:50:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
-      "moteurs_valides": [
-        "M1",
-        "M2",
-        "M3",
-        "M4",
-        "M5"
-      ],
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
       "partants_actifs": 9,
-      "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C2",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
-      "depart": "2026-10-30T13:08:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
-      "moteurs_valides": [
-        "M1",
-        "M2",
-        "M3",
-        "M4",
-        "M5"
-      ],
+      "depart": "2026-10-30T13:10:00+01:00",
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
       "partants_actifs": 8,
-      "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C5",
       "hippodrome": "HIPPODROME DE LYON-PARILLY",
       "depart": "2026-10-30T13:25:00+01:00",
-      "qualifiee": true,
-      "qualification": "QUALIFIEE_AVANT_DEPART",
-      "moteurs_valides": [
-        "M1",
-        "M2",
-        "M3",
-        "M4",
-        "M5"
-      ],
+      "qualifiee": false,
+      "qualification": "NON_QUALIFIEE",
+      "moteurs_valides": [],
       "partants_actifs": 10,
-      "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "raisons": [
+        "Course deja partie",
+        "Aucune selection M1-M5 exploitable"
+      ],
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C3",
@@ -127,7 +118,7 @@
       ],
       "partants_actifs": 16,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C6",
@@ -144,7 +135,7 @@
       ],
       "partants_actifs": 13,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C4",
@@ -161,7 +152,7 @@
       ],
       "partants_actifs": 13,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C7",
@@ -178,7 +169,7 @@
       ],
       "partants_actifs": 13,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C5",
@@ -195,7 +186,7 @@
       ],
       "partants_actifs": 11,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R3-C8",
@@ -210,9 +201,9 @@
         "M4",
         "M5"
       ],
-      "partants_actifs": 12,
+      "partants_actifs": 11,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C6",
@@ -229,7 +220,7 @@
       ],
       "partants_actifs": 9,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C1",
@@ -246,7 +237,7 @@
       ],
       "partants_actifs": 15,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C7",
@@ -263,7 +254,7 @@
       ],
       "partants_actifs": 16,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C2",
@@ -280,7 +271,7 @@
       ],
       "partants_actifs": 15,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C8",
@@ -297,7 +288,7 @@
       ],
       "partants_actifs": 15,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C3",
@@ -314,7 +305,7 @@
       ],
       "partants_actifs": 15,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R4-C9",
@@ -331,7 +322,7 @@
       ],
       "partants_actifs": 10,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C4",
@@ -348,7 +339,7 @@
       ],
       "partants_actifs": 16,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C1",
@@ -365,7 +356,7 @@
       ],
       "partants_actifs": 10,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C5",
@@ -382,7 +373,7 @@
       ],
       "partants_actifs": 16,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C2",
@@ -399,7 +390,7 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C6",
@@ -416,7 +407,7 @@
       ],
       "partants_actifs": 16,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C3",
@@ -433,7 +424,7 @@
       ],
       "partants_actifs": 10,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C7",
@@ -450,7 +441,7 @@
       ],
       "partants_actifs": 16,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C4",
@@ -467,7 +458,7 @@
       ],
       "partants_actifs": 17,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R5-C8",
@@ -484,7 +475,7 @@
       ],
       "partants_actifs": 16,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C5",
@@ -501,7 +492,7 @@
       ],
       "partants_actifs": 17,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C6",
@@ -518,7 +509,7 @@
       ],
       "partants_actifs": 11,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C7",
@@ -535,7 +526,7 @@
       ],
       "partants_actifs": 13,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-30-R1-C8",
@@ -552,7 +543,7 @@
       ],
       "partants_actifs": 13,
       "raisons": [],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C2",
@@ -571,7 +562,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C3",
@@ -590,7 +581,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C6",
@@ -609,7 +600,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C8",
@@ -628,7 +619,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R2-C5",
@@ -647,7 +638,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R2-C8",
@@ -666,7 +657,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R3-C1",
@@ -685,7 +676,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R3-C2",
@@ -704,7 +695,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R3-C3",
@@ -723,7 +714,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R4-C1",
@@ -742,7 +733,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     },
     {
       "course_id": "2026-10-28-R4-C2",
@@ -761,7 +752,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-30T12:48:34.008167+01:00"
+      "verifie_a": "2026-10-30T13:33:21.888258+01:00"
     }
   ],
   "erreurs": []
