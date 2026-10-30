@@ -1,7 +1,7 @@
 {
   "version": "5.0",
   "date": "2026-10-30",
-  "collecte_a": "2026-10-30T06:10:37.770377+01:00",
+  "collecte_a": "2026-10-30T06:50:39.121277+01:00",
   "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
   "statut": "OK",
   "courses": [
@@ -147,12 +147,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C1/participants",
-      "collecte_a": "2026-10-30T06:10:43.512058+01:00",
+      "collecte_a": "2026-10-30T06:50:43.459456+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C1/participants",
-        "participants_recus_a": "2026-10-30T06:10:43.512058+01:00",
+        "participants_recus_a": "2026-10-30T06:50:43.459456+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -243,12 +243,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C2/participants",
-      "collecte_a": "2026-10-30T06:10:44.011591+01:00",
+      "collecte_a": "2026-10-30T06:50:44.016602+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C2/participants",
-        "participants_recus_a": "2026-10-30T06:10:44.011591+01:00",
+        "participants_recus_a": "2026-10-30T06:50:44.016602+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -395,12 +395,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C3/participants",
-      "collecte_a": "2026-10-30T06:10:44.348318+01:00",
+      "collecte_a": "2026-10-30T06:50:44.444048+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C3/participants",
-        "participants_recus_a": "2026-10-30T06:10:44.348318+01:00",
+        "participants_recus_a": "2026-10-30T06:50:44.444048+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -563,12 +563,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C1/participants",
-      "collecte_a": "2026-10-30T06:10:46.485950+01:00",
+      "collecte_a": "2026-10-30T06:50:46.654552+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C1/participants",
-        "participants_recus_a": "2026-10-30T06:10:46.485950+01:00",
+        "participants_recus_a": "2026-10-30T06:50:46.654552+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -715,12 +715,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C4/participants",
-      "collecte_a": "2026-10-30T06:10:44.670406+01:00",
+      "collecte_a": "2026-10-30T06:50:44.806655+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C4/participants",
-        "participants_recus_a": "2026-10-30T06:10:44.670406+01:00",
+        "participants_recus_a": "2026-10-30T06:50:44.806655+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -853,12 +853,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C2/participants",
-      "collecte_a": "2026-10-30T06:10:46.809166+01:00",
+      "collecte_a": "2026-10-30T06:50:46.914145+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C2/participants",
-        "participants_recus_a": "2026-10-30T06:10:46.809166+01:00",
+        "participants_recus_a": "2026-10-30T06:50:46.914145+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -1019,12 +1019,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C5/participants",
-      "collecte_a": "2026-10-30T06:10:44.992495+01:00",
+      "collecte_a": "2026-10-30T06:50:45.082062+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C5/participants",
-        "participants_recus_a": "2026-10-30T06:10:44.992495+01:00",
+        "participants_recus_a": "2026-10-30T06:50:45.082062+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -1269,12 +1269,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C3/participants",
-      "collecte_a": "2026-10-30T06:10:47.225828+01:00",
+      "collecte_a": "2026-10-30T06:50:47.420997+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C3/participants",
-        "participants_recus_a": "2026-10-30T06:10:47.225828+01:00",
+        "participants_recus_a": "2026-10-30T06:50:47.420997+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -1491,12 +1491,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C6/participants",
-      "collecte_a": "2026-10-30T06:10:45.437298+01:00",
+      "collecte_a": "2026-10-30T06:50:45.770919+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C6/participants",
-        "participants_recus_a": "2026-10-30T06:10:45.437298+01:00",
+        "participants_recus_a": "2026-10-30T06:50:45.770919+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -1699,12 +1699,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C4/participants",
-      "collecte_a": "2026-10-30T06:10:47.579714+01:00",
+      "collecte_a": "2026-10-30T06:50:47.786266+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C4/participants",
-        "participants_recus_a": "2026-10-30T06:10:47.579714+01:00",
+        "participants_recus_a": "2026-10-30T06:50:47.786266+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -1907,12 +1907,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C7/participants",
-      "collecte_a": "2026-10-30T06:10:45.784478+01:00",
+      "collecte_a": "2026-10-30T06:50:46.036936+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C7/participants",
-        "participants_recus_a": "2026-10-30T06:10:45.784478+01:00",
+        "participants_recus_a": "2026-10-30T06:50:46.036936+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -2087,12 +2087,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C5/participants",
-      "collecte_a": "2026-10-30T06:10:48.133619+01:00",
+      "collecte_a": "2026-10-30T06:50:48.047816+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C5/participants",
-        "participants_recus_a": "2026-10-30T06:10:48.133619+01:00",
+        "participants_recus_a": "2026-10-30T06:50:48.047816+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -2281,12 +2281,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C8/participants",
-      "collecte_a": "2026-10-30T06:10:46.170031+01:00",
+      "collecte_a": "2026-10-30T06:50:46.307756+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R3/C8/participants",
-        "participants_recus_a": "2026-10-30T06:10:46.170031+01:00",
+        "participants_recus_a": "2026-10-30T06:50:46.307756+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -2447,12 +2447,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C6/participants",
-      "collecte_a": "2026-10-30T06:10:48.453881+01:00",
+      "collecte_a": "2026-10-30T06:50:48.473676+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C6/participants",
-        "participants_recus_a": "2026-10-30T06:10:48.453881+01:00",
+        "participants_recus_a": "2026-10-30T06:50:48.473676+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -2683,12 +2683,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C1/participants",
-      "collecte_a": "2026-10-30T06:10:49.791459+01:00",
+      "collecte_a": "2026-10-30T06:50:49.860162+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C1/participants",
-        "participants_recus_a": "2026-10-30T06:10:49.791459+01:00",
+        "participants_recus_a": "2026-10-30T06:50:49.860162+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -2933,12 +2933,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C7/participants",
-      "collecte_a": "2026-10-30T06:10:48.792325+01:00",
+      "collecte_a": "2026-10-30T06:50:48.813557+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C7/participants",
-        "participants_recus_a": "2026-10-30T06:10:48.792325+01:00",
+        "participants_recus_a": "2026-10-30T06:50:48.813557+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -2954,8 +2954,10 @@
       "depart": "2026-10-30T16:20:00+01:00",
       "depart_verifie": true,
       "nombre_participants": 16,
-      "nombre_partants": 16,
-      "non_partants": [],
+      "nombre_partants": 15,
+      "non_partants": [
+        8
+      ],
       "partants": [
         {
           "numero": 1,
@@ -3058,8 +3060,8 @@
         {
           "numero": 8,
           "nom": "KANTARO DU TRESOR",
-          "non_partant": false,
-          "statut": "PARTANT",
+          "non_partant": true,
+          "statut": "NON_PARTANT",
           "musique": "8a0a0a2a2a0a6a8a(25)7a",
           "gains": null,
           "jockey": "",
@@ -3183,12 +3185,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C2/participants",
-      "collecte_a": "2026-10-30T06:10:50.119843+01:00",
+      "collecte_a": "2026-10-30T06:50:50.225189+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C2/participants",
-        "participants_recus_a": "2026-10-30T06:10:50.119843+01:00",
+        "participants_recus_a": "2026-10-30T06:50:50.225189+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -3433,12 +3435,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C8/participants",
-      "collecte_a": "2026-10-30T06:10:49.123785+01:00",
+      "collecte_a": "2026-10-30T06:50:49.153265+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C8/participants",
-        "participants_recus_a": "2026-10-30T06:10:49.123785+01:00",
+        "participants_recus_a": "2026-10-30T06:50:49.153265+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -3685,12 +3687,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C3/participants",
-      "collecte_a": "2026-10-30T06:10:50.622044+01:00",
+      "collecte_a": "2026-10-30T06:50:50.536555+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C3/participants",
-        "participants_recus_a": "2026-10-30T06:10:50.622044+01:00",
+        "participants_recus_a": "2026-10-30T06:50:50.536555+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -3867,12 +3869,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C9/participants",
-      "collecte_a": "2026-10-30T06:10:49.442557+01:00",
+      "collecte_a": "2026-10-30T06:50:49.564204+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R4/C9/participants",
-        "participants_recus_a": "2026-10-30T06:10:49.442557+01:00",
+        "participants_recus_a": "2026-10-30T06:50:49.564204+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -4117,12 +4119,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C4/participants",
-      "collecte_a": "2026-10-30T06:10:51.001972+01:00",
+      "collecte_a": "2026-10-30T06:50:50.826321+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C4/participants",
-        "participants_recus_a": "2026-10-30T06:10:51.001972+01:00",
+        "participants_recus_a": "2026-10-30T06:50:50.826321+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -4297,12 +4299,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C1/participants",
-      "collecte_a": "2026-10-30T06:10:39.379177+01:00",
+      "collecte_a": "2026-10-30T06:50:40.091326+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C1/participants",
-        "participants_recus_a": "2026-10-30T06:10:39.379177+01:00",
+        "participants_recus_a": "2026-10-30T06:50:40.091326+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -4547,12 +4549,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C5/participants",
-      "collecte_a": "2026-10-30T06:10:51.605583+01:00",
+      "collecte_a": "2026-10-30T06:50:51.164388+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C5/participants",
-        "participants_recus_a": "2026-10-30T06:10:51.605583+01:00",
+        "participants_recus_a": "2026-10-30T06:50:51.164388+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -4769,12 +4771,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C2/participants",
-      "collecte_a": "2026-10-30T06:10:39.765134+01:00",
+      "collecte_a": "2026-10-30T06:50:40.702975+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C2/participants",
-        "participants_recus_a": "2026-10-30T06:10:39.765134+01:00",
+        "participants_recus_a": "2026-10-30T06:50:40.702975+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -5019,12 +5021,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C6/participants",
-      "collecte_a": "2026-10-30T06:10:51.937000+01:00",
+      "collecte_a": "2026-10-30T06:50:51.714954+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C6/participants",
-        "participants_recus_a": "2026-10-30T06:10:51.937000+01:00",
+        "participants_recus_a": "2026-10-30T06:50:51.714954+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -5199,12 +5201,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C3/participants",
-      "collecte_a": "2026-10-30T06:10:40.448324+01:00",
+      "collecte_a": "2026-10-30T06:50:41.223076+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C3/participants",
-        "participants_recus_a": "2026-10-30T06:10:40.448324+01:00",
+        "participants_recus_a": "2026-10-30T06:50:41.223076+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -5449,12 +5451,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C7/participants",
-      "collecte_a": "2026-10-30T06:10:52.290543+01:00",
+      "collecte_a": "2026-10-30T06:50:52.015643+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C7/participants",
-        "participants_recus_a": "2026-10-30T06:10:52.290543+01:00",
+        "participants_recus_a": "2026-10-30T06:50:52.015643+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -5729,12 +5731,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C4/participants",
-      "collecte_a": "2026-10-30T06:10:41.080056+01:00",
+      "collecte_a": "2026-10-30T06:50:41.487474+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C4/participants",
-        "participants_recus_a": "2026-10-30T06:10:41.080056+01:00",
+        "participants_recus_a": "2026-10-30T06:50:41.487474+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -5979,12 +5981,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C8/participants",
-      "collecte_a": "2026-10-30T06:10:52.754559+01:00",
+      "collecte_a": "2026-10-30T06:50:52.316603+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C8/participants",
-        "participants_recus_a": "2026-10-30T06:10:52.754559+01:00",
+        "participants_recus_a": "2026-10-30T06:50:52.316603+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -6243,12 +6245,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C5/participants",
-      "collecte_a": "2026-10-30T06:10:41.731144+01:00",
+      "collecte_a": "2026-10-30T06:50:41.772413+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C5/participants",
-        "participants_recus_a": "2026-10-30T06:10:41.731144+01:00",
+        "participants_recus_a": "2026-10-30T06:50:41.772413+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -6423,12 +6425,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C6/participants",
-      "collecte_a": "2026-10-30T06:10:42.247552+01:00",
+      "collecte_a": "2026-10-30T06:50:42.235163+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C6/participants",
-        "participants_recus_a": "2026-10-30T06:10:42.247552+01:00",
+        "participants_recus_a": "2026-10-30T06:50:42.235163+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -6631,12 +6633,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C7/participants",
-      "collecte_a": "2026-10-30T06:10:42.605175+01:00",
+      "collecte_a": "2026-10-30T06:50:42.587769+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C7/participants",
-        "participants_recus_a": "2026-10-30T06:10:42.605175+01:00",
+        "participants_recus_a": "2026-10-30T06:50:42.587769+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -6853,12 +6855,12 @@
         }
       ],
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C8/participants",
-      "collecte_a": "2026-10-30T06:10:43.006387+01:00",
+      "collecte_a": "2026-10-30T06:50:43.098755+01:00",
       "statut": "PARTANTS_CHARGES",
       "controle_source": {
         "programme_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026",
         "participants_url": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C8/participants",
-        "participants_recus_a": "2026-10-30T06:10:43.006387+01:00",
+        "participants_recus_a": "2026-10-30T06:50:43.098755+01:00",
         "mode": "API_REPONSE_DIRECTE",
         "structure_validee": true
       }
@@ -6870,8 +6872,8 @@
     "reunions": 4,
     "courses_prevues": 33,
     "courses": 33,
-    "partants": 424,
-    "non_partants": 4,
+    "partants": 423,
+    "non_partants": 5,
     "erreurs": 0
   }
 }
