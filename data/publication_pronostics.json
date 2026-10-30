@@ -2,356 +2,6 @@
   "pronostics": [
     {
       "moteur": "M1",
-      "gagnant_espere": 5,
-      "meilleur_place": 8,
-      "ordre_espere": [
-        5,
-        8,
-        2,
-        4,
-        9
-      ],
-      "ordre_arrivee_espere": [
-        5,
-        8,
-        2,
-        4,
-        9
-      ],
-      "classement_complet": [
-        5,
-        8,
-        2,
-        4,
-        9
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R3-C3",
-      "hippodrome": "HIPPODROME DE LYON-PARILLY",
-      "depart": "2026-10-30T12:18:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M2",
-      "gagnant_espere": 5,
-      "meilleur_place": 8,
-      "ordre_espere": [
-        5,
-        8,
-        2,
-        4,
-        9
-      ],
-      "ordre_arrivee_espere": [
-        5,
-        8,
-        2,
-        4,
-        9
-      ],
-      "classement_complet": [
-        5,
-        8,
-        2,
-        4,
-        9
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R3-C3",
-      "hippodrome": "HIPPODROME DE LYON-PARILLY",
-      "depart": "2026-10-30T12:18:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M3",
-      "gagnant_espere": 5,
-      "meilleur_place": 8,
-      "ordre_espere": [
-        5,
-        8,
-        1,
-        4,
-        2
-      ],
-      "ordre_arrivee_espere": [
-        5,
-        8,
-        1,
-        4,
-        2
-      ],
-      "classement_complet": [
-        5,
-        8,
-        1,
-        4,
-        2
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R3-C3",
-      "hippodrome": "HIPPODROME DE LYON-PARILLY",
-      "depart": "2026-10-30T12:18:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M4",
-      "gagnant_espere": 2,
-      "meilleur_place": 5,
-      "ordre_espere": [
-        2,
-        5,
-        8,
-        4,
-        9
-      ],
-      "ordre_arrivee_espere": [
-        2,
-        5,
-        8,
-        4,
-        9
-      ],
-      "classement_complet": [
-        2,
-        5,
-        8,
-        4,
-        9
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R3-C3",
-      "hippodrome": "HIPPODROME DE LYON-PARILLY",
-      "depart": "2026-10-30T12:18:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M5",
-      "gagnant_espere": 5,
-      "meilleur_place": 8,
-      "ordre_espere": [
-        5,
-        8,
-        2,
-        4,
-        9
-      ],
-      "ordre_arrivee_espere": [
-        5,
-        8,
-        2,
-        4,
-        9
-      ],
-      "classement_complet": [
-        5,
-        8,
-        2,
-        4,
-        9
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R3-C3",
-      "hippodrome": "HIPPODROME DE LYON-PARILLY",
-      "depart": "2026-10-30T12:18:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M1",
-      "gagnant_espere": 2,
-      "meilleur_place": 9,
-      "ordre_espere": [
-        2,
-        9,
-        8,
-        4,
-        1
-      ],
-      "ordre_arrivee_espere": [
-        2,
-        9,
-        8,
-        4,
-        1
-      ],
-      "classement_complet": [
-        2,
-        9,
-        8,
-        4,
-        1
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R4-C1",
-      "hippodrome": "HIPPODROME DE DEAUVILLE",
-      "depart": "2026-10-30T12:34:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M2",
-      "gagnant_espere": 9,
-      "meilleur_place": 2,
-      "ordre_espere": [
-        9,
-        2,
-        5,
-        1,
-        8
-      ],
-      "ordre_arrivee_espere": [
-        9,
-        2,
-        5,
-        1,
-        8
-      ],
-      "classement_complet": [
-        9,
-        2,
-        5,
-        1,
-        8
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R4-C1",
-      "hippodrome": "HIPPODROME DE DEAUVILLE",
-      "depart": "2026-10-30T12:34:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M3",
-      "gagnant_espere": 2,
-      "meilleur_place": 8,
-      "ordre_espere": [
-        2,
-        8,
-        1,
-        9,
-        4
-      ],
-      "ordre_arrivee_espere": [
-        2,
-        8,
-        1,
-        9,
-        4
-      ],
-      "classement_complet": [
-        2,
-        8,
-        1,
-        9,
-        4
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R4-C1",
-      "hippodrome": "HIPPODROME DE DEAUVILLE",
-      "depart": "2026-10-30T12:34:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M4",
-      "gagnant_espere": 9,
-      "meilleur_place": 2,
-      "ordre_espere": [
-        9,
-        2,
-        5,
-        1,
-        8
-      ],
-      "ordre_arrivee_espere": [
-        9,
-        2,
-        5,
-        1,
-        8
-      ],
-      "classement_complet": [
-        9,
-        2,
-        5,
-        1,
-        8
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R4-C1",
-      "hippodrome": "HIPPODROME DE DEAUVILLE",
-      "depart": "2026-10-30T12:34:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M5",
-      "gagnant_espere": 2,
-      "meilleur_place": 9,
-      "ordre_espere": [
-        2,
-        9,
-        8,
-        1,
-        5
-      ],
-      "ordre_arrivee_espere": [
-        2,
-        9,
-        8,
-        1,
-        5
-      ],
-      "classement_complet": [
-        2,
-        9,
-        8,
-        1,
-        5
-      ],
-      "qualification": "ETUDE_NON_VALIDEE",
-      "validation": "NON_FIGE",
-      "pari_retenu": null,
-      "fige": false,
-      "methode": "HEURISTIQUE_MUSIQUE",
-      "course_id": "2026-10-30-R4-C1",
-      "hippodrome": "HIPPODROME DE DEAUVILLE",
-      "depart": "2026-10-30T12:34:00+01:00",
-      "statut_course": "ANALYSE_INDICATIVE"
-    },
-    {
-      "moteur": "M1",
       "gagnant_espere": 2,
       "meilleur_place": 8,
       "ordre_espere": [
@@ -1934,21 +1584,21 @@
         1,
         4,
         5,
-        6
+        9
       ],
       "ordre_arrivee_espere": [
         3,
         1,
         4,
         5,
-        6
+        9
       ],
       "classement_complet": [
         3,
         1,
         4,
         5,
-        6
+        9
       ],
       "qualification": "ETUDE_NON_VALIDEE",
       "validation": "NON_FIGE",
@@ -1969,21 +1619,21 @@
         1,
         10,
         4,
-        6
+        9
       ],
       "ordre_arrivee_espere": [
         3,
         1,
         10,
         4,
-        6
+        9
       ],
       "classement_complet": [
         3,
         1,
         10,
         4,
-        6
+        9
       ],
       "qualification": "ETUDE_NON_VALIDEE",
       "validation": "NON_FIGE",
@@ -2004,21 +1654,21 @@
         1,
         4,
         5,
-        6
+        9
       ],
       "ordre_arrivee_espere": [
         3,
         1,
         4,
         5,
-        6
+        9
       ],
       "classement_complet": [
         3,
         1,
         4,
         5,
-        6
+        9
       ],
       "qualification": "ETUDE_NON_VALIDEE",
       "validation": "NON_FIGE",
