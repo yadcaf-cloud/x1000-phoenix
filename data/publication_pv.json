@@ -1,516 +1,12 @@
 {
   "pv": [
     {
-      "pv_id": "ANALYSE-2026-10-30-R5-C4-20261030T171836208385",
-      "course_id": "2026-10-30-R5-C4",
-      "type": "PV_ANALYSE",
-      "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
-      "depart": "2026-10-30T17:30:00+01:00",
-      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C4/participants",
-      "moteurs": [
-        {
-          "moteur": "M1",
-          "gagnant_espere": 6,
-          "meilleur_place": 12,
-          "ordre_espere": [
-            6,
-            12,
-            4,
-            10,
-            5
-          ],
-          "ordre_arrivee_espere": [
-            6,
-            12,
-            4,
-            10,
-            5
-          ],
-          "classement_complet": [
-            6,
-            12,
-            4,
-            10,
-            5
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M2",
-          "gagnant_espere": 5,
-          "meilleur_place": 12,
-          "ordre_espere": [
-            5,
-            12,
-            6,
-            11,
-            14
-          ],
-          "ordre_arrivee_espere": [
-            5,
-            12,
-            6,
-            11,
-            14
-          ],
-          "classement_complet": [
-            5,
-            12,
-            6,
-            11,
-            14
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M3",
-          "gagnant_espere": 6,
-          "meilleur_place": 12,
-          "ordre_espere": [
-            6,
-            12,
-            4,
-            10,
-            1
-          ],
-          "ordre_arrivee_espere": [
-            6,
-            12,
-            4,
-            10,
-            1
-          ],
-          "classement_complet": [
-            6,
-            12,
-            4,
-            10,
-            1
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M4",
-          "gagnant_espere": 5,
-          "meilleur_place": 12,
-          "ordre_espere": [
-            5,
-            12,
-            6,
-            11,
-            14
-          ],
-          "ordre_arrivee_espere": [
-            5,
-            12,
-            6,
-            11,
-            14
-          ],
-          "classement_complet": [
-            5,
-            12,
-            6,
-            11,
-            14
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M5",
-          "gagnant_espere": 6,
-          "meilleur_place": 12,
-          "ordre_espere": [
-            6,
-            12,
-            5,
-            4,
-            1
-          ],
-          "ordre_arrivee_espere": [
-            6,
-            12,
-            5,
-            4,
-            1
-          ],
-          "classement_complet": [
-            6,
-            12,
-            5,
-            4,
-            1
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        }
-      ],
-      "fige": false,
-      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
-    },
-    {
-      "pv_id": "ANALYSE-2026-10-30-R1-C1-20261030T171836208385",
-      "course_id": "2026-10-30-R1-C1",
-      "type": "PV_ANALYSE",
-      "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
-      "depart": "2026-10-30T17:48:00+01:00",
-      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C1/participants",
-      "moteurs": [
-        {
-          "moteur": "M1",
-          "gagnant_espere": 5,
-          "meilleur_place": 10,
-          "ordre_espere": [
-            5,
-            10,
-            11,
-            3,
-            4
-          ],
-          "ordre_arrivee_espere": [
-            5,
-            10,
-            11,
-            3,
-            4
-          ],
-          "classement_complet": [
-            5,
-            10,
-            11,
-            3,
-            4
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M2",
-          "gagnant_espere": 5,
-          "meilleur_place": 10,
-          "ordre_espere": [
-            5,
-            10,
-            3,
-            4,
-            11
-          ],
-          "ordre_arrivee_espere": [
-            5,
-            10,
-            3,
-            4,
-            11
-          ],
-          "classement_complet": [
-            5,
-            10,
-            3,
-            4,
-            11
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M3",
-          "gagnant_espere": 5,
-          "meilleur_place": 10,
-          "ordre_espere": [
-            5,
-            10,
-            11,
-            9,
-            3
-          ],
-          "ordre_arrivee_espere": [
-            5,
-            10,
-            11,
-            9,
-            3
-          ],
-          "classement_complet": [
-            5,
-            10,
-            11,
-            9,
-            3
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M4",
-          "gagnant_espere": 11,
-          "meilleur_place": 5,
-          "ordre_espere": [
-            11,
-            5,
-            10,
-            6,
-            8
-          ],
-          "ordre_arrivee_espere": [
-            11,
-            5,
-            10,
-            6,
-            8
-          ],
-          "classement_complet": [
-            11,
-            5,
-            10,
-            6,
-            8
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M5",
-          "gagnant_espere": 5,
-          "meilleur_place": 10,
-          "ordre_espere": [
-            5,
-            10,
-            11,
-            6,
-            8
-          ],
-          "ordre_arrivee_espere": [
-            5,
-            10,
-            11,
-            6,
-            8
-          ],
-          "classement_complet": [
-            5,
-            10,
-            11,
-            6,
-            8
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        }
-      ],
-      "fige": false,
-      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
-    },
-    {
-      "pv_id": "ANALYSE-2026-10-30-R5-C5-20261030T171836208385",
-      "course_id": "2026-10-30-R5-C5",
-      "type": "PV_ANALYSE",
-      "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
-      "depart": "2026-10-30T18:05:00+01:00",
-      "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C5/participants",
-      "moteurs": [
-        {
-          "moteur": "M1",
-          "gagnant_espere": 6,
-          "meilleur_place": 10,
-          "ordre_espere": [
-            6,
-            10,
-            16,
-            8,
-            4
-          ],
-          "ordre_arrivee_espere": [
-            6,
-            10,
-            16,
-            8,
-            4
-          ],
-          "classement_complet": [
-            6,
-            10,
-            16,
-            8,
-            4
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M2",
-          "gagnant_espere": 6,
-          "meilleur_place": 16,
-          "ordre_espere": [
-            6,
-            16,
-            8,
-            10,
-            3
-          ],
-          "ordre_arrivee_espere": [
-            6,
-            16,
-            8,
-            10,
-            3
-          ],
-          "classement_complet": [
-            6,
-            16,
-            8,
-            10,
-            3
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M3",
-          "gagnant_espere": 16,
-          "meilleur_place": 6,
-          "ordre_espere": [
-            16,
-            6,
-            4,
-            10,
-            3
-          ],
-          "ordre_arrivee_espere": [
-            16,
-            6,
-            4,
-            10,
-            3
-          ],
-          "classement_complet": [
-            16,
-            6,
-            4,
-            10,
-            3
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M4",
-          "gagnant_espere": 6,
-          "meilleur_place": 16,
-          "ordre_espere": [
-            6,
-            16,
-            8,
-            10,
-            3
-          ],
-          "ordre_arrivee_espere": [
-            6,
-            16,
-            8,
-            10,
-            3
-          ],
-          "classement_complet": [
-            6,
-            16,
-            8,
-            10,
-            3
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        },
-        {
-          "moteur": "M5",
-          "gagnant_espere": 16,
-          "meilleur_place": 6,
-          "ordre_espere": [
-            16,
-            6,
-            8,
-            10,
-            3
-          ],
-          "ordre_arrivee_espere": [
-            16,
-            6,
-            8,
-            10,
-            3
-          ],
-          "classement_complet": [
-            16,
-            6,
-            8,
-            10,
-            3
-          ],
-          "qualification": "ETUDE_NON_VALIDEE",
-          "validation": "NON_FIGE",
-          "pari_retenu": null,
-          "fige": false,
-          "methode": "HEURISTIQUE_MUSIQUE"
-        }
-      ],
-      "fige": false,
-      "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
-    },
-    {
-      "pv_id": "ANALYSE-2026-10-30-R1-C2-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R1-C2-20261030T180810718967",
       "course_id": "2026-10-30-R1-C2",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
-      "depart": "2026-10-30T18:23:00+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
+      "depart": "2026-10-30T18:24:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C2/participants",
       "moteurs": [
         {
@@ -673,11 +169,11 @@
       "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-30-R5-C6-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R5-C6-20261030T180810718967",
       "course_id": "2026-10-30-R5-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
       "depart": "2026-10-30T18:40:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C6/participants",
       "moteurs": [
@@ -841,11 +337,11 @@
       "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-30-R1-C3-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R1-C3-20261030T180810718967",
       "course_id": "2026-10-30-R1-C3",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
       "depart": "2026-10-30T18:58:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C3/participants",
       "moteurs": [
@@ -1009,11 +505,11 @@
       "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-30-R5-C7-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R5-C7-20261030T180810718967",
       "course_id": "2026-10-30-R5-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
       "depart": "2026-10-30T19:15:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C7/participants",
       "moteurs": [
@@ -1177,11 +673,11 @@
       "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-30-R1-C4-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R1-C4-20261030T180810718967",
       "course_id": "2026-10-30-R1-C4",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
       "depart": "2026-10-30T19:33:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C4/participants",
       "moteurs": [
@@ -1345,11 +841,11 @@
       "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-30-R5-C8-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R5-C8-20261030T180810718967",
       "course_id": "2026-10-30-R5-C8",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
       "depart": "2026-10-30T19:48:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R5/C8/participants",
       "moteurs": [
@@ -1513,11 +1009,11 @@
       "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-30-R1-C5-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R1-C5-20261030T180810718967",
       "course_id": "2026-10-30-R1-C5",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
       "depart": "2026-10-30T20:22:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C5/participants",
       "moteurs": [
@@ -1681,11 +1177,11 @@
       "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-30-R1-C6-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R1-C6-20261030T180810718967",
       "course_id": "2026-10-30-R1-C6",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
       "depart": "2026-10-30T20:57:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C6/participants",
       "moteurs": [
@@ -1849,11 +1345,11 @@
       "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-30-R1-C7-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R1-C7-20261030T180810718967",
       "course_id": "2026-10-30-R1-C7",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
       "depart": "2026-10-30T21:37:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C7/participants",
       "moteurs": [
@@ -2017,11 +1513,11 @@
       "avertissement": "Analyse indicative non validee. Ce PV ne constitue pas un FIGE."
     },
     {
-      "pv_id": "ANALYSE-2026-10-30-R1-C8-20261030T171836208385",
+      "pv_id": "ANALYSE-2026-10-30-R1-C8-20261030T180810718967",
       "course_id": "2026-10-30-R1-C8",
       "type": "PV_ANALYSE",
       "statut": "PV_ANALYSE_NON_FIGE",
-      "cree_a": "2026-10-30T17:18:36.208385+01:00",
+      "cree_a": "2026-10-30T18:08:10.718967+01:00",
       "depart": "2026-10-30T22:17:00+01:00",
       "source": "https://online.turfinfo.api.pmu.fr/rest/client/7/programme/30102026/R1/C8/participants",
       "moteurs": [
