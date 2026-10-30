@@ -2,7 +2,7 @@
   "systeme": "X1000 PHOENIX",
   "version": "8.1",
   "date": "2026-10-30",
-  "mise_a_jour": "2026-10-30T20:21:45.985632+01:00",
+  "mise_a_jour": "2026-10-30T21:05:40.647251+01:00",
   "statut": "OK",
   "type": "preselection",
   "seuil_vert": 50,
@@ -11,53 +11,13 @@
     "M1": [],
     "M2": [
       {
-        "id_course": "2026-10-30-R1-C5",
-        "depart": "2026-10-30T20:24:00+01:00",
-        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-        "reunion": 1,
-        "numero_course": null,
-        "nombre_partants": 17,
-        "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-        "moteur": "M2",
-        "score_donnees": 75,
-        "qualification": "VERT",
-        "criteres_disponibles": [
-          "jockey",
-          "entraineur",
-          "performances"
-        ],
-        "criteres_a_completer": [
-          "forme"
-        ]
-      },
-      {
-        "id_course": "2026-10-30-R1-C6",
-        "depart": "2026-10-30T20:57:00+01:00",
-        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-        "reunion": 1,
-        "numero_course": null,
-        "nombre_partants": 11,
-        "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-        "moteur": "M2",
-        "score_donnees": 75,
-        "qualification": "VERT",
-        "criteres_disponibles": [
-          "jockey",
-          "entraineur",
-          "performances"
-        ],
-        "criteres_a_completer": [
-          "forme"
-        ]
-      },
-      {
         "id_course": "2026-10-30-R1-C7",
         "depart": "2026-10-30T21:37:00+01:00",
         "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
         "reunion": 1,
         "numero_course": null,
         "nombre_partants": 13,
-        "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+        "heure_verification": "2026-10-30T21:05:40.647251+01:00",
         "moteur": "M2",
         "score_donnees": 75,
         "qualification": "VERT",
@@ -77,7 +37,7 @@
         "reunion": 1,
         "numero_course": null,
         "nombre_partants": 13,
-        "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+        "heure_verification": "2026-10-30T21:05:40.647251+01:00",
         "moteur": "M2",
         "score_donnees": 75,
         "qualification": "VERT",
@@ -94,53 +54,13 @@
     "M3": [],
     "M4": [
       {
-        "id_course": "2026-10-30-R1-C5",
-        "depart": "2026-10-30T20:24:00+01:00",
-        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-        "reunion": 1,
-        "numero_course": null,
-        "nombre_partants": 17,
-        "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-        "moteur": "M4",
-        "score_donnees": 50,
-        "qualification": "VERT",
-        "criteres_disponibles": [
-          "numero",
-          "performances"
-        ],
-        "criteres_a_completer": [
-          "corde",
-          "distance"
-        ]
-      },
-      {
-        "id_course": "2026-10-30-R1-C6",
-        "depart": "2026-10-30T20:57:00+01:00",
-        "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-        "reunion": 1,
-        "numero_course": null,
-        "nombre_partants": 11,
-        "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-        "moteur": "M4",
-        "score_donnees": 50,
-        "qualification": "VERT",
-        "criteres_disponibles": [
-          "numero",
-          "performances"
-        ],
-        "criteres_a_completer": [
-          "corde",
-          "distance"
-        ]
-      },
-      {
         "id_course": "2026-10-30-R1-C7",
         "depart": "2026-10-30T21:37:00+01:00",
         "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
         "reunion": 1,
         "numero_course": null,
         "nombre_partants": 13,
-        "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+        "heure_verification": "2026-10-30T21:05:40.647251+01:00",
         "moteur": "M4",
         "score_donnees": 50,
         "qualification": "VERT",
@@ -160,7 +80,7 @@
         "reunion": 1,
         "numero_course": null,
         "nombre_partants": 13,
-        "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+        "heure_verification": "2026-10-30T21:05:40.647251+01:00",
         "moteur": "M4",
         "score_donnees": 50,
         "qualification": "VERT",
@@ -178,209 +98,13 @@
   },
   "tableau_officiel": [
     {
-      "id_course": "2026-10-30-R1-C5",
-      "depart": "2026-10-30T20:24:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 17,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M1",
-      "score_donnees": 25,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "distance",
-        "terrain",
-        "regularite"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C5",
-      "depart": "2026-10-30T20:24:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 17,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M2",
-      "score_donnees": 75,
-      "qualification": "VERT",
-      "criteres_disponibles": [
-        "jockey",
-        "entraineur",
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "forme"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C5",
-      "depart": "2026-10-30T20:24:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 17,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M3",
-      "score_donnees": 33,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "cote",
-        "forme"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C5",
-      "depart": "2026-10-30T20:24:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 17,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M4",
-      "score_donnees": 50,
-      "qualification": "VERT",
-      "criteres_disponibles": [
-        "numero",
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "corde",
-        "distance"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C5",
-      "depart": "2026-10-30T20:24:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 17,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M5",
-      "score_donnees": 33,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "cote",
-        "forme"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C6",
-      "depart": "2026-10-30T20:57:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 11,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M1",
-      "score_donnees": 25,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "distance",
-        "terrain",
-        "regularite"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C6",
-      "depart": "2026-10-30T20:57:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 11,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M2",
-      "score_donnees": 75,
-      "qualification": "VERT",
-      "criteres_disponibles": [
-        "jockey",
-        "entraineur",
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "forme"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C6",
-      "depart": "2026-10-30T20:57:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 11,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M3",
-      "score_donnees": 33,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "cote",
-        "forme"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C6",
-      "depart": "2026-10-30T20:57:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 11,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M4",
-      "score_donnees": 50,
-      "qualification": "VERT",
-      "criteres_disponibles": [
-        "numero",
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "corde",
-        "distance"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C6",
-      "depart": "2026-10-30T20:57:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 11,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M5",
-      "score_donnees": 33,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "cote",
-        "forme"
-      ]
-    },
-    {
       "id_course": "2026-10-30-R1-C7",
       "depart": "2026-10-30T21:37:00+01:00",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M1",
       "score_donnees": 25,
       "qualification": "JAUNE",
@@ -400,7 +124,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M2",
       "score_donnees": 75,
       "qualification": "VERT",
@@ -420,7 +144,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M3",
       "score_donnees": 33,
       "qualification": "JAUNE",
@@ -439,7 +163,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M4",
       "score_donnees": 50,
       "qualification": "VERT",
@@ -459,7 +183,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M5",
       "score_donnees": 33,
       "qualification": "JAUNE",
@@ -478,7 +202,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M1",
       "score_donnees": 25,
       "qualification": "JAUNE",
@@ -498,7 +222,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M2",
       "score_donnees": 75,
       "qualification": "VERT",
@@ -518,7 +242,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M3",
       "score_donnees": 33,
       "qualification": "JAUNE",
@@ -537,7 +261,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M4",
       "score_donnees": 50,
       "qualification": "VERT",
@@ -557,7 +281,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M5",
       "score_donnees": 33,
       "qualification": "JAUNE",
@@ -572,129 +296,13 @@
   ],
   "courses_jaunes": [
     {
-      "id_course": "2026-10-30-R1-C5",
-      "depart": "2026-10-30T20:24:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 17,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M1",
-      "score_donnees": 25,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "distance",
-        "terrain",
-        "regularite"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C5",
-      "depart": "2026-10-30T20:24:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 17,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M3",
-      "score_donnees": 33,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "cote",
-        "forme"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C5",
-      "depart": "2026-10-30T20:24:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 17,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M5",
-      "score_donnees": 33,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "cote",
-        "forme"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C6",
-      "depart": "2026-10-30T20:57:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 11,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M1",
-      "score_donnees": 25,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "distance",
-        "terrain",
-        "regularite"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C6",
-      "depart": "2026-10-30T20:57:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 11,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M3",
-      "score_donnees": 33,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "cote",
-        "forme"
-      ]
-    },
-    {
-      "id_course": "2026-10-30-R1-C6",
-      "depart": "2026-10-30T20:57:00+01:00",
-      "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
-      "reunion": 1,
-      "numero_course": null,
-      "nombre_partants": 11,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
-      "moteur": "M5",
-      "score_donnees": 33,
-      "qualification": "JAUNE",
-      "criteres_disponibles": [
-        "performances"
-      ],
-      "criteres_a_completer": [
-        "cote",
-        "forme"
-      ]
-    },
-    {
       "id_course": "2026-10-30-R1-C7",
       "depart": "2026-10-30T21:37:00+01:00",
       "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M1",
       "score_donnees": 25,
       "qualification": "JAUNE",
@@ -714,7 +322,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M3",
       "score_donnees": 33,
       "qualification": "JAUNE",
@@ -733,7 +341,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M5",
       "score_donnees": 33,
       "qualification": "JAUNE",
@@ -752,7 +360,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M1",
       "score_donnees": 25,
       "qualification": "JAUNE",
@@ -772,7 +380,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M3",
       "score_donnees": 33,
       "qualification": "JAUNE",
@@ -791,7 +399,7 @@
       "reunion": 1,
       "numero_course": null,
       "nombre_partants": 13,
-      "heure_verification": "2026-10-30T20:21:45.985632+01:00",
+      "heure_verification": "2026-10-30T21:05:40.647251+01:00",
       "moteur": "M5",
       "score_donnees": 33,
       "qualification": "JAUNE",
