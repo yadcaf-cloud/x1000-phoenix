@@ -1,16 +1,16 @@
 {
   "version": "X1000-PHOENIX-10.0",
-  "genere_a_paris": "2026-10-31T01:49:05.079705+01:00",
+  "genere_a_paris": "2026-10-31T02:47:03.555871+01:00",
   "courses_examinees": 73,
-  "courses_qualifiees": 18,
-  "courses_non_qualifiees": 55,
+  "courses_qualifiees": 62,
+  "courses_non_qualifiees": 11,
   "qualifications": [
     {
       "course_id": "2026-10-31-R2-C1",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T10:14:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -19,17 +19,15 @@
         "M5"
       ],
       "partants_actifs": 10,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R2-C2",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T10:44:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -38,17 +36,15 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R2-C3",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T11:14:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -57,17 +53,15 @@
         "M5"
       ],
       "partants_actifs": 11,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R3-C1",
       "hippodrome": "HIPPODROME D'ARGENTAN",
       "depart": "2026-10-31T11:30:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -76,17 +70,15 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R2-C4",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T11:46:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -95,10 +87,8 @@
         "M5"
       ],
       "partants_actifs": 9,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R8-C1",
@@ -115,14 +105,14 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R3-C2",
       "hippodrome": "HIPPODROME D'ARGENTAN",
       "depart": "2026-10-31T12:02:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -131,17 +121,15 @@
         "M5"
       ],
       "partants_actifs": 17,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R2-C5",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T12:18:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -150,10 +138,8 @@
         "M5"
       ],
       "partants_actifs": 12,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R8-C2",
@@ -170,14 +156,14 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R3-C3",
       "hippodrome": "HIPPODROME D'ARGENTAN",
       "depart": "2026-10-31T12:34:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -186,17 +172,15 @@
         "M5"
       ],
       "partants_actifs": 15,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R2-C6",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T12:50:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -205,10 +189,8 @@
         "M5"
       ],
       "partants_actifs": 11,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R8-C3",
@@ -225,14 +207,14 @@
       ],
       "partants_actifs": 15,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R3-C4",
       "hippodrome": "HIPPODROME D'ARGENTAN",
       "depart": "2026-10-31T13:06:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -241,17 +223,15 @@
         "M5"
       ],
       "partants_actifs": 15,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R2-C7",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T13:22:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -260,10 +240,8 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R8-C4",
@@ -280,14 +258,14 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R3-C5",
       "hippodrome": "HIPPODROME D'ARGENTAN",
       "depart": "2026-10-31T13:38:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -296,10 +274,8 @@
         "M5"
       ],
       "partants_actifs": 10,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R9-C1",
@@ -316,14 +292,14 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R2-C8",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T13:54:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -332,17 +308,15 @@
         "M5"
       ],
       "partants_actifs": 15,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R1-C1",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-31T13:58:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -351,10 +325,8 @@
         "M5"
       ],
       "partants_actifs": 8,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R8-C5",
@@ -371,7 +343,7 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R9-C2",
@@ -388,14 +360,14 @@
       ],
       "partants_actifs": 15,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R3-C6",
       "hippodrome": "HIPPODROME D'ARGENTAN",
       "depart": "2026-10-31T14:15:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -404,17 +376,15 @@
         "M5"
       ],
       "partants_actifs": 17,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R2-C9",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T14:26:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -423,10 +393,8 @@
         "M5"
       ],
       "partants_actifs": 7,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R8-C6",
@@ -443,14 +411,14 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R1-C2",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-31T14:33:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -459,10 +427,8 @@
         "M5"
       ],
       "partants_actifs": 11,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R9-C3",
@@ -479,14 +445,14 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R3-C7",
       "hippodrome": "HIPPODROME D'ARGENTAN",
       "depart": "2026-10-31T14:50:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -495,17 +461,15 @@
         "M5"
       ],
       "partants_actifs": 15,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R2-C10",
       "hippodrome": "HIPPODROME D'ANGERS EVENTARD",
       "depart": "2026-10-31T14:56:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -514,10 +478,8 @@
         "M5"
       ],
       "partants_actifs": 7,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R8-C7",
@@ -534,7 +496,7 @@
       ],
       "partants_actifs": 16,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R9-C4",
@@ -551,14 +513,14 @@
       ],
       "partants_actifs": 13,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R1-C3",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-31T15:15:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -567,10 +529,8 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R8-C8",
@@ -587,14 +547,14 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R3-C8",
       "hippodrome": "HIPPODROME D'ARGENTAN",
       "depart": "2026-10-31T15:32:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -603,10 +563,8 @@
         "M5"
       ],
       "partants_actifs": 18,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R9-C5",
@@ -623,14 +581,14 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R1-C4",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-31T15:50:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -639,17 +597,15 @@
         "M5"
       ],
       "partants_actifs": 7,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C1",
       "hippodrome": "HIPPODROME DE MAUQUENCHY",
       "depart": "2026-10-31T16:00:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -658,10 +614,8 @@
         "M5"
       ],
       "partants_actifs": 12,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R8-C9",
@@ -678,14 +632,14 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R5-C1",
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-31T16:07:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -694,10 +648,8 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R9-C6",
@@ -714,14 +666,14 @@
       ],
       "partants_actifs": 13,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R1-C5",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-31T16:25:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -730,17 +682,15 @@
         "M5"
       ],
       "partants_actifs": 11,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C2",
       "hippodrome": "HIPPODROME DE MAUQUENCHY",
       "depart": "2026-10-31T16:30:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -749,10 +699,8 @@
         "M5"
       ],
       "partants_actifs": 12,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R9-C7",
@@ -769,14 +717,14 @@
       ],
       "partants_actifs": 13,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R5-C2",
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-31T16:42:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -785,17 +733,15 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R1-C6",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-31T17:00:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -804,17 +750,15 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C3",
       "hippodrome": "HIPPODROME DE MAUQUENCHY",
       "depart": "2026-10-31T17:00:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -823,10 +767,8 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R9-C8",
@@ -843,14 +785,14 @@
       ],
       "partants_actifs": 12,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R5-C3",
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-31T17:17:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -859,17 +801,15 @@
         "M5"
       ],
       "partants_actifs": 14,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C4",
       "hippodrome": "HIPPODROME DE MAUQUENCHY",
       "depart": "2026-10-31T17:30:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -878,17 +818,15 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R1-C7",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-31T17:35:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -897,17 +835,15 @@
         "M5"
       ],
       "partants_actifs": 14,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R5-C4",
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-31T17:52:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -916,17 +852,15 @@
         "M5"
       ],
       "partants_actifs": 12,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C5",
       "hippodrome": "HIPPODROME DE MAUQUENCHY",
       "depart": "2026-10-31T18:00:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -935,17 +869,15 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R1-C8",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-31T18:10:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -954,17 +886,15 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C6",
       "hippodrome": "HIPPODROME DE MAUQUENCHY",
       "depart": "2026-10-31T18:30:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -973,17 +903,15 @@
         "M5"
       ],
       "partants_actifs": 12,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R5-C5",
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-31T18:31:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -992,17 +920,15 @@
         "M5"
       ],
       "partants_actifs": 13,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R1-C9",
       "hippodrome": "HIPPODROME DE DEAUVILLE",
       "depart": "2026-10-31T18:48:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -1011,17 +937,15 @@
         "M5"
       ],
       "partants_actifs": 14,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C7",
       "hippodrome": "HIPPODROME DE MAUQUENCHY",
       "depart": "2026-10-31T19:00:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -1030,17 +954,15 @@
         "M5"
       ],
       "partants_actifs": 12,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R5-C6",
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-31T19:09:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -1049,17 +971,15 @@
         "M5"
       ],
       "partants_actifs": 15,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C8",
       "hippodrome": "HIPPODROME DE MAUQUENCHY",
       "depart": "2026-10-31T19:30:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -1068,17 +988,15 @@
         "M5"
       ],
       "partants_actifs": 18,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R5-C7",
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-31T19:47:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -1087,17 +1005,15 @@
         "M5"
       ],
       "partants_actifs": 11,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C9",
       "hippodrome": "HIPPODROME DE MAUQUENCHY",
       "depart": "2026-10-31T20:00:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -1106,17 +1022,15 @@
         "M5"
       ],
       "partants_actifs": 16,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R5-C8",
       "hippodrome": "HIPPODROME MARSEILLE PONT DE VIVAUX",
       "depart": "2026-10-31T20:25:00+01:00",
-      "qualifiee": false,
-      "qualification": "NON_QUALIFIEE",
+      "qualifiee": true,
+      "qualification": "QUALIFIEE_AVANT_DEPART",
       "moteurs_valides": [
         "M1",
         "M2",
@@ -1125,10 +1039,8 @@
         "M5"
       ],
       "partants_actifs": 8,
-      "raisons": [
-        "Collecte trop ancienne"
-      ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "raisons": [],
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-31-R7-C10",
@@ -1145,7 +1057,7 @@
       ],
       "partants_actifs": 14,
       "raisons": [],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C2",
@@ -1164,7 +1076,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C3",
@@ -1183,7 +1095,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C6",
@@ -1202,7 +1114,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R1-C8",
@@ -1221,7 +1133,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R2-C5",
@@ -1240,7 +1152,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R2-C8",
@@ -1259,7 +1171,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R3-C1",
@@ -1278,7 +1190,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R3-C2",
@@ -1297,7 +1209,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R3-C3",
@@ -1316,7 +1228,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R4-C1",
@@ -1335,7 +1247,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     },
     {
       "course_id": "2026-10-28-R4-C2",
@@ -1354,7 +1266,7 @@
         "Nombre de partants insuffisant",
         "Aucune selection M1-M5 exploitable"
       ],
-      "verifie_a": "2026-10-31T01:49:05.079705+01:00"
+      "verifie_a": "2026-10-31T02:47:03.555871+01:00"
     }
   ],
   "erreurs": []
